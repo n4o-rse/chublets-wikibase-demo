@@ -8,3 +8,6 @@
 6. **Attribution** of the crosswalk workbook authors (Castro, Ferenz, Thiery, reviewers) must be stated in the paper.
 7. **Licence undecided**: Wikidata data is CC0, the CodeMeta crosswalk CC-BY, chublets-visuals MIT.
 8. All SPARQL and QuickStatements files are untested.
+9. **referencePublication -> P1343** exists only in the codemeta.org crosswalk (S5); S9 leaves it unmapped and lists P1343 with the reviewer note "doesn't seem to be related". Keep or drop (changes 37/46 to 36/47).
+10. **DataCite elements** are not yet represented as Wikibase metadata (see `docs/06-datacite-wikidata.md`); decide whether to add "equivalent DataCite element".
+11. S9 is a mapping to CodeMeta only; DataCite <-> Wikidata is derived and not published anywhere.

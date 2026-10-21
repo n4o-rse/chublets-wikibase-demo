@@ -1,154 +1,154 @@
-local_id,kernel,status,phase,wb_label,datatype,wikidata_pid,codemeta_terms,codemeta_org_pid,mapping_source,in_wikiproject_software,wikidata_origin,open_archaeo_source,candidate_wikidata_pids,note,provenance,confidence
-P1,yes,chublets-addition,1,subclass of,wikibase-item,P279,,,,no,,class hierarchy,,chublet is a subclass of Little Minion (Q73899440); needed to build the class tree in the new Wikibase.,R,recalled
-P2,yes,wikidata-only,1,instance of,wikibase-item,P31,,,,yes,WikiProject list;chublets pipeline,identity block,,Value Q141115627 (chublet) on every item; further values from open-archaeo category.,S3,checked
-P4,yes,chublets-addition,0,equivalent Wikidata property,external-id,,,,,,new,,,Property metadata. Formatter URL https://www.wikidata.org/entity/$1 so each local property points at its Wikidata twin.,S3;S4,proposal
-P7,yes,wikidata-only,1,retrieved,time,P813,,,,yes,WikiProject list,,,Reference qualifier for every harvested statement (provenance of the ingestion run).,S7,source-claimed
-P100,,chublets-addition,0,close match Wikidata property,external-id,,,,,,new,,,Property metadata for CodeMeta-only properties: records a candidate Wikidata property without claiming equivalence (skos:closeMatch).,S3;S4,proposal
-P101,,chublets-addition,0,equivalent CodeMeta term,string,,,,,,new,,,Property metadata. Formatter URL https://codemeta.github.io/terms/$1 ; stores the CodeMeta term name.,S3;S4,proposal
-P102,,chublets-addition,0,equivalent schema.org term,string,,,,,,new,,,Property metadata. Needed for the RDF export (owl:equivalentProperty / schema:sameAs).,S3;S4,proposal
-P103,,codemeta-only,1,application category,string,,applicationCategory,,,,,open-archaeo: category (416),P31,Not mapped in the crosswalk; MAPPING.md models it as a further P31 value (software library / application software / script file).,S1,checked
-P104,,chublets-addition,1,archive date,time,P2960,,,,no,chublets pipeline,derived from internetarchive path (221/222),,Qualifier on P1324.,S3;S4,checked
-P105,,chublets-addition,1,archive URL,url,P1065,,,,no,chublets pipeline,open-archaeo: internetarchive (222),,Qualifier on P1324.,S3;S4,checked
-P106,,chublets-addition,1,collection,wikibase-item,P195,,,,no,chublets pipeline,identity block,,Pairs with P217; open-archaeo (Q141190255). Pipeline model.py (S3).,S3,checked
-P107,,crosswalked,1,copyright license,wikibase-item,P275,license,P275,S1,yes,WikiProject list,none - open-archaeo records no licence,,Largest data gap; must come from repositories (GitHub SPDX).,S1;S1;S2;S3,source-claimed
-P108,,chublets-addition,1,CRAN project,external-id,P5565,,,,no,chublets pipeline,open-archaeo: registry where registry_name=CRAN (39),,Package name parsed from the CRAN URL.,S3,checked
-P109,,crosswalked,1,depends on software,wikibase-item,P1547,softwareRequirements,P1547,S1,yes,WikiProject list;chublets pipeline,,,The dependency relation named in the paper draft as a discovery term.,S1;S1;S2;S3,checked
-P110,,crosswalked,1,described at URL,url,P973,relatedLink,,S1,no,workbook block;chublets pipeline,"open-archaeo: blogpost, youtube (4) / open-archaeo: blogpost, youtube",,Two rows in the source: P973 and official demo URL (P11201). See relatedLink.,S1;S1;S3,checked
-P111,,crosswalked,1,described by source,wikibase-item,P1343,referencePublication,P1343,S5,no,workbook block,open-archaeo: publication (25),,Reviewers disagree (P2860 vs P1343); MAPPING.md chose P1343 so the article becomes an item keyed by DOI. See referencePublication.,S1;S1;S3,checked
-P112,,codemeta-only,1,description,string,,description,,,,,open-archaeo: description (416),(native Wikibase description field);P973;P1343,"Native Wikibase field, not a property. Wikidata style: short, lower case, no full stop; open-archaeo values are sentences and need rewriting.",S1,checked
-P113,,crosswalked,1,developer,wikibase-item,P178,author,P50,S1,yes,WikiProject list;workbook block,open-archaeo: authors (416),,Crosswalk review corrected P50 author to P178 developer. 187 author strings need person/organisation items (S3).,S1;S1;S2;S3,source-claimed
-P114,,crosswalked,1,DOI,external-id,P356,identifier,,S1,yes,WikiProject list;chublets pipeline,open-archaeo: doi (34),,Corrected to P356. Zenodo (10.5281) DOIs are release DOIs: qualifier on software version identifier.,S1;S1;S2;S3,checked
-P115,,crosswalked,1,exact match,url,P2888,sameAs,P2888,S1,no,chublets pipeline,open-archaeo: url (416),,Entry URL as P2888; in a new Wikibase also the link to the Wikidata item.,S1;S1;S3;S4,checked
-P116,,chublets-addition,1,inventory number,string,P217,,,,no,chublets pipeline,open-archaeo: slug (416),,"Holds the slug, qualified by P195. A dedicated ""open-archaeo ID"" (P6830 swMATH precedent) is preferred in a new Wikibase.",S3,checked
-P117,,crosswalked,1,main subject,wikibase-item,P921,keywords,P921,S1,no,chublets pipeline,open-archaeo: tags (416),,56 tags need reconciliation; 6 of them are not subjects (docs/ENRICHMENT.md in open-archaeo).,S1;S1;S3,checked
-P118,,chublets-addition,1,maintained by WikiProject,wikibase-item,P6104,,,,no,chublets pipeline,identity block,,Wikidata only. In a new Wikibase every item is a chublet by construction; keep the property only where items are mirrored into Wikidata.,S3;S4,checked
-P119,,crosswalked,1,name,monolingualtext,P2561,name,,S1,no,chublets pipeline,open-archaeo: name (416) / open-archaeo: name,,Label AND P2561 name statement (tracks renamed tools with dated qualifiers). See codemeta name.,S1;S1;S3,checked
-P120,,crosswalked,1,official website,url,P856,url,P856,S1,yes,WikiProject list;chublets pipeline,open-archaeo: website (121),,"Crosswalk cell reads ""wd:856"", a typo for P856.",S1;S1;S2;S3,checked
-P121,,chublets-addition,1,open-archaeo ID,external-id,,,,,,new,,,Dedicated identifier instead of P217+P195 (P6830 swMATH precedent). Formatter URL https://open-archaeo.info/post/$1/ . The minted 6-hex id is NOT a candidate: it is a function of the slug.,S3;S4,proposal
-P122,,crosswalked,1,part of,wikibase-item,P361,isPartOf,P361,S1,yes,WikiProject list;chublets pipeline,identity block,,Used for chublets.software and open-archaeo membership.,S1;S1;S2;S3;S4,checked
-P123,,crosswalked,1,programmed in,wikibase-item,P277,programmingLanguage,P277,S1,yes,WikiProject list;chublets pipeline,open-archaeo: platform where platform_role=language (301),,Needs a language item per value; vocabulary.json has them unresolved (null).,S1;S1;S2;S3;S4,checked
-P124,,chublets-addition,1,PyPI project,external-id,P5568,,,,no,chublets pipeline,open-archaeo: registry where registry_name=PyPI (1),,Package name parsed from the PyPI URL.,S3,checked
-P125,,crosswalked,1,source code repository URL,url,P1324,codeRepository,P1324,S1,yes,WikiProject list;chublets pipeline,open-archaeo: repository (390/416),,Qualifier P8423 is a required-qualifier constraint on Wikidata; add P1065+P2960 from internetarchive.,S1;S1;S2;S3;S4,checked
-P126,,chublets-addition,1,version control system,wikibase-item,P8423,,,,no,chublets pipeline,derived from repository_host (385 Git),,Required qualifier on P1324.,S3;S4,checked
-P127,,chublets-addition,1,Wikidata item,external-id,,,,,,new,,,Link from a chublets item to its Wikidata twin. Formatter URL https://www.wikidata.org/entity/$1. Alternative to a URL-valued exact match; decide once.,S3;S4,proposal
-P128,,codemeta-only,2,application sub category,string,,applicationSubCategory,,,,,open-archaeo: tags (416),P921,"Not mapped in the crosswalk; tags are subject terms, see keywords.",S1,checked
-P129,,codemeta-only,2,application suite,string,,applicationSuite,,,,,,P361,Reviewers: P361 covers it and more (partial).,S1,checked
-P130,,wikidata-only,2,based on,wikibase-item,P144,,,,yes,WikiProject list;workbook block,,,Fork/derivation relation.,S1;S2;S1,source-claimed
-P131,,crosswalked,2,contributor to the creative work or subject,wikibase-item,P767,contributor,P767,S1,no,,,,,S1;S1;S5,source-claimed
-P132,,codemeta-only,2,development status,string,,developmentStatus,,,,,,P548,"Candidate values: active, inactive, abandonware (Q281039). Could be derived from GitHub archived flag.",S1,checked
-P133,,crosswalked,2,download link,url,P4945,downloadUrl,P4945,S1,yes,WikiProject list,,,"Qualifier on software version identifier (P348), not an item-level statement.",S1;S1;S2;S4;S5,source-claimed
-P134,,crosswalked,2,funder,wikibase-item,P8324,funder,P859,S1,no,,,,Corrected to P8324 funder.,S1,source-claimed
-P135,,wikidata-only,2,GitHub username,external-id,P2037,,,,yes,WikiProject list,derived from forge URL owner (239 owners),,"Belongs on the developer item, not the software item.",S2;S3,source-claimed
-P136,,crosswalked,2,has part(s),wikibase-item,P527,hasPart,P527,S1,yes,WikiProject list,,,,S1;S1;S5,source-claimed
-P137,,crosswalked,2,inception,time,P571,dateCreated,P571,S1,yes,WikiProject list,,,open-archaeo has none; the archive date bounds it from above.,S1;S1;S2,source-claimed
-P138,,crosswalked,2,issue tracker URL,url,P1401,issueTracker,P1401,S1,yes,WikiProject list,,,,S1;S1;S2;S5,source-claimed
-P139,,crosswalked,2,last update,time,P5017,dateModified,P5017,S1,no,,,,,S1;S1;S6,source-claimed
-P140,,crosswalked,2,maintained by,wikibase-item,P126,maintainer,,S1,no,,,,Corrected to P126.,S1,source-claimed
-P141,,crosswalked,2,official demo URL,url,P11201,relatedLink,,S1,no,,"open-archaeo: blogpost, youtube (4)",,Two rows in the source: P973 and official demo URL (P11201).,S1,source-claimed
-P142,,crosswalked,2,operating system,wikibase-item,P306,operatingSystem,P306,S1,yes,WikiProject list,,,,S1;S1;S2,source-claimed
-P143,,crosswalked,2,platform,wikibase-item,P400,runtimePlatform,P400,S1,yes,WikiProject list,,,Reviewers: partial match; P400 broader than runtime platform.,S1;S1;S2,source-claimed
-P144,,crosswalked,2,publication date,time,P577,datePublished,P577,S1,yes,WikiProject list,,,Use as qualifier on software version identifier.,S1;S1;S2;S4,source-claimed
-P145,,wikidata-only,2,readable file format,wikibase-item,P1072,,,,yes,WikiProject list;workbook block,,,High value for archaeology tools; CodeMeta has no equivalent.,S1;S2;S1,source-claimed
-P146,,chublets-addition,2,series ordinal,string,P1545,,,,no,,open-archaeo: authors order,,Qualifier on developer; author order is meaningful.,S3,source-claimed
-P147,,chublets-addition,2,SoftWare Hash IDentifier (SWHID),external-id,P6138,,,,no,,,,Upstream open-archaeo lists Software Heritage as planned.,S4;S3,source-claimed
-P148,,crosswalked,2,software version identifier,string,P348,softwareVersion,P348,S1,yes,WikiProject list,,,"Version pattern: qualifiers P577, P4945, P356, P548; newest version gets preferred rank (S7).",S1;S1;S2;S4;S6,checked
-P149,,codemeta-only,2,supporting data,wikibase-item,,supportingData,,,,,,,Relevant for archaeology (tool-to-dataset link); no Wikidata equivalent in the crosswalk.,S1,checked
-P150,,codemeta-only,2,target product,wikibase-item,,targetProduct,,,,,open-archaeo: platform where platform_role=host application (34),P1547,"OPEN DECISION: open-archaeo maps host application (QGIS, Blender) to P1547 depends on software. CodeMeta targetProduct describes exactly this plugin-to-host relation. Pick one.",S1,checked
-P151,,crosswalked,2,user manual URL,url,P2078,softwareHelp,,S1,yes,WikiProject list,,,Corrected to P2078 in the crosswalk review (range differs). See softwareHelp.,S1;S1;S2,source-claimed
-P152,,codemeta-only,2,version,string,,version,,,,,,P348,"schema.org term next to softwareVersion; candidate only, not in the crosswalk.",S8,source-claimed
-P153,,wikidata-only,2,version type,wikibase-item,P548,,,,yes,WikiProject list,,,"Qualifier on P348; values Q151885, Q2804309, Q3295609, Q21683863.",S4;S7,source-claimed
-P154,,wikidata-only,2,writable file format,wikibase-item,P1073,,,,yes,WikiProject list;workbook block,,,As above.,S1;S2;S1,source-claimed
-P155,,codemeta-only,3,address,string,,address,,,,,,,Person items only.,S8,source-claimed
-P156,,codemeta-only,3,affiliation,wikibase-item,,affiliation,,,,,,P1416,"Candidate recalled, not in any source.",S8,source-claimed
-P157,,wikidata-only,3,archives at,wikibase-item,P485,,,,no,workbook block,,,"Archival holdings, not web archives.",S1,source-claimed
-P158,,codemeta-only,3,available on device,string,,availableOnDevice,,,,,,P400,Reviewers suggested P400; no use case.,S1,checked
-P159,,wikidata-only,3,award received,wikibase-item,P166,,,,no,workbook block,,,,S1,source-claimed
-P160,,wikidata-only,3,binding of software library,wikibase-item,P1372,,,,yes,WikiProject list,,,,S2,source-claimed
-P161,,codemeta-only,3,build instructions,url,,buildInstructions,,,,,,,CodeMeta-only.,S1,checked
-P162,,crosswalked,3,cites work,wikibase-item,P2860,citation,P2860,S1,no,,,,Direction differs: CodeMeta citation = what the software cites.,S1;S1;S5,source-claimed
-P163,,codemeta-only,3,code sample type,string,,codeSampleType,,,,,,,Not in CodeMeta proper; no chublets use case.,S1,checked
-P164,,wikidata-only,3,computes solution to,wikibase-item,P2159,,,,yes,WikiProject list,,,,S7,source-claimed
-P165,,codemeta-only,3,cont integration,url,,contIntegration,,,,,,,Replaced by continuousIntegration in v3; keep for v2 import.,S8,source-claimed
-P166,,codemeta-only,3,continuous integration,url,,continuousIntegration,,,,,,,CodeMeta-only.,S1,checked
-P167,,codemeta-only,3,copyright holder,wikibase-item,,copyrightHolder,,,,,,P123,CodeMeta-only.,S1,checked
-P168,,codemeta-only,3,copyright year,quantity,,copyrightYear,,,,,,,,S1,checked
-P169,,codemeta-only,3,countries not supported,string,,countriesNotSupported,,,,,,,,S1,checked
-P170,,codemeta-only,3,countries supported,string,,countriesSupported,,,,,,,,S1,checked
-P171,,wikidata-only,3,creator,wikibase-item,P170,,,,yes,WikiProject list,,,Prefer developer (P178) for software.,S2,source-claimed
-P172,,crosswalked,3,data size,quantity,P3575,fileSize,P3575,S1,no,,,,Version-specific; low value for discovery.,S1;S1;S5,source-claimed
-P173,,wikidata-only,3,distribution format,wikibase-item,P437,,,,yes,WikiProject list,,,,S7,source-claimed
-P174,,wikidata-only,3,distribution package ID P3112 (label to be filled),external-id,P3112,,,,yes,WikiProject list,,,,S7,pid-only
-P175,,wikidata-only,3,distribution package ID P3418 (label to be filled),external-id,P3418,,,,yes,WikiProject list,,,,S7,pid-only
-P176,,wikidata-only,3,distribution package ID P3442 (label to be filled),external-id,P3442,,,,yes,WikiProject list,,,,S7,pid-only
-P177,,wikidata-only,3,distribution package ID P3454 (label to be filled),external-id,P3454,,,,yes,WikiProject list,,,,S7,pid-only
-P178,,wikidata-only,3,distribution package ID P3463 (label to be filled),external-id,P3463,,,,yes,WikiProject list,,,,S7,pid-only
-P179,,wikidata-only,3,distribution package ID P3473 (label to be filled),external-id,P3473,,,,yes,WikiProject list,,,,S7,pid-only
-P180,,wikidata-only,3,distribution package ID P3499 (label to be filled),external-id,P3499,,,,yes,WikiProject list,,,,S7,pid-only
-P181,,wikidata-only,3,distribution package ID P3597 (label to be filled),external-id,P3597,,,,yes,WikiProject list,,,,S7,pid-only
-P182,,wikidata-only,3,edition or translation of,wikibase-item,P629,,,,yes,WikiProject list,,,,S2,source-claimed
-P183,,codemeta-only,3,editor,wikibase-item,,editor,P98,,,,,P98,Crosswalk review: corrected to no mapping (P98 is for editorial work).,S1,checked
-P184,,crosswalked,3,email address,url,P968,email,P968,S5,no,workbook block,,,"Personal data: create the property, do not populate in a public Wikibase. Personal data; do not store in a public Wikibase.",S1;S5;S1,source-claimed
-P185,,codemeta-only,3,embargo date,time,,embargoDate,,,,,,,,S1,checked
-P186,,codemeta-only,3,embargo end date,time,,embargoEndDate,,,,,,,,S1,checked
-P187,,codemeta-only,3,encoding,wikibase-item,,encoding,,,,,,P10,,S1,checked
-P188,,codemeta-only,3,end date,time,,endDate,,,,,,P582,Qualifier-like.,S8,source-claimed
-P189,,wikidata-only,3,end time,time,P582,,,,yes,WikiProject list,,,,S2;S7,source-claimed
-P190,,wikidata-only,3,facet of,wikibase-item,P1269,,,,yes,WikiProject list,,,,S2,source-claimed
-P191,,crosswalked,3,family name,wikibase-item,P734,familyName,P734,S5,no,workbook block,,,Person items only.,S1;S5;S1,source-claimed
-P192,,codemeta-only,3,feature list,string,,featureList,,,,,,,CodeMeta-only.,S1,checked
-P193,,wikidata-only,3,field of work,wikibase-item,P101,,,,no,workbook block,,,Person/organisation items.,S1,source-claimed
-P194,,crosswalked,3,file format,wikibase-item,P2701,encodingFormat;fileFormat,P2701,S1;S5,no,,,,"For tools prefer readable/writable file format (P1072/P1073). Superseded by encodingFormat in schema.org; codemeta.org crosswalk maps it to P2701, same as encodingFormat.",S1;S1;S5,source-claimed
-P195,,wikidata-only,3,followed by,wikibase-item,P156,,,,yes,WikiProject list,,,,S2,source-claimed
-P196,,wikidata-only,3,follows,wikibase-item,P155,,,,yes,WikiProject list,,,,S2,source-claimed
-P197,,wikidata-only,3,Framalibre ID,external-id,P4107,,,,yes,WikiProject list,,,,S7,source-claimed
-P198,,wikidata-only,3,Free Software Directory entry,external-id,P2537,,,,yes,WikiProject list,,,,S2,source-claimed
-P199,,codemeta-only,3,funding,string,,funding,,,,,,P8324,Text field; prefer funder statements.,S1,checked
-P200,,crosswalked,3,given name,wikibase-item,P735,givenName,P735,S5,no,workbook block,,,Person items only.,S1;S5;S1,source-claimed
-P201,,wikidata-only,3,GUI toolkit or framework,wikibase-item,P1414,,,,yes,WikiProject list,,,,S2,source-claimed
-P202,,wikidata-only,3,has characteristic,wikibase-item,P1552,,,,yes,WikiProject list,,,"Qualifier, e.g. mirror storage on repository statements.",S7,source-claimed
-P203,,codemeta-only,3,has source code,wikibase-item,,hasSourceCode,,,,,,P527,Only if source code and application are modelled as separate items.,S1,checked
-P204,,crosswalked,3,image,commonsMedia,P18,screenshot,,S1,no,,,,Corrected to P18 in the crosswalk review.,S1,source-claimed
-P205,,wikidata-only,3,influenced by,wikibase-item,P737,,,,yes,WikiProject list,,,,S2,source-claimed
-P206,,wikidata-only,3,input device,wikibase-item,P479,,,,yes,WikiProject list,,,,S2,source-claimed
-P207,,codemeta-only,3,install URL,url,,installUrl,,,,,,P4945,CodeMeta-only.,S1,checked
-P208,,wikidata-only,3,IRC channel URL,url,P1613,,,,yes,WikiProject list,,,,S2,source-claimed
-P209,,codemeta-only,3,is accessible for free,string,,isAccessibleForFree,,,,,,,Open source is implied by scope.,S1,checked
-P210,,codemeta-only,3,is source code of,wikibase-item,,isSourceCodeOf,,,,,,P361,Inverse of hasSourceCode.,S1,checked
-P211,,wikidata-only,3,logo image,commonsMedia,P154,,,,no,workbook block,,,chublets have a mascot and logo family.,S1,source-claimed
-P212,,wikidata-only,3,media type,string,P1163,,,,yes,WikiProject list,,,,S2,source-claimed
-P213,,wikidata-only,3,member of,wikibase-item,P463,,,,no,workbook block,,,Person/organisation items.,S1,source-claimed
-P214,,codemeta-only,3,memory requirements,string,,memoryRequirements,,,,,,,,S1,checked
-P215,,wikidata-only,3,notable work,wikibase-item,P800,,,,no,workbook block,,,,S1,source-claimed
-P216,,wikidata-only,3,official blog URL,url,P1581,,,,yes,WikiProject list,,,,S2,source-claimed
-P217,,wikidata-only,3,Open Hub ID,external-id,P1972,,,,yes,WikiProject list,,,,S2,source-claimed
-P218,,wikidata-only,3,output device,wikibase-item,P5196,,,,yes,WikiProject list,,,,S2,source-claimed
-P219,,wikidata-only,3,package management system,wikibase-item,P3033,,,,yes,WikiProject list,,,Alternative to registry-specific ID properties.,S2,source-claimed
-P220,,wikidata-only,3,part of the series,wikibase-item,P179,,,,yes,WikiProject list,,,,S2,source-claimed
-P221,,codemeta-only,3,permissions,string,,permissions,,,,,,,,S1,checked
-P222,,codemeta-only,3,person identifier,url,,identifier (Person),,,,,open-archaeo: derived from forge owner (P2037),P496;P2037,Person identifier such as ORCID or GitHub username.,S8,source-claimed
-P223,,wikidata-only,3,point in time,time,P585,,,,yes,WikiProject list,,,,S7,source-claimed
-P224,,wikidata-only,3,port,wikibase-item,P1641,,,,yes,WikiProject list,,,,S2,source-claimed
-P225,,codemeta-only,3,position,string,,position,,,,,open-archaeo: authors order,P1545,"Position in a list, e.g. author order; Wikidata uses series ordinal (P1545) as qualifier.",S8,source-claimed
-P226,,wikidata-only,3,price,quantity,P2284,,,,yes,WikiProject list,,,,S2,source-claimed
-P227,,codemeta-only,3,processor requirements,string,,processorRequirements,,,,,,,,S1,checked
-P228,,crosswalked,3,producer,wikibase-item,P162,producer,P162,S1,no,,,,,S1;S1;S5,source-claimed
-P229,,codemeta-only,3,provider,wikibase-item,,provider,,,,,,,,S1,checked
-P230,,crosswalked,3,publisher,wikibase-item,P123,publisher,P123,S1,no,,,,,S1;S1;S5,source-claimed
-P231,,codemeta-only,3,readme,url,,readme,,,,,,P973,CodeMeta-only.,S1,checked
-P232,,codemeta-only,3,release notes,string,,releaseNotes,,,,,,P973,No Wikidata property found in the sources.,S8,source-claimed
-P233,,codemeta-only,3,review,wikibase-item,,review,,,,,,,,S1,checked
-P234,,codemeta-only,3,review aspect,string,,reviewAspect,,,,,,,Only with the Review type.,S8,source-claimed
-P235,,codemeta-only,3,review body,string,,reviewBody,,,,,,,Only with the Review type.,S8,source-claimed
-P236,,codemeta-only,3,role name,string,,roleName,,,,,,,Qualifier-like term for author/contributor roles.,S8,source-claimed
-P237,,codemeta-only,3,software add on,wikibase-item,,softwareAddOn,,,,,,,Inverse of targetProduct; derive instead.,S1,checked
-P238,,wikidata-only,3,software engine,wikibase-item,P408,,,,yes,WikiProject list,,,,S2,source-claimed
-P239,,wikidata-only,3,software quality assurance,wikibase-item,P2992,,,,yes,WikiProject list,,,,S2,source-claimed
-P240,,codemeta-only,3,software suggestions,wikibase-item,,softwareSuggestions,,,,,,,,S1,checked
-P241,,wikidata-only,3,SourceForge project,external-id,P2209,,,,yes,WikiProject list,,,,S2,source-claimed
-P242,,crosswalked,3,sponsor,wikibase-item,P859,sponsor,,S1,no,,,,,S1;S1;S5,source-claimed
-P243,,codemeta-only,3,start date,time,,startDate,,,,,,P580,Qualifier-like.,S8,source-claimed
-P244,,wikidata-only,3,start time,time,P580,,,,yes,WikiProject list,,,,S7,source-claimed
-P245,,codemeta-only,3,storage requirements,string,,storageRequirements,,,,,,,,S1,checked
-P246,,wikidata-only,3,swMATH work ID,external-id,P6830,,,,yes,WikiProject list,,,,S2;S3,source-claimed
-P247,,wikidata-only,3,title,monolingualtext,P1476,,,,yes,WikiProject list,,,,S7;S6,source-claimed
-P248,,chublets-addition,3,web interface software,wikibase-item,P10627,,,,no,,repository_host,,Optional qualifier naming the forge (GitHub Q364).,S3;S6,source-claimed
+local_id,kernel,status,phase,wb_label,datatype,wikidata_pid,codemeta_terms,codemeta_org_pid,mapping_source,in_wikiproject_software,wikidata_origin,open_archaeo_source,candidate_wikidata_pids,note,provenance,confidence,datacite_elements
+P1,yes,chublets-addition,1,subclass of,wikibase-item,P279,,,,no,,class hierarchy,,chublet is a subclass of Little Minion (Q73899440); needed to build the class tree in the new Wikibase.,R,recalled,
+P2,yes,wikidata-only,1,instance of,wikibase-item,P31,,,,yes,WikiProject list;chublets pipeline,identity block,,Value Q141115627 (chublet) on every item; further values from open-archaeo category.,S3,checked,
+P4,yes,chublets-addition,0,equivalent Wikidata property,external-id,,,,,,new,,,Property metadata. Formatter URL https://www.wikidata.org/entity/$1 so each local property points at its Wikidata twin.,S3;S4,proposal,
+P7,yes,wikidata-only,1,retrieved,time,P813,,,,yes,WikiProject list,,,Reference qualifier for every harvested statement (provenance of the ingestion run).,S7,source-claimed,
+P100,,chublets-addition,0,close match Wikidata property,external-id,,,,,,new,,,Property metadata for CodeMeta-only properties: records a candidate Wikidata property without claiming equivalence (skos:closeMatch).,S3;S4,proposal,
+P101,,chublets-addition,0,equivalent CodeMeta term,string,,,,,,new,,,Property metadata. Formatter URL https://codemeta.github.io/terms/$1 ; stores the CodeMeta term name.,S3;S4,proposal,
+P102,,chublets-addition,0,equivalent schema.org term,string,,,,,,new,,,Property metadata. Needed for the RDF export (owl:equivalentProperty / schema:sameAs).,S3;S4,proposal,
+P103,,codemeta-only,1,application category,string,,applicationCategory,,,,,open-archaeo: category (416),P31,Not mapped in the crosswalk; MAPPING.md models it as a further P31 value (software library / application software / script file).,S1,checked,
+P104,,chublets-addition,1,archive date,time,P2960,,,,no,chublets pipeline,derived from internetarchive path (221/222),,Qualifier on P1324.,S3;S4,checked,
+P105,,chublets-addition,1,archive URL,url,P1065,,,,no,chublets pipeline,open-archaeo: internetarchive (222),,Qualifier on P1324.,S3;S4,checked,
+P106,,chublets-addition,1,collection,wikibase-item,P195,,,,no,chublets pipeline,identity block,,Pairs with P217; open-archaeo (Q141190255). Pipeline model.py (S3).,S3,checked,
+P107,,crosswalked,1,copyright license,wikibase-item,P275,license,P275,S1,yes,WikiProject list,none - open-archaeo records no licence,,Largest data gap; must come from repositories (GitHub SPDX).,S1;S1;S2;S3,source-claimed,"<rights rightsIdentifier="".....""> (A short, standardized version of the license name)"
+P108,,chublets-addition,1,CRAN project,external-id,P5565,,,,no,chublets pipeline,open-archaeo: registry where registry_name=CRAN (39),,Package name parsed from the CRAN URL.,S3,checked,
+P109,,crosswalked,1,depends on software,wikibase-item,P1547,softwareRequirements,P1547,S1,yes,WikiProject list;chublets pipeline,,,The dependency relation named in the paper draft as a discovery term.,S1;S1;S2;S3,checked,
+P110,,crosswalked,1,described at URL,url,P973,relatedLink,,S1,no,chublets pipeline,"open-archaeo: blogpost, youtube (4) / open-archaeo: blogpost, youtube",,Two rows in the source: P973 and official demo URL (P11201). See relatedLink.,S1;S1;S3,checked,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsSupplementTo"">"
+P111,,crosswalked,1,described by source,wikibase-item,P1343,referencePublication,P1343,S5,no,published crosswalk block,open-archaeo: publication (25),,Reviewers disagree (P2860 vs P1343); MAPPING.md chose P1343 so the article becomes an item keyed by DOI. See referencePublication.,S1;S1;S3;S9,checked,"<relatedItem relatedItemType=""JournalArticle"" relationType=""IsDocumentedBy"">"
+P112,,codemeta-only,1,description,string,,description,,,,,open-archaeo: description (416),(native Wikibase description field);P973;P1343,"Native Wikibase field, not a property. Wikidata style: short, lower case, no full stop; open-archaeo values are sentences and need rewriting.",S1,checked,"<description descriptionType=""....."">"
+P113,,crosswalked,1,developer,wikibase-item,P178,author,P50,S1,yes,WikiProject list,open-archaeo: authors (416),,Crosswalk review corrected P50 author to P178 developer. 187 author strings need person/organisation items (S3).,S1;S1;S2;S3,source-claimed,creator
+P114,,crosswalked,1,DOI,external-id,P356,identifier,,S1,yes,WikiProject list;chublets pipeline,open-archaeo: doi (34),,Corrected to P356. Zenodo (10.5281) DOIs are release DOIs: qualifier on software version identifier.,S1;S1;S2;S3,checked,identifier
+P115,,crosswalked,1,exact match,url,P2888,sameAs,P2888,S1,no,chublets pipeline,open-archaeo: url (416),,Entry URL as P2888; in a new Wikibase also the link to the Wikidata item.,S1;S1;S3;S4,checked,"<relatedItem relationType=""IsIdenticalTo""> <relatedItemIdentifier relatedItemIdentifierType=""URL"">"
+P116,,chublets-addition,1,inventory number,string,P217,,,,no,chublets pipeline,open-archaeo: slug (416),,"Holds the slug, qualified by P195. A dedicated ""open-archaeo ID"" (P6830 swMATH precedent) is preferred in a new Wikibase.",S3,checked,
+P117,,crosswalked,1,main subject,wikibase-item,P921,keywords,P921,S1,no,chublets pipeline,open-archaeo: tags (416),,56 tags need reconciliation; 6 of them are not subjects (docs/ENRICHMENT.md in open-archaeo).,S1;S1;S3,checked,subject
+P118,,chublets-addition,1,maintained by WikiProject,wikibase-item,P6104,,,,no,chublets pipeline,identity block,,Wikidata only. In a new Wikibase every item is a chublet by construction; keep the property only where items are mirrored into Wikidata.,S3;S4,checked,
+P119,,crosswalked,1,name,monolingualtext,P2561,name,,S1,no,chublets pipeline,open-archaeo: name (416) / open-archaeo: name,,Label AND P2561 name statement (tracks renamed tools with dated qualifiers). See codemeta name.,S1;S1;S3,checked,title
+P120,,crosswalked,1,official website,url,P856,url,P856,S1,yes,WikiProject list;chublets pipeline,open-archaeo: website (121),,"Crosswalk cell reads ""wd:856"", a typo for P856.",S1;S1;S2;S3,checked,"<relatedItem relationType=""IsIdenticalTo""> <relatedItemIdentifier relatedItemIdentifierType=""URL"">"
+P121,,chublets-addition,1,open-archaeo ID,external-id,,,,,,new,,,Dedicated identifier instead of P217+P195 (P6830 swMATH precedent). Formatter URL https://open-archaeo.info/post/$1/ . The minted 6-hex id is NOT a candidate: it is a function of the slug.,S3;S4,proposal,
+P122,,crosswalked,1,part of,wikibase-item,P361,isPartOf,P361,S1,yes,WikiProject list;chublets pipeline,identity block,,Used for chublets.software and open-archaeo membership.,S1;S1;S2;S3;S4,checked,"<relatedItem relationType=""IsPartOf"">"
+P123,,crosswalked,1,programmed in,wikibase-item,P277,programmingLanguage,P277,S1,yes,WikiProject list;chublets pipeline,open-archaeo: platform where platform_role=language (301),,Needs a language item per value; vocabulary.json has them unresolved (null).,S1;S1;S2;S3;S4,checked,
+P124,,chublets-addition,1,PyPI project,external-id,P5568,,,,no,chublets pipeline,open-archaeo: registry where registry_name=PyPI (1),,Package name parsed from the PyPI URL.,S3,checked,
+P125,,crosswalked,1,source code repository URL,url,P1324,codeRepository,P1324,S1,yes,WikiProject list;chublets pipeline,open-archaeo: repository (390/416),,Qualifier P8423 is a required-qualifier constraint on Wikidata; add P1065+P2960 from internetarchive.,S1;S1;S2;S3;S4,checked,
+P126,,chublets-addition,1,version control system,wikibase-item,P8423,,,,no,chublets pipeline,derived from repository_host (385 Git),,Required qualifier on P1324.,S3;S4,checked,
+P127,,chublets-addition,1,Wikidata item,external-id,,,,,,new,,,Link from a chublets item to its Wikidata twin. Formatter URL https://www.wikidata.org/entity/$1. Alternative to a URL-valued exact match; decide once.,S3;S4,proposal,
+P128,,codemeta-only,2,application sub category,string,,applicationSubCategory,,,,,open-archaeo: tags (416),P921,"Not mapped in the crosswalk; tags are subject terms, see keywords.",S1,checked,
+P129,,codemeta-only,2,application suite,string,,applicationSuite,,,,,,P361,Reviewers: P361 covers it and more (partial).,S1,checked,
+P130,,wikidata-only,2,based on,wikibase-item,P144,,,,yes,WikiProject list;published crosswalk block,,,Fork/derivation relation.,S1;S2;S9,source-claimed,
+P131,,crosswalked,2,contributor to the creative work or subject,wikibase-item,P767,contributor,P767,S1,no,,,,,S1;S1;S5,source-claimed,"<contributor contributorType=""Contributor"">"
+P132,,codemeta-only,2,development status,string,,developmentStatus,,,,,,P548,"Candidate values: active, inactive, abandonware (Q281039). Could be derived from GitHub archived flag.",S1,checked,
+P133,,crosswalked,2,download link,url,P4945,downloadUrl,P4945,S1,yes,WikiProject list,,,"Qualifier on software version identifier (P348), not an item-level statement.",S1;S1;S2;S4;S5,source-claimed,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsIdenticalTo"">"
+P134,,crosswalked,2,funder,wikibase-item,P8324,funder,P859,S1,no,,,,Corrected to P8324 funder.,S1,source-claimed,<fundingReference> <funderName> .... </funderName>
+P135,,wikidata-only,2,GitHub username,external-id,P2037,,,,yes,WikiProject list,derived from forge URL owner (239 owners),,"Belongs on the developer item, not the software item.",S2;S3,source-claimed,
+P136,,crosswalked,2,has part(s),wikibase-item,P527,hasPart,P527,S1,yes,WikiProject list,,,,S1;S1;S5,source-claimed,"<relatedItem relationType=""HasPart"">"
+P137,,crosswalked,2,inception,time,P571,dateCreated,P571,S1,yes,WikiProject list,,,open-archaeo has none; the archive date bounds it from above.,S1;S1;S2,source-claimed,"<date dateType=""Created"">"
+P138,,crosswalked,2,issue tracker URL,url,P1401,issueTracker,P1401,S1,yes,WikiProject list,,,,S1;S1;S2;S5,source-claimed,
+P139,,crosswalked,2,last update,time,P5017,dateModified,P5017,S1,no,,,,,S1;S1;S6,source-claimed,"<date dateType=""Updated"">"
+P140,,crosswalked,2,maintained by,wikibase-item,P126,maintainer,,S1,no,,,,Corrected to P126.,S1,source-claimed,"<contributor contributorType=""ContactPerson"">"
+P141,,crosswalked,2,official demo URL,url,P11201,relatedLink,,S1,no,,"open-archaeo: blogpost, youtube (4)",,Two rows in the source: P973 and official demo URL (P11201).,S1,source-claimed,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsSupplementTo"">"
+P142,,crosswalked,2,operating system,wikibase-item,P306,operatingSystem,P306,S1,yes,WikiProject list,,,,S1;S1;S2,source-claimed,
+P143,,crosswalked,2,platform,wikibase-item,P400,runtimePlatform,P400,S1,yes,WikiProject list,,,Reviewers: partial match; P400 broader than runtime platform.,S1;S1;S2,source-claimed,
+P144,,crosswalked,2,publication date,time,P577,datePublished,P577,S1,yes,WikiProject list,,,Use as qualifier on software version identifier.,S1;S1;S2;S4,source-claimed,"<date dateType=""Issued""> / PublicationYear"
+P145,,wikidata-only,2,readable file format,wikibase-item,P1072,,,,yes,WikiProject list;published crosswalk block,,,High value for archaeology tools; CodeMeta has no equivalent.,S1;S2;S9,source-claimed,
+P146,,chublets-addition,2,series ordinal,string,P1545,,,,no,,open-archaeo: authors order,,Qualifier on developer; author order is meaningful.,S3,source-claimed,
+P147,,chublets-addition,2,SoftWare Hash IDentifier (SWHID),external-id,P6138,,,,no,,,,Upstream open-archaeo lists Software Heritage as planned.,S4;S3,source-claimed,
+P148,,crosswalked,2,software version identifier,string,P348,softwareVersion,P348,S1,yes,WikiProject list,,,"Version pattern: qualifiers P577, P4945, P356, P548; newest version gets preferred rank (S7).",S1;S1;S2;S4;S6,checked,version
+P149,,codemeta-only,2,supporting data,wikibase-item,,supportingData,,,,,,,Relevant for archaeology (tool-to-dataset link); no Wikidata equivalent in the crosswalk.,S1,checked,
+P150,,codemeta-only,2,target product,wikibase-item,,targetProduct,,,,,open-archaeo: platform where platform_role=host application (34),P1547,"OPEN DECISION: open-archaeo maps host application (QGIS, Blender) to P1547 depends on software. CodeMeta targetProduct describes exactly this plugin-to-host relation. Pick one.",S1,checked,
+P151,,crosswalked,2,user manual URL,url,P2078,softwareHelp,,S1,yes,WikiProject list,,,Corrected to P2078 in the crosswalk review (range differs). See softwareHelp.,S1;S1;S2,source-claimed,
+P152,,codemeta-only,2,version,string,,version,,,,,,P348,"schema.org term next to softwareVersion; candidate only, not in the crosswalk.",S8,source-claimed,
+P153,,wikidata-only,2,version type,wikibase-item,P548,,,,yes,WikiProject list,,,"Qualifier on P348; values Q151885, Q2804309, Q3295609, Q21683863.",S4;S7,source-claimed,
+P154,,wikidata-only,2,writable file format,wikibase-item,P1073,,,,yes,WikiProject list;published crosswalk block,,,As above.,S1;S2;S9,source-claimed,
+P155,,codemeta-only,3,address,string,,address,,,,,,,Person items only.,S8,source-claimed,
+P156,,codemeta-only,3,affiliation,wikibase-item,,affiliation,,,,,,P1416,"Candidate recalled, not in any source.",S8,source-claimed,
+P157,,wikidata-only,3,archives at,wikibase-item,P485,,,,no,published crosswalk block,,,"Archival holdings, not web archives.",S9;S1,source-claimed,
+P158,,codemeta-only,3,available on device,string,,availableOnDevice,,,,,,P400,Reviewers suggested P400; no use case.,S1,checked,
+P159,,wikidata-only,3,award received,wikibase-item,P166,,,,no,published crosswalk block,,,,S9;S1,source-claimed,
+P160,,wikidata-only,3,binding of software library,wikibase-item,P1372,,,,yes,WikiProject list,,,,S2,source-claimed,
+P161,,codemeta-only,3,build instructions,url,,buildInstructions,,,,,,,CodeMeta-only.,S1,checked,
+P162,,crosswalked,3,cites work,wikibase-item,P2860,citation,P2860,S1,no,,,,Direction differs: CodeMeta citation = what the software cites.,S1;S1;S5,source-claimed,"<relatedItem relatedItemType=""JournalArticle"" relationType=""Cites"">"
+P163,,codemeta-only,3,code sample type,string,,codeSampleType,,,,,,,Not in CodeMeta proper; no chublets use case.,S1,checked,
+P164,,wikidata-only,3,computes solution to,wikibase-item,P2159,,,,yes,WikiProject list,,,,S7,source-claimed,
+P165,,codemeta-only,3,cont integration,url,,contIntegration,,,,,,,Replaced by continuousIntegration in v3; keep for v2 import.,S8,source-claimed,
+P166,,codemeta-only,3,continuous integration,url,,continuousIntegration,,,,,,,CodeMeta-only.,S1,checked,
+P167,,codemeta-only,3,copyright holder,wikibase-item,,copyrightHolder,,,,,,P123,CodeMeta-only.,S1,checked,"<contributor contributorType=""RightsHolder"">"
+P168,,codemeta-only,3,copyright year,quantity,,copyrightYear,,,,,,,,S1,checked,"<date dateType=""Copyrighted"">"
+P169,,codemeta-only,3,countries not supported,string,,countriesNotSupported,,,,,,,,S1,checked,
+P170,,codemeta-only,3,countries supported,string,,countriesSupported,,,,,,,,S1,checked,
+P171,,wikidata-only,3,creator,wikibase-item,P170,,,,yes,WikiProject list,,,Prefer developer (P178) for software.,S2,source-claimed,
+P172,,crosswalked,3,data size,quantity,P3575,fileSize,P3575,S1,no,,,,Version-specific; low value for discovery.,S1;S1;S5,source-claimed,size
+P173,,wikidata-only,3,distribution format,wikibase-item,P437,,,,yes,WikiProject list,,,,S7,source-claimed,
+P174,,wikidata-only,3,distribution package ID P3112 (label to be filled),external-id,P3112,,,,yes,WikiProject list,,,,S7,pid-only,
+P175,,wikidata-only,3,distribution package ID P3418 (label to be filled),external-id,P3418,,,,yes,WikiProject list,,,,S7,pid-only,
+P176,,wikidata-only,3,distribution package ID P3442 (label to be filled),external-id,P3442,,,,yes,WikiProject list,,,,S7,pid-only,
+P177,,wikidata-only,3,distribution package ID P3454 (label to be filled),external-id,P3454,,,,yes,WikiProject list,,,,S7,pid-only,
+P178,,wikidata-only,3,distribution package ID P3463 (label to be filled),external-id,P3463,,,,yes,WikiProject list,,,,S7,pid-only,
+P179,,wikidata-only,3,distribution package ID P3473 (label to be filled),external-id,P3473,,,,yes,WikiProject list,,,,S7,pid-only,
+P180,,wikidata-only,3,distribution package ID P3499 (label to be filled),external-id,P3499,,,,yes,WikiProject list,,,,S7,pid-only,
+P181,,wikidata-only,3,distribution package ID P3597 (label to be filled),external-id,P3597,,,,yes,WikiProject list,,,,S7,pid-only,
+P182,,wikidata-only,3,edition or translation of,wikibase-item,P629,,,,yes,WikiProject list,,,,S2,source-claimed,
+P183,,codemeta-only,3,editor,wikibase-item,,editor,P98,,,,,P98,Crosswalk review: corrected to no mapping (P98 is for editorial work).,S1,checked,"<contributor contributorType=""Editor"">"
+P184,,crosswalked,3,email address,url,P968,email,P968,S5,no,,,,"Personal data: create the property, do not populate in a public Wikibase. Personal data; do not store in a public Wikibase.",S1;S5,source-claimed,
+P185,,codemeta-only,3,embargo date,time,,embargoDate,,,,,,,,S1,checked,"<date dateType=""Accepted"">"
+P186,,codemeta-only,3,embargo end date,time,,embargoEndDate,,,,,,,,S1,checked,"<date dateType=""Available"">"
+P187,,codemeta-only,3,encoding,wikibase-item,,encoding,,,,,,P10,,S1,checked,
+P188,,codemeta-only,3,end date,time,,endDate,,,,,,P582,Qualifier-like.,S8,source-claimed,
+P189,,wikidata-only,3,end time,time,P582,,,,yes,WikiProject list,,,,S2;S7,source-claimed,
+P190,,wikidata-only,3,facet of,wikibase-item,P1269,,,,yes,WikiProject list,,,,S2,source-claimed,
+P191,,crosswalked,3,family name,wikibase-item,P734,familyName,P734,S5,no,,,,Person items only.,S1;S5,source-claimed,
+P192,,codemeta-only,3,feature list,string,,featureList,,,,,,,CodeMeta-only.,S1,checked,
+P193,,wikidata-only,3,field of work,wikibase-item,P101,,,,no,published crosswalk block,,,Person/organisation items.,S9;S1,source-claimed,
+P194,,crosswalked,3,file format,wikibase-item,P2701,encodingFormat;fileFormat,P2701,S1;S5,no,,,,"For tools prefer readable/writable file format (P1072/P1073). Superseded by encodingFormat in schema.org; codemeta.org crosswalk maps it to P2701, same as encodingFormat.",S1;S1;S5,source-claimed,format
+P195,,wikidata-only,3,followed by,wikibase-item,P156,,,,yes,WikiProject list,,,,S2,source-claimed,
+P196,,wikidata-only,3,follows,wikibase-item,P155,,,,yes,WikiProject list,,,,S2,source-claimed,
+P197,,wikidata-only,3,Framalibre ID,external-id,P4107,,,,yes,WikiProject list,,,,S7,source-claimed,
+P198,,wikidata-only,3,Free Software Directory entry,external-id,P2537,,,,yes,WikiProject list,,,,S2,source-claimed,
+P199,,codemeta-only,3,funding,string,,funding,,,,,,P8324,Text field; prefer funder statements.,S1,checked,<fundingReference>
+P200,,crosswalked,3,given name,wikibase-item,P735,givenName,P735,S5,no,,,,Person items only.,S1;S5,source-claimed,
+P201,,wikidata-only,3,GUI toolkit or framework,wikibase-item,P1414,,,,yes,WikiProject list,,,,S2,source-claimed,
+P202,,wikidata-only,3,has characteristic,wikibase-item,P1552,,,,yes,WikiProject list,,,"Qualifier, e.g. mirror storage on repository statements.",S7,source-claimed,
+P203,,codemeta-only,3,has source code,wikibase-item,,hasSourceCode,,,,,,P527,Only if source code and application are modelled as separate items.,S1,checked,
+P204,,crosswalked,3,image,commonsMedia,P18,screenshot,,S1,no,,,,Corrected to P18 in the crosswalk review.,S1,source-claimed,
+P205,,wikidata-only,3,influenced by,wikibase-item,P737,,,,yes,WikiProject list,,,,S2,source-claimed,
+P206,,wikidata-only,3,input device,wikibase-item,P479,,,,yes,WikiProject list,,,,S2,source-claimed,
+P207,,codemeta-only,3,install URL,url,,installUrl,,,,,,P4945,CodeMeta-only.,S1,checked,
+P208,,wikidata-only,3,IRC channel URL,url,P1613,,,,yes,WikiProject list,,,,S2,source-claimed,
+P209,,codemeta-only,3,is accessible for free,string,,isAccessibleForFree,,,,,,,Open source is implied by scope.,S1,checked,
+P210,,codemeta-only,3,is source code of,wikibase-item,,isSourceCodeOf,,,,,,P361,Inverse of hasSourceCode.,S1,checked,
+P211,,wikidata-only,3,logo image,commonsMedia,P154,,,,no,published crosswalk block,,,chublets have a mascot and logo family.,S9;S1,source-claimed,
+P212,,wikidata-only,3,media type,string,P1163,,,,yes,WikiProject list,,,,S2,source-claimed,
+P213,,wikidata-only,3,member of,wikibase-item,P463,,,,no,published crosswalk block,,,Person/organisation items.,S9;S1,source-claimed,
+P214,,codemeta-only,3,memory requirements,string,,memoryRequirements,,,,,,,,S1,checked,
+P215,,wikidata-only,3,notable work,wikibase-item,P800,,,,no,published crosswalk block,,,,S9;S1,source-claimed,
+P216,,wikidata-only,3,official blog URL,url,P1581,,,,yes,WikiProject list,,,,S2,source-claimed,
+P217,,wikidata-only,3,Open Hub ID,external-id,P1972,,,,yes,WikiProject list,,,,S2,source-claimed,
+P218,,wikidata-only,3,output device,wikibase-item,P5196,,,,yes,WikiProject list,,,,S2,source-claimed,
+P219,,wikidata-only,3,package management system,wikibase-item,P3033,,,,yes,WikiProject list,,,Alternative to registry-specific ID properties.,S2,source-claimed,
+P220,,wikidata-only,3,part of the series,wikibase-item,P179,,,,yes,WikiProject list,,,,S2,source-claimed,
+P221,,codemeta-only,3,permissions,string,,permissions,,,,,,,,S1,checked,
+P222,,codemeta-only,3,person identifier,url,,identifier (Person),,,,,open-archaeo: derived from forge owner (P2037),P496;P2037,Person identifier such as ORCID or GitHub username.,S8,source-claimed,
+P223,,wikidata-only,3,point in time,time,P585,,,,yes,WikiProject list,,,,S7,source-claimed,
+P224,,wikidata-only,3,port,wikibase-item,P1641,,,,yes,WikiProject list,,,,S2,source-claimed,
+P225,,codemeta-only,3,position,string,,position,,,,,open-archaeo: authors order,P1545,"Position in a list, e.g. author order; Wikidata uses series ordinal (P1545) as qualifier.",S8,source-claimed,
+P226,,wikidata-only,3,price,quantity,P2284,,,,yes,WikiProject list,,,,S2,source-claimed,
+P227,,codemeta-only,3,processor requirements,string,,processorRequirements,,,,,,,,S1,checked,
+P228,,crosswalked,3,producer,wikibase-item,P162,producer,P162,S1,no,,,,,S1;S1;S5,source-claimed,"<contributor contributorType=""Producer"">"
+P229,,codemeta-only,3,provider,wikibase-item,,provider,,,,,,,,S1,checked,"<contributor contributorType=""HostingInstitution"">"
+P230,,crosswalked,3,publisher,wikibase-item,P123,publisher,P123,S1,no,,,,,S1;S1;S5,source-claimed,publisher
+P231,,codemeta-only,3,readme,url,,readme,,,,,,P973,CodeMeta-only.,S1,checked,
+P232,,codemeta-only,3,release notes,string,,releaseNotes,,,,,,P973,No Wikidata property found in the sources.,S9,checked,
+P233,,codemeta-only,3,review,wikibase-item,,review,,,,,,,,S1,checked,
+P234,,codemeta-only,3,review aspect,string,,reviewAspect,,,,,,,Only with the Review type.,S8,source-claimed,
+P235,,codemeta-only,3,review body,string,,reviewBody,,,,,,,Only with the Review type.,S8,source-claimed,
+P236,,codemeta-only,3,role name,string,,roleName,,,,,,,Qualifier-like term for author/contributor roles.,S8,source-claimed,
+P237,,codemeta-only,3,software add on,wikibase-item,,softwareAddOn,,,,,,,Inverse of targetProduct; derive instead.,S1,checked,
+P238,,wikidata-only,3,software engine,wikibase-item,P408,,,,yes,WikiProject list,,,,S2,source-claimed,
+P239,,wikidata-only,3,software quality assurance,wikibase-item,P2992,,,,yes,WikiProject list,,,,S2,source-claimed,
+P240,,codemeta-only,3,software suggestions,wikibase-item,,softwareSuggestions,,,,,,,,S1,checked,
+P241,,wikidata-only,3,SourceForge project,external-id,P2209,,,,yes,WikiProject list,,,,S2,source-claimed,
+P242,,crosswalked,3,sponsor,wikibase-item,P859,sponsor,,S1,no,,,,,S1;S1;S5,source-claimed,"<contributor contributorType=""Sponsor"">"
+P243,,codemeta-only,3,start date,time,,startDate,,,,,,P580,Qualifier-like.,S8,source-claimed,
+P244,,wikidata-only,3,start time,time,P580,,,,yes,WikiProject list,,,,S7,source-claimed,
+P245,,codemeta-only,3,storage requirements,string,,storageRequirements,,,,,,,,S1,checked,
+P246,,wikidata-only,3,swMATH work ID,external-id,P6830,,,,yes,WikiProject list,,,,S2;S3,source-claimed,
+P247,,wikidata-only,3,title,monolingualtext,P1476,,,,yes,WikiProject list,,,,S7;S6,source-claimed,
+P248,,chublets-addition,3,web interface software,wikibase-item,P10627,,,,no,,repository_host,,Optional qualifier naming the forge (GitHub Q364).,S3;S6,source-claimed,

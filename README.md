@@ -55,7 +55,7 @@ commit `data/`, `docs/` and `dist/` together.
 
 ## Where the model came from
 
-`tools/import_pack.py` made the tables once from the unzipped Starter Pack:
+`tools/import_pack.py` made the tables once from the unzipped Starter Pack (v1.1, which adds the published ConnOSS crosswalk as source `S9`; the model is the same as in v1.0, only `background/` changed):
 
 ```cmd
 python tools/import_pack.py C:\git\chublets-wikibase-starter-pack
@@ -85,5 +85,13 @@ required to be clean after each run, and, on `main`, publishes `docs/` to GitHub
 The data of this repository (the tables in `data/csv/`, the pages, the RDF export) is under
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (decided 2026-10-21; Wikidata data is CC0 as well). The footer of
 the pages and `cc:license` in the RDF say so. **Not covered:** the logo (`assets/logo.png`, the chublets raven), which keeps its own
-terms (the chublets-visuals are MIT). **Open:** whether the CodeMeta crosswalk the mapping builds on, which is CC BY, asks for an
-attribution (`background/sources.csv` names it; the Starter Pack lists the question, `background/starter-pack-open-points.md`, point 7).
+terms (the chublets-visuals are MIT).
+
+## Attribution
+
+The mapping of the properties to CodeMeta terms and to Wikidata builds on the published crosswalks of research software
+metadata schemas to CodeMeta: *Crosswalks of Research Software Metadata Schemas to CodeMeta* (ConnOSS), v1.2.0, licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), <https://doi.org/10.5281/zenodo.21935688>. Please cite it when you reuse
+the mapping (`background/sources.csv`, code `S9`). The CodeMeta terms themselves come from <https://codemeta.github.io/terms/>,
+the Wikidata columns also from the CodeMeta crosswalk for Wikidata (<https://codemeta.github.io/crosswalk/wikidata/>).
+The crosswalk files themselves are not part of this repository; the Starter Pack carries them in `sources/connoss/`.

@@ -191,5 +191,29 @@ class Export(unittest.TestCase):
         self.assertEqual(rdf.build(stripped, rdf.Namespaces(BASE)).bridge, set())
 
 
+class Attribution(unittest.TestCase):
+    """The CC-BY crosswalk the mapping builds on is credited with its DOI (2026-10-21)."""
+
+    DOI = "https://doi.org/10.5281/zenodo.21935688"
+
+    def test_the_source_table_names_the_crosswalk_with_its_doi(self) -> None:
+        with (ROOT / "background" / "sources.csv").open(encoding="utf-8", newline="") as handle:
+            rows = {r["code"]: r for r in csv.DictReader(handle)}
+        self.assertIn("S9", rows)
+        self.assertIn(self.DOI, rows["S9"]["origin"])
+
+    def test_the_readme_credits_it_and_the_licence_section_no_longer_asks(self) -> None:
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("## Attribution", text)
+        self.assertIn(self.DOI, text)
+        self.assertNotIn("**Open:** whether the CodeMeta crosswalk", text)
+
+    def test_every_source_code_used_in_the_property_set_is_defined(self) -> None:
+        with (ROOT / "background" / "sources.csv").open(encoding="utf-8", newline="") as handle:
+            codes = {r["code"] for r in csv.DictReader(handle)}
+        used = {c for row in background() for c in row["provenance"].split(";") if c}
+        self.assertLessEqual(used, codes)
+
+
 if __name__ == "__main__":
     unittest.main()
