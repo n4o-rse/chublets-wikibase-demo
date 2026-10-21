@@ -1,5 +1,5 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.6.2; data as of unknown
+# Generated with wikibase-static 0.6.3; data as of unknown
 # Licence: licence not yet decided
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -236,7 +236,8 @@ cat:wikibase-ontology
     dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
     dcterms:title "chublets.software Wikibase (model demo)" ;
     dcat:dataset cat:export,
-        cat:wikibase-ontology .
+        cat:wikibase-ontology ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/> .
 
 data:P1
     a schema:Dataset,
