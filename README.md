@@ -82,6 +82,8 @@ required to be clean after each run, and, on `main`, publishes `docs/` to GitHub
 
 ## Licence
 
-Not decided yet. The footer of the pages says so. The Starter Pack lists the question (`background/starter-pack-open-points.md`,
-point 7): Wikidata data is CC0, the CodeMeta crosswalk it builds on is CC BY, the chublets-visuals are MIT. Until this is
-settled, do not reuse the files outside this repository.
+The data of this repository (the tables in `data/csv/`, the pages, the RDF export) is under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (decided 2026-10-21; Wikidata data is CC0 as well). The footer of
+the pages and `cc:license` in the RDF say so. **Not covered:** the logo (`assets/logo.png`, the chublets raven), which keeps its own
+terms (the chublets-visuals are MIT). **Open:** whether the CodeMeta crosswalk the mapping builds on, which is CC BY, asks for an
+attribution (`background/sources.csv` names it; the Starter Pack lists the question, `background/starter-pack-open-points.md`, point 7).

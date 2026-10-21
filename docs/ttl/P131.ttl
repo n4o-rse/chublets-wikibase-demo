@@ -1,6 +1,6 @@
 # P131: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,10 +34,10 @@
 data:P131
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P131" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P131 ;
     dcterms:title "contributor to the creative work or subject"@en ;
     schema:about wd:P131 ;
@@ -49,7 +49,7 @@ data:P131
 dist:P131-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P131, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P131.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -57,7 +57,7 @@ dist:P131-html
 dist:P131-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P131, as archived from the Wikibase API"@en ;
     dcat:byteSize "1999"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P131.json> ;
@@ -66,7 +66,7 @@ dist:P131-json
 dist:P131-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P131, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P131.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .

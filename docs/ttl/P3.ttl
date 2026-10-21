@@ -1,6 +1,6 @@
 # P3: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:P3
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Diese Eigenschaft ist eine speziellere Form der Wert-Eigenschaft."@de,
         "This property is a more specific form of the value property."@en ;
     dcterms:identifier "P3" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P3 ;
     dcterms:title "Untereigenschaft von"@de,
         "subproperty of"@en ;
@@ -52,7 +52,7 @@ data:P3
 dist:P3-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P3, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P3.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,16 +60,16 @@ dist:P3-html
 dist:P3-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P3, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2011"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2382"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P3.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 dist:P3-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P3, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P3.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
@@ -82,7 +82,7 @@ wd:P3
         "subproperty of"@en ;
     wikibase:claim p:P3 ;
     wikibase:directClaim wdt:P3 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P3 ;
     wikibase:propertyType wikibase:WikibaseProperty ;
     wikibase:qualifier pq:P3 ;
@@ -91,15 +91,17 @@ wd:P3
     wikibase:referenceValue prv:P3 ;
     wikibase:statementProperty ps:P3 ;
     wikibase:statementValue psv:P3 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "Untereigenschaft von"@de,
         "subproperty of"@en ;
     skos:prefLabel "Untereigenschaft von"@de,
         "subproperty of"@en ;
     p:P2 wds:P3-5A6138E4-484C-5C51-8C29-C6A557C6A3D7 ;
+    p:P4 wds:P3-949CEE44-14A7-5DF1-9795-9B6B81325FCB ;
     p:P9 wds:P3-889E44D1-E86B-526C-A5D5-55A22F6B73B6 ;
     p:P10 wds:P3-4E5583BF-13C9-5114-B952-B18FB12B49E0 ;
     wdt:P2 wd:Q2 ;
+    wdt:P4 "P1647" ;
     wdt:P9 wd:Q2 ;
     wdt:P10 wd:Q2 .
 
@@ -120,6 +122,12 @@ wds:P3-889E44D1-E86B-526C-A5D5-55A22F6B73B6
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P9 wd:Q2 .
+
+wds:P3-949CEE44-14A7-5DF1-9795-9B6B81325FCB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P4 "P1647" .
 
 p:P3
     a owl:ObjectProperty .

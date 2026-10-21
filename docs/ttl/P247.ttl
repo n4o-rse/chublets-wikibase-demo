@@ -1,6 +1,6 @@
 # P247: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,10 +34,10 @@
 data:P247
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P247" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P247 ;
     dcterms:title "title"@en ;
     schema:about wd:P247 ;
@@ -49,7 +49,7 @@ data:P247
 dist:P247-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P247, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P247.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -57,7 +57,7 @@ dist:P247-html
 dist:P247-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P247, as archived from the Wikibase API"@en ;
     dcat:byteSize "1587"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P247.json> ;
@@ -66,7 +66,7 @@ dist:P247-json
 dist:P247-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P247, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P247.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .

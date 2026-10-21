@@ -1,6 +1,6 @@
 # P5: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:P5
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "URL pattern of an identifier property; $1 stands for the identifier."@en,
         "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de ;
     dcterms:identifier "P5" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P5 ;
     dcterms:title "URL-Muster"@de,
         "formatter URL"@en ;
@@ -52,7 +52,7 @@ data:P5
 dist:P5-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P5, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P5.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,16 +60,16 @@ dist:P5-html
 dist:P5-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P5, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1521"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1892"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P5.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 dist:P5-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P5, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P5.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
@@ -82,7 +82,7 @@ wd:P5
         "formatter URL"@en ;
     wikibase:claim p:P5 ;
     wikibase:directClaim wdt:P5 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P5 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P5 ;
@@ -91,14 +91,16 @@ wd:P5
     wikibase:referenceValue prv:P5 ;
     wikibase:statementProperty ps:P5 ;
     wikibase:statementValue psv:P5 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "URL-Muster"@de,
         "formatter URL"@en ;
     skos:prefLabel "URL-Muster"@de,
         "formatter URL"@en ;
     p:P2 wds:P5-0B9AB20B-F952-5FA1-AD11-7807F348604B ;
+    p:P4 wds:P5-C2BF4765-F99B-55B8-A84E-327DD23A8FCD ;
     p:P9 wds:P5-130648A0-38D8-593D-86A6-99D01964B07D ;
     wdt:P2 wd:Q2 ;
+    wdt:P4 "P1630" ;
     wdt:P9 wd:Q2 .
 
 wds:P5-0B9AB20B-F952-5FA1-AD11-7807F348604B
@@ -112,6 +114,12 @@ wds:P5-130648A0-38D8-593D-86A6-99D01964B07D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P9 wd:Q2 .
+
+wds:P5-C2BF4765-F99B-55B8-A84E-327DD23A8FCD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P4 "P1630" .
 
 p:P5
     a owl:ObjectProperty .

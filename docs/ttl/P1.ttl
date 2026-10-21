@@ -1,6 +1,6 @@
 # P1: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:P1
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Diese Klasse ist eine speziellere Form der Wertklasse."@de,
         "This class is a more specific form of the value class."@en ;
     dcterms:identifier "P1" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P1 ;
     dcterms:title "Unterklasse von"@de,
         "subclass of"@en ;
@@ -52,7 +52,7 @@ data:P1
 dist:P1-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P1, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P1.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,16 +60,16 @@ dist:P1-html
 dist:P1-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P1, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1982"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2352"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P1.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 dist:P1-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P1, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P1.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
@@ -82,7 +82,7 @@ wd:P1
         "subclass of"@en ;
     wikibase:claim p:P1 ;
     wikibase:directClaim wdt:P1 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P1 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P1 ;
@@ -91,17 +91,25 @@ wd:P1
     wikibase:referenceValue prv:P1 ;
     wikibase:statementProperty ps:P1 ;
     wikibase:statementValue psv:P1 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "Unterklasse von"@de,
         "subclass of"@en ;
     skos:prefLabel "Unterklasse von"@de,
         "subclass of"@en ;
     p:P2 wds:P1-500A0FE6-2FAB-5683-9C2F-F042DEDEF63B ;
+    p:P4 wds:P1-29FBE991-E2CE-5588-B826-64C4F2D04BA8 ;
     p:P9 wds:P1-BC31CB18-B260-507D-AB14-1437D8F4C5D2 ;
     p:P10 wds:P1-084F6C46-FDC7-59BA-A28D-5F3A2C4EC5A5 ;
     wdt:P2 wd:Q2 ;
+    wdt:P4 "P279" ;
     wdt:P9 wd:Q1 ;
     wdt:P10 wd:Q1 .
+
+wds:P1-29FBE991-E2CE-5588-B826-64C4F2D04BA8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P4 "P279" .
 
 wds:P1-084F6C46-FDC7-59BA-A28D-5F3A2C4EC5A5
     a wikibase:BestRank,

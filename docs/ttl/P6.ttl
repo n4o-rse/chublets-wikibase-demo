@@ -1,6 +1,6 @@
 # P6: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:P6
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Web page that documents a statement."@en,
         "Webseite, die eine Aussage belegt."@de ;
     dcterms:identifier "P6" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P6 ;
     dcterms:title "Beleg-URL"@de,
         "reference URL"@en ;
@@ -52,7 +52,7 @@ data:P6
 dist:P6-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P6, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P6.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,16 +60,16 @@ dist:P6-html
 dist:P6-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P6, as archived from the Wikibase API"@en ;
-    dcat:byteSize "958"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1328"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P6.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 dist:P6-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P6, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P6.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
@@ -82,7 +82,7 @@ wd:P6
         "reference URL"@en ;
     wikibase:claim p:P6 ;
     wikibase:directClaim wdt:P6 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P6 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P6 ;
@@ -91,19 +91,27 @@ wd:P6
     wikibase:referenceValue prv:P6 ;
     wikibase:statementProperty ps:P6 ;
     wikibase:statementValue psv:P6 ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Beleg-URL"@de,
         "reference URL"@en ;
     skos:prefLabel "Beleg-URL"@de,
         "reference URL"@en ;
     p:P2 wds:P6-3C20F21B-0636-56BE-8379-8BC3A3754B3A ;
-    wdt:P2 wd:Q2 .
+    p:P4 wds:P6-DF4BA3D1-DAF4-53A6-BC3B-401BD6A7521B ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P854" .
 
 wds:P6-3C20F21B-0636-56BE-8379-8BC3A3754B3A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P6-DF4BA3D1-DAF4-53A6-BC3B-401BD6A7521B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P4 "P854" .
 
 p:P6
     a owl:ObjectProperty .

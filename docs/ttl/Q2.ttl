@@ -1,6 +1,6 @@
 # Q2: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:Q2
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A relation or attribute that links an entity to a value; the type of every property."@en,
         "Eine Beziehung oder ein Merkmal, das eine Entität mit einem Wert verbindet; der Typ jeder Eigenschaft."@de ;
     dcterms:identifier "Q2" ;
     dcterms:isPartOf cat:items ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:Q2 ;
     dcterms:title "Eigenschaft"@de,
         "Property"@en ;
@@ -52,7 +52,7 @@ data:Q2
 dist:Q2-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q2, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q2.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,7 +60,7 @@ dist:Q2-html
 dist:Q2-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q2, as archived from the Wikibase API"@en ;
     dcat:byteSize "1551"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q2.json> ;
@@ -69,7 +69,7 @@ dist:Q2-json
 dist:Q2-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q2, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q2.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .

@@ -14,8 +14,8 @@ languages:
 formatter_property: P5
 # Logo, top left on every page: the chublets raven. The file is in this repository and is copied to docs/assets/logo/.
 logo: assets/logo.png
-# The starter pack leaves the licence open (background/starter-pack-open-points.md, point 7: Wikidata is CC0, the
-# CodeMeta crosswalk CC-BY). Until it is decided the footer says so instead of claiming one; replace both lines.
+# Decided 2026-10-21: CC0 for the data (Wikidata is CC0 too). The logo is not covered, see the README. Open: whether the
+# CC-BY CodeMeta crosswalk the mapping builds on asks for an attribution (background/sources.csv names it).
 license:
-  name: licence not yet decided
-  url: https://github.com/n4o-rse/chublets-wikibase-demo#licence
+  name: CC0 1.0 (Public Domain)
+  url: https://creativecommons.org/publicdomain/zero/1.0/

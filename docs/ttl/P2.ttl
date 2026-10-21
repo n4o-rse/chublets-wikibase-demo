@@ -1,6 +1,6 @@
 # P2: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:P2
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Diese Entität gehört zur Wertklasse."@de,
         "This entity is a member of the value class."@en ;
     dcterms:identifier "P2" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P2 ;
     dcterms:title "instance of"@en,
         "ist eine Instanz von"@de ;
@@ -52,7 +52,7 @@ data:P2
 dist:P2-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P2, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P2.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,16 +60,16 @@ dist:P2-html
 dist:P2-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P2, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1960"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2329"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P2.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 dist:P2-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P2, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P2.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
@@ -82,7 +82,7 @@ wd:P2
         "ist eine Instanz von"@de ;
     wikibase:claim p:P2 ;
     wikibase:directClaim wdt:P2 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P2 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P2 ;
@@ -91,15 +91,17 @@ wd:P2
     wikibase:referenceValue prv:P2 ;
     wikibase:statementProperty ps:P2 ;
     wikibase:statementValue psv:P2 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "instance of"@en,
         "ist eine Instanz von"@de ;
     skos:prefLabel "instance of"@en,
         "ist eine Instanz von"@de ;
     p:P2 wds:P2-37EFF9F6-5CD4-581A-982B-F87FB002A2EA ;
+    p:P4 wds:P2-22F7CA32-B566-5542-87E4-64CA675195C7 ;
     p:P9 wds:P2-2A59E3AC-B228-5575-903D-E4329F3F8822 ;
     p:P10 wds:P2-7EBADB34-F83B-5D80-B6BA-34EA5125622E ;
     wdt:P2 wd:Q2 ;
+    wdt:P4 "P31" ;
     wdt:P9 wd:Q3 ;
     wdt:P10 wd:Q1 .
 
@@ -114,6 +116,12 @@ wds:P2-7EBADB34-F83B-5D80-B6BA-34EA5125622E
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P10 wd:Q1 .
+
+wds:P2-22F7CA32-B566-5542-87E4-64CA675195C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P4 "P31" .
 
 wds:P2-37EFF9F6-5CD4-581A-982B-F87FB002A2EA
     a wikibase:BestRank,

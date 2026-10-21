@@ -50,7 +50,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 6, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 6, 4), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 class Pack(unittest.TestCase):
@@ -147,6 +147,13 @@ class Site(unittest.TestCase):
     def test_it_holds_exactly_the_model(self) -> None:
         self.assertEqual(len(self.site.entities), 3 + 10 + 149 + 7)
         self.assertEqual(len(self.site.properties), 10 + 149)
+
+    def test_the_kernel_properties_carry_their_wikidata_twins(self) -> None:
+        twins = {"P1": "P279", "P2": "P31", "P3": "P1647", "P5": "P1630", "P6": "P854", "P7": "P813", "P8": "P248"}
+        for entity_id, wikidata in twins.items():
+            raw = json.loads((ROOT / "data" / "derived" / "entities" / f"{entity_id}.json").read_text(encoding="utf-8"))
+            values = [c["mainsnak"]["datavalue"]["value"] for c in raw["claims"].get("P4", [])]
+            self.assertEqual(values, [wikidata], entity_id)
 
     def test_the_derived_json_is_what_from_csv_makes_of_the_tables(self) -> None:
         problems: list[str] = []

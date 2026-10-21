@@ -1,6 +1,6 @@
 # P7: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.3; data as of unknown
-# Licence: licence not yet decided
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -34,12 +34,12 @@
 data:P7
     a schema:Dataset,
         dcat:Dataset ;
-    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Date on which the source of a statement was read."@en,
         "Datum, an dem die Quelle einer Aussage gelesen wurde."@de ;
     dcterms:identifier "P7" ;
     dcterms:isPartOf cat:properties ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P7 ;
     dcterms:title "abgerufen am"@de,
         "retrieved"@en ;
@@ -52,7 +52,7 @@ data:P7
 dist:P7-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P7, page"@en ;
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P7.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
@@ -60,16 +60,16 @@ dist:P7-html
 dist:P7-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P7, as archived from the Wikibase API"@en ;
-    dcat:byteSize "990"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1360"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P7.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 dist:P7-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P7, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P7.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
@@ -82,7 +82,7 @@ wd:P7
         "retrieved"@en ;
     wikibase:claim p:P7 ;
     wikibase:directClaim wdt:P7 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P7 ;
     wikibase:propertyType wikibase:Time ;
     wikibase:qualifier pq:P7 ;
@@ -91,19 +91,27 @@ wd:P7
     wikibase:referenceValue prv:P7 ;
     wikibase:statementProperty ps:P7 ;
     wikibase:statementValue psv:P7 ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "abgerufen am"@de,
         "retrieved"@en ;
     skos:prefLabel "abgerufen am"@de,
         "retrieved"@en ;
     p:P2 wds:P7-7EE0023B-0F36-51BA-934F-1E9EF4F88AB3 ;
-    wdt:P2 wd:Q2 .
+    p:P4 wds:P7-A330197E-B18D-55D7-ADC3-B39B26DC44A6 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P813" .
 
 wds:P7-7EE0023B-0F36-51BA-934F-1E9EF4F88AB3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P7-A330197E-B18D-55D7-ADC3-B39B26DC44A6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P4 "P813" .
 
 p:P7
     a owl:ObjectProperty .
