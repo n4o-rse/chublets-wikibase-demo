@@ -1,0 +1,71 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P176$A888254F-05EE-5BEF-A2AD-F191ED714EB0",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P4": [
+      {
+        "id": "P176$E1497D3A-4898-5BE0-B143-46B060646F60",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "P3442"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Property:P3442"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "external-id",
+  "descriptions": {},
+  "id": "P176",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "distribution package ID P3442 (label to be filled)"
+    }
+  },
+  "type": "property"
+}

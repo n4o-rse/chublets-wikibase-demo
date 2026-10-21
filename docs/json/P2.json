@@ -1,0 +1,88 @@
+{
+  "aliases": {},
+  "claims": {
+    "P10": [
+      {
+        "id": "P2$7EBADB34-F83B-5D80-B6BA-34EA5125622E",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P10",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "P2$37EFF9F6-5CD4-581A-982B-F87FB002A2EA",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P2$2A59E3AC-B228-5575-903D-E4329F3F8822",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "wikibase-item",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Diese Entität gehört zur Wertklasse."
+    },
+    "en": {
+      "language": "en",
+      "value": "This entity is a member of the value class."
+    }
+  },
+  "id": "P2",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "ist eine Instanz von"
+    },
+    "en": {
+      "language": "en",
+      "value": "instance of"
+    }
+  },
+  "type": "property"
+}

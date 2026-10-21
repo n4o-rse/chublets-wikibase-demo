@@ -1,0 +1,51 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P100$63E5F187-3A78-5437-B81F-2F9C9AD74469",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P5": [
+      {
+        "id": "P100$A56C7300-BFC1-598C-8BDC-02C0DD0D4FFE",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.wikidata.org/entity/$1"
+          },
+          "property": "P5",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "external-id",
+  "descriptions": {},
+  "id": "P100",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "close match Wikidata property"
+    }
+  },
+  "type": "property"
+}

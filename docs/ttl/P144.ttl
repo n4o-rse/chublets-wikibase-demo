@@ -1,0 +1,152 @@
+# P144: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P144
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P144" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P144 ;
+    dcterms:title "publication date"@en ;
+    schema:about wd:P144 ;
+    dcat:distribution dist:P144-html,
+        dist:P144-json,
+        dist:P144-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P144.html> .
+
+dist:P144-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P144, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P144.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P144-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P144, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1965"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P144.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P144-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P144, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P144.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P144
+    a wikibase:Property ;
+    schema:name "publication date"@en ;
+    wikibase:claim p:P144 ;
+    wikibase:directClaim wdt:P144 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P144 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P144 ;
+    wikibase:qualifierValue pqv:P144 ;
+    wikibase:reference pr:P144 ;
+    wikibase:referenceValue prv:P144 ;
+    wikibase:statementProperty ps:P144 ;
+    wikibase:statementValue psv:P144 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "publication date"@en ;
+    skos:prefLabel "publication date"@en ;
+    p:P2 wds:P144-A2BE4120-B419-5901-8333-CC14CBF6E508 ;
+    p:P4 wds:P144-AFCDF968-0877-5997-8148-0BE7372113E1 ;
+    p:P101 wds:P144-2387577F-AA25-574A-AE62-1A4361546DDD ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P577" ;
+    wdt:P101 "datePublished" .
+
+wds:P144-2387577F-AA25-574A-AE62-1A4361546DDD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P101 "datePublished" .
+
+wds:P144-A2BE4120-B419-5901-8333-CC14CBF6E508
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wds:P144-AFCDF968-0877-5997-8148-0BE7372113E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d916f20472e1c0b3410dc16184d79d3a6155caec ;
+    ps:P4 "P577" .
+
+wdref:d916f20472e1c0b3410dc16184d79d3a6155caec
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P577> .
+
+p:P144
+    a owl:ObjectProperty .
+
+wdt:P144
+    a owl:DatatypeProperty .
+
+pq:P144
+    a owl:DatatypeProperty .
+
+pqv:P144
+    a owl:ObjectProperty .
+
+pr:P144
+    a owl:DatatypeProperty .
+
+prv:P144
+    a owl:ObjectProperty .
+
+ps:P144
+    a owl:DatatypeProperty .
+
+psv:P144
+    a owl:ObjectProperty .
+
+wdno:P144
+    a owl:Class ;
+    owl:complementOf _:76d0ffa704270fdd5b3afac73c7688c2 .
+
+_:76d0ffa704270fdd5b3afac73c7688c2
+    a owl:Restriction ;
+    owl:onProperty wdt:P144 ;
+    owl:someValuesFrom owl:Thing .

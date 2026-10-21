@@ -1,0 +1,67 @@
+{
+  "aliases": {},
+  "claims": {
+    "P100": [
+      {
+        "id": "P128$D71762B1-5AC7-5C45-B826-B8CA00FD0629",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "P921"
+          },
+          "property": "P100",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P101": [
+      {
+        "id": "P128$CAF2169F-C868-5953-BADE-D1A98269EE44",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "applicationSubCategory"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "P128$50DBCC20-FED6-5D69-9092-64AE7CF5CBA9",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "string",
+  "descriptions": {},
+  "id": "P128",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "application sub category"
+    }
+  },
+  "type": "property"
+}

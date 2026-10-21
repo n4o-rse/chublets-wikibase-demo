@@ -1,0 +1,67 @@
+{
+  "aliases": {},
+  "claims": {
+    "P100": [
+      {
+        "id": "P243$48BF3530-3203-5C41-BD40-FF64CE23A09C",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "P580"
+          },
+          "property": "P100",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P101": [
+      {
+        "id": "P243$4E85418C-3798-5A37-8C34-459B24A3C81B",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "startDate"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "P243$A25645B1-6227-51ED-8AC0-7D78A9E6BB29",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "time",
+  "descriptions": {},
+  "id": "P243",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "start date"
+    }
+  },
+  "type": "property"
+}

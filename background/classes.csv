@@ -1,0 +1,8 @@
+local_id,qid,label_en,kind,used_for,provenance,confidence
+Q100,Q7397,software,class,"root class for software; its ""properties for this type"" list drives the WikiProject property set",S6,source-claimed
+Q101,Q95001953,research software,class,vocabulary.json superclass; also parent of the chublet class,S3,checked
+Q102,Q166142,application software,class,"vocabulary.json item_class for ""Standalone software""",S3,checked
+Q103,Q188860,software library,class,"vocabulary.json item_class for ""Packages and libraries""",S3,checked
+Q104,Q1070421,script file,class,"vocabulary.json item_class for ""Scripts""",S3,checked
+Q105,Q73899440,Little Minion,class,parent class of chublet (CAA Little Minions working group),S4,source-claimed
+Q106,Q141115627,chublet,class,"THE chublet class; subclass of Q73899440, belonging to Q141115774",S3;S4,checked

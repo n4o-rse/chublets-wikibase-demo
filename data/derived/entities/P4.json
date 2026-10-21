@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P4$F93919BD-8A3D-51C7-8D85-DA5BE9C1B324",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P5": [
+      {
+        "id": "P4$F6EE7DF8-7D04-56CB-A940-F28338F242E4",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.wikidata.org/entity/$1"
+          },
+          "property": "P5",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "external-id",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Das Wikidata-Item oder die Wikidata-Property, die dieser Entität entspricht (zum Beispiel Q7397 oder P275)."
+    },
+    "en": {
+      "language": "en",
+      "value": "The Wikidata item or property that corresponds to this entity (for example Q7397 or P275)."
+    }
+  },
+  "id": "P4",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Wikidata-Entsprechung"
+    },
+    "en": {
+      "language": "en",
+      "value": "Wikidata equivalent"
+    }
+  },
+  "type": "property"
+}

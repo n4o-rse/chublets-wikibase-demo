@@ -1,0 +1,144 @@
+# P217: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P217
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P217" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P217 ;
+    dcterms:title "Open Hub ID"@en ;
+    schema:about wd:P217 ;
+    dcat:distribution dist:P217-html,
+        dist:P217-json,
+        dist:P217-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P217.html> .
+
+dist:P217-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P217, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P217.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P217-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P217, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1589"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P217.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P217-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P217, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P217.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P217
+    a wikibase:Property ;
+    schema:name "Open Hub ID"@en ;
+    wikibase:claim p:P217 ;
+    wikibase:directClaim wdt:P217 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P217 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P217 ;
+    wikibase:qualifierValue pqv:P217 ;
+    wikibase:reference pr:P217 ;
+    wikibase:referenceValue prv:P217 ;
+    wikibase:statementProperty ps:P217 ;
+    wikibase:statementValue psv:P217 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Open Hub ID"@en ;
+    skos:prefLabel "Open Hub ID"@en ;
+    p:P2 wds:P217-48611A95-E88A-5137-AE84-CA38D4844C6D ;
+    p:P4 wds:P217-B627D2DD-2A8C-5D70-BC56-A10D5AB774E2 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P1972" .
+
+wds:P217-48611A95-E88A-5137-AE84-CA38D4844C6D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wds:P217-B627D2DD-2A8C-5D70-BC56-A10D5AB774E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:78801fc8017ea2647d3b52ee7271d8af68915a9f ;
+    ps:P4 "P1972" .
+
+wdref:78801fc8017ea2647d3b52ee7271d8af68915a9f
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P1972> .
+
+p:P217
+    a owl:ObjectProperty .
+
+wdt:P217
+    a owl:DatatypeProperty .
+
+pq:P217
+    a owl:DatatypeProperty .
+
+pqv:P217
+    a owl:ObjectProperty .
+
+pr:P217
+    a owl:DatatypeProperty .
+
+prv:P217
+    a owl:ObjectProperty .
+
+ps:P217
+    a owl:DatatypeProperty .
+
+psv:P217
+    a owl:ObjectProperty .
+
+wdno:P217
+    a owl:Class ;
+    owl:complementOf _:c56f7abcf7df8444158ffc5c2de030ac .
+
+_:c56f7abcf7df8444158ffc5c2de030ac
+    a owl:Restriction ;
+    owl:onProperty wdt:P217 ;
+    owl:someValuesFrom owl:Thing .

@@ -1,0 +1,35 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P121$3D3A51FC-89CC-5C97-A7B5-319E9F517202",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "external-id",
+  "descriptions": {},
+  "id": "P121",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "open-archaeo ID"
+    }
+  },
+  "type": "property"
+}

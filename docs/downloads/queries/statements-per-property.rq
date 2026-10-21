@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?property ?label (COUNT(?statement) AS ?statements) WHERE {
+  ?property wikibase:claim ?claim ;
+            rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+  ?item ?claim ?statement .
+}
+GROUP BY ?property ?label
+ORDER BY DESC(?statements) ?label ?property

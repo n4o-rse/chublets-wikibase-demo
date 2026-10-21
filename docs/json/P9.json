@@ -1,0 +1,88 @@
+{
+  "aliases": {},
+  "claims": {
+    "P10": [
+      {
+        "id": "P9$D88CD03F-C43C-563B-8004-9809D908B44C",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P10",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "P9$34DB929C-2EA5-5480-A0B6-B4161F6FB2E4",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P9$008F1E36-EA34-51F1-BEE0-819AC0139C48",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "wikibase-item",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."
+    },
+    "en": {
+      "language": "en",
+      "value": "Class the subject of a property's statements should belong to."
+    }
+  },
+  "id": "P9",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Definitionsbereich"
+    },
+    "en": {
+      "language": "en",
+      "value": "domain"
+    }
+  },
+  "type": "property"
+}

@@ -1,0 +1,20 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?subjectLabel ?propertyLabel ?objectLabel WHERE {
+  ?property wikibase:propertyType wikibase:WikibaseItem ;
+            wikibase:directClaim ?direct ;
+            rdfs:label ?propertyLabel .
+  FILTER(LANG(?propertyLabel) = "en")
+  ?subject ?direct ?object .
+  OPTIONAL {
+    ?subject rdfs:label ?subjectLabel .
+    FILTER(LANG(?subjectLabel) = "en")
+  }
+  OPTIONAL {
+    ?object rdfs:label ?objectLabel .
+    FILTER(LANG(?objectLabel) = "en")
+  }
+}
+ORDER BY ?subjectLabel ?propertyLabel ?objectLabel
+LIMIT 200

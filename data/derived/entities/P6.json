@@ -1,0 +1,48 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P6$3C20F21B-0636-56BE-8379-8BC3A3754B3A",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "url",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Webseite, die eine Aussage belegt."
+    },
+    "en": {
+      "language": "en",
+      "value": "Web page that documents a statement."
+    }
+  },
+  "id": "P6",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Beleg-URL"
+    },
+    "en": {
+      "language": "en",
+      "value": "reference URL"
+    }
+  },
+  "type": "property"
+}

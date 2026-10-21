@@ -1,0 +1,68 @@
+{
+  "aliases": {},
+  "claims": {
+    "P1": [
+      {
+        "id": "Q2$38B00B04-7AE0-5305-ABC8-5D9C93DAB27F",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P1",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "Q2$659ACDB9-D84C-57B8-886A-D7F834392574",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Eine Beziehung oder ein Merkmal, das eine Entität mit einem Wert verbindet; der Typ jeder Eigenschaft."
+    },
+    "en": {
+      "language": "en",
+      "value": "A relation or attribute that links an entity to a value; the type of every property."
+    }
+  },
+  "id": "Q2",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Eigenschaft"
+    },
+    "en": {
+      "language": "en",
+      "value": "Property"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

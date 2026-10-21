@@ -1,0 +1,144 @@
+# P154: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P154
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P154" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P154 ;
+    dcterms:title "writable file format"@en ;
+    schema:about wd:P154 ;
+    dcat:distribution dist:P154-html,
+        dist:P154-json,
+        dist:P154-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P154.html> .
+
+dist:P154-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P154, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P154.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P154-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P154, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1600"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P154.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P154-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P154, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P154.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P154
+    a wikibase:Property ;
+    schema:name "writable file format"@en ;
+    wikibase:claim p:P154 ;
+    wikibase:directClaim wdt:P154 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P154 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P154 ;
+    wikibase:qualifierValue pqv:P154 ;
+    wikibase:reference pr:P154 ;
+    wikibase:referenceValue prv:P154 ;
+    wikibase:statementProperty ps:P154 ;
+    wikibase:statementValue psv:P154 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "writable file format"@en ;
+    skos:prefLabel "writable file format"@en ;
+    p:P2 wds:P154-BC0D43A6-3EB8-5128-BFD2-A147FB46C083 ;
+    p:P4 wds:P154-CF479232-E0ED-509D-B1F4-AD8E4CF81783 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P1073" .
+
+wds:P154-BC0D43A6-3EB8-5128-BFD2-A147FB46C083
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wds:P154-CF479232-E0ED-509D-B1F4-AD8E4CF81783
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:581439e3def30578ba1ad8866bf6db1af2706e40 ;
+    ps:P4 "P1073" .
+
+wdref:581439e3def30578ba1ad8866bf6db1af2706e40
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P1073> .
+
+p:P154
+    a owl:ObjectProperty .
+
+wdt:P154
+    a owl:ObjectProperty .
+
+pq:P154
+    a owl:ObjectProperty .
+
+pqv:P154
+    a owl:ObjectProperty .
+
+pr:P154
+    a owl:ObjectProperty .
+
+prv:P154
+    a owl:ObjectProperty .
+
+ps:P154
+    a owl:ObjectProperty .
+
+psv:P154
+    a owl:ObjectProperty .
+
+wdno:P154
+    a owl:Class ;
+    owl:complementOf _:a1215eb5ba857fcc01b04c7b7bd77684 .
+
+_:a1215eb5ba857fcc01b04c7b7bd77684
+    a owl:Restriction ;
+    owl:onProperty wdt:P154 ;
+    owl:someValuesFrom owl:Thing .

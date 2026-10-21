@@ -1,0 +1,51 @@
+{
+  "aliases": {},
+  "claims": {
+    "P101": [
+      {
+        "id": "P209$9427EC6A-99B6-5055-8F4C-16772E6B6CD1",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "isAccessibleForFree"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "P209$34FA739A-A86D-5F35-958D-FF79EE56B74F",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "string",
+  "descriptions": {},
+  "id": "P209",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "is accessible for free"
+    }
+  },
+  "type": "property"
+}

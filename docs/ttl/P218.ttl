@@ -1,0 +1,144 @@
+# P218: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P218
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P218" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P218 ;
+    dcterms:title "output device"@en ;
+    schema:about wd:P218 ;
+    dcat:distribution dist:P218-html,
+        dist:P218-json,
+        dist:P218-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P218.html> .
+
+dist:P218-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P218, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P218.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P218-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P218, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1593"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P218.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P218-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P218, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P218.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P218
+    a wikibase:Property ;
+    schema:name "output device"@en ;
+    wikibase:claim p:P218 ;
+    wikibase:directClaim wdt:P218 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P218 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P218 ;
+    wikibase:qualifierValue pqv:P218 ;
+    wikibase:reference pr:P218 ;
+    wikibase:referenceValue prv:P218 ;
+    wikibase:statementProperty ps:P218 ;
+    wikibase:statementValue psv:P218 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "output device"@en ;
+    skos:prefLabel "output device"@en ;
+    p:P2 wds:P218-ED0B5DA8-41E8-58B1-83F4-7DBF115F65C9 ;
+    p:P4 wds:P218-BED009F9-58D2-5AEC-9226-044D62DEA9BA ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P5196" .
+
+wds:P218-BED009F9-58D2-5AEC-9226-044D62DEA9BA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d6c6569bcd7d498370bfb1833f2947ecc271b793 ;
+    ps:P4 "P5196" .
+
+wds:P218-ED0B5DA8-41E8-58B1-83F4-7DBF115F65C9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wdref:d6c6569bcd7d498370bfb1833f2947ecc271b793
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P5196> .
+
+p:P218
+    a owl:ObjectProperty .
+
+wdt:P218
+    a owl:ObjectProperty .
+
+pq:P218
+    a owl:ObjectProperty .
+
+pqv:P218
+    a owl:ObjectProperty .
+
+pr:P218
+    a owl:ObjectProperty .
+
+prv:P218
+    a owl:ObjectProperty .
+
+ps:P218
+    a owl:ObjectProperty .
+
+psv:P218
+    a owl:ObjectProperty .
+
+wdno:P218
+    a owl:Class ;
+    owl:complementOf _:c0e3c4bfb8a89b9f9095e906a77ea3aa .
+
+_:c0e3c4bfb8a89b9f9095e906a77ea3aa
+    a owl:Restriction ;
+    owl:onProperty wdt:P218 ;
+    owl:someValuesFrom owl:Thing .

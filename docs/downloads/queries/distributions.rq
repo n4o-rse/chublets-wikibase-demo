@@ -1,0 +1,13 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?dataset ?title ?download WHERE {
+  ?dataset a dcat:Dataset ;
+           dcterms:title ?title ;
+           dcat:distribution ?distribution .
+  FILTER(LANG(?title) = "en")
+  ?distribution dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+                dcat:downloadURL ?download .
+}
+ORDER BY ?title ?dataset
+LIMIT 100

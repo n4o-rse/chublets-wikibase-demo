@@ -1,0 +1,152 @@
+# P107: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P107
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P107" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P107 ;
+    dcterms:title "copyright license"@en ;
+    schema:about wd:P107 ;
+    dcat:distribution dist:P107-html,
+        dist:P107-json,
+        dist:P107-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P107.html> .
+
+dist:P107-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P107, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P107.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P107-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P107, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1969"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P107.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P107-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P107, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P107.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P107
+    a wikibase:Property ;
+    schema:name "copyright license"@en ;
+    wikibase:claim p:P107 ;
+    wikibase:directClaim wdt:P107 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P107 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P107 ;
+    wikibase:qualifierValue pqv:P107 ;
+    wikibase:reference pr:P107 ;
+    wikibase:referenceValue prv:P107 ;
+    wikibase:statementProperty ps:P107 ;
+    wikibase:statementValue psv:P107 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "copyright license"@en ;
+    skos:prefLabel "copyright license"@en ;
+    p:P2 wds:P107-E9267077-350E-5303-A947-15B607322E48 ;
+    p:P4 wds:P107-F592B6B8-B6C9-5EE3-8DE8-E9D2A13D18BA ;
+    p:P101 wds:P107-9C501844-89AC-580D-B9CF-2CA149649A0A ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P275" ;
+    wdt:P101 "license" .
+
+wds:P107-9C501844-89AC-580D-B9CF-2CA149649A0A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P101 "license" .
+
+wds:P107-E9267077-350E-5303-A947-15B607322E48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wds:P107-F592B6B8-B6C9-5EE3-8DE8-E9D2A13D18BA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:00cf7cdd975b3677a7e5bb6aed19fd1db8873b64 ;
+    ps:P4 "P275" .
+
+wdref:00cf7cdd975b3677a7e5bb6aed19fd1db8873b64
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P275> .
+
+p:P107
+    a owl:ObjectProperty .
+
+wdt:P107
+    a owl:ObjectProperty .
+
+pq:P107
+    a owl:ObjectProperty .
+
+pqv:P107
+    a owl:ObjectProperty .
+
+pr:P107
+    a owl:ObjectProperty .
+
+prv:P107
+    a owl:ObjectProperty .
+
+ps:P107
+    a owl:ObjectProperty .
+
+psv:P107
+    a owl:ObjectProperty .
+
+wdno:P107
+    a owl:Class ;
+    owl:complementOf _:6b3af85a69f881068fad8d0698f47c1e .
+
+_:6b3af85a69f881068fad8d0698f47c1e
+    a owl:Restriction ;
+    owl:onProperty wdt:P107 ;
+    owl:someValuesFrom owl:Thing .

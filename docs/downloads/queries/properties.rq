@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?property ?label ?datatype WHERE {
+  ?property a wikibase:Property ;
+            wikibase:propertyType ?datatype ;
+            rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+}
+ORDER BY ?datatype ?label ?property

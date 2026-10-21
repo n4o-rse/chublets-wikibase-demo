@@ -1,0 +1,68 @@
+{
+  "aliases": {},
+  "claims": {
+    "P1": [
+      {
+        "id": "Q1$CF9741BD-D637-5B3B-9FA9-19338518A331",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P1",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "Q1$9ACB35EA-3925-5F5E-809E-54E5BF980A0D",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Eine Menge gleichartiger Dinge; der Typ jeder Klasse."
+    },
+    "en": {
+      "language": "en",
+      "value": "A set of things of the same kind; the type of every class."
+    }
+  },
+  "id": "Q1",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Klasse"
+    },
+    "en": {
+      "language": "en",
+      "value": "Class"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

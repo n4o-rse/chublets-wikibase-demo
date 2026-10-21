@@ -1,0 +1,48 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P8$DF9BA190-66AF-5156-BBDE-1B375877C198",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "wikibase-item",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Item, das die Quelle einer Aussage nennt."
+    },
+    "en": {
+      "language": "en",
+      "value": "Item that names the source of a statement."
+    }
+  },
+  "id": "P8",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "angegeben in"
+    },
+    "en": {
+      "language": "en",
+      "value": "stated in"
+    }
+  },
+  "type": "property"
+}

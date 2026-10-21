@@ -1,0 +1,48 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "Q3$E4F5BF9E-72C5-5790-9C06-8A10895F836D",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Die Wurzel des Klassenbaums: alles hier Beschriebene ist eine Instanz davon."
+    },
+    "en": {
+      "language": "en",
+      "value": "The root of the class tree: everything described here is an instance of it."
+    }
+  },
+  "id": "Q3",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Instanz"
+    },
+    "en": {
+      "language": "en",
+      "value": "Instance"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

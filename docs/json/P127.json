@@ -1,0 +1,35 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P127$E5160275-925D-5E88-B05E-5EFC92E041F6",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "external-id",
+  "descriptions": {},
+  "id": "P127",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "Wikidata item"
+    }
+  },
+  "type": "property"
+}

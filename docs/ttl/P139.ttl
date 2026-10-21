@@ -1,0 +1,152 @@
+# P139: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P139
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P139" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P139 ;
+    dcterms:title "last update"@en ;
+    schema:about wd:P139 ;
+    dcat:distribution dist:P139-html,
+        dist:P139-json,
+        dist:P139-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P139.html> .
+
+dist:P139-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P139, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P139.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P139-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P139, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1961"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P139.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P139-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P139, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P139.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P139
+    a wikibase:Property ;
+    schema:name "last update"@en ;
+    wikibase:claim p:P139 ;
+    wikibase:directClaim wdt:P139 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P139 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P139 ;
+    wikibase:qualifierValue pqv:P139 ;
+    wikibase:reference pr:P139 ;
+    wikibase:referenceValue prv:P139 ;
+    wikibase:statementProperty ps:P139 ;
+    wikibase:statementValue psv:P139 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "last update"@en ;
+    skos:prefLabel "last update"@en ;
+    p:P2 wds:P139-7CEBB09B-0358-5A23-A0E3-338645A44A38 ;
+    p:P4 wds:P139-4DBFC7A0-0CFC-5D2F-85A7-D6051EB823D0 ;
+    p:P101 wds:P139-D696AC5D-AFC7-5B4C-A2F2-6735F58ED542 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P5017" ;
+    wdt:P101 "dateModified" .
+
+wds:P139-4DBFC7A0-0CFC-5D2F-85A7-D6051EB823D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b6997974673f384598672f449b1d24b406f6bd8 ;
+    ps:P4 "P5017" .
+
+wds:P139-7CEBB09B-0358-5A23-A0E3-338645A44A38
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wds:P139-D696AC5D-AFC7-5B4C-A2F2-6735F58ED542
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P101 "dateModified" .
+
+wdref:0b6997974673f384598672f449b1d24b406f6bd8
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P5017> .
+
+p:P139
+    a owl:ObjectProperty .
+
+wdt:P139
+    a owl:DatatypeProperty .
+
+pq:P139
+    a owl:DatatypeProperty .
+
+pqv:P139
+    a owl:ObjectProperty .
+
+pr:P139
+    a owl:DatatypeProperty .
+
+prv:P139
+    a owl:ObjectProperty .
+
+ps:P139
+    a owl:DatatypeProperty .
+
+psv:P139
+    a owl:ObjectProperty .
+
+wdno:P139
+    a owl:Class ;
+    owl:complementOf _:5075ddf89496d43c3ab33bc3d837eb54 .
+
+_:5075ddf89496d43c3ab33bc3d837eb54
+    a owl:Restriction ;
+    owl:onProperty wdt:P139 ;
+    owl:someValuesFrom owl:Thing .

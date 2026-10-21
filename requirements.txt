@@ -1,0 +1,4 @@
+# The tool that renders this site.
+# Needs wikibase-static 0.6.0 or later (RDFS bridge, formatter URL of the kernel, fast `references` query, page downloads). Pin a tag or commit here once
+# wikibase-static has releases.
+wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git

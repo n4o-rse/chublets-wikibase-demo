@@ -1,0 +1,51 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P101$71864FD3-EB13-5D18-A24F-09AA2B16DC5B",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P5": [
+      {
+        "id": "P101$0C08C679-B54A-5D75-AAA0-AE208ED418BD",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "https://codemeta.github.io/terms/$1"
+          },
+          "property": "P5",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "string",
+  "descriptions": {},
+  "id": "P101",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "equivalent CodeMeta term"
+    }
+  },
+  "type": "property"
+}

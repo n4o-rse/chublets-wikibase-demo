@@ -1,0 +1,14 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?item ?label ?description WHERE {
+  ?item a wikibase:Item ;
+        rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+  OPTIONAL {
+    ?item schema:description ?description .
+    FILTER(LANG(?description) = "en")
+  }
+}
+ORDER BY ?label ?item

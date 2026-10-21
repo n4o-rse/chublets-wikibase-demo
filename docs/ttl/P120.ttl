@@ -1,0 +1,152 @@
+# P120: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.0; data as of unknown
+# Licence: licence not yet decided
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P120
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:identifier "P120" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:subject wd:P120 ;
+    dcterms:title "official website"@en ;
+    schema:about wd:P120 ;
+    dcat:distribution dist:P120-html,
+        dist:P120-json,
+        dist:P120-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P120.html> .
+
+dist:P120-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P120, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P120.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P120-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P120, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1954"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P120.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P120-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://github.com/n4o-rse/chublets-wikibase-demo#licence> ;
+    dcterms:title "P120, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P120.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P120
+    a wikibase:Property ;
+    schema:name "official website"@en ;
+    wikibase:claim p:P120 ;
+    wikibase:directClaim wdt:P120 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P120 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier pq:P120 ;
+    wikibase:qualifierValue pqv:P120 ;
+    wikibase:reference pr:P120 ;
+    wikibase:referenceValue prv:P120 ;
+    wikibase:statementProperty ps:P120 ;
+    wikibase:statementValue psv:P120 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "official website"@en ;
+    skos:prefLabel "official website"@en ;
+    p:P2 wds:P120-895C34DA-1092-51A3-8908-24A2069DDF35 ;
+    p:P4 wds:P120-809B576C-3D98-583B-B76A-03FE93817BBC ;
+    p:P101 wds:P120-7ABCACC3-3EDB-5D47-9BBE-E2EA2FD503F0 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P856" ;
+    wdt:P101 "url" .
+
+wds:P120-7ABCACC3-3EDB-5D47-9BBE-E2EA2FD503F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P101 "url" .
+
+wds:P120-809B576C-3D98-583B-B76A-03FE93817BBC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fedfaebb6f17a4bf714c8af2458cc6d051a1c29 ;
+    ps:P4 "P856" .
+
+wds:P120-895C34DA-1092-51A3-8908-24A2069DDF35
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wdref:5fedfaebb6f17a4bf714c8af2458cc6d051a1c29
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P856> .
+
+p:P120
+    a owl:ObjectProperty .
+
+wdt:P120
+    a owl:ObjectProperty .
+
+pq:P120
+    a owl:ObjectProperty .
+
+pqv:P120
+    a owl:ObjectProperty .
+
+pr:P120
+    a owl:ObjectProperty .
+
+prv:P120
+    a owl:ObjectProperty .
+
+ps:P120
+    a owl:ObjectProperty .
+
+psv:P120
+    a owl:ObjectProperty .
+
+wdno:P120
+    a owl:Class ;
+    owl:complementOf _:bb5dc72faf904691d83d27cb14b8a793 .
+
+_:bb5dc72faf904691d83d27cb14b8a793
+    a owl:Restriction ;
+    owl:onProperty wdt:P120 ;
+    owl:someValuesFrom owl:Thing .

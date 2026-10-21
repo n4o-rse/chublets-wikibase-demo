@@ -1,0 +1,48 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P7$7EE0023B-0F36-51BA-934F-1E9EF4F88AB3",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "time",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Datum, an dem die Quelle einer Aussage gelesen wurde."
+    },
+    "en": {
+      "language": "en",
+      "value": "Date on which the source of a statement was read."
+    }
+  },
+  "id": "P7",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "abgerufen am"
+    },
+    "en": {
+      "language": "en",
+      "value": "retrieved"
+    }
+  },
+  "type": "property"
+}

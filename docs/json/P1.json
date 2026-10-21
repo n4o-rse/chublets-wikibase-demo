@@ -1,0 +1,88 @@
+{
+  "aliases": {},
+  "claims": {
+    "P10": [
+      {
+        "id": "P1$084F6C46-FDC7-59BA-A28D-5F3A2C4EC5A5",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P10",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "P1$500A0FE6-2FAB-5683-9C2F-F042DEDEF63B",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P1$BC31CB18-B260-507D-AB14-1437D8F4C5D2",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "wikibase-item",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Diese Klasse ist eine speziellere Form der Wertklasse."
+    },
+    "en": {
+      "language": "en",
+      "value": "This class is a more specific form of the value class."
+    }
+  },
+  "id": "P1",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Unterklasse von"
+    },
+    "en": {
+      "language": "en",
+      "value": "subclass of"
+    }
+  },
+  "type": "property"
+}

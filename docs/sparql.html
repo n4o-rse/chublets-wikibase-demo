@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Query the data – chublets.software Wikibase (model demo)</title>
+<link rel="canonical" href="https://n4o-rse.github.io/chublets-wikibase-demo/sparql.html">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+:root { --accent: #336699; }
+html[data-lang="en"] .l:not([lang="en"]) { display: none; }
+html[data-lang="de"] .l:not([lang="de"]) { display: none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="sidebar">
+    <a class="logo" href="index.html"><img src="assets/logo/logo.png" alt="chublets.software Wikibase (model demo)"></a>
+    <nav class="nav" aria-label="Home">
+      <a href="index.html"><span class="l" lang="en">Home</span><span class="l" lang="de">Startseite</span></a>
+<a href="index.html#items">Items</a><a href="index.html#properties">Properties</a><a href="sparql.html" aria-current="page">SPARQL</a><a href="query.html"><span class="l" lang="en">Query</span><span class="l" lang="de">Abfrage</span></a>    </nav>
+  </aside>
+  <div class="content">
+    <div class="tabs">
+      <ul class="tabs-left"><li class="active"><span>SPARQL</span></li></ul>
+      <div class="tabs-right">
+        <ul class="tabs-view"></ul>
+        <form class="search" role="search" action="#" hidden data-index="assets/search-index.js" data-default="en" data-text="{&#34;de&#34;:{&#34;error&#34;:&#34;Der Suchindex konnte nicht geladen werden.&#34;,&#34;none&#34;:&#34;Keine Treffer&#34;,&#34;placeholder&#34;:&#34;Suche&#34;},&#34;en&#34;:{&#34;error&#34;:&#34;The search index could not be loaded.&#34;,&#34;none&#34;:&#34;No results&#34;,&#34;placeholder&#34;:&#34;Search&#34;}}">
+          <input type="search" name="q" autocomplete="off" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="wbs-search-list">
+          <ul class="search-results" id="wbs-search-list" role="listbox" aria-label="Search" hidden></ul>
+        </form>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="de">DE</button>
+        </div>
+      </div>
+    </div>
+    <main>
+<article class="sparql">
+  <h1><span class="l" lang="en">Query the data</span><span class="l" lang="de">Daten abfragen</span></h1>
+  <p class="description"><span class="l" lang="en">The data of this site is a Turtle file in the RDF model of Wikibase, so queries written for the Query Service of a Wikibase work here too. Edit a query and press Run.</span><span class="l" lang="de">Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Abfragen, die für den Query Service einer Wikibase geschrieben sind, laufen deshalb auch hier. Abfrage ändern, dann auf Ausführen klicken.</span></p>
+  <p class="data-line">
+    <strong><span class="l" lang="en">The data</span><span class="l" lang="de">Die Daten</span></strong>
+    <span class="l" lang="en">A Turtle file in the RDF model of Wikibase with 13156 triples:</span><span class="l" lang="de">Eine Turtle-Datei im RDF-Modell von Wikibase mit 13156 Tripeln:</span>
+    <a href="downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl">n4o-rse.github.io-chublets-wikibase-demo.ttl</a> &middot; <a href="downloads/wikibase-ontology.ttl"><span class="l" lang="en">Wikibase ontology</span><span class="l" lang="de">Wikibase-Ontologie</span></a>  </p>
+  <p class="muted"><strong><span class="l" lang="en">Every record on its own:</span><span class="l" lang="de">Jeder Datensatz einzeln:</span></strong> <span class="l" lang="en">each page has a Turtle file in ttl/ and the archived JSON in json/; the catalogue (DCAT) lists them.</span><span class="l" lang="de">zu jeder Seite gibt es eine Turtle-Datei in ttl/ und das archivierte JSON in json/; der Katalog (DCAT) verzeichnet sie.</span></p>
+  <p id="wbs-sparql-status" class="status" role="status" aria-live="polite"><span class="l" lang="en">Press Run to start. The first run takes a few seconds.</span><span class="l" lang="de">Auf „Ausführen“ klicken, um zu starten. Der erste Lauf dauert einige Sekunden.</span></p>
+  <noscript><p class="note"><span class="l" lang="en">Running queries needs JavaScript.</span><span class="l" lang="de">Zum Ausführen von Abfragen wird JavaScript benötigt.</span></p></noscript>
+  <p class="muted"><span class="l" lang="en">The first run loads Python (Pyodide) from cdn.jsdelivr.net and rdflib from PyPI; after that everything runs in your browser and what you type does not leave it.</span><span class="l" lang="de">Der erste Lauf lädt Python (Pyodide) von cdn.jsdelivr.net und rdflib von PyPI; danach läuft alles in Ihrem Browser, und was Sie eintippen, verlässt ihn nicht.</span></p>
+  <details class="prefixes">
+    <summary><span class="l" lang="en">Prefixes (put in front of every query)</span><span class="l" lang="de">Präfixe (werden jeder Abfrage vorangestellt)</span></summary>
+    <pre>PREFIX cat: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/catalog/&gt;
+PREFIX cc: &lt;http://creativecommons.org/ns#&gt;
+PREFIX data: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/&gt;
+PREFIX dcat: &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX dist: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/distribution/&gt;
+PREFIX geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX p: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/&gt;
+PREFIX pq: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/&gt;
+PREFIX pqv: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/&gt;
+PREFIX pr: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/&gt;
+PREFIX prov: &lt;http://www.w3.org/ns/prov#&gt;
+PREFIX prv: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/&gt;
+PREFIX ps: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/&gt;
+PREFIX psv: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX schema: &lt;http://schema.org/&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX wd: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/entity/&gt;
+PREFIX wdno: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/&gt;
+PREFIX wdref: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/reference/&gt;
+PREFIX wds: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/&gt;
+PREFIX wdt: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/&gt;
+PREFIX wdv: &lt;https://n4o-rse.github.io/chublets-wikibase-demo/value/&gt;
+PREFIX wikibase: &lt;http://wikiba.se/ontology#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+</pre>
+  </details>
+  <section class="query" id="items">
+    <h2><span class="l" lang="en">Items with label and description</span><span class="l" lang="de">Items mit Bezeichnung und Beschreibung</span></h2>
+<p><span class="l" lang="en">Every item with its label and, where there is one, its description in the same language.</span><span class="l" lang="de">Jedes Item mit Bezeichnung und, wo vorhanden, Beschreibung in derselben Sprache.</span></p>    <textarea spellcheck="false" aria-label="Items with label and description" rows="11">SELECT ?item ?label ?description WHERE {
+  ?item a wikibase:Item ;
+        rdfs:label ?label .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  OPTIONAL {
+    ?item schema:description ?description .
+    FILTER(LANG(?description) = &#34;en&#34;)
+  }
+}
+ORDER BY ?label ?item</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/items.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="properties">
+    <h2><span class="l" lang="en">Properties and their data types</span><span class="l" lang="de">Properties und ihre Datentypen</span></h2>
+<p><span class="l" lang="en">The vocabulary of the Wikibase. The data type decides which kind of value a property takes.</span><span class="l" lang="de">Das Vokabular der Wikibase. Der Datentyp bestimmt, welche Art von Wert eine Property hat.</span></p>    <textarea spellcheck="false" aria-label="Properties and their data types" rows="8">SELECT ?property ?label ?datatype WHERE {
+  ?property a wikibase:Property ;
+            wikibase:propertyType ?datatype ;
+            rdfs:label ?label .
+  FILTER(LANG(?label) = &#34;en&#34;)
+}
+ORDER BY ?datatype ?label ?property</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/properties.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="statements-per-property">
+    <h2><span class="l" lang="en">How often each property is used</span><span class="l" lang="de">Wie oft jede Property verwendet wird</span></h2>
+<p><span class="l" lang="en">Statements per property, most used first. Properties without a statement do not appear.</span><span class="l" lang="de">Aussagen pro Property, die meistgenutzte zuerst. Properties ohne Aussage erscheinen nicht.</span></p>    <textarea spellcheck="false" aria-label="How often each property is used" rows="9">SELECT ?property ?label (COUNT(?statement) AS ?statements) WHERE {
+  ?property wikibase:claim ?claim ;
+            rdfs:label ?label .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  ?item ?claim ?statement .
+}
+GROUP BY ?property ?label
+ORDER BY DESC(?statements) ?label ?property</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/statements-per-property.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="item-links">
+    <h2><span class="l" lang="en">How items are linked</span><span class="l" lang="de">Wie Items verknüpft sind</span></h2>
+<p><span class="l" lang="en">Statements whose value is another item, written as subject, property, object.</span><span class="l" lang="de">Aussagen, deren Wert ein anderes Item ist, als Subjekt, Property, Objekt.</span></p>    <textarea spellcheck="false" aria-label="How items are linked" rows="18">SELECT ?subjectLabel ?propertyLabel ?objectLabel WHERE {
+  ?property wikibase:propertyType wikibase:WikibaseItem ;
+            wikibase:directClaim ?direct ;
+            rdfs:label ?propertyLabel .
+  FILTER(LANG(?propertyLabel) = &#34;en&#34;)
+  ?subject ?direct ?object .
+  OPTIONAL {
+    ?subject rdfs:label ?subjectLabel .
+    FILTER(LANG(?subjectLabel) = &#34;en&#34;)
+  }
+  OPTIONAL {
+    ?object rdfs:label ?objectLabel .
+    FILTER(LANG(?objectLabel) = &#34;en&#34;)
+  }
+}
+ORDER BY ?subjectLabel ?propertyLabel ?objectLabel
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/item-links.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="most-used-items">
+    <h2><span class="l" lang="en">Items used most often as a value</span><span class="l" lang="de">Items, die am häufigsten als Wert vorkommen</span></h2>
+<p><span class="l" lang="en">The twenty items that other items point to most often.</span><span class="l" lang="de">Die zwanzig Items, auf die andere Items am häufigsten verweisen.</span></p>    <textarea spellcheck="false" aria-label="Items used most often as a value" rows="11">SELECT ?item ?label (COUNT(?subject) AS ?uses) WHERE {
+  ?property wikibase:propertyType wikibase:WikibaseItem ;
+            wikibase:directClaim ?direct .
+  ?subject ?direct ?item .
+  ?item rdfs:label ?label .
+  FILTER(LANG(?label) = &#34;en&#34;)
+}
+GROUP BY ?item ?label
+ORDER BY DESC(?uses) ?label ?item
+LIMIT 20</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/most-used-items.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="references">
+    <h2><span class="l" lang="en">Statements with a reference</span><span class="l" lang="de">Aussagen mit Fundstelle</span></h2>
+<p><span class="l" lang="en">Statements that say where they come from, with the property and value of the reference.</span><span class="l" lang="de">Aussagen, die angeben, woher sie stammen, mit Property und Wert der Fundstelle.</span></p>    <textarea spellcheck="false" aria-label="Statements with a reference" rows="20">SELECT ?itemLabel ?propertyLabel ?sourceLabel ?source WHERE {
+  # Three groups that are joined from the first outwards: written as one block, rdflib builds the
+  # cross product of the two property lists (every property times every property) before it joins them.
+  { ?statement prov:wasDerivedFrom ?reference .
+    ?reference ?referenceProperty ?source . }
+  { ?item ?claim ?statement .
+    ?property wikibase:claim ?claim ;
+              rdfs:label ?propertyLabel .
+    FILTER(LANG(?propertyLabel) = &#34;en&#34;) }
+  { ?sourceProperty wikibase:reference ?referenceProperty ;
+                    rdfs:label ?sourceLabel .
+    FILTER(LANG(?sourceLabel) = &#34;en&#34;) }
+  OPTIONAL {
+    ?item rdfs:label ?itemLabel .
+    FILTER(LANG(?itemLabel) = &#34;en&#34;)
+  }
+}
+ORDER BY ?itemLabel ?propertyLabel ?sourceLabel ?source
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/references.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="catalogues">
+    <h2><span class="l" lang="en">The catalogues of this export (DCAT)</span><span class="l" lang="de">Die Kataloge dieses Exports (DCAT)</span></h2>
+<p><span class="l" lang="en">The export describes itself with DCAT 3. This lists the catalogues and how many datasets each holds.</span><span class="l" lang="de">Der Export beschreibt sich selbst mit DCAT 3. Hier stehen die Kataloge und wie viele Datasets jeder enthält.</span></p>    <textarea spellcheck="false" aria-label="The catalogues of this export (DCAT)" rows="8">SELECT ?catalog ?title (COUNT(?dataset) AS ?datasets) WHERE {
+  ?catalog a dcat:Catalog ;
+           dcterms:title ?title ;
+           dcat:dataset ?dataset .
+}
+GROUP BY ?catalog ?title
+ORDER BY DESC(?datasets) ?catalog</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/catalogues.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="distributions">
+    <h2><span class="l" lang="en">Where to download each record (DCAT)</span><span class="l" lang="de">Wo sich jeder Datensatz herunterladen lässt (DCAT)</span></h2>
+<p><span class="l" lang="en">Every entity is a dataset with a JSON, a Turtle and an HTML distribution. This lists the Turtle files.</span><span class="l" lang="de">Jede Entität ist ein Dataset mit einer JSON-, einer Turtle- und einer HTML-Distribution. Hier stehen die Turtle-Dateien.</span></p>    <textarea spellcheck="false" aria-label="Where to download each record (DCAT)" rows="11">SELECT ?dataset ?title ?download WHERE {
+  ?dataset a dcat:Dataset ;
+           dcterms:title ?title ;
+           dcat:distribution ?distribution .
+  FILTER(LANG(?title) = &#34;en&#34;)
+  ?distribution dcat:mediaType &lt;https://www.iana.org/assignments/media-types/text/turtle&gt; ;
+                dcat:downloadURL ?download .
+}
+ORDER BY ?title ?dataset
+LIMIT 100</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/distributions.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+</article>
+<script type="application/json" id="wbs-sparql-config">{"default":"en","entityBase":"https://n4o-rse.github.io/chublets-wikibase-demo/entity/","graphUrl":"downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl","maxRows":500,"prefixText":"PREFIX cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/>\nPREFIX cc: <http://creativecommons.org/ns#>\nPREFIX data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/>\nPREFIX pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/>\nPREFIX pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/>\nPREFIX pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/>\nPREFIX ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/>\nPREFIX psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <http://schema.org/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/>\nPREFIX wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/>\nPREFIX wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/>\nPREFIX wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/>\nPREFIX wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/>\nPREFIX wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/>\nPREFIX wikibase: <http://wikiba.se/ontology#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n","prefixes":{"cat":"https://n4o-rse.github.io/chublets-wikibase-demo/catalog/","cc":"http://creativecommons.org/ns#","data":"https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/","dcat":"http://www.w3.org/ns/dcat#","dcterms":"http://purl.org/dc/terms/","dist":"https://n4o-rse.github.io/chublets-wikibase-demo/distribution/","geo":"http://www.opengis.net/ont/geosparql#","owl":"http://www.w3.org/2002/07/owl#","p":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/","pq":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/","pqv":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/","pr":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/","prov":"http://www.w3.org/ns/prov#","prv":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/","ps":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/","psv":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","schema":"http://schema.org/","skos":"http://www.w3.org/2004/02/skos/core#","wd":"https://n4o-rse.github.io/chublets-wikibase-demo/entity/","wdno":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/","wdref":"https://n4o-rse.github.io/chublets-wikibase-demo/reference/","wds":"https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/","wdt":"https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/","wdv":"https://n4o-rse.github.io/chublets-wikibase-demo/value/","wikibase":"http://wikiba.se/ontology#","xsd":"http://www.w3.org/2001/XMLSchema#"},"pyodideUrl":"https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js","rdflibVersion":"7.1.1","texts":{"de":{"ask_false":"falsch","ask_true":"wahr","capped":"Gezeigt werden die ersten {shown} von {total} Zeilen.","done":"{s} s über {n} Tripel","empty":"Keine Ergebnisse. Die Abfrage ist gültig, hat aber nichts gefunden.","graph_count":"{n} Tripel erzeugt.","graph_http":"Die Datendatei antwortete mit HTTP {status}.","graph_unreachable":"Die Datendatei ließ sich nicht abrufen; die Seite bitte über http(s) öffnen, nicht aus einer Datei.","images_capped":"Gezeigt werden die ersten {shown} von {total} Bildern.","link_copied":"Link kopiert.","link_in_address_bar":"Der Link steht jetzt in der Adresszeile.","loading_graph":"Daten werden geladen ...","loading_rdflib":"rdflib wird installiert ...","loading_runtime":"Python (Pyodide) wird geladen ...","ready":"Bereit: {n} Tripel.","rows_one":"1 Zeile.","rows_other":"{n} Zeilen.","running":"Läuft ...","runtime_unreachable":"{url} ist nicht erreichbar (offline?)","start_failed":"Start nicht möglich: {error}","unbound":"kein Wert"},"en":{"ask_false":"false","ask_true":"true","capped":"Showing the first {shown} of {total} rows.","done":"{s} s over {n} triples","empty":"No results. The query is valid but matched nothing.","graph_count":"{n} triples constructed.","graph_http":"The data file answered with HTTP {status}.","graph_unreachable":"The data file could not be fetched; open this page over http(s), not from a file.","images_capped":"Showing the first {shown} of {total} images.","link_copied":"Link copied.","link_in_address_bar":"The address bar now holds the link.","loading_graph":"Loading the data ...","loading_rdflib":"Installing rdflib ...","loading_runtime":"Loading Python (Pyodide) ...","ready":"Ready: {n} triples.","rows_one":"1 row.","rows_other":"{n} rows.","running":"Running ...","runtime_unreachable":"{url} cannot be reached (offline?)","start_failed":"Could not start: {error}","unbound":"no value"}}}</script>
+<script type="application/json" id="wbs-sparql-runner">"import json\nfrom rdflib import Graph, URIRef, BNode, Literal\n\n\ndef wbs_parse(text):\n    g = Graph()\n    g.parse(data=text, format=\"turtle\")\n    return g\n\n\ndef wbs_cell(term):\n    if term is None:\n        return None\n    if isinstance(term, URIRef):\n        return [\"u\", str(term), \"\"]\n    if isinstance(term, BNode):\n        return [\"b\", str(term), \"\"]\n    extra = term.language or (str(term.datatype) if term.datatype else \"\")\n    return [\"l\", str(term), extra]\n\n\ndef wbs_run(g, query, max_rows):\n    res = g.query(query)\n    out = {\"triples\": len(g)}\n    if res.type == \"ASK\":\n        out.update(kind=\"ask\", answer=bool(res.askAnswer))\n    elif res.type == \"SELECT\":\n        cols = [str(v) for v in res.vars]\n        rows = []\n        total = 0\n        for row in res:\n            total += 1\n            if total <= max_rows:\n                rows.append([wbs_cell(row[i]) for i in range(len(cols))])\n        out.update(kind=\"select\", cols=cols, rows=rows, total=total)\n    else:\n        result = res.graph\n        for prefix, namespace in g.namespaces():\n            result.bind(prefix, namespace, override=False)\n        out.update(kind=\"graph\", count=len(result), turtle=result.serialize(format=\"turtle\"))\n    return json.dumps(out)\n"</script>
+    </main>
+    <footer class="site-footer">
+      <p>
+        <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://github.com/n4o-rse/chublets-wikibase-demo#licence" target="_blank" rel="noopener">licence not yet decided</a></span>
+      </p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.6.0</p>
+    </footer>
+  </div>
+</div>
+<script src="assets/app.js"></script>
+<script src="assets/search.js"></script>
+<script src="assets/sparql.js"></script>
+</body>
+</html>
