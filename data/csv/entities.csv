@@ -1,166 +1,417 @@
-id,kind,datatype,origin,label_en
-Q100,class,,starter-pack,software
-Q101,class,,starter-pack,research software
-Q102,class,,starter-pack,application software
-Q103,class,,starter-pack,software library
-Q104,class,,starter-pack,script file
-Q105,class,,starter-pack,Little Minion
-Q106,class,,starter-pack,chublet
-P100,property,external-id,starter-pack,close match Wikidata property
-P101,property,external-id,,equivalent CodeMeta term
-P102,property,external-id,,equivalent schema.org term
-P103,property,string,starter-pack,application category
-P104,property,time,starter-pack,archive date
-P105,property,url,starter-pack,archive URL
-P106,property,wikibase-item,starter-pack,collection
-P107,property,wikibase-item,starter-pack,copyright license
-P108,property,external-id,starter-pack,CRAN project
-P109,property,wikibase-item,starter-pack,depends on software
-P110,property,url,starter-pack,described at URL
-P111,property,wikibase-item,starter-pack,described by source
-P112,property,string,starter-pack,description
-P113,property,wikibase-item,starter-pack,developer
-P114,property,external-id,starter-pack,DOI
-P115,property,url,starter-pack,exact match
-P116,property,string,starter-pack,inventory number
-P117,property,wikibase-item,starter-pack,main subject
-P118,property,wikibase-item,starter-pack,maintained by WikiProject
-P119,property,monolingualtext,starter-pack,name
-P120,property,url,starter-pack,official website
-P121,property,external-id,starter-pack,open-archaeo ID
-P122,property,wikibase-item,starter-pack,part of
-P123,property,wikibase-item,starter-pack,programmed in
-P124,property,external-id,starter-pack,PyPI project
-P125,property,url,starter-pack,source code repository URL
-P126,property,wikibase-item,starter-pack,version control system
-P127,property,external-id,starter-pack,Wikidata item
-P128,property,string,starter-pack,application sub category
-P129,property,string,starter-pack,application suite
-P130,property,wikibase-item,starter-pack,based on
-P131,property,wikibase-item,starter-pack,contributor to the creative work or subject
-P132,property,string,starter-pack,development status
-P133,property,url,,download URL
-P134,property,wikibase-item,starter-pack,funder
-P135,property,external-id,,GitHub account
-P136,property,wikibase-item,starter-pack,has part(s)
-P137,property,time,starter-pack,inception
-P138,property,url,starter-pack,issue tracker URL
-P139,property,time,starter-pack,last update
-P140,property,wikibase-item,starter-pack,maintained by
-P141,property,url,starter-pack,official demo URL
-P142,property,wikibase-item,starter-pack,operating system
-P143,property,wikibase-item,starter-pack,platform
-P144,property,time,starter-pack,publication date
-P145,property,wikibase-item,starter-pack,readable file format
-P146,property,string,starter-pack,series ordinal
-P147,property,external-id,,SoftWare Hash IDentifier
-P148,property,string,starter-pack,software version identifier
-P149,property,wikibase-item,starter-pack,supporting data
-P150,property,wikibase-item,starter-pack,target product
-P151,property,url,starter-pack,user manual URL
-P152,property,string,starter-pack,version
-P153,property,wikibase-item,starter-pack,version type
-P154,property,wikibase-item,starter-pack,writable file format
-P155,property,string,starter-pack,address
-P156,property,wikibase-item,starter-pack,affiliation
-P157,property,wikibase-item,starter-pack,archives at
-P158,property,string,starter-pack,available on device
-P159,property,wikibase-item,starter-pack,award received
-P160,property,wikibase-item,starter-pack,binding of software library
-P161,property,url,starter-pack,build instructions
-P162,property,wikibase-item,starter-pack,cites work
-P163,property,string,starter-pack,code sample type
-P164,property,wikibase-item,starter-pack,computes solution to
-P165,property,url,starter-pack,cont integration
-P166,property,url,starter-pack,continuous integration
-P167,property,wikibase-item,starter-pack,copyright holder
-P168,property,quantity,starter-pack,copyright year
-P169,property,string,starter-pack,countries not supported
-P170,property,string,starter-pack,countries supported
-P171,property,wikibase-item,starter-pack,creator
-P172,property,quantity,starter-pack,data size
-P173,property,wikibase-item,starter-pack,distribution format
-P174,property,external-id,,DistroWatch ID
-P175,property,external-id,,Google Play Store app ID
-P176,property,external-id,,Debian stable package
-P177,property,external-id,,Arch Linux package
-P178,property,external-id,,Fedora package
-P179,property,external-id,,Ubuntu package
-P180,property,external-id,,Gentoo package
-P181,property,external-id,,F-Droid package
-P182,property,wikibase-item,,"version, edition or translation of"
-P183,property,wikibase-item,starter-pack,editor
-P184,property,url,starter-pack,email address
-P185,property,time,starter-pack,embargo date
-P186,property,time,starter-pack,embargo end date
-P187,property,wikibase-item,starter-pack,encoding
-P188,property,time,starter-pack,end date
-P189,property,time,starter-pack,end time
-P190,property,wikibase-item,starter-pack,facet of
-P191,property,wikibase-item,starter-pack,family name
-P192,property,string,starter-pack,feature list
-P193,property,wikibase-item,starter-pack,field of work
-P194,property,wikibase-item,starter-pack,file format
-P195,property,wikibase-item,starter-pack,followed by
-P196,property,wikibase-item,starter-pack,follows
-P197,property,external-id,starter-pack,Framalibre ID
-P198,property,external-id,starter-pack,Free Software Directory entry
-P199,property,string,starter-pack,funding
-P200,property,wikibase-item,starter-pack,given name
-P201,property,wikibase-item,starter-pack,GUI toolkit or framework
-P202,property,wikibase-item,starter-pack,has characteristic
-P203,property,wikibase-item,starter-pack,has source code
-P204,property,commonsMedia,starter-pack,image
-P205,property,wikibase-item,starter-pack,influenced by
-P206,property,wikibase-item,starter-pack,input device
-P207,property,url,starter-pack,install URL
-P208,property,url,starter-pack,IRC channel URL
-P209,property,string,starter-pack,is accessible for free
-P210,property,wikibase-item,starter-pack,is source code of
-P211,property,commonsMedia,starter-pack,logo image
-P212,property,string,starter-pack,media type
-P213,property,wikibase-item,starter-pack,member of
-P214,property,string,starter-pack,memory requirements
-P215,property,wikibase-item,starter-pack,notable work
-P216,property,url,starter-pack,official blog URL
-P217,property,external-id,starter-pack,Open Hub ID
-P218,property,wikibase-item,starter-pack,output device
-P219,property,wikibase-item,starter-pack,package management system
-P220,property,wikibase-item,starter-pack,part of the series
-P221,property,string,starter-pack,permissions
-P222,property,url,starter-pack,person identifier
-P223,property,time,starter-pack,point in time
-P224,property,quantity,,port
-P225,property,string,starter-pack,position
-P226,property,quantity,starter-pack,price
-P227,property,string,starter-pack,processor requirements
-P228,property,wikibase-item,starter-pack,producer
-P229,property,wikibase-item,starter-pack,provider
-P230,property,wikibase-item,starter-pack,publisher
-P231,property,url,starter-pack,readme
-P232,property,string,starter-pack,release notes
-P233,property,wikibase-item,starter-pack,review
-P234,property,string,starter-pack,review aspect
-P235,property,string,starter-pack,review body
-P236,property,string,starter-pack,role name
-P237,property,wikibase-item,starter-pack,software add on
-P238,property,wikibase-item,starter-pack,software engine
-P239,property,wikibase-item,starter-pack,software quality assurance
-P240,property,wikibase-item,starter-pack,software suggestions
-P241,property,external-id,starter-pack,SourceForge project
-P242,property,wikibase-item,starter-pack,sponsor
-P243,property,time,starter-pack,start date
-P244,property,time,starter-pack,start time
-P245,property,string,starter-pack,storage requirements
-P246,property,external-id,starter-pack,swMATH work ID
-P247,property,monolingualtext,starter-pack,title
-P248,property,wikibase-item,starter-pack,web interface software
-P249,property,wikibase-item,,digital rights management system
-P250,property,external-id,,ISO standard
-P251,property,wikibase-item,,language of work or name
-P252,property,wikibase-item,,movement
-P253,property,wikibase-item,,removed feature
-P254,property,external-id,,RfC ID
-P255,property,url,,Stack Exchange tag
-P256,property,string,,TeX string
-P257,property,string,,Unicode character
+id,kind,datatype,origin,label_en,description_en
+Q100,class,,starter-pack,software,
+Q101,class,,starter-pack,research software,
+Q102,class,,starter-pack,application software,
+Q103,class,,starter-pack,software library,
+Q104,class,,starter-pack,script file,
+Q105,class,,starter-pack,Little Minion,
+Q106,class,,starter-pack,chublet,
+Q107,item,,open-archaeo,WeedEco,Classification of unknown cases (e.g. archaeobotanical data or other modern weed survey data) using linear discriminant analysis to understand farming regimes.
+Q108,item,,open-archaeo,WikiProject chublets.software,
+Q109,item,,open-archaeo,chublets.software,
+Q110,item,,open-archaeo,open-archaeo (Repository),
+Q111,item,,open-archaeo,R,
+Q112,item,,open-archaeo,Palaeobotany,
+Q113,item,,open-archaeo,WeedEco,
+Q114,item,,open-archaeo,Git,
+Q115,item,,open-archaeo,ARQUB,Scripts at the ARQUB group to work with compositional data on archaeometric studies.
+Q116,item,,open-archaeo,Statistical analysis,
+Q117,item,,open-archaeo,jbuxeda,
+Q118,item,,open-archaeo,Artifact_Class_Diversity,Estimates artifact class diversity in multiple geographic regions.
+Q119,item,,open-archaeo,Spatial analysis,
+Q120,item,,open-archaeo,taphocoenose,
+Q121,item,,open-archaeo,FuzzyViewshed,Arcgis toolbox for fuzzy viewshed calculation.
+Q122,item,,open-archaeo,ArcGIS,
+Q123,item,,open-archaeo,Viewshed analysis,
+Q124,item,,open-archaeo,gianmarcoalberti,
+Q125,item,,open-archaeo,katun,Tools for converting between Maya and Western calendars.
+Q126,item,,open-archaeo,Chronological modelling,
+Q127,item,,open-archaeo,jgregoriods,
+Q128,item,,open-archaeo,photogrammetry-object-scannner,Created for the very-specific purpose of communicating via android with a raspberry pi running a scanner.
+Q129,item,,open-archaeo,Photogrammetry,
+Q130,item,,open-archaeo,anatolian,
+Q131,item,,open-archaeo,MtreeRing,A tool for automatically measuring tree-ring width using image processing techniques.
+Q132,item,,open-archaeo,Bits and bobs,
+Q133,item,,open-archaeo,ropensci,
+Q134,item,,open-archaeo,ArkSpatial,A qgis plugin to simplfy digitization of archaeological plans drawn using the museum of london single context recording methodology.
+Q135,item,,open-archaeo,QGIS,
+Q136,item,,open-archaeo,Site mapping,
+Q137,item,,open-archaeo,L-P Archaeology,
+Q138,item,,open-archaeo,SiteSyncro,Site-specific chronological modeling and synchronization.
+Q139,item,,open-archaeo,Python,
+Q140,item,,open-archaeo,"Radiocarbon dating, calibration and sequencing",
+Q141,item,,open-archaeo,demjanp,
+Q142,item,,open-archaeo,10.1017/RDC.2020.129,
+Q143,item,,open-archaeo,totalstation-tools,Tools to use and manipulate total station data
+Q144,item,,open-archaeo,Drivers and IO,
+Q145,item,,open-archaeo,WiseLabCMU,
+Q146,item,,open-archaeo,TRANSIT,Gis toolbox for estimating the duration of ancient sail-powered navigation.
+Q147,item,,open-archaeo,AIS,Archaeological information system
+Q148,item,,open-archaeo,Data management,
+Q149,item,,open-archaeo,andredebuisne,
+Q150,item,,open-archaeo,fastmaRching,"An R implementation of the Fast Marching Method (FMM), first developed by Sethian (1996), with the modifications of Silva and Steele (2012, 2014). Also included is a spatial wrapper function that makes it easier to model dispersal scenarios in geospatial domains, as originally envisaged for the study and simulation of prehistoric dispersals"
+Q151,item,,open-archaeo,f-silva-archaeo,
+Q152,item,,open-archaeo,10.1016/j.jas.2014.04.021,
+Q153,item,,open-archaeo,osteoGIS,Plot data on skeletal templates quickly
+Q154,item,,open-archaeo,Diagrams and visualizations,
+Q155,item,,open-archaeo,davidcorton,
+Q156,item,,open-archaeo,c14bazAAR,"R package to query different openly accessible radiocarbon date databases, allowing for basic data cleaning, calibration and merging"
+Q157,item,,open-archaeo,API interfaces and web scrapers,
+Q158,item,,open-archaeo,ISAAKiel,
+Q159,item,,open-archaeo,10.21105/joss.01914,
+Q160,item,,open-archaeo,clam,A package for classical age-depth modelling of cores from deposits.
+Q161,item,,open-archaeo,Geophysical survey,
+Q162,item,,open-archaeo,Maarten14C,
+Q163,item,,open-archaeo,LA_ICP_MS-Routines_FMNH,Routines to read and analyze la-icp-ms data from the field museum's elemental analysis facility
+Q164,item,,open-archaeo,Educational resources and practical guides,
+Q165,item,,open-archaeo,ajupton,
+Q166,item,,open-archaeo,PointPattern,Point pattern analysis.
+Q167,item,,open-archaeo,mpeeples2008,
+Q168,item,,open-archaeo,arshm-release,Experimental mobile app demoing cultural heritage documentation tools in augmented reality. Supports capturing and annotating photos in 3d space. Proof-of-concept features in the app include image anchoring and surface drawing tools.
+Q169,item,,open-archaeo,Augmented reality,
+Q170,item,,open-archaeo,zacharyliu,
+Q171,item,,open-archaeo,STOCHASI,"Stochastic Chronological Artifact Simulation) enables researchers to model and simulate the temporal transformation of artifact spectra, particularly focusing on ceramic assemblages such as Terra Sigillata. ."
+Q172,item,,open-archaeo,oeai-dac,
+Q173,item,,open-archaeo,Archaeotux,
+Q174,item,,open-archaeo,Crossbones,"Crossbones autogenerates 3d schematic skeletons, making rapid surveying and visualisation of dense skeletal assemblages a snap."
+Q175,item,,open-archaeo,Zooarchaeology,
+Q176,item,,open-archaeo,Leif Isaksen,
+Q177,item,,open-archaeo,fellingDateR,Compute and combine felling date estimates for historical tree-ring series with (incomplete) sapwood.
+Q178,item,,open-archaeo,Dendrochronology,
+Q179,item,,open-archaeo,hanecakr,
+Q180,item,,open-archaeo,murature,"This python library was written as an help for the study of stone walls, mainly through the quantitative analysis of spatial dimensions of stones."
+Q181,item,,open-archaeo,Shape recognition,
+Q182,item,,open-archaeo,steko,
+Q183,item,,open-archaeo,iosa,
+Q184,item,,open-archaeo,hm-generator-site,A one-pager website meant to allow a person to interactively build a harris matrix.
+Q185,item,,open-archaeo,Harris matrix,
+Q186,item,,open-archaeo,shawngraham,
+Q187,item,,open-archaeo,arches-via-docker,Deployment of Arches via Docker for archaeology and related instruction.
+Q188,item,,open-archaeo,opencontext,
+Q189,item,,open-archaeo,Seriation,"Algorithms, implementations, manuscripts, and test cases for iterative deterministic frequency seriation done by agglomeration."
+Q190,item,,open-archaeo,Seriation,
+Q191,item,,open-archaeo,clipo,
+Q192,item,,open-archaeo,ExtendedMatrix,A scientific method and formal language for the Cultural Heritage domain that formalises complex interpretative philological phenomena such as virtual reconstructive hypotheses in a transparent and robust manner.
+Q193,item,,open-archaeo,Schemas and ontologies,
+Q194,item,,open-archaeo,zalmoxes-laran,
+Q195,item,,open-archaeo,Bruno Fanini,
+Q196,item,,open-archaeo,Enzo Cocca,
+Q197,item,,open-archaeo,10.3390/heritage6020069,
+Q198,item,,open-archaeo,QGIS-scripts,Some scripts that could be useful for qgis users.
+Q199,item,,open-archaeo,zoran-cuckovic,
+Q200,item,,open-archaeo,paleoxrf,The goal of paleoxrf is to simplify reading data from acadia's paleoenvironmental x-ray fluorescence laboratory
+Q201,item,,open-archaeo,X-Ray Fluorescence,
+Q202,item,,open-archaeo,paleolimbot,
+Q203,item,,open-archaeo,Iraq_mortar,Enables the creation of a high quality 3D model of an archaeological artefact via process known as photo-masking.
+Q204,item,,open-archaeo,3D modelling,
+Q205,item,,open-archaeo,apalmisano82,
+Q206,item,,open-archaeo,crossref-predynastic,Web app that uses the Crossref API to fetch and display publications on Predynastic Egyptian Archaeology.
+Q207,item,,open-archaeo,Datasets,
+Q208,item,,open-archaeo,Bibliography,
+Q209,item,,open-archaeo,Platforms and publications,
+Q210,item,,open-archaeo,watrall,
+Q211,item,,open-archaeo,TransmissionBias,"Includes an agent-based model (ABM) of cultural transmission that simulates the three main forms of transmission bias: content bias, frequency bias, and demonstrator bias."
+Q212,item,,open-archaeo,Simulation,
+Q213,item,,open-archaeo,Cultural evolution,
+Q214,item,,open-archaeo,masonyoungblood,
+Q215,item,,open-archaeo,ChronoLog,A tool for computer-assisted chronological research.
+Q216,item,,open-archaeo,Eythan Levy,
+Q217,item,,open-archaeo,Frédéric Pluquet,
+Q218,item,,open-archaeo,Gilles Geeraerts,
+Q219,item,,open-archaeo,pXRF,R package for processing pXRF data.
+Q220,item,,open-archaeo,MartinHinz,
+Q221,item,,open-archaeo,CeraMatch,Visual shape-matching of ceramics profiles.
+Q222,item,,open-archaeo,Ceramic analysis,
+Q223,item,,open-archaeo,recmod,Tools for estimating parameters for Radiocarbon-dated Event Count (REC) Models.
+Q224,item,,open-archaeo,wccarleton,
+Q225,item,,open-archaeo,TPQ-Composer,Utility for graphically displaying a set of termini post quem induced from stratified archaeological artifacts.
+Q226,item,,open-archaeo,Eythan31,
+Q227,item,,open-archaeo,sdsanalysis,"Dsanalysis is the backbone of the sdsbrowser webapp, and can be employed to analyse sds stone artefact data in r."
+Q228,item,,open-archaeo,Artefact morphology,
+Q229,item,,open-archaeo,Johanna-Mestorf-Academy,
+Q230,item,,open-archaeo,alkahest,Pre-processing XY data from experimental methods.
+Q231,item,,open-archaeo,nfrerebeau,
+Q232,item,,open-archaeo,Brainerd-Robinson-Similarity-Coefficient-and-Sampling-Error-Assessment,Script for calculating brainerd-robinson coefficients based on tabular count or percent data. This script also estimates the probability that a given difference between two samples is the product of sampling error.
+Q233,item,,open-archaeo,meshlab,"These tools are meant to help you render orthographic views of 3d models for archaeological publication by simplifying, segmenting, cleaning and rendering 3d meshes."
+Q234,item,,open-archaeo,Meshlab,
+Q235,item,,open-archaeo,KevinCain,
+Q236,item,,open-archaeo,DACORD,Computer-Assisted Drawing of Archaeological Pottery.
+Q237,item,,open-archaeo,jwilczek-dotcom,
+Q238,item,,open-archaeo,PyPotteryLens,"Provides a comprehensive suite of tools for processing, detecting, and analyzing pottery fragments from scanned documents."
+Q239,item,,open-archaeo,Machine learning,
+Q240,item,,open-archaeo,lrncrd,
+Q241,item,,open-archaeo,morphalr,Morphological analysis for archaeology.
+Q242,item,,open-archaeo,JGravier,
+Q243,item,,open-archaeo,GlobaLID-App,The GlobaLID web app
+Q244,item,,open-archaeo,Stable isotope analysis,
+Q245,item,,open-archaeo,archmetalDBM,
+Q246,item,,open-archaeo,yada,"yada, which stands for Yet Another Demographic Analysis package, supports a variety of demographic tasks, with most applications drawn from forensic anthroplogy and archaeology."
+Q247,item,,open-archaeo,Archaeogenetics,
+Q248,item,,open-archaeo,MichaelHoltonPrice,
+Q249,item,,open-archaeo,Excavation_data_viewer,R Shiny app for viewing archaeological excavation data in 3D.
+Q250,item,,open-archaeo,samclin,
+Q251,item,,open-archaeo,Ceramic-Frequency-Date-Plot,This r script produces a exploratory visual for assessing site date ranges originally suggested to me by wesley bernardini redlands university
+Q252,item,,open-archaeo,shiny_DRAC,Graphical interface for drac
+Q253,item,,open-archaeo,Luminescence dating,
+Q254,item,,open-archaeo,dstreble,
+Q255,item,,open-archaeo,Open History Map,A web-GIS platform containing spatial historical and archaeological data.
+Q256,item,,open-archaeo,Public archaeology,
+Q257,item,,open-archaeo,openhistorymap,
+Q258,item,,open-archaeo,ArchaeoAstroInsight,"QGIS Python script/plugin for computing azimuth, horizon altitude, and celestial declination of a specific bearing indicated by a line segment selected by a user."
+Q259,item,,open-archaeo,Archaeoastronomy,
+Q260,item,,open-archaeo,marcfrincu,
+Q261,item,,open-archaeo,Stratibase,"Stratibase is a minimal field recording database application (currently in filemaker fp7 format software), aimed at the simplest structure possible to perform the basic functions of a stratigraphic recording."
+Q262,item,,open-archaeo,Bruno Desachy,
+Q263,item,,open-archaeo,rdss,An R package to facilitate the use of Murail et al.'s (1999) approach of sex estimation in past populations.
+Q264,item,,open-archaeo,frederic-santos,
+Q265,item,,open-archaeo,baydem,Bayesian tools for reconstructing past demography.
+Q266,item,,open-archaeo,bocinsky,
+Q267,item,,open-archaeo,harris2graph,"Harris2graph is a script to help migrate data from the lst file format used by the basp harris, stratify and arched packages into modern graph file formats."
+Q268,item,,open-archaeo,ethnobotanyR,R package for calculating quantitative ethnobotany indices.
+Q269,item,,open-archaeo,CWWhitney,
+Q270,item,,open-archaeo,long-bone-diaphyseal-CSG-Toolkit,A GNU Octave toolkit for analyzing diaphyseal long bone cross sectional geometry.
+Q271,item,,open-archaeo,MATLAB,
+Q272,item,,open-archaeo,Biological anthropology,
+Q273,item,,open-archaeo,pr0m1th3as,
+Q274,item,,open-archaeo,3d_spatial_ripley_analyses,Test spatial associations of objects in three dimensions by using the Ripley's K function.
+Q275,item,,open-archaeo,marchaeologist,
+Q276,item,,open-archaeo,ABMA_tutorials,A set of interactive tutorials to build agent-based models and how to use them in your work as archaeologist. These tutorials are both suitable for beginners and people who want to brush up their modelling skills.
+Q277,item,,open-archaeo,NetLogo,
+Q278,item,,open-archaeo,ABMArchaeologists,
+Q279,item,,open-archaeo,RonaldVisser,
+Q280,item,,open-archaeo,drocks13,
+Q281,item,,open-archaeo,ishtar,"Ishtar is a database project for managing archaeological data and documentation from archaeological operations, that prioritizes maximum traceability of the information. Designed to enable inter-database communication, the ishtar project aims rather to a distributed information model than a centralized one: communication between the databases is favored."
+Q282,item,,open-archaeo,iggdrasil,
+Q283,item,,open-archaeo,carbon14,"The goal of carbon14 is to provide a tidy interface to radiocarbon dating, to promote its inclusion in reproducible manuscripts"
+Q284,item,,open-archaeo,Kmeans,Script for conducting k-means cluster analysis using r. This script provides output designed to help the user select an appropriate cluster solution.
+Q285,item,,open-archaeo,harris-matrix,Harris matrix visualization for the web using d3 + klayjs-d3.
+Q286,item,,open-archaeo,semerj,
+Q287,item,,open-archaeo,ArcheOS,Linux distribution with specialist software for archaeological purposes.
+Q288,item,,open-archaeo,archeos,
+Q289,item,,open-archaeo,leastcostpath,"Provides the functionality to calculate least cost paths (lcps) which are often, but not exclusively, used in archaeological research. This package can be used to apply multiple cost functions when approximating the difficulty of moving across a landscape, as well as taking into account traversing across slope and other costs such as landscape features. This package also provides functionality to validate the accuracy of the computed lcp relative to another path."
+Q290,item,,open-archaeo,josephlewis,
+Q291,item,,open-archaeo,babylonian-hours,A digital clock which computes your local time in 'seasonal-hours'.
+Q292,item,,open-archaeo,willismonroe,
+Q293,item,,open-archaeo,archaeological-object-sharing,"An online space for sharing data, 3d models, etc about archaeological objects to enable the comparison of these objects."
+Q294,item,,open-archaeo,stratigraphr,R package for archaeological stratigraphy and chronological sequences.
+Q295,item,,open-archaeo,joeroe,
+Q296,item,,open-archaeo,morphotype,Provide a pipeline from shape data extraction to typological arrangement of pottery profiles.
+Q297,item,,open-archaeo,kafetzakid,
+Q298,item,,open-archaeo,paleographic-networks,Explore networks consisting of paleographic features connected by their co-occurrence on the same inscription.
+Q299,item,,open-archaeo,Iconography,
+Q300,item,,open-archaeo,zoolog,Manipulate log-ratios (also known as log size index (LSI) values) from measurements obtained on zooarchaeological material.
+Q301,item,,open-archaeo,josempozo,
+Q302,item,,open-archaeo,Silvia Valenzuela-Lamas,
+Q303,item,,open-archaeo,Angela Trentacoste,
+Q304,item,,open-archaeo,Ariadne Nieto-Espinet,
+Q305,item,,open-archaeo,Silvia Guimarães Chiarelli,
+Q306,item,,open-archaeo,harris-matrix,Write graphviz dot files for archaeological sequence diagrams and bayesian chronological models.
+Q307,item,,open-archaeo,Lisp,
+Q308,item,,open-archaeo,tsdye,
+Q309,item,,open-archaeo,fieldwalkr,Spatial sampling and survey simulation tools.
+Q310,item,,open-archaeo,neolithicR,"Shiny app to search and filter radiocarbon dates from various source databases, based on the R package c14bazAAR."
+Q311,item,,open-archaeo,nevrome,
+Q312,item,,open-archaeo,dirkseidensticker,
+Q313,item,,open-archaeo,ASTR,"ASTR defines and implements a community reporting standard for archaeometric datasets. It also provides easy-to-use functions for common plots, statistical analyses, data processing, and data transformation workflows in archaeometry."
+Q314,item,,open-archaeo,archaeothommy,
+Q315,item,,open-archaeo,PleistoDist,Distance matrices between islands normalised over Pleistocene time.
+Q316,item,,open-archaeo,g33k5p34k,
+Q317,item,,open-archaeo,ancient-artifacts,Dynamic image analysis to identify ancient artifacts in soil samples.
+Q318,item,,open-archaeo,vanderbilt-data-science,
+Q319,item,,open-archaeo,BasicMapping,Working with map data in r.
+Q320,item,,open-archaeo,munsell-plot.R,Make a stratigraphic-style plot-schematic of sediment colour using munsell values
+Q321,item,,open-archaeo,benmarwick,
+Q322,item,,open-archaeo,The Southwestern Taphonomic Protocol,A set of analyses to control for variable taphonomic impacts on archaeological faunal datasets.
+Q323,item,,open-archaeo,Seriographe EPPM,The eppm serograph is a graphical tool for chronological serialization of archaeological furniture counting tables.
+Q324,item,,open-archaeo,Microsoft Excel,
+Q325,item,,open-archaeo,QGIS-topographic-networks,"Models relationships between elements in a terrain model, connecting pixels according to their height difference."
+Q326,item,,open-archaeo,shoredate,Offers methods to shoreline date Stone Age sites located along the Norwegian Skagerrak coast based on their present-day elevation and the trajectory of past relative sea-level change.
+Q327,item,,open-archaeo,isakro,
+Q328,item,,open-archaeo,EDM,Configurable data collection program for archaeological survey and excavation.
+Q329,item,,open-archaeo,Data collection,
+Q330,item,,open-archaeo,surf3s,
+Q331,item,,open-archaeo,rcarbon,Methods for calibrating and analysing radiocarbon dates
+Q332,item,,open-archaeo,ahb108,
+Q333,item,,open-archaeo,coffee,Uses Bayesian methods to enforce the chronological ordering of radiocarbon and other dates.
+Q334,item,,open-archaeo,senscape,"A toolbox for modelling human perception of topography for qgis, based on qgis viewshed module."
+Q335,item,,open-archaeo,Luminescence,Development version of the r package 'luminescence'. The r package 'luminescence' by the r-luminescence group provides a collection of various r functions for luminescence dating data analysis.
+Q336,item,,open-archaeo,R-Lum,
+Q337,item,,open-archaeo,Tldating,R package for tl dating
+Q338,item,,open-archaeo,sparch,A set of extra utilities that extend the functionlaity provided by core packages for spatial data management and analysis in r.
+Q339,item,,open-archaeo,joint-disease-tool,"Interactively guides the user through a number of questions, ending in a specific pathology diagnosis."
+Q340,item,,open-archaeo,alexbrandsen,
+Q341,item,,open-archaeo,kidstats,Shiny application that provides subadult age estimations based on dental and skeletal development and skeletal diaphyseal metrics using pre-optimized mixed cumulative probit models.
+Q342,item,,open-archaeo,ElaineYChu,
+Q343,item,,open-archaeo,cawd,An r package that collects together data for the ancient world
+Q344,item,,open-archaeo,sfsheath,
+Q345,item,,open-archaeo,elemSource,R Package for sourcing elements.
+Q346,item,,open-archaeo,bischrob,
+Q347,item,,open-archaeo,archaeo-CRF,Conditional Random Fields model for NER in Dutch Archaeology.
+Q348,item,,open-archaeo,piwigo-3dhop,Piwigo plugin for viewing 3D models using 3DHOP.
+Q349,item,,open-archaeo,Piwigo,
+Q350,item,,open-archaeo,sdsbrowser,Sdsbrowser is an r shiny webapp developed to make the available sds datasets (following the systematic and digital documentation of stone artefacts recording system) more accessible. It is designed to give you a quick overview on the spatial and temporal scope of sites previously analysed with sds and the distribution of artefacts within these sites.
+Q351,item,,open-archaeo,3D-ORGAN,3D reconstruction of incomplete archaeological objects using a generative adversarial network (GAN).
+Q352,item,,open-archaeo,Renato Hermoza,
+Q353,item,,open-archaeo,Ivan Sipiran,
+Q354,item,,open-archaeo,10.1145/3208159.3208173,
+Q355,item,,open-archaeo,benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r,"Plotting remote sensing data, especially how to go from xyz data on an irregular grid to an interpolated raster"
+Q356,item,,open-archaeo,Aerial and satellite imagery,
+Q357,item,,open-archaeo,RACORD,Computer-Assisted Shape Classification of Archaeological Pottery Fragments.
+P100,property,external-id,starter-pack,close match Wikidata property,
+P101,property,external-id,,equivalent CodeMeta term,
+P102,property,external-id,,equivalent schema.org term,
+P103,property,string,starter-pack,application category,
+P104,property,time,starter-pack,archive date,
+P105,property,url,starter-pack,archive URL,
+P106,property,wikibase-item,starter-pack,collection,
+P107,property,wikibase-item,starter-pack,copyright license,
+P108,property,external-id,starter-pack,CRAN project,
+P109,property,wikibase-item,starter-pack,depends on software,
+P110,property,url,starter-pack,described at URL,
+P111,property,wikibase-item,starter-pack,described by source,
+P112,property,string,starter-pack,description,
+P113,property,wikibase-item,starter-pack,developer,
+P114,property,external-id,starter-pack,DOI,
+P115,property,url,starter-pack,exact match,
+P116,property,string,starter-pack,inventory number,
+P117,property,wikibase-item,starter-pack,main subject,
+P118,property,wikibase-item,starter-pack,maintained by WikiProject,
+P119,property,monolingualtext,starter-pack,name,
+P120,property,url,starter-pack,official website,
+P121,property,external-id,starter-pack,open-archaeo ID,
+P122,property,wikibase-item,starter-pack,part of,
+P123,property,wikibase-item,starter-pack,programmed in,
+P124,property,external-id,starter-pack,PyPI project,
+P125,property,url,starter-pack,source code repository URL,
+P126,property,wikibase-item,starter-pack,version control system,
+P127,property,external-id,starter-pack,Wikidata item,
+P128,property,string,starter-pack,application sub category,
+P129,property,string,starter-pack,application suite,
+P130,property,wikibase-item,starter-pack,based on,
+P131,property,wikibase-item,starter-pack,contributor to the creative work or subject,
+P132,property,string,starter-pack,development status,
+P133,property,url,,download URL,
+P134,property,wikibase-item,starter-pack,funder,
+P135,property,external-id,,GitHub account,
+P136,property,wikibase-item,starter-pack,has part(s),
+P137,property,time,starter-pack,inception,
+P138,property,url,starter-pack,issue tracker URL,
+P139,property,time,starter-pack,last update,
+P140,property,wikibase-item,starter-pack,maintained by,
+P141,property,url,starter-pack,official demo URL,
+P142,property,wikibase-item,starter-pack,operating system,
+P143,property,wikibase-item,starter-pack,platform,
+P144,property,time,starter-pack,publication date,
+P145,property,wikibase-item,starter-pack,readable file format,
+P146,property,string,starter-pack,series ordinal,
+P147,property,external-id,,SoftWare Hash IDentifier,
+P148,property,string,starter-pack,software version identifier,
+P149,property,wikibase-item,starter-pack,supporting data,
+P150,property,wikibase-item,starter-pack,target product,
+P151,property,url,starter-pack,user manual URL,
+P152,property,string,starter-pack,version,
+P153,property,wikibase-item,starter-pack,version type,
+P154,property,wikibase-item,starter-pack,writable file format,
+P155,property,string,starter-pack,address,
+P156,property,wikibase-item,starter-pack,affiliation,
+P157,property,wikibase-item,starter-pack,archives at,
+P158,property,string,starter-pack,available on device,
+P159,property,wikibase-item,starter-pack,award received,
+P160,property,wikibase-item,starter-pack,binding of software library,
+P161,property,url,starter-pack,build instructions,
+P162,property,wikibase-item,starter-pack,cites work,
+P163,property,string,starter-pack,code sample type,
+P164,property,wikibase-item,starter-pack,computes solution to,
+P165,property,url,starter-pack,cont integration,
+P166,property,url,starter-pack,continuous integration,
+P167,property,wikibase-item,starter-pack,copyright holder,
+P168,property,quantity,starter-pack,copyright year,
+P169,property,string,starter-pack,countries not supported,
+P170,property,string,starter-pack,countries supported,
+P171,property,wikibase-item,starter-pack,creator,
+P172,property,quantity,starter-pack,data size,
+P173,property,wikibase-item,starter-pack,distribution format,
+P174,property,external-id,,DistroWatch ID,
+P175,property,external-id,,Google Play Store app ID,
+P176,property,external-id,,Debian stable package,
+P177,property,external-id,,Arch Linux package,
+P178,property,external-id,,Fedora package,
+P179,property,external-id,,Ubuntu package,
+P180,property,external-id,,Gentoo package,
+P181,property,external-id,,F-Droid package,
+P182,property,wikibase-item,,"version, edition or translation of",
+P183,property,wikibase-item,starter-pack,editor,
+P184,property,url,starter-pack,email address,
+P185,property,time,starter-pack,embargo date,
+P186,property,time,starter-pack,embargo end date,
+P187,property,wikibase-item,starter-pack,encoding,
+P188,property,time,starter-pack,end date,
+P189,property,time,starter-pack,end time,
+P190,property,wikibase-item,starter-pack,facet of,
+P191,property,wikibase-item,starter-pack,family name,
+P192,property,string,starter-pack,feature list,
+P193,property,wikibase-item,starter-pack,field of work,
+P194,property,wikibase-item,starter-pack,file format,
+P195,property,wikibase-item,starter-pack,followed by,
+P196,property,wikibase-item,starter-pack,follows,
+P197,property,external-id,starter-pack,Framalibre ID,
+P198,property,external-id,starter-pack,Free Software Directory entry,
+P199,property,string,starter-pack,funding,
+P200,property,wikibase-item,starter-pack,given name,
+P201,property,wikibase-item,starter-pack,GUI toolkit or framework,
+P202,property,wikibase-item,starter-pack,has characteristic,
+P203,property,wikibase-item,starter-pack,has source code,
+P204,property,commonsMedia,starter-pack,image,
+P205,property,wikibase-item,starter-pack,influenced by,
+P206,property,wikibase-item,starter-pack,input device,
+P207,property,url,starter-pack,install URL,
+P208,property,url,starter-pack,IRC channel URL,
+P209,property,string,starter-pack,is accessible for free,
+P210,property,wikibase-item,starter-pack,is source code of,
+P211,property,commonsMedia,starter-pack,logo image,
+P212,property,string,starter-pack,media type,
+P213,property,wikibase-item,starter-pack,member of,
+P214,property,string,starter-pack,memory requirements,
+P215,property,wikibase-item,starter-pack,notable work,
+P216,property,url,starter-pack,official blog URL,
+P217,property,external-id,starter-pack,Open Hub ID,
+P218,property,wikibase-item,starter-pack,output device,
+P219,property,wikibase-item,starter-pack,package management system,
+P220,property,wikibase-item,starter-pack,part of the series,
+P221,property,string,starter-pack,permissions,
+P222,property,url,starter-pack,person identifier,
+P223,property,time,starter-pack,point in time,
+P224,property,quantity,,port,
+P225,property,string,starter-pack,position,
+P226,property,quantity,starter-pack,price,
+P227,property,string,starter-pack,processor requirements,
+P228,property,wikibase-item,starter-pack,producer,
+P229,property,wikibase-item,starter-pack,provider,
+P230,property,wikibase-item,starter-pack,publisher,
+P231,property,url,starter-pack,readme,
+P232,property,string,starter-pack,release notes,
+P233,property,wikibase-item,starter-pack,review,
+P234,property,string,starter-pack,review aspect,
+P235,property,string,starter-pack,review body,
+P236,property,string,starter-pack,role name,
+P237,property,wikibase-item,starter-pack,software add on,
+P238,property,wikibase-item,starter-pack,software engine,
+P239,property,wikibase-item,starter-pack,software quality assurance,
+P240,property,wikibase-item,starter-pack,software suggestions,
+P241,property,external-id,starter-pack,SourceForge project,
+P242,property,wikibase-item,starter-pack,sponsor,
+P243,property,time,starter-pack,start date,
+P244,property,time,starter-pack,start time,
+P245,property,string,starter-pack,storage requirements,
+P246,property,external-id,starter-pack,swMATH work ID,
+P247,property,monolingualtext,starter-pack,title,
+P248,property,wikibase-item,starter-pack,web interface software,
+P249,property,wikibase-item,,digital rights management system,
+P250,property,external-id,,ISO standard,
+P251,property,wikibase-item,,language of work or name,
+P252,property,wikibase-item,,movement,
+P253,property,wikibase-item,,removed feature,
+P254,property,external-id,,RfC ID,
+P255,property,url,,Stack Exchange tag,
+P256,property,string,,TeX string,
+P257,property,string,,Unicode character,

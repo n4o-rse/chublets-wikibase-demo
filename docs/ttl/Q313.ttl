@@ -1,0 +1,215 @@
+# Q313: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q313
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "ASTR defines and implements a community reporting standard for archaeometric datasets. It also provides easy-to-use functions for common plots, statistical analyses, data processing, and data transformation workflows in archaeometry."@en ;
+    dcterms:identifier "Q313" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q313 ;
+    dcterms:title "ASTR"@en ;
+    schema:about wd:Q313 ;
+    dcat:distribution dist:Q313-html,
+        dist:Q313-json,
+        dist:Q313-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q313.html> .
+
+dist:Q313-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q313, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q313.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q313-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q313, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15447"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q313.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q313-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q313, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q313.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q313
+    a wikibase:Item ;
+    schema:description "ASTR defines and implements a community reporting standard for archaeometric datasets. It also provides easy-to-use functions for common plots, statistical analyses, data processing, and data transformation workflows in archaeometry."@en ;
+    schema:name "ASTR"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "ASTR"@en ;
+    skos:prefLabel "ASTR"@en ;
+    p:P2 wds:Q313-8A39A3D0-23AC-5F85-8940-0DAE4A068B37,
+        wds:Q313-70D9EE4B-B833-5A86-A98F-0FA400132847 ;
+    p:P106 wds:Q313-BF79C239-165D-5B1E-85D0-AA9A6EB33E54 ;
+    p:P113 wds:Q313-591B8C29-1E74-5916-B5A9-A81E6FC7F5D1 ;
+    p:P115 wds:Q313-CB4D0FBC-CCCF-5BAA-BDB1-9851A798A01F ;
+    p:P116 wds:Q313-3B80C27A-30D9-5D7A-9D2C-A9174BB05151 ;
+    p:P117 wds:Q313-1C0BED44-1DCC-58CD-BCCE-FD9A1D87F975,
+        wds:Q313-1313E008-A8E3-5C82-B5B4-D062971D4FC0 ;
+    p:P118 wds:Q313-30FDEC3B-92B3-57D3-BEE4-770E70511126 ;
+    p:P119 wds:Q313-BF9BDF35-FFE9-5206-BE4F-209C31EC940C ;
+    p:P122 wds:Q313-6481C391-CE46-5BB6-B380-A2F01F76F51E,
+        wds:Q313-C573EA6F-6C9B-52DC-BD4D-D2CC011E68B4 ;
+    p:P123 wds:Q313-524E995C-13B3-5242-A86D-C92A3E20FF67 ;
+    p:P125 wds:Q313-CB2907B7-71DE-58A9-B3C9-00013082561F ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q314 ;
+    wdt:P115 <https://open-archaeo.info/post/astr/> ;
+    wdt:P116 "astr" ;
+    wdt:P117 wd:Q116,
+        wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ASTR"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/archaeothommy/ASTR> .
+
+wds:Q313-1C0BED44-1DCC-58CD-BCCE-FD9A1D87F975
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P117 wd:Q116 .
+
+wds:Q313-3B80C27A-30D9-5D7A-9D2C-A9174BB05151
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "astr" .
+
+wds:Q313-8A39A3D0-23AC-5F85-8940-0DAE4A068B37
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P2 wd:Q103 .
+
+wds:Q313-30FDEC3B-92B3-57D3-BEE4-770E70511126
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P118 wd:Q108 .
+
+wds:Q313-70D9EE4B-B833-5A86-A98F-0FA400132847
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P2 wd:Q106 .
+
+wds:Q313-524E995C-13B3-5242-A86D-C92A3E20FF67
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P123 wd:Q111 .
+
+wds:Q313-591B8C29-1E74-5916-B5A9-A81E6FC7F5D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q314 .
+
+wds:Q313-1313E008-A8E3-5C82-B5B4-D062971D4FC0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P117 wd:Q148 .
+
+wds:Q313-6481C391-CE46-5BB6-B380-A2F01F76F51E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P122 wd:Q109 .
+
+wds:Q313-BF9BDF35-FFE9-5206-BE4F-209C31EC940C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P119 "ASTR"@en .
+
+wds:Q313-BF79C239-165D-5B1E-85D0-AA9A6EB33E54
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P106 wd:Q110 .
+
+wds:Q313-C573EA6F-6C9B-52DC-BD4D-D2CC011E68B4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P122 wd:Q110 .
+
+wds:Q313-CB4D0FBC-CCCF-5BAA-BDB1-9851A798A01F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    ps:P115 <https://open-archaeo.info/post/astr/> .
+
+wds:Q313-CB2907B7-71DE-58A9-B3C9-00013082561F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/archaeothommy/ASTR> .
+
+wdref:e7a1db8723bf64e168f15744972f7d67ca4eacab
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/astr/> .

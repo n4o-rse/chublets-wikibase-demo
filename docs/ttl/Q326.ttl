@@ -1,0 +1,224 @@
+# Q326: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q326
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Offers methods to shoreline date Stone Age sites located along the Norwegian Skagerrak coast based on their present-day elevation and the trajectory of past relative sea-level change."@en ;
+    dcterms:identifier "Q326" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q326 ;
+    dcterms:title "shoredate"@en ;
+    schema:about wd:Q326 ;
+    dcat:distribution dist:Q326-html,
+        dist:Q326-json,
+        dist:Q326-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q326.html> .
+
+dist:Q326-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q326, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q326.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q326-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q326, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16375"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q326.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q326-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q326, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q326.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q326
+    a wikibase:Item ;
+    schema:description "Offers methods to shoreline date Stone Age sites located along the Norwegian Skagerrak coast based on their present-day elevation and the trajectory of past relative sea-level change."@en ;
+    schema:name "shoredate"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "shoredate"@en ;
+    skos:prefLabel "shoredate"@en ;
+    p:P2 wds:Q326-7BC827B8-80E0-597A-9C71-19C07F981E97,
+        wds:Q326-654D5FA0-FFE0-56E1-8BE2-363D961E767F ;
+    p:P106 wds:Q326-7AA13C0C-96DD-5007-A9E9-31670239A3E6 ;
+    p:P108 wds:Q326-CE5ACAAC-14F1-577E-8963-F501895A32A4 ;
+    p:P113 wds:Q326-F1A75F2F-0FDF-58E3-BD34-CD6409585B9A ;
+    p:P115 wds:Q326-2763F5E7-44E9-5C60-BD1E-61913E3DA0F8 ;
+    p:P116 wds:Q326-0867CE10-79C3-5D00-8C7F-74AD8F07AE1B ;
+    p:P117 wds:Q326-496B8F5B-DDF3-5169-BDED-55D1A03DD2BC,
+        wds:Q326-B096ABA0-BAAB-5C0D-9749-36B6DC08F348 ;
+    p:P118 wds:Q326-16E6E497-9C6E-59F8-8CE2-1B9562157443 ;
+    p:P119 wds:Q326-1AB13032-4AAC-5B3C-9715-D0F0326AA712 ;
+    p:P122 wds:Q326-4BE14235-D0AA-5553-8F5B-60711FF20058,
+        wds:Q326-13A27F8B-D9A4-5EBA-86E3-2EE1D9C4702C ;
+    p:P123 wds:Q326-87BE4760-869B-5B94-9041-CD201D96B78C ;
+    p:P125 wds:Q326-BF5636A6-7AC5-5FBA-9232-23A36FB5F5A0 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "shoredate" ;
+    wdt:P113 wd:Q327 ;
+    wdt:P115 <https://open-archaeo.info/post/shoredate/> ;
+    wdt:P116 "shoredate" ;
+    wdt:P117 wd:Q119,
+        wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "shoredate"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/isakro/shoredate> .
+
+wds:Q326-1AB13032-4AAC-5B3C-9715-D0F0326AA712
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P119 "shoredate"@en .
+
+wds:Q326-4BE14235-D0AA-5553-8F5B-60711FF20058
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P122 wd:Q109 .
+
+wds:Q326-7AA13C0C-96DD-5007-A9E9-31670239A3E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P106 wd:Q110 .
+
+wds:Q326-7BC827B8-80E0-597A-9C71-19C07F981E97
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P2 wd:Q103 .
+
+wds:Q326-13A27F8B-D9A4-5EBA-86E3-2EE1D9C4702C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P122 wd:Q110 .
+
+wds:Q326-16E6E497-9C6E-59F8-8CE2-1B9562157443
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P118 wd:Q108 .
+
+wds:Q326-87BE4760-869B-5B94-9041-CD201D96B78C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P123 wd:Q111 .
+
+wds:Q326-496B8F5B-DDF3-5169-BDED-55D1A03DD2BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P117 wd:Q119 .
+
+wds:Q326-654D5FA0-FFE0-56E1-8BE2-363D961E767F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P2 wd:Q106 .
+
+wds:Q326-0867CE10-79C3-5D00-8C7F-74AD8F07AE1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "shoredate" .
+
+wds:Q326-2763F5E7-44E9-5C60-BD1E-61913E3DA0F8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P115 <https://open-archaeo.info/post/shoredate/> .
+
+wds:Q326-B096ABA0-BAAB-5C0D-9749-36B6DC08F348
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P117 wd:Q126 .
+
+wds:Q326-BF5636A6-7AC5-5FBA-9232-23A36FB5F5A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/isakro/shoredate> .
+
+wds:Q326-CE5ACAAC-14F1-577E-8963-F501895A32A4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    ps:P108 "shoredate" .
+
+wds:Q326-F1A75F2F-0FDF-58E3-BD34-CD6409585B9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q327 .
+
+wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/shoredate/> .

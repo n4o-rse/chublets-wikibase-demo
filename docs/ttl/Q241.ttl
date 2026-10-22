@@ -1,0 +1,215 @@
+# Q241: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q241
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Morphological analysis for archaeology."@en ;
+    dcterms:identifier "Q241" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q241 ;
+    dcterms:title "morphalr"@en ;
+    schema:about wd:Q241 ;
+    dcat:distribution dist:Q241-html,
+        dist:Q241-json,
+        dist:Q241-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q241.html> .
+
+dist:Q241-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q241, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q241.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q241-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q241, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15249"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q241.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q241-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q241, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q241.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q241
+    a wikibase:Item ;
+    schema:description "Morphological analysis for archaeology."@en ;
+    schema:name "morphalr"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "morphalr"@en ;
+    skos:prefLabel "morphalr"@en ;
+    p:P2 wds:Q241-1F21D8A4-A2E2-5718-A57D-6B382B05077B,
+        wds:Q241-E2837CF5-71DD-5009-B48C-913E89827673 ;
+    p:P106 wds:Q241-0BD45783-BA08-5BDD-8134-61E3B340EDD8 ;
+    p:P113 wds:Q241-45AFB063-5C9B-5E4E-AFCC-BB4F1D15C53E ;
+    p:P115 wds:Q241-051CE04F-AC09-5F58-AAA2-B2E15BA92858 ;
+    p:P116 wds:Q241-7DA8EC55-9F63-5A4E-956A-3AD6E954EDAA ;
+    p:P117 wds:Q241-70CA90A3-F90D-5A0B-911B-D1B478DC5F79 ;
+    p:P118 wds:Q241-B54815A1-F4D9-53CC-AE81-8DD462FD768A ;
+    p:P119 wds:Q241-9D8B3431-95A3-52B3-B618-25BF79632838 ;
+    p:P120 wds:Q241-61B99BAB-0456-59B5-9C73-B622A90FFD96 ;
+    p:P122 wds:Q241-C6DFF21F-A2B8-5FBA-8864-6D76F6768B4D,
+        wds:Q241-E371C44E-C498-50D6-A470-211317D101F2 ;
+    p:P123 wds:Q241-A63CDBFD-13C2-571D-B765-412B29130C1B ;
+    p:P125 wds:Q241-11361F90-FECB-50BC-86DF-EA516E721ABB ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q242 ;
+    wdt:P115 <https://open-archaeo.info/post/morphalr/> ;
+    wdt:P116 "morphalr" ;
+    wdt:P117 wd:Q119 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "morphalr"@en ;
+    wdt:P120 <https://jgravier.github.io/morphalr/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/JGravier/morphalr> .
+
+wds:Q241-0BD45783-BA08-5BDD-8134-61E3B340EDD8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P106 wd:Q110 .
+
+wds:Q241-1F21D8A4-A2E2-5718-A57D-6B382B05077B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P2 wd:Q103 .
+
+wds:Q241-7DA8EC55-9F63-5A4E-956A-3AD6E954EDAA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "morphalr" .
+
+wds:Q241-9D8B3431-95A3-52B3-B618-25BF79632838
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P119 "morphalr"@en .
+
+wds:Q241-45AFB063-5C9B-5E4E-AFCC-BB4F1D15C53E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q242 .
+
+wds:Q241-051CE04F-AC09-5F58-AAA2-B2E15BA92858
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P115 <https://open-archaeo.info/post/morphalr/> .
+
+wds:Q241-61B99BAB-0456-59B5-9C73-B622A90FFD96
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P120 <https://jgravier.github.io/morphalr/> .
+
+wds:Q241-70CA90A3-F90D-5A0B-911B-D1B478DC5F79
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P117 wd:Q119 .
+
+wds:Q241-11361F90-FECB-50BC-86DF-EA516E721ABB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/JGravier/morphalr> .
+
+wds:Q241-A63CDBFD-13C2-571D-B765-412B29130C1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P123 wd:Q111 .
+
+wds:Q241-B54815A1-F4D9-53CC-AE81-8DD462FD768A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P118 wd:Q108 .
+
+wds:Q241-C6DFF21F-A2B8-5FBA-8864-6D76F6768B4D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P122 wd:Q109 .
+
+wds:Q241-E371C44E-C498-50D6-A470-211317D101F2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P122 wd:Q110 .
+
+wds:Q241-E2837CF5-71DD-5009-B48C-913E89827673
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5fddd2470ea88d053611fa398084eb86c3478355 ;
+    ps:P2 wd:Q106 .
+
+wdref:5fddd2470ea88d053611fa398084eb86c3478355
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/morphalr/> .

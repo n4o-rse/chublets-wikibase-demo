@@ -1,0 +1,225 @@
+# Q246: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q246
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "yada, which stands for Yet Another Demographic Analysis package, supports a variety of demographic tasks, with most applications drawn from forensic anthroplogy and archaeology."@en ;
+    dcterms:identifier "Q246" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q246 ;
+    dcterms:title "yada"@en ;
+    schema:about wd:Q246 ;
+    dcat:distribution dist:Q246-html,
+        dist:Q246-json,
+        dist:Q246-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q246.html> .
+
+dist:Q246-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q246, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q246.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q246-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q246, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16245"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q246.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q246-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q246, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q246.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q246
+    a wikibase:Item ;
+    schema:description "yada, which stands for Yet Another Demographic Analysis package, supports a variety of demographic tasks, with most applications drawn from forensic anthroplogy and archaeology."@en ;
+    schema:name "yada"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "yada"@en ;
+    skos:prefLabel "yada"@en ;
+    p:P2 wds:Q246-A74B5771-03CC-5C8B-ADE3-A98BDDBEDF04,
+        wds:Q246-CD3BF379-2DA7-551E-8AAC-F520F363F4A5 ;
+    p:P106 wds:Q246-E7B32952-848A-5453-92F6-F9D04AC97114 ;
+    p:P113 wds:Q246-12B1A117-B137-57B0-9A0F-D40E1B7631EF ;
+    p:P115 wds:Q246-F7511525-1D16-5BDC-ACD2-34D7A4AB58E1 ;
+    p:P116 wds:Q246-569741CB-D3E3-5137-B640-D7F00EF576E4 ;
+    p:P117 wds:Q246-FA67403E-4AFC-5DBA-BE71-411F5EA8179F ;
+    p:P118 wds:Q246-B2E7C0BE-5A1C-59F0-A637-2B4A0ADE0094 ;
+    p:P119 wds:Q246-F866D43F-BC17-5D63-8B4D-97F9D50A4C2A ;
+    p:P120 wds:Q246-D4B5DCCA-F379-5EC9-AD35-8FDF8FD90129 ;
+    p:P122 wds:Q246-4E94FB94-F7D0-554B-B05F-3C6D95AFC466,
+        wds:Q246-D0ECA471-1AEE-5681-B680-9A25176A168B ;
+    p:P123 wds:Q246-E5F3F9D3-CFF5-5085-A049-61008DD2EC2C ;
+    p:P125 wds:Q246-B708CF1E-CBB9-511A-8216-CD9EC045F4A8 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q248 ;
+    wdt:P115 <https://open-archaeo.info/post/yada/> ;
+    wdt:P116 "yada" ;
+    wdt:P117 wd:Q247 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "yada"@en ;
+    wdt:P120 <https://eehh-stanford.github.io/yada/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/eehh-stanford/yada> .
+
+wds:Q246-4E94FB94-F7D0-554B-B05F-3C6D95AFC466
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P122 wd:Q109 .
+
+wds:Q246-12B1A117-B137-57B0-9A0F-D40E1B7631EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q248 .
+
+wds:Q246-569741CB-D3E3-5137-B640-D7F00EF576E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "yada" .
+
+wds:Q246-A74B5771-03CC-5C8B-ADE3-A98BDDBEDF04
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P2 wd:Q103 .
+
+wds:Q246-B2E7C0BE-5A1C-59F0-A637-2B4A0ADE0094
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P118 wd:Q108 .
+
+wds:Q246-B708CF1E-CBB9-511A-8216-CD9EC045F4A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    pq:P104 "2020-06-15T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-eehh-stanford-yada_-_2020-06-15_00-23-18> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:39c25496be10707812dd140104fb3d08 ;
+    ps:P125 <https://github.com/eehh-stanford/yada> .
+
+wds:Q246-CD3BF379-2DA7-551E-8AAC-F520F363F4A5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P2 wd:Q106 .
+
+wds:Q246-D0ECA471-1AEE-5681-B680-9A25176A168B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P122 wd:Q110 .
+
+wds:Q246-D4B5DCCA-F379-5EC9-AD35-8FDF8FD90129
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P120 <https://eehh-stanford.github.io/yada/> .
+
+wds:Q246-E5F3F9D3-CFF5-5085-A049-61008DD2EC2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P123 wd:Q111 .
+
+wds:Q246-E7B32952-848A-5453-92F6-F9D04AC97114
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P106 wd:Q110 .
+
+wds:Q246-F866D43F-BC17-5D63-8B4D-97F9D50A4C2A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P119 "yada"@en .
+
+wds:Q246-F7511525-1D16-5BDC-ACD2-34D7A4AB58E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P115 <https://open-archaeo.info/post/yada/> .
+
+wds:Q246-FA67403E-4AFC-5DBA-BE71-411F5EA8179F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57d39468d592a81d5abf83be5b4b41e469813e67 ;
+    ps:P117 wd:Q247 .
+
+wdref:57d39468d592a81d5abf83be5b4b41e469813e67
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/yada/> .
+
+wdv:39c25496be10707812dd140104fb3d08
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-06-15T00:00:00Z"^^xsd:dateTime .

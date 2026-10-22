@@ -40,7 +40,7 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
   <p class="description"><span class="l" lang="en">The data of this site is a Turtle file in the RDF model of Wikibase, so queries written for the Query Service of a Wikibase work here too. Edit a query and press Run.</span><span class="l" lang="de">Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Abfragen, die für den Query Service einer Wikibase geschrieben sind, laufen deshalb auch hier. Abfrage ändern, dann auf Ausführen klicken.</span></p>
   <p class="data-line">
     <strong><span class="l" lang="en">The data</span><span class="l" lang="de">Die Daten</span></strong>
-    <span class="l" lang="en">A Turtle file in the RDF model of Wikibase with 15502 triples:</span><span class="l" lang="de">Eine Turtle-Datei im RDF-Modell von Wikibase mit 15502 Tripeln:</span>
+    <span class="l" lang="en">A Turtle file in the RDF model of Wikibase with 37399 triples:</span><span class="l" lang="de">Eine Turtle-Datei im RDF-Modell von Wikibase mit 37399 Tripeln:</span>
     <a href="downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl">n4o-rse.github.io-chublets-wikibase-demo.ttl</a> &middot; <a href="downloads/wikibase-ontology.ttl"><span class="l" lang="en">Wikibase ontology</span><span class="l" lang="de">Wikibase-Ontologie</span></a>  </p>
   <p class="muted"><strong><span class="l" lang="en">Every record on its own:</span><span class="l" lang="de">Jeder Datensatz einzeln:</span></strong> <span class="l" lang="en">each page has a Turtle file in ttl/ and the archived JSON in json/; the catalogue (DCAT) lists them.</span><span class="l" lang="de">zu jeder Seite gibt es eine Turtle-Datei in ttl/ und das archivierte JSON in json/; der Katalog (DCAT) verzeichnet sie.</span></p>
   <p id="wbs-sparql-status" class="status" role="status" aria-live="polite"><span class="l" lang="en">Press Run to start. The first run takes a few seconds.</span><span class="l" lang="de">Auf „Ausführen“ klicken, um zu starten. Der erste Lauf dauert einige Sekunden.</span></p>
@@ -185,6 +185,25 @@ LIMIT 20</textarea>
     </div>
     <div class="query-result"></div>
   </section>
+  <section class="query" id="qualifiers">
+    <h2><span class="l" lang="en">Statements with qualifiers</span><span class="l" lang="de">Aussagen mit Qualifiern</span></h2>
+<p><span class="l" lang="en">A statement can carry qualifiers that narrow it down. This lists the qualifier properties in use.</span><span class="l" lang="de">Eine Aussage kann Qualifier tragen, die sie eingrenzen. Hier stehen die verwendeten Qualifier-Properties.</span></p>    <textarea spellcheck="false" aria-label="Statements with qualifiers" rows="9">SELECT ?qualifierLabel (COUNT(?statement) AS ?statements) WHERE {
+  ?qualifierProperty wikibase:qualifier ?qualifier ;
+                     rdfs:label ?qualifierLabel .
+  FILTER(LANG(?qualifierLabel) = &#34;en&#34;)
+  ?statement ?qualifier ?value .
+}
+GROUP BY ?qualifierLabel
+ORDER BY DESC(?statements) ?qualifierLabel</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/qualifiers.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
   <section class="query" id="references">
     <h2><span class="l" lang="en">Statements with a reference</span><span class="l" lang="de">Aussagen mit Fundstelle</span></h2>
 <p><span class="l" lang="en">Statements that say where they come from, with the property and value of the reference.</span><span class="l" lang="de">Aussagen, die angeben, woher sie stammen, mit Property und Wert der Fundstelle.</span></p>    <textarea spellcheck="false" aria-label="Statements with a reference" rows="20">SELECT ?itemLabel ?propertyLabel ?sourceLabel ?source WHERE {
@@ -280,7 +299,7 @@ ORDER BY ?label ?crmClass</textarea>
       <p>
         <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 (Public Domain)</a></span>
       </p>
-      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.8.0</p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.9.0</p>
     </footer>
   </div>
 </div>

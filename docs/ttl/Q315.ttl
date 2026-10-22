@@ -1,0 +1,206 @@
+# Q315: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q315
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Distance matrices between islands normalised over Pleistocene time."@en ;
+    dcterms:identifier "Q315" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q315 ;
+    dcterms:title "PleistoDist"@en ;
+    schema:about wd:Q315 ;
+    dcat:distribution dist:Q315-html,
+        dist:Q315-json,
+        dist:Q315-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q315.html> .
+
+dist:Q315-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q315, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q315.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q315-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q315, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14424"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q315.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q315-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q315, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q315.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q315
+    a wikibase:Item ;
+    schema:description "Distance matrices between islands normalised over Pleistocene time."@en ;
+    schema:name "PleistoDist"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "PleistoDist"@en ;
+    skos:prefLabel "PleistoDist"@en ;
+    p:P2 wds:Q315-2DD747C9-0488-5E73-A233-5F861DB2EEAD,
+        wds:Q315-F548C264-05E1-59F6-8DD3-40C68E2F8DB4 ;
+    p:P106 wds:Q315-44CB0BCF-D6B9-52B0-9426-E0165A4D0E77 ;
+    p:P109 wds:Q315-B35AED02-B9A9-5696-9C5E-24D1935225F4 ;
+    p:P113 wds:Q315-1B5B66C9-1F49-5B88-96D8-53B8093D8591 ;
+    p:P115 wds:Q315-091F7AAF-FD6B-565A-8713-FA1CC263D69E ;
+    p:P116 wds:Q315-CC8EF6DF-5D65-56C4-9A78-7EE9C0EF739C ;
+    p:P117 wds:Q315-CECAC966-D094-595D-9652-8F0A6F668F6E ;
+    p:P118 wds:Q315-584F7EB8-1C91-5E2F-928F-50C03BD68CBA ;
+    p:P119 wds:Q315-842AF878-9535-56EC-95D8-0BC28498F92A ;
+    p:P122 wds:Q315-6B2B1FF4-489B-520E-8FEF-1CDB79933734,
+        wds:Q315-AC48E51D-D9DC-59F2-875C-A1885E0501B1 ;
+    p:P125 wds:Q315-A0A5BEEC-4746-5099-ADAD-69703DC47D33 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q122 ;
+    wdt:P113 wd:Q316 ;
+    wdt:P115 <https://open-archaeo.info/post/pleistodist/> ;
+    wdt:P116 "pleistodist" ;
+    wdt:P117 wd:Q119 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "PleistoDist"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/g33k5p34k/PleistoDist> .
+
+wds:Q315-1B5B66C9-1F49-5B88-96D8-53B8093D8591
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q316 .
+
+wds:Q315-2DD747C9-0488-5E73-A233-5F861DB2EEAD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P2 wd:Q106 .
+
+wds:Q315-6B2B1FF4-489B-520E-8FEF-1CDB79933734
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P122 wd:Q110 .
+
+wds:Q315-44CB0BCF-D6B9-52B0-9426-E0165A4D0E77
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P106 wd:Q110 .
+
+wds:Q315-091F7AAF-FD6B-565A-8713-FA1CC263D69E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P115 <https://open-archaeo.info/post/pleistodist/> .
+
+wds:Q315-584F7EB8-1C91-5E2F-928F-50C03BD68CBA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P118 wd:Q108 .
+
+wds:Q315-842AF878-9535-56EC-95D8-0BC28498F92A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P119 "PleistoDist"@en .
+
+wds:Q315-A0A5BEEC-4746-5099-ADAD-69703DC47D33
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/g33k5p34k/PleistoDist> .
+
+wds:Q315-AC48E51D-D9DC-59F2-875C-A1885E0501B1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P122 wd:Q109 .
+
+wds:Q315-B35AED02-B9A9-5696-9C5E-24D1935225F4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P109 wd:Q122 .
+
+wds:Q315-CC8EF6DF-5D65-56C4-9A78-7EE9C0EF739C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "pleistodist" .
+
+wds:Q315-CECAC966-D094-595D-9652-8F0A6F668F6E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P117 wd:Q119 .
+
+wds:Q315-F548C264-05E1-59F6-8DD3-40C68E2F8DB4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962 ;
+    ps:P2 wd:Q103 .
+
+wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/pleistodist/> .

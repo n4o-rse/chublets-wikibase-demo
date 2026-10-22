@@ -1,0 +1,216 @@
+# Q125: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q125
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Tools for converting between Maya and Western calendars."@en ;
+    dcterms:identifier "Q125" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q125 ;
+    dcterms:title "katun"@en ;
+    schema:about wd:Q125 ;
+    dcat:distribution dist:Q125-html,
+        dist:Q125-json,
+        dist:Q125-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q125.html> .
+
+dist:Q125-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q125, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q125.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q125-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q125, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15139"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q125.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q125-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q125, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q125.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q125
+    a wikibase:Item ;
+    schema:description "Tools for converting between Maya and Western calendars."@en ;
+    schema:name "katun"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "katun"@en ;
+    skos:prefLabel "katun"@en ;
+    p:P2 wds:Q125-01A5B248-3150-5C97-A3EC-638906039DFC,
+        wds:Q125-F321E0FA-5A3B-5A09-B620-F9D1FF7335A7 ;
+    p:P106 wds:Q125-45D192F7-DD1A-5050-8AB4-B8FFCD766A47 ;
+    p:P113 wds:Q125-0ED33441-849E-579B-B8D6-79F49050D399 ;
+    p:P115 wds:Q125-FBD9CBB0-E701-5173-BFF5-6DD0B89655D1 ;
+    p:P116 wds:Q125-1085E23D-9C8C-5BAB-BEF5-0840F96D7D64 ;
+    p:P117 wds:Q125-CA76782E-CE27-5BE7-BE40-8299F1FB1D5C ;
+    p:P118 wds:Q125-206104EB-783C-5DA8-9B68-54E68A808968 ;
+    p:P119 wds:Q125-15A77D23-8163-5A3C-8F21-871D861FA166 ;
+    p:P120 wds:Q125-9B888372-6481-5457-96B8-6A08E4EDDD09 ;
+    p:P122 wds:Q125-1D4DB412-D617-50A7-A70F-47EC0C5ED4BB,
+        wds:Q125-79D86EB1-42D3-5A51-8C98-467F3F133D3E ;
+    p:P125 wds:Q125-5BB4523E-F28F-5EE0-9556-00CEC25A271F ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q127 ;
+    wdt:P115 <https://open-archaeo.info/post/katun/> ;
+    wdt:P116 "katun" ;
+    wdt:P117 wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "katun"@en ;
+    wdt:P120 <https://jgregoriods.github.io/katun/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/jgregoriods/katun> .
+
+wds:Q125-0ED33441-849E-579B-B8D6-79F49050D399
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q127 .
+
+wds:Q125-01A5B248-3150-5C97-A3EC-638906039DFC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P2 wd:Q102 .
+
+wds:Q125-1D4DB412-D617-50A7-A70F-47EC0C5ED4BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P122 wd:Q110 .
+
+wds:Q125-5BB4523E-F28F-5EE0-9556-00CEC25A271F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    pq:P104 "2021-05-27T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-jgregoriods-katun_-_2021-05-27_03-02-18> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:09ffc0f656fe841e4d8aeb477a68f5bb ;
+    ps:P125 <https://github.com/jgregoriods/katun> .
+
+wds:Q125-9B888372-6481-5457-96B8-6A08E4EDDD09
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P120 <https://jgregoriods.github.io/katun/> .
+
+wds:Q125-15A77D23-8163-5A3C-8F21-871D861FA166
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P119 "katun"@en .
+
+wds:Q125-45D192F7-DD1A-5050-8AB4-B8FFCD766A47
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P106 wd:Q110 .
+
+wds:Q125-79D86EB1-42D3-5A51-8C98-467F3F133D3E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P122 wd:Q109 .
+
+wds:Q125-1085E23D-9C8C-5BAB-BEF5-0840F96D7D64
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "katun" .
+
+wds:Q125-206104EB-783C-5DA8-9B68-54E68A808968
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P118 wd:Q108 .
+
+wds:Q125-CA76782E-CE27-5BE7-BE40-8299F1FB1D5C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P117 wd:Q126 .
+
+wds:Q125-F321E0FA-5A3B-5A09-B620-F9D1FF7335A7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P2 wd:Q106 .
+
+wds:Q125-FBD9CBB0-E701-5173-BFF5-6DD0B89655D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b ;
+    ps:P115 <https://open-archaeo.info/post/katun/> .
+
+wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/katun/> .
+
+wdv:09ffc0f656fe841e4d8aeb477a68f5bb
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-05-27T00:00:00Z"^^xsd:dateTime .

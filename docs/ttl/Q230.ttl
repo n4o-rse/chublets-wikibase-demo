@@ -1,0 +1,233 @@
+# Q230: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q230
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Pre-processing XY data from experimental methods."@en ;
+    dcterms:identifier "Q230" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q230 ;
+    dcterms:title "alkahest"@en ;
+    schema:about wd:Q230 ;
+    dcat:distribution dist:Q230-html,
+        dist:Q230-json,
+        dist:Q230-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q230.html> .
+
+dist:Q230-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q230, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q230.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q230-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q230, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17054"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q230.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q230-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q230, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q230.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q230
+    a wikibase:Item ;
+    schema:description "Pre-processing XY data from experimental methods."@en ;
+    schema:name "alkahest"@en ;
+    wikibase:identifiers "2"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    rdfs:label "alkahest"@en ;
+    skos:prefLabel "alkahest"@en ;
+    p:P2 wds:Q230-12C03F06-16C9-5F16-AD16-BBFF19E91F44,
+        wds:Q230-FCF39154-4AF9-5471-A797-8E696A1721A3 ;
+    p:P106 wds:Q230-2A453E24-5E6E-500C-932C-4FCCBCA4B727 ;
+    p:P108 wds:Q230-1E5E2EB1-6B16-53E8-B075-0877EEBEBC4C ;
+    p:P113 wds:Q230-C76C377B-A1F1-55E1-ABE5-A48F14DE3306 ;
+    p:P114 wds:Q230-353BDECF-7D63-554B-B706-8F423505AE8C ;
+    p:P115 wds:Q230-66113A28-FD40-5564-9188-4C3F6EF1072A ;
+    p:P116 wds:Q230-CB1976DB-75A0-5480-ACD7-0F93385AE10D ;
+    p:P117 wds:Q230-A237C334-58E2-5C32-9146-034F4255F7FD ;
+    p:P118 wds:Q230-36855F03-299F-57BB-98AC-982EBCEDF833 ;
+    p:P119 wds:Q230-93DC4A41-560E-5C1B-9CD8-2720BC7F22E9 ;
+    p:P120 wds:Q230-5DF8F3ED-01E2-500D-A9F0-4AF8877E3DE9 ;
+    p:P122 wds:Q230-74BB5C66-9DB8-5C58-83F6-02DBB064BB03,
+        wds:Q230-30658393-430B-545C-BC64-28763D996E7D ;
+    p:P123 wds:Q230-C7FBFF1B-9B97-5825-9C3F-04D9AD960DC9 ;
+    p:P125 wds:Q230-9F9E06BA-573C-5F25-AD0B-D9095A954A9B ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "alkahest" ;
+    wdt:P113 wd:Q231 ;
+    wdt:P114 "10.5281/zenodo.7081524" ;
+    wdt:P115 <https://open-archaeo.info/post/alkahest/> ;
+    wdt:P116 "alkahest" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "alkahest"@en ;
+    wdt:P120 <https://packages.tesselle.org/alkahest/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://codeberg.org/tesselle/alkahest> .
+
+wds:Q230-1E5E2EB1-6B16-53E8-B075-0877EEBEBC4C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P108 "alkahest" .
+
+wds:Q230-2A453E24-5E6E-500C-932C-4FCCBCA4B727
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P106 wd:Q110 .
+
+wds:Q230-5DF8F3ED-01E2-500D-A9F0-4AF8877E3DE9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P120 <https://packages.tesselle.org/alkahest/> .
+
+wds:Q230-9F9E06BA-573C-5F25-AD0B-D9095A954A9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://codeberg.org/tesselle/alkahest> .
+
+wds:Q230-12C03F06-16C9-5F16-AD16-BBFF19E91F44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P2 wd:Q106 .
+
+wds:Q230-74BB5C66-9DB8-5C58-83F6-02DBB064BB03
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P122 wd:Q109 .
+
+wds:Q230-93DC4A41-560E-5C1B-9CD8-2720BC7F22E9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P119 "alkahest"@en .
+
+wds:Q230-353BDECF-7D63-554B-B706-8F423505AE8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P114 "10.5281/zenodo.7081524" .
+
+wds:Q230-36855F03-299F-57BB-98AC-982EBCEDF833
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P118 wd:Q108 .
+
+wds:Q230-66113A28-FD40-5564-9188-4C3F6EF1072A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P115 <https://open-archaeo.info/post/alkahest/> .
+
+wds:Q230-30658393-430B-545C-BC64-28763D996E7D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P122 wd:Q110 .
+
+wds:Q230-A237C334-58E2-5C32-9146-034F4255F7FD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P117 wd:Q116 .
+
+wds:Q230-C7FBFF1B-9B97-5825-9C3F-04D9AD960DC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P123 wd:Q111 .
+
+wds:Q230-C76C377B-A1F1-55E1-ABE5-A48F14DE3306
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q231 .
+
+wds:Q230-CB1976DB-75A0-5480-ACD7-0F93385AE10D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "alkahest" .
+
+wds:Q230-FCF39154-4AF9-5471-A797-8E696A1721A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f ;
+    ps:P2 wd:Q103 .
+
+wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/alkahest/> .

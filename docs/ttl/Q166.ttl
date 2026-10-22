@@ -1,0 +1,205 @@
+# Q166: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q166
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Point pattern analysis."@en ;
+    dcterms:identifier "Q166" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q166 ;
+    dcterms:title "PointPattern"@en ;
+    schema:about wd:Q166 ;
+    dcat:distribution dist:Q166-html,
+        dist:Q166-json,
+        dist:Q166-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q166.html> .
+
+dist:Q166-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q166, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q166.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q166-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q166, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13900"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q166.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q166-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q166, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q166.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q166
+    a wikibase:Item ;
+    schema:description "Point pattern analysis."@en ;
+    schema:name "PointPattern"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "PointPattern"@en ;
+    skos:prefLabel "PointPattern"@en ;
+    p:P2 wds:Q166-0D60677C-FFFA-5656-BBB0-7F7357251665,
+        wds:Q166-A63B0B82-CD11-53EB-90C1-A88D1B602CB1 ;
+    p:P106 wds:Q166-CB4BD734-C8E8-58DC-A953-F69A98E4273C ;
+    p:P113 wds:Q166-66C4568D-7721-59B8-A780-239744D4615B ;
+    p:P115 wds:Q166-F3F2E9E8-A8B0-5A5C-B7B5-A06AEF369FDC ;
+    p:P116 wds:Q166-B8DCF22A-A147-5F38-BFB6-7DB4C28AC7FE ;
+    p:P117 wds:Q166-C3DA5943-2E84-5900-B307-9A80B37E6076 ;
+    p:P118 wds:Q166-CBD896AC-0740-5C77-8780-BE9441015F20 ;
+    p:P119 wds:Q166-0EFB703C-8D08-596B-AA61-A46D53457248 ;
+    p:P120 wds:Q166-AEFEA382-D534-57B8-A4B1-CC6C8E557229 ;
+    p:P122 wds:Q166-8FA77246-2C90-5864-8736-411E429B2293,
+        wds:Q166-90B15554-DEB7-50D0-A4B3-208F28DAD96C ;
+    p:P123 wds:Q166-541D9470-90C3-5E86-9655-05CDDC534B48 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q167 ;
+    wdt:P115 <https://open-archaeo.info/post/pointpattern/> ;
+    wdt:P116 "pointpattern" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "PointPattern"@en ;
+    wdt:P120 <http://www.mattpeeples.net/modules/PointPattern.html> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 .
+
+wds:Q166-0D60677C-FFFA-5656-BBB0-7F7357251665
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P2 wd:Q104 .
+
+wds:Q166-0EFB703C-8D08-596B-AA61-A46D53457248
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P119 "PointPattern"@en .
+
+wds:Q166-8FA77246-2C90-5864-8736-411E429B2293
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P122 wd:Q110 .
+
+wds:Q166-66C4568D-7721-59B8-A780-239744D4615B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q167 .
+
+wds:Q166-90B15554-DEB7-50D0-A4B3-208F28DAD96C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P122 wd:Q109 .
+
+wds:Q166-541D9470-90C3-5E86-9655-05CDDC534B48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P123 wd:Q111 .
+
+wds:Q166-A63B0B82-CD11-53EB-90C1-A88D1B602CB1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P2 wd:Q106 .
+
+wds:Q166-AEFEA382-D534-57B8-A4B1-CC6C8E557229
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P120 <http://www.mattpeeples.net/modules/PointPattern.html> .
+
+wds:Q166-B8DCF22A-A147-5F38-BFB6-7DB4C28AC7FE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "pointpattern" .
+
+wds:Q166-C3DA5943-2E84-5900-B307-9A80B37E6076
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P117 wd:Q116 .
+
+wds:Q166-CB4BD734-C8E8-58DC-A953-F69A98E4273C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P106 wd:Q110 .
+
+wds:Q166-CBD896AC-0740-5C77-8780-BE9441015F20
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P118 wd:Q108 .
+
+wds:Q166-F3F2E9E8-A8B0-5A5C-B7B5-A06AEF369FDC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0e7a605e47485300347113692607930b5f5192c0 ;
+    ps:P115 <https://open-archaeo.info/post/pointpattern/> .
+
+wdref:0e7a605e47485300347113692607930b5f5192c0
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/pointpattern/> .

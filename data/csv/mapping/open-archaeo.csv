@@ -1,0 +1,25 @@
+column,property,qualifiers,rule,note
+(identity),P31|P6104|P361|P195,,identity,"Identity block, variant V2 of the Pack: chublet, WikiProject, part of the platform and of the collection, collection"
+id,,,ignore,"A function of the slug, not an identifier; idmap.csv keeps the key"
+slug,P217,P195,slug,Inventory number inside the open-archaeo collection
+url,P2888,,string,Entry page; also the reference of every statement of the entry
+name,,,label,English label
+name,P2561,,monolingual,Name as monolingual text (en)
+description,,,description,Unchanged (the Pack asks for rewriting; that is a separate step)
+category,P31,,class,Class from the vocabulary (section category)
+platform,P277|P1547,,platform,platform_role chooses; deployment is not imported
+platform_role,,,ignore,Selector of platform
+tags,P921,,items,One local item per tag (section tag)
+authors,P178,P1545,persons,Order is meaningful: the position becomes the series ordinal
+repository,P1324,P8423|P1065|P2960,repository,Qualifiers from repository_host and internetarchive
+repository_host,,,ignore,Read by the repository rule
+registry,P5565|P5568,,registry,registry_name chooses; the package name is read from the URL
+registry_name,,,ignore,Selector of registry
+doi,P356,,string,DOI of the software
+publication,P1343,,work,One local item per publication
+website,P856,,string,
+blogpost,P973,,string,
+youtube,P973,,string,
+twitter,,,ignore,Not import material (Pack)
+internetarchive,,,ignore,Read by the repository rule
+notes,,,ignore,Not import material (Pack)

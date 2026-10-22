@@ -5,6 +5,7 @@
     python main.py --strict             the same, but any WARN line (a dead link, a model rule) is an error
     python main.py --strict check-crm   SHACL check: every class reaches the CIDOC CRM (after the default run; needs wikibase-static 0.8.0)
     python main.py csv-fmt              bring the tables in data/csv/ into canonical form (--check: only report)
+    python main.py import-open-archaeo  about 100 software entries of open-archaeo into data/csv/ (needs wikibase-static 0.9.0; --limit N, --all)
     python main.py --list               print the steps and exit
 
 The model is kept in data/csv/ (four tables and idmap.csv). ``tools/import_pack.py`` made them once from the
@@ -29,6 +30,7 @@ ROOT = Path(__file__).resolve().parent
 # (name, module, in the default run). csv-fmt is a verb: it rewrites the tables, so it never runs by itself.
 STEPS = [
     ("csv-fmt", "step_csv_fmt", False),
+    ("import-open-archaeo", "step_import_open_archaeo", False),
     ("from-csv", "step_from_csv", True),
     ("load", "step_load", True),
     ("build", "step_build", True),

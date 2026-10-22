@@ -1,0 +1,215 @@
+# Q223: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q223
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Tools for estimating parameters for Radiocarbon-dated Event Count (REC) Models."@en ;
+    dcterms:identifier "Q223" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q223 ;
+    dcterms:title "recmod"@en ;
+    schema:about wd:Q223 ;
+    dcat:distribution dist:Q223-html,
+        dist:Q223-json,
+        dist:Q223-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q223.html> .
+
+dist:Q223-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q223, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q223.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q223-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q223, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15328"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q223.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q223-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q223, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q223.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q223
+    a wikibase:Item ;
+    schema:description "Tools for estimating parameters for Radiocarbon-dated Event Count (REC) Models."@en ;
+    schema:name "recmod"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "recmod"@en ;
+    skos:prefLabel "recmod"@en ;
+    p:P2 wds:Q223-3E044E77-D5F9-5F7B-9D58-475A86CE80D1,
+        wds:Q223-CBAAAD30-DA08-5F79-86D1-C264099C54E1 ;
+    p:P106 wds:Q223-CF066DA5-EDB8-522C-B8C8-FC6928AAC3A1 ;
+    p:P113 wds:Q223-246F1084-09BD-5567-B1AC-6ECD61F82D46 ;
+    p:P115 wds:Q223-9EFB4213-1384-5A66-B32B-DB12E2C04D35 ;
+    p:P116 wds:Q223-D6BB6800-C11A-554C-9BF0-6E902C0172D6 ;
+    p:P117 wds:Q223-0C8C8AB2-C85A-5756-8BD7-DC75CD0AA613,
+        wds:Q223-4823CC8C-839E-585B-8C33-AA3A4D3E22CA ;
+    p:P118 wds:Q223-8676EA89-860B-5A02-92E7-5332319FB671 ;
+    p:P119 wds:Q223-7BC5973D-A95F-5148-9829-BC7322C81FFB ;
+    p:P122 wds:Q223-1797AD2E-96E5-5935-9EBC-16CD5C684C2F,
+        wds:Q223-44204C55-C3E8-5695-9BFF-0802CCF65DCD ;
+    p:P123 wds:Q223-7F078D34-1088-5D34-92EC-25BB70B675C6 ;
+    p:P125 wds:Q223-F35639C1-0D36-5581-9539-0CA308915DF2 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q224 ;
+    wdt:P115 <https://open-archaeo.info/post/recmod/> ;
+    wdt:P116 "recmod" ;
+    wdt:P117 wd:Q126,
+        wd:Q140 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "recmod"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/wccarleton/recmod> .
+
+wds:Q223-0C8C8AB2-C85A-5756-8BD7-DC75CD0AA613
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P117 wd:Q126 .
+
+wds:Q223-3E044E77-D5F9-5F7B-9D58-475A86CE80D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P2 wd:Q103 .
+
+wds:Q223-7BC5973D-A95F-5148-9829-BC7322C81FFB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P119 "recmod"@en .
+
+wds:Q223-7F078D34-1088-5D34-92EC-25BB70B675C6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P123 wd:Q111 .
+
+wds:Q223-9EFB4213-1384-5A66-B32B-DB12E2C04D35
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P115 <https://open-archaeo.info/post/recmod/> .
+
+wds:Q223-246F1084-09BD-5567-B1AC-6ECD61F82D46
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q224 .
+
+wds:Q223-1797AD2E-96E5-5935-9EBC-16CD5C684C2F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P122 wd:Q109 .
+
+wds:Q223-4823CC8C-839E-585B-8C33-AA3A4D3E22CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P117 wd:Q140 .
+
+wds:Q223-8676EA89-860B-5A02-92E7-5332319FB671
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P118 wd:Q108 .
+
+wds:Q223-44204C55-C3E8-5695-9BFF-0802CCF65DCD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P122 wd:Q110 .
+
+wds:Q223-CBAAAD30-DA08-5F79-86D1-C264099C54E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P2 wd:Q106 .
+
+wds:Q223-CF066DA5-EDB8-522C-B8C8-FC6928AAC3A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    ps:P106 wd:Q110 .
+
+wds:Q223-D6BB6800-C11A-554C-9BF0-6E902C0172D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "recmod" .
+
+wds:Q223-F35639C1-0D36-5581-9539-0CA308915DF2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/wccarleton/recmod> .
+
+wdref:e859ed94f500c9b53022dddb6c0594c4ef93d3f3
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/recmod/> .

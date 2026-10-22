@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?qualifierLabel (COUNT(?statement) AS ?statements) WHERE {
+  ?qualifierProperty wikibase:qualifier ?qualifier ;
+                     rdfs:label ?qualifierLabel .
+  FILTER(LANG(?qualifierLabel) = "en")
+  ?statement ?qualifier ?value .
+}
+GROUP BY ?qualifierLabel
+ORDER BY DESC(?statements) ?qualifierLabel

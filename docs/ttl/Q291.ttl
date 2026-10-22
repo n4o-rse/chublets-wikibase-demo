@@ -1,0 +1,207 @@
+# Q291: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q291
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A digital clock which computes your local time in 'seasonal-hours'."@en ;
+    dcterms:identifier "Q291" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q291 ;
+    dcterms:title "babylonian-hours"@en ;
+    schema:about wd:Q291 ;
+    dcat:distribution dist:Q291-html,
+        dist:Q291-json,
+        dist:Q291-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q291.html> .
+
+dist:Q291-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q291, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q291.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q291-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q291, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14445"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q291.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q291-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q291, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q291.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q291
+    a wikibase:Item ;
+    schema:description "A digital clock which computes your local time in 'seasonal-hours'."@en ;
+    schema:name "babylonian-hours"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "babylonian-hours"@en ;
+    skos:prefLabel "babylonian-hours"@en ;
+    p:P2 wds:Q291-298E5A70-A160-5BF9-B2F0-E7EDF740C9D1,
+        wds:Q291-F27943C5-110E-55CC-AEB1-B5C69A18D265 ;
+    p:P106 wds:Q291-DF2B8F0C-EA05-59DA-9C2C-C16BA2CA2D87 ;
+    p:P113 wds:Q291-49DCF1E8-8A87-54BC-B2C4-FFB76A6D4083 ;
+    p:P115 wds:Q291-1EFA5D5D-2588-5BAA-A35C-DF66D038E6D7 ;
+    p:P116 wds:Q291-4C767236-6CE6-5322-8FDA-C7702021D4B6 ;
+    p:P117 wds:Q291-2707FB19-09D1-5F74-86C6-9BA4269DC68F ;
+    p:P118 wds:Q291-D252AB67-5C94-5715-9F61-DD9C223F9C4E ;
+    p:P119 wds:Q291-029DC5D3-E9C9-5DB7-996A-D53EE92A3D78 ;
+    p:P122 wds:Q291-9D078024-B870-5D8A-847B-94377344151F,
+        wds:Q291-CFC90C51-23B9-50EC-896B-ACB163F7C93E ;
+    p:P125 wds:Q291-5AD686C0-A09A-57C6-813B-0A1037D2CEE1 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q292 ;
+    wdt:P115 <https://open-archaeo.info/post/babylonian-hours/> ;
+    wdt:P116 "babylonian-hours" ;
+    wdt:P117 wd:Q212 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "babylonian-hours"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/willismonroe/babylonian-hours> .
+
+wds:Q291-1EFA5D5D-2588-5BAA-A35C-DF66D038E6D7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P115 <https://open-archaeo.info/post/babylonian-hours/> .
+
+wds:Q291-4C767236-6CE6-5322-8FDA-C7702021D4B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "babylonian-hours" .
+
+wds:Q291-5AD686C0-A09A-57C6-813B-0A1037D2CEE1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    pq:P104 "2019-01-05T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-willismonroe-babylonian-hours_-_2019-01-05_20-36-50> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:f54eb7626ea9acd11de7fd1cf457493d ;
+    ps:P125 <https://github.com/willismonroe/babylonian-hours> .
+
+wds:Q291-9D078024-B870-5D8A-847B-94377344151F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P122 wd:Q109 .
+
+wds:Q291-029DC5D3-E9C9-5DB7-996A-D53EE92A3D78
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P119 "babylonian-hours"@en .
+
+wds:Q291-49DCF1E8-8A87-54BC-B2C4-FFB76A6D4083
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q292 .
+
+wds:Q291-298E5A70-A160-5BF9-B2F0-E7EDF740C9D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P2 wd:Q102 .
+
+wds:Q291-2707FB19-09D1-5F74-86C6-9BA4269DC68F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P117 wd:Q212 .
+
+wds:Q291-CFC90C51-23B9-50EC-896B-ACB163F7C93E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P122 wd:Q110 .
+
+wds:Q291-D252AB67-5C94-5715-9F61-DD9C223F9C4E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P118 wd:Q108 .
+
+wds:Q291-DF2B8F0C-EA05-59DA-9C2C-C16BA2CA2D87
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P106 wd:Q110 .
+
+wds:Q291-F27943C5-110E-55CC-AEB1-B5C69A18D265
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d ;
+    ps:P2 wd:Q106 .
+
+wdref:0b211e3fc5495f826c8ba77922fa8482a504c96d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/babylonian-hours/> .
+
+wdv:f54eb7626ea9acd11de7fd1cf457493d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-01-05T00:00:00Z"^^xsd:dateTime .

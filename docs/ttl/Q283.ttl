@@ -1,0 +1,216 @@
+# Q283: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q283
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "The goal of carbon14 is to provide a tidy interface to radiocarbon dating, to promote its inclusion in reproducible manuscripts"@en ;
+    dcterms:identifier "Q283" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q283 ;
+    dcterms:title "carbon14"@en ;
+    schema:about wd:Q283 ;
+    dcat:distribution dist:Q283-html,
+        dist:Q283-json,
+        dist:Q283-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q283.html> .
+
+dist:Q283-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q283, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q283.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q283-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q283, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15362"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q283.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q283-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q283, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q283.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q283
+    a wikibase:Item ;
+    schema:description "The goal of carbon14 is to provide a tidy interface to radiocarbon dating, to promote its inclusion in reproducible manuscripts"@en ;
+    schema:name "carbon14"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "carbon14"@en ;
+    skos:prefLabel "carbon14"@en ;
+    p:P2 wds:Q283-0D905A2D-E88A-5B51-A609-545E68B49483,
+        wds:Q283-6C0F7AD6-80DB-50CF-91F1-D5B494873FB4 ;
+    p:P106 wds:Q283-FD48C9B6-E0C6-54A3-9080-95145523D485 ;
+    p:P113 wds:Q283-5CA4A7EE-2EFE-5C09-AD80-C1A43534A773 ;
+    p:P115 wds:Q283-44AC0BEF-2494-5855-8637-C4CE679D9D3B ;
+    p:P116 wds:Q283-85FDAD43-3EB3-5A79-BF6D-2D23AE030B3D ;
+    p:P117 wds:Q283-EA3EE7FA-269E-5F34-A5C3-13F633307372 ;
+    p:P118 wds:Q283-E23E0534-C941-5117-AB75-A480E5CEA1C1 ;
+    p:P119 wds:Q283-1AE22C64-C288-5D6A-BEBE-B782624960D3 ;
+    p:P122 wds:Q283-118BA5FE-3F7F-5DF1-B8D5-6B38560A0AEB,
+        wds:Q283-382B4CC9-F1E5-52B7-841D-FEEF26B635E6 ;
+    p:P123 wds:Q283-AD4E2569-8AD6-56E2-B062-D2BD88187065 ;
+    p:P125 wds:Q283-1D5A0BD7-88D9-598B-8022-2F8ECCD69E21 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q202 ;
+    wdt:P115 <https://open-archaeo.info/post/carbon14/> ;
+    wdt:P116 "carbon14" ;
+    wdt:P117 wd:Q140 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "carbon14"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/paleolimbot/carbon14> .
+
+wds:Q283-0D905A2D-E88A-5B51-A609-545E68B49483
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P2 wd:Q103 .
+
+wds:Q283-1AE22C64-C288-5D6A-BEBE-B782624960D3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P119 "carbon14"@en .
+
+wds:Q283-1D5A0BD7-88D9-598B-8022-2F8ECCD69E21
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    pq:P104 "2018-03-14T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-paleolimbot-carbon14_-_2018-03-14_14-20-15> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:053ee0368febfd5c0845bc935cde9a44 ;
+    ps:P125 <https://github.com/paleolimbot/carbon14> .
+
+wds:Q283-5CA4A7EE-2EFE-5C09-AD80-C1A43534A773
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q202 .
+
+wds:Q283-6C0F7AD6-80DB-50CF-91F1-D5B494873FB4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P2 wd:Q106 .
+
+wds:Q283-44AC0BEF-2494-5855-8637-C4CE679D9D3B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P115 <https://open-archaeo.info/post/carbon14/> .
+
+wds:Q283-85FDAD43-3EB3-5A79-BF6D-2D23AE030B3D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "carbon14" .
+
+wds:Q283-118BA5FE-3F7F-5DF1-B8D5-6B38560A0AEB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P122 wd:Q110 .
+
+wds:Q283-382B4CC9-F1E5-52B7-841D-FEEF26B635E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P122 wd:Q109 .
+
+wds:Q283-AD4E2569-8AD6-56E2-B062-D2BD88187065
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P123 wd:Q111 .
+
+wds:Q283-E23E0534-C941-5117-AB75-A480E5CEA1C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P118 wd:Q108 .
+
+wds:Q283-EA3EE7FA-269E-5F34-A5C3-13F633307372
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P117 wd:Q140 .
+
+wds:Q283-FD48C9B6-E0C6-54A3-9080-95145523D485
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4 ;
+    ps:P106 wd:Q110 .
+
+wdref:35a06e445ccc1cc647bada94ca54c3fda49697d4
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/carbon14/> .
+
+wdv:053ee0368febfd5c0845bc935cde9a44
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2018-03-14T00:00:00Z"^^xsd:dateTime .

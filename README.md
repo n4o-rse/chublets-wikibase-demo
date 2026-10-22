@@ -21,7 +21,10 @@ pages, a search index, RDF and a SPARQL page, with the same code as for a harves
 The logo (`assets/logo.png`, set in `site.yaml`) is the chublets raven.
 Every entity page offers its RDF as Turtle and as JSON for download (`docs/ttl/`, `docs/json/`) and a button that copies the concept URI to the clipboard.
 
-There are no software entries yet. They come from open-archaeo (S7c) and from Wikidata (S7d).
+**About 100 software entries** from open-archaeo (S7c, chosen in proportion to the three categories: 60 packages and libraries,
+18 scripts, 22 standalone programs out of 416), each a chublet with the identity block (instance of chublet and of its category class,
+maintained by the WikiProject, part of chublets.software and of the open-archaeo collection, collection, inventory number = slug),
+its authors, tags, languages, repository with archive link, registry package and links. Wikidata items (S7d) are still to come.
 The pages show the model the way a Wikibase does; the RDF export additionally carries the **RDFS bridge**
 (`wdt:P1 rdfs:subPropertyOf rdfs:subClassOf` and five more triples, in a section of their own in the Turtle files), so that
 a reasoner or a property path reads the class tree.
@@ -90,6 +93,25 @@ and `rdf:type`, so that a reader without inference (the N4O profile) finds every
 `python main.py --strict check-crm` checks that with SHACL (pySHACL, `data/shapes-crm.ttl` of the package) on the file in
 `dist/`: a class that reaches no CRM class over `rdfs:subClassOf` is a violation, one that reaches only E1 is a warning.
 Needs `wikibase-static` 0.8.0.
+
+## Where the software entries came from
+
+`data/raw/open-archaeo-software.csv` is a copy of `out/open-archaeo-software.csv` of [open-archaeo](https://github.com/n4o-rse/open-archaeo)
+(416 entries, never edited). The package imports a part of it into the tables:
+
+```cmd
+python main.py import-open-archaeo
+python main.py --strict
+```
+
+The mapping (`data/csv/mapping/open-archaeo.csv`: which column becomes which Wikidata property, which qualifiers) and the vocabulary
+(`data/csv/mapping/open-archaeo-vocabulary.csv`: tags, languages, host applications, categories and the four identity items, each with
+its Wikidata item where the Starter Pack knows one) are plain tables you can edit. Rows written by the importer have `origin=open-archaeo`;
+empty that cell in a row you change by hand and the next import leaves it, and the rest of its property, alone. `--limit N` and `--all`
+choose the size; ids are never reused (`data/csv/idmap.csv`). Not imported, and listed in the report: the platform role "deployment"
+(Mobile app, Web app: it would need classes of its own), a repository host that is not certainly Git (Bitbucket) gets no version control
+system, and publications are items that carry only their DOI or URL as label (every property of the model has the domain "software").
+Needs `wikibase-static` 0.9.0.
 
 ## Where the model came from
 

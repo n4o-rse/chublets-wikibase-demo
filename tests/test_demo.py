@@ -13,13 +13,14 @@ import csv
 import json
 import re
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
 import wikibase_static  # noqa: E402
-from wikibase_static import csvbuild, csvio, loader, rdf  # noqa: E402
+from wikibase_static import csvbuild, csvio, loader, rdf, step_import_open_archaeo as importer  # noqa: E402
 
 CSV = ROOT / "data" / "csv"
 RDFS, OWL, RDF = rdf.RDFS, rdf.OWL, rdf.RDF
@@ -50,7 +51,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 8, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 9, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -164,8 +165,9 @@ class Site(unittest.TestCase):
         for entity_id in list(csvbuild.KERNEL):
             self.assertIn(entity_id, self.site.entities)
 
-    def test_it_holds_exactly_the_model(self) -> None:
-        self.assertEqual(len(self.site.entities), 3 + 10 + 149 + len(NEW_PROPERTIES) + 7)
+    def test_it_holds_the_model_and_what_the_importer_added(self) -> None:
+        imported = sum(1 for r in table("entities.csv") if r["origin"] == "open-archaeo")
+        self.assertEqual(len(self.site.entities), 3 + 10 + 149 + len(NEW_PROPERTIES) + 7 + imported)
         self.assertEqual(len(self.site.properties), 10 + 149 + len(NEW_PROPERTIES))
 
     def test_the_kernel_properties_carry_their_wikidata_twins(self) -> None:
@@ -302,6 +304,90 @@ class Attribution(unittest.TestCase):
         self.assertLessEqual(used, codes)
 
 
+
+class OpenArchaeo(unittest.TestCase):
+    """S7c: about 100 of the 416 software entries of open-archaeo, imported into the tables (identity block V2)."""
+
+    RAW = ROOT / "data" / "raw" / "open-archaeo-software.csv"
+    MAPPING = CSV / "mapping" / "open-archaeo.csv"
+    VOCABULARY = CSV / "mapping" / "open-archaeo-vocabulary.csv"
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        with cls.RAW.open(encoding="utf-8", newline="") as handle:
+            cls.entries = list(csv.DictReader(handle))
+        cls.entities = {r["id"]: r for r in table("entities.csv")}
+        cls.statements = table("statements.csv")
+        cls.idmap = {r["key"]: r["id"] for r in table("idmap.csv") if r["source"] == "open-archaeo"}
+        cls.items = {cls.idmap[f"entry:{e['id']}"]: e for e in cls.entries if f"entry:{e['id']}" in cls.idmap}
+
+    def values(self, subject: str, prop: str) -> list[str]:
+        return [s["value"] for s in self.statements if s["subject"] == subject and s["property"] == prop]
+
+    def test_the_source_is_the_whole_list_and_the_import_is_the_stratified_hundred(self) -> None:
+        self.assertEqual(len(self.entries), 416)
+        self.assertEqual(sorted(e["id"] for e in importer.select(self.entries, 100)), sorted(e["id"] for e in self.items.values()))
+        self.assertEqual(len(self.items), 100)
+        counts = {c: sum(1 for e in self.items.values() if e["category"] == c)
+                  for c in ("Packages and libraries", "Scripts", "Standalone software")}
+        self.assertEqual(counts, {"Packages and libraries": 60, "Scripts": 18, "Standalone software": 22})
+
+    def test_every_item_is_a_chublet_of_its_category_with_the_identity_block(self) -> None:
+        by_label = {r["label_en"]: r["id"] for r in self.entities.values()}
+        wikiproject, platform, collection = (by_label[x] for x in
+                                             ("WikiProject chublets.software", "chublets.software", "open-archaeo (Repository)"))
+        classes = {"Packages and libraries": "Q103", "Scripts": "Q104", "Standalone software": "Q102"}
+        for item, entry in self.items.items():
+            self.assertEqual(self.values(item, "P2"), ["Q106", classes[entry["category"]]], item)
+            self.assertEqual(self.values(item, "P118"), [wikiproject], item)
+            self.assertEqual(self.values(item, "P122"), [platform, collection], item)
+            self.assertEqual(self.values(item, "P106"), [collection], item)
+            self.assertEqual(self.values(item, "P116"), [entry["slug"]], item)
+            self.assertEqual(self.values(item, "P115"), [entry["url"]], item)
+
+    def test_the_twins_of_the_identity_items_are_the_ones_of_the_pack(self) -> None:
+        by_label = {r["label_en"]: r["id"] for r in self.entities.values() if r["origin"] == "open-archaeo"}
+        for label, wikidata in (("WikiProject chublets.software", "Q141169143"), ("chublets.software", "Q141115774"),
+                                ("open-archaeo (Repository)", "Q141190255"), ("Git", "Q186055")):
+            self.assertEqual(self.values(by_label[label], "P4"), [wikidata], label)
+
+    def test_every_importer_statement_has_one_reference_and_no_item_value_is_a_foreign_id(self) -> None:
+        references = table("references.csv")
+        own = [s for s in self.statements if s["origin"] == "open-archaeo"]
+        self.assertGreater(len(own), 1000)
+        for s in own:
+            refs = [r for r in references if r["sid"] == s["sid"]]
+            self.assertEqual([(r["property"], r["group"]) for r in refs], [("P6", "1")], s["sid"])
+            self.assertTrue(refs[0]["value"].startswith("https://open-archaeo.info/post/"), s["sid"])
+            if re.fullmatch(r"Q[1-9][0-9]*", s["value"]) and s["property"] != "P4":
+                self.assertTrue(s["value"] in self.entities or s["value"] in csvbuild.KERNEL, s)
+
+    def test_the_importer_rows_all_belong_to_an_item_it_made(self) -> None:
+        made = {i for i, r in self.entities.items() if r["origin"] == "open-archaeo"}
+        for s in self.statements:
+            if s["origin"] == "open-archaeo":
+                self.assertIn(s["subject"], made, s)
+        self.assertTrue(set(self.items) <= made)
+
+    def test_authors_and_tags_are_items_and_the_deployment_role_is_not_imported(self) -> None:
+        for item, entry in self.items.items():
+            self.assertEqual(len(self.values(item, "P113")), len([a for a in entry["authors"].split("|") if a]), item)
+            self.assertEqual(len(self.values(item, "P117")), len([t for t in entry["tags"].split("|") if t]), item)
+            if entry["platform_role"] == "deployment":
+                self.assertEqual(self.values(item, "P123") + self.values(item, "P109"), [], item)
+
+    def test_a_reimport_changes_nothing(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "csv"
+            target.mkdir()
+            for path in CSV.glob("*.csv"):
+                (target / path.name).write_bytes(path.read_bytes())
+            args = ["--csv", str(target), "--input", str(self.RAW), "--mapping", str(self.MAPPING), "--vocabulary", str(self.VOCABULARY)]
+            self.assertEqual(importer.main(args), 0)
+            for path in CSV.glob("*.csv"):
+                self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
+
+
 if __name__ == "__main__":
     unittest.main()
 
@@ -366,4 +452,3 @@ class Crm(unittest.TestCase):
         for name, expected in (("Dataset", self.E73), ("Catalog", "http://www.cidoc-crm.org/cidoc-crm/E31_Document"),
                                ("Distribution", "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object")):
             self.assertIn((rdflib.URIRef("http://www.w3.org/ns/dcat#" + name), rdflib.RDFS.subClassOf, rdflib.URIRef(expected)), graph)
-

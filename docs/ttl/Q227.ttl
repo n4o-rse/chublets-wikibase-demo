@@ -1,0 +1,216 @@
+# Q227: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q227
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Dsanalysis is the backbone of the sdsbrowser webapp, and can be employed to analyse sds stone artefact data in r."@en ;
+    dcterms:identifier "Q227" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q227 ;
+    dcterms:title "sdsanalysis"@en ;
+    schema:about wd:Q227 ;
+    dcat:distribution dist:Q227-html,
+        dist:Q227-json,
+        dist:Q227-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q227.html> .
+
+dist:Q227-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q227, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q227.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q227-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q227, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15429"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q227.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q227-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q227, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q227.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q227
+    a wikibase:Item ;
+    schema:description "Dsanalysis is the backbone of the sdsbrowser webapp, and can be employed to analyse sds stone artefact data in r."@en ;
+    schema:name "sdsanalysis"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "sdsanalysis"@en ;
+    skos:prefLabel "sdsanalysis"@en ;
+    p:P2 wds:Q227-616E8D5D-516E-5435-A9A6-4964419A6773,
+        wds:Q227-D0505709-320B-5DB9-A649-361B16FF4E6B ;
+    p:P106 wds:Q227-A94C7970-429E-5736-B761-7D6FC137A90C ;
+    p:P113 wds:Q227-D3E2EE81-8C6B-564A-AB68-8309096E927B ;
+    p:P115 wds:Q227-E4362FE1-B14D-5ECE-A842-E6A5BAE94D91 ;
+    p:P116 wds:Q227-A9B482B2-3490-54E6-AF03-DDD302214C0B ;
+    p:P117 wds:Q227-5635A058-2654-5E31-9AAC-19573098D5A0 ;
+    p:P118 wds:Q227-5280CEA7-44DA-5406-BBC0-7ED876CF4B59 ;
+    p:P119 wds:Q227-93CA2895-6105-5948-B944-81C0DEE2FD46 ;
+    p:P122 wds:Q227-4E97BC3F-5779-5664-92A8-24883740F673,
+        wds:Q227-078DA660-5996-5D2E-8268-1E951BCBCF38 ;
+    p:P123 wds:Q227-77AAA6F0-FD24-51C2-B002-CDE69ECE68F9 ;
+    p:P125 wds:Q227-AD50E217-DFF6-5430-BE2B-B2F72B869878 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q229 ;
+    wdt:P115 <https://open-archaeo.info/post/sdsanalysis/> ;
+    wdt:P116 "sdsanalysis" ;
+    wdt:P117 wd:Q228 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "sdsanalysis"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/Johanna-Mestorf-Academy/sdsanalysis> .
+
+wds:Q227-4E97BC3F-5779-5664-92A8-24883740F673
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P122 wd:Q109 .
+
+wds:Q227-77AAA6F0-FD24-51C2-B002-CDE69ECE68F9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P123 wd:Q111 .
+
+wds:Q227-078DA660-5996-5D2E-8268-1E951BCBCF38
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P122 wd:Q110 .
+
+wds:Q227-93CA2895-6105-5948-B944-81C0DEE2FD46
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P119 "sdsanalysis"@en .
+
+wds:Q227-616E8D5D-516E-5435-A9A6-4964419A6773
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P2 wd:Q106 .
+
+wds:Q227-5280CEA7-44DA-5406-BBC0-7ED876CF4B59
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P118 wd:Q108 .
+
+wds:Q227-5635A058-2654-5E31-9AAC-19573098D5A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P117 wd:Q228 .
+
+wds:Q227-A9B482B2-3490-54E6-AF03-DDD302214C0B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "sdsanalysis" .
+
+wds:Q227-A94C7970-429E-5736-B761-7D6FC137A90C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P106 wd:Q110 .
+
+wds:Q227-AD50E217-DFF6-5430-BE2B-B2F72B869878
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    pq:P104 "2018-12-13T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-Johanna-Mestorf-Academy-sdsanalysis_-_2018-12-13_13-20-29> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:2368053198a86274c093ea976da61ffc ;
+    ps:P125 <https://github.com/Johanna-Mestorf-Academy/sdsanalysis> .
+
+wds:Q227-D3E2EE81-8C6B-564A-AB68-8309096E927B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q229 .
+
+wds:Q227-D0505709-320B-5DB9-A649-361B16FF4E6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P2 wd:Q103 .
+
+wds:Q227-E4362FE1-B14D-5ECE-A842-E6A5BAE94D91
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02 ;
+    ps:P115 <https://open-archaeo.info/post/sdsanalysis/> .
+
+wdref:33118c5a1e3dcf49dfe3ec0f4c37978f6d59ad02
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/sdsanalysis/> .
+
+wdv:2368053198a86274c093ea976da61ffc
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2018-12-13T00:00:00Z"^^xsd:dateTime .

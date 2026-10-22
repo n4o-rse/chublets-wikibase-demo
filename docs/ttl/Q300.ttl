@@ -1,0 +1,274 @@
+# Q300: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q300
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Manipulate log-ratios (also known as log size index (LSI) values) from measurements obtained on zooarchaeological material."@en ;
+    dcterms:identifier "Q300" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q300 ;
+    dcterms:title "zoolog"@en ;
+    schema:about wd:Q300 ;
+    dcat:distribution dist:Q300-html,
+        dist:Q300-json,
+        dist:Q300-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q300.html> .
+
+dist:Q300-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q300, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q300.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q300-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q300, as archived from the Wikibase API"@en ;
+    dcat:byteSize "22493"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q300.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q300-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q300, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q300.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q300
+    a wikibase:Item ;
+    schema:description "Manipulate log-ratios (also known as log size index (LSI) values) from measurements obtained on zooarchaeological material."@en ;
+    schema:name "zoolog"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "19"^^xsd:integer ;
+    rdfs:label "zoolog"@en ;
+    skos:prefLabel "zoolog"@en ;
+    p:P2 wds:Q300-43C58B3E-48A0-589E-AEF7-94056125628F,
+        wds:Q300-C4E46623-74AF-5E85-A83D-6DDA03E5C031 ;
+    p:P106 wds:Q300-3E76D5CB-D53C-57AF-99C4-0467DCCA0C58 ;
+    p:P108 wds:Q300-BB41B2E9-9263-5D7F-A561-0B8A9B82ACBC ;
+    p:P113 wds:Q300-1CE1D4E8-9D7C-5878-A11F-2EB82DE12C4F,
+        wds:Q300-5CAA93A8-747C-5AC5-872E-5BA6197DABE8,
+        wds:Q300-5DB73A4A-A70F-591F-B479-13B9BA3E1850,
+        wds:Q300-875D2EFE-B9B7-5C55-B926-5FCC6908CEF7,
+        wds:Q300-27614700-6C7B-5BCA-8F28-912FD34D0101 ;
+    p:P115 wds:Q300-6CD7B9C2-6B58-5C00-A286-70194B22E372 ;
+    p:P116 wds:Q300-49DC2E14-71FD-5EF4-B183-CC0BAFD7B55C ;
+    p:P117 wds:Q300-7C1D785A-F53F-5A0F-A1FE-E11E208BA173 ;
+    p:P118 wds:Q300-53B7203B-4856-5D9A-85C8-91A859FF0062 ;
+    p:P119 wds:Q300-77DDA37C-2338-5F74-9DF2-B1676C0150F3 ;
+    p:P120 wds:Q300-89E450C4-ADB6-5BE3-A5B4-2249194C6455 ;
+    p:P122 wds:Q300-2CB7B6C5-1065-5146-A536-30DA38068663,
+        wds:Q300-25E3AB8A-0194-5D1D-9490-DB488B77CF21 ;
+    p:P123 wds:Q300-F00488B8-0931-5D5A-A459-A86EBD35AB75 ;
+    p:P125 wds:Q300-CDA2E0F7-68EB-5C15-B9DD-20CDA664F84E ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "zoolog" ;
+    wdt:P113 wd:Q301,
+        wd:Q302,
+        wd:Q303,
+        wd:Q304,
+        wd:Q305 ;
+    wdt:P115 <https://open-archaeo.info/post/zoolog/> ;
+    wdt:P116 "zoolog" ;
+    wdt:P117 wd:Q175 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "zoolog"@en ;
+    wdt:P120 <https://josempozo.github.io/zoolog/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/josempozo/zoolog> .
+
+wds:Q300-1CE1D4E8-9D7C-5878-A11F-2EB82DE12C4F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P146 "5" ;
+    ps:P113 wd:Q305 .
+
+wds:Q300-2CB7B6C5-1065-5146-A536-30DA38068663
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P122 wd:Q110 .
+
+wds:Q300-3E76D5CB-D53C-57AF-99C4-0467DCCA0C58
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P106 wd:Q110 .
+
+wds:Q300-5CAA93A8-747C-5AC5-872E-5BA6197DABE8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P146 "3" ;
+    ps:P113 wd:Q303 .
+
+wds:Q300-5DB73A4A-A70F-591F-B479-13B9BA3E1850
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q302 .
+
+wds:Q300-6CD7B9C2-6B58-5C00-A286-70194B22E372
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P115 <https://open-archaeo.info/post/zoolog/> .
+
+wds:Q300-7C1D785A-F53F-5A0F-A1FE-E11E208BA173
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P117 wd:Q175 .
+
+wds:Q300-25E3AB8A-0194-5D1D-9490-DB488B77CF21
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P122 wd:Q109 .
+
+wds:Q300-43C58B3E-48A0-589E-AEF7-94056125628F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P2 wd:Q103 .
+
+wds:Q300-49DC2E14-71FD-5EF4-B183-CC0BAFD7B55C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "zoolog" .
+
+wds:Q300-53B7203B-4856-5D9A-85C8-91A859FF0062
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P118 wd:Q108 .
+
+wds:Q300-77DDA37C-2338-5F74-9DF2-B1676C0150F3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P119 "zoolog"@en .
+
+wds:Q300-89E450C4-ADB6-5BE3-A5B4-2249194C6455
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P120 <https://josempozo.github.io/zoolog/> .
+
+wds:Q300-875D2EFE-B9B7-5C55-B926-5FCC6908CEF7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q301 .
+
+wds:Q300-27614700-6C7B-5BCA-8F28-912FD34D0101
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P146 "4" ;
+    ps:P113 wd:Q304 .
+
+wds:Q300-BB41B2E9-9263-5D7F-A561-0B8A9B82ACBC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P108 "zoolog" .
+
+wds:Q300-C4E46623-74AF-5E85-A83D-6DDA03E5C031
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P2 wd:Q106 .
+
+wds:Q300-CDA2E0F7-68EB-5C15-B9DD-20CDA664F84E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    pq:P104 "2021-02-25T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-josempozo-zoolog_-_2021-02-25_14-11-16> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:4665b9d09198e0804da680d2e73741cd ;
+    ps:P125 <https://github.com/josempozo/zoolog> .
+
+wds:Q300-F00488B8-0931-5D5A-A459-A86EBD35AB75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62013dda05c77eadbbb528d6079bf26de566a717 ;
+    ps:P123 wd:Q111 .
+
+wdref:62013dda05c77eadbbb528d6079bf26de566a717
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/zoolog/> .
+
+wdv:4665b9d09198e0804da680d2e73741cd
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-02-25T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,206 @@
+# Q341: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q341
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Shiny application that provides subadult age estimations based on dental and skeletal development and skeletal diaphyseal metrics using pre-optimized mixed cumulative probit models."@en ;
+    dcterms:identifier "Q341" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q341 ;
+    dcterms:title "kidstats"@en ;
+    schema:about wd:Q341 ;
+    dcat:distribution dist:Q341-html,
+        dist:Q341-json,
+        dist:Q341-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q341.html> .
+
+dist:Q341-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q341, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q341.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q341-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q341, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14485"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q341.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q341-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q341, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q341.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q341
+    a wikibase:Item ;
+    schema:description "Shiny application that provides subadult age estimations based on dental and skeletal development and skeletal diaphyseal metrics using pre-optimized mixed cumulative probit models."@en ;
+    schema:name "kidstats"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "kidstats"@en ;
+    skos:prefLabel "kidstats"@en ;
+    p:P2 wds:Q341-A36BBA8A-53B1-586A-A00D-9F9E94E3FF0B,
+        wds:Q341-AE2B8BE9-69E2-5FD0-9BA3-611D6D85CE13 ;
+    p:P106 wds:Q341-FD2ED0D5-AA87-503E-A58B-ADB4BA5731FF ;
+    p:P113 wds:Q341-978B270E-E388-5784-8037-AA20A576AEC9 ;
+    p:P115 wds:Q341-E10350BE-7A7E-5A7B-A66E-D67F69F8801F ;
+    p:P116 wds:Q341-71755B58-A5D0-59FA-BCCE-035F43BCE766 ;
+    p:P117 wds:Q341-6425FD96-CC56-56A6-BB52-F8C6AAAFFC1C ;
+    p:P118 wds:Q341-E31B781F-06C6-5681-A55F-9F187C9148D9 ;
+    p:P119 wds:Q341-404DA1DF-649B-5D44-AEEA-660858911EAD ;
+    p:P122 wds:Q341-7C38B217-8289-527C-95E6-0E0110A9FE45,
+        wds:Q341-DBCA2892-E937-5D4D-BD83-07803AE22732 ;
+    p:P123 wds:Q341-4E2C41EE-E562-595C-A9B0-BA9BEE90AE02 ;
+    p:P125 wds:Q341-579CAF17-9369-5D4F-8ADF-13415E22A771 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q342 ;
+    wdt:P115 <https://open-archaeo.info/post/kidstats/> ;
+    wdt:P116 "kidstats" ;
+    wdt:P117 wd:Q272 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "kidstats"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/ElaineYChu/kidstats> .
+
+wds:Q341-4E2C41EE-E562-595C-A9B0-BA9BEE90AE02
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P123 wd:Q111 .
+
+wds:Q341-7C38B217-8289-527C-95E6-0E0110A9FE45
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P122 wd:Q109 .
+
+wds:Q341-404DA1DF-649B-5D44-AEEA-660858911EAD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P119 "kidstats"@en .
+
+wds:Q341-579CAF17-9369-5D4F-8ADF-13415E22A771
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/ElaineYChu/kidstats> .
+
+wds:Q341-978B270E-E388-5784-8037-AA20A576AEC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q342 .
+
+wds:Q341-6425FD96-CC56-56A6-BB52-F8C6AAAFFC1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P117 wd:Q272 .
+
+wds:Q341-71755B58-A5D0-59FA-BCCE-035F43BCE766
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "kidstats" .
+
+wds:Q341-A36BBA8A-53B1-586A-A00D-9F9E94E3FF0B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P2 wd:Q104 .
+
+wds:Q341-AE2B8BE9-69E2-5FD0-9BA3-611D6D85CE13
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P2 wd:Q106 .
+
+wds:Q341-DBCA2892-E937-5D4D-BD83-07803AE22732
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P122 wd:Q110 .
+
+wds:Q341-E31B781F-06C6-5681-A55F-9F187C9148D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P118 wd:Q108 .
+
+wds:Q341-E10350BE-7A7E-5A7B-A66E-D67F69F8801F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P115 <https://open-archaeo.info/post/kidstats/> .
+
+wds:Q341-FD2ED0D5-AA87-503E-A58B-ADB4BA5731FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664 ;
+    ps:P106 wd:Q110 .
+
+wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/kidstats/> .

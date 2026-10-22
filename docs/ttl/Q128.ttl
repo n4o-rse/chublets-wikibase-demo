@@ -1,0 +1,207 @@
+# Q128: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q128
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Created for the very-specific purpose of communicating via android with a raspberry pi running a scanner."@en ;
+    dcterms:identifier "Q128" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q128 ;
+    dcterms:title "photogrammetry-object-scannner"@en ;
+    schema:about wd:Q128 ;
+    dcat:distribution dist:Q128-html,
+        dist:Q128-json,
+        dist:Q128-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q128.html> .
+
+dist:Q128-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q128, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q128.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q128-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q128, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14729"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q128.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q128-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q128, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q128.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q128
+    a wikibase:Item ;
+    schema:description "Created for the very-specific purpose of communicating via android with a raspberry pi running a scanner."@en ;
+    schema:name "photogrammetry-object-scannner"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "photogrammetry-object-scannner"@en ;
+    skos:prefLabel "photogrammetry-object-scannner"@en ;
+    p:P2 wds:Q128-1C9A7FF8-BD21-571C-90EF-A5A5C573B7CA,
+        wds:Q128-84F3AAEB-41BF-5E00-8906-3B8624183482 ;
+    p:P106 wds:Q128-233D71F5-2088-57E2-9DCC-9A5F9FEC6E12 ;
+    p:P113 wds:Q128-F8F6C26A-AFD7-5417-AFB8-7A18BA83B9F7 ;
+    p:P115 wds:Q128-A6217085-53D4-5E5D-B6C9-4807FAC2B643 ;
+    p:P116 wds:Q128-13022FD6-FA73-57D8-BE5C-95D79BE141DA ;
+    p:P117 wds:Q128-7DDC014C-4FFB-56AF-A093-CDE040BE1A83 ;
+    p:P118 wds:Q128-9EBDE95C-47BD-5109-9820-A821476A7F14 ;
+    p:P119 wds:Q128-9E677E0B-404B-5322-B5D4-7772B80C339A ;
+    p:P122 wds:Q128-2137C3BA-2167-5F78-B15D-271A4AC3E034,
+        wds:Q128-C2998021-4C2D-5481-BF37-211BC5F40133 ;
+    p:P125 wds:Q128-05B68DA4-DCC3-53A9-8D76-29997E4519A1 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q130 ;
+    wdt:P115 <https://open-archaeo.info/post/photogrammetry-object-scannner/> ;
+    wdt:P116 "photogrammetry-object-scannner" ;
+    wdt:P117 wd:Q129 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "photogrammetry-object-scannner"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/anatolian/photogrammetry-object-scannner> .
+
+wds:Q128-1C9A7FF8-BD21-571C-90EF-A5A5C573B7CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P2 wd:Q102 .
+
+wds:Q128-05B68DA4-DCC3-53A9-8D76-29997E4519A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    pq:P104 "2019-06-22T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-anatolian-photogrammetry-object-scannner_-_2019-06-22_03-21-09> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:aaa3efb4c227bba5c3de243298d60230 ;
+    ps:P125 <https://github.com/anatolian/photogrammetry-object-scannner> .
+
+wds:Q128-7DDC014C-4FFB-56AF-A093-CDE040BE1A83
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P117 wd:Q129 .
+
+wds:Q128-9E677E0B-404B-5322-B5D4-7772B80C339A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P119 "photogrammetry-object-scannner"@en .
+
+wds:Q128-9EBDE95C-47BD-5109-9820-A821476A7F14
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P118 wd:Q108 .
+
+wds:Q128-84F3AAEB-41BF-5E00-8906-3B8624183482
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P2 wd:Q106 .
+
+wds:Q128-233D71F5-2088-57E2-9DCC-9A5F9FEC6E12
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P106 wd:Q110 .
+
+wds:Q128-2137C3BA-2167-5F78-B15D-271A4AC3E034
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P122 wd:Q109 .
+
+wds:Q128-13022FD6-FA73-57D8-BE5C-95D79BE141DA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "photogrammetry-object-scannner" .
+
+wds:Q128-A6217085-53D4-5E5D-B6C9-4807FAC2B643
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P115 <https://open-archaeo.info/post/photogrammetry-object-scannner/> .
+
+wds:Q128-C2998021-4C2D-5481-BF37-211BC5F40133
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    ps:P122 wd:Q110 .
+
+wds:Q128-F8F6C26A-AFD7-5417-AFB8-7A18BA83B9F7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:846b18f96569672645d745f3270dc4d9c5f8115e ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q130 .
+
+wdref:846b18f96569672645d745f3270dc4d9c5f8115e
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/photogrammetry-object-scannner/> .
+
+wdv:aaa3efb4c227bba5c3de243298d60230
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-06-22T00:00:00Z"^^xsd:dateTime .

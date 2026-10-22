@@ -1,0 +1,207 @@
+# Q285: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q285
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Harris matrix visualization for the web using d3 + klayjs-d3."@en ;
+    dcterms:identifier "Q285" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q285 ;
+    dcterms:title "harris-matrix"@en ;
+    schema:about wd:Q285 ;
+    dcat:distribution dist:Q285-html,
+        dist:Q285-json,
+        dist:Q285-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q285.html> .
+
+dist:Q285-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q285, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q285.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q285-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q285, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14471"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q285.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q285-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q285, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q285.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q285
+    a wikibase:Item ;
+    schema:description "Harris matrix visualization for the web using d3 + klayjs-d3."@en ;
+    schema:name "harris-matrix"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "harris-matrix"@en ;
+    skos:prefLabel "harris-matrix"@en ;
+    p:P2 wds:Q285-4E12315E-9138-5555-91AB-3BB801872456,
+        wds:Q285-B80BA1A3-6790-5571-B4D5-6FF491C2E0D9 ;
+    p:P106 wds:Q285-AC9EBD39-FC8A-5688-B88B-4096FBEAE35A ;
+    p:P113 wds:Q285-EDC74656-0E50-51CA-A3D7-7914F100E1D3 ;
+    p:P115 wds:Q285-6BB13049-386D-58ED-9599-85E91E09FE43 ;
+    p:P116 wds:Q285-6DEAAB43-D14F-5863-AD3A-9B5856A92FB7 ;
+    p:P117 wds:Q285-6AE6CE8A-A69C-518E-AD51-35074B235E67 ;
+    p:P118 wds:Q285-CE0C3EFC-7CBB-5204-8353-D9DD882B4037 ;
+    p:P119 wds:Q285-4E30DDCB-FF2A-5911-A6D1-602B3DBED93C ;
+    p:P122 wds:Q285-8E78A441-BF4C-5C6C-820C-E3E65A342A34,
+        wds:Q285-A0472299-DE96-599F-B1D4-475AECD1C5E2 ;
+    p:P125 wds:Q285-9671A51C-D3F8-55E6-998E-A8BD1F3086BD ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q286 ;
+    wdt:P115 <https://open-archaeo.info/post/harris-matrix-semerj/> ;
+    wdt:P116 "harris-matrix-semerj" ;
+    wdt:P117 wd:Q185 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "harris-matrix"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/semerj/harris-matrix> .
+
+wds:Q285-4E30DDCB-FF2A-5911-A6D1-602B3DBED93C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P119 "harris-matrix"@en .
+
+wds:Q285-4E12315E-9138-5555-91AB-3BB801872456
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P2 wd:Q106 .
+
+wds:Q285-6AE6CE8A-A69C-518E-AD51-35074B235E67
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P117 wd:Q185 .
+
+wds:Q285-6BB13049-386D-58ED-9599-85E91E09FE43
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P115 <https://open-archaeo.info/post/harris-matrix-semerj/> .
+
+wds:Q285-6DEAAB43-D14F-5863-AD3A-9B5856A92FB7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "harris-matrix-semerj" .
+
+wds:Q285-8E78A441-BF4C-5C6C-820C-E3E65A342A34
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P122 wd:Q110 .
+
+wds:Q285-9671A51C-D3F8-55E6-998E-A8BD1F3086BD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    pq:P104 "2016-05-29T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-semerj-harris-matrix_-_2016-05-29_22-11-13> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:eb9699a747ad776e4adab440e651c3bb ;
+    ps:P125 <https://github.com/semerj/harris-matrix> .
+
+wds:Q285-A0472299-DE96-599F-B1D4-475AECD1C5E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P122 wd:Q109 .
+
+wds:Q285-AC9EBD39-FC8A-5688-B88B-4096FBEAE35A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P106 wd:Q110 .
+
+wds:Q285-B80BA1A3-6790-5571-B4D5-6FF491C2E0D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P2 wd:Q102 .
+
+wds:Q285-CE0C3EFC-7CBB-5204-8353-D9DD882B4037
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    ps:P118 wd:Q108 .
+
+wds:Q285-EDC74656-0E50-51CA-A3D7-7914F100E1D3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:830fc0573e244c240ac212cb3c618abca3b25016 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q286 .
+
+wdref:830fc0573e244c240ac212cb3c618abca3b25016
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/harris-matrix-semerj/> .
+
+wdv:eb9699a747ad776e4adab440e651c3bb
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2016-05-29T00:00:00Z"^^xsd:dateTime .

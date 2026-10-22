@@ -1,0 +1,225 @@
+# Q211: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q211
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Includes an agent-based model (ABM) of cultural transmission that simulates the three main forms of transmission bias: content bias, frequency bias, and demonstrator bias."@en ;
+    dcterms:identifier "Q211" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q211 ;
+    dcterms:title "TransmissionBias"@en ;
+    schema:about wd:Q211 ;
+    dcat:distribution dist:Q211-html,
+        dist:Q211-json,
+        dist:Q211-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q211.html> .
+
+dist:Q211-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q211, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q211.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q211-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q211, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16557"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q211.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q211-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q211, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q211.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q211
+    a wikibase:Item ;
+    schema:description "Includes an agent-based model (ABM) of cultural transmission that simulates the three main forms of transmission bias: content bias, frequency bias, and demonstrator bias."@en ;
+    schema:name "TransmissionBias"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "TransmissionBias"@en ;
+    skos:prefLabel "TransmissionBias"@en ;
+    p:P2 wds:Q211-4F6358FC-B656-5DF9-A753-E2C83D21AF12,
+        wds:Q211-5D19A6FB-4608-51CF-97C2-99C34EEB42A3 ;
+    p:P106 wds:Q211-748CBB66-8EBF-5EC3-9BC5-84CFE4B46FA8 ;
+    p:P113 wds:Q211-0F2B1BAD-5919-5D11-BBED-47B2EAC57B80 ;
+    p:P115 wds:Q211-7B549CA5-801C-5CB4-95CB-E385149CFE3F ;
+    p:P116 wds:Q211-2AE3C5F9-9C7C-5D14-BD22-6B919D087772 ;
+    p:P117 wds:Q211-4CF9BAFD-6A3F-555D-ACE0-A85BB0622F84,
+        wds:Q211-F56CEC6F-328A-5144-8D4E-81FDEA25A92F ;
+    p:P118 wds:Q211-AC4085F7-9549-5B8B-B591-C81E277511BB ;
+    p:P119 wds:Q211-775152DB-BEE4-5E17-8E78-FEC19DFB7D04 ;
+    p:P122 wds:Q211-259FF7A7-7547-54F2-812E-AFBCC917F245,
+        wds:Q211-FE4B3D5A-E8B4-5ED2-A517-89359AA90942 ;
+    p:P123 wds:Q211-6BEFF0F9-DA46-5D14-8771-2375F86644E6 ;
+    p:P125 wds:Q211-F24B1AC0-2079-52B0-9828-AC17E55ED429 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q214 ;
+    wdt:P115 <https://open-archaeo.info/post/transmissionbias/> ;
+    wdt:P116 "transmissionbias" ;
+    wdt:P117 wd:Q212,
+        wd:Q213 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "TransmissionBias"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/masonyoungblood/TransmissionBias> .
+
+wds:Q211-0F2B1BAD-5919-5D11-BBED-47B2EAC57B80
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q214 .
+
+wds:Q211-2AE3C5F9-9C7C-5D14-BD22-6B919D087772
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "transmissionbias" .
+
+wds:Q211-4CF9BAFD-6A3F-555D-ACE0-A85BB0622F84
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P117 wd:Q213 .
+
+wds:Q211-4F6358FC-B656-5DF9-A753-E2C83D21AF12
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P2 wd:Q103 .
+
+wds:Q211-5D19A6FB-4608-51CF-97C2-99C34EEB42A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P2 wd:Q106 .
+
+wds:Q211-6BEFF0F9-DA46-5D14-8771-2375F86644E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P123 wd:Q111 .
+
+wds:Q211-7B549CA5-801C-5CB4-95CB-E385149CFE3F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P115 <https://open-archaeo.info/post/transmissionbias/> .
+
+wds:Q211-259FF7A7-7547-54F2-812E-AFBCC917F245
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P122 wd:Q109 .
+
+wds:Q211-748CBB66-8EBF-5EC3-9BC5-84CFE4B46FA8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P106 wd:Q110 .
+
+wds:Q211-775152DB-BEE4-5E17-8E78-FEC19DFB7D04
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P119 "TransmissionBias"@en .
+
+wds:Q211-AC4085F7-9549-5B8B-B591-C81E277511BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P118 wd:Q108 .
+
+wds:Q211-F24B1AC0-2079-52B0-9828-AC17E55ED429
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    pq:P104 "2021-07-01T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-masonyoungblood-TransmissionBias_-_2021-07-01_11-24-26> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:f7ec15092ae04385fc2d644ce3e86e94 ;
+    ps:P125 <https://github.com/masonyoungblood/TransmissionBias> .
+
+wds:Q211-F56CEC6F-328A-5144-8D4E-81FDEA25A92F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P117 wd:Q212 .
+
+wds:Q211-FE4B3D5A-E8B4-5ED2-A517-89359AA90942
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81 ;
+    ps:P122 wd:Q110 .
+
+wdref:ab0e51a55ea238b06ed0a66e90d7affcd948fe81
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/transmissionbias/> .
+
+wdv:f7ec15092ae04385fc2d644ce3e86e94
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-07-01T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,234 @@
+# Q263: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q263
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "An R package to facilitate the use of Murail et al.'s (1999) approach of sex estimation in past populations."@en ;
+    dcterms:identifier "Q263" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q263 ;
+    dcterms:title "rdss"@en ;
+    schema:about wd:Q263 ;
+    dcat:distribution dist:Q263-html,
+        dist:Q263-json,
+        dist:Q263-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q263.html> .
+
+dist:Q263-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q263, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q263.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q263-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q263, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17145"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q263.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q263-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q263, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q263.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q263
+    a wikibase:Item ;
+    schema:description "An R package to facilitate the use of Murail et al.'s (1999) approach of sex estimation in past populations."@en ;
+    schema:name "rdss"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "rdss"@en ;
+    skos:prefLabel "rdss"@en ;
+    p:P2 wds:Q263-7BA4713A-6960-5884-9CFB-3C8DA61AFEC0,
+        wds:Q263-D01DE97D-5923-5824-B9A6-9DBD5B5846FA ;
+    p:P106 wds:Q263-66038121-8A07-525E-99E9-C91CF0A18627 ;
+    p:P113 wds:Q263-FCC769EC-DE8F-568E-A542-380E96FFB650 ;
+    p:P114 wds:Q263-42B9128C-34C2-5988-8217-8EA8A2F82766 ;
+    p:P115 wds:Q263-847D4B32-5C1D-5C4F-BC4A-3210C92CD612 ;
+    p:P116 wds:Q263-5C4850AC-B670-5FE0-80A0-A0AF1412C78C ;
+    p:P117 wds:Q263-2AC400A9-27AC-5B6A-8DC0-E8E7C583A147,
+        wds:Q263-F8C78F30-12B7-5542-B539-9BDF36DF228A ;
+    p:P118 wds:Q263-DF12D010-0B7C-511A-8AEC-8AFFFA73D3D1 ;
+    p:P119 wds:Q263-623EB52F-EC9B-5FAD-B4DC-33BA021E0B0F ;
+    p:P122 wds:Q263-55B535A0-8417-516E-85B3-2A9A5ECE36C9,
+        wds:Q263-1346862D-68FB-50CB-8FA1-C9F93FD10038 ;
+    p:P123 wds:Q263-9ED4A011-DDBB-52B6-96FD-A0169C6143BF ;
+    p:P125 wds:Q263-82B6B969-7B0B-5BCD-956D-7CEF0435314F ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q264 ;
+    wdt:P114 "10.1002/oa.2957" ;
+    wdt:P115 <https://open-archaeo.info/post/rdss/> ;
+    wdt:P116 "rdss" ;
+    wdt:P117 wd:Q116,
+        wd:Q213 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "rdss"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/frederic-santos/rdss> .
+
+wds:Q263-2AC400A9-27AC-5B6A-8DC0-E8E7C583A147
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P117 wd:Q116 .
+
+wds:Q263-5C4850AC-B670-5FE0-80A0-A0AF1412C78C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "rdss" .
+
+wds:Q263-7BA4713A-6960-5884-9CFB-3C8DA61AFEC0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P2 wd:Q106 .
+
+wds:Q263-9ED4A011-DDBB-52B6-96FD-A0169C6143BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P123 wd:Q111 .
+
+wds:Q263-42B9128C-34C2-5988-8217-8EA8A2F82766
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P114 "10.1002/oa.2957" .
+
+wds:Q263-55B535A0-8417-516E-85B3-2A9A5ECE36C9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P122 wd:Q110 .
+
+wds:Q263-82B6B969-7B0B-5BCD-956D-7CEF0435314F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    pq:P104 "2021-01-21T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-frederic-santos-rdss_-_2021-01-21_10-05-28> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:195d322253f84db8787a94abda6caf2d ;
+    ps:P125 <https://github.com/frederic-santos/rdss> .
+
+wds:Q263-623EB52F-EC9B-5FAD-B4DC-33BA021E0B0F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P119 "rdss"@en .
+
+wds:Q263-847D4B32-5C1D-5C4F-BC4A-3210C92CD612
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P115 <https://open-archaeo.info/post/rdss/> .
+
+wds:Q263-1346862D-68FB-50CB-8FA1-C9F93FD10038
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P122 wd:Q109 .
+
+wds:Q263-66038121-8A07-525E-99E9-C91CF0A18627
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P106 wd:Q110 .
+
+wds:Q263-D01DE97D-5923-5824-B9A6-9DBD5B5846FA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P2 wd:Q103 .
+
+wds:Q263-DF12D010-0B7C-511A-8AEC-8AFFFA73D3D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P118 wd:Q108 .
+
+wds:Q263-F8C78F30-12B7-5542-B539-9BDF36DF228A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    ps:P117 wd:Q213 .
+
+wds:Q263-FCC769EC-DE8F-568E-A542-380E96FFB650
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:21204c97253098b56d3bf7caa314d15248e2ccb5 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q264 .
+
+wdref:21204c97253098b56d3bf7caa314d15248e2ccb5
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/rdss/> .
+
+wdv:195d322253f84db8787a94abda6caf2d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-01-21T00:00:00Z"^^xsd:dateTime .

@@ -1,6 +1,6 @@
 # Site metadata for the static demo of the chublets.software Wikibase model (schema: PRIMER.md of wikibase-static, A4).
 title: chublets.software Wikibase (model demo)
-description: The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins; no software entries yet.
+description: The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and about 100 software entries imported from open-archaeo.
 # Where docs/ is published; the RDF export needs it for the download URLs of its DCAT distributions.
 pages_url: https://n4o-rse.github.io/chublets-wikibase-demo/
 # Base of the entity URIs in the RDF export (wd:, wdt:, ...). This demo has its own numbers from 100 on, which the real

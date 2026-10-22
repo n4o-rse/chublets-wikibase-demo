@@ -1,0 +1,226 @@
+# Q180: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q180
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "This python library was written as an help for the study of stone walls, mainly through the quantitative analysis of spatial dimensions of stones."@en ;
+    dcterms:identifier "Q180" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q180 ;
+    dcterms:title "murature"@en ;
+    schema:about wd:Q180 ;
+    dcat:distribution dist:Q180-html,
+        dist:Q180-json,
+        dist:Q180-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q180.html> .
+
+dist:Q180-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q180, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q180.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q180-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q180, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16722"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q180.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q180-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q180, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q180.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q180
+    a wikibase:Item ;
+    schema:description "This python library was written as an help for the study of stone walls, mainly through the quantitative analysis of spatial dimensions of stones."@en ;
+    schema:name "murature"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "murature"@en ;
+    skos:prefLabel "murature"@en ;
+    p:P2 wds:Q180-BA73FA3C-B45B-5845-9AF6-D2EA799B6F44,
+        wds:Q180-C34E7E84-58B7-585E-80FB-23655C20937D ;
+    p:P106 wds:Q180-7004FB4E-EA54-56F9-9F93-F8F3C60CE9E6 ;
+    p:P113 wds:Q180-8E5090A5-BF9E-5BA6-B720-62467D4F0169,
+        wds:Q180-682DA97F-71D7-515C-94D6-D4AB3865E409 ;
+    p:P115 wds:Q180-92E11C69-940D-5D08-9E01-C63378582313 ;
+    p:P116 wds:Q180-862EE0D6-B5D2-59B2-AD77-A1E9618BE571 ;
+    p:P117 wds:Q180-CA482F71-D40D-53C9-9519-F90188D93522 ;
+    p:P118 wds:Q180-D0C1B590-9086-5759-8ED9-9F8DA023725B ;
+    p:P119 wds:Q180-94AC3161-FBF0-5441-B3CF-1D63236E9B08 ;
+    p:P122 wds:Q180-107ABDA7-743F-5DB7-92C5-C0C120E500F8,
+        wds:Q180-A2259F3A-3800-58C5-91A0-5A1F309F30D9 ;
+    p:P123 wds:Q180-9D7B7FDF-5BA5-547B-9F13-A1FDC7755E7C ;
+    p:P125 wds:Q180-2507B51A-1B89-5774-90A7-3539CA8E4250 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q182,
+        wd:Q183 ;
+    wdt:P115 <https://open-archaeo.info/post/murature/> ;
+    wdt:P116 "murature" ;
+    wdt:P117 wd:Q181 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "murature"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://codeberg.org/steko/murature> .
+
+wds:Q180-8E5090A5-BF9E-5BA6-B720-62467D4F0169
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q182 .
+
+wds:Q180-9D7B7FDF-5BA5-547B-9F13-A1FDC7755E7C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P123 wd:Q139 .
+
+wds:Q180-92E11C69-940D-5D08-9E01-C63378582313
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P115 <https://open-archaeo.info/post/murature/> .
+
+wds:Q180-94AC3161-FBF0-5441-B3CF-1D63236E9B08
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P119 "murature"@en .
+
+wds:Q180-107ABDA7-743F-5DB7-92C5-C0C120E500F8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P122 wd:Q110 .
+
+wds:Q180-682DA97F-71D7-515C-94D6-D4AB3865E409
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q183 .
+
+wds:Q180-862EE0D6-B5D2-59B2-AD77-A1E9618BE571
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "murature" .
+
+wds:Q180-2507B51A-1B89-5774-90A7-3539CA8E4250
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    pq:P104 "2020-06-22T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/codeberg.org-steko-murature_-_2020-06-22_14-12-21> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:fab22b18474a1a5936330ed0507f8b01 ;
+    ps:P125 <https://codeberg.org/steko/murature> .
+
+wds:Q180-7004FB4E-EA54-56F9-9F93-F8F3C60CE9E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P106 wd:Q110 .
+
+wds:Q180-A2259F3A-3800-58C5-91A0-5A1F309F30D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P122 wd:Q109 .
+
+wds:Q180-BA73FA3C-B45B-5845-9AF6-D2EA799B6F44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P2 wd:Q103 .
+
+wds:Q180-C34E7E84-58B7-585E-80FB-23655C20937D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P2 wd:Q106 .
+
+wds:Q180-CA482F71-D40D-53C9-9519-F90188D93522
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P117 wd:Q181 .
+
+wds:Q180-D0C1B590-9086-5759-8ED9-9F8DA023725B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
+    ps:P118 wd:Q108 .
+
+wdref:7053244fef03ecd7d13f010d694f549443170f6d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/murature/> .
+
+wdv:fab22b18474a1a5936330ed0507f8b01
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-06-22T00:00:00Z"^^xsd:dateTime .

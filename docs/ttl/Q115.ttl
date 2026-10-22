@@ -1,0 +1,206 @@
+# Q115: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.9.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q115
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Scripts at the ARQUB group to work with compositional data on archaeometric studies."@en ;
+    dcterms:identifier "Q115" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q115 ;
+    dcterms:title "ARQUB"@en ;
+    schema:about wd:Q115 ;
+    dcat:distribution dist:Q115-html,
+        dist:Q115-json,
+        dist:Q115-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q115.html> .
+
+dist:Q115-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q115, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q115.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q115-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q115, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14331"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q115.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q115-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q115, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q115.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q115
+    a wikibase:Item ;
+    schema:description "Scripts at the ARQUB group to work with compositional data on archaeometric studies."@en ;
+    schema:name "ARQUB"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "ARQUB"@en ;
+    skos:prefLabel "ARQUB"@en ;
+    p:P2 wds:Q115-1C27DBBF-5D16-5E72-8861-1AF85231FB26,
+        wds:Q115-C8633946-3652-55DA-B6A9-A95A4734E08D ;
+    p:P106 wds:Q115-1D1F1025-0082-5AA5-9439-A50E20569F0E ;
+    p:P113 wds:Q115-25CC66E4-E094-54D7-9BED-22EB3300BD0C ;
+    p:P115 wds:Q115-42BCAD66-2834-5677-8A7A-ACD1D24DB4E1 ;
+    p:P116 wds:Q115-0A4EB41B-ED3D-5E14-BE9A-2A1D77EB0032 ;
+    p:P117 wds:Q115-3B9CC8AE-6042-5609-97E2-7FDDCEB93C5B ;
+    p:P118 wds:Q115-31E0FD12-DD1E-5F85-A08C-557F75A1C9EB ;
+    p:P119 wds:Q115-DFD7504B-6A6F-5883-A40E-4E7BD69A0C39 ;
+    p:P122 wds:Q115-5DDE9BDF-87AA-50C8-8E43-477702258312,
+        wds:Q115-3804883D-8D58-51C4-A342-70A4688EACD9 ;
+    p:P123 wds:Q115-E8188325-D711-5282-B50F-581B35A5A650 ;
+    p:P125 wds:Q115-475434BE-E8F4-5567-8957-F3C9BE5774D3 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q117 ;
+    wdt:P115 <https://open-archaeo.info/post/arqub/> ;
+    wdt:P116 "arqub" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ARQUB"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/jbuxeda/ARQUB> .
+
+wds:Q115-0A4EB41B-ED3D-5E14-BE9A-2A1D77EB0032
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "arqub" .
+
+wds:Q115-1C27DBBF-5D16-5E72-8861-1AF85231FB26
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P2 wd:Q104 .
+
+wds:Q115-1D1F1025-0082-5AA5-9439-A50E20569F0E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P106 wd:Q110 .
+
+wds:Q115-3B9CC8AE-6042-5609-97E2-7FDDCEB93C5B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P117 wd:Q116 .
+
+wds:Q115-5DDE9BDF-87AA-50C8-8E43-477702258312
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P122 wd:Q110 .
+
+wds:Q115-25CC66E4-E094-54D7-9BED-22EB3300BD0C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q117 .
+
+wds:Q115-31E0FD12-DD1E-5F85-A08C-557F75A1C9EB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P118 wd:Q108 .
+
+wds:Q115-42BCAD66-2834-5677-8A7A-ACD1D24DB4E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P115 <https://open-archaeo.info/post/arqub/> .
+
+wds:Q115-475434BE-E8F4-5567-8957-F3C9BE5774D3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/jbuxeda/ARQUB> .
+
+wds:Q115-3804883D-8D58-51C4-A342-70A4688EACD9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P122 wd:Q109 .
+
+wds:Q115-C8633946-3652-55DA-B6A9-A95A4734E08D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P2 wd:Q106 .
+
+wds:Q115-DFD7504B-6A6F-5883-A40E-4E7BD69A0C39
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P119 "ARQUB"@en .
+
+wds:Q115-E8188325-D711-5282-B50F-581B35A5A650
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6 ;
+    ps:P123 wd:Q111 .
+
+wdref:251c66af95bcca022b4200d9e601ab53aaba5fc6
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/arqub/> .
