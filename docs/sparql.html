@@ -18,7 +18,7 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
     <a class="logo" href="index.html"><img src="assets/logo/logo.png" alt="chublets.software Wikibase (model demo)"></a>
     <nav class="nav" aria-label="Home">
       <a href="index.html"><span class="l" lang="en">Home</span><span class="l" lang="de">Startseite</span></a>
-<a href="index.html#items">Items</a><a href="index.html#properties">Properties</a><a href="sparql.html" aria-current="page">SPARQL</a><a href="query.html"><span class="l" lang="en">Query</span><span class="l" lang="de">Abfrage</span></a>    </nav>
+<a href="items.html">Items</a><a href="overview.html"><span class="l" lang="en">Overview</span><span class="l" lang="de">Übersicht</span></a><a href="properties.html">Properties</a><a href="sparql.html" aria-current="page">SPARQL</a><a href="query.html"><span class="l" lang="en">Query</span><span class="l" lang="de">Abfrage</span></a>    </nav>
   </aside>
   <div class="content">
     <div class="tabs">
@@ -206,17 +206,19 @@ ORDER BY DESC(?statements) ?qualifierLabel</textarea>
   </section>
   <section class="query" id="references">
     <h2><span class="l" lang="en">Statements with a reference</span><span class="l" lang="de">Aussagen mit Fundstelle</span></h2>
-<p><span class="l" lang="en">Statements that say where they come from, with the property and value of the reference.</span><span class="l" lang="de">Aussagen, die angeben, woher sie stammen, mit Property und Wert der Fundstelle.</span></p>    <textarea spellcheck="false" aria-label="Statements with a reference" rows="20">SELECT ?itemLabel ?propertyLabel ?sourceLabel ?source WHERE {
-  # Three groups that are joined from the first outwards: written as one block, rdflib builds the
-  # cross product of the two property lists (every property times every property) before it joins them.
-  { ?statement prov:wasDerivedFrom ?reference .
-    ?reference ?referenceProperty ?source . }
+<p><span class="l" lang="en">Statements that say where they come from, with the property and value of the reference.</span><span class="l" lang="de">Aussagen, die angeben, woher sie stammen, mit Property und Wert der Fundstelle.</span></p>    <textarea spellcheck="false" aria-label="Statements with a reference" rows="22">SELECT ?itemLabel ?propertyLabel ?sourceLabel ?source WHERE {
+  # Two groups, not three. rdflib joins a group lazily (one solution at a time) only when it has no further
+  # join inside it; each additional group is evaluated alone and then paired with every row of the others.
+  # The first group finds the statements and their references; the second looks the two properties up
+  # for the bound ?claim and ?referenceProperty.
   { ?item ?claim ?statement .
-    ?property wikibase:claim ?claim ;
+    ?statement prov:wasDerivedFrom ?reference .
+    ?reference ?referenceProperty ?source . }
+  { ?property wikibase:claim ?claim ;
               rdfs:label ?propertyLabel .
-    FILTER(LANG(?propertyLabel) = &#34;en&#34;) }
-  { ?sourceProperty wikibase:reference ?referenceProperty ;
+    ?sourceProperty wikibase:reference ?referenceProperty ;
                     rdfs:label ?sourceLabel .
+    FILTER(LANG(?propertyLabel) = &#34;en&#34;)
     FILTER(LANG(?sourceLabel) = &#34;en&#34;) }
   OPTIONAL {
     ?item rdfs:label ?itemLabel .
@@ -299,7 +301,7 @@ ORDER BY ?label ?crmClass</textarea>
       <p>
         <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 (Public Domain)</a></span>
       </p>
-      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.9.0</p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.10.0</p>
     </footer>
   </div>
 </div>
