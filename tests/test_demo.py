@@ -50,7 +50,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 7, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 8, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -344,4 +344,26 @@ class Crm(unittest.TestCase):
         page = (ROOT / "docs" / "Q106.html").read_text(encoding="utf-8")
         self.assertIn("crmdig:D14_Software", page)
         self.assertIn('class="crm"', page)
+
+    def test_the_shacl_check_finds_no_violation_and_one_mutation_finds_exactly_one(self) -> None:
+        from wikibase_static import step_check_crm
+        text = next((ROOT / "dist").glob("*.ttl")).read_text(encoding="utf-8")
+        self.assertEqual([r for r in step_check_crm.validate(text, BASE) if r[0] == "Violation"], [])
+        # Little Minion loses its row: take away the triple that anchors it (and nothing else)
+        import rdflib
+        graph = rdflib.Graph()
+        graph.parse(data=text, format="turtle")
+        cut = (rdflib.URIRef(f"{BASE}/entity/Q105"), rdflib.RDFS.subClassOf, rdflib.URIRef("http://www.cidoc-crm.org/extensions/crmdig/D14_Software"))
+        self.assertIn(cut, graph)
+        graph.remove(cut)
+        rows = [r for r in step_check_crm.validate(graph.serialize(format="turtle"), BASE) if r[0] == "Violation"]
+        self.assertEqual([r[1] for r in rows], [f"{BASE}/entity/Q105"])
+
+    def test_the_dcat_classes_of_the_published_file_reach_the_crm(self) -> None:
+        import rdflib
+        graph = rdflib.Graph()
+        graph.parse(next((ROOT / "dist").glob("*.ttl")), format="turtle")
+        for name, expected in (("Dataset", self.E73), ("Catalog", "http://www.cidoc-crm.org/cidoc-crm/E31_Document"),
+                               ("Distribution", "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object")):
+            self.assertIn((rdflib.URIRef("http://www.w3.org/ns/dcat#" + name), rdflib.RDFS.subClassOf, rdflib.URIRef(expected)), graph)
 

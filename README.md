@@ -83,7 +83,13 @@ file carries `software rdfs:subClassOf crmdig:D14_Software` and the chain D14 to
 software library, script file and chublet inherit it along `subclass of`, and their pages say "from software".
 **Little Minion** (Q105, the pack's second parent of chublet) hangs under the root class of the kernel, not under
 `software`, so it has a row of its own, also D14. The RDF file carries `rdfs:subClassOf crmdig:D14_Software` for both and
-the chain D14 to D1 to E73 in a section of its own. Needs `wikibase-static` 0.7.0.
+the chain D14 to D1 to E73 in a section of its own, together with the DCAT classes of the file (`dcat:Dataset` is an E73,
+`dcat:Catalog` an E31 and a D1, `dcat:Distribution` a D1) and `subclass of` / `instance of` spelled out as `rdfs:subClassOf`
+and `rdf:type`, so that a reader without inference (the N4O profile) finds every class anchored.
+
+`python main.py --strict check-crm` checks that with SHACL (pySHACL, `data/shapes-crm.ttl` of the package) on the file in
+`dist/`: a class that reaches no CRM class over `rdfs:subClassOf` is a violation, one that reaches only E1 is a warning.
+Needs `wikibase-static` 0.8.0.
 
 ## Where the model came from
 

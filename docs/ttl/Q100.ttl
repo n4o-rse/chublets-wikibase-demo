@@ -1,5 +1,5 @@
 # Q100: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.7.0; data as of unknown
+# Generated with wikibase-static 0.8.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -109,8 +109,8 @@ wdref:51b1835e66941ac1a3a7414392096dffb331890f
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Q7397> .
 
-# CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv),
-# with the superclasses of an extension class up to its first class of the CIDOC CRM. Not part of the Wikibase data model.
+# CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv) and the DCAT classes of this file (data/dcat-crm.csv),
+# with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
 
 wd:Q100
     rdfs:subClassOf crmdig:D14_Software .

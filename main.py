@@ -3,6 +3,7 @@
 
     python main.py                      all steps in order (from-csv, load, build, search, rdf, sparql)
     python main.py --strict             the same, but any WARN line (a dead link, a model rule) is an error
+    python main.py --strict check-crm   SHACL check: every class reaches the CIDOC CRM (after the default run; needs wikibase-static 0.8.0)
     python main.py csv-fmt              bring the tables in data/csv/ into canonical form (--check: only report)
     python main.py --list               print the steps and exit
 
@@ -34,6 +35,7 @@ STEPS = [
     ("search", "step_search", True),
     ("rdf", "step_rdf", True),
     ("sparql", "step_sparql", True),
+    ("check-crm", "step_check_crm", False),
 ]
 
 
