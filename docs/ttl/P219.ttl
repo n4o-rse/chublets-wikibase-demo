@@ -59,7 +59,7 @@ dist:P219-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P219, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1605"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2585"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P219.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,35 @@ wd:P219
     wikibase:referenceValue prv:P219 ;
     wikibase:statementProperty ps:P219 ;
     wikibase:statementValue psv:P219 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "package management system"@en ;
     skos:prefLabel "package management system"@en ;
     p:P2 wds:P219-15CA9126-E7F3-5170-8022-3E70EC3FB2D7 ;
     p:P4 wds:P219-B8DD8A89-264D-54A0-822C-F8EA10A91C11 ;
+    p:P9 wds:P219-1E45DD24-06A7-5C21-8EA0-FE172ABB9E1D ;
+    p:P10 wds:P219-027D0F9D-E843-57B3-AE89-F18A8E604C0F ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3033" .
+    wdt:P4 "P3033" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P219-1E45DD24-06A7-5C21-8EA0-FE172ABB9E1D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P219-15CA9126-E7F3-5170-8022-3E70EC3FB2D7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P219-027D0F9D-E843-57B3-AE89-F18A8E604C0F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P219-B8DD8A89-264D-54A0-822C-F8EA10A91C11
     a wikibase:BestRank,

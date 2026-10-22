@@ -59,7 +59,7 @@ dist:P243-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P243, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1448"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1834"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P243.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P243
     schema:name "start date"@en ;
     wikibase:claim p:P243 ;
     wikibase:directClaim wdt:P243 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P243 ;
     wikibase:propertyType wikibase:Time ;
     wikibase:qualifier pq:P243 ;
@@ -85,15 +85,17 @@ wd:P243
     wikibase:referenceValue prv:P243 ;
     wikibase:statementProperty ps:P243 ;
     wikibase:statementValue psv:P243 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "start date"@en ;
     skos:prefLabel "start date"@en ;
     p:P2 wds:P243-A25645B1-6227-51ED-8AC0-7D78A9E6BB29 ;
     p:P100 wds:P243-48BF3530-3203-5C41-BD40-FF64CE23A09C ;
     p:P101 wds:P243-4E85418C-3798-5A37-8C34-459B24A3C81B ;
+    p:P102 wds:P243-F5909237-BDA8-5D1B-93C9-838069DF0666 ;
     wdt:P2 wd:Q2 ;
     wdt:P100 "P580" ;
-    wdt:P101 "startDate" .
+    wdt:P101 "startDate" ;
+    wdt:P102 "startDate" .
 
 wds:P243-4E85418C-3798-5A37-8C34-459B24A3C81B
     a wikibase:BestRank,
@@ -112,6 +114,12 @@ wds:P243-A25645B1-6227-51ED-8AC0-7D78A9E6BB29
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P243-F5909237-BDA8-5D1B-93C9-838069DF0666
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "startDate" .
 
 p:P243
     a owl:ObjectProperty .

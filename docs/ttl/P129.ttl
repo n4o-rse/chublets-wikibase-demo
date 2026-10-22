@@ -59,7 +59,7 @@ dist:P129-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P129, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1464"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2348"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P129.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P129
     schema:name "application suite"@en ;
     wikibase:claim p:P129 ;
     wikibase:directClaim wdt:P129 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P129 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P129 ;
@@ -85,15 +85,19 @@ wd:P129
     wikibase:referenceValue prv:P129 ;
     wikibase:statementProperty ps:P129 ;
     wikibase:statementValue psv:P129 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "application suite"@en ;
     skos:prefLabel "application suite"@en ;
     p:P2 wds:P129-30857360-2400-55FA-A1CB-383CC0BB3C58 ;
+    p:P9 wds:P129-5055AF3B-F10C-5034-B5D3-B346DBDD0FDA ;
     p:P100 wds:P129-4C11930C-DAD4-5750-A5B6-0831097020F0 ;
     p:P101 wds:P129-FFBB2DFD-49A8-5894-AACC-4856691CB2FD ;
+    p:P102 wds:P129-B4255A89-B89A-5CE2-AEB5-B123139B26DE ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P361" ;
-    wdt:P101 "applicationSuite" .
+    wdt:P101 "applicationSuite" ;
+    wdt:P102 "applicationSuite" .
 
 wds:P129-4C11930C-DAD4-5750-A5B6-0831097020F0
     a wikibase:BestRank,
@@ -101,11 +105,23 @@ wds:P129-4C11930C-DAD4-5750-A5B6-0831097020F0
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P361" .
 
+wds:P129-5055AF3B-F10C-5034-B5D3-B346DBDD0FDA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P129-30857360-2400-55FA-A1CB-383CC0BB3C58
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P129-B4255A89-B89A-5CE2-AEB5-B123139B26DE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "applicationSuite" .
 
 wds:P129-FFBB2DFD-49A8-5894-AACC-4856691CB2FD
     a wikibase:BestRank,

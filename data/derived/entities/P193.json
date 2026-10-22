@@ -1,6 +1,26 @@
 {
   "aliases": {},
   "claims": {
+    "P10": [
+      {
+        "id": "P193$89DA361E-DF27-567E-AAB2-63FC27A6ECC1",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P10",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
     "P2": [
       {
         "id": "P193$9DFD83DE-22B5-5E81-A72C-440FBD577CDA",

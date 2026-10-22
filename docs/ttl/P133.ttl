@@ -39,7 +39,7 @@ data:P133
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P133 ;
-    dcterms:title "download link"@en ;
+    dcterms:title "download URL"@en ;
     schema:about wd:P133 ;
     dcat:distribution dist:P133-html,
         dist:P133-json,
@@ -59,7 +59,7 @@ dist:P133-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P133, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1961"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2839"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P133.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,10 +73,10 @@ dist:P133-ttl
 
 wd:P133
     a wikibase:Property ;
-    schema:name "download link"@en ;
+    schema:name "download URL"@en ;
     wikibase:claim p:P133 ;
     wikibase:directClaim wdt:P133 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P133 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P133 ;
@@ -85,15 +85,25 @@ wd:P133
     wikibase:referenceValue prv:P133 ;
     wikibase:statementProperty ps:P133 ;
     wikibase:statementValue psv:P133 ;
-    wikibase:statements "3"^^xsd:integer ;
-    rdfs:label "download link"@en ;
-    skos:prefLabel "download link"@en ;
+    wikibase:statements "5"^^xsd:integer ;
+    rdfs:label "download URL"@en ;
+    skos:prefLabel "download URL"@en ;
     p:P2 wds:P133-C7B34791-373D-52A4-B046-C384308F95DF ;
     p:P4 wds:P133-58FDCD9B-54A3-5074-949A-E8F1948EFDD1 ;
+    p:P9 wds:P133-920CBB50-95C9-5C05-9DAD-BB6B56B10350 ;
     p:P101 wds:P133-2CEAF5AB-2A68-501F-98DB-FDCD2AE76976 ;
+    p:P102 wds:P133-2B98FA23-5689-5D4D-88DB-45797A792686 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P4945" ;
-    wdt:P101 "downloadUrl" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "downloadUrl" ;
+    wdt:P102 "downloadUrl" .
+
+wds:P133-2B98FA23-5689-5D4D-88DB-45797A792686
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "downloadUrl" .
 
 wds:P133-2CEAF5AB-2A68-501F-98DB-FDCD2AE76976
     a wikibase:BestRank,
@@ -107,6 +117,12 @@ wds:P133-58FDCD9B-54A3-5074-949A-E8F1948EFDD1
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:632b43c864ea9f6f00091ac9005421c0a3f1bed1 ;
     ps:P4 "P4945" .
+
+wds:P133-920CBB50-95C9-5C05-9DAD-BB6B56B10350
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P133-C7B34791-373D-52A4-B046-C384308F95DF
     a wikibase:BestRank,

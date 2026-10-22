@@ -36,9 +36,29 @@
         "rank": "normal",
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P101$5F1E6FCB-965C-5573-ABD7-4D259D444AA2",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
-  "datatype": "string",
+  "datatype": "external-id",
   "descriptions": {},
   "id": "P101",
   "labels": {

@@ -59,7 +59,7 @@ dist:P162-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P162, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1965"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3330"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P162.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P162
     schema:name "cites work"@en ;
     wikibase:claim p:P162 ;
     wikibase:directClaim wdt:P162 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P162 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P162 ;
@@ -85,15 +85,21 @@ wd:P162
     wikibase:referenceValue prv:P162 ;
     wikibase:statementProperty ps:P162 ;
     wikibase:statementValue psv:P162 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "cites work"@en ;
     skos:prefLabel "cites work"@en ;
     p:P2 wds:P162-5F31EAC2-9BD6-55C2-BDBD-DC9FDBC7722C ;
     p:P4 wds:P162-1CB66016-4749-5F0B-9010-E71893848AA5 ;
+    p:P9 wds:P162-E026465B-9890-51F6-839E-6715B9825A57 ;
+    p:P10 wds:P162-54885B6D-391E-5243-923B-D38DF185478F ;
     p:P101 wds:P162-91189C01-E8F7-5E30-8227-29E0BDB54825 ;
+    p:P102 wds:P162-8D65B989-BC27-5913-A9E9-A68A6C2DD613 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P2860" ;
-    wdt:P101 "citation" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "citation" ;
+    wdt:P102 "citation" .
 
 wds:P162-1CB66016-4749-5F0B-9010-E71893848AA5
     a wikibase:BestRank,
@@ -108,11 +114,29 @@ wds:P162-5F31EAC2-9BD6-55C2-BDBD-DC9FDBC7722C
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
 
+wds:P162-8D65B989-BC27-5913-A9E9-A68A6C2DD613
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "citation" .
+
+wds:P162-54885B6D-391E-5243-923B-D38DF185478F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
 wds:P162-91189C01-E8F7-5E30-8227-29E0BDB54825
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "citation" .
+
+wds:P162-E026465B-9890-51F6-839E-6715B9825A57
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wdref:3fdc1725501e81030524bbba80f86f255408eff9
     a wikibase:Reference ;

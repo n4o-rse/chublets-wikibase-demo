@@ -20,6 +20,26 @@
         "rank": "normal",
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P121$A4D2F672-6868-5B43-B15B-1C56178B77CE",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "external-id",

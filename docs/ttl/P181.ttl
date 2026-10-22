@@ -39,7 +39,7 @@ data:P181
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P181 ;
-    dcterms:title "distribution package ID P3597 (label to be filled)"@en ;
+    dcterms:title "F-Droid package"@en ;
     schema:about wd:P181 ;
     dcat:distribution dist:P181-html,
         dist:P181-json,
@@ -59,7 +59,7 @@ dist:P181-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P181, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2084"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P181.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P181-ttl
 
 wd:P181
     a wikibase:Property ;
-    schema:name "distribution package ID P3597 (label to be filled)"@en ;
+    schema:name "F-Droid package"@en ;
     wikibase:claim p:P181 ;
     wikibase:directClaim wdt:P181 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,13 +85,21 @@ wd:P181
     wikibase:referenceValue prv:P181 ;
     wikibase:statementProperty ps:P181 ;
     wikibase:statementValue psv:P181 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3597 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3597 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "F-Droid package"@en ;
+    skos:prefLabel "F-Droid package"@en ;
     p:P2 wds:P181-F86C0AE5-02D6-51B3-8751-677797D59DB9 ;
     p:P4 wds:P181-CA024E4F-A48E-5F35-90F9-539CD50BE5D1 ;
+    p:P9 wds:P181-36DB98F3-17FF-58A2-80C7-742D597E90ED ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3597" .
+    wdt:P4 "P3597" ;
+    wdt:P9 wd:Q100 .
+
+wds:P181-36DB98F3-17FF-58A2-80C7-742D597E90ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P181-CA024E4F-A48E-5F35-90F9-539CD50BE5D1
     a wikibase:BestRank,

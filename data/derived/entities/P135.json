@@ -56,6 +56,26 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P135$3D7682BD-FCAE-5846-93AB-DC460A934F2F",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "external-id",
@@ -64,7 +84,7 @@
   "labels": {
     "en": {
       "language": "en",
-      "value": "GitHub username"
+      "value": "GitHub account"
     }
   },
   "type": "property"

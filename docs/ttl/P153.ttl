@@ -59,7 +59,7 @@ dist:P153-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P153, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1590"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2079"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P153.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,15 @@ wd:P153
     wikibase:referenceValue prv:P153 ;
     wikibase:statementProperty ps:P153 ;
     wikibase:statementValue psv:P153 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "version type"@en ;
     skos:prefLabel "version type"@en ;
     p:P2 wds:P153-8EF902C1-AAAB-53EE-9185-D8936174516E ;
     p:P4 wds:P153-0B916922-2C5B-5D58-A809-8D479443F1C6 ;
+    p:P10 wds:P153-F55F83F6-41F7-50BD-8B76-F28ABFAC87BF ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P548" .
+    wdt:P4 "P548" ;
+    wdt:P10 wd:Q3 .
 
 wds:P153-0B916922-2C5B-5D58-A809-8D479443F1C6
     a wikibase:BestRank,
@@ -105,6 +107,12 @@ wds:P153-8EF902C1-AAAB-53EE-9185-D8936174516E
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P153-F55F83F6-41F7-50BD-8B76-F28ABFAC87BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wdref:74b8d37a4b859138af8f6bc8ef484add157e80ec
     a wikibase:Reference ;

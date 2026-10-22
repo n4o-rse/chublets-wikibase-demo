@@ -1,11 +1,31 @@
 {
   "aliases": {},
   "claims": {
+    "P10": [
+      {
+        "id": "P194$05D2DD19-A915-56A6-B5E6-BF416D1FD9E6",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P10",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
     "P101": [
       {
         "id": "P194$A6F0658E-EFB2-5E00-ADED-DED057649024",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "encodingFormat"
@@ -19,12 +39,28 @@
       {
         "id": "P194$81A4028F-2CED-5F59-B3DE-0C48B1663827",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "fileFormat"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P194$F6921884-5E4C-5D92-833C-1AEC270B4C9A",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "encodingFormat"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",
@@ -84,6 +120,26 @@
             ]
           }
         ],
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P194$296B0CD3-700E-542C-8D8C-79D032574318",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
         "type": "statement"
       }
     ]

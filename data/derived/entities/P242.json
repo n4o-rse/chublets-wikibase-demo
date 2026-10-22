@@ -1,16 +1,52 @@
 {
   "aliases": {},
   "claims": {
+    "P10": [
+      {
+        "id": "P242$851ECA14-74DC-5374-9B3C-EAA7BFC5A0E1",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P10",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
     "P101": [
       {
         "id": "P242$83A96D96-E830-5C31-AA32-CED62EB1052E",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "sponsor"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P242$4357D43A-D6C1-5F98-BFF3-9FC7C34F476E",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "sponsor"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",
@@ -70,6 +106,26 @@
             ]
           }
         ],
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P242$EBE705DE-D9AC-5778-8571-B0AAC6DD1516",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
         "type": "statement"
       }
     ]

@@ -59,7 +59,7 @@ dist:P107-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P107, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1969"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3333"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P107.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P107
     schema:name "copyright license"@en ;
     wikibase:claim p:P107 ;
     wikibase:directClaim wdt:P107 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P107 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P107 ;
@@ -85,15 +85,21 @@ wd:P107
     wikibase:referenceValue prv:P107 ;
     wikibase:statementProperty ps:P107 ;
     wikibase:statementValue psv:P107 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "copyright license"@en ;
     skos:prefLabel "copyright license"@en ;
     p:P2 wds:P107-E9267077-350E-5303-A947-15B607322E48 ;
     p:P4 wds:P107-F592B6B8-B6C9-5EE3-8DE8-E9D2A13D18BA ;
+    p:P9 wds:P107-663D8C62-009C-5659-8129-C453D4203E49 ;
+    p:P10 wds:P107-EF5F7BB5-5E03-5360-8DBE-0AEE4ACA2437 ;
     p:P101 wds:P107-9C501844-89AC-580D-B9CF-2CA149649A0A ;
+    p:P102 wds:P107-950ED9D5-2017-5A8B-A431-626885470DAB ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P275" ;
-    wdt:P101 "license" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "license" ;
+    wdt:P102 "license" .
 
 wds:P107-9C501844-89AC-580D-B9CF-2CA149649A0A
     a wikibase:BestRank,
@@ -101,11 +107,29 @@ wds:P107-9C501844-89AC-580D-B9CF-2CA149649A0A
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "license" .
 
+wds:P107-663D8C62-009C-5659-8129-C453D4203E49
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P107-950ED9D5-2017-5A8B-A431-626885470DAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "license" .
+
 wds:P107-E9267077-350E-5303-A947-15B607322E48
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P107-EF5F7BB5-5E03-5360-8DBE-0AEE4ACA2437
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P107-F592B6B8-B6C9-5EE3-8DE8-E9D2A13D18BA
     a wikibase:BestRank,

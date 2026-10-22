@@ -59,7 +59,7 @@ dist:P183-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P183, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1449"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2321"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P183.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P183
     schema:name "editor"@en ;
     wikibase:claim p:P183 ;
     wikibase:directClaim wdt:P183 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P183 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P183 ;
@@ -85,15 +85,25 @@ wd:P183
     wikibase:referenceValue prv:P183 ;
     wikibase:statementProperty ps:P183 ;
     wikibase:statementValue psv:P183 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "editor"@en ;
     skos:prefLabel "editor"@en ;
     p:P2 wds:P183-F8BAA873-62FB-5800-AC37-798389014407 ;
+    p:P10 wds:P183-8C7C9BDE-8C6A-5A39-A5FB-51B730BA2183 ;
     p:P100 wds:P183-938B0910-A47F-5742-8375-3008E463552B ;
     p:P101 wds:P183-BB98DB78-98BC-5C1B-8DDA-B96EDDA7C08D ;
+    p:P102 wds:P183-C1372CBC-F1AA-5DF4-8A63-7B139F43EB1A ;
     wdt:P2 wd:Q2 ;
+    wdt:P10 wd:Q3 ;
     wdt:P100 "P98" ;
-    wdt:P101 "editor" .
+    wdt:P101 "editor" ;
+    wdt:P102 "editor" .
+
+wds:P183-8C7C9BDE-8C6A-5A39-A5FB-51B730BA2183
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P183-938B0910-A47F-5742-8375-3008E463552B
     a wikibase:BestRank,
@@ -106,6 +116,12 @@ wds:P183-BB98DB78-98BC-5C1B-8DDA-B96EDDA7C08D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "editor" .
+
+wds:P183-C1372CBC-F1AA-5DF4-8A63-7B139F43EB1A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "editor" .
 
 wds:P183-F8BAA873-62FB-5800-AC37-798389014407
     a wikibase:BestRank,

@@ -21,12 +21,28 @@
       {
         "id": "P225$633C5A96-B1AD-5353-A7A9-FAA79EA3B779",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "position"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P225$0991A481-B312-51D6-9919-52A24F0ECB9E",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "position"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",

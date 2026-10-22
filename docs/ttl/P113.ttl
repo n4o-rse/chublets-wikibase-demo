@@ -59,7 +59,7 @@ dist:P113-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P113, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1960"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3323"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P113.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P113
     schema:name "developer"@en ;
     wikibase:claim p:P113 ;
     wikibase:directClaim wdt:P113 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P113 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P113 ;
@@ -85,15 +85,21 @@ wd:P113
     wikibase:referenceValue prv:P113 ;
     wikibase:statementProperty ps:P113 ;
     wikibase:statementValue psv:P113 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "developer"@en ;
     skos:prefLabel "developer"@en ;
     p:P2 wds:P113-1DD054C7-B057-5A14-B928-5AC51E80B3FD ;
     p:P4 wds:P113-E0FACD8B-FF8E-5F95-B4DD-E959E2086FFD ;
+    p:P9 wds:P113-A12BE904-8921-50CB-B73E-EE328464647A ;
+    p:P10 wds:P113-23087F43-A684-55A9-9FD8-34B4220141EC ;
     p:P101 wds:P113-390D2C9C-E7DD-5CE0-9431-A6A297E7D2AD ;
+    p:P102 wds:P113-B74A87CB-75BF-53FA-B873-AC50E833FC92 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P178" ;
-    wdt:P101 "author" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "author" ;
+    wdt:P102 "author" .
 
 wds:P113-1DD054C7-B057-5A14-B928-5AC51E80B3FD
     a wikibase:BestRank,
@@ -106,6 +112,24 @@ wds:P113-390D2C9C-E7DD-5CE0-9431-A6A297E7D2AD
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "author" .
+
+wds:P113-23087F43-A684-55A9-9FD8-34B4220141EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
+wds:P113-A12BE904-8921-50CB-B73E-EE328464647A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P113-B74A87CB-75BF-53FA-B873-AC50E833FC92
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "author" .
 
 wds:P113-E0FACD8B-FF8E-5F95-B4DD-E959E2086FFD
     a wikibase:BestRank,

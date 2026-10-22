@@ -59,7 +59,7 @@ dist:P187-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P187, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1453"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2818"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P187.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P187
     schema:name "encoding"@en ;
     wikibase:claim p:P187 ;
     wikibase:directClaim wdt:P187 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P187 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P187 ;
@@ -85,21 +85,39 @@ wd:P187
     wikibase:referenceValue prv:P187 ;
     wikibase:statementProperty ps:P187 ;
     wikibase:statementValue psv:P187 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "encoding"@en ;
     skos:prefLabel "encoding"@en ;
     p:P2 wds:P187-22FCD6D9-E80B-5406-887B-79C57F6F2B7E ;
+    p:P9 wds:P187-EFBB225C-A505-5E42-8206-9925C0D674BC ;
+    p:P10 wds:P187-79D24AE0-1681-559F-A4F5-08D315877A4A ;
     p:P100 wds:P187-249F68A9-0604-5119-BA1F-C3FD7855FCB8 ;
     p:P101 wds:P187-E92DDD53-5C33-518D-A071-3FD8DF838D52 ;
+    p:P102 wds:P187-3C56C113-CB29-57B3-B864-64CA0F824CB0 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
     wdt:P100 "P10" ;
-    wdt:P101 "encoding" .
+    wdt:P101 "encoding" ;
+    wdt:P102 "encoding" .
+
+wds:P187-3C56C113-CB29-57B3-B864-64CA0F824CB0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "encoding" .
 
 wds:P187-22FCD6D9-E80B-5406-887B-79C57F6F2B7E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P187-79D24AE0-1681-559F-A4F5-08D315877A4A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P187-249F68A9-0604-5119-BA1F-C3FD7855FCB8
     a wikibase:BestRank,
@@ -112,6 +130,12 @@ wds:P187-E92DDD53-5C33-518D-A071-3FD8DF838D52
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "encoding" .
+
+wds:P187-EFBB225C-A505-5E42-8206-9925C0D674BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P187
     a owl:ObjectProperty .

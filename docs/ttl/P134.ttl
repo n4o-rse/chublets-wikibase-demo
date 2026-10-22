@@ -59,7 +59,7 @@ dist:P134-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P134, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1959"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3322"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P134.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P134
     schema:name "funder"@en ;
     wikibase:claim p:P134 ;
     wikibase:directClaim wdt:P134 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P134 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P134 ;
@@ -85,21 +85,39 @@ wd:P134
     wikibase:referenceValue prv:P134 ;
     wikibase:statementProperty ps:P134 ;
     wikibase:statementValue psv:P134 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "funder"@en ;
     skos:prefLabel "funder"@en ;
     p:P2 wds:P134-8726E4EE-F8CB-5CFC-B24A-501B9F676C5B ;
     p:P4 wds:P134-A29D0917-780E-5C67-8CAA-D513C413D35E ;
+    p:P9 wds:P134-50D825C7-B975-56B2-A740-B8BEFB3030B9 ;
+    p:P10 wds:P134-751DB479-72C7-5B8D-B578-D59F50FC1EC8 ;
     p:P101 wds:P134-621E096B-D844-5094-A50D-F286F343086A ;
+    p:P102 wds:P134-F9C27697-CC6F-519D-907B-4A54482DC38D ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P8324" ;
-    wdt:P101 "funder" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "funder" ;
+    wdt:P102 "funder" .
+
+wds:P134-50D825C7-B975-56B2-A740-B8BEFB3030B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P134-621E096B-D844-5094-A50D-F286F343086A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "funder" .
+
+wds:P134-751DB479-72C7-5B8D-B578-D59F50FC1EC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P134-8726E4EE-F8CB-5CFC-B24A-501B9F676C5B
     a wikibase:BestRank,
@@ -113,6 +131,12 @@ wds:P134-A29D0917-780E-5C67-8CAA-D513C413D35E
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:b66d1f80209d70ddecd5eb01ff20ddb1b23703d9 ;
     ps:P4 "P8324" .
+
+wds:P134-F9C27697-CC6F-519D-907B-4A54482DC38D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "funder" .
 
 wdref:b66d1f80209d70ddecd5eb01ff20ddb1b23703d9
     a wikibase:Reference ;

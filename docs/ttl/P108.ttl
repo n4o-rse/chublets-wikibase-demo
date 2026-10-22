@@ -59,7 +59,7 @@ dist:P108-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P108, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1590"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2081"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P108.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,21 @@ wd:P108
     wikibase:referenceValue prv:P108 ;
     wikibase:statementProperty ps:P108 ;
     wikibase:statementValue psv:P108 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "CRAN project"@en ;
     skos:prefLabel "CRAN project"@en ;
     p:P2 wds:P108-CEB56953-624B-550E-A8F5-941BF8EB1259 ;
     p:P4 wds:P108-D599DC67-6DE9-51C6-AAB9-195E1B20AEDF ;
+    p:P9 wds:P108-299A34AE-172E-5925-9EE4-AC1146FD3516 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P5565" .
+    wdt:P4 "P5565" ;
+    wdt:P9 wd:Q100 .
+
+wds:P108-299A34AE-172E-5925-9EE4-AC1146FD3516
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P108-CEB56953-624B-550E-A8F5-941BF8EB1259
     a wikibase:BestRank,

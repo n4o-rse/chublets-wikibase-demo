@@ -7,8 +7,8 @@ Q104,class,,starter-pack,script file
 Q105,class,,starter-pack,Little Minion
 Q106,class,,starter-pack,chublet
 P100,property,external-id,starter-pack,close match Wikidata property
-P101,property,string,starter-pack,equivalent CodeMeta term
-P102,property,string,starter-pack,equivalent schema.org term
+P101,property,external-id,,equivalent CodeMeta term
+P102,property,external-id,,equivalent schema.org term
 P103,property,string,starter-pack,application category
 P104,property,time,starter-pack,archive date
 P105,property,url,starter-pack,archive URL
@@ -39,9 +39,9 @@ P129,property,string,starter-pack,application suite
 P130,property,wikibase-item,starter-pack,based on
 P131,property,wikibase-item,starter-pack,contributor to the creative work or subject
 P132,property,string,starter-pack,development status
-P133,property,url,starter-pack,download link
+P133,property,url,,download URL
 P134,property,wikibase-item,starter-pack,funder
-P135,property,external-id,starter-pack,GitHub username
+P135,property,external-id,,GitHub account
 P136,property,wikibase-item,starter-pack,has part(s)
 P137,property,time,starter-pack,inception
 P138,property,url,starter-pack,issue tracker URL
@@ -53,7 +53,7 @@ P143,property,wikibase-item,starter-pack,platform
 P144,property,time,starter-pack,publication date
 P145,property,wikibase-item,starter-pack,readable file format
 P146,property,string,starter-pack,series ordinal
-P147,property,external-id,starter-pack,SoftWare Hash IDentifier (SWHID)
+P147,property,external-id,,SoftWare Hash IDentifier
 P148,property,string,starter-pack,software version identifier
 P149,property,wikibase-item,starter-pack,supporting data
 P150,property,wikibase-item,starter-pack,target product
@@ -80,15 +80,15 @@ P170,property,string,starter-pack,countries supported
 P171,property,wikibase-item,starter-pack,creator
 P172,property,quantity,starter-pack,data size
 P173,property,wikibase-item,starter-pack,distribution format
-P174,property,external-id,starter-pack,distribution package ID P3112 (label to be filled)
-P175,property,external-id,starter-pack,distribution package ID P3418 (label to be filled)
-P176,property,external-id,starter-pack,distribution package ID P3442 (label to be filled)
-P177,property,external-id,starter-pack,distribution package ID P3454 (label to be filled)
-P178,property,external-id,starter-pack,distribution package ID P3463 (label to be filled)
-P179,property,external-id,starter-pack,distribution package ID P3473 (label to be filled)
-P180,property,external-id,starter-pack,distribution package ID P3499 (label to be filled)
-P181,property,external-id,starter-pack,distribution package ID P3597 (label to be filled)
-P182,property,wikibase-item,starter-pack,edition or translation of
+P174,property,external-id,,DistroWatch ID
+P175,property,external-id,,Google Play Store app ID
+P176,property,external-id,,Debian stable package
+P177,property,external-id,,Arch Linux package
+P178,property,external-id,,Fedora package
+P179,property,external-id,,Ubuntu package
+P180,property,external-id,,Gentoo package
+P181,property,external-id,,F-Droid package
+P182,property,wikibase-item,,"version, edition or translation of"
 P183,property,wikibase-item,starter-pack,editor
 P184,property,url,starter-pack,email address
 P185,property,time,starter-pack,embargo date
@@ -130,7 +130,7 @@ P220,property,wikibase-item,starter-pack,part of the series
 P221,property,string,starter-pack,permissions
 P222,property,url,starter-pack,person identifier
 P223,property,time,starter-pack,point in time
-P224,property,wikibase-item,starter-pack,port
+P224,property,quantity,,port
 P225,property,string,starter-pack,position
 P226,property,quantity,starter-pack,price
 P227,property,string,starter-pack,processor requirements
@@ -155,3 +155,12 @@ P245,property,string,starter-pack,storage requirements
 P246,property,external-id,starter-pack,swMATH work ID
 P247,property,monolingualtext,starter-pack,title
 P248,property,wikibase-item,starter-pack,web interface software
+P249,property,wikibase-item,,digital rights management system
+P250,property,external-id,,ISO standard
+P251,property,wikibase-item,,language of work or name
+P252,property,wikibase-item,,movement
+P253,property,wikibase-item,,removed feature
+P254,property,external-id,,RfC ID
+P255,property,url,,Stack Exchange tag
+P256,property,string,,TeX string
+P257,property,string,,Unicode character

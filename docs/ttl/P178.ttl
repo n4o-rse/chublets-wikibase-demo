@@ -39,7 +39,7 @@ data:P178
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P178 ;
-    dcterms:title "distribution package ID P3463 (label to be filled)"@en ;
+    dcterms:title "Fedora package"@en ;
     schema:about wd:P178 ;
     dcat:distribution dist:P178-html,
         dist:P178-json,
@@ -59,7 +59,7 @@ dist:P178-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P178, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2083"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P178.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P178-ttl
 
 wd:P178
     a wikibase:Property ;
-    schema:name "distribution package ID P3463 (label to be filled)"@en ;
+    schema:name "Fedora package"@en ;
     wikibase:claim p:P178 ;
     wikibase:directClaim wdt:P178 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,19 +85,27 @@ wd:P178
     wikibase:referenceValue prv:P178 ;
     wikibase:statementProperty ps:P178 ;
     wikibase:statementValue psv:P178 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3463 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3463 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Fedora package"@en ;
+    skos:prefLabel "Fedora package"@en ;
     p:P2 wds:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2 ;
     p:P4 wds:P178-F52B3389-120E-5462-9074-F71912FF42CA ;
+    p:P9 wds:P178-29080A9F-8684-5D52-9CFA-FFA139A9E26F ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3463" .
+    wdt:P4 "P3463" ;
+    wdt:P9 wd:Q100 .
 
 wds:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P178-29080A9F-8684-5D52-9CFA-FFA139A9E26F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P178-F52B3389-120E-5462-9074-F71912FF42CA
     a wikibase:BestRank,

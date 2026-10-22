@@ -21,12 +21,28 @@
       {
         "id": "P152$5BFB2023-F6E7-54E3-8D00-19A44A7A0539",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "version"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P152$3F6F3FF0-B24E-5010-8041-2E615C588406",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "version"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",
@@ -47,6 +63,26 @@
             }
           },
           "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P152$B18BA4C2-C0BA-58F2-AC6B-20F998381AE2",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
           "snaktype": "value"
         },
         "rank": "normal",

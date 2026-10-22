@@ -59,7 +59,7 @@ dist:P240-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P240, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1101"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2086"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P240.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P240
     schema:name "software suggestions"@en ;
     wikibase:claim p:P240 ;
     wikibase:directClaim wdt:P240 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P240 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P240 ;
@@ -85,12 +85,16 @@ wd:P240
     wikibase:referenceValue prv:P240 ;
     wikibase:statementProperty ps:P240 ;
     wikibase:statementValue psv:P240 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "software suggestions"@en ;
     skos:prefLabel "software suggestions"@en ;
     p:P2 wds:P240-04D51211-BD10-5549-B479-1C0801200EC4 ;
+    p:P9 wds:P240-05DB47D5-E91D-5D10-898D-C8E0D2F8D358 ;
+    p:P10 wds:P240-9EE57A77-1A7B-5ECA-A45F-166C3C2B15F3 ;
     p:P101 wds:P240-474A731C-9E8A-5981-95EF-CE595CFB358F ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
     wdt:P101 "softwareSuggestions" .
 
 wds:P240-04D51211-BD10-5549-B479-1C0801200EC4
@@ -98,6 +102,18 @@ wds:P240-04D51211-BD10-5549-B479-1C0801200EC4
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P240-05DB47D5-E91D-5D10-898D-C8E0D2F8D358
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P240-9EE57A77-1A7B-5ECA-A45F-166C3C2B15F3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P240-474A731C-9E8A-5981-95EF-CE595CFB358F
     a wikibase:BestRank,

@@ -59,7 +59,7 @@ dist:P228-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P228, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1961"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3326"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P228.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P228
     schema:name "producer"@en ;
     wikibase:claim p:P228 ;
     wikibase:directClaim wdt:P228 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P228 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P228 ;
@@ -85,15 +85,21 @@ wd:P228
     wikibase:referenceValue prv:P228 ;
     wikibase:statementProperty ps:P228 ;
     wikibase:statementValue psv:P228 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "producer"@en ;
     skos:prefLabel "producer"@en ;
     p:P2 wds:P228-03B49DC3-169E-5EBB-9316-970A96C579E5 ;
     p:P4 wds:P228-9F1E425A-B781-5289-81C1-8EF4970A6544 ;
+    p:P9 wds:P228-0147B46B-9B5F-5CA2-86AA-064995346B2E ;
+    p:P10 wds:P228-904D9BF9-8C7E-5BDA-915D-2776347CB571 ;
     p:P101 wds:P228-A79382A4-3AA8-5A4B-9390-77A3C2F39EA1 ;
+    p:P102 wds:P228-91DCA8FE-DF78-5865-9D51-8D0AFE5D28DD ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P162" ;
-    wdt:P101 "producer" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "producer" ;
+    wdt:P102 "producer" .
 
 wds:P228-03B49DC3-169E-5EBB-9316-970A96C579E5
     a wikibase:BestRank,
@@ -107,6 +113,24 @@ wds:P228-9F1E425A-B781-5289-81C1-8EF4970A6544
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:20be91d1c9cd94c12b6b54f4975efaa9d8116a92 ;
     ps:P4 "P162" .
+
+wds:P228-91DCA8FE-DF78-5865-9D51-8D0AFE5D28DD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "producer" .
+
+wds:P228-0147B46B-9B5F-5CA2-86AA-064995346B2E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P228-904D9BF9-8C7E-5BDA-915D-2776347CB571
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P228-A79382A4-3AA8-5A4B-9390-77A3C2F39EA1
     a wikibase:BestRank,

@@ -1,0 +1,16 @@
+id,label_en,datatype,description_en
+P103,native language,wikibase-item,language or languages a person (or group) has learned from early childhood
+P135,movement,wikibase-item,"literary, artistic, scientific or philosophical movement or scene associated with this person or work. For political ideologies use P1142."
+P407,language of work or name,wikibase-item,"language associated with this creative work (such as books, shows, songs, broadcasts or websites) or a name (for persons use ""native language"" (P103) and ""languages spoken, written or signed"" (P1412))"
+P487,Unicode character,string,"single Unicode character representing the item, suggested only if it is in its NFC form and is not a control character, strongly discouraged for combining diacritics (in such cases, use only P4213)"
+P503,ISO standard,external-id,identifier of this ISO standard
+P756,removed feature,wikibase-item,which feature was removed by this version of a product item
+P854,reference URL,url,"should be used for Internet URLs as references. Use ""Wikimedia import URL"" (P4656) for imports from Wikimedia sites"
+P892,RfC ID,external-id,"identifier for an item in Request for Comments, a publication of IETF and the Internet Society (without ""RFC"" prefix)"
+P1032,digital rights management system,wikibase-item,technologies to control the use of digital content and devices after sale
+P1074,fictional or mythical analog of,wikibase-item,used to link an entity or class of entities appearing in a creative work with the analogous entity or class of entities in the real world
+P1412,"languages spoken, written or signed",wikibase-item,"language(s) that a person or a people speaks, writes or signs, including the native language(s)"
+P1482,Stack Exchange tag,url,tag on the Stack Exchange websites
+P1993,TeX string,string,string to show a concept in TeX or LaTeX
+P2670,has part(s) of the class,wikibase-item,the subject has one or more parts of the object class
+P4213,Unicode code point,string,hexadecimal code point in Unicode

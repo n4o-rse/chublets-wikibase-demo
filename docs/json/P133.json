@@ -5,12 +5,28 @@
       {
         "id": "P133$2CEAF5AB-2A68-501F-98DB-FDCD2AE76976",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "downloadUrl"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P133$2B98FA23-5689-5D4D-88DB-45797A792686",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "downloadUrl"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",
@@ -72,6 +88,26 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P133$920CBB50-95C9-5C05-9DAD-BB6B56B10350",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "url",
@@ -80,7 +116,7 @@
   "labels": {
     "en": {
       "language": "en",
-      "value": "download link"
+      "value": "download URL"
     }
   },
   "type": "property"

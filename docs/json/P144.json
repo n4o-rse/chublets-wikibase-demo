@@ -5,12 +5,28 @@
       {
         "id": "P144$2387577F-AA25-574A-AE62-1A4361546DDD",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "datePublished"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P144$66A9A98A-1016-5AE0-ACFC-0C3495A0AB4A",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "datePublished"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",

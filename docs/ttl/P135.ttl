@@ -39,7 +39,7 @@ data:P135
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P135 ;
-    dcterms:title "GitHub username"@en ;
+    dcterms:title "GitHub account"@en ;
     schema:about wd:P135 ;
     dcat:distribution dist:P135-html,
         dist:P135-json,
@@ -59,7 +59,7 @@ dist:P135-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P135, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1593"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2083"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P135.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P135-ttl
 
 wd:P135
     a wikibase:Property ;
-    schema:name "GitHub username"@en ;
+    schema:name "GitHub account"@en ;
     wikibase:claim p:P135 ;
     wikibase:directClaim wdt:P135 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,13 +85,21 @@ wd:P135
     wikibase:referenceValue prv:P135 ;
     wikibase:statementProperty ps:P135 ;
     wikibase:statementValue psv:P135 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "GitHub username"@en ;
-    skos:prefLabel "GitHub username"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "GitHub account"@en ;
+    skos:prefLabel "GitHub account"@en ;
     p:P2 wds:P135-6EA87EEB-B358-5451-B00F-A68D638A0C26 ;
     p:P4 wds:P135-A5A4FA07-273D-5F85-A179-45A28FB7FCF9 ;
+    p:P9 wds:P135-3D7682BD-FCAE-5846-93AB-DC460A934F2F ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P2037" .
+    wdt:P4 "P2037" ;
+    wdt:P9 wd:Q100 .
+
+wds:P135-3D7682BD-FCAE-5846-93AB-DC460A934F2F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P135-6EA87EEB-B358-5451-B00F-A68D638A0C26
     a wikibase:BestRank,

@@ -59,7 +59,7 @@ dist:P227-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P227, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1098"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1987"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P227.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P227
     schema:name "processor requirements"@en ;
     wikibase:claim p:P227 ;
     wikibase:directClaim wdt:P227 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P227 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P227 ;
@@ -85,13 +85,23 @@ wd:P227
     wikibase:referenceValue prv:P227 ;
     wikibase:statementProperty ps:P227 ;
     wikibase:statementValue psv:P227 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "processor requirements"@en ;
     skos:prefLabel "processor requirements"@en ;
     p:P2 wds:P227-22200EB7-AAA7-5461-B233-5522F826EC75 ;
+    p:P9 wds:P227-EE4D6B7D-3E92-5414-B304-F0F297F1924C ;
     p:P101 wds:P227-791E5C00-E05E-5937-82A9-DB87253D7612 ;
+    p:P102 wds:P227-3FF02629-8640-5992-8917-1D5601DD303D ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "processorRequirements" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "processorRequirements" ;
+    wdt:P102 "processorRequirements" .
+
+wds:P227-3FF02629-8640-5992-8917-1D5601DD303D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "processorRequirements" .
 
 wds:P227-791E5C00-E05E-5937-82A9-DB87253D7612
     a wikibase:BestRank,
@@ -104,6 +114,12 @@ wds:P227-22200EB7-AAA7-5461-B233-5522F826EC75
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P227-EE4D6B7D-3E92-5414-B304-F0F297F1924C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P227
     a owl:ObjectProperty .

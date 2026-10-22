@@ -59,7 +59,7 @@ dist:P248-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P248, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1604"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2584"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P248.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,17 @@ wd:P248
     wikibase:referenceValue prv:P248 ;
     wikibase:statementProperty ps:P248 ;
     wikibase:statementValue psv:P248 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "web interface software"@en ;
     skos:prefLabel "web interface software"@en ;
     p:P2 wds:P248-AA8B2023-A810-5DA0-9717-9913788E9A99 ;
     p:P4 wds:P248-8E4C05A0-ABDB-53DB-9CFE-D9B4D552B56C ;
+    p:P9 wds:P248-CF551DB5-5F3D-5185-A295-798ED0E7A875 ;
+    p:P10 wds:P248-AB76C5C5-D7FE-50F4-9281-ACDF5D6CC813 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P10627" .
+    wdt:P4 "P10627" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
 
 wds:P248-8E4C05A0-ABDB-53DB-9CFE-D9B4D552B56C
     a wikibase:BestRank,
@@ -105,6 +109,18 @@ wds:P248-AA8B2023-A810-5DA0-9717-9913788E9A99
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P248-AB76C5C5-D7FE-50F4-9281-ACDF5D6CC813
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
+wds:P248-CF551DB5-5F3D-5185-A295-798ED0E7A875
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wdref:5cc6457cae94f4e2592a23ce47a5c8af650b8417
     a wikibase:Reference ;

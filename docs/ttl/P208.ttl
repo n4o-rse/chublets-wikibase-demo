@@ -59,7 +59,7 @@ dist:P208-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P208, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1585"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2076"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P208.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,21 @@ wd:P208
     wikibase:referenceValue prv:P208 ;
     wikibase:statementProperty ps:P208 ;
     wikibase:statementValue psv:P208 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "IRC channel URL"@en ;
     skos:prefLabel "IRC channel URL"@en ;
     p:P2 wds:P208-BEB17F64-69D7-5999-A9F1-4923412F25FF ;
     p:P4 wds:P208-ABAB359D-4097-5F07-B8CF-67E01813E148 ;
+    p:P9 wds:P208-9A0AB512-F0D9-56E1-A9DF-47B164FB6301 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1613" .
+    wdt:P4 "P1613" ;
+    wdt:P9 wd:Q100 .
+
+wds:P208-9A0AB512-F0D9-56E1-A9DF-47B164FB6301
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P208-ABAB359D-4097-5F07-B8CF-67E01813E148
     a wikibase:BestRank,

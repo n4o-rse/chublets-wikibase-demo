@@ -21,12 +21,28 @@
       {
         "id": "P199$EFFD1A0A-CEF1-5E8E-B8F4-A49445DDA460",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "funding"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P199$D3B7B77E-B765-563A-9BF6-8BCA9ACFDFD4",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "funding"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",
@@ -47,6 +63,26 @@
             }
           },
           "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P199$6ECAEEB3-EA08-5072-A368-6E14B539AFBC",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
           "snaktype": "value"
         },
         "rank": "normal",

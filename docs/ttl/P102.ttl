@@ -59,7 +59,7 @@ dist:P102-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P102, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1098"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1590"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P102.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,20 +78,28 @@ wd:P102
     wikibase:directClaim wdt:P102 ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:novalue wdno:P102 ;
-    wikibase:propertyType wikibase:String ;
+    wikibase:propertyType wikibase:ExternalId ;
     wikibase:qualifier pq:P102 ;
     wikibase:qualifierValue pqv:P102 ;
     wikibase:reference pr:P102 ;
     wikibase:referenceValue prv:P102 ;
     wikibase:statementProperty ps:P102 ;
     wikibase:statementValue psv:P102 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "equivalent schema.org term"@en ;
     skos:prefLabel "equivalent schema.org term"@en ;
     p:P2 wds:P102-B1AEEB7E-2A32-57CE-AF1E-BDCED96B2C79 ;
     p:P5 wds:P102-4F129636-412B-566B-91D2-2DB3D8BC7D26 ;
+    p:P9 wds:P102-0A74C240-DC08-5F7D-AD26-4B1A8708F26E ;
     wdt:P2 wd:Q2 ;
-    wdt:P5 "https://schema.org/$1" .
+    wdt:P5 "https://schema.org/$1" ;
+    wdt:P9 wd:Q2 .
+
+wds:P102-0A74C240-DC08-5F7D-AD26-4B1A8708F26E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q2 .
 
 wds:P102-4F129636-412B-566B-91D2-2DB3D8BC7D26
     a wikibase:BestRank,

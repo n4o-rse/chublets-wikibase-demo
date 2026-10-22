@@ -59,7 +59,7 @@ dist:P138-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P138, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1966"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2462"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P138.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P138
     schema:name "issue tracker URL"@en ;
     wikibase:claim p:P138 ;
     wikibase:directClaim wdt:P138 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P138 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P138 ;
@@ -85,15 +85,23 @@ wd:P138
     wikibase:referenceValue prv:P138 ;
     wikibase:statementProperty ps:P138 ;
     wikibase:statementValue psv:P138 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "issue tracker URL"@en ;
     skos:prefLabel "issue tracker URL"@en ;
     p:P2 wds:P138-66198401-E6D0-56B0-88DB-B70BFF2E87AC ;
     p:P4 wds:P138-9A7A0498-FAB7-5E01-826A-86315A8A2B65 ;
+    p:P9 wds:P138-000D940A-4AFB-524B-B73A-7ADD324ABA3C ;
     p:P101 wds:P138-3E542CB3-1C3F-563C-8549-19C5A44D44FE ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P1401" ;
+    wdt:P9 wd:Q100 ;
     wdt:P101 "issueTracker" .
+
+wds:P138-000D940A-4AFB-524B-B73A-7ADD324ABA3C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P138-3E542CB3-1C3F-563C-8549-19C5A44D44FE
     a wikibase:BestRank,

@@ -59,7 +59,7 @@ dist:P203-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P203, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1466"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2451"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P203.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P203
     schema:name "has source code"@en ;
     wikibase:claim p:P203 ;
     wikibase:directClaim wdt:P203 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P203 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P203 ;
@@ -85,13 +85,17 @@ wd:P203
     wikibase:referenceValue prv:P203 ;
     wikibase:statementProperty ps:P203 ;
     wikibase:statementValue psv:P203 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "has source code"@en ;
     skos:prefLabel "has source code"@en ;
     p:P2 wds:P203-58ED7C8E-2902-55AF-836E-6E2E067A3700 ;
+    p:P9 wds:P203-F87C0795-8077-5B85-AB1A-7E9F5D225D1D ;
+    p:P10 wds:P203-7B6C3D4F-3782-514D-BF4F-CD34956E989B ;
     p:P100 wds:P203-5C60318A-D1D3-5DB1-8C84-639DEAA8F06D ;
     p:P101 wds:P203-22C81C25-04A2-532A-B0DE-60FFA76264E6 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
     wdt:P100 "P527" ;
     wdt:P101 "hasSourceCode" .
 
@@ -100,6 +104,12 @@ wds:P203-5C60318A-D1D3-5DB1-8C84-639DEAA8F06D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P527" .
+
+wds:P203-7B6C3D4F-3782-514D-BF4F-CD34956E989B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P203-22C81C25-04A2-532A-B0DE-60FFA76264E6
     a wikibase:BestRank,
@@ -112,6 +122,12 @@ wds:P203-58ED7C8E-2902-55AF-836E-6E2E067A3700
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P203-F87C0795-8077-5B85-AB1A-7E9F5D225D1D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P203
     a owl:ObjectProperty .

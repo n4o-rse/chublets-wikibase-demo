@@ -39,7 +39,7 @@ data:P174
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P174 ;
-    dcterms:title "distribution package ID P3112 (label to be filled)"@en ;
+    dcterms:title "DistroWatch ID"@en ;
     schema:about wd:P174 ;
     dcat:distribution dist:P174-html,
         dist:P174-json,
@@ -59,7 +59,7 @@ dist:P174-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P174, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2083"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P174.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P174-ttl
 
 wd:P174
     a wikibase:Property ;
-    schema:name "distribution package ID P3112 (label to be filled)"@en ;
+    schema:name "DistroWatch ID"@en ;
     wikibase:claim p:P174 ;
     wikibase:directClaim wdt:P174 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,19 +85,27 @@ wd:P174
     wikibase:referenceValue prv:P174 ;
     wikibase:statementProperty ps:P174 ;
     wikibase:statementValue psv:P174 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3112 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3112 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "DistroWatch ID"@en ;
+    skos:prefLabel "DistroWatch ID"@en ;
     p:P2 wds:P174-8F1FA407-659B-5544-8AB3-AF127DD72835 ;
     p:P4 wds:P174-D4E9BCDE-52C2-5CED-B850-7368D1D2646D ;
+    p:P9 wds:P174-8F26ABA4-EE68-5C2D-BC84-E797D635015D ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3112" .
+    wdt:P4 "P3112" ;
+    wdt:P9 wd:Q100 .
 
 wds:P174-8F1FA407-659B-5544-8AB3-AF127DD72835
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P174-8F26ABA4-EE68-5C2D-BC84-E797D635015D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P174-D4E9BCDE-52C2-5CED-B850-7368D1D2646D
     a wikibase:BestRank,

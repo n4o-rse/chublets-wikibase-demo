@@ -59,7 +59,7 @@ dist:P193-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P193, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1591"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2080"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P193.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,27 @@ wd:P193
     wikibase:referenceValue prv:P193 ;
     wikibase:statementProperty ps:P193 ;
     wikibase:statementValue psv:P193 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "field of work"@en ;
     skos:prefLabel "field of work"@en ;
     p:P2 wds:P193-9DFD83DE-22B5-5E81-A72C-440FBD577CDA ;
     p:P4 wds:P193-93B6BC1D-382A-5100-8847-C1DF823A8B20 ;
+    p:P10 wds:P193-89DA361E-DF27-567E-AAB2-63FC27A6ECC1 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P101" .
+    wdt:P4 "P101" ;
+    wdt:P10 wd:Q3 .
 
 wds:P193-9DFD83DE-22B5-5E81-A72C-440FBD577CDA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P193-89DA361E-DF27-567E-AAB2-63FC27A6ECC1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P193-93B6BC1D-382A-5100-8847-C1DF823A8B20
     a wikibase:BestRank,

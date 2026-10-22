@@ -59,7 +59,7 @@ dist:P212-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P212, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1583"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2074"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P212.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,15 @@ wd:P212
     wikibase:referenceValue prv:P212 ;
     wikibase:statementProperty ps:P212 ;
     wikibase:statementValue psv:P212 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "media type"@en ;
     skos:prefLabel "media type"@en ;
     p:P2 wds:P212-1D411497-552E-5729-A73D-01AFAD7407D7 ;
     p:P4 wds:P212-4EDD76FF-C7AD-5DEE-AA6F-D069584315DE ;
+    p:P9 wds:P212-A685CDE2-55BB-5976-945F-08AC1F796D7C ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1163" .
+    wdt:P4 "P1163" ;
+    wdt:P9 wd:Q100 .
 
 wds:P212-1D411497-552E-5729-A73D-01AFAD7407D7
     a wikibase:BestRank,
@@ -105,6 +107,12 @@ wds:P212-4EDD76FF-C7AD-5DEE-AA6F-D069584315DE
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:8d16c3150a83abfd614ea843db1ae897fbe84862 ;
     ps:P4 "P1163" .
+
+wds:P212-A685CDE2-55BB-5976-945F-08AC1F796D7C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wdref:8d16c3150a83abfd614ea843db1ae897fbe84862
     a wikibase:Reference ;

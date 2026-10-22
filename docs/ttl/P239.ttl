@@ -59,7 +59,7 @@ dist:P239-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P239, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1606"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2586"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P239.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,23 @@ wd:P239
     wikibase:referenceValue prv:P239 ;
     wikibase:statementProperty ps:P239 ;
     wikibase:statementValue psv:P239 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "software quality assurance"@en ;
     skos:prefLabel "software quality assurance"@en ;
     p:P2 wds:P239-E6E44990-DC35-57C8-8634-4547ABC9EBF7 ;
     p:P4 wds:P239-C99979F2-2E0A-553B-BE15-130DB238AF56 ;
+    p:P9 wds:P239-A692E582-5772-59D1-90C0-C0166A46F1F8 ;
+    p:P10 wds:P239-D1435AE3-E038-5AD3-A64C-1F57DCCB2B85 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P2992" .
+    wdt:P4 "P2992" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P239-A692E582-5772-59D1-90C0-C0166A46F1F8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P239-C99979F2-2E0A-553B-BE15-130DB238AF56
     a wikibase:BestRank,
@@ -99,6 +109,12 @@ wds:P239-C99979F2-2E0A-553B-BE15-130DB238AF56
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:73d5586f60b6ca8afaad4d27a425d74028d25828 ;
     ps:P4 "P2992" .
+
+wds:P239-D1435AE3-E038-5AD3-A64C-1F57DCCB2B85
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P239-E6E44990-DC35-57C8-8634-4547ABC9EBF7
     a wikibase:BestRank,

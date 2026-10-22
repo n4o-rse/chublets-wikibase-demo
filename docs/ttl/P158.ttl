@@ -59,7 +59,7 @@ dist:P158-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P158, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1467"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2352"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P158.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P158
     schema:name "available on device"@en ;
     wikibase:claim p:P158 ;
     wikibase:directClaim wdt:P158 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P158 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P158 ;
@@ -85,15 +85,31 @@ wd:P158
     wikibase:referenceValue prv:P158 ;
     wikibase:statementProperty ps:P158 ;
     wikibase:statementValue psv:P158 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "available on device"@en ;
     skos:prefLabel "available on device"@en ;
     p:P2 wds:P158-7866C533-5590-584E-B6E0-C45C8AB02DD8 ;
+    p:P9 wds:P158-9EA5C1AF-FB50-53A7-8341-0CEDC274FC4E ;
     p:P100 wds:P158-76DAD399-3D97-5FB1-BB87-8A4D7DECC833 ;
     p:P101 wds:P158-E984399C-8269-5277-98F3-888C30B9B0AB ;
+    p:P102 wds:P158-5D566DD4-9B00-5879-8B9F-0C0D722A5B09 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P400" ;
-    wdt:P101 "availableOnDevice" .
+    wdt:P101 "availableOnDevice" ;
+    wdt:P102 "availableOnDevice" .
+
+wds:P158-5D566DD4-9B00-5879-8B9F-0C0D722A5B09
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "availableOnDevice" .
+
+wds:P158-9EA5C1AF-FB50-53A7-8341-0CEDC274FC4E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P158-76DAD399-3D97-5FB1-BB87-8A4D7DECC833
     a wikibase:BestRank,

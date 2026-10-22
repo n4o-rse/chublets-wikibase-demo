@@ -59,7 +59,7 @@ dist:P127-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P127, as archived from the Wikibase API"@en ;
-    dcat:byteSize "706"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1197"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P127.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,11 +85,19 @@ wd:P127
     wikibase:referenceValue prv:P127 ;
     wikibase:statementProperty ps:P127 ;
     wikibase:statementValue psv:P127 ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Wikidata item"@en ;
     skos:prefLabel "Wikidata item"@en ;
     p:P2 wds:P127-E5160275-925D-5E88-B05E-5EFC92E041F6 ;
-    wdt:P2 wd:Q2 .
+    p:P9 wds:P127-206C0B9E-2C95-5851-B207-064C41C899A7 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 .
+
+wds:P127-206C0B9E-2C95-5851-B207-064C41C899A7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P127-E5160275-925D-5E88-B05E-5EFC92E041F6
     a wikibase:BestRank,

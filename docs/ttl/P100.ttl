@@ -59,7 +59,7 @@ dist:P100-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P100, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1119"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1606"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P100.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,15 @@ wd:P100
     wikibase:referenceValue prv:P100 ;
     wikibase:statementProperty ps:P100 ;
     wikibase:statementValue psv:P100 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "close match Wikidata property"@en ;
     skos:prefLabel "close match Wikidata property"@en ;
     p:P2 wds:P100-63E5F187-3A78-5437-B81F-2F9C9AD74469 ;
     p:P5 wds:P100-A56C7300-BFC1-598C-8BDC-02C0DD0D4FFE ;
+    p:P9 wds:P100-F5D00A76-34C7-506D-97ED-4AB9665FDF08 ;
     wdt:P2 wd:Q2 ;
-    wdt:P5 "https://www.wikidata.org/entity/$1" .
+    wdt:P5 "https://www.wikidata.org/entity/$1" ;
+    wdt:P9 wd:Q2 .
 
 wds:P100-63E5F187-3A78-5437-B81F-2F9C9AD74469
     a wikibase:BestRank,
@@ -104,6 +106,12 @@ wds:P100-A56C7300-BFC1-598C-8BDC-02C0DD0D4FFE
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P5 "https://www.wikidata.org/entity/$1" .
+
+wds:P100-F5D00A76-34C7-506D-97ED-4AB9665FDF08
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q2 .
 
 p:P100
     a owl:ObjectProperty .

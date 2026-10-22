@@ -59,7 +59,7 @@ dist:P185-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P185, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1076"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1081"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P185.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P185
     schema:name "embargo date"@en ;
     wikibase:claim p:P185 ;
     wikibase:directClaim wdt:P185 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P185 ;
     wikibase:propertyType wikibase:Time ;
     wikibase:qualifier pq:P185 ;

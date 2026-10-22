@@ -59,7 +59,7 @@ dist:P110-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P110, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1962"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2841"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P110.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P110
     schema:name "described at URL"@en ;
     wikibase:claim p:P110 ;
     wikibase:directClaim wdt:P110 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P110 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P110 ;
@@ -85,15 +85,19 @@ wd:P110
     wikibase:referenceValue prv:P110 ;
     wikibase:statementProperty ps:P110 ;
     wikibase:statementValue psv:P110 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "described at URL"@en ;
     skos:prefLabel "described at URL"@en ;
     p:P2 wds:P110-FA7A796C-F53D-54AF-8BFC-D90F1E1605C0 ;
     p:P4 wds:P110-5E8EE4AE-E0FD-5BB1-B31B-AD3EC16C69D3 ;
+    p:P9 wds:P110-814F699F-1938-5493-9285-238676AA48A5 ;
     p:P101 wds:P110-49B2202B-B0B5-5C38-B982-0EBA211D9CB2 ;
+    p:P102 wds:P110-C8A4EFAB-D069-5DA4-AA01-D877193785EE ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P973" ;
-    wdt:P101 "relatedLink" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "relatedLink" ;
+    wdt:P102 "relatedLink" .
 
 wds:P110-5E8EE4AE-E0FD-5BB1-B31B-AD3EC16C69D3
     a wikibase:BestRank,
@@ -107,6 +111,18 @@ wds:P110-49B2202B-B0B5-5C38-B982-0EBA211D9CB2
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "relatedLink" .
+
+wds:P110-814F699F-1938-5493-9285-238676AA48A5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P110-C8A4EFAB-D069-5DA4-AA01-D877193785EE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "relatedLink" .
 
 wds:P110-FA7A796C-F53D-54AF-8BFC-D90F1E1605C0
     a wikibase:BestRank,

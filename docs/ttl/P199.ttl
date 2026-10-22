@@ -59,7 +59,7 @@ dist:P199-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P199, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1446"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2321"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P199.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P199
     schema:name "funding"@en ;
     wikibase:claim p:P199 ;
     wikibase:directClaim wdt:P199 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P199 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P199 ;
@@ -85,15 +85,25 @@ wd:P199
     wikibase:referenceValue prv:P199 ;
     wikibase:statementProperty ps:P199 ;
     wikibase:statementValue psv:P199 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "funding"@en ;
     skos:prefLabel "funding"@en ;
     p:P2 wds:P199-CB65E09B-0D08-5CE1-889E-1F89A291CC59 ;
+    p:P9 wds:P199-6ECAEEB3-EA08-5072-A368-6E14B539AFBC ;
     p:P100 wds:P199-7082F41A-E551-5915-9663-32861535D9DE ;
     p:P101 wds:P199-EFFD1A0A-CEF1-5E8E-B8F4-A49445DDA460 ;
+    p:P102 wds:P199-D3B7B77E-B765-563A-9BF6-8BCA9ACFDFD4 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P8324" ;
-    wdt:P101 "funding" .
+    wdt:P101 "funding" ;
+    wdt:P102 "funding" .
+
+wds:P199-6ECAEEB3-EA08-5072-A368-6E14B539AFBC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P199-7082F41A-E551-5915-9663-32861535D9DE
     a wikibase:BestRank,
@@ -106,6 +116,12 @@ wds:P199-CB65E09B-0D08-5CE1-889E-1F89A291CC59
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P199-D3B7B77E-B765-563A-9BF6-8BCA9ACFDFD4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "funding" .
 
 wds:P199-EFFD1A0A-CEF1-5E8E-B8F4-A49445DDA460
     a wikibase:BestRank,

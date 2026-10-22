@@ -59,7 +59,7 @@ dist:P233-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P233, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1074"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2437"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P233.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P233
     schema:name "review"@en ;
     wikibase:claim p:P233 ;
     wikibase:directClaim wdt:P233 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P233 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P233 ;
@@ -85,19 +85,43 @@ wd:P233
     wikibase:referenceValue prv:P233 ;
     wikibase:statementProperty ps:P233 ;
     wikibase:statementValue psv:P233 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "review"@en ;
     skos:prefLabel "review"@en ;
     p:P2 wds:P233-FA277841-8E64-5A1C-9BB7-A7FA524D1D6D ;
+    p:P9 wds:P233-81A47DA8-053E-5750-989D-92DA7DE8EBED ;
+    p:P10 wds:P233-6C42E274-C2D7-5D3F-B2E5-914C947B05F4 ;
     p:P101 wds:P233-80FDB3D9-9BB4-576A-8AE9-0AC16F864409 ;
+    p:P102 wds:P233-B8A4A4E0-9AC4-5E9B-840D-A180603DA3D3 ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "review" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "review" ;
+    wdt:P102 "review" .
+
+wds:P233-6C42E274-C2D7-5D3F-B2E5-914C947B05F4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P233-80FDB3D9-9BB4-576A-8AE9-0AC16F864409
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "review" .
+
+wds:P233-81A47DA8-053E-5750-989D-92DA7DE8EBED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P233-B8A4A4E0-9AC4-5E9B-840D-A180603DA3D3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "review" .
 
 wds:P233-FA277841-8E64-5A1C-9BB7-A7FA524D1D6D
     a wikibase:BestRank,

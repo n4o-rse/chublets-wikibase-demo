@@ -59,7 +59,7 @@ dist:P124-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P124, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1590"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2081"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P124.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,27 @@ wd:P124
     wikibase:referenceValue prv:P124 ;
     wikibase:statementProperty ps:P124 ;
     wikibase:statementValue psv:P124 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "PyPI project"@en ;
     skos:prefLabel "PyPI project"@en ;
     p:P2 wds:P124-7A4E2A0A-DAE1-50EA-BB74-4B959B418859 ;
     p:P4 wds:P124-BD0640A3-9BEC-5A53-B5C7-CCDC4669D2EC ;
+    p:P9 wds:P124-527E312F-2A20-557D-AC87-83B382DCD1E0 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P5568" .
+    wdt:P4 "P5568" ;
+    wdt:P9 wd:Q100 .
 
 wds:P124-7A4E2A0A-DAE1-50EA-BB74-4B959B418859
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P124-527E312F-2A20-557D-AC87-83B382DCD1E0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P124-BD0640A3-9BEC-5A53-B5C7-CCDC4669D2EC
     a wikibase:BestRank,

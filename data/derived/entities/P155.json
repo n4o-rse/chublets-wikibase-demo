@@ -5,12 +5,28 @@
       {
         "id": "P155$2C280701-C1FA-528F-A24B-C1FA4DE958F1",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "address"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P155$BE3823FB-3A78-5039-B1AC-76BC361227DE",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "address"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",

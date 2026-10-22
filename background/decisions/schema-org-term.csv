@@ -1,0 +1,85 @@
+id,label,codemeta_term,proposed_schema_org_term,basis,decision,comment
+P111,described by source,referencePublication,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/source
+P129,application suite,applicationSuite,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/applicationSuite
+P132,development status,developmentStatus,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/status
+P138,issue tracker URL,issueTracker,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/documentation
+P140,maintained by,maintainer,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/maintainer
+P158,available on device,availableOnDevice,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/device
+P161,build instructions,buildInstructions,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/HowTo
+P163,code sample type,codeSampleType,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/codeSampleType
+P165,cont integration,contIntegration,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,keine Entsprechung
+P166,continuous integration,continuousIntegration,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,keine Entsprechung
+P169,countries not supported,countriesNotSupported,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,keine Entsprechung
+P170,countries supported,countriesSupported,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/countriesSupported
+P185,embargo date,embargoDate,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/legislationDate
+P186,embargo end date,embargoEndDate,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,keine Entsprechung
+P192,feature list,featureList,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/featureList
+P194,file format,encodingFormat,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/encodingFormat
+P199,funding,funding,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/funding
+P203,has source code,hasSourceCode,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/code
+P204,image,screenshot,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/screenshot
+P210,is source code of,isSourceCodeOf,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/code
+P231,readme,readme,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/documentation
+P237,software add on,softwareAddOn,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,https://schema.org/softwareAddOn
+P240,software suggestions,softwareSuggestions,,not in the CodeMeta context and no schema.org parent in the crosswalk: check by hand,change,keine Entsprechung
+P107,copyright license,license,schema:license,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P113,developer,author,schema:author,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P117,main subject,keywords,schema:keywords,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P122,part of,isPartOf,schema:isPartOf,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P131,contributor to the creative work or subject,contributor,schema:contributor,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P134,funder,funder,schema:funder,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P136,has part(s),hasPart,schema:hasPart,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P137,inception,dateCreated,schema:dateCreated,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P139,last update,dateModified,schema:dateModified,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P144,publication date,datePublished,schema:datePublished,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P152,version,version,schema:version,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P162,cites work,citation,schema:citation,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P167,copyright holder,copyrightHolder,schema:copyrightHolder,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P168,copyright year,copyrightYear,schema:copyrightYear,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P183,editor,editor,schema:editor,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P187,encoding,encoding,schema:encoding,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P194,file format,fileFormat,schema:fileFormat,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P209,is accessible for free,isAccessibleForFree,schema:isAccessibleForFree,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P225,position,position,schema:position,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P228,producer,producer,schema:producer,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P229,provider,provider,schema:provider,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P230,publisher,publisher,schema:publisher,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P242,sponsor,sponsor,schema:sponsor,not remapped in the context; the crosswalk lists it under schema:CreativeWork (the schema.org term of the same name),ok,
+P155,address,address,schema:address,not remapped in the context; the crosswalk lists it under schema:Person (the schema.org term of the same name),ok,
+P156,affiliation,affiliation,schema:affiliation,not remapped in the context; the crosswalk lists it under schema:Person (the schema.org term of the same name),ok,
+P184,email address,email,schema:email,not remapped in the context; the crosswalk lists it under schema:Person (the schema.org term of the same name),ok,
+P191,family name,familyName,schema:familyName,not remapped in the context; the crosswalk lists it under schema:Person (the schema.org term of the same name),ok,
+P200,given name,givenName,schema:givenName,not remapped in the context; the crosswalk lists it under schema:Person (the schema.org term of the same name),ok,
+P234,review aspect,reviewAspect,schema:reviewAspect,not remapped in the context; the crosswalk lists it under schema:Review (the schema.org term of the same name),ok,
+P235,review body,reviewBody,schema:reviewBody,not remapped in the context; the crosswalk lists it under schema:Review (the schema.org term of the same name),ok,
+P188,end date,endDate,schema:endDate,not remapped in the context; the crosswalk lists it under schema:Role (the schema.org term of the same name),ok,
+P236,role name,roleName,schema:roleName,not remapped in the context; the crosswalk lists it under schema:Role (the schema.org term of the same name),ok,
+P243,start date,startDate,schema:startDate,not remapped in the context; the crosswalk lists it under schema:Role (the schema.org term of the same name),ok,
+P103,application category,applicationCategory,schema:applicationCategory,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P109,depends on software,softwareRequirements,schema:softwareRequirements,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P128,application sub category,applicationSubCategory,schema:applicationSubCategory,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P133,download link,downloadUrl,schema:downloadUrl,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P142,operating system,operatingSystem,schema:operatingSystem,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P148,software version identifier,softwareVersion,schema:softwareVersion,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P149,supporting data,supportingData,schema:supportingData,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P151,user manual URL,softwareHelp,schema:softwareHelp,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P172,data size,fileSize,schema:fileSize,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P207,install URL,installUrl,schema:installUrl,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P214,memory requirements,memoryRequirements,schema:memoryRequirements,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P221,permissions,permissions,schema:permissions,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P227,processor requirements,processorRequirements,schema:processorRequirements,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P232,release notes,releaseNotes,schema:releaseNotes,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P245,storage requirements,storageRequirements,schema:storageRequirements,not remapped in the context; the crosswalk lists it under schema:SoftwareApplication (the schema.org term of the same name),ok,
+P123,programmed in,programmingLanguage,schema:programmingLanguage,not remapped in the context; the crosswalk lists it under schema:SoftwareSourceCode (the schema.org term of the same name),ok,
+P125,source code repository URL,codeRepository,schema:codeRepository,not remapped in the context; the crosswalk lists it under schema:SoftwareSourceCode (the schema.org term of the same name),ok,
+P143,platform,runtimePlatform,schema:runtimePlatform,not remapped in the context; the crosswalk lists it under schema:SoftwareSourceCode (the schema.org term of the same name),ok,
+P150,target product,targetProduct,schema:targetProduct,not remapped in the context; the crosswalk lists it under schema:SoftwareSourceCode (the schema.org term of the same name),ok,
+P233,review,review,schema:review,not remapped in the context; the crosswalk lists it under schema:SoftwareSourceCode (the schema.org term of the same name),ok,
+P110,described at URL,relatedLink,schema:relatedLink,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P112,description,description,schema:description,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P114,DOI,identifier,schema:identifier,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P115,exact match,sameAs,schema:sameAs,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P119,name,name,schema:name,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P120,official website,url,schema:url,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P141,official demo URL,relatedLink,schema:relatedLink,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,
+P222,person identifier,identifier (Person),schema:identifier,not remapped in the context; the crosswalk lists it under schema:Thing (the schema.org term of the same name),ok,

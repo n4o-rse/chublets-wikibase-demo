@@ -8,6 +8,10 @@ Nothing here is read by the pipeline.
 | `property-set.csv` | The 153 rows of `data/wikibase-property-set.csv` of the Starter Pack, with two columns in front: `local_id` (the property in `data/csv/`) and `kernel` (`yes` for the four rows that are kernel properties and got no new number) |
 | `classes.csv` | The Wikidata classes of the model (rows of `data/wikidata-entities.csv`), with `local_id` |
 | `sources.csv` | The source codes (S1 to S9, R; S9 is the published ConnOSS crosswalk, <https://doi.org/10.5281/zenodo.21935688>) that `provenance` in `property-set.csv` refers to |
+| `demo-sources.csv` | The sources of the demo's own review (S10 to S12): the WikiProject page, the verification report, the decision tables |
+| `verification-report.csv` | Output of the pack's `tools/verify_wikidata.py`, run 2026-10-21: label and datatype of every Wikidata twin against live Wikidata |
+| `lookup-missing.csv` | Label, datatype and description of the 15 PIDs of the WikiProject page that the pack lacked (nine entered the model) |
+| `decisions/` | The two decision tables of 2026-10-22 (`domain-range.csv`, `schema-org-term.csv`) as filled in by Florian Thiery, with the reasons and comments |
 | `starter-pack-open-points.md` | The open points of the pack, copied as they are. Point 7 (licence) is why the footer of the pages says "licence not yet decided" |
 
 `confidence` in `property-set.csv` is the reliability the pack gave each row: `checked`, `source-claimed`, `recalled`,

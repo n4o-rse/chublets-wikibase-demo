@@ -59,7 +59,7 @@ dist:P198-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P198, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1607"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2098"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P198.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,15 @@ wd:P198
     wikibase:referenceValue prv:P198 ;
     wikibase:statementProperty ps:P198 ;
     wikibase:statementValue psv:P198 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Free Software Directory entry"@en ;
     skos:prefLabel "Free Software Directory entry"@en ;
     p:P2 wds:P198-45E78B96-84C0-5FAD-8A8F-3F7AA07993F8 ;
     p:P4 wds:P198-AE9AD0FE-4DC5-524C-9FFB-9C55B3E1CFD9 ;
+    p:P9 wds:P198-F25BE4EF-1071-5A79-AFB7-5C6AC98E4EAF ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P2537" .
+    wdt:P4 "P2537" ;
+    wdt:P9 wd:Q100 .
 
 wds:P198-45E78B96-84C0-5FAD-8A8F-3F7AA07993F8
     a wikibase:BestRank,
@@ -105,6 +107,12 @@ wds:P198-AE9AD0FE-4DC5-524C-9FFB-9C55B3E1CFD9
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:ab0eae6c0da1ace746dfdcefdbbb6d1a2cdc0f2a ;
     ps:P4 "P2537" .
+
+wds:P198-F25BE4EF-1071-5A79-AFB7-5C6AC98E4EAF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wdref:ab0eae6c0da1ace746dfdcefdbbb6d1a2cdc0f2a
     a wikibase:Reference ;

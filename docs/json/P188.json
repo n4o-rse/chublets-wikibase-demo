@@ -21,12 +21,28 @@
       {
         "id": "P188$AC552114-BC18-5AD4-BA74-1C77484DDC37",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "endDate"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P188$16B70BA3-A73B-5F02-AD2E-3BAC4EC291CC",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "endDate"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",

@@ -59,7 +59,7 @@ dist:P116-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P116, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1587"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2078"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P116.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,21 @@ wd:P116
     wikibase:referenceValue prv:P116 ;
     wikibase:statementProperty ps:P116 ;
     wikibase:statementValue psv:P116 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "inventory number"@en ;
     skos:prefLabel "inventory number"@en ;
     p:P2 wds:P116-AFBC6883-66BF-575B-BF7B-C40577931B50 ;
     p:P4 wds:P116-C377DC40-F342-5A6C-8BB0-0367EE40539A ;
+    p:P9 wds:P116-7DDF55DB-94CD-5E96-8506-CFF0ECD6AFDB ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P217" .
+    wdt:P4 "P217" ;
+    wdt:P9 wd:Q100 .
+
+wds:P116-7DDF55DB-94CD-5E96-8506-CFF0ECD6AFDB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P116-AFBC6883-66BF-575B-BF7B-C40577931B50
     a wikibase:BestRank,

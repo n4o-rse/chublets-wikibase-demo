@@ -59,7 +59,7 @@ dist:P137-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P137, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1956"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2835"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P137.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P137
     schema:name "inception"@en ;
     wikibase:claim p:P137 ;
     wikibase:directClaim wdt:P137 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P137 ;
     wikibase:propertyType wikibase:Time ;
     wikibase:qualifier pq:P137 ;
@@ -85,15 +85,19 @@ wd:P137
     wikibase:referenceValue prv:P137 ;
     wikibase:statementProperty ps:P137 ;
     wikibase:statementValue psv:P137 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "inception"@en ;
     skos:prefLabel "inception"@en ;
     p:P2 wds:P137-4AC30663-A5A0-51F2-A3AB-012FFC886A29 ;
     p:P4 wds:P137-2003BF44-343A-5FE9-8AA3-62E71A79709E ;
+    p:P9 wds:P137-6D4CB971-9901-54A9-BD35-414400C3ABAD ;
     p:P101 wds:P137-2AB89EB7-C9D3-5011-9875-8E741523D48B ;
+    p:P102 wds:P137-C4F5324C-D57F-57A9-8DDD-86F6409BAF97 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P571" ;
-    wdt:P101 "dateCreated" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "dateCreated" ;
+    wdt:P102 "dateCreated" .
 
 wds:P137-2AB89EB7-C9D3-5011-9875-8E741523D48B
     a wikibase:BestRank,
@@ -107,12 +111,24 @@ wds:P137-4AC30663-A5A0-51F2-A3AB-012FFC886A29
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
 
+wds:P137-6D4CB971-9901-54A9-BD35-414400C3ABAD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P137-2003BF44-343A-5FE9-8AA3-62E71A79709E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:7530861b042dbdeebf404b815ccd3f7fca804aea ;
     ps:P4 "P571" .
+
+wds:P137-C4F5324C-D57F-57A9-8DDD-86F6409BAF97
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "dateCreated" .
 
 wdref:7530861b042dbdeebf404b815ccd3f7fca804aea
     a wikibase:Reference ;

@@ -53,6 +53,25 @@ class Package(unittest.TestCase):
         self.assertGreaterEqual(version(), (0, 6, 4), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
+# The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
+# in background/ (labels as Wikidata has them, verification-report.csv; datatypes from the same report and from the review).
+LIVE_LABELS = {"distribution package ID P3112 (label to be filled)": "DistroWatch ID",
+               "distribution package ID P3418 (label to be filled)": "Google Play Store app ID",
+               "distribution package ID P3442 (label to be filled)": "Debian stable package",
+               "distribution package ID P3454 (label to be filled)": "Arch Linux package",
+               "distribution package ID P3463 (label to be filled)": "Fedora package",
+               "distribution package ID P3473 (label to be filled)": "Ubuntu package",
+               "distribution package ID P3499 (label to be filled)": "Gentoo package",
+               "distribution package ID P3597 (label to be filled)": "F-Droid package",
+               "edition or translation of": "version, edition or translation of", "GitHub username": "GitHub account",
+               "download link": "download URL", "SoftWare Hash IDentifier (SWHID)": "SoftWare Hash IDentifier"}
+CHANGED_DATATYPES = {"equivalent CodeMeta term": "external-id", "equivalent schema.org term": "external-id", "port": "quantity"}
+NEW_PROPERTIES = {"digital rights management system": ("P1032", "wikibase-item"), "ISO standard": ("P503", "external-id"),
+                  "language of work or name": ("P407", "wikibase-item"), "movement": ("P135", "wikibase-item"),
+                  "removed feature": ("P756", "wikibase-item"), "RfC ID": ("P892", "external-id"),
+                  "Stack Exchange tag": ("P1482", "url"), "TeX string": ("P1993", "string"), "Unicode character": ("P487", "string")}
+
+
 class Pack(unittest.TestCase):
     """Every row of the Starter Pack is accounted for."""
 
@@ -72,13 +91,14 @@ class Pack(unittest.TestCase):
                 self.assertNotIn(row["local_id"], entities, row["wb_label"])
                 continue
             entity = entities[row["local_id"]]
-            self.assertEqual((entity["kind"], entity["datatype"], entity["label_en"]), ("property", row["datatype"], row["wb_label"]))
+            expected = (CHANGED_DATATYPES.get(row["wb_label"], row["datatype"]), LIVE_LABELS.get(row["wb_label"], row["wb_label"]))
+            self.assertEqual((entity["kind"], entity["datatype"], entity["label_en"]), ("property", *expected))
 
     def test_the_numbers_from_100_are_the_next_free_ones_and_in_idmap(self) -> None:
         mapped = {r["key"]: r["id"] for r in table("idmap.csv")}
         ids = sorted((int(i[1:]) for i in mapped.values() if i[0] == "P" and int(i[1:]) >= 100))
         self.assertEqual(ids, list(range(100, 100 + len(ids))))
-        self.assertEqual(len(ids), 149)
+        self.assertEqual(len(ids), 149 + len(NEW_PROPERTIES))
         for row in background():
             self.assertEqual(mapped[f"property:{row['wb_label']}"], row["local_id"])
 
@@ -91,7 +111,7 @@ class Pack(unittest.TestCase):
                 statement = twins[(row["local_id"], row["wikidata_pid"])]
                 self.assertEqual(references[statement["sid"]]["value"], f"https://www.wikidata.org/wiki/Property:{row['wikidata_pid']}")
         self.assertEqual(sum(1 for r in background() if r["wikidata_pid"] and not r["kernel"]), 98)
-        self.assertEqual(len([s for s in statements if s["property"] == "P4" and s["subject"].startswith("P")]), 98)
+        self.assertEqual(len([s for s in statements if s["property"] == "P4" and s["subject"].startswith("P")]), 98 + len(NEW_PROPERTIES))
 
     def test_the_codemeta_terms_and_the_close_matches_are_statements(self) -> None:
         by_label = {r["wb_label"]: r["local_id"] for r in background()}
@@ -145,8 +165,8 @@ class Site(unittest.TestCase):
             self.assertIn(entity_id, self.site.entities)
 
     def test_it_holds_exactly_the_model(self) -> None:
-        self.assertEqual(len(self.site.entities), 3 + 10 + 149 + 7)
-        self.assertEqual(len(self.site.properties), 10 + 149)
+        self.assertEqual(len(self.site.entities), 3 + 10 + 149 + len(NEW_PROPERTIES) + 7)
+        self.assertEqual(len(self.site.properties), 10 + 149 + len(NEW_PROPERTIES))
 
     def test_the_kernel_properties_carry_their_wikidata_twins(self) -> None:
         twins = {"P1": "P279", "P2": "P31", "P3": "P1647", "P5": "P1630", "P6": "P854", "P7": "P813", "P8": "P248"}
@@ -189,6 +209,73 @@ class Export(unittest.TestCase):
         stripped = loader.Site(entities={k: v for k, v in self.site.entities.items() if k != "Q1"})
         self.assertFalse(stripped.has_kernel())
         self.assertEqual(rdf.build(stripped, rdf.Namespaces(BASE)).bridge, set())
+
+
+class Review(unittest.TestCase):
+    """The decisions of 2026-10-22: domain and range, schema.org terms, live labels, nine properties of the WikiProject page."""
+
+    def setUp(self) -> None:
+        self.entities = {r["id"]: r for r in table("entities.csv")}
+        self.statements = table("statements.csv")
+
+    def values(self, prop: str) -> dict[str, list[str]]:
+        found: dict[str, list[str]] = {}
+        for s in self.statements:
+            if s["property"] == prop:
+                found.setdefault(s["subject"], []).append(s["value"])
+        return found
+
+    def test_every_item_property_has_the_range_instance_and_no_other_property_has_a_range(self) -> None:
+        ranges = self.values("P10")
+        for entity_id, row in self.entities.items():
+            if row["kind"] == "property" and row["datatype"] == "wikibase-item":
+                self.assertEqual(ranges.get(entity_id), ["Q3"], entity_id)
+            elif row["kind"] == "property":
+                self.assertNotIn(entity_id, ranges, f"{entity_id} ({row['datatype']}) has no entity values, so no range")
+
+    def test_the_domain_is_software_or_property_and_the_person_only_properties_have_none(self) -> None:
+        domains = self.values("P9")
+        self.assertEqual({v for vs in domains.values() for v in vs}, {"Q100", "Q2"})
+        self.assertEqual(sorted(i for i, v in domains.items() if v == ["Q2"]), ["P100", "P101", "P102"])
+        by_label = {r["label_en"]: r["id"] for r in self.entities.values()}
+        for label in ("family name", "given name", "affiliation", "editor", "email address", "notable work"):
+            self.assertNotIn(by_label[label], domains, label)
+
+    def test_the_schema_org_terms_are_bare_names_and_the_eight_unsuitable_ones_are_left_out(self) -> None:
+        terms = self.values("P102")
+        self.assertEqual(sum(len(v) for v in terms.values()), 71)
+        for entity_id, values in terms.items():
+            for value in values:
+                self.assertRegex(value, r"^[a-z][A-Za-z]+$", f"{entity_id}: a bare property name, formatter https://schema.org/$1")
+        label = {r["id"]: r["label_en"] for r in self.entities.values()}
+        for term in ("availableOnDevice", "countriesNotSupported"):
+            self.assertIn(term, [v for vs in terms.values() for v in vs], term)
+        for term in ("device", "source", "status", "code", "documentation", "legislationDate", "HowTo"):
+            self.assertNotIn(term, [v for vs in terms.values() for v in vs], term)
+        self.assertEqual(terms["P194"], ["encodingFormat"], label["P194"])
+
+    def test_the_nine_properties_of_the_wikiproject_page_have_their_twins(self) -> None:
+        twins = self.values("P4")
+        by_label = {r["label_en"]: r for r in self.entities.values()}
+        for label, (pid, datatype) in NEW_PROPERTIES.items():
+            row = by_label[label]
+            self.assertEqual((row["kind"], row["datatype"]), ("property", datatype), label)
+            self.assertEqual(twins[row["id"]], [pid], label)
+        self.assertEqual(sorted(by_label[l]["id"] for l in NEW_PROPERTIES), [f"P{n}" for n in range(249, 258)])
+
+    def test_port_is_a_quantity_and_has_no_range(self) -> None:
+        port = next(r for r in self.entities.values() if r["label_en"] == "port")
+        self.assertEqual(port["datatype"], "quantity")
+        self.assertNotIn(port["id"], self.values("P10"))
+
+    def test_the_verification_report_has_no_failure_and_every_difference_is_resolved(self) -> None:
+        with (ROOT / "background" / "verification-report.csv").open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertEqual([r["id"] for r in rows if r["verdict"] == "FAIL"], [])
+        self.assertEqual(sum(1 for r in rows if r["verdict"] == "DIFF"), 14)
+        labels = {r["label_en"] for r in self.entities.values()}
+        for live in LIVE_LABELS.values():
+            self.assertIn(live, labels)
 
 
 class Attribution(unittest.TestCase):

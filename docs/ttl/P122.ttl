@@ -59,7 +59,7 @@ dist:P122-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P122, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1960"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3325"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P122.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P122
     schema:name "part of"@en ;
     wikibase:claim p:P122 ;
     wikibase:directClaim wdt:P122 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P122 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P122 ;
@@ -85,15 +85,33 @@ wd:P122
     wikibase:referenceValue prv:P122 ;
     wikibase:statementProperty ps:P122 ;
     wikibase:statementValue psv:P122 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "part of"@en ;
     skos:prefLabel "part of"@en ;
     p:P2 wds:P122-F92998F1-BD1B-5751-8ABE-6AEBAC9C2264 ;
     p:P4 wds:P122-A845AC5C-40B5-5E81-9975-AAB19A873D16 ;
+    p:P9 wds:P122-982ABC08-EA8D-5A7D-B8D2-6EB2F8A88DA7 ;
+    p:P10 wds:P122-EFD342BF-9D80-5444-ADC3-3256659991B7 ;
     p:P101 wds:P122-E7A040D9-FDDC-55AE-9017-1EF749CFBBE1 ;
+    p:P102 wds:P122-7A8AAFE9-9F0E-5B02-9936-09BC1752D7C9 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P361" ;
-    wdt:P101 "isPartOf" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "isPartOf" ;
+    wdt:P102 "isPartOf" .
+
+wds:P122-7A8AAFE9-9F0E-5B02-9936-09BC1752D7C9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "isPartOf" .
+
+wds:P122-982ABC08-EA8D-5A7D-B8D2-6EB2F8A88DA7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P122-A845AC5C-40B5-5E81-9975-AAB19A873D16
     a wikibase:BestRank,
@@ -107,6 +125,12 @@ wds:P122-E7A040D9-FDDC-55AE-9017-1EF749CFBBE1
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "isPartOf" .
+
+wds:P122-EFD342BF-9D80-5444-ADC3-3256659991B7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P122-F92998F1-BD1B-5751-8ABE-6AEBAC9C2264
     a wikibase:BestRank,

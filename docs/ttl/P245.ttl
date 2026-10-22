@@ -59,7 +59,7 @@ dist:P245-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P245, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1094"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1981"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P245.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P245
     schema:name "storage requirements"@en ;
     wikibase:claim p:P245 ;
     wikibase:directClaim wdt:P245 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P245 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P245 ;
@@ -85,19 +85,35 @@ wd:P245
     wikibase:referenceValue prv:P245 ;
     wikibase:statementProperty ps:P245 ;
     wikibase:statementValue psv:P245 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "storage requirements"@en ;
     skos:prefLabel "storage requirements"@en ;
     p:P2 wds:P245-8DC5B240-4759-5E86-BF76-F89E72A29059 ;
+    p:P9 wds:P245-7D5611DC-89FB-5CCE-AEC6-4EA80584D40B ;
     p:P101 wds:P245-A9DB75DE-CADE-5063-B9A8-6628C6750C13 ;
+    p:P102 wds:P245-80E2BB6C-C265-5CDB-9F7F-0552CBA01331 ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "storageRequirements" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "storageRequirements" ;
+    wdt:P102 "storageRequirements" .
+
+wds:P245-7D5611DC-89FB-5CCE-AEC6-4EA80584D40B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P245-8DC5B240-4759-5E86-BF76-F89E72A29059
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P245-80E2BB6C-C265-5CDB-9F7F-0552CBA01331
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "storageRequirements" .
 
 wds:P245-A9DB75DE-CADE-5063-B9A8-6628C6750C13
     a wikibase:BestRank,

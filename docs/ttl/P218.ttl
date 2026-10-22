@@ -59,7 +59,7 @@ dist:P218-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P218, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1593"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2573"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P218.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,29 @@ wd:P218
     wikibase:referenceValue prv:P218 ;
     wikibase:statementProperty ps:P218 ;
     wikibase:statementValue psv:P218 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "output device"@en ;
     skos:prefLabel "output device"@en ;
     p:P2 wds:P218-ED0B5DA8-41E8-58B1-83F4-7DBF115F65C9 ;
     p:P4 wds:P218-BED009F9-58D2-5AEC-9226-044D62DEA9BA ;
+    p:P9 wds:P218-35560FD1-677B-55A0-8AB2-99B2A55FEC32 ;
+    p:P10 wds:P218-08667885-3252-51DA-BDC2-AF61C8F7122E ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P5196" .
+    wdt:P4 "P5196" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P218-35560FD1-677B-55A0-8AB2-99B2A55FEC32
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P218-08667885-3252-51DA-BDC2-AF61C8F7122E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P218-BED009F9-58D2-5AEC-9226-044D62DEA9BA
     a wikibase:BestRank,

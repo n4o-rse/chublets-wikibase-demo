@@ -59,7 +59,7 @@ dist:P235-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P235, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1076"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1954"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P235.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P235
     schema:name "review body"@en ;
     wikibase:claim p:P235 ;
     wikibase:directClaim wdt:P235 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P235 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P235 ;
@@ -85,13 +85,23 @@ wd:P235
     wikibase:referenceValue prv:P235 ;
     wikibase:statementProperty ps:P235 ;
     wikibase:statementValue psv:P235 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "review body"@en ;
     skos:prefLabel "review body"@en ;
     p:P2 wds:P235-B55AE2EF-E16A-5940-8159-60AB9AF4E5E4 ;
+    p:P9 wds:P235-F51B629C-2E61-52C3-BA17-12043703A2AC ;
     p:P101 wds:P235-AA875790-26FA-590C-9EAB-A54AAE6DCEB9 ;
+    p:P102 wds:P235-5E171A50-1A3E-5CD1-9E0B-7E1E9B14E28D ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "reviewBody" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "reviewBody" ;
+    wdt:P102 "reviewBody" .
+
+wds:P235-5E171A50-1A3E-5CD1-9E0B-7E1E9B14E28D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "reviewBody" .
 
 wds:P235-AA875790-26FA-590C-9EAB-A54AAE6DCEB9
     a wikibase:BestRank,
@@ -104,6 +114,12 @@ wds:P235-B55AE2EF-E16A-5940-8159-60AB9AF4E5E4
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P235-F51B629C-2E61-52C3-BA17-12043703A2AC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P235
     a owl:ObjectProperty .

@@ -59,7 +59,7 @@ dist:P165-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P165, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1083"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1579"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P165.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P165
     schema:name "cont integration"@en ;
     wikibase:claim p:P165 ;
     wikibase:directClaim wdt:P165 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P165 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P165 ;
@@ -85,12 +85,14 @@ wd:P165
     wikibase:referenceValue prv:P165 ;
     wikibase:statementProperty ps:P165 ;
     wikibase:statementValue psv:P165 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "cont integration"@en ;
     skos:prefLabel "cont integration"@en ;
     p:P2 wds:P165-C37433B9-4797-5841-8B37-A8AF460FE398 ;
+    p:P9 wds:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0 ;
     p:P101 wds:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P101 "contIntegration" .
 
 wds:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D
@@ -98,6 +100,12 @@ wds:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "contIntegration" .
+
+wds:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P165-C37433B9-4797-5841-8B37-A8AF460FE398
     a wikibase:BestRank,

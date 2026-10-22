@@ -59,7 +59,7 @@ dist:P115-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P115, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1954"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2828"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P115.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P115
     schema:name "exact match"@en ;
     wikibase:claim p:P115 ;
     wikibase:directClaim wdt:P115 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P115 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P115 ;
@@ -85,21 +85,37 @@ wd:P115
     wikibase:referenceValue prv:P115 ;
     wikibase:statementProperty ps:P115 ;
     wikibase:statementValue psv:P115 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "exact match"@en ;
     skos:prefLabel "exact match"@en ;
     p:P2 wds:P115-51212B23-9BB9-5965-B479-5468E1324E34 ;
     p:P4 wds:P115-E82602AC-268A-51CF-9E58-8CB588CD1129 ;
+    p:P9 wds:P115-A4DB3488-A76F-52F4-8CA3-F8A42FE66B9B ;
     p:P101 wds:P115-DC623041-508B-5CC8-A813-38BB226F391A ;
+    p:P102 wds:P115-5E3901F9-5D7D-5E91-ADBF-14E4E8F4E20E ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P2888" ;
-    wdt:P101 "sameAs" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "sameAs" ;
+    wdt:P102 "sameAs" .
+
+wds:P115-5E3901F9-5D7D-5E91-ADBF-14E4E8F4E20E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "sameAs" .
 
 wds:P115-51212B23-9BB9-5965-B479-5468E1324E34
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P115-A4DB3488-A76F-52F4-8CA3-F8A42FE66B9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P115-DC623041-508B-5CC8-A813-38BB226F391A
     a wikibase:BestRank,

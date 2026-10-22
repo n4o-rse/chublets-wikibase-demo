@@ -59,7 +59,7 @@ dist:P161-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P161, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1087"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1583"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P161.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P161
     schema:name "build instructions"@en ;
     wikibase:claim p:P161 ;
     wikibase:directClaim wdt:P161 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P161 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P161 ;
@@ -85,13 +85,21 @@ wd:P161
     wikibase:referenceValue prv:P161 ;
     wikibase:statementProperty ps:P161 ;
     wikibase:statementValue psv:P161 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "build instructions"@en ;
     skos:prefLabel "build instructions"@en ;
     p:P2 wds:P161-D9C18519-D302-59F5-870D-2F297FB60791 ;
+    p:P9 wds:P161-66AF81F3-FBC7-5B1B-BFC7-C8543F00C794 ;
     p:P101 wds:P161-152C3DE4-F30A-56AF-AF2A-EBAF0ACEB4EF ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P101 "buildInstructions" .
+
+wds:P161-66AF81F3-FBC7-5B1B-BFC7-C8543F00C794
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P161-152C3DE4-F30A-56AF-AF2A-EBAF0ACEB4EF
     a wikibase:BestRank,

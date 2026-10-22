@@ -59,7 +59,7 @@ dist:P140-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P140, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1968"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3335"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P140.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P140
     schema:name "maintained by"@en ;
     wikibase:claim p:P140 ;
     wikibase:directClaim wdt:P140 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P140 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P140 ;
@@ -85,15 +85,21 @@ wd:P140
     wikibase:referenceValue prv:P140 ;
     wikibase:statementProperty ps:P140 ;
     wikibase:statementValue psv:P140 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "maintained by"@en ;
     skos:prefLabel "maintained by"@en ;
     p:P2 wds:P140-5555D25E-16C7-5166-8726-B73A9906EC30 ;
     p:P4 wds:P140-B543DAD9-6ECE-5AC9-9234-E40935533098 ;
+    p:P9 wds:P140-504EE35A-DC22-5B03-84B4-4E6DB261888C ;
+    p:P10 wds:P140-E2FE87FD-07C4-5BD8-9203-76E120F1E9A1 ;
     p:P101 wds:P140-1CF470B1-473B-5A23-92DB-2CC57EDC92FD ;
+    p:P102 wds:P140-5873CF9D-E311-5799-9554-9E3BEC40355C ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P126" ;
-    wdt:P101 "maintainer" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "maintainer" ;
+    wdt:P102 "maintainer" .
 
 wds:P140-1CF470B1-473B-5A23-92DB-2CC57EDC92FD
     a wikibase:BestRank,
@@ -101,11 +107,23 @@ wds:P140-1CF470B1-473B-5A23-92DB-2CC57EDC92FD
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "maintainer" .
 
+wds:P140-504EE35A-DC22-5B03-84B4-4E6DB261888C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P140-5555D25E-16C7-5166-8726-B73A9906EC30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P140-5873CF9D-E311-5799-9554-9E3BEC40355C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "maintainer" .
 
 wds:P140-B543DAD9-6ECE-5AC9-9234-E40935533098
     a wikibase:BestRank,
@@ -113,6 +131,12 @@ wds:P140-B543DAD9-6ECE-5AC9-9234-E40935533098
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:3b62d1a50233207e701a32c765dae150d94a6c61 ;
     ps:P4 "P126" .
+
+wds:P140-E2FE87FD-07C4-5BD8-9203-76E120F1E9A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wdref:3b62d1a50233207e701a32c765dae150d94a6c61
     a wikibase:Reference ;

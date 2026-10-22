@@ -39,7 +39,7 @@ data:P175
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P175 ;
-    dcterms:title "distribution package ID P3418 (label to be filled)"@en ;
+    dcterms:title "Google Play Store app ID"@en ;
     schema:about wd:P175 ;
     dcat:distribution dist:P175-html,
         dist:P175-json,
@@ -59,7 +59,7 @@ dist:P175-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P175, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2093"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P175.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P175-ttl
 
 wd:P175
     a wikibase:Property ;
-    schema:name "distribution package ID P3418 (label to be filled)"@en ;
+    schema:name "Google Play Store app ID"@en ;
     wikibase:claim p:P175 ;
     wikibase:directClaim wdt:P175 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,19 +85,27 @@ wd:P175
     wikibase:referenceValue prv:P175 ;
     wikibase:statementProperty ps:P175 ;
     wikibase:statementValue psv:P175 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3418 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3418 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Google Play Store app ID"@en ;
+    skos:prefLabel "Google Play Store app ID"@en ;
     p:P2 wds:P175-7E894BC0-2C7A-5B8D-B47F-F461ED7EE575 ;
     p:P4 wds:P175-49CB6EDB-97AB-5057-8EE3-75386BBBD3BA ;
+    p:P9 wds:P175-43D65449-11B5-5BC9-946C-89708BB6F091 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3418" .
+    wdt:P4 "P3418" ;
+    wdt:P9 wd:Q100 .
 
 wds:P175-7E894BC0-2C7A-5B8D-B47F-F461ED7EE575
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P175-43D65449-11B5-5BC9-946C-89708BB6F091
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P175-49CB6EDB-97AB-5057-8EE3-75386BBBD3BA
     a wikibase:BestRank,

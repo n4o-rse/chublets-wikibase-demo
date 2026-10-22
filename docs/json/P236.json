@@ -5,12 +5,28 @@
       {
         "id": "P236$9DF31166-CCA6-5881-B671-CF0F471E38F5",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "roleName"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P236$A88F556B-69B2-5965-8EB4-660EF5EBD75F",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "roleName"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",

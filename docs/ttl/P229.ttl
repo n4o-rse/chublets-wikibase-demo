@@ -59,7 +59,7 @@ dist:P229-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P229, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1078"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2443"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P229.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P229
     schema:name "provider"@en ;
     wikibase:claim p:P229 ;
     wikibase:directClaim wdt:P229 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P229 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P229 ;
@@ -85,19 +85,43 @@ wd:P229
     wikibase:referenceValue prv:P229 ;
     wikibase:statementProperty ps:P229 ;
     wikibase:statementValue psv:P229 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "provider"@en ;
     skos:prefLabel "provider"@en ;
     p:P2 wds:P229-D8069F8C-9F45-5A60-A5DF-1CD2F919E5EE ;
+    p:P9 wds:P229-CA3E2727-C763-5BD2-B9B3-F6EBD507A143 ;
+    p:P10 wds:P229-83A72E29-7351-5BF8-B162-F2FF32179092 ;
     p:P101 wds:P229-18C7A7CD-B67D-525F-9BD5-6A3ABDE8935F ;
+    p:P102 wds:P229-2238322A-6293-5713-A2E3-DF5CD2FE5798 ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "provider" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "provider" ;
+    wdt:P102 "provider" .
 
 wds:P229-18C7A7CD-B67D-525F-9BD5-6A3ABDE8935F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "provider" .
+
+wds:P229-83A72E29-7351-5BF8-B162-F2FF32179092
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
+wds:P229-2238322A-6293-5713-A2E3-DF5CD2FE5798
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "provider" .
+
+wds:P229-CA3E2727-C763-5BD2-B9B3-F6EBD507A143
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P229-D8069F8C-9F45-5A60-A5DF-1CD2F919E5EE
     a wikibase:BestRank,

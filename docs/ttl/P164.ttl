@@ -59,7 +59,7 @@ dist:P164-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P164, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1600"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2580"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P164.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,17 @@ wd:P164
     wikibase:referenceValue prv:P164 ;
     wikibase:statementProperty ps:P164 ;
     wikibase:statementValue psv:P164 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "computes solution to"@en ;
     skos:prefLabel "computes solution to"@en ;
     p:P2 wds:P164-1C6862E5-C503-5520-81F3-235CFE66F308 ;
     p:P4 wds:P164-611417EE-3619-5FE6-9917-6BC214E20EFE ;
+    p:P9 wds:P164-A34D5ED9-D927-5CCB-90FF-9A13DCED1F87 ;
+    p:P10 wds:P164-01683AF4-A5E1-5E22-96B7-599D69025087 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P2159" .
+    wdt:P4 "P2159" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
 
 wds:P164-1C6862E5-C503-5520-81F3-235CFE66F308
     a wikibase:BestRank,
@@ -99,12 +103,24 @@ wds:P164-1C6862E5-C503-5520-81F3-235CFE66F308
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
 
+wds:P164-01683AF4-A5E1-5E22-96B7-599D69025087
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
 wds:P164-611417EE-3619-5FE6-9917-6BC214E20EFE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:9dd3eb5a6f7f42d517d0850025aaca35c8cac637 ;
     ps:P4 "P2159" .
+
+wds:P164-A34D5ED9-D927-5CCB-90FF-9A13DCED1F87
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wdref:9dd3eb5a6f7f42d517d0850025aaca35c8cac637
     a wikibase:Reference ;

@@ -59,7 +59,7 @@ dist:P224-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P224, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1584"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2070"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P224.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,20 +78,22 @@ wd:P224
     wikibase:directClaim wdt:P224 ;
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P224 ;
-    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:propertyType wikibase:Quantity ;
     wikibase:qualifier pq:P224 ;
     wikibase:qualifierValue pqv:P224 ;
     wikibase:reference pr:P224 ;
     wikibase:referenceValue prv:P224 ;
     wikibase:statementProperty ps:P224 ;
     wikibase:statementValue psv:P224 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "port"@en ;
     skos:prefLabel "port"@en ;
     p:P2 wds:P224-E595FDAA-70B0-5F4E-AB64-B1EE7F9A1AF0 ;
     p:P4 wds:P224-80BB5ACA-F200-5E90-8C5B-28339F200DFA ;
+    p:P9 wds:P224-736D0F4A-00BA-5A89-8EFA-C1A5D8CED2AD ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1641" .
+    wdt:P4 "P1641" ;
+    wdt:P9 wd:Q100 .
 
 wds:P224-80BB5ACA-F200-5E90-8C5B-28339F200DFA
     a wikibase:BestRank,
@@ -99,6 +101,12 @@ wds:P224-80BB5ACA-F200-5E90-8C5B-28339F200DFA
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:7b29a09071507834dd96d43c9da3d215c78ae3cc ;
     ps:P4 "P1641" .
+
+wds:P224-736D0F4A-00BA-5A89-8EFA-C1A5D8CED2AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P224-E595FDAA-70B0-5F4E-AB64-B1EE7F9A1AF0
     a wikibase:BestRank,
@@ -114,22 +122,22 @@ p:P224
     a owl:ObjectProperty .
 
 wdt:P224
-    a owl:ObjectProperty .
+    a owl:DatatypeProperty .
 
 pq:P224
-    a owl:ObjectProperty .
+    a owl:DatatypeProperty .
 
 pqv:P224
     a owl:ObjectProperty .
 
 pr:P224
-    a owl:ObjectProperty .
+    a owl:DatatypeProperty .
 
 prv:P224
     a owl:ObjectProperty .
 
 ps:P224
-    a owl:ObjectProperty .
+    a owl:DatatypeProperty .
 
 psv:P224
     a owl:ObjectProperty .

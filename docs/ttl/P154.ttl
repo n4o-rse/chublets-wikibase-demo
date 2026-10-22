@@ -59,7 +59,7 @@ dist:P154-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P154, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1600"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2580"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P154.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,35 @@ wd:P154
     wikibase:referenceValue prv:P154 ;
     wikibase:statementProperty ps:P154 ;
     wikibase:statementValue psv:P154 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "writable file format"@en ;
     skos:prefLabel "writable file format"@en ;
     p:P2 wds:P154-BC0D43A6-3EB8-5128-BFD2-A147FB46C083 ;
     p:P4 wds:P154-CF479232-E0ED-509D-B1F4-AD8E4CF81783 ;
+    p:P9 wds:P154-80C645BC-C6AF-5250-AAF9-5253B0F51C12 ;
+    p:P10 wds:P154-C4157CE7-D1FA-5FB6-A951-FF31A8782F9F ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1073" .
+    wdt:P4 "P1073" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P154-80C645BC-C6AF-5250-AAF9-5253B0F51C12
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P154-BC0D43A6-3EB8-5128-BFD2-A147FB46C083
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P154-C4157CE7-D1FA-5FB6-A951-FF31A8782F9F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P154-CF479232-E0ED-509D-B1F4-AD8E4CF81783
     a wikibase:BestRank,

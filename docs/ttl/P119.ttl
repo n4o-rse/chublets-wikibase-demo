@@ -59,7 +59,7 @@ dist:P119-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P119, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1957"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2829"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P119.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P119
     schema:name "name"@en ;
     wikibase:claim p:P119 ;
     wikibase:directClaim wdt:P119 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P119 ;
     wikibase:propertyType wikibase:Monolingualtext ;
     wikibase:qualifier pq:P119 ;
@@ -85,15 +85,19 @@ wd:P119
     wikibase:referenceValue prv:P119 ;
     wikibase:statementProperty ps:P119 ;
     wikibase:statementValue psv:P119 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "name"@en ;
     skos:prefLabel "name"@en ;
     p:P2 wds:P119-764A764F-E79B-52D2-870B-CB98616863BB ;
     p:P4 wds:P119-43A1B596-6D12-547F-A4D0-620A5C6CBE6F ;
+    p:P9 wds:P119-DBEDD4A3-425E-5B12-9A25-892CCCE7BC81 ;
     p:P101 wds:P119-5C627D6E-083F-57BE-8899-B430218D568A ;
+    p:P102 wds:P119-901320BA-4DD2-5F6B-BEC7-4EC3D849DDDB ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P2561" ;
-    wdt:P101 "name" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "name" ;
+    wdt:P102 "name" .
 
 wds:P119-5C627D6E-083F-57BE-8899-B430218D568A
     a wikibase:BestRank,
@@ -113,6 +117,18 @@ wds:P119-764A764F-E79B-52D2-870B-CB98616863BB
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P119-901320BA-4DD2-5F6B-BEC7-4EC3D849DDDB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "name" .
+
+wds:P119-DBEDD4A3-425E-5B12-9A25-892CCCE7BC81
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wdref:38d0699069500b050b04ab6c361b17ed242062e6
     a wikibase:Reference ;

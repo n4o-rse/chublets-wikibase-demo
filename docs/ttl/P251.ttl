@@ -1,0 +1,160 @@
+# P251: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.6.4; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:P251
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:identifier "P251" ;
+    dcterms:isPartOf cat:properties ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:P251 ;
+    dcterms:title "language of work or name"@en ;
+    schema:about wd:P251 ;
+    dcat:distribution dist:P251-html,
+        dist:P251-json,
+        dist:P251-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P251.html> .
+
+dist:P251-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "P251, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P251.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:P251-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "P251, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2582"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P251.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:P251-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "P251, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P251.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:P251
+    a wikibase:Property ;
+    schema:name "language of work or name"@en ;
+    wikibase:claim p:P251 ;
+    wikibase:directClaim wdt:P251 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue wdno:P251 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P251 ;
+    wikibase:qualifierValue pqv:P251 ;
+    wikibase:reference pr:P251 ;
+    wikibase:referenceValue prv:P251 ;
+    wikibase:statementProperty ps:P251 ;
+    wikibase:statementValue psv:P251 ;
+    wikibase:statements "4"^^xsd:integer ;
+    rdfs:label "language of work or name"@en ;
+    skos:prefLabel "language of work or name"@en ;
+    p:P2 wds:P251-95BF3C86-C8FF-5FC2-B729-531FE3E84BFF ;
+    p:P4 wds:P251-D141A5F4-684A-57EB-B38A-A43CBE5F3E24 ;
+    p:P9 wds:P251-86A27FC1-E25C-52E0-BD54-672ACD162CF1 ;
+    p:P10 wds:P251-4748751F-2FF4-56A9-9B62-3451D3D0D332 ;
+    wdt:P2 wd:Q2 ;
+    wdt:P4 "P407" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P251-86A27FC1-E25C-52E0-BD54-672ACD162CF1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P251-95BF3C86-C8FF-5FC2-B729-531FE3E84BFF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q2 .
+
+wds:P251-4748751F-2FF4-56A9-9B62-3451D3D0D332
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
+wds:P251-D141A5F4-684A-57EB-B38A-A43CBE5F3E24
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57297a3f2982f2c2be869c1ec3ebb491d1fe3bc0 ;
+    ps:P4 "P407" .
+
+wdref:57297a3f2982f2c2be869c1ec3ebb491d1fe3bc0
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P407> .
+
+p:P251
+    a owl:ObjectProperty .
+
+wdt:P251
+    a owl:ObjectProperty .
+
+pq:P251
+    a owl:ObjectProperty .
+
+pqv:P251
+    a owl:ObjectProperty .
+
+pr:P251
+    a owl:ObjectProperty .
+
+prv:P251
+    a owl:ObjectProperty .
+
+ps:P251
+    a owl:ObjectProperty .
+
+psv:P251
+    a owl:ObjectProperty .
+
+wdno:P251
+    a owl:Class ;
+    owl:complementOf _:a44394d38e992fb2c7a42c8d0a59fabc .
+
+_:a44394d38e992fb2c7a42c8d0a59fabc
+    a owl:Restriction ;
+    owl:onProperty wdt:P251 ;
+    owl:someValuesFrom owl:Thing .

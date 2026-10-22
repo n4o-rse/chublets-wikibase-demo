@@ -11,9 +11,10 @@ pages, a search index, RDF and a SPARQL page, with the same code as for a harves
 * the **kernel** that `wikibase-static` mixes in (Q1 Class, Q2 Property, Q3 Instance; P1 subclass of, P2 instance of,
   P3 subproperty of, P4 Wikidata equivalent, P5 formatter URL, P6 reference URL, P7 retrieved, P8 stated in, P9 domain,
   P10 range; the numbers 1 to 99 are reserved for it),
-* **149 properties** (P100 to P248) from the Starter Pack: the union of all CodeMeta terms and the properties of the
+* **158 properties** (P100 to P257): 149 from the Starter Pack, the union of all CodeMeta terms and the properties of the
   WikiProject Software list, each with its Wikidata twin (`P4`), its CodeMeta terms and, for the CodeMeta-only ones,
-  the Wikidata properties that come close,
+  the Wikidata properties that come close, and nine from the WikiProject Software properties page that the pack lacked
+  (P249 to P257, review of 2026-10-22),
 * **7 classes** (Q100 to Q106): software, research software, application software, software library, script file,
   Little Minion and chublet, in the class tree the pack drew, each with its Wikidata twin.
 
@@ -25,10 +26,23 @@ The pages show the model the way a Wikibase does; the RDF export additionally ca
 (`wdt:P1 rdfs:subPropertyOf rdfs:subClassOf` and five more triples, in a section of their own in the Turtle files), so that
 a reasoner or a property path reads the class tree.
 
-**What is not verified:** the Starter Pack was built without access to Wikidata. Every twin, every Q-id and every label
-carries the reliability the pack gave it (`background/property-set.csv`, column `confidence`; `background/sources.csv`
-explains the codes). `tools/verify_wikidata.py` of the pack is the check, and it has not been run. A reference on a twin says
-"documented at this Wikidata page", not "retrieved on a date".
+**What was checked, and what was not:** on 2026-10-21 the pack's `tools/verify_wikidata.py` compared the labels and
+datatypes of all 137 Wikidata properties, classes and items of the pack with live Wikidata (`background/verification-report.csv`,
+source `S11`): all exist, 14 differed. The differences are resolved in the tables (twelve labels now read as on Wikidata, the
+datatype of "port" is `quantity`; the report lists one class, Q88865971, that the model does not use). The 15 PIDs of the
+WikiProject page that the pack did not carry were looked up (`background/lookup-missing.csv`): nine are properties of the page and are
+in the model, six only appear in description texts. **Not checked:** the twins' statements beyond label and datatype, and the
+`confidence` values in `background/property-set.csv`, which stay as the pack gave them. A reference on a twin says
+"documented at this Wikidata page", not "retrieved on a date". The WikiProject page was last edited on 8 May 2024 and is little
+maintained (`background/demo-sources.csv`, `S10`).
+
+**Domain and range (review of 2026-10-22):** the domain (`P9`) is software (`Q100`) for the software properties and
+property (`Q2`) for the three metadata properties P100 to P102; 29 properties have none (qualifier-like, or for persons only, or not tied to software).
+The range (`P10`) is `Q3` (any item) for each of the 63 properties with item values and absent otherwise, because the datatype
+already is the range. The classes for person, organisation, work and the like are not in the model yet; they come with the data
+that needs them. P101 (CodeMeta term) and P102 (schema.org term) are `external-id` with a formatter URL, so their values are bare
+names (`applicationCategory`). P102 has 71 values; eight CodeMeta terms have no schema.org term of the same meaning
+and none is written. The decisions are in `background/decisions/`.
 
 ## Use
 
@@ -61,7 +75,8 @@ commit `data/`, `docs/` and `dist/` together.
 python tools/import_pack.py C:\git\chublets-wikibase-starter-pack
 ```
 
-It is kept for the record and can be run again: it reads `data/csv/idmap.csv` first, so the same pack row gets the same
+It is kept for the record. **Since the review of 2026-10-22 the tables are maintained by hand; do not run it again** (it would overwrite the
+reviewed rows). It can be run again against a changed pack: it reads `data/csv/idmap.csv` first, so the same pack row gets the same
 number, and it writes the same files (`--check` writes nothing and exits 1 when a file would change). Run it against a
 changed pack and then look at `git diff` before committing; hand edits to the imported rows are overwritten, so edit
 the tables directly from now on and do not run the script again unless the pack changes.

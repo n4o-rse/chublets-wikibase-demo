@@ -59,7 +59,7 @@ dist:P217-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P217, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1589"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2080"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P217.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,27 @@ wd:P217
     wikibase:referenceValue prv:P217 ;
     wikibase:statementProperty ps:P217 ;
     wikibase:statementValue psv:P217 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Open Hub ID"@en ;
     skos:prefLabel "Open Hub ID"@en ;
     p:P2 wds:P217-48611A95-E88A-5137-AE84-CA38D4844C6D ;
     p:P4 wds:P217-B627D2DD-2A8C-5D70-BC56-A10D5AB774E2 ;
+    p:P9 wds:P217-5041025A-FF3A-57E4-8F1F-884B1362E06A ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1972" .
+    wdt:P4 "P1972" ;
+    wdt:P9 wd:Q100 .
 
 wds:P217-48611A95-E88A-5137-AE84-CA38D4844C6D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P217-5041025A-FF3A-57E4-8F1F-884B1362E06A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P217-B627D2DD-2A8C-5D70-BC56-A10D5AB774E2
     a wikibase:BestRank,

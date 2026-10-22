@@ -59,7 +59,7 @@ dist:P130-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P130, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1586"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2566"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P130.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,29 @@ wd:P130
     wikibase:referenceValue prv:P130 ;
     wikibase:statementProperty ps:P130 ;
     wikibase:statementValue psv:P130 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "based on"@en ;
     skos:prefLabel "based on"@en ;
     p:P2 wds:P130-E2B2C340-4220-5FA6-AC09-814928A13FCE ;
     p:P4 wds:P130-F2B4C1F2-B185-5E99-8AAE-3953C0A9027B ;
+    p:P9 wds:P130-AB08DDD4-B113-5BF0-AA6F-B59B4002794F ;
+    p:P10 wds:P130-0C8850D9-6E0C-5ECD-B3D3-637E655706B0 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P144" .
+    wdt:P4 "P144" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P130-0C8850D9-6E0C-5ECD-B3D3-637E655706B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
+wds:P130-AB08DDD4-B113-5BF0-AA6F-B59B4002794F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P130-E2B2C340-4220-5FA6-AC09-814928A13FCE
     a wikibase:BestRank,

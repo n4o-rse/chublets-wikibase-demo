@@ -59,7 +59,7 @@ dist:P207-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P207, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1450"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2328"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P207.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P207
     schema:name "install URL"@en ;
     wikibase:claim p:P207 ;
     wikibase:directClaim wdt:P207 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P207 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P207 ;
@@ -85,15 +85,19 @@ wd:P207
     wikibase:referenceValue prv:P207 ;
     wikibase:statementProperty ps:P207 ;
     wikibase:statementValue psv:P207 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "install URL"@en ;
     skos:prefLabel "install URL"@en ;
     p:P2 wds:P207-3D186089-7733-58EF-8F77-6E9A9038242D ;
+    p:P9 wds:P207-2621C945-1249-50B7-8E6C-3AB0AE2772C8 ;
     p:P100 wds:P207-39E31E56-5E48-5DC8-91BE-A63052D34862 ;
     p:P101 wds:P207-A2AFBCBA-4DE3-521C-8EA3-4D79867575BC ;
+    p:P102 wds:P207-BB0FDFFC-C863-5FEB-89FB-DCE73676479B ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P4945" ;
-    wdt:P101 "installUrl" .
+    wdt:P101 "installUrl" ;
+    wdt:P102 "installUrl" .
 
 wds:P207-3D186089-7733-58EF-8F77-6E9A9038242D
     a wikibase:BestRank,
@@ -107,11 +111,23 @@ wds:P207-39E31E56-5E48-5DC8-91BE-A63052D34862
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P4945" .
 
+wds:P207-2621C945-1249-50B7-8E6C-3AB0AE2772C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P207-A2AFBCBA-4DE3-521C-8EA3-4D79867575BC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "installUrl" .
+
+wds:P207-BB0FDFFC-C863-5FEB-89FB-DCE73676479B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "installUrl" .
 
 p:P207
     a owl:ObjectProperty .

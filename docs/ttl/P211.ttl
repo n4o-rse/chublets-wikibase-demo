@@ -59,7 +59,7 @@ dist:P211-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P211, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1587"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2078"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P211.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,27 @@ wd:P211
     wikibase:referenceValue prv:P211 ;
     wikibase:statementProperty ps:P211 ;
     wikibase:statementValue psv:P211 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "logo image"@en ;
     skos:prefLabel "logo image"@en ;
     p:P2 wds:P211-3D466E14-C893-5931-A4F7-78C846EB219A ;
     p:P4 wds:P211-E383E311-ED11-5F21-B707-788550AD2F5A ;
+    p:P9 wds:P211-54501DEA-7AFD-57AA-B8BE-FFADBFB8F3A2 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P154" .
+    wdt:P4 "P154" ;
+    wdt:P9 wd:Q100 .
 
 wds:P211-3D466E14-C893-5931-A4F7-78C846EB219A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P211-54501DEA-7AFD-57AA-B8BE-FFADBFB8F3A2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P211-E383E311-ED11-5F21-B707-788550AD2F5A
     a wikibase:BestRank,

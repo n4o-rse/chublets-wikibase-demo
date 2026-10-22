@@ -59,7 +59,7 @@ dist:P121-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P121, as archived from the Wikibase API"@en ;
-    dcat:byteSize "708"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1199"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P121.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,17 +85,25 @@ wd:P121
     wikibase:referenceValue prv:P121 ;
     wikibase:statementProperty ps:P121 ;
     wikibase:statementValue psv:P121 ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "open-archaeo ID"@en ;
     skos:prefLabel "open-archaeo ID"@en ;
     p:P2 wds:P121-3D3A51FC-89CC-5C97-A7B5-319E9F517202 ;
-    wdt:P2 wd:Q2 .
+    p:P9 wds:P121-A4D2F672-6868-5B43-B15B-1C56178B77CE ;
+    wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 .
 
 wds:P121-3D3A51FC-89CC-5C97-A7B5-319E9F517202
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P121-A4D2F672-6868-5B43-B15B-1C56178B77CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P121
     a owl:ObjectProperty .

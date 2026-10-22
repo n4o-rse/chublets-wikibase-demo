@@ -59,7 +59,7 @@ dist:P237-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P237, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1090"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2460"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P237.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P237
     schema:name "software add on"@en ;
     wikibase:claim p:P237 ;
     wikibase:directClaim wdt:P237 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P237 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P237 ;
@@ -85,13 +85,37 @@ wd:P237
     wikibase:referenceValue prv:P237 ;
     wikibase:statementProperty ps:P237 ;
     wikibase:statementValue psv:P237 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "software add on"@en ;
     skos:prefLabel "software add on"@en ;
     p:P2 wds:P237-E4FA99D7-0A99-5080-AF63-A4B75B0C31B9 ;
+    p:P9 wds:P237-2FE2F193-C218-5187-82BA-87C1429ED353 ;
+    p:P10 wds:P237-5CE6B449-57D0-5224-8147-9BF01AF999D1 ;
     p:P101 wds:P237-CB1CA6A3-30CA-5A93-A10E-12626F3FD622 ;
+    p:P102 wds:P237-080AC7C1-E08F-5BA1-B8EF-97765E7CA44F ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "softwareAddOn" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "softwareAddOn" ;
+    wdt:P102 "softwareAddOn" .
+
+wds:P237-2FE2F193-C218-5187-82BA-87C1429ED353
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P237-5CE6B449-57D0-5224-8147-9BF01AF999D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
+wds:P237-080AC7C1-E08F-5BA1-B8EF-97765E7CA44F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "softwareAddOn" .
 
 wds:P237-CB1CA6A3-30CA-5A93-A10E-12626F3FD622
     a wikibase:BestRank,

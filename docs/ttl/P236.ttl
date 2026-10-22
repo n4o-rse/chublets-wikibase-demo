@@ -59,7 +59,7 @@ dist:P236-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P236, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1072"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1457"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P236.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P236
     schema:name "role name"@en ;
     wikibase:claim p:P236 ;
     wikibase:directClaim wdt:P236 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P236 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P236 ;
@@ -85,13 +85,15 @@ wd:P236
     wikibase:referenceValue prv:P236 ;
     wikibase:statementProperty ps:P236 ;
     wikibase:statementValue psv:P236 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "role name"@en ;
     skos:prefLabel "role name"@en ;
     p:P2 wds:P236-5DC31A6A-3C2C-5F19-931E-6E66A6D5747D ;
     p:P101 wds:P236-9DF31166-CCA6-5881-B671-CF0F471E38F5 ;
+    p:P102 wds:P236-A88F556B-69B2-5965-8EB4-660EF5EBD75F ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "roleName" .
+    wdt:P101 "roleName" ;
+    wdt:P102 "roleName" .
 
 wds:P236-5DC31A6A-3C2C-5F19-931E-6E66A6D5747D
     a wikibase:BestRank,
@@ -104,6 +106,12 @@ wds:P236-9DF31166-CCA6-5881-B671-CF0F471E38F5
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "roleName" .
+
+wds:P236-A88F556B-69B2-5965-8EB4-660EF5EBD75F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "roleName" .
 
 p:P236
     a owl:ObjectProperty .

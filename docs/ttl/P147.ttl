@@ -39,7 +39,7 @@ data:P147
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P147 ;
-    dcterms:title "SoftWare Hash IDentifier (SWHID)"@en ;
+    dcterms:title "SoftWare Hash IDentifier"@en ;
     schema:about wd:P147 ;
     dcat:distribution dist:P147-html,
         dist:P147-json,
@@ -59,7 +59,7 @@ dist:P147-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P147, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1610"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2093"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P147.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P147-ttl
 
 wd:P147
     a wikibase:Property ;
-    schema:name "SoftWare Hash IDentifier (SWHID)"@en ;
+    schema:name "SoftWare Hash IDentifier"@en ;
     wikibase:claim p:P147 ;
     wikibase:directClaim wdt:P147 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,19 +85,27 @@ wd:P147
     wikibase:referenceValue prv:P147 ;
     wikibase:statementProperty ps:P147 ;
     wikibase:statementValue psv:P147 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "SoftWare Hash IDentifier (SWHID)"@en ;
-    skos:prefLabel "SoftWare Hash IDentifier (SWHID)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "SoftWare Hash IDentifier"@en ;
+    skos:prefLabel "SoftWare Hash IDentifier"@en ;
     p:P2 wds:P147-986E90D6-C108-5B0E-B22A-B5B5E9C950BD ;
     p:P4 wds:P147-FD6C08B7-D5D4-5B84-AAA6-92B400DB8653 ;
+    p:P9 wds:P147-83131549-5791-5A8B-8AFE-194E6A031E77 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P6138" .
+    wdt:P4 "P6138" ;
+    wdt:P9 wd:Q100 .
 
 wds:P147-986E90D6-C108-5B0E-B22A-B5B5E9C950BD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P147-83131549-5791-5A8B-8AFE-194E6A031E77
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P147-FD6C08B7-D5D4-5B84-AAA6-92B400DB8653
     a wikibase:BestRank,

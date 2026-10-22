@@ -59,7 +59,7 @@ dist:P247-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P247, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1587"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2078"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P247.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,21 @@ wd:P247
     wikibase:referenceValue prv:P247 ;
     wikibase:statementProperty ps:P247 ;
     wikibase:statementValue psv:P247 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "title"@en ;
     skos:prefLabel "title"@en ;
     p:P2 wds:P247-AF730590-272E-58F9-83F6-B483328858F0 ;
     p:P4 wds:P247-680273CC-388B-51CD-ABF1-8370BBC3FE27 ;
+    p:P9 wds:P247-36B1A3AD-8DB6-5A6B-A4A4-D480CF1F30B2 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1476" .
+    wdt:P4 "P1476" ;
+    wdt:P9 wd:Q100 .
+
+wds:P247-36B1A3AD-8DB6-5A6B-A4A4-D480CF1F30B2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P247-680273CC-388B-51CD-ABF1-8370BBC3FE27
     a wikibase:BestRank,

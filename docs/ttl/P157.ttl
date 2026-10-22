@@ -59,7 +59,7 @@ dist:P157-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P157, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1589"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2569"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P157.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,35 @@ wd:P157
     wikibase:referenceValue prv:P157 ;
     wikibase:statementProperty ps:P157 ;
     wikibase:statementValue psv:P157 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "archives at"@en ;
     skos:prefLabel "archives at"@en ;
     p:P2 wds:P157-843E99A0-D1A1-5781-A8C2-4EC82C4A3F5C ;
     p:P4 wds:P157-E4F9AA03-7ED8-57DF-928D-DB76923E5EBC ;
+    p:P9 wds:P157-90937D3E-5C1B-53E3-99FF-2759A23A1BA6 ;
+    p:P10 wds:P157-81B802D9-21A5-55F8-BB23-365BBA22EF33 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P485" .
+    wdt:P4 "P485" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P157-81B802D9-21A5-55F8-BB23-365BBA22EF33
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P157-843E99A0-D1A1-5781-A8C2-4EC82C4A3F5C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P157-90937D3E-5C1B-53E3-99FF-2759A23A1BA6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P157-E4F9AA03-7ED8-57DF-928D-DB76923E5EBC
     a wikibase:BestRank,

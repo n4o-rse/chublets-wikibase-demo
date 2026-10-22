@@ -59,7 +59,7 @@ dist:P112-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P112, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1810"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2689"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P112.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P112
     schema:name "description"@en ;
     wikibase:claim p:P112 ;
     wikibase:directClaim wdt:P112 ;
-    wikibase:identifiers "2"^^xsd:integer ;
+    wikibase:identifiers "4"^^xsd:integer ;
     wikibase:novalue wdno:P112 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P112 ;
@@ -85,23 +85,39 @@ wd:P112
     wikibase:referenceValue prv:P112 ;
     wikibase:statementProperty ps:P112 ;
     wikibase:statementValue psv:P112 ;
-    wikibase:statements "4"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "description"@en ;
     skos:prefLabel "description"@en ;
     p:P2 wds:P112-F20A9C4B-2AC9-5DCA-825E-7278EFD51911 ;
+    p:P9 wds:P112-B4CD3B6B-BA02-5A20-A679-49AEB48A1FF3 ;
     p:P100 wds:P112-EDC27DE4-936F-50F2-AF0B-F409E7DCD48F,
         wds:P112-FAB213C1-1AFD-5840-A1F4-B37B99B24AFB ;
     p:P101 wds:P112-4DAFD286-CF7B-5C74-AE38-478018A4102F ;
+    p:P102 wds:P112-7ABD6942-1B8D-5B24-ADD2-DD5FCDEDF28A ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P973",
         "P1343" ;
-    wdt:P101 "description" .
+    wdt:P101 "description" ;
+    wdt:P102 "description" .
 
 wds:P112-4DAFD286-CF7B-5C74-AE38-478018A4102F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "description" .
+
+wds:P112-7ABD6942-1B8D-5B24-ADD2-DD5FCDEDF28A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "description" .
+
+wds:P112-B4CD3B6B-BA02-5A20-A679-49AEB48A1FF3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P112-EDC27DE4-936F-50F2-AF0B-F409E7DCD48F
     a wikibase:BestRank,

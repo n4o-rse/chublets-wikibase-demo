@@ -59,7 +59,7 @@ dist:P128-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P128, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1477"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2367"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P128.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P128
     schema:name "application sub category"@en ;
     wikibase:claim p:P128 ;
     wikibase:directClaim wdt:P128 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P128 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P128 ;
@@ -85,15 +85,25 @@ wd:P128
     wikibase:referenceValue prv:P128 ;
     wikibase:statementProperty ps:P128 ;
     wikibase:statementValue psv:P128 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "application sub category"@en ;
     skos:prefLabel "application sub category"@en ;
     p:P2 wds:P128-50DBCC20-FED6-5D69-9092-64AE7CF5CBA9 ;
+    p:P9 wds:P128-EDBDFCAA-F4A1-5A35-8001-616E0E9BC55D ;
     p:P100 wds:P128-D71762B1-5AC7-5C45-B826-B8CA00FD0629 ;
     p:P101 wds:P128-CAF2169F-C868-5953-BADE-D1A98269EE44 ;
+    p:P102 wds:P128-3A0E2C74-7502-5825-9CCB-BACF1D12D1DD ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P921" ;
-    wdt:P101 "applicationSubCategory" .
+    wdt:P101 "applicationSubCategory" ;
+    wdt:P102 "applicationSubCategory" .
+
+wds:P128-3A0E2C74-7502-5825-9CCB-BACF1D12D1DD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "applicationSubCategory" .
 
 wds:P128-50DBCC20-FED6-5D69-9092-64AE7CF5CBA9
     a wikibase:BestRank,
@@ -112,6 +122,12 @@ wds:P128-D71762B1-5AC7-5C45-B826-B8CA00FD0629
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P921" .
+
+wds:P128-EDBDFCAA-F4A1-5A35-8001-616E0E9BC55D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P128
     a owl:ObjectProperty .

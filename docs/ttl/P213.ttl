@@ -59,7 +59,7 @@ dist:P213-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P213, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1587"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2076"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P213.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,21 @@ wd:P213
     wikibase:referenceValue prv:P213 ;
     wikibase:statementProperty ps:P213 ;
     wikibase:statementValue psv:P213 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "member of"@en ;
     skos:prefLabel "member of"@en ;
     p:P2 wds:P213-A5610735-376A-5D28-A8C6-38C4C400AA14 ;
     p:P4 wds:P213-07ABA407-1DBF-59AA-A264-E637209354BF ;
+    p:P10 wds:P213-00CE3990-0916-5B50-99A8-6A201D814E71 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P463" .
+    wdt:P4 "P463" ;
+    wdt:P10 wd:Q3 .
+
+wds:P213-00CE3990-0916-5B50-99A8-6A201D814E71
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P213-07ABA407-1DBF-59AA-A264-E637209354BF
     a wikibase:BestRank,

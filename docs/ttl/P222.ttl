@@ -59,7 +59,7 @@ dist:P222-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P222, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1821"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2699"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P222.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P222
     schema:name "person identifier"@en ;
     wikibase:claim p:P222 ;
     wikibase:directClaim wdt:P222 ;
-    wikibase:identifiers "2"^^xsd:integer ;
+    wikibase:identifiers "4"^^xsd:integer ;
     wikibase:novalue wdno:P222 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P222 ;
@@ -85,17 +85,21 @@ wd:P222
     wikibase:referenceValue prv:P222 ;
     wikibase:statementProperty ps:P222 ;
     wikibase:statementValue psv:P222 ;
-    wikibase:statements "4"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "person identifier"@en ;
     skos:prefLabel "person identifier"@en ;
     p:P2 wds:P222-8B32E633-8CC8-5E1D-B280-8841E1EE0872 ;
+    p:P9 wds:P222-99101C41-6E95-5134-A5C5-164BB41E428D ;
     p:P100 wds:P222-0D30C784-59A5-5846-A6C1-4906AA405A39,
         wds:P222-A01D3490-84BA-56B7-BEE5-ABB0DD2672BC ;
     p:P101 wds:P222-83141869-274B-5542-A12A-0FB458B73E72 ;
+    p:P102 wds:P222-FEF84DE4-1155-5987-A766-8A38F8285161 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P496",
         "P2037" ;
-    wdt:P101 "identifier (Person)" .
+    wdt:P101 "identifier (Person)" ;
+    wdt:P102 "identifier" .
 
 wds:P222-0D30C784-59A5-5846-A6C1-4906AA405A39
     a wikibase:BestRank,
@@ -109,6 +113,12 @@ wds:P222-8B32E633-8CC8-5E1D-B280-8841E1EE0872
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
 
+wds:P222-99101C41-6E95-5134-A5C5-164BB41E428D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P222-83141869-274B-5542-A12A-0FB458B73E72
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -120,6 +130,12 @@ wds:P222-A01D3490-84BA-56B7-BEE5-ABB0DD2672BC
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P496" .
+
+wds:P222-FEF84DE4-1155-5987-A766-8A38F8285161
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "identifier" .
 
 p:P222
     a owl:ObjectProperty .

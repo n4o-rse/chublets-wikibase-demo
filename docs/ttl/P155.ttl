@@ -59,7 +59,7 @@ dist:P155-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P155, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1069"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1453"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P155.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P155
     schema:name "address"@en ;
     wikibase:claim p:P155 ;
     wikibase:directClaim wdt:P155 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P155 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P155 ;
@@ -85,13 +85,15 @@ wd:P155
     wikibase:referenceValue prv:P155 ;
     wikibase:statementProperty ps:P155 ;
     wikibase:statementValue psv:P155 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "address"@en ;
     skos:prefLabel "address"@en ;
     p:P2 wds:P155-45B08754-0265-527A-B481-77E2E2581C91 ;
     p:P101 wds:P155-2C280701-C1FA-528F-A24B-C1FA4DE958F1 ;
+    p:P102 wds:P155-BE3823FB-3A78-5039-B1AC-76BC361227DE ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "address" .
+    wdt:P101 "address" ;
+    wdt:P102 "address" .
 
 wds:P155-2C280701-C1FA-528F-A24B-C1FA4DE958F1
     a wikibase:BestRank,
@@ -104,6 +106,12 @@ wds:P155-45B08754-0265-527A-B481-77E2E2581C91
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P155-BE3823FB-3A78-5039-B1AC-76BC361227DE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "address" .
 
 p:P155
     a owl:ObjectProperty .

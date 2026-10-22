@@ -59,7 +59,7 @@ dist:P132-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P132, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1466"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1962"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P132.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P132
     schema:name "development status"@en ;
     wikibase:claim p:P132 ;
     wikibase:directClaim wdt:P132 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P132 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P132 ;
@@ -85,13 +85,15 @@ wd:P132
     wikibase:referenceValue prv:P132 ;
     wikibase:statementProperty ps:P132 ;
     wikibase:statementValue psv:P132 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "development status"@en ;
     skos:prefLabel "development status"@en ;
     p:P2 wds:P132-73361694-113B-5B54-9C57-1A25365ACEAB ;
+    p:P9 wds:P132-B3B095B7-44FE-53FD-9E6C-B457803B3F13 ;
     p:P100 wds:P132-90A57071-E877-59BF-9153-343BA43A04AC ;
     p:P101 wds:P132-8BD6A953-08FA-5C62-8A06-A6F0B386DC6D ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P548" ;
     wdt:P101 "developmentStatus" .
 
@@ -112,6 +114,12 @@ wds:P132-73361694-113B-5B54-9C57-1A25365ACEAB
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P132-B3B095B7-44FE-53FD-9E6C-B457803B3F13
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P132
     a owl:ObjectProperty .

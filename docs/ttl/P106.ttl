@@ -59,7 +59,7 @@ dist:P106-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P106, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1588"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2568"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P106.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,29 @@ wd:P106
     wikibase:referenceValue prv:P106 ;
     wikibase:statementProperty ps:P106 ;
     wikibase:statementValue psv:P106 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "collection"@en ;
     skos:prefLabel "collection"@en ;
     p:P2 wds:P106-A5A3C9E7-4596-57A4-BF63-C51A3FEB6241 ;
     p:P4 wds:P106-01310B20-7378-504B-A219-ABE8C8B70A06 ;
+    p:P9 wds:P106-301DEB4D-7D1C-52A0-AE8B-9DD0C0143ED1 ;
+    p:P10 wds:P106-940EFA95-F4F2-53CE-8E70-920F24B3D7EF ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P195" .
+    wdt:P4 "P195" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P106-301DEB4D-7D1C-52A0-AE8B-9DD0C0143ED1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P106-940EFA95-F4F2-53CE-8E70-920F24B3D7EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P106-01310B20-7378-504B-A219-ABE8C8B70A06
     a wikibase:BestRank,

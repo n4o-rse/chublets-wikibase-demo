@@ -59,7 +59,7 @@ dist:P142-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P142, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1976"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3348"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P142.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P142
     schema:name "operating system"@en ;
     wikibase:claim p:P142 ;
     wikibase:directClaim wdt:P142 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P142 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P142 ;
@@ -85,15 +85,27 @@ wd:P142
     wikibase:referenceValue prv:P142 ;
     wikibase:statementProperty ps:P142 ;
     wikibase:statementValue psv:P142 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "operating system"@en ;
     skos:prefLabel "operating system"@en ;
     p:P2 wds:P142-7D1B4224-A3D9-524A-A69C-8566A23B7FC7 ;
     p:P4 wds:P142-4391AB14-B323-5811-A742-7C5602982059 ;
+    p:P9 wds:P142-89CCD0F9-6504-5580-98B2-D128050A8D80 ;
+    p:P10 wds:P142-A91ABFD8-8ABC-5945-9225-70D6BF83BC5D ;
     p:P101 wds:P142-EFC235BF-DA85-5B77-81AF-AE12153C3AD8 ;
+    p:P102 wds:P142-3B435E95-3BF8-5010-A9B6-24B8B3523899 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P306" ;
-    wdt:P101 "operatingSystem" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "operatingSystem" ;
+    wdt:P102 "operatingSystem" .
+
+wds:P142-3B435E95-3BF8-5010-A9B6-24B8B3523899
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "operatingSystem" .
 
 wds:P142-7D1B4224-A3D9-524A-A69C-8566A23B7FC7
     a wikibase:BestRank,
@@ -101,12 +113,24 @@ wds:P142-7D1B4224-A3D9-524A-A69C-8566A23B7FC7
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
 
+wds:P142-89CCD0F9-6504-5580-98B2-D128050A8D80
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P142-4391AB14-B323-5811-A742-7C5602982059
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:54ffdb627ddb2dc3eb75ffd6476f9e5143882c94 ;
     ps:P4 "P306" .
+
+wds:P142-A91ABFD8-8ABC-5945-9225-70D6BF83BC5D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P142-EFC235BF-DA85-5B77-81AF-AE12153C3AD8
     a wikibase:BestRank,

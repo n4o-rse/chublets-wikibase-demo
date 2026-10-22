@@ -59,7 +59,7 @@ dist:P221-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P221, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1077"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1956"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P221.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P221
     schema:name "permissions"@en ;
     wikibase:claim p:P221 ;
     wikibase:directClaim wdt:P221 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P221 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P221 ;
@@ -85,19 +85,35 @@ wd:P221
     wikibase:referenceValue prv:P221 ;
     wikibase:statementProperty ps:P221 ;
     wikibase:statementValue psv:P221 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "permissions"@en ;
     skos:prefLabel "permissions"@en ;
     p:P2 wds:P221-06DE0CE9-AE0F-5B65-B2AC-BF1413BF45F2 ;
+    p:P9 wds:P221-BAF804E5-40D8-5D78-89B0-0D0D537C1C8D ;
     p:P101 wds:P221-E8A2BB97-C716-5F0C-93FA-DF274C363530 ;
+    p:P102 wds:P221-9FDBDE79-5AAF-5C0F-945C-DECBD3594732 ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "permissions" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "permissions" ;
+    wdt:P102 "permissions" .
 
 wds:P221-06DE0CE9-AE0F-5B65-B2AC-BF1413BF45F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P221-9FDBDE79-5AAF-5C0F-945C-DECBD3594732
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "permissions" .
+
+wds:P221-BAF804E5-40D8-5D78-89B0-0D0D537C1C8D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P221-E8A2BB97-C716-5F0C-93FA-DF274C363530
     a wikibase:BestRank,

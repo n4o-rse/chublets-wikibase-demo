@@ -56,6 +56,26 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P174$8F26ABA4-EE68-5C2D-BC84-E797D635015D",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "external-id",
@@ -64,7 +84,7 @@
   "labels": {
     "en": {
       "language": "en",
-      "value": "distribution package ID P3112 (label to be filled)"
+      "value": "DistroWatch ID"
     }
   },
   "type": "property"

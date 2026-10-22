@@ -56,6 +56,26 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P147$83131549-5791-5A8B-8AFE-194E6A031E77",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "external-id",
@@ -64,7 +84,7 @@
   "labels": {
     "en": {
       "language": "en",
-      "value": "SoftWare Hash IDentifier (SWHID)"
+      "value": "SoftWare Hash IDentifier"
     }
   },
   "type": "property"

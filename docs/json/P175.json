@@ -56,6 +56,26 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P175$43D65449-11B5-5BC9-946C-89708BB6F091",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "external-id",
@@ -64,7 +84,7 @@
   "labels": {
     "en": {
       "language": "en",
-      "value": "distribution package ID P3418 (label to be filled)"
+      "value": "Google Play Store app ID"
     }
   },
   "type": "property"

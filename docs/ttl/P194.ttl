@@ -59,7 +59,7 @@ dist:P194-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P194, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2329"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3705"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P194.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P194
     schema:name "file format"@en ;
     wikibase:claim p:P194 ;
     wikibase:directClaim wdt:P194 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "4"^^xsd:integer ;
     wikibase:novalue wdno:P194 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P194 ;
@@ -85,23 +85,35 @@ wd:P194
     wikibase:referenceValue prv:P194 ;
     wikibase:statementProperty ps:P194 ;
     wikibase:statementValue psv:P194 ;
-    wikibase:statements "4"^^xsd:integer ;
+    wikibase:statements "7"^^xsd:integer ;
     rdfs:label "file format"@en ;
     skos:prefLabel "file format"@en ;
     p:P2 wds:P194-3D904649-2740-51D0-8D93-27A46D7FE7F5 ;
     p:P4 wds:P194-86F6D240-5331-57B9-A71B-978098B9E71F ;
+    p:P9 wds:P194-296B0CD3-700E-542C-8D8C-79D032574318 ;
+    p:P10 wds:P194-05D2DD19-A915-56A6-B5E6-BF416D1FD9E6 ;
     p:P101 wds:P194-81A4028F-2CED-5F59-B3DE-0C48B1663827,
         wds:P194-A6F0658E-EFB2-5E00-ADED-DED057649024 ;
+    p:P102 wds:P194-F6921884-5E4C-5D92-833C-1AEC270B4C9A ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P2701" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
     wdt:P101 "encodingFormat",
-        "fileFormat" .
+        "fileFormat" ;
+    wdt:P102 "encodingFormat" .
 
 wds:P194-3D904649-2740-51D0-8D93-27A46D7FE7F5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P194-05D2DD19-A915-56A6-B5E6-BF416D1FD9E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P194-81A4028F-2CED-5F59-B3DE-0C48B1663827
     a wikibase:BestRank,
@@ -116,11 +128,23 @@ wds:P194-86F6D240-5331-57B9-A71B-978098B9E71F
     prov:wasDerivedFrom wdref:4adda74d4fdde1ed55dbf82f1259c78a7a43eac1 ;
     ps:P4 "P2701" .
 
+wds:P194-296B0CD3-700E-542C-8D8C-79D032574318
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P194-A6F0658E-EFB2-5E00-ADED-DED057649024
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "encodingFormat" .
+
+wds:P194-F6921884-5E4C-5D92-833C-1AEC270B4C9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "encodingFormat" .
 
 wdref:4adda74d4fdde1ed55dbf82f1259c78a7a43eac1
     a wikibase:Reference ;

@@ -59,7 +59,7 @@ dist:P101-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P101, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1110"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1602"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P101.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,26 +78,34 @@ wd:P101
     wikibase:directClaim wdt:P101 ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:novalue wdno:P101 ;
-    wikibase:propertyType wikibase:String ;
+    wikibase:propertyType wikibase:ExternalId ;
     wikibase:qualifier pq:P101 ;
     wikibase:qualifierValue pqv:P101 ;
     wikibase:reference pr:P101 ;
     wikibase:referenceValue prv:P101 ;
     wikibase:statementProperty ps:P101 ;
     wikibase:statementValue psv:P101 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "equivalent CodeMeta term"@en ;
     skos:prefLabel "equivalent CodeMeta term"@en ;
     p:P2 wds:P101-71864FD3-EB13-5D18-A24F-09AA2B16DC5B ;
     p:P5 wds:P101-0C08C679-B54A-5D75-AAA0-AE208ED418BD ;
+    p:P9 wds:P101-5F1E6FCB-965C-5573-ABD7-4D259D444AA2 ;
     wdt:P2 wd:Q2 ;
-    wdt:P5 "https://codemeta.github.io/terms/$1" .
+    wdt:P5 "https://codemeta.github.io/terms/$1" ;
+    wdt:P9 wd:Q2 .
 
 wds:P101-0C08C679-B54A-5D75-AAA0-AE208ED418BD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P5 "https://codemeta.github.io/terms/$1" .
+
+wds:P101-5F1E6FCB-965C-5573-ABD7-4D259D444AA2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q2 .
 
 wds:P101-71864FD3-EB13-5D18-A24F-09AA2B16DC5B
     a wikibase:BestRank,

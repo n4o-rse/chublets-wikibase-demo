@@ -59,7 +59,7 @@ dist:P201-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P201, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1604"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2584"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P201.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,23 @@ wd:P201
     wikibase:referenceValue prv:P201 ;
     wikibase:statementProperty ps:P201 ;
     wikibase:statementValue psv:P201 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "GUI toolkit or framework"@en ;
     skos:prefLabel "GUI toolkit or framework"@en ;
     p:P2 wds:P201-17049F4F-4039-5725-A0A4-86D6CF01F2C3 ;
     p:P4 wds:P201-11073F96-248C-5E41-98DC-F690978F5153 ;
+    p:P9 wds:P201-5ABE5AEB-2C81-5D8B-A243-3228C08CA54B ;
+    p:P10 wds:P201-80815072-3A1C-5B7E-AD7F-4287196528E6 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1414" .
+    wdt:P4 "P1414" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P201-5ABE5AEB-2C81-5D8B-A243-3228C08CA54B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P201-11073F96-248C-5E41-98DC-F690978F5153
     a wikibase:BestRank,
@@ -105,6 +115,12 @@ wds:P201-17049F4F-4039-5725-A0A4-86D6CF01F2C3
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P201-80815072-3A1C-5B7E-AD7F-4287196528E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wdref:953cf5fab7a1cc86d3e713bc24e8d5f540283582
     a wikibase:Reference ;

@@ -59,7 +59,7 @@ dist:P241-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P241, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1597"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2088"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P241.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,19 +85,27 @@ wd:P241
     wikibase:referenceValue prv:P241 ;
     wikibase:statementProperty ps:P241 ;
     wikibase:statementValue psv:P241 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "SourceForge project"@en ;
     skos:prefLabel "SourceForge project"@en ;
     p:P2 wds:P241-9BBF5302-EB32-5B6A-A4AC-DD3E5F97E761 ;
     p:P4 wds:P241-BB7581F4-5F70-5A2A-8B49-3D4F5B8D07FA ;
+    p:P9 wds:P241-8661D83D-3AC8-55DA-B289-0D268A98B4CD ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P2209" .
+    wdt:P4 "P2209" ;
+    wdt:P9 wd:Q100 .
 
 wds:P241-9BBF5302-EB32-5B6A-A4AC-DD3E5F97E761
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P241-8661D83D-3AC8-55DA-B289-0D268A98B4CD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P241-BB7581F4-5F70-5A2A-8B49-3D4F5B8D07FA
     a wikibase:BestRank,

@@ -59,7 +59,7 @@ dist:P160-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P160, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1607"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2587"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P160.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,23 @@ wd:P160
     wikibase:referenceValue prv:P160 ;
     wikibase:statementProperty ps:P160 ;
     wikibase:statementValue psv:P160 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "binding of software library"@en ;
     skos:prefLabel "binding of software library"@en ;
     p:P2 wds:P160-34465D02-8A3C-529F-A85A-6200D6B9D61A ;
     p:P4 wds:P160-D0A5CAAB-8D9B-51BA-85E9-3A0859FFAD8B ;
+    p:P9 wds:P160-1D2CD764-7243-5E20-B72C-8E096933B06D ;
+    p:P10 wds:P160-FC5240BB-3F3F-5B5F-99F2-09343657D3E8 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1372" .
+    wdt:P4 "P1372" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P160-1D2CD764-7243-5E20-B72C-8E096933B06D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P160-34465D02-8A3C-529F-A85A-6200D6B9D61A
     a wikibase:BestRank,
@@ -105,6 +115,12 @@ wds:P160-D0A5CAAB-8D9B-51BA-85E9-3A0859FFAD8B
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:15d9de6713b8429f1fde2c9fa40f216e238fea39 ;
     ps:P4 "P1372" .
+
+wds:P160-FC5240BB-3F3F-5B5F-99F2-09343657D3E8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wdref:15d9de6713b8429f1fde2c9fa40f216e238fea39
     a wikibase:Reference ;

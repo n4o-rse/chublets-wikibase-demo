@@ -59,7 +59,7 @@ dist:P163-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P163, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1085"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1967"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P163.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P163
     schema:name "code sample type"@en ;
     wikibase:claim p:P163 ;
     wikibase:directClaim wdt:P163 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P163 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P163 ;
@@ -85,13 +85,17 @@ wd:P163
     wikibase:referenceValue prv:P163 ;
     wikibase:statementProperty ps:P163 ;
     wikibase:statementValue psv:P163 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "code sample type"@en ;
     skos:prefLabel "code sample type"@en ;
     p:P2 wds:P163-9F1B8FB7-1EFB-522B-B6BF-EBE6A30AB632 ;
+    p:P9 wds:P163-2005B92A-C102-5D80-8430-EAA61F38CB1A ;
     p:P101 wds:P163-5CB85EAF-C593-5F5B-83A1-E6C787D26BCB ;
+    p:P102 wds:P163-686F6988-A3D0-57E5-9C17-5838C297F868 ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "codeSampleType" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "codeSampleType" ;
+    wdt:P102 "codeSampleType" .
 
 wds:P163-5CB85EAF-C593-5F5B-83A1-E6C787D26BCB
     a wikibase:BestRank,
@@ -104,6 +108,18 @@ wds:P163-9F1B8FB7-1EFB-522B-B6BF-EBE6A30AB632
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P163-686F6988-A3D0-57E5-9C17-5838C297F868
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "codeSampleType" .
+
+wds:P163-2005B92A-C102-5D80-8430-EAA61F38CB1A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P163
     a owl:ObjectProperty .

@@ -59,7 +59,7 @@ dist:P210-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P210, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1469"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2454"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P210.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P210
     schema:name "is source code of"@en ;
     wikibase:claim p:P210 ;
     wikibase:directClaim wdt:P210 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P210 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P210 ;
@@ -85,13 +85,17 @@ wd:P210
     wikibase:referenceValue prv:P210 ;
     wikibase:statementProperty ps:P210 ;
     wikibase:statementValue psv:P210 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "is source code of"@en ;
     skos:prefLabel "is source code of"@en ;
     p:P2 wds:P210-F0E1D9E9-63A7-50B7-A59F-F4D59CD6871A ;
+    p:P9 wds:P210-68832D80-CF59-54C0-B6B1-E821DAF456A9 ;
+    p:P10 wds:P210-7B82320E-97A1-5BA6-85B3-55ED76017663 ;
     p:P100 wds:P210-3D7DC985-D308-55D2-BFD2-2F0D684D3F4A ;
     p:P101 wds:P210-77FDE010-5A94-5099-8551-9AF4FDD67639 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
     wdt:P100 "P361" ;
     wdt:P101 "isSourceCodeOf" .
 
@@ -101,11 +105,23 @@ wds:P210-3D7DC985-D308-55D2-BFD2-2F0D684D3F4A
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P361" .
 
+wds:P210-7B82320E-97A1-5BA6-85B3-55ED76017663
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
+
 wds:P210-77FDE010-5A94-5099-8551-9AF4FDD67639
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "isSourceCodeOf" .
+
+wds:P210-68832D80-CF59-54C0-B6B1-E821DAF456A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P210-F0E1D9E9-63A7-50B7-A59F-F4D59CD6871A
     a wikibase:BestRank,

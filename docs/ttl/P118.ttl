@@ -59,7 +59,7 @@ dist:P118-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P118, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1605"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2585"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P118.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,23 @@ wd:P118
     wikibase:referenceValue prv:P118 ;
     wikibase:statementProperty ps:P118 ;
     wikibase:statementValue psv:P118 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "maintained by WikiProject"@en ;
     skos:prefLabel "maintained by WikiProject"@en ;
     p:P2 wds:P118-EBE04349-6BE4-5BC1-9855-50FD1E8B2BE9 ;
     p:P4 wds:P118-56FED10B-42E4-5FE0-B468-8267485C5002 ;
+    p:P9 wds:P118-7550826B-E29F-5291-ACCA-50657904B267 ;
+    p:P10 wds:P118-5C73B1EE-037B-5682-8DA3-9A68EEE1E2E6 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P6104" .
+    wdt:P4 "P6104" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
+
+wds:P118-5C73B1EE-037B-5682-8DA3-9A68EEE1E2E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P118-56FED10B-42E4-5FE0-B468-8267485C5002
     a wikibase:BestRank,
@@ -99,6 +109,12 @@ wds:P118-56FED10B-42E4-5FE0-B468-8267485C5002
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:45b98e14c28ed416bea040779093dac62a3d7b22 ;
     ps:P4 "P6104" .
+
+wds:P118-7550826B-E29F-5291-ACCA-50657904B267
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P118-EBE04349-6BE4-5BC1-9855-50FD1E8B2BE9
     a wikibase:BestRank,

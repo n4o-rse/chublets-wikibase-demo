@@ -59,7 +59,7 @@ dist:P232-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P232, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1456"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2336"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P232.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P232
     schema:name "release notes"@en ;
     wikibase:claim p:P232 ;
     wikibase:directClaim wdt:P232 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P232 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P232 ;
@@ -85,21 +85,31 @@ wd:P232
     wikibase:referenceValue prv:P232 ;
     wikibase:statementProperty ps:P232 ;
     wikibase:statementValue psv:P232 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "release notes"@en ;
     skos:prefLabel "release notes"@en ;
     p:P2 wds:P232-BE2298B8-FBE0-55C8-A691-B35CEA642FA9 ;
+    p:P9 wds:P232-EC8752C7-6C54-5356-A248-297C1BBF951E ;
     p:P100 wds:P232-DCD14A44-213E-5D09-A541-007368AD4C14 ;
     p:P101 wds:P232-27183824-A1F5-58A6-B9EA-CA5A2B4045AB ;
+    p:P102 wds:P232-AF60F0BD-30BB-5A6C-9132-36DECE649F6B ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P973" ;
-    wdt:P101 "releaseNotes" .
+    wdt:P101 "releaseNotes" ;
+    wdt:P102 "releaseNotes" .
 
 wds:P232-27183824-A1F5-58A6-B9EA-CA5A2B4045AB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "releaseNotes" .
+
+wds:P232-AF60F0BD-30BB-5A6C-9132-36DECE649F6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "releaseNotes" .
 
 wds:P232-BE2298B8-FBE0-55C8-A691-B35CEA642FA9
     a wikibase:BestRank,
@@ -112,6 +122,12 @@ wds:P232-DCD14A44-213E-5D09-A541-007368AD4C14
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P973" .
+
+wds:P232-EC8752C7-6C54-5356-A248-297C1BBF951E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P232
     a owl:ObjectProperty .

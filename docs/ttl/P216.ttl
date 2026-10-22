@@ -59,7 +59,7 @@ dist:P216-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P216, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1587"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2078"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P216.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,21 @@ wd:P216
     wikibase:referenceValue prv:P216 ;
     wikibase:statementProperty ps:P216 ;
     wikibase:statementValue psv:P216 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "official blog URL"@en ;
     skos:prefLabel "official blog URL"@en ;
     p:P2 wds:P216-7E5D1EB9-4EE3-50B3-BC8C-936B5600CFDA ;
     p:P4 wds:P216-A3CD837B-B3D5-5AEC-A9D1-95B246600E5B ;
+    p:P9 wds:P216-1E114463-C0EF-5AE7-AA90-0E24400CC4BB ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P1581" .
+    wdt:P4 "P1581" ;
+    wdt:P9 wd:Q100 .
+
+wds:P216-1E114463-C0EF-5AE7-AA90-0E24400CC4BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P216-7E5D1EB9-4EE3-50B3-BC8C-936B5600CFDA
     a wikibase:BestRank,

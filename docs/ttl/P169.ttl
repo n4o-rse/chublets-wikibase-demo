@@ -59,7 +59,7 @@ dist:P169-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P169, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1099"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1988"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P169.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P169
     schema:name "countries not supported"@en ;
     wikibase:claim p:P169 ;
     wikibase:directClaim wdt:P169 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P169 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P169 ;
@@ -85,13 +85,29 @@ wd:P169
     wikibase:referenceValue prv:P169 ;
     wikibase:statementProperty ps:P169 ;
     wikibase:statementValue psv:P169 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "countries not supported"@en ;
     skos:prefLabel "countries not supported"@en ;
     p:P2 wds:P169-A3E2E283-DA78-5E6C-93B7-EE04DE265136 ;
+    p:P9 wds:P169-530F81DC-0710-5DEC-B517-9166F9139792 ;
     p:P101 wds:P169-A1F1AF0F-7B78-59EB-9814-B0C8F9336E0D ;
+    p:P102 wds:P169-49C955A2-E130-541D-A69D-10E7CB666482 ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "countriesNotSupported" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "countriesNotSupported" ;
+    wdt:P102 "countriesNotSupported" .
+
+wds:P169-49C955A2-E130-541D-A69D-10E7CB666482
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "countriesNotSupported" .
+
+wds:P169-530F81DC-0710-5DEC-B517-9166F9139792
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P169-A1F1AF0F-7B78-59EB-9814-B0C8F9336E0D
     a wikibase:BestRank,

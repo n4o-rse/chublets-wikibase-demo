@@ -39,7 +39,7 @@ data:P179
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P179 ;
-    dcterms:title "distribution package ID P3473 (label to be filled)"@en ;
+    dcterms:title "Ubuntu package"@en ;
     schema:about wd:P179 ;
     dcat:distribution dist:P179-html,
         dist:P179-json,
@@ -59,7 +59,7 @@ dist:P179-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P179, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2083"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P179.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P179-ttl
 
 wd:P179
     a wikibase:Property ;
-    schema:name "distribution package ID P3473 (label to be filled)"@en ;
+    schema:name "Ubuntu package"@en ;
     wikibase:claim p:P179 ;
     wikibase:directClaim wdt:P179 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,13 +85,21 @@ wd:P179
     wikibase:referenceValue prv:P179 ;
     wikibase:statementProperty ps:P179 ;
     wikibase:statementValue psv:P179 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3473 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3473 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Ubuntu package"@en ;
+    skos:prefLabel "Ubuntu package"@en ;
     p:P2 wds:P179-D7233D63-2F63-5865-81A2-C45EB0E22E49 ;
     p:P4 wds:P179-4604C5B2-A0B5-5973-A424-B98C5AEA9DC3 ;
+    p:P9 wds:P179-364ABC94-99BB-5EC8-B92E-A8240A21BD56 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3473" .
+    wdt:P4 "P3473" ;
+    wdt:P9 wd:Q100 .
+
+wds:P179-364ABC94-99BB-5EC8-B92E-A8240A21BD56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P179-4604C5B2-A0B5-5973-A424-B98C5AEA9DC3
     a wikibase:BestRank,

@@ -56,6 +56,26 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P180$3CBFD3FF-7FD9-558D-A8B2-B4CE5448FA44",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
   "datatype": "external-id",
@@ -64,7 +84,7 @@
   "labels": {
     "en": {
       "language": "en",
-      "value": "distribution package ID P3499 (label to be filled)"
+      "value": "Gentoo package"
     }
   },
   "type": "property"

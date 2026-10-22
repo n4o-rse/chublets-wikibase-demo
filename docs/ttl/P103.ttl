@@ -59,7 +59,7 @@ dist:P103-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P103, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1469"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2356"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P103.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P103
     schema:name "application category"@en ;
     wikibase:claim p:P103 ;
     wikibase:directClaim wdt:P103 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P103 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P103 ;
@@ -85,15 +85,25 @@ wd:P103
     wikibase:referenceValue prv:P103 ;
     wikibase:statementProperty ps:P103 ;
     wikibase:statementValue psv:P103 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "application category"@en ;
     skos:prefLabel "application category"@en ;
     p:P2 wds:P103-37BCC465-5966-584B-AEAF-3AD2317783AB ;
+    p:P9 wds:P103-A20526C7-01DE-5FD0-94A1-3D1EB3533764 ;
     p:P100 wds:P103-69FF7162-8D67-5CA8-86BA-BE712DDA79CE ;
     p:P101 wds:P103-FC2B0BD8-1C7B-5455-BDA5-08B7FFAC86FE ;
+    p:P102 wds:P103-30FDDE1F-253D-5036-8DD1-C1571E868F6F ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P31" ;
-    wdt:P101 "applicationCategory" .
+    wdt:P101 "applicationCategory" ;
+    wdt:P102 "applicationCategory" .
+
+wds:P103-30FDDE1F-253D-5036-8DD1-C1571E868F6F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "applicationCategory" .
 
 wds:P103-37BCC465-5966-584B-AEAF-3AD2317783AB
     a wikibase:BestRank,
@@ -106,6 +116,12 @@ wds:P103-69FF7162-8D67-5CA8-86BA-BE712DDA79CE
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P31" .
+
+wds:P103-A20526C7-01DE-5FD0-94A1-3D1EB3533764
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P103-FC2B0BD8-1C7B-5455-BDA5-08B7FFAC86FE
     a wikibase:BestRank,

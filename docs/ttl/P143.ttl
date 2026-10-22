@@ -59,7 +59,7 @@ dist:P143-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P143, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1968"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3340"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P143.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P143
     schema:name "platform"@en ;
     wikibase:claim p:P143 ;
     wikibase:directClaim wdt:P143 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P143 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P143 ;
@@ -85,15 +85,21 @@ wd:P143
     wikibase:referenceValue prv:P143 ;
     wikibase:statementProperty ps:P143 ;
     wikibase:statementValue psv:P143 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "platform"@en ;
     skos:prefLabel "platform"@en ;
     p:P2 wds:P143-84904C2C-8841-50F7-A5D8-18AA4FD66019 ;
     p:P4 wds:P143-E776BEC9-7C67-580E-81E8-FACABAC7CCFE ;
+    p:P9 wds:P143-2843B62D-9339-5DB3-9F71-8A09779908D7 ;
+    p:P10 wds:P143-BE868183-B035-5524-A1DD-939F8C0315BF ;
     p:P101 wds:P143-01BF7C0E-27C0-57B8-BD9E-F4615EA37C17 ;
+    p:P102 wds:P143-523A4823-25A3-5D71-B8C0-E3A6EB1C8F9F ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P400" ;
-    wdt:P101 "runtimePlatform" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "runtimePlatform" ;
+    wdt:P102 "runtimePlatform" .
 
 wds:P143-01BF7C0E-27C0-57B8-BD9E-F4615EA37C17
     a wikibase:BestRank,
@@ -101,11 +107,29 @@ wds:P143-01BF7C0E-27C0-57B8-BD9E-F4615EA37C17
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "runtimePlatform" .
 
+wds:P143-523A4823-25A3-5D71-B8C0-E3A6EB1C8F9F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "runtimePlatform" .
+
+wds:P143-2843B62D-9339-5DB3-9F71-8A09779908D7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P143-84904C2C-8841-50F7-A5D8-18AA4FD66019
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P143-BE868183-B035-5524-A1DD-939F8C0315BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P143-E776BEC9-7C67-580E-81E8-FACABAC7CCFE
     a wikibase:BestRank,

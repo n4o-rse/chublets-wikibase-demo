@@ -56,9 +56,29 @@
         ],
         "type": "statement"
       }
+    ],
+    "P9": [
+      {
+        "id": "P224$736D0F4A-00BA-5A89-8EFA-C1A5D8CED2AD",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
     ]
   },
-  "datatype": "wikibase-item",
+  "datatype": "quantity",
   "descriptions": {},
   "id": "P224",
   "labels": {

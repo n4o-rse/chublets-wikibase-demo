@@ -59,7 +59,7 @@ dist:P167-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P167, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1469"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2841"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P167.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P167
     schema:name "copyright holder"@en ;
     wikibase:claim p:P167 ;
     wikibase:directClaim wdt:P167 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P167 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P167 ;
@@ -85,15 +85,21 @@ wd:P167
     wikibase:referenceValue prv:P167 ;
     wikibase:statementProperty ps:P167 ;
     wikibase:statementValue psv:P167 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
     rdfs:label "copyright holder"@en ;
     skos:prefLabel "copyright holder"@en ;
     p:P2 wds:P167-75896716-7286-5588-A128-7D86ABB9FE09 ;
+    p:P9 wds:P167-B06D6EC5-AF0A-5965-8D23-14EB892EBBF3 ;
+    p:P10 wds:P167-C5F4671E-482D-5DD4-A615-803FC6C8F9D0 ;
     p:P100 wds:P167-D5EB3784-D1A1-5C8E-AC8B-39D479B9C19B ;
     p:P101 wds:P167-87CDEBF0-3757-5400-9485-E6204F301847 ;
+    p:P102 wds:P167-92189568-D367-5491-8765-5B1E43BC03FF ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
     wdt:P100 "P123" ;
-    wdt:P101 "copyrightHolder" .
+    wdt:P101 "copyrightHolder" ;
+    wdt:P102 "copyrightHolder" .
 
 wds:P167-87CDEBF0-3757-5400-9485-E6204F301847
     a wikibase:BestRank,
@@ -106,6 +112,24 @@ wds:P167-75896716-7286-5588-A128-7D86ABB9FE09
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P167-92189568-D367-5491-8765-5B1E43BC03FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "copyrightHolder" .
+
+wds:P167-B06D6EC5-AF0A-5965-8D23-14EB892EBBF3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P167-C5F4671E-482D-5DD4-A615-803FC6C8F9D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P167-D5EB3784-D1A1-5C8E-AC8B-39D479B9C19B
     a wikibase:BestRank,

@@ -59,7 +59,7 @@ dist:P141-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P141, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1967"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2846"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P141.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P141
     schema:name "official demo URL"@en ;
     wikibase:claim p:P141 ;
     wikibase:directClaim wdt:P141 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P141 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P141 ;
@@ -85,15 +85,31 @@ wd:P141
     wikibase:referenceValue prv:P141 ;
     wikibase:statementProperty ps:P141 ;
     wikibase:statementValue psv:P141 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "official demo URL"@en ;
     skos:prefLabel "official demo URL"@en ;
     p:P2 wds:P141-F7D42731-C801-562B-98C2-392197C15F84 ;
     p:P4 wds:P141-E0671023-AB72-5323-8FCB-7C88DAD1DFB3 ;
+    p:P9 wds:P141-A89DEAE3-6A18-5FC2-83DC-36644537FCC2 ;
     p:P101 wds:P141-E0FB2D0F-89B4-554A-B4F8-571A14F147FF ;
+    p:P102 wds:P141-8150D76A-4266-584E-B048-8B5B3C70EE9E ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P11201" ;
-    wdt:P101 "relatedLink" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "relatedLink" ;
+    wdt:P102 "relatedLink" .
+
+wds:P141-8150D76A-4266-584E-B048-8B5B3C70EE9E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "relatedLink" .
+
+wds:P141-A89DEAE3-6A18-5FC2-83DC-36644537FCC2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P141-E0FB2D0F-89B4-554A-B4F8-571A14F147FF
     a wikibase:BestRank,

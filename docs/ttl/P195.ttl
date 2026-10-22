@@ -59,7 +59,7 @@ dist:P195-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P195, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1589"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2569"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P195.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,17 @@ wd:P195
     wikibase:referenceValue prv:P195 ;
     wikibase:statementProperty ps:P195 ;
     wikibase:statementValue psv:P195 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "followed by"@en ;
     skos:prefLabel "followed by"@en ;
     p:P2 wds:P195-963E4883-DB6F-5DEC-9A35-03D36F09A548 ;
     p:P4 wds:P195-D54CD02E-4185-5C24-8DC3-3AF17A0F5CEA ;
+    p:P9 wds:P195-CA37EE3F-FDAC-50E6-AD54-4835F8F189C7 ;
+    p:P10 wds:P195-E6442B20-0A96-5E4D-A94B-160C47FBEF40 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P156" .
+    wdt:P4 "P156" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
 
 wds:P195-963E4883-DB6F-5DEC-9A35-03D36F09A548
     a wikibase:BestRank,
@@ -99,12 +103,24 @@ wds:P195-963E4883-DB6F-5DEC-9A35-03D36F09A548
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
 
+wds:P195-CA37EE3F-FDAC-50E6-AD54-4835F8F189C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
 wds:P195-D54CD02E-4185-5C24-8DC3-3AF17A0F5CEA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:4e79512999afb396d4d00d7390bc52f4d3ae25ad ;
     ps:P4 "P156" .
+
+wds:P195-E6442B20-0A96-5E4D-A94B-160C47FBEF40
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wdref:4e79512999afb396d4d00d7390bc52f4d3ae25ad
     a wikibase:Reference ;

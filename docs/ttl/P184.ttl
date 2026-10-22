@@ -59,7 +59,7 @@ dist:P184-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P184, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1953"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2335"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P184.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P184
     schema:name "email address"@en ;
     wikibase:claim p:P184 ;
     wikibase:directClaim wdt:P184 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P184 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P184 ;
@@ -85,15 +85,23 @@ wd:P184
     wikibase:referenceValue prv:P184 ;
     wikibase:statementProperty ps:P184 ;
     wikibase:statementValue psv:P184 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "email address"@en ;
     skos:prefLabel "email address"@en ;
     p:P2 wds:P184-266A6EB4-9A71-5C39-A285-5B2852164CD9 ;
     p:P4 wds:P184-6319EDA4-F3C5-5E7B-A43F-CEFC35792244 ;
     p:P101 wds:P184-DBFD0CE6-4D2C-5ED4-8138-23626ADE0DB0 ;
+    p:P102 wds:P184-4F016638-26DB-5C2F-BEB5-938648EF326A ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P968" ;
-    wdt:P101 "email" .
+    wdt:P101 "email" ;
+    wdt:P102 "email" .
+
+wds:P184-4F016638-26DB-5C2F-BEB5-938648EF326A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "email" .
 
 wds:P184-266A6EB4-9A71-5C39-A285-5B2852164CD9
     a wikibase:BestRank,

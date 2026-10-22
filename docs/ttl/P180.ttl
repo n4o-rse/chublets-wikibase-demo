@@ -39,7 +39,7 @@ data:P180
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P180 ;
-    dcterms:title "distribution package ID P3499 (label to be filled)"@en ;
+    dcterms:title "Gentoo package"@en ;
     schema:about wd:P180 ;
     dcat:distribution dist:P180-html,
         dist:P180-json,
@@ -59,7 +59,7 @@ dist:P180-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P180, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2083"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P180.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P180-ttl
 
 wd:P180
     a wikibase:Property ;
-    schema:name "distribution package ID P3499 (label to be filled)"@en ;
+    schema:name "Gentoo package"@en ;
     wikibase:claim p:P180 ;
     wikibase:directClaim wdt:P180 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,13 +85,21 @@ wd:P180
     wikibase:referenceValue prv:P180 ;
     wikibase:statementProperty ps:P180 ;
     wikibase:statementValue psv:P180 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3499 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3499 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Gentoo package"@en ;
+    skos:prefLabel "Gentoo package"@en ;
     p:P2 wds:P180-6EEFC28F-DCB0-57E3-838E-2B11AA0B6554 ;
     p:P4 wds:P180-B3F65E59-63D4-560D-A51D-0BFFD43D6E90 ;
+    p:P9 wds:P180-3CBFD3FF-7FD9-558D-A8B2-B4CE5448FA44 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3499" .
+    wdt:P4 "P3499" ;
+    wdt:P9 wd:Q100 .
+
+wds:P180-3CBFD3FF-7FD9-558D-A8B2-B4CE5448FA44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P180-6EEFC28F-DCB0-57E3-838E-2B11AA0B6554
     a wikibase:BestRank,

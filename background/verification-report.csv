@@ -1,0 +1,247 @@
+id,kind,field,expected,live,verdict
+P10,entity,label,video,video,ok
+P10,entity,datatype,commonsMedia,commonsMedia,ok
+P18,entity,label,image,image,ok
+P18,entity,datatype,commonsMedia,commonsMedia,ok
+P31,entity,label,instance of,instance of,ok
+P31,entity,datatype,wikibase-item,wikibase-item,ok
+P50,entity,label,author,author,ok
+P50,entity,datatype,wikibase-item,wikibase-item,ok
+P98,entity,label,editor,editor,ok
+P98,entity,datatype,wikibase-item,wikibase-item,ok
+P101,entity,label,field of work,field of work,ok
+P101,entity,datatype,wikibase-item,wikibase-item,ok
+P123,entity,label,publisher,publisher,ok
+P123,entity,datatype,wikibase-item,wikibase-item,ok
+P126,entity,label,maintained by,maintained by,ok
+P126,entity,datatype,wikibase-item,wikibase-item,ok
+P144,entity,label,based on,based on,ok
+P144,entity,datatype,wikibase-item,wikibase-item,ok
+P154,entity,label,logo image,logo image,ok
+P154,entity,datatype,commonsMedia,commonsMedia,ok
+P155,entity,label,follows,follows,ok
+P155,entity,datatype,wikibase-item,wikibase-item,ok
+P156,entity,label,followed by,followed by,ok
+P156,entity,datatype,wikibase-item,wikibase-item,ok
+P162,entity,label,producer,producer,ok
+P162,entity,datatype,wikibase-item,wikibase-item,ok
+P166,entity,label,award received,award received,ok
+P166,entity,datatype,wikibase-item,wikibase-item,ok
+P170,entity,label,creator,creator,ok
+P170,entity,datatype,wikibase-item,wikibase-item,ok
+P178,entity,label,developer,developer,ok
+P178,entity,datatype,wikibase-item,wikibase-item,ok
+P179,entity,label,part of the series,part of the series,ok
+P179,entity,datatype,wikibase-item,wikibase-item,ok
+P195,entity,label,collection,collection,ok
+P195,entity,datatype,wikibase-item,wikibase-item,ok
+P217,entity,label,inventory number,inventory number,ok
+P217,entity,datatype,string,string,ok
+P275,entity,label,copyright license,copyright license,ok
+P275,entity,datatype,wikibase-item,wikibase-item,ok
+P277,entity,label,programmed in,programmed in,ok
+P277,entity,datatype,wikibase-item,wikibase-item,ok
+P279,entity,label,subclass of,subclass of,ok
+P279,entity,datatype,wikibase-item,wikibase-item,ok
+P306,entity,label,operating system,operating system,ok
+P306,entity,datatype,wikibase-item,wikibase-item,ok
+P348,entity,label,software version identifier,software version identifier,ok
+P348,entity,datatype,string,string,ok
+P356,entity,label,DOI,DOI,ok
+P356,entity,datatype,external-id,external-id,ok
+P361,entity,label,part of,part of,ok
+P361,entity,datatype,wikibase-item,wikibase-item,ok
+P400,entity,label,platform,platform,ok
+P400,entity,datatype,wikibase-item,wikibase-item,ok
+P408,entity,label,software engine,software engine,ok
+P408,entity,datatype,wikibase-item,wikibase-item,ok
+P437,entity,label,distribution format,distribution format,ok
+P437,entity,datatype,wikibase-item,wikibase-item,ok
+P463,entity,label,member of,member of,ok
+P463,entity,datatype,wikibase-item,wikibase-item,ok
+P479,entity,label,input device,input device,ok
+P479,entity,datatype,wikibase-item,wikibase-item,ok
+P485,entity,label,archives at,archives at,ok
+P485,entity,datatype,wikibase-item,wikibase-item,ok
+P496,entity,label,ORCID iD,ORCID iD,ok
+P496,entity,datatype,external-id,external-id,ok
+P527,entity,label,has part(s),has part(s),ok
+P527,entity,datatype,wikibase-item,wikibase-item,ok
+P548,entity,label,version type,version type,ok
+P548,entity,datatype,wikibase-item,wikibase-item,ok
+P571,entity,label,inception,inception,ok
+P571,entity,datatype,time,time,ok
+P577,entity,label,publication date,publication date,ok
+P577,entity,datatype,time,time,ok
+P580,entity,label,start time,start time,ok
+P580,entity,datatype,time,time,ok
+P582,entity,label,end time,end time,ok
+P582,entity,datatype,time,time,ok
+P585,entity,label,point in time,point in time,ok
+P585,entity,datatype,time,time,ok
+P629,entity,label,edition or translation of,"version, edition or translation of",DIFF
+P629,entity,datatype,wikibase-item,wikibase-item,ok
+P734,entity,label,family name,family name,ok
+P734,entity,datatype,wikibase-item,wikibase-item,ok
+P735,entity,label,given name,given name,ok
+P735,entity,datatype,wikibase-item,wikibase-item,ok
+P737,entity,label,influenced by,influenced by,ok
+P737,entity,datatype,wikibase-item,wikibase-item,ok
+P767,entity,label,contributor to the creative work or subject,contributor to the creative work or subject,ok
+P767,entity,datatype,wikibase-item,wikibase-item,ok
+P800,entity,label,notable work,notable work,ok
+P800,entity,datatype,wikibase-item,wikibase-item,ok
+P813,entity,label,retrieved,retrieved,ok
+P813,entity,datatype,time,time,ok
+P856,entity,label,official website,official website,ok
+P856,entity,datatype,url,url,ok
+P859,entity,label,sponsor,sponsor,ok
+P859,entity,datatype,wikibase-item,wikibase-item,ok
+P921,entity,label,main subject,main subject,ok
+P921,entity,datatype,wikibase-item,wikibase-item,ok
+P968,entity,label,email address,email address,ok
+P968,entity,datatype,url,url,ok
+P973,entity,label,described at URL,described at URL,ok
+P973,entity,datatype,url,url,ok
+P1065,entity,label,archive URL,archive URL,ok
+P1065,entity,datatype,url,url,ok
+P1072,entity,label,readable file format,readable file format,ok
+P1072,entity,datatype,wikibase-item,wikibase-item,ok
+P1073,entity,label,writable file format,writable file format,ok
+P1073,entity,datatype,wikibase-item,wikibase-item,ok
+P1163,entity,label,media type,media type,ok
+P1163,entity,datatype,string,string,ok
+P1269,entity,label,facet of,facet of,ok
+P1269,entity,datatype,wikibase-item,wikibase-item,ok
+P1324,entity,label,source code repository URL,source code repository URL,ok
+P1324,entity,datatype,url,url,ok
+P1343,entity,label,described by source,described by source,ok
+P1343,entity,datatype,wikibase-item,wikibase-item,ok
+P1372,entity,label,binding of software library,binding of software library,ok
+P1372,entity,datatype,wikibase-item,wikibase-item,ok
+P1401,entity,label,issue tracker URL,issue tracker URL,ok
+P1401,entity,datatype,url,url,ok
+P1414,entity,label,GUI toolkit or framework,GUI toolkit or framework,ok
+P1414,entity,datatype,wikibase-item,wikibase-item,ok
+P1416,entity,label,affiliation,affiliation,ok
+P1416,entity,datatype,wikibase-item,wikibase-item,ok
+P1448,entity,label,official name,official name,ok
+P1448,entity,datatype,monolingualtext,monolingualtext,ok
+P1476,entity,label,title,title,ok
+P1476,entity,datatype,monolingualtext,monolingualtext,ok
+P1545,entity,label,series ordinal,series ordinal,ok
+P1545,entity,datatype,string,string,ok
+P1547,entity,label,depends on software,depends on software,ok
+P1547,entity,datatype,wikibase-item,wikibase-item,ok
+P1552,entity,label,has characteristic,has characteristic,ok
+P1552,entity,datatype,wikibase-item,wikibase-item,ok
+P1581,entity,label,official blog URL,official blog URL,ok
+P1581,entity,datatype,url,url,ok
+P1613,entity,label,IRC channel URL,IRC channel URL,ok
+P1613,entity,datatype,url,url,ok
+P1641,entity,label,port,port,ok
+P1641,entity,datatype,wikibase-item,quantity,DIFF
+P1705,entity,label,native label,native label,ok
+P1705,entity,datatype,monolingualtext,monolingualtext,ok
+P1972,entity,label,Open Hub ID,Open Hub ID,ok
+P1972,entity,datatype,external-id,external-id,ok
+P2037,entity,label,GitHub username,GitHub account,DIFF
+P2037,entity,datatype,external-id,external-id,ok
+P2078,entity,label,user manual URL,user manual URL,ok
+P2078,entity,datatype,url,url,ok
+P2093,entity,label,author name string,author name string,ok
+P2093,entity,datatype,string,string,ok
+P2159,entity,label,computes solution to,computes solution to,ok
+P2159,entity,datatype,wikibase-item,wikibase-item,ok
+P2209,entity,label,SourceForge project,SourceForge project,ok
+P2209,entity,datatype,external-id,external-id,ok
+P2284,entity,label,price,price,ok
+P2284,entity,datatype,quantity,quantity,ok
+P2537,entity,label,Free Software Directory entry,Free Software Directory entry,ok
+P2537,entity,datatype,external-id,external-id,ok
+P2561,entity,label,name,name,ok
+P2561,entity,datatype,monolingualtext,monolingualtext,ok
+P2701,entity,label,file format,file format,ok
+P2701,entity,datatype,wikibase-item,wikibase-item,ok
+P2860,entity,label,cites work,cites work,ok
+P2860,entity,datatype,wikibase-item,wikibase-item,ok
+P2888,entity,label,exact match,exact match,ok
+P2888,entity,datatype,url,url,ok
+P2960,entity,label,archive date,archive date,ok
+P2960,entity,datatype,time,time,ok
+P2992,entity,label,software quality assurance,software quality assurance,ok
+P2992,entity,datatype,wikibase-item,wikibase-item,ok
+P3033,entity,label,package management system,package management system,ok
+P3033,entity,datatype,wikibase-item,wikibase-item,ok
+P3112,entity,label,distribution package ID P3112 (label to be filled),DistroWatch ID,DIFF
+P3112,entity,datatype,external-id,external-id,ok
+P3418,entity,label,distribution package ID P3418 (label to be filled),Google Play Store app ID,DIFF
+P3418,entity,datatype,external-id,external-id,ok
+P3442,entity,label,distribution package ID P3442 (label to be filled),Debian stable package,DIFF
+P3442,entity,datatype,external-id,external-id,ok
+P3454,entity,label,distribution package ID P3454 (label to be filled),Arch Linux package,DIFF
+P3454,entity,datatype,external-id,external-id,ok
+P3463,entity,label,distribution package ID P3463 (label to be filled),Fedora package,DIFF
+P3463,entity,datatype,external-id,external-id,ok
+P3473,entity,label,distribution package ID P3473 (label to be filled),Ubuntu package,DIFF
+P3473,entity,datatype,external-id,external-id,ok
+P3499,entity,label,distribution package ID P3499 (label to be filled),Gentoo package,DIFF
+P3499,entity,datatype,external-id,external-id,ok
+P3575,entity,label,data size,data size,ok
+P3575,entity,datatype,quantity,quantity,ok
+P3597,entity,label,distribution package ID P3597 (label to be filled),F-Droid package,DIFF
+P3597,entity,datatype,external-id,external-id,ok
+P4107,entity,label,Framalibre ID,Framalibre ID,ok
+P4107,entity,datatype,external-id,external-id,ok
+P4945,entity,label,download link,download URL,DIFF
+P4945,entity,datatype,url,url,ok
+P5017,entity,label,last update,last update,ok
+P5017,entity,datatype,time,time,ok
+P5196,entity,label,output device,output device,ok
+P5196,entity,datatype,wikibase-item,wikibase-item,ok
+P5565,entity,label,CRAN project,CRAN project,ok
+P5565,entity,datatype,external-id,external-id,ok
+P5568,entity,label,PyPI project,PyPI project,ok
+P5568,entity,datatype,external-id,external-id,ok
+P6104,entity,label,maintained by WikiProject,maintained by WikiProject,ok
+P6104,entity,datatype,wikibase-item,wikibase-item,ok
+P6138,entity,label,SoftWare Hash IDentifier (SWHID),SoftWare Hash IDentifier,DIFF
+P6138,entity,datatype,external-id,external-id,ok
+P6830,entity,label,swMATH work ID,swMATH work ID,ok
+P6830,entity,datatype,external-id,external-id,ok
+P8324,entity,label,funder,funder,ok
+P8324,entity,datatype,wikibase-item,wikibase-item,ok
+P8423,entity,label,version control system,version control system,ok
+P8423,entity,datatype,wikibase-item,wikibase-item,ok
+P10627,entity,label,web interface software,web interface software,ok
+P10627,entity,datatype,wikibase-item,wikibase-item,ok
+P11201,entity,label,official demo URL,official demo URL,ok
+P11201,entity,datatype,url,url,ok
+Q7397,entity,label,software,software,ok
+Q40056,entity,label,computer program,computer program,ok
+Q166142,entity,label,application software,application software,ok
+Q188860,entity,label,software library,software library,ok
+Q1070421,entity,label,script file,script file,ok
+Q95001953,entity,label,research software,research software,ok
+Q506883,entity,label,free and open-source software,free and open-source software,ok
+Q128751,entity,label,source code,source code,ok
+Q20826013,entity,label,software version,software version,ok
+Q9143,entity,label,programming language,programming language,ok
+Q4027615,entity,label,informatics,informatics,ok
+Q281039,entity,label,abandonware,abandonware,ok
+Q151885,entity,label,concept,concept,ok
+Q2804309,entity,label,stable version,stable version,ok
+Q3295609,entity,label,beta version,beta version,ok
+Q21683863,entity,label,obsolete version,obsolete version,ok
+Q186055,entity,label,Git,Git,ok
+Q364,entity,label,GitHub,GitHub,ok
+Q141115627,entity,label,chublet,chublet,ok
+Q73899440,entity,label,Little Minion,Little Minion,ok
+Q141115774,entity,label,chublets.software,chublets.software,ok
+Q141169143,entity,label,WikiProject chublets.software,WikiProject chublets.software,ok
+Q141190255,entity,label,open-archaeo (Repository),open-archaeo (Repository),ok
+Q66606154,entity,label,Florian Thiery,Florian Thiery,ok
+Q88865971,entity,label,Allard W. Mees,Allard Wijnand Mees,DIFF
+Q73901110,entity,label,CAA SIG Data-Dragon,CAA SIG Data-Dragon,ok
+Q1765672,entity,label,Akregator,Akregator,ok
+Q8045810,entity,label,YAGO,YAGO,ok

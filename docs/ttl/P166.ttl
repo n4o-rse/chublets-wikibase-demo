@@ -59,7 +59,7 @@ dist:P166-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P166, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1095"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1591"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P166.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P166
     schema:name "continuous integration"@en ;
     wikibase:claim p:P166 ;
     wikibase:directClaim wdt:P166 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "1"^^xsd:integer ;
     wikibase:novalue wdno:P166 ;
     wikibase:propertyType wikibase:Url ;
     wikibase:qualifier pq:P166 ;
@@ -85,13 +85,21 @@ wd:P166
     wikibase:referenceValue prv:P166 ;
     wikibase:statementProperty ps:P166 ;
     wikibase:statementValue psv:P166 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "continuous integration"@en ;
     skos:prefLabel "continuous integration"@en ;
     p:P2 wds:P166-E4CAC6B5-23DE-5685-ADF4-9E723A39D41D ;
+    p:P9 wds:P166-26F8132F-D8DC-5A22-B04A-AB8B773A92B6 ;
     p:P101 wds:P166-ED98B1D4-1E2A-5F4B-888B-DCC4DF170CFF ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P101 "continuousIntegration" .
+
+wds:P166-26F8132F-D8DC-5A22-B04A-AB8B773A92B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P166-E4CAC6B5-23DE-5685-ADF4-9E723A39D41D
     a wikibase:BestRank,

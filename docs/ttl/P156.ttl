@@ -59,7 +59,7 @@ dist:P156-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P156, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1461"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2338"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P156.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P156
     schema:name "affiliation"@en ;
     wikibase:claim p:P156 ;
     wikibase:directClaim wdt:P156 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P156 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P156 ;
@@ -85,15 +85,25 @@ wd:P156
     wikibase:referenceValue prv:P156 ;
     wikibase:statementProperty ps:P156 ;
     wikibase:statementValue psv:P156 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "affiliation"@en ;
     skos:prefLabel "affiliation"@en ;
     p:P2 wds:P156-F6DBD371-9C74-558C-8577-C260C08A6C62 ;
+    p:P10 wds:P156-2B1DD9FA-A0B1-5570-A4FB-DE3FB4189E55 ;
     p:P100 wds:P156-347151CA-7A0D-5436-BCB4-BBD748ACBC8E ;
     p:P101 wds:P156-C4219AF6-D167-5C55-9ADA-04E4E56417FB ;
+    p:P102 wds:P156-D2B2E82F-4E35-5081-B31A-0D94D5079217 ;
     wdt:P2 wd:Q2 ;
+    wdt:P10 wd:Q3 ;
     wdt:P100 "P1416" ;
-    wdt:P101 "affiliation" .
+    wdt:P101 "affiliation" ;
+    wdt:P102 "affiliation" .
+
+wds:P156-2B1DD9FA-A0B1-5570-A4FB-DE3FB4189E55
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wds:P156-347151CA-7A0D-5436-BCB4-BBD748ACBC8E
     a wikibase:BestRank,
@@ -106,6 +116,12 @@ wds:P156-C4219AF6-D167-5C55-9ADA-04E4E56417FB
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "affiliation" .
+
+wds:P156-D2B2E82F-4E35-5081-B31A-0D94D5079217
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "affiliation" .
 
 wds:P156-F6DBD371-9C74-558C-8577-C260C08A6C62
     a wikibase:BestRank,

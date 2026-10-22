@@ -59,7 +59,7 @@ dist:P204-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P204, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1957"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2835"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P204.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P204
     schema:name "image"@en ;
     wikibase:claim p:P204 ;
     wikibase:directClaim wdt:P204 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P204 ;
     wikibase:propertyType wikibase:CommonsMedia ;
     wikibase:qualifier pq:P204 ;
@@ -85,15 +85,19 @@ wd:P204
     wikibase:referenceValue prv:P204 ;
     wikibase:statementProperty ps:P204 ;
     wikibase:statementValue psv:P204 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "image"@en ;
     skos:prefLabel "image"@en ;
     p:P2 wds:P204-62CDEAD4-29E1-572D-BFA4-1D66D4F19011 ;
     p:P4 wds:P204-6872BDA7-195B-5B99-8BD6-6C81F4C1E588 ;
+    p:P9 wds:P204-CA6577FC-2348-59C3-BC4B-AB0BCC7EE41D ;
     p:P101 wds:P204-DFFBB59F-A44C-5977-9513-ACFE068C0BA7 ;
+    p:P102 wds:P204-29484534-B5EC-5231-9A58-ED57648CA572 ;
     wdt:P2 wd:Q2 ;
     wdt:P4 "P18" ;
-    wdt:P101 "screenshot" .
+    wdt:P9 wd:Q100 ;
+    wdt:P101 "screenshot" ;
+    wdt:P102 "screenshot" .
 
 wds:P204-62CDEAD4-29E1-572D-BFA4-1D66D4F19011
     a wikibase:BestRank,
@@ -107,6 +111,18 @@ wds:P204-6872BDA7-195B-5B99-8BD6-6C81F4C1E588
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c8313c204bb8e206001414c170ac4edd54d33878 ;
     ps:P4 "P18" .
+
+wds:P204-29484534-B5EC-5231-9A58-ED57648CA572
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "screenshot" .
+
+wds:P204-CA6577FC-2348-59C3-BC4B-AB0BCC7EE41D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P204-DFFBB59F-A44C-5977-9513-ACFE068C0BA7
     a wikibase:BestRank,

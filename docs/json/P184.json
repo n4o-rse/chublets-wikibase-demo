@@ -5,12 +5,28 @@
       {
         "id": "P184$DBFD0CE6-4D2C-5ED4-8138-23626ADE0DB0",
         "mainsnak": {
-          "datatype": "string",
+          "datatype": "external-id",
           "datavalue": {
             "type": "string",
             "value": "email"
           },
           "property": "P101",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P102": [
+      {
+        "id": "P184$4F016638-26DB-5C2F-BEB5-938648EF326A",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "email"
+          },
+          "property": "P102",
           "snaktype": "value"
         },
         "rank": "normal",

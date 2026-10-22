@@ -39,7 +39,7 @@ data:P177
     dcterms:isPartOf cat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:subject wd:P177 ;
-    dcterms:title "distribution package ID P3454 (label to be filled)"@en ;
+    dcterms:title "Arch Linux package"@en ;
     schema:about wd:P177 ;
     dcat:distribution dist:P177-html,
         dist:P177-json,
@@ -59,7 +59,7 @@ dist:P177-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P177, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1628"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2087"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P177.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -73,7 +73,7 @@ dist:P177-ttl
 
 wd:P177
     a wikibase:Property ;
-    schema:name "distribution package ID P3454 (label to be filled)"@en ;
+    schema:name "Arch Linux package"@en ;
     wikibase:claim p:P177 ;
     wikibase:directClaim wdt:P177 ;
     wikibase:identifiers "1"^^xsd:integer ;
@@ -85,13 +85,21 @@ wd:P177
     wikibase:referenceValue prv:P177 ;
     wikibase:statementProperty ps:P177 ;
     wikibase:statementValue psv:P177 ;
-    wikibase:statements "2"^^xsd:integer ;
-    rdfs:label "distribution package ID P3454 (label to be filled)"@en ;
-    skos:prefLabel "distribution package ID P3454 (label to be filled)"@en ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Arch Linux package"@en ;
+    skos:prefLabel "Arch Linux package"@en ;
     p:P2 wds:P177-E7A0BC77-608B-5402-9EA2-4E07D20A46A4 ;
     p:P4 wds:P177-0198BF9C-F653-5144-A2E2-FCBAAFBABCC6 ;
+    p:P9 wds:P177-1AD90976-805A-5AE8-A9CC-32298C388540 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P3454" .
+    wdt:P4 "P3454" ;
+    wdt:P9 wd:Q100 .
+
+wds:P177-1AD90976-805A-5AE8-A9CC-32298C388540
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P177-0198BF9C-F653-5144-A2E2-FCBAAFBABCC6
     a wikibase:BestRank,

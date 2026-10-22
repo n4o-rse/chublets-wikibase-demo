@@ -59,7 +59,7 @@ dist:P152-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P152, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1445"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2320"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P152.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P152
     schema:name "version"@en ;
     wikibase:claim p:P152 ;
     wikibase:directClaim wdt:P152 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "3"^^xsd:integer ;
     wikibase:novalue wdno:P152 ;
     wikibase:propertyType wikibase:String ;
     wikibase:qualifier pq:P152 ;
@@ -85,21 +85,31 @@ wd:P152
     wikibase:referenceValue prv:P152 ;
     wikibase:statementProperty ps:P152 ;
     wikibase:statementValue psv:P152 ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "version"@en ;
     skos:prefLabel "version"@en ;
     p:P2 wds:P152-0D30CD1C-9D86-5BBF-BA4F-265578CD5253 ;
+    p:P9 wds:P152-B18BA4C2-C0BA-58F2-AC6B-20F998381AE2 ;
     p:P100 wds:P152-468A11FB-2095-5208-88AB-E0D777F189F7 ;
     p:P101 wds:P152-5BFB2023-F6E7-54E3-8D00-19A44A7A0539 ;
+    p:P102 wds:P152-3F6F3FF0-B24E-5010-8041-2E615C588406 ;
     wdt:P2 wd:Q2 ;
+    wdt:P9 wd:Q100 ;
     wdt:P100 "P348" ;
-    wdt:P101 "version" .
+    wdt:P101 "version" ;
+    wdt:P102 "version" .
 
 wds:P152-0D30CD1C-9D86-5BBF-BA4F-265578CD5253
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P152-3F6F3FF0-B24E-5010-8041-2E615C588406
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "version" .
 
 wds:P152-5BFB2023-F6E7-54E3-8D00-19A44A7A0539
     a wikibase:BestRank,
@@ -112,6 +122,12 @@ wds:P152-468A11FB-2095-5208-88AB-E0D777F189F7
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P100 "P348" .
+
+wds:P152-B18BA4C2-C0BA-58F2-AC6B-20F998381AE2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 p:P152
     a owl:ObjectProperty .

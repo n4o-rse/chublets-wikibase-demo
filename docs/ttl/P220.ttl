@@ -59,7 +59,7 @@ dist:P220-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P220, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1596"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2576"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P220.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,13 +85,17 @@ wd:P220
     wikibase:referenceValue prv:P220 ;
     wikibase:statementProperty ps:P220 ;
     wikibase:statementValue psv:P220 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "4"^^xsd:integer ;
     rdfs:label "part of the series"@en ;
     skos:prefLabel "part of the series"@en ;
     p:P2 wds:P220-8D85FADF-ED31-5B5F-AA46-C89E5ABEF444 ;
     p:P4 wds:P220-2F5A5258-EF8C-5978-B84E-271C60762EA0 ;
+    p:P9 wds:P220-E1EA0464-4B77-51E0-8889-ED3982615D7D ;
+    p:P10 wds:P220-E9EB10B6-9B0A-595B-B59C-97534625C34D ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P179" .
+    wdt:P4 "P179" ;
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 .
 
 wds:P220-2F5A5258-EF8C-5978-B84E-271C60762EA0
     a wikibase:BestRank,
@@ -105,6 +109,18 @@ wds:P220-8D85FADF-ED31-5B5F-AA46-C89E5ABEF444
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wds:P220-E1EA0464-4B77-51E0-8889-ED3982615D7D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
+
+wds:P220-E9EB10B6-9B0A-595B-B59C-97534625C34D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 wdref:9d3f8d4cd7670d530766dc0c21fac761980c2c9a
     a wikibase:Reference ;

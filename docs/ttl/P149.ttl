@@ -59,7 +59,7 @@ dist:P149-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P149, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1091"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2462"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P149.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P149
     schema:name "supporting data"@en ;
     wikibase:claim p:P149 ;
     wikibase:directClaim wdt:P149 ;
-    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P149 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P149 ;
@@ -85,13 +85,25 @@ wd:P149
     wikibase:referenceValue prv:P149 ;
     wikibase:statementProperty ps:P149 ;
     wikibase:statementValue psv:P149 ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "supporting data"@en ;
     skos:prefLabel "supporting data"@en ;
     p:P2 wds:P149-169EAAF1-0765-5B08-82CD-A226857C2907 ;
+    p:P9 wds:P149-8AD5AFEB-C614-527D-9BD9-8A2EEE143496 ;
+    p:P10 wds:P149-E5C7C445-7866-5FBE-8DD3-DB09992EB3D0 ;
     p:P101 wds:P149-A50A791E-1D82-57F2-854D-FFBCEA23700F ;
+    p:P102 wds:P149-C6FBE536-14CE-5529-BFD0-C41213E17D6C ;
     wdt:P2 wd:Q2 ;
-    wdt:P101 "supportingData" .
+    wdt:P9 wd:Q100 ;
+    wdt:P10 wd:Q3 ;
+    wdt:P101 "supportingData" ;
+    wdt:P102 "supportingData" .
+
+wds:P149-8AD5AFEB-C614-527D-9BD9-8A2EEE143496
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P9 wd:Q100 .
 
 wds:P149-169EAAF1-0765-5B08-82CD-A226857C2907
     a wikibase:BestRank,
@@ -104,6 +116,18 @@ wds:P149-A50A791E-1D82-57F2-854D-FFBCEA23700F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P101 "supportingData" .
+
+wds:P149-C6FBE536-14CE-5529-BFD0-C41213E17D6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P102 "supportingData" .
+
+wds:P149-E5C7C445-7866-5FBE-8DD3-DB09992EB3D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P10 wd:Q3 .
 
 p:P149
     a owl:ObjectProperty .
