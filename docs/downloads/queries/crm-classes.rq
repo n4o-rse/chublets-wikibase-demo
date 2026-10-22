@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?class ?label ?crmClass WHERE {
+  ?class rdfs:subClassOf ?crmClass ;
+         rdfs:label ?label .
+  FILTER(STRSTARTS(STR(?crmClass), "http://www.cidoc-crm.org/"))
+  FILTER(LANG(?label) = "en")
+}
+ORDER BY ?label ?crmClass

@@ -67,6 +67,24 @@ as an error; each model warning names the file and line.
 `python main.py csv-fmt --check` only reports. Edit the tables with any editor, then run `python main.py --strict` and
 commit `data/`, `docs/` and `dist/` together.
 
+## CIDOC CRM
+
+`data/crm.csv` ties the classes of the model to CIDOC CRM without touching the tables: one row, `software` (Q100) is
+`crmdig:D14` (Software, a D1 Digital Object, an E73 Information Object). Research software, application software,
+software library, script file and chublet inherit it along `subclass of`; their pages say "from software". The RDF
+file carries `software rdfs:subClassOf crmdig:D14_Software` and the chain D14 to D1 to E73 in a section of its own.
+**Little Minion** (Q105, the pack's second parent of chublet) has no CRM class yet: its meaning is an open point
+(`background/starter-pack-open-points.md`), and `load` names it as unanchored. Needs `wikibase-static` 0.7.0.
+
+## CIDOC CRM
+
+`data/crm.csv` ties the classes of the model to CIDOC CRM without touching the tables. `software` (Q100) is
+`crmdig:D14` (Software, a D1 Digital Object, an E73 Information Object); research software, application software,
+software library, script file and chublet inherit it along `subclass of`, and their pages say "from software".
+**Little Minion** (Q105, the pack's second parent of chublet) hangs under the root class of the kernel, not under
+`software`, so it has a row of its own, also D14. The RDF file carries `rdfs:subClassOf crmdig:D14_Software` for both and
+the chain D14 to D1 to E73 in a section of its own. Needs `wikibase-static` 0.7.0.
+
 ## Where the model came from
 
 `tools/import_pack.py` made the tables once from the unzipped Starter Pack (v1.1, which adds the published ConnOSS crosswalk as source `S9`; the model is the same as in v1.0, only `background/` changed):

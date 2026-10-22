@@ -1,9 +1,10 @@
 # Q105: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.6.4; data as of unknown
+# Generated with wikibase-static 0.7.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
 @prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -107,3 +108,9 @@ wds:Q105-3186562A-3301-5FD5-9E53-4DE46874E9F6
 wdref:a5b3a9ce943ee42bd35b27cc7257d10ee75f4374
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Q73899440> .
+
+# CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv),
+# with the superclasses of an extension class up to its first class of the CIDOC CRM. Not part of the Wikibase data model.
+
+wd:Q105
+    rdfs:subClassOf crmdig:D14_Software .

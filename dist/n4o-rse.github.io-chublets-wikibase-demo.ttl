@@ -1,9 +1,11 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.6.4; data as of unknown
+# Generated with wikibase-static 0.7.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
 @prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -22311,3 +22313,18 @@ wdt:P2
 
 wdt:P3
     rdfs:subPropertyOf rdfs:subPropertyOf .
+
+# CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv),
+# with the superclasses of an extension class up to its first class of the CIDOC CRM. Not part of the Wikibase data model.
+
+wd:Q100
+    rdfs:subClassOf crmdig:D14_Software .
+
+wd:Q105
+    rdfs:subClassOf crmdig:D14_Software .
+
+crmdig:D1_Digital_Object
+    rdfs:subClassOf crm:E73_Information_Object .
+
+crmdig:D14_Software
+    rdfs:subClassOf crmdig:D1_Digital_Object .

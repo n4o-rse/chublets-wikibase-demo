@@ -50,7 +50,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 6, 4), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 7, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -304,3 +304,44 @@ class Attribution(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class Crm(unittest.TestCase):
+    """The CIDOC CRM overlay (S11): one row at the root class `software`, the rest of the class tree inherits it."""
+
+    D14 = "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
+    E73 = "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.site = loader.load_site(ROOT / "data" / "raw", ROOT / "data" / "derived")
+        cls.result = rdf.build(cls.site, rdf.Namespaces(BASE))
+
+    def test_the_overlay_has_two_rows_the_root_class_and_little_minion_each_with_a_reason(self) -> None:
+        rows = table("../crm.csv")
+        self.assertEqual([(r["class"], r["crm_class"]) for r in rows], [("Q100", "crmdig:D14"), ("Q105", "crmdig:D14")])
+        self.assertTrue(all(r["note"] for r in rows))
+        self.assertEqual(self.site.crm, {"Q100": ["crmdig:D14_Software"], "Q105": ["crmdig:D14_Software"]})
+
+    def test_every_class_of_the_model_is_anchored_in_d14(self) -> None:
+        classes = self.site.crm_classes()
+        edges = self.site.crm_edges()
+        without = sorted(c for c in classes if not self.site.crm_anchors(c, edges))
+        self.assertEqual(without, [])
+        for class_id in ("Q100", "Q101", "Q102", "Q103", "Q104", "Q105", "Q106"):
+            self.assertEqual([a.curie for a in self.site.crm_anchors(class_id, edges)], ["crmdig:D14_Software"], class_id)
+
+    def test_the_export_anchors_software_in_d14_and_the_chain_reaches_e73(self) -> None:
+        triples = {(s.value, p.value, o.value) for s, p, o in self.result.triples if all(isinstance(x, rdf.Iri) for x in (s, p, o))}
+        subclass = RDFS + "subClassOf"
+        self.assertIn((BASE + "/entity/Q100", subclass, self.D14), triples)
+        self.assertIn((self.D14, subclass, "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"), triples)
+        self.assertIn(("http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object", subclass, self.E73), triples)
+        self.assertIn((BASE + "/entity/Q105", subclass, self.D14), triples)
+
+    def test_the_published_file_has_the_crm_section_and_the_page_shows_the_class(self) -> None:
+        text = next((ROOT / "dist").glob("*.ttl")).read_text(encoding="utf-8")
+        self.assertIn("# CIDOC CRM anchoring (wikibase-static)", text)
+        page = (ROOT / "docs" / "Q106.html").read_text(encoding="utf-8")
+        self.assertIn("crmdig:D14_Software", page)
+        self.assertIn('class="crm"', page)
+
