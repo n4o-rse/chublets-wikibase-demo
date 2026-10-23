@@ -1,5 +1,5 @@
 # Q755: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.13.0; data as of unknown
+# Generated with wikibase-static 0.14.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -102,7 +102,7 @@ wd:Q755
     wdt:P106 wd:Q110 ;
     wdt:P108 "dendroNetwork" ;
     wdt:P113 wd:Q133,
-        wd:Q279 ;
+        wd:Q380 ;
     wdt:P115 <https://open-archaeo.info/post/dendronetwork/> ;
     wdt:P116 "dendronetwork" ;
     wdt:P117 wd:Q126,
@@ -177,7 +177,7 @@ wds:Q755-A9E55CFB-65F5-560D-A4CE-7CBC403CE067
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:752eb76d7c48012b73ff1e05ef303c359d02a1a8 ;
     pq:P146 "2" ;
-    ps:P113 wd:Q279 .
+    ps:P113 wd:Q380 .
 
 wds:Q755-AAC5F5BA-58BC-5549-AC57-F60DD8DFCBAF
     a wikibase:BestRank,

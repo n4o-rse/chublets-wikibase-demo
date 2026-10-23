@@ -4,10 +4,54 @@
       {
         "language": "en",
         "value": "Ronald M. Visser"
+      },
+      {
+        "language": "en",
+        "value": "RonaldVisser"
       }
     ]
   },
   "claims": {
+    "P2": [
+      {
+        "id": "Q380$A0684914-E408-5928-A088-38C23F7FBF54",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/abma-tutorials/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
     "P4": [
       {
         "id": "Q380$B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C",

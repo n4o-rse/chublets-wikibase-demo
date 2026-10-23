@@ -1,5 +1,5 @@
 # Q374: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.13.0; data as of unknown
+# Generated with wikibase-static 0.14.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q374-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q374, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1534"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2604"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q374.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -81,15 +81,21 @@ wd:Q374
     schema:name "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
-    skos:altLabel "Allard W. Mees"@en,
+    skos:altLabel "Allard Mees"@en,
+        "Allard W. Mees"@en,
         "Dr. Allard Wijnand Mees FSA"@en ;
     skos:prefLabel "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
+    p:P2 wds:Q374-C26E8CF8-5267-5A35-9C16-E8C134453991 ;
     p:P4 wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q88865971" .
+
+wd:Q383
+    owl:sameAs wd:Q374 .
 
 wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3
     a wikibase:BestRank,
@@ -97,6 +103,17 @@ wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e294052bd47b53d6e5f964846748d24271b6ad63 ;
     ps:P4 "Q88865971" .
+
+wds:Q374-C26E8CF8-5267-5A35-9C16-E8C134453991
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P2 wd:Q3 .
+
+wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/alligator/> .
 
 wdref:e294052bd47b53d6e5f964846748d24271b6ad63
     a wikibase:Reference ;

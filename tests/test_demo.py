@@ -425,13 +425,34 @@ class Merges(unittest.TestCase):
         cls.idmap = {r["key"]: r["id"] for r in table("idmap.csv") if r["source"] == "wikidata"}
 
     def test_alligator_and_profileaar_are_merged_into_their_wikidata_items(self) -> None:
-        self.assertEqual({(r["from"], r["to"]) for r in self.rows},
-                         {("Q381", self.idmap["Q74004218"]), ("Q846", self.idmap["Q74823867"])})
+        pairs = {(r["from"], r["to"]) for r in self.rows}
+        self.assertLessEqual({("Q381", self.idmap["Q74004218"]), ("Q846", self.idmap["Q74823867"])}, pairs)
         self.assertEqual(self.site.redirects, {r["from"]: r["to"] for r in self.rows})
+
+    def test_three_people_are_merged_into_their_wikidata_items(self) -> None:
+        pairs = {(r["from"], r["to"]) for r in self.rows}
+        self.assertLessEqual({("Q382", "Q365"), ("Q279", "Q380"), ("Q383", "Q374")}, pairs)       # florianthiery, RonaldVisser, Allard Mees
+        for target, name in (("Q365", "Florian Thiery"), ("Q380", "Ronald Visser"), ("Q374", "Allard Wijnand Mees")):
+            entity = self.site.entities[target]
+            self.assertEqual(entity.labels["en"], name)
+            self.assertTrue(any(s.mainsnak.property == "P4" for s in entity.statements), target)
+        alligator = self.site.entities[self.idmap["Q74004218"]]
+        plain = [s.mainsnak.entity_id for s in alligator.statements if s.mainsnak.property == "P113" and not s.qualifiers]
+        self.assertEqual(len(plain), len(set(plain)))                         # nobody twice (the two with a role qualifier are a statement of their own)
+        self.assertLessEqual({"Q365", "Q374"}, set(plain) | {s.mainsnak.entity_id for s in alligator.statements if s.mainsnak.property == "P113"})
+
+    def test_the_suggestions_name_what_is_left(self) -> None:
+        with (ROOT / "dist" / "merge-suggestions.csv").open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        merged = {r["from"] for r in self.rows} | {r["to"] for r in self.rows}
+        self.assertFalse([r for r in rows if r["from"] in merged or r["to"] in merged])         # a merged pair is not suggested again
+        self.assertEqual({r["command"] for r in rows}, {"merge Q139 Q370", "merge Q406 Q371"})   # the languages Python and JavaScript
 
     def test_there_is_one_item_with_both_sources_in_it(self) -> None:
         for row in self.rows:
             self.assertNotIn(row["from"], self.site.entities)
+            if row["from"] not in ("Q381", "Q846"):
+                continue
             target = self.site.entities[row["to"]]
             props = {s.mainsnak.property for s in target.statements}
             self.assertTrue({"P4", "P115", "P116", "P118"} <= props, (row, props))      # twin from Wikidata, identity block from open-archaeo

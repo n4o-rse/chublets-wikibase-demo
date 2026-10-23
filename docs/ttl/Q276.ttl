@@ -1,5 +1,5 @@
 # Q276: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.13.0; data as of unknown
+# Generated with wikibase-static 0.14.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -101,8 +101,8 @@ wd:Q276
         wd:Q106 ;
     wdt:P106 wd:Q110 ;
     wdt:P113 wd:Q278,
-        wd:Q279,
-        wd:Q280 ;
+        wd:Q280,
+        wd:Q380 ;
     wdt:P115 <https://open-archaeo.info/post/abma-tutorials/> ;
     wdt:P116 "abma-tutorials" ;
     wdt:P117 wd:Q164,
@@ -185,7 +185,7 @@ wds:Q276-1281511E-2FCD-569B-993A-2EBD34DFEE6C
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:deb5e505950349a13318ff06229812859f1ee761 ;
     pq:P146 "2" ;
-    ps:P113 wd:Q279 .
+    ps:P113 wd:Q380 .
 
 wds:Q276-A544D0EC-600F-554F-863C-9C00083AD7CA
     a wikibase:BestRank,

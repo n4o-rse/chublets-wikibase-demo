@@ -1,5 +1,5 @@
 # Q359: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.13.0; data as of unknown
+# Generated with wikibase-static 0.14.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -125,9 +125,7 @@ wd:Q359
     wdt:P107 wd:Q369 ;
     wdt:P113 wd:Q365,
         wd:Q368,
-        wd:Q374,
-        wd:Q382,
-        wd:Q383 ;
+        wd:Q374 ;
     wdt:P115 <https://open-archaeo.info/post/alligator/> ;
     wdt:P116 "alligator" ;
     wdt:P117 wd:Q116,
@@ -234,7 +232,7 @@ wds:Q359-410B885B-C909-5384-BB43-59D5B42418C4
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     pq:P146 "2" ;
-    ps:P113 wd:Q383 .
+    ps:P113 wd:Q374 .
 
 wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976
     a wikibase:BestRank,
@@ -302,7 +300,7 @@ wds:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     pq:P146 "1" ;
-    ps:P113 wd:Q382 .
+    ps:P113 wd:Q365 .
 
 wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
     a wikibase:BestRank,

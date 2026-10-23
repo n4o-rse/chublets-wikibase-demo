@@ -1,5 +1,5 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.13.0; data as of unknown
+# Generated with wikibase-static 0.14.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -227,7 +227,6 @@ cat:items
         data:Q276,
         data:Q277,
         data:Q278,
-        data:Q279,
         data:Q280,
         data:Q281,
         data:Q282,
@@ -329,8 +328,6 @@ cat:items
         data:Q378,
         data:Q379,
         data:Q380,
-        data:Q382,
-        data:Q383,
         data:Q384,
         data:Q385,
         data:Q386,
@@ -6422,21 +6419,6 @@ data:Q278
         dist:Q278-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q278.html> .
 
-data:Q279
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:identifier "Q279" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q279 ;
-    dcterms:title "RonaldVisser"@en ;
-    schema:about wd:Q279 ;
-    dcat:distribution dist:Q279-html,
-        dist:Q279-json,
-        dist:Q279-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q279.html> .
-
 data:Q280
     a schema:Dataset,
         dcat:Dataset ;
@@ -8048,36 +8030,6 @@ data:Q380
         dist:Q380-json,
         dist:Q380-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q380.html> .
-
-data:Q382
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:identifier "Q382" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q382 ;
-    dcterms:title "florianthiery"@en ;
-    schema:about wd:Q382 ;
-    dcat:distribution dist:Q382-html,
-        dist:Q382-json,
-        dist:Q382-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q382.html> .
-
-data:Q383
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:identifier "Q383" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q383 ;
-    dcterms:title "Allard Mees"@en ;
-    schema:about wd:Q383 ;
-    dcat:distribution dist:Q383-html,
-        dist:Q383-json,
-        dist:Q383-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q383.html> .
 
 data:Q384
     a schema:Dataset,
@@ -25363,31 +25315,6 @@ dist:Q278-ttl
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q278.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-dist:Q279-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q279, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q279.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q279-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q279, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1205"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q279.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q279-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q279, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q279.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
 dist:Q280-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
@@ -27526,7 +27453,7 @@ dist:Q365-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q365, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1399"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2491"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q365.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27751,7 +27678,7 @@ dist:Q374-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q374, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1534"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2604"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q374.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27901,7 +27828,7 @@ dist:Q380-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q380, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1292"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2368"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q380.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27911,56 +27838,6 @@ dist:Q380-ttl
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q380, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q380.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
-dist:Q382-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q382, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q382.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q382-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q382, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1201"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q382.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q382-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q382, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q382.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
-dist:Q383-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q383, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q383.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q383-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q383, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1199"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q383.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q383-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q383, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q383.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 dist:Q384-html
@@ -45100,8 +44977,8 @@ wd:Q276
         wd:Q106 ;
     wdt:P106 wd:Q110 ;
     wdt:P113 wd:Q278,
-        wd:Q279,
-        wd:Q280 ;
+        wd:Q280,
+        wd:Q380 ;
     wdt:P115 <https://open-archaeo.info/post/abma-tutorials/> ;
     wdt:P116 "abma-tutorials" ;
     wdt:P117 wd:Q164,
@@ -45135,14 +45012,7 @@ wd:Q278
     wdt:P2 wd:Q3 .
 
 wd:Q279
-    a wikibase:Item ;
-    schema:name "RonaldVisser"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
-    rdfs:label "RonaldVisser"@en ;
-    skos:prefLabel "RonaldVisser"@en ;
-    p:P2 wds:Q279-C7C663D0-9B12-5F89-B627-C491B754CD05 ;
-    wdt:P2 wd:Q3 .
+    owl:sameAs wd:Q380 .
 
 wd:Q280
     a wikibase:Item ;
@@ -47109,9 +46979,7 @@ wd:Q359
     wdt:P107 wd:Q369 ;
     wdt:P113 wd:Q365,
         wd:Q368,
-        wd:Q374,
-        wd:Q382,
-        wd:Q383 ;
+        wd:Q374 ;
     wdt:P115 <https://open-archaeo.info/post/alligator/> ;
     wdt:P116 "alligator" ;
     wdt:P117 wd:Q116,
@@ -47302,12 +47170,15 @@ wd:Q365
     schema:name "Florian Thiery"@de,
         "Florian Thiery"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Florian Thiery"@de,
         "Florian Thiery"@en ;
+    skos:altLabel "florianthiery"@en ;
     skos:prefLabel "Florian Thiery"@de,
         "Florian Thiery"@en ;
+    p:P2 wds:Q365-D856FC27-E581-59D5-B743-BD6B7ED46DE5 ;
     p:P4 wds:Q365-1192F728-6813-590F-89B6-83120D80E796 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q66606154" .
 
 wd:Q366
@@ -47474,14 +47345,17 @@ wd:Q374
     schema:name "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
-    skos:altLabel "Allard W. Mees"@en,
+    skos:altLabel "Allard Mees"@en,
+        "Allard W. Mees"@en,
         "Dr. Allard Wijnand Mees FSA"@en ;
     skos:prefLabel "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
+    p:P2 wds:Q374-C26E8CF8-5267-5A35-9C16-E8C134453991 ;
     p:P4 wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q88865971" .
 
 wd:Q375
@@ -47589,35 +47463,24 @@ wd:Q380
     schema:description "researcher ORCID ID = 0000-0001-6966-1729"@en ;
     schema:name "Ronald Visser"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Ronald Visser"@en ;
-    skos:altLabel "Ronald M. Visser"@en ;
+    skos:altLabel "Ronald M. Visser"@en,
+        "RonaldVisser"@en ;
     skos:prefLabel "Ronald Visser"@en ;
+    p:P2 wds:Q380-A0684914-E408-5928-A088-38C23F7FBF54 ;
     p:P4 wds:Q380-B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q58529575" .
 
 wd:Q381
     owl:sameAs wd:Q359 .
 
 wd:Q382
-    a wikibase:Item ;
-    schema:name "florianthiery"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
-    rdfs:label "florianthiery"@en ;
-    skos:prefLabel "florianthiery"@en ;
-    p:P2 wds:Q382-D333834E-BAFF-545D-8E3F-F3A24B59E1E6 ;
-    wdt:P2 wd:Q3 .
+    owl:sameAs wd:Q365 .
 
 wd:Q383
-    a wikibase:Item ;
-    schema:name "Allard Mees"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
-    rdfs:label "Allard Mees"@en ;
-    skos:prefLabel "Allard Mees"@en ;
-    p:P2 wds:Q383-8BC7F289-477F-5C6F-828E-7AAF2518B4D2 ;
-    wdt:P2 wd:Q3 .
+    owl:sameAs wd:Q374 .
 
 wd:Q384
     a wikibase:Item ;
@@ -56837,7 +56700,7 @@ wd:Q755
     wdt:P106 wd:Q110 ;
     wdt:P108 "dendroNetwork" ;
     wdt:P113 wd:Q133,
-        wd:Q279 ;
+        wd:Q380 ;
     wdt:P115 <https://open-archaeo.info/post/dendronetwork/> ;
     wdt:P116 "dendronetwork" ;
     wdt:P117 wd:Q126,
@@ -77070,7 +76933,7 @@ wds:Q276-1281511E-2FCD-569B-993A-2EBD34DFEE6C
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:deb5e505950349a13318ff06229812859f1ee761 ;
     pq:P146 "2" ;
-    ps:P113 wd:Q279 .
+    ps:P113 wd:Q380 .
 
 wds:Q276-A544D0EC-600F-554F-863C-9C00083AD7CA
     a wikibase:BestRank,
@@ -77132,13 +76995,6 @@ wds:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4
     ps:P2 wd:Q3 .
 
 wds:Q278-93B61B05-CA98-5A0D-A596-33B36D3070EB
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deb5e505950349a13318ff06229812859f1ee761 ;
-    ps:P2 wd:Q3 .
-
-wds:Q279-C7C663D0-9B12-5F89-B627-C491B754CD05
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
@@ -81765,7 +81621,7 @@ wds:Q359-410B885B-C909-5384-BB43-59D5B42418C4
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     pq:P146 "2" ;
-    ps:P113 wd:Q383 .
+    ps:P113 wd:Q374 .
 
 wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976
     a wikibase:BestRank,
@@ -81833,7 +81689,7 @@ wds:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     pq:P146 "1" ;
-    ps:P113 wd:Q382 .
+    ps:P113 wd:Q365 .
 
 wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
     a wikibase:BestRank,
@@ -82490,6 +82346,13 @@ wds:Q365-1192F728-6813-590F-89B6-83120D80E796
     prov:wasDerivedFrom wdref:f867211e270ca1ad6ac9d36bfbedfde5567dec85 ;
     ps:P4 "Q66606154" .
 
+wds:Q365-D856FC27-E581-59D5-B743-BD6B7ED46DE5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P2 wd:Q3 .
+
 wds:Q366-F5E60C6B-2690-5ADC-964C-CB335077F1E0
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -82565,6 +82428,13 @@ wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3
     prov:wasDerivedFrom wdref:e294052bd47b53d6e5f964846748d24271b6ad63 ;
     ps:P4 "Q88865971" .
 
+wds:Q374-C26E8CF8-5267-5A35-9C16-E8C134453991
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P2 wd:Q3 .
+
 wds:Q375-563585A2-F886-5939-AD1F-5C039195460C
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -82624,26 +82494,19 @@ wds:Q379-EF3AF108-9A58-5C57-9DC2-7C08AB18416C
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q1 .
 
+wds:Q380-A0684914-E408-5928-A088-38C23F7FBF54
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:deb5e505950349a13318ff06229812859f1ee761 ;
+    ps:P2 wd:Q3 .
+
 wds:Q380-B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:20696860e0334f73341df5c81dd1b88c2a96b0b3 ;
     ps:P4 "Q58529575" .
-
-wds:Q382-D333834E-BAFF-545D-8E3F-F3A24B59E1E6
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P2 wd:Q3 .
-
-wds:Q383-8BC7F289-477F-5C6F-828E-7AAF2518B4D2
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P2 wd:Q3 .
 
 wds:Q384-3D2CB927-7529-53D1-AB1A-BEE56DD59B99
     a wikibase:BestRank,
@@ -104769,7 +104632,7 @@ wds:Q755-A9E55CFB-65F5-560D-A4CE-7CBC403CE067
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:752eb76d7c48012b73ff1e05ef303c359d02a1a8 ;
     pq:P146 "2" ;
-    ps:P113 wd:Q279 .
+    ps:P113 wd:Q380 .
 
 wds:Q755-AAC5F5BA-58BC-5549-AC57-F60DD8DFCBAF
     a wikibase:BestRank,

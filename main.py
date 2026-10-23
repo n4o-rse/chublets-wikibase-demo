@@ -8,7 +8,7 @@
     python main.py import-open-archaeo  software entries of open-archaeo into data/csv/ (needs wikibase-static 0.9.0; the demo uses --all, otherwise 100 or --limit N)
     python main.py import-wikidata      the Wikidata items in data/csv/seeds-wikidata.csv into data/csv/ (needs wikibase-static 0.12.0;
                                         fetches what changed, --offline uses data/raw/wikidata/ only, --from-dir DIR stores saved JSON first)
-    python main.py merge Q381 Q359      merge an item into another (data/csv/merges.csv; --dry-run, --list, --undo ID; needs wikibase-static 0.13.0)
+    python main.py merge Q381 Q359      merge an item into another (data/csv/merges.csv; --dry-run, --list, --undo ID, --suggest; needs wikibase-static 0.14.0)
     python main.py --list               print the steps and exit
 
 The model is kept in data/csv/ (four tables and idmap.csv). ``tools/import_pack.py`` made them once from the

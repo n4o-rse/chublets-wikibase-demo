@@ -1,5 +1,5 @@
 # Q365: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.13.0; data as of unknown
+# Generated with wikibase-static 0.14.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q365-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q365, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1399"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2491"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q365.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -81,13 +81,19 @@ wd:Q365
     schema:name "Florian Thiery"@de,
         "Florian Thiery"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Florian Thiery"@de,
         "Florian Thiery"@en ;
+    skos:altLabel "florianthiery"@en ;
     skos:prefLabel "Florian Thiery"@de,
         "Florian Thiery"@en ;
+    p:P2 wds:Q365-D856FC27-E581-59D5-B743-BD6B7ED46DE5 ;
     p:P4 wds:Q365-1192F728-6813-590F-89B6-83120D80E796 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q66606154" .
+
+wd:Q382
+    owl:sameAs wd:Q365 .
 
 wds:Q365-1192F728-6813-590F-89B6-83120D80E796
     a wikibase:BestRank,
@@ -95,6 +101,17 @@ wds:Q365-1192F728-6813-590F-89B6-83120D80E796
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:f867211e270ca1ad6ac9d36bfbedfde5567dec85 ;
     ps:P4 "Q66606154" .
+
+wds:Q365-D856FC27-E581-59D5-B743-BD6B7ED46DE5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P2 wd:Q3 .
+
+wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/alligator/> .
 
 wdref:f867211e270ca1ad6ac9d36bfbedfde5567dec85
     a wikibase:Reference ;
