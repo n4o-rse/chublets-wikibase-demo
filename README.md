@@ -157,6 +157,13 @@ file, so the same file does not act twice. The first file, `data/edits/2026-10-2
 the Academic Meta Tool (Q358) with a reference; it comes from `examples/amt-sketch.qs` of the Starter Pack. Rows made this way have no
 origin: they count as hand work and the importers never overwrite them. Needs `wikibase-static` 0.15.0.
 
+## Source rows
+
+Every entity page has a tab "Source rows" next to "Read": it opens the rows of `entities.csv`, `statements.csv`, `qualifiers.csv`,
+`references.csv` and `merges.csv` that the page is made from, as they stand in the files, with a button that copies them and a link to the
+file in the GitHub editor (`edit_url` in `site.yaml`). Nothing can be changed on the page; the link leads to GitHub, and the change comes
+with the next build. Needs `wikibase-static` 0.16.0.
+
 ## Where the model came from
 
 `tools/import_pack.py` made the tables once from the unzipped Starter Pack (v1.1, which adds the published ConnOSS crosswalk as source `S9`; the model is the same as in v1.0, only `background/` changed):

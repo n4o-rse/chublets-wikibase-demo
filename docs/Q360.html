@@ -25,7 +25,7 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
     <div class="tabs">
       <ul class="tabs-left"><li class="active"><span>Item</span></li></ul>
       <div class="tabs-right">
-        <ul class="tabs-view"><li class="active"><span><span class="l" lang="en">Read</span><span class="l" lang="de">Lesen</span></span></li></ul>
+        <ul class="tabs-view"><li class="active"><span><span class="l" lang="en">Read</span><span class="l" lang="de">Lesen</span></span></li><li><a href="#source-rows"><span class="l" lang="en">Source rows</span><span class="l" lang="de">Quellzeilen</span></a></li></ul>
         <form class="search" role="search" action="#" hidden data-index="assets/search-index.js" data-default="en" data-text="{&#34;de&#34;:{&#34;error&#34;:&#34;Der Suchindex konnte nicht geladen werden.&#34;,&#34;none&#34;:&#34;Keine Treffer&#34;,&#34;placeholder&#34;:&#34;Suche&#34;},&#34;en&#34;:{&#34;error&#34;:&#34;The search index could not be loaded.&#34;,&#34;none&#34;:&#34;No results&#34;,&#34;placeholder&#34;:&#34;Search&#34;}}">
           <input type="search" name="q" autocomplete="off" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="wbs-search-list">
           <ul class="search-results" id="wbs-search-list" role="listbox" aria-label="Search" hidden></ul>
@@ -889,13 +889,334 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
     </div>
   </section>
 
+  <section class="source-rows">
+    <details id="source-rows">
+      <summary><span class="l" lang="en">Source rows (CSV)</span><span class="l" lang="de">Quellzeilen (CSV)</span></summary>
+      <p class="muted"><span class="l" lang="en">The rows of the CSV tables that this page is made from, as they stand in the files. The page cannot be edited: change the file in the repository (or apply a QuickStatements file) and build again.</span><span class="l" lang="de">Die Zeilen der CSV-Tabellen, aus denen diese Seite gebaut wird, so wie sie in den Dateien stehen. Die Seite lässt sich nicht bearbeiten: Datei im Repository ändern (oder eine QuickStatements-Datei anwenden) und neu bauen.</span></p>
+      <div class="rows-block">
+        <h3><code>entities.csv</code> <span class="muted"><span class="l" lang="en">1 row(s)</span><span class="l" lang="de">1 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-1"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/entities.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-1" class="rows"><code>id,kind,datatype,origin,label_en,label_de,description_en,description_de,aliases_en,aliases_de
+Q360,item,,wikidata,SPARQLing Unicorn QGIS Plugin,SPARQLing Unicorn QGIS Plugin,Plugin to add a layer in QGIS from Linked Data SPARQL endpoints.,Plugin zum Hinzufügen eines Vektor-Layer in QGIS aus SPARQL endpoints.,,</code></pre>
+      </div>
+      <div class="rows-block">
+        <h3><code>statements.csv</code> <span class="muted"><span class="l" lang="en">39 row(s)</span><span class="l" lang="de">39 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-2"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/statements.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-2" class="rows"><code>sid,subject,property,value,rank,origin
+Q360-P2-wd1,Q360,P2,Q100,,wikidata
+Q360-P2-wd2,Q360,P2,Q372,,wikidata
+Q360-P2-wd3,Q360,P2,Q378,,wikidata
+Q360-P2-wd4,Q360,P2,Q105,,wikidata
+Q360-P2-wd5,Q360,P2,Q106,,wikidata
+Q360-P4-wd1,Q360,P4,Q74005133,,wikidata
+Q360-P113-wd1,Q360,P113,Q365,,wikidata
+Q360-P113-wd2,Q360,P113,Q376,,wikidata
+Q360-P113-wd3,Q360,P113,Q377,,wikidata
+Q360-P114-wd1,Q360,P114,10.5281/ZENODO.13828632,,wikidata
+Q360-P120-wd1,Q360,P120,https://plugins.qgis.org/plugins/sparqlunicorn/,,wikidata
+Q360-P123-wd1,Q360,P123,Q370,,wikidata
+Q360-P125-wd1,Q360,P125,https://github.com/sparqlunicorn/sparqlunicornGoesGIS,,wikidata
+Q360-P148-wd1,Q360,P148,0.1,,wikidata
+Q360-P148-wd2,Q360,P148,0.2,,wikidata
+Q360-P148-wd3,Q360,P148,0.3,,wikidata
+Q360-P148-wd4,Q360,P148,0.4,,wikidata
+Q360-P148-wd5,Q360,P148,0.5,,wikidata
+Q360-P148-wd6,Q360,P148,0.6,,wikidata
+Q360-P148-wd7,Q360,P148,0.7,,wikidata
+Q360-P148-wd8,Q360,P148,0.8,,wikidata
+Q360-P148-wd9,Q360,P148,0.9,,wikidata
+Q360-P148-wd10,Q360,P148,0.10,,wikidata
+Q360-P148-wd11,Q360,P148,0.10a,,wikidata
+Q360-P148-wd12,Q360,P148,0.11,,wikidata
+Q360-P148-wd13,Q360,P148,0.12,,wikidata
+Q360-P148-wd14,Q360,P148,0.12.1,,wikidata
+Q360-P148-wd15,Q360,P148,0.12.2,,wikidata
+Q360-P148-wd16,Q360,P148,0.13,,wikidata
+Q360-P148-wd17,Q360,P148,0.13.1,,wikidata
+Q360-P148-wd18,Q360,P148,0.14,,wikidata
+Q360-P148-wd19,Q360,P148,0.15,,wikidata
+Q360-P148-wd20,Q360,P148,0.16,,wikidata
+Q360-P148-wd21,Q360,P148,0.17,,wikidata
+Q360-P148-wd22,Q360,P148,0.17.1,,wikidata
+Q360-P148-wd23,Q360,P148,0.17.2,,wikidata
+Q360-P148-wd24,Q360,P148,0.17.3,,wikidata
+Q360-P148-wd25,Q360,P148,0.17.4,preferred,wikidata
+Q360-P247-wd1,Q360,P247,en:SPARQLing Unicorn QGIS Plugin,,wikidata</code></pre>
+      </div>
+      <div class="rows-block">
+        <h3><code>qualifiers.csv</code> <span class="muted"><span class="l" lang="en">32 row(s)</span><span class="l" lang="de">32 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-3"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/qualifiers.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-3" class="rows"><code>sid,property,value
+Q360-P125-wd1,P126,Q114
+Q360-P125-wd1,P248,Q363
+Q360-P148-wd1,P144,2019-10-28
+Q360-P148-wd2,P144,2019-10-29
+Q360-P148-wd3,P144,2019-10-30
+Q360-P148-wd4,P144,2019-10-30
+Q360-P148-wd5,P144,2019-10-30
+Q360-P148-wd6,P144,2019-11-02
+Q360-P148-wd7,P144,2019-11-03
+Q360-P148-wd8,P144,2020-02-19
+Q360-P148-wd9,P144,2020-03-11
+Q360-P148-wd10,P144,2020-04-26
+Q360-P148-wd11,P144,2020-05-05
+Q360-P148-wd12,P144,2020-07-06
+Q360-P148-wd13,P144,2021-01-15
+Q360-P148-wd14,P144,2021-01-21
+Q360-P148-wd15,P144,2021-06-11
+Q360-P148-wd16,P144,2021-11-26
+Q360-P148-wd17,P144,2021-12-01
+Q360-P148-wd18,P144,2022-02-05
+Q360-P148-wd19,P144,2022-11-08
+Q360-P148-wd20,P144,2023-07-28
+Q360-P148-wd21,P144,2024-03-04
+Q360-P148-wd21,P153,Q375
+Q360-P148-wd22,P144,2024-09-23
+Q360-P148-wd22,P153,Q375
+Q360-P148-wd23,P144,2025-02-15
+Q360-P148-wd23,P153,Q375
+Q360-P148-wd24,P144,2025-04-02
+Q360-P148-wd24,P153,Q375
+Q360-P148-wd25,P144,2025-12-19
+Q360-P148-wd25,P153,Q375</code></pre>
+      </div>
+      <div class="rows-block">
+        <h3><code>references.csv</code> <span class="muted"><span class="l" lang="en">215 row(s)</span><span class="l" lang="de">215 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-4"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/references.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-4" class="rows"><code>sid,group,property,value
+Q360-P2-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P2-wd1,1,P7,2026-08-18
+Q360-P2-wd1,1,P8,Q364
+Q360-P2-wd2,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P2-wd2,1,P7,2026-08-18
+Q360-P2-wd2,1,P8,Q364
+Q360-P2-wd3,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P2-wd3,1,P7,2026-08-18
+Q360-P2-wd3,1,P8,Q364
+Q360-P2-wd4,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P2-wd4,1,P7,2026-08-18
+Q360-P2-wd4,1,P8,Q364
+Q360-P2-wd5,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P2-wd5,1,P7,2026-08-18
+Q360-P2-wd5,1,P8,Q364
+Q360-P4-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P113-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P113-wd1,1,P7,2026-08-18
+Q360-P113-wd1,1,P8,Q364
+Q360-P113-wd2,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P113-wd2,1,P7,2026-08-18
+Q360-P113-wd2,1,P8,Q364
+Q360-P113-wd3,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P113-wd3,1,P7,2026-08-18
+Q360-P113-wd3,1,P8,Q364
+Q360-P114-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P114-wd1,1,P7,2026-08-18
+Q360-P114-wd1,1,P8,Q364
+Q360-P120-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P120-wd1,1,P7,2026-08-18
+Q360-P120-wd1,1,P8,Q364
+Q360-P123-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P123-wd1,1,P7,2026-08-18
+Q360-P123-wd1,1,P8,Q364
+Q360-P125-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P125-wd1,1,P7,2026-08-18
+Q360-P125-wd1,1,P8,Q364
+Q360-P148-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd1,1,P7,2026-08-18
+Q360-P148-wd1,1,P8,Q364
+Q360-P148-wd1,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.1
+Q360-P148-wd1,2,P7,2019-11-09
+Q360-P148-wd1,2,P247,en:Release 0.1
+Q360-P148-wd1,2,P144,2019-10-28
+Q360-P148-wd2,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd2,1,P7,2026-08-18
+Q360-P148-wd2,1,P8,Q364
+Q360-P148-wd2,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.2
+Q360-P148-wd2,2,P7,2019-11-09
+Q360-P148-wd2,2,P247,en:Release 0.2
+Q360-P148-wd2,2,P144,2019-10-29
+Q360-P148-wd3,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd3,1,P7,2026-08-18
+Q360-P148-wd3,1,P8,Q364
+Q360-P148-wd3,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.3
+Q360-P148-wd3,2,P7,2019-11-09
+Q360-P148-wd3,2,P247,en:Release 0.3
+Q360-P148-wd3,2,P144,2019-10-30
+Q360-P148-wd4,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd4,1,P7,2026-08-18
+Q360-P148-wd4,1,P8,Q364
+Q360-P148-wd4,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.4
+Q360-P148-wd4,2,P7,2019-11-09
+Q360-P148-wd4,2,P247,en:Release 0.4
+Q360-P148-wd4,2,P144,2019-10-30
+Q360-P148-wd5,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd5,1,P7,2026-08-18
+Q360-P148-wd5,1,P8,Q364
+Q360-P148-wd5,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.5
+Q360-P148-wd5,2,P7,2019-11-09
+Q360-P148-wd5,2,P247,en:Release 0.5
+Q360-P148-wd5,2,P144,2019-10-30
+Q360-P148-wd6,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd6,1,P7,2026-08-18
+Q360-P148-wd6,1,P8,Q364
+Q360-P148-wd6,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.6
+Q360-P148-wd6,2,P7,2019-11-09
+Q360-P148-wd6,2,P247,en:Release 0.6
+Q360-P148-wd6,2,P144,2019-11-02
+Q360-P148-wd7,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd7,1,P7,2026-08-18
+Q360-P148-wd7,1,P8,Q364
+Q360-P148-wd7,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.7
+Q360-P148-wd7,2,P7,2019-11-09
+Q360-P148-wd7,2,P247,en:Release 0.7
+Q360-P148-wd7,2,P144,2019-11-03
+Q360-P148-wd8,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd8,1,P7,2026-08-18
+Q360-P148-wd8,1,P8,Q364
+Q360-P148-wd8,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.8
+Q360-P148-wd8,2,P7,2020-02-20
+Q360-P148-wd8,2,P247,en:Release 0.8
+Q360-P148-wd8,2,P144,2020-02-19
+Q360-P148-wd9,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd9,1,P7,2026-08-18
+Q360-P148-wd9,1,P8,Q364
+Q360-P148-wd9,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.9
+Q360-P148-wd9,2,P7,2020-03-12
+Q360-P148-wd9,2,P247,en:Release 0.9
+Q360-P148-wd9,2,P144,2020-03-11
+Q360-P148-wd10,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd10,1,P7,2026-08-18
+Q360-P148-wd10,1,P8,Q364
+Q360-P148-wd10,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10
+Q360-P148-wd10,2,P7,2020-04-27
+Q360-P148-wd10,2,P247,en:Release 0.10
+Q360-P148-wd10,2,P144,2020-04-26
+Q360-P148-wd11,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd11,1,P7,2026-08-18
+Q360-P148-wd11,1,P8,Q364
+Q360-P148-wd11,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10a
+Q360-P148-wd11,2,P7,2020-05-06
+Q360-P148-wd11,2,P247,en:Release 0.10a
+Q360-P148-wd11,2,P144,2020-05-05
+Q360-P148-wd12,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd12,1,P7,2026-08-18
+Q360-P148-wd12,1,P8,Q364
+Q360-P148-wd12,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.11
+Q360-P148-wd12,2,P7,2020-07-07
+Q360-P148-wd12,2,P247,en:Release 0.11
+Q360-P148-wd12,2,P144,2020-07-06
+Q360-P148-wd13,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd13,1,P7,2026-08-18
+Q360-P148-wd13,1,P8,Q364
+Q360-P148-wd13,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12
+Q360-P148-wd13,2,P7,2021-01-17
+Q360-P148-wd13,2,P247,en:Release 0.12
+Q360-P148-wd13,2,P144,2021-01-15
+Q360-P148-wd14,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd14,1,P7,2026-08-18
+Q360-P148-wd14,1,P8,Q364
+Q360-P148-wd14,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.1
+Q360-P148-wd14,2,P7,2021-02-17
+Q360-P148-wd14,2,P247,en:Release 0.12.1
+Q360-P148-wd14,2,P144,2021-01-21
+Q360-P148-wd15,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd15,1,P7,2026-08-18
+Q360-P148-wd15,1,P8,Q364
+Q360-P148-wd15,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.2
+Q360-P148-wd15,2,P7,2022-10-26
+Q360-P148-wd15,2,P247,en:Release 0.12.2
+Q360-P148-wd15,2,P144,2021-06-11
+Q360-P148-wd16,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd16,1,P7,2026-08-18
+Q360-P148-wd16,1,P8,Q364
+Q360-P148-wd16,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13
+Q360-P148-wd16,2,P7,2022-10-26
+Q360-P148-wd16,2,P247,en:Release 0.13
+Q360-P148-wd16,2,P144,2021-11-26
+Q360-P148-wd17,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd17,1,P7,2026-08-18
+Q360-P148-wd17,1,P8,Q364
+Q360-P148-wd17,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13.1
+Q360-P148-wd17,2,P7,2022-10-26
+Q360-P148-wd17,2,P247,en:Release 0.13.1
+Q360-P148-wd17,2,P144,2021-12-01
+Q360-P148-wd18,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd18,1,P7,2026-08-18
+Q360-P148-wd18,1,P8,Q364
+Q360-P148-wd18,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.14
+Q360-P148-wd18,2,P7,2022-10-26
+Q360-P148-wd18,2,P247,en:Release 0.14
+Q360-P148-wd18,2,P144,2022-02-05
+Q360-P148-wd19,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd19,1,P7,2026-08-18
+Q360-P148-wd19,1,P8,Q364
+Q360-P148-wd19,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.15
+Q360-P148-wd19,2,P7,2022-11-25
+Q360-P148-wd19,2,P247,en:Release 0.15
+Q360-P148-wd19,2,P144,2022-11-08
+Q360-P148-wd20,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd20,1,P7,2026-08-18
+Q360-P148-wd20,1,P8,Q364
+Q360-P148-wd20,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.16
+Q360-P148-wd20,2,P7,2023-08-01
+Q360-P148-wd20,2,P247,en:Release 0.16
+Q360-P148-wd20,2,P144,2023-07-28
+Q360-P148-wd21,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd21,1,P7,2026-08-18
+Q360-P148-wd21,1,P8,Q364
+Q360-P148-wd21,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17
+Q360-P148-wd21,2,P7,2024-03-25
+Q360-P148-wd21,2,P247,en:Release 0.17
+Q360-P148-wd21,2,P144,2024-03-04
+Q360-P148-wd22,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd22,1,P7,2026-08-18
+Q360-P148-wd22,1,P8,Q364
+Q360-P148-wd22,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.1
+Q360-P148-wd22,2,P7,2024-09-26
+Q360-P148-wd22,2,P247,en:Release 0.17.1
+Q360-P148-wd22,2,P144,2024-09-23
+Q360-P148-wd23,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd23,1,P7,2026-08-18
+Q360-P148-wd23,1,P8,Q364
+Q360-P148-wd23,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.2
+Q360-P148-wd23,2,P7,2025-02-28
+Q360-P148-wd23,2,P247,en:Release 0.17.2
+Q360-P148-wd23,2,P144,2025-02-15
+Q360-P148-wd24,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd24,1,P7,2026-08-18
+Q360-P148-wd24,1,P8,Q364
+Q360-P148-wd24,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.3
+Q360-P148-wd24,2,P7,2025-05-01
+Q360-P148-wd24,2,P247,en:Release 0.17.3
+Q360-P148-wd24,2,P144,2025-04-02
+Q360-P148-wd25,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P148-wd25,1,P7,2026-08-18
+Q360-P148-wd25,1,P8,Q364
+Q360-P148-wd25,2,P247,en:Release 0.17.4
+Q360-P148-wd25,2,P6,https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.4
+Q360-P148-wd25,2,P7,2026-04-07
+Q360-P148-wd25,2,P144,2025-12-19
+Q360-P247-wd1,1,P6,https://www.wikidata.org/wiki/Q74005133
+Q360-P247-wd1,1,P7,2026-08-18
+Q360-P247-wd1,1,P8,Q364</code></pre>
+      </div>
+    </details>
+  </section>
 </article>
     </main>
     <footer class="site-footer">
       <p>
         <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 (Public Domain)</a></span>
       </p>
-      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.15.0</p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.16.0</p>
     </footer>
   </div>
 </div>

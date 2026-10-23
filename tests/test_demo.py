@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import contextlib
 import csv
+import html
 import io
 import json
 import re
@@ -65,7 +66,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 15, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 16, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -530,6 +531,43 @@ class StarterPack(unittest.TestCase):
                     code = step_apply_qs.main([str(path), "--csv", str(copy), "--applied", str(Path(scratch) / "applied.csv")])
                 self.assertEqual(code, 0, f"{path.name}: {out.getvalue()}")
                 self.assertIn("item(s) created", out.getvalue())
+
+
+class SourceRows(unittest.TestCase):
+    """S7f: the tab "Source rows" on the entity pages."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.page = (ROOT / "docs" / "Q359.html").read_text(encoding="utf-8")
+        cls.blocks = {name: html.unescape(body) for name, body in re.findall(
+            r'<h3><code>([^<]+)</code>.*?<pre id="rows-\d+" class="rows"><code>(.*?)</code></pre>', cls.page, re.S)}
+
+    def test_alligator_shows_its_rows_of_all_five_files(self) -> None:
+        self.assertEqual(sorted(self.blocks), ["entities.csv", "merges.csv", "qualifiers.csv", "references.csv", "statements.csv"])
+
+    def test_every_line_of_a_block_is_a_line_of_the_file(self) -> None:
+        for name, text in self.blocks.items():
+            lines = (CSV / name).read_text(encoding="utf-8").split("\n")
+            for line in text.split("\n"):
+                self.assertIn(line, lines, f"{name}: {line[:80]}")
+
+    def test_the_statements_block_is_all_statements_of_the_item_and_only_those(self) -> None:
+        rows = [r for r in table("statements.csv") if r["subject"] == "Q359"]
+        self.assertEqual(len(self.blocks["statements.csv"].split("\n")) - 1, len(rows))
+        self.assertTrue(all(",Q359," in line for line in self.blocks["statements.csv"].split("\n")[1:]))
+
+    def test_the_merge_line_of_the_other_item_is_there(self) -> None:
+        self.assertIn("Q381,Q359", self.blocks["merges.csv"])
+
+    def test_the_files_link_into_the_github_editor(self) -> None:
+        self.assertIn('href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/statements.csv"', self.page)
+
+    def test_every_entity_page_has_the_tab_and_the_merged_ids_have_not(self) -> None:
+        site = loader.load_site(ROOT / "data" / "raw", ROOT / "data" / "derived")
+        without = [e for e in site.entities if 'id="source-rows"' not in (ROOT / "docs" / f"{e}.html").read_text(encoding="utf-8")]
+        self.assertEqual(without, [])
+        for merged in site.redirects:
+            self.assertNotIn("source-rows", (ROOT / "docs" / f"{merged}.html").read_text(encoding="utf-8"))
 
 
 class Edits(unittest.TestCase):

@@ -25,7 +25,7 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
     <div class="tabs">
       <ul class="tabs-left"><li class="active"><span>Item</span></li></ul>
       <div class="tabs-right">
-        <ul class="tabs-view"><li class="active"><span><span class="l" lang="en">Read</span><span class="l" lang="de">Lesen</span></span></li></ul>
+        <ul class="tabs-view"><li class="active"><span><span class="l" lang="en">Read</span><span class="l" lang="de">Lesen</span></span></li><li><a href="#source-rows"><span class="l" lang="en">Source rows</span><span class="l" lang="de">Quellzeilen</span></a></li></ul>
         <form class="search" role="search" action="#" hidden data-index="assets/search-index.js" data-default="en" data-text="{&#34;de&#34;:{&#34;error&#34;:&#34;Der Suchindex konnte nicht geladen werden.&#34;,&#34;none&#34;:&#34;Keine Treffer&#34;,&#34;placeholder&#34;:&#34;Suche&#34;},&#34;en&#34;:{&#34;error&#34;:&#34;The search index could not be loaded.&#34;,&#34;none&#34;:&#34;No results&#34;,&#34;placeholder&#34;:&#34;Search&#34;}}">
           <input type="search" name="q" autocomplete="off" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="wbs-search-list">
           <ul class="search-results" id="wbs-search-list" role="listbox" aria-label="Search" hidden></ul>
@@ -298,13 +298,79 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
     </div>
   </section>
 
+  <section class="source-rows">
+    <details id="source-rows">
+      <summary><span class="l" lang="en">Source rows (CSV)</span><span class="l" lang="de">Quellzeilen (CSV)</span></summary>
+      <p class="muted"><span class="l" lang="en">The rows of the CSV tables that this page is made from, as they stand in the files. The page cannot be edited: change the file in the repository (or apply a QuickStatements file) and build again.</span><span class="l" lang="de">Die Zeilen der CSV-Tabellen, aus denen diese Seite gebaut wird, so wie sie in den Dateien stehen. Die Seite lässt sich nicht bearbeiten: Datei im Repository ändern (oder eine QuickStatements-Datei anwenden) und neu bauen.</span></p>
+      <div class="rows-block">
+        <h3><code>entities.csv</code> <span class="muted"><span class="l" lang="en">1 row(s)</span><span class="l" lang="de">1 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-1"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/entities.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-1" class="rows"><code>id,kind,datatype,origin,label_en,label_de,description_en,description_de,aliases_en,aliases_de
+Q258,item,,open-archaeo,ArchaeoAstroInsight,,&#34;QGIS Python script/plugin for computing azimuth, horizon altitude, and celestial declination of a specific bearing indicated by a line segment selected by a user.&#34;,,,</code></pre>
+      </div>
+      <div class="rows-block">
+        <h3><code>statements.csv</code> <span class="muted"><span class="l" lang="en">14 row(s)</span><span class="l" lang="de">14 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-2"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/statements.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-2" class="rows"><code>sid,subject,property,value,rank,origin
+Q258-P2-1,Q258,P2,Q106,,open-archaeo
+Q258-P2-2,Q258,P2,Q103,,open-archaeo
+Q258-P106-1,Q258,P106,Q110,,open-archaeo
+Q258-P109-1,Q258,P109,Q135,,open-archaeo
+Q258-P113-1,Q258,P113,Q260,,open-archaeo
+Q258-P115-1,Q258,P115,https://open-archaeo.info/post/archaeoastroinsight/,,open-archaeo
+Q258-P116-1,Q258,P116,archaeoastroinsight,,open-archaeo
+Q258-P117-1,Q258,P117,Q119,,open-archaeo
+Q258-P117-2,Q258,P117,Q259,,open-archaeo
+Q258-P118-1,Q258,P118,Q108,,open-archaeo
+Q258-P119-1,Q258,P119,en:ArchaeoAstroInsight,,open-archaeo
+Q258-P122-1,Q258,P122,Q109,,open-archaeo
+Q258-P122-2,Q258,P122,Q110,,open-archaeo
+Q258-P125-1,Q258,P125,https://github.com/marcfrincu/ArchaeoAstroInsight,,open-archaeo</code></pre>
+      </div>
+      <div class="rows-block">
+        <h3><code>qualifiers.csv</code> <span class="muted"><span class="l" lang="en">3 row(s)</span><span class="l" lang="de">3 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-3"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/qualifiers.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-3" class="rows"><code>sid,property,value
+Q258-P113-1,P146,1
+Q258-P116-1,P106,Q110
+Q258-P125-1,P126,Q114</code></pre>
+      </div>
+      <div class="rows-block">
+        <h3><code>references.csv</code> <span class="muted"><span class="l" lang="en">14 row(s)</span><span class="l" lang="de">14 Zeile(n)</span></span></h3>
+        <p class="rows-tools">
+          <button type="button" class="copy-rows" data-copy-from="rows-4"><span class="copy-label"><span class="l" lang="en">Copy rows</span><span class="l" lang="de">Zeilen kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+<a href="https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv/references.csv" target="_blank" rel="noopener"><span class="l" lang="en">Edit the file</span><span class="l" lang="de">Datei bearbeiten</span></a>        </p>
+        <pre id="rows-4" class="rows"><code>sid,group,property,value
+Q258-P2-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P2-2,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P106-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P109-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P113-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P115-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P116-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P117-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P117-2,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P118-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P119-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P122-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P122-2,1,P6,https://open-archaeo.info/post/archaeoastroinsight/
+Q258-P125-1,1,P6,https://open-archaeo.info/post/archaeoastroinsight/</code></pre>
+      </div>
+    </details>
+  </section>
 </article>
     </main>
     <footer class="site-footer">
       <p>
         <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 (Public Domain)</a></span>
       </p>
-      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.15.0</p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.16.0</p>
     </footer>
   </div>
 </div>
