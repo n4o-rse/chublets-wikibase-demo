@@ -1,5 +1,5 @@
 # P171: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.10.0; data as of unknown
+# Generated with wikibase-static 0.11.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:P171-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P171, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2565"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3428"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P171.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,7 +76,7 @@ wd:P171
     schema:name "creator"@en ;
     wikibase:claim p:P171 ;
     wikibase:directClaim wdt:P171 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P171 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P171 ;
@@ -85,17 +85,26 @@ wd:P171
     wikibase:referenceValue prv:P171 ;
     wikibase:statementProperty ps:P171 ;
     wikibase:statementValue psv:P171 ;
-    wikibase:statements "4"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "creator"@en ;
     skos:prefLabel "creator"@en ;
     p:P2 wds:P171-FC778F0D-19FE-5732-AF54-5B8C86221EBD ;
-    p:P4 wds:P171-948699AE-51DE-532E-9956-FDFC2FB51552 ;
+    p:P4 wds:P171-86BBCEB1-0498-5E4C-B93A-EE4065021AC8,
+        wds:P171-948699AE-51DE-532E-9956-FDFC2FB51552 ;
     p:P9 wds:P171-51074883-6A72-5351-853C-DC751C162084 ;
     p:P10 wds:P171-892C0BBE-9767-531C-8306-3482B919C9A8 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P170" ;
+    wdt:P4 "P50",
+        "P170" ;
     wdt:P9 wd:Q100 ;
     wdt:P10 wd:Q3 .
+
+wds:P171-86BBCEB1-0498-5E4C-B93A-EE4065021AC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b9ca74e8a9a3fada685b80dbcf0407a4c7b0aa2 ;
+    ps:P4 "P50" .
 
 wds:P171-892C0BBE-9767-531C-8306-3482B919C9A8
     a wikibase:BestRank,
@@ -121,6 +130,10 @@ wds:P171-FC778F0D-19FE-5732-AF54-5B8C86221EBD
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P2 wd:Q2 .
+
+wdref:8b9ca74e8a9a3fada685b80dbcf0407a4c7b0aa2
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P50> .
 
 wdref:e22c40e587e33f7097d02c4062d53f132396b354
     a wikibase:Reference ;

@@ -1,0 +1,60 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q371$7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q2005"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q2005"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Skriptsprache"
+    },
+    "en": {
+      "language": "en",
+      "value": "high-level programming language"
+    }
+  },
+  "id": "Q371",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "JavaScript"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q373$1BE125AF-4DF5-56EA-8F6F-9756F8890C32",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q1860"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q1860"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "westgermanische Sprache"
+    },
+    "en": {
+      "language": "en",
+      "value": "West Germanic language"
+    }
+  },
+  "id": "Q373",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Englisch"
+    },
+    "en": {
+      "language": "en",
+      "value": "English"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

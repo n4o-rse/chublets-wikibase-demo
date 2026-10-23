@@ -40,7 +40,7 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
   <p class="description"><span class="l" lang="en">The data of this site is a Turtle file in the RDF model of Wikibase, so queries written for the Query Service of a Wikibase work here too. Edit a query and press Run.</span><span class="l" lang="de">Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Abfragen, die für den Query Service einer Wikibase geschrieben sind, laufen deshalb auch hier. Abfrage ändern, dann auf Ausführen klicken.</span></p>
   <p class="data-line">
     <strong><span class="l" lang="en">The data</span><span class="l" lang="de">Die Daten</span></strong>
-    <span class="l" lang="en">A Turtle file in the RDF model of Wikibase with 37399 triples:</span><span class="l" lang="de">Eine Turtle-Datei im RDF-Modell von Wikibase mit 37399 Tripeln:</span>
+    <span class="l" lang="en">A Turtle file in the RDF model of Wikibase with 39930 triples:</span><span class="l" lang="de">Eine Turtle-Datei im RDF-Modell von Wikibase mit 39930 Tripeln:</span>
     <a href="downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl">n4o-rse.github.io-chublets-wikibase-demo.ttl</a> &middot; <a href="downloads/wikibase-ontology.ttl"><span class="l" lang="en">Wikibase ontology</span><span class="l" lang="de">Wikibase-Ontologie</span></a>  </p>
   <p class="muted"><strong><span class="l" lang="en">Every record on its own:</span><span class="l" lang="de">Jeder Datensatz einzeln:</span></strong> <span class="l" lang="en">each page has a Turtle file in ttl/ and the archived JSON in json/; the catalogue (DCAT) lists them.</span><span class="l" lang="de">zu jeder Seite gibt es eine Turtle-Datei in ttl/ und das archivierte JSON in json/; der Katalog (DCAT) verzeichnet sie.</span></p>
   <p id="wbs-sparql-status" class="status" role="status" aria-live="polite"><span class="l" lang="en">Press Run to start. The first run takes a few seconds.</span><span class="l" lang="de">Auf „Ausführen“ klicken, um zu starten. Der erste Lauf dauert einige Sekunden.</span></p>
@@ -136,6 +136,23 @@ ORDER BY DESC(?statements) ?label ?property</textarea>
     </div>
     <div class="query-result"></div>
   </section>
+  <section class="query" id="aliases">
+    <h2><span class="l" lang="en">Alternative names</span><span class="l" lang="de">Alternative Namen</span></h2>
+<p><span class="l" lang="en">Items that are also known under another name (&#34;Also known as&#34;).</span><span class="l" lang="de">Items, die auch unter einem anderen Namen bekannt sind („Auch bekannt als“).</span></p>    <textarea spellcheck="false" aria-label="Alternative names" rows="7">SELECT ?item ?label ?alias WHERE {
+  ?item skos:altLabel ?alias ;
+        rdfs:label ?label .
+  FILTER(LANG(?label) = &#34;en&#34;)
+}
+ORDER BY ?label ?alias ?item</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/aliases.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
   <section class="query" id="item-links">
     <h2><span class="l" lang="en">How items are linked</span><span class="l" lang="de">Wie Items verknüpft sind</span></h2>
 <p><span class="l" lang="en">Statements whose value is another item, written as subject, property, object.</span><span class="l" lang="de">Aussagen, deren Wert ein anderes Item ist, als Subjekt, Property, Objekt.</span></p>    <textarea spellcheck="false" aria-label="How items are linked" rows="18">SELECT ?subjectLabel ?propertyLabel ?objectLabel WHERE {
@@ -180,6 +197,29 @@ LIMIT 20</textarea>
       <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
       <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
       <a href="downloads/queries/most-used-items.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="images">
+    <h2><span class="l" lang="en">Items with an image</span><span class="l" lang="de">Items mit Bild</span></h2>
+<p><span class="l" lang="en">Image files, from Commons files and from URLs that end in .jpg, .png and the like, shown as pictures in the query editor (the line starting with # chooses the view).</span><span class="l" lang="de">Bilddateien, aus Commons-Dateien und aus URLs, die auf .jpg, .png und ähnlich enden, im Abfrage-Editor als Bilder gezeigt (die Zeile mit # wählt die Ansicht).</span></p>    <textarea spellcheck="false" aria-label="Items with an image" rows="13">#defaultView:ImageGrid
+SELECT ?item ?label ?image WHERE {
+  ?property wikibase:directClaim ?direct .
+  ?item ?direct ?image .
+  FILTER(isIRI(?image) &amp;&amp; REGEX(STR(?image), &#34;\\.(jpe?g|png|gif|svg|webp|tiff?)$&#34;, &#34;i&#34;))
+  OPTIONAL {
+    ?item rdfs:label ?label .
+    FILTER(LANG(?label) = &#34;en&#34;)
+  }
+}
+ORDER BY ?label ?item
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/images.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
       <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
       <span class="query-stats" aria-live="polite"></span>
     </div>
@@ -231,6 +271,29 @@ LIMIT 200</textarea>
       <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
       <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
       <a href="downloads/queries/references.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="preferred-rank">
+    <h2><span class="l" lang="en">Statements with preferred rank</span><span class="l" lang="de">Aussagen mit bevorzugtem Rang</span></h2>
+<p><span class="l" lang="en">Where a property has several statements, the preferred one is the one the direct property returns.</span><span class="l" lang="de">Hat eine Property mehrere Aussagen, ist die bevorzugte die, die die direkte Property liefert.</span></p>    <textarea spellcheck="false" aria-label="Statements with preferred rank" rows="13">SELECT ?itemLabel ?propertyLabel ?statement WHERE {
+  ?statement wikibase:rank wikibase:PreferredRank .
+  ?property wikibase:claim ?claim ;
+            rdfs:label ?propertyLabel .
+  FILTER(LANG(?propertyLabel) = &#34;en&#34;)
+  ?item ?claim ?statement .
+  OPTIONAL {
+    ?item rdfs:label ?itemLabel .
+    FILTER(LANG(?itemLabel) = &#34;en&#34;)
+  }
+}
+ORDER BY ?itemLabel ?propertyLabel ?statement</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/preferred-rank.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
       <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
       <span class="query-stats" aria-live="polite"></span>
     </div>
@@ -301,7 +364,7 @@ ORDER BY ?label ?crmClass</textarea>
       <p>
         <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 (Public Domain)</a></span>
       </p>
-      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.10.0</p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.11.0</p>
     </footer>
   </div>
 </div>

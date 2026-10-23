@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q368$552837A6-DF87-577D-A839-3892C0D8F1F4",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q115755098"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q115755098"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Forschungsinstitut und Forschungsmuseum für Archäologie in der Leibniz-Gemeinschaft"
+    },
+    "en": {
+      "language": "en",
+      "value": "Research institute and museum for archaeology as part of the Leibniz association"
+    }
+  },
+  "id": "Q368",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Leibniz-Zentrum für Archäologie"
+    },
+    "en": {
+      "language": "en",
+      "value": "Leibniz-Zentrum für Archäologie"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

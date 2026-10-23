@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q374$3436E4D9-7CA6-5E8B-B081-8CB21E9658E3",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q88865971"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q88865971"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Niederländischer Archäologe"
+    },
+    "en": {
+      "language": "en",
+      "value": "Dutch archaeologist"
+    }
+  },
+  "id": "Q374",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Allard Wijnand Mees"
+    },
+    "en": {
+      "language": "en",
+      "value": "Allard Wijnand Mees"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

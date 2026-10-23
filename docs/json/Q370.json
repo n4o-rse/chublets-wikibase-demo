@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q370$9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q28865"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q28865"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Programmiersprache"
+    },
+    "en": {
+      "language": "en",
+      "value": "general-purpose programming language"
+    }
+  },
+  "id": "Q370",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Python"
+    },
+    "en": {
+      "language": "en",
+      "value": "Python"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

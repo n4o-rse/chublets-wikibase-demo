@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q365$1192F728-6813-590F-89B6-83120D80E796",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q66606154"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q66606154"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "deutscher Geodät, Research Software Engineer und Wissenschaftler"
+    },
+    "en": {
+      "language": "en",
+      "value": "researcher in the field of digital humanities"
+    }
+  },
+  "id": "Q365",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Florian Thiery"
+    },
+    "en": {
+      "language": "en",
+      "value": "Florian Thiery"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

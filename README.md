@@ -24,7 +24,10 @@ Every entity page offers its RDF as Turtle and as JSON for download (`docs/ttl/`
 **About 100 software entries** from open-archaeo (S7c, chosen in proportion to the three categories: 60 packages and libraries,
 18 scripts, 22 standalone programs out of 416), each a chublet with the identity block (instance of chublet and of its category class,
 maintained by the WikiProject, part of chublets.software and of the open-archaeo collection, collection, inventory number = slug),
-its authors, tags, languages, repository with archive link, registry package and links. Wikidata items (S7d) are still to come.
+its authors, tags, languages, repository with archive link, registry package and links.
+
+**Five Wikidata items** (S7d: AMT, Alligator, SPARQLing Unicorn, profileAAR, Text mining minion) as a first test of the Wikidata import, with 18 stubs for the
+items they point to (15 items, 3 classes).
 The pages show the model the way a Wikibase does; the RDF export additionally carries the **RDFS bridge**
 (`wdt:P1 rdfs:subPropertyOf rdfs:subClassOf` and five more triples, in a section of their own in the Turtle files), so that
 a reasoner or a property path reads the class tree.
@@ -112,6 +115,24 @@ choose the size; ids are never reused (`data/csv/idmap.csv`). Not imported, and 
 (Mobile app, Web app: it would need classes of its own), a repository host that is not certainly Git (Bitbucket) gets no version control
 system, and publications are items that carry only their DOI or URL as label (every property of the model has the domain "software").
 Needs `wikibase-static` 0.9.0.
+
+## Where the Wikidata items came from
+
+`data/csv/seeds-wikidata.csv` lists the Wikidata items (`qid, kind, note`); `data/raw/wikidata/` holds the answers of Wikidata as they were
+saved (the five items and the labels of the items they point to, 2026-10-23; never edited). The package turns them into items:
+
+```cmd
+python main.py import-wikidata --offline
+python main.py --strict
+```
+
+Without `--offline` the importer asks Wikidata which revisions changed and fetches only those (`--from-dir DIR` stores JSON files you saved in a
+browser first). A Wikidata property becomes a local one through its Wikidata twin (`P4`); three have none and are listed in
+`dist/wikidata-gaps.csv` and `dist/wikidata-import.txt` (genre, used by, uses). Wikidata "author" (P50) is a twin of "creator" (P171) next to P170, a
+decision of 2026-10-23. Items the seeds point to become stubs with label, description and their Wikidata twin; three types without a local twin
+(utility software, plug-in, QGIS plugin) become classes below software, which is an assumption of the importer. Rows written by the importer have
+`origin=wikidata` or `wikidata-stub`; empty that cell in a row you change by hand and the next import leaves it alone. The report also says which
+repository and exact-match URLs occur in the open-archaeo items; it merges nothing. Needs `wikibase-static` 0.11.0.
 
 ## Where the model came from
 

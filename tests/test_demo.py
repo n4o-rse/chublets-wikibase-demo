@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 import wikibase_static  # noqa: E402
-from wikibase_static import csvbuild, csvio, loader, rdf, step_import_open_archaeo as importer  # noqa: E402
+from wikibase_static import csvbuild, csvio, loader, rdf, step_import_open_archaeo as importer, step_import_wikidata as wikidata  # noqa: E402
 
 CSV = ROOT / "data" / "csv"
 RDFS, OWL, RDF = rdf.RDFS, rdf.OWL, rdf.RDF
@@ -40,6 +40,11 @@ def table(name: str) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def table_at(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
 def background() -> list[dict[str, str]]:
     with (ROOT / "background" / "property-set.csv").open(encoding="utf-8", newline="") as handle:
         return list(csv.DictReader(handle))
@@ -51,7 +56,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 9, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 11, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -112,7 +117,8 @@ class Pack(unittest.TestCase):
                 statement = twins[(row["local_id"], row["wikidata_pid"])]
                 self.assertEqual(references[statement["sid"]]["value"], f"https://www.wikidata.org/wiki/Property:{row['wikidata_pid']}")
         self.assertEqual(sum(1 for r in background() if r["wikidata_pid"] and not r["kernel"]), 98)
-        self.assertEqual(len([s for s in statements if s["property"] == "P4" and s["subject"].startswith("P")]), 98 + len(NEW_PROPERTIES))
+        # plus one hand row (2026-10-23, S7d): "creator" (P171) is also the twin of Wikidata P50 (author), see TestWikidata
+        self.assertEqual(len([s for s in statements if s["property"] == "P4" and s["subject"].startswith("P")]), 98 + len(NEW_PROPERTIES) + 1)
 
     def test_the_codemeta_terms_and_the_close_matches_are_statements(self) -> None:
         by_label = {r["wb_label"]: r["local_id"] for r in background()}
@@ -135,7 +141,8 @@ class Pack(unittest.TestCase):
             if s["property"] == "P1":
                 parents.setdefault(s["subject"], []).append(s["value"])
         classes = [r["id"] for r in table("entities.csv") if r["kind"] == "class"]
-        self.assertEqual(len(classes), 7)
+        self.assertEqual(sum(1 for r in table("entities.csv") if r["kind"] == "class" and r["origin"] == "starter-pack"), 7)
+        self.assertEqual(len(classes), 7 + 3)                       # plus the three class stubs of the Wikidata import (S7d)
         for class_id in classes:
             seen, todo = set(), [class_id]
             while todo:
@@ -166,7 +173,7 @@ class Site(unittest.TestCase):
             self.assertIn(entity_id, self.site.entities)
 
     def test_it_holds_the_model_and_what_the_importer_added(self) -> None:
-        imported = sum(1 for r in table("entities.csv") if r["origin"] == "open-archaeo")
+        imported = sum(1 for r in table("entities.csv") if r["origin"] in ("open-archaeo", "wikidata", "wikidata-stub"))
         self.assertEqual(len(self.site.entities), 3 + 10 + 149 + len(NEW_PROPERTIES) + 7 + imported)
         self.assertEqual(len(self.site.properties), 10 + 149 + len(NEW_PROPERTIES))
 
@@ -386,6 +393,82 @@ class OpenArchaeo(unittest.TestCase):
             self.assertEqual(importer.main(args), 0)
             for path in CSV.glob("*.csv"):
                 self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
+
+
+class Wikidata(unittest.TestCase):
+    """S7d: the Wikidata items listed in seeds-wikidata.csv, imported with local ids, twins and stubs."""
+
+    SEEDS = CSV / "seeds-wikidata.csv"
+    RAW = ROOT / "data" / "raw" / "wikidata"
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.seeds = table("seeds-wikidata.csv")
+        cls.entities = {r["id"]: r for r in table("entities.csv")}
+        cls.statements = table("statements.csv")
+        cls.idmap = {r["key"]: r["id"] for r in table("idmap.csv") if r["source"] == "wikidata"}
+
+    def values(self, subject: str, prop: str) -> list[str]:
+        return [s["value"] for s in self.statements if s["subject"] == subject and s["property"] == prop]
+
+    def test_the_five_seeds_are_research_software_and_each_is_an_item_with_its_twin(self) -> None:
+        self.assertEqual([s["qid"] for s in self.seeds], ["Q74003194", "Q74004218", "Q74005133", "Q74823867", "Q74824570"])
+        self.assertEqual({s["kind"] for s in self.seeds}, {"research software"})
+        for seed in self.seeds:
+            item = self.idmap[seed["qid"]]
+            self.assertEqual(self.entities[item]["origin"], "wikidata", seed["qid"])
+            self.assertEqual(self.values(item, "P4"), [seed["qid"]], seed["qid"])
+            self.assertIn("Q100", self.values(item, "P2"), seed["qid"])          # Wikidata says software, the twin translates it
+
+    def test_the_raw_data_is_kept_with_its_revisions(self) -> None:
+        manifest = json.loads((self.RAW / "manifest.json").read_text(encoding="utf-8"))
+        for seed in self.seeds:
+            self.assertIsNotNone(manifest["entities"][seed["qid"]]["lastrevid"], seed["qid"])
+            self.assertTrue((self.RAW / "entities" / f"{seed['qid']}.json").is_file())
+
+    def test_creator_is_the_twin_of_author_and_of_creator(self) -> None:
+        self.assertEqual(sorted(self.values("P171", "P4")), ["P170", "P50"])
+        self.assertEqual(self.values(self.idmap["Q74824570"], "P171"), [self.idmap["Q58529575"]])
+
+    def test_no_value_of_an_importer_row_is_a_wikidata_id(self) -> None:
+        datatypes = {i: r["datatype"] for i, r in self.entities.items() if r["kind"] == "property"}
+        own = [s for s in self.statements if s["origin"] in ("wikidata", "wikidata-stub")]
+        self.assertGreater(len(own), 100)
+        for s in own:
+            if s["property"] != "P4" and datatypes.get(s["property"], "wikibase-item") == "wikibase-item":
+                self.assertTrue(s["value"] in self.entities or s["value"] in csvbuild.KERNEL, s)
+            self.assertNotIn("wd:", s["value"], s)
+
+    def test_a_stub_has_label_description_and_twin_and_nothing_else_a_class_stub_also_its_parent(self) -> None:
+        stubs = [i for i, r in self.entities.items() if r["origin"] == "wikidata-stub"]
+        self.assertGreaterEqual(len(stubs), 15)
+        for item in stubs:
+            wanted = ["P1", "P4"] if self.entities[item]["kind"] == "class" else ["P4"]
+            self.assertEqual(sorted(s["property"] for s in self.statements if s["subject"] == item), wanted, item)
+            self.assertTrue(self.entities[item]["label_en"], item)
+
+    def test_the_types_without_a_twin_are_classes_below_software(self) -> None:
+        classes = {r["label_en"]: i for i, r in self.entities.items() if r["origin"] == "wikidata-stub" and r["kind"] == "class"}
+        self.assertEqual(sorted(classes), ["QGIS plugin", "plug-in", "utility software"])
+        for item in classes.values():
+            self.assertEqual(self.values(item, "P1"), ["Q100"], item)
+
+    def test_the_gap_report_names_the_three_properties_the_model_does_not_know(self) -> None:
+        report = table_at(ROOT / "dist" / "wikidata-gaps.csv")
+        self.assertEqual([(r["wikidata_property"], r["snaks"]) for r in report], [("P136", "7"), ("P1535", "6"), ("P2283", "5")])
+
+    def test_a_reimport_changes_nothing(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "data" / "csv"
+            target.mkdir(parents=True)
+            for path in CSV.glob("*.csv"):
+                (target / path.name).write_bytes(path.read_bytes())
+            args = ["--csv", str(target), "--seeds", str(self.SEEDS), "--raw", str(self.RAW), "--offline"]
+            self.assertEqual(wikidata.main(args), 0)
+            for path in CSV.glob("*.csv"):
+                self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
+            for name in ("wikidata-gaps.csv", "wikidata-import.txt"):
+                self.assertEqual((Path(tmp) / "dist" / name).read_bytes(), (ROOT / "dist" / name).read_bytes(), name)
 
 
 if __name__ == "__main__":

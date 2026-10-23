@@ -1,0 +1,104 @@
+{
+  "aliases": {},
+  "claims": {
+    "P1": [
+      {
+        "id": "Q379$8EED49AE-6CFF-54C4-B09D-E061CD64724D",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P1",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "Q379$EF3AF108-9A58-5C57-9DC2-7C08AB18416C",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P4": [
+      {
+        "id": "Q379$058AB482-85C5-5198-8DCB-0E699B14F9DC",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q184148"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q184148"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Softwarekomponente zur Erweiterung einer bereits existierenden Anwendung"
+    },
+    "en": {
+      "language": "en",
+      "value": "software component that adds a specific feature to an existing software application"
+    }
+  },
+  "id": "Q379",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Plug-in"
+    },
+    "en": {
+      "language": "en",
+      "value": "plug-in"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

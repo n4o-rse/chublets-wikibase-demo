@@ -1,0 +1,15 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?itemLabel ?propertyLabel ?statement WHERE {
+  ?statement wikibase:rank wikibase:PreferredRank .
+  ?property wikibase:claim ?claim ;
+            rdfs:label ?propertyLabel .
+  FILTER(LANG(?propertyLabel) = "en")
+  ?item ?claim ?statement .
+  OPTIONAL {
+    ?item rdfs:label ?itemLabel .
+    FILTER(LANG(?itemLabel) = "en")
+  }
+}
+ORDER BY ?itemLabel ?propertyLabel ?statement

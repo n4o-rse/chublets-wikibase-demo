@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q367$C33275E1-2B1C-51A6-AB48-B83CDA804504",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q98229157"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q98229157"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte"
+    },
+    "en": {
+      "language": "en",
+      "value": "Research Data Infrastructure for the Material Remains of Human History"
+    }
+  },
+  "id": "Q367",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "NFDI4Objects"
+    },
+    "en": {
+      "language": "en",
+      "value": "NFDI4Objects"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

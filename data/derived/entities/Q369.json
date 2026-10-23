@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q369$1D7EC427-ECCA-5826-B6F6-7A8EE581CE3A",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q334661"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q334661"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "freizügige Open-Source-Lizenz vom Massachusetts Institute of Technology mit mehreren Varianten"
+    },
+    "en": {
+      "language": "en",
+      "value": "permissive free software license"
+    }
+  },
+  "id": "Q369",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "MIT-Lizenz"
+    },
+    "en": {
+      "language": "en",
+      "value": "MIT License"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

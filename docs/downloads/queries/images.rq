@@ -1,0 +1,15 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+#defaultView:ImageGrid
+SELECT ?item ?label ?image WHERE {
+  ?property wikibase:directClaim ?direct .
+  ?item ?direct ?image .
+  FILTER(isIRI(?image) && REGEX(STR(?image), "\\.(jpe?g|png|gif|svg|webp|tiff?)$", "i"))
+  OPTIONAL {
+    ?item rdfs:label ?label .
+    FILTER(LANG(?label) = "en")
+  }
+}
+ORDER BY ?label ?item
+LIMIT 200

@@ -1,4 +1,4 @@
 # The tool that renders this site.
-# Needs wikibase-static 0.6.0 or later (RDFS bridge, formatter URL of the kernel, fast `references` query, page downloads). Pin a tag or commit here once
+# Needs wikibase-static 0.11.0 or later (0.6.0: RDFS bridge, formatter URL of the kernel, fast `references` query, page downloads; 0.9.0: import-open-archaeo; 0.11.0: import-wikidata). Pin a tag or commit here once
 # wikibase-static has releases.
 wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git

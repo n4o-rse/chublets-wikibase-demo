@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPARQLing Unicorn QGIS Plugin (Q360) – chublets.software Wikibase (model demo)</title>
+<meta name="description" content="Plugin to add a layer in QGIS from Linked Data SPARQL endpoints.">
+<link rel="canonical" href="https://n4o-rse.github.io/chublets-wikibase-demo/Q360.html">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+:root { --accent: #336699; }
+html[data-lang="en"] .l:not([lang="en"]) { display: none; }
+html[data-lang="de"] .l:not([lang="de"]) { display: none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="sidebar">
+    <a class="logo" href="index.html"><img src="assets/logo/logo.png" alt="chublets.software Wikibase (model demo)"></a>
+    <nav class="nav" aria-label="Home">
+      <a href="index.html"><span class="l" lang="en">Home</span><span class="l" lang="de">Startseite</span></a>
+<a href="items.html">Items</a><a href="overview.html"><span class="l" lang="en">Overview</span><span class="l" lang="de">Übersicht</span></a><a href="properties.html">Properties</a><a href="sparql.html">SPARQL</a><a href="query.html"><span class="l" lang="en">Query</span><span class="l" lang="de">Abfrage</span></a>    </nav>
+  </aside>
+  <div class="content">
+    <div class="tabs">
+      <ul class="tabs-left"><li class="active"><span>Item</span></li></ul>
+      <div class="tabs-right">
+        <ul class="tabs-view"><li class="active"><span><span class="l" lang="en">Read</span><span class="l" lang="de">Lesen</span></span></li></ul>
+        <form class="search" role="search" action="#" hidden data-index="assets/search-index.js" data-default="en" data-text="{&#34;de&#34;:{&#34;error&#34;:&#34;Der Suchindex konnte nicht geladen werden.&#34;,&#34;none&#34;:&#34;Keine Treffer&#34;,&#34;placeholder&#34;:&#34;Suche&#34;},&#34;en&#34;:{&#34;error&#34;:&#34;The search index could not be loaded.&#34;,&#34;none&#34;:&#34;No results&#34;,&#34;placeholder&#34;:&#34;Search&#34;}}">
+          <input type="search" name="q" autocomplete="off" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="wbs-search-list">
+          <ul class="search-results" id="wbs-search-list" role="listbox" aria-label="Search" hidden></ul>
+        </form>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="de">DE</button>
+        </div>
+      </div>
+    </div>
+    <main>
+<article class="entity">
+  <h1>SPARQLing Unicorn QGIS Plugin <span class="id">(Q360)</span></h1>
+  <p class="description"><span class="l" lang="en">Plugin to add a layer in QGIS from Linked Data SPARQL endpoints.</span><span class="l" lang="de">Plugin zum Hinzufügen eines Vektor-Layer in QGIS aus SPARQL endpoints.</span></p>
+
+  <p class="entity-tools">
+    <span class="muted"><span class="l" lang="en">Download</span><span class="l" lang="de">Herunterladen</span>:</span>
+    <a href="ttl/Q360.ttl" download>RDF (Turtle)</a>
+    <a href="json/Q360.json" download>JSON</a>
+    <button type="button" class="copy-uri" data-copy="https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q360" title="https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q360"><span class="copy-label"><span class="l" lang="en">Copy concept URI</span><span class="l" lang="de">Konzept-URI kopieren</span></span><span class="copy-done" hidden><span class="l" lang="en">Copied</span><span class="l" lang="de">Kopiert</span></span></button>
+  </p>
+
+  <p class="crm"><span class="muted"><span class="l" lang="en">CIDOC CRM class</span><span class="l" lang="de">CIDOC-CRM-Klasse</span>:</span>
+<span class="crm-class" title="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"><code>crmdig:D14_Software</code> <span class="muted">(<span class="l" lang="en">from</span><span class="l" lang="de">von</span> <a href="Q100.html">software</a>)</span></span>  </p>
+
+  <details class="languages" open>
+    <summary><span class="l" lang="en">In other languages</span><span class="l" lang="de">In weiteren Sprachen</span></summary>
+    <table class="terms">
+      <thead><tr><th><span class="l" lang="en">Language</span><span class="l" lang="de">Sprache</span></th><th><span class="l" lang="en">Label</span><span class="l" lang="de">Bezeichnung</span></th><th><span class="l" lang="en">Description</span><span class="l" lang="de">Beschreibung</span></th><th><span class="l" lang="en">Also known as</span><span class="l" lang="de">Auch bekannt als</span></th></tr></thead>
+      <tbody>
+        <tr lang="en"><td><span class="l" lang="en">English</span><span class="l" lang="de">Englisch</span></td><td>SPARQLing Unicorn QGIS Plugin</td><td>Plugin to add a layer in QGIS from Linked Data SPARQL endpoints.</td><td></td></tr>
+        <tr lang="de"><td><span class="l" lang="en">German</span><span class="l" lang="de">Deutsch</span></td><td>SPARQLing Unicorn QGIS Plugin</td><td>Plugin zum Hinzufügen eines Vektor-Layer in QGIS aus SPARQL endpoints.</td><td></td></tr>
+      </tbody>
+    </table>
+  </details>
+
+
+  <section class="statements">
+    <h2><span class="l" lang="en">Statements</span><span class="l" lang="de">Aussagen</span></h2>
+    <div class="claim-group" id="P2">
+      <div class="prop"><a href="P2.html"><span class="l" lang="en">instance of</span><span class="l" lang="de">ist eine Instanz von</span> <span class="id">(P2)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q100.html">software <span class="id">(Q100)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q372.html"><span class="l" lang="en">utility software</span><span class="l" lang="de">Dienstprogramm</span> <span class="id">(Q372)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q378.html">QGIS plugin <span class="id">(Q378)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q105.html">Little Minion <span class="id">(Q105)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q106.html">chublet <span class="id">(Q106)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P4">
+      <div class="prop"><a href="P4.html"><span class="l" lang="en">Wikidata equivalent</span><span class="l" lang="de">Wikidata-Entsprechung</span> <span class="id">(P4)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="https://www.wikidata.org/entity/Q74005133" target="_blank" rel="noopener">Q74005133</a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P113">
+      <div class="prop"><a href="P113.html">developer <span class="id">(P113)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q365.html">Florian Thiery <span class="id">(Q365)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q376.html">Timo Homburg <span class="id">(Q376)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q377.html">Research Squirrel Engineers Network <span class="id">(Q377)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P114">
+      <div class="prop"><a href="P114.html">DOI <span class="id">(P114)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">10.5281/ZENODO.13828632</div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P120">
+      <div class="prop"><a href="P120.html">official website <span class="id">(P120)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="https://plugins.qgis.org/plugins/sparqlunicorn/" target="_blank" rel="noopener">https://plugins.qgis.org/plugins/sparqlunicorn/</a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P123">
+      <div class="prop"><a href="P123.html">programmed in <span class="id">(P123)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="Q370.html">Python <span class="id">(Q370)</span></a></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P125">
+      <div class="prop"><a href="P125.html">source code repository URL <span class="id">(P125)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS</a></div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P126.html">version control system <span class="id">(P126)</span></a></div><div class="qval"><a href="Q114.html">Git <span class="id">(Q114)</span></a></div>
+              <div class="qprop"><a href="P248.html">web interface software <span class="id">(P248)</span></a></div><div class="qval"><a href="Q363.html">GitHub <span class="id">(Q363)</span></a></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P148">
+      <div class="prop"><a href="P148.html">software version identifier <span class="id">(P148)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.1</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-28</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.1" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.1</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.1</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-28</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.2</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-29</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.2" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.2</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.2</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-29</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.3</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-30</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.3" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.3</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.3</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-30</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.4</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-30</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.4" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.4</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.4</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-30</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.5</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-30</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.5" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.5</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.5</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-10-30</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.6</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-11-02</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.6" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.6</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.6</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-11-02</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.7</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-11-03</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.7" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.7</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2019-11-09</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.7</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2019-11-03</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.8</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-02-19</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.8" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.8</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2020-02-20</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.8</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-02-19</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.9</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-03-11</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.9" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.9</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2020-03-12</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.9</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-03-11</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.10</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-04-26</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2020-04-27</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.10</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-04-26</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.10a</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-05-05</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10a" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10a</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2020-05-06</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.10a</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-05-05</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.11</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-07-06</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.11" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.11</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2020-07-07</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.11</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2020-07-06</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.12</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-01-15</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2021-01-17</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.12</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-01-15</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.12.1</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-01-21</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.1" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.1</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2021-02-17</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.12.1</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-01-21</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.12.2</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-06-11</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.2" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.2</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2022-10-26</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.12.2</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-06-11</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.13</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-11-26</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2022-10-26</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.13</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-11-26</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.13.1</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-12-01</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13.1" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13.1</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2022-10-26</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.13.1</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2021-12-01</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.14</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2022-02-05</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.14" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.14</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2022-10-26</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.14</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2022-02-05</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.15</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2022-11-08</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.15" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.15</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2022-11-25</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.15</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2022-11-08</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.16</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2023-07-28</span></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.16" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.16</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2023-08-01</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.16</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2023-07-28</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.17</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2024-03-04</span></div>
+              <div class="qprop"><a href="P153.html">version type <span class="id">(P153)</span></a></div><div class="qval"><a href="Q375.html"><span class="l" lang="en">stable version</span><span class="l" lang="de">stabile Version</span> <span class="id">(Q375)</span></a></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2024-03-25</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.17</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2024-03-04</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.17.1</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2024-09-23</span></div>
+              <div class="qprop"><a href="P153.html">version type <span class="id">(P153)</span></a></div><div class="qval"><a href="Q375.html"><span class="l" lang="en">stable version</span><span class="l" lang="de">stabile Version</span> <span class="id">(Q375)</span></a></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.1" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.1</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2024-09-26</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.17.1</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2024-09-23</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.17.2</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2025-02-15</span></div>
+              <div class="qprop"><a href="P153.html">version type <span class="id">(P153)</span></a></div><div class="qval"><a href="Q375.html"><span class="l" lang="en">stable version</span><span class="l" lang="de">stabile Version</span> <span class="id">(Q375)</span></a></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.2" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.2</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2025-02-28</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.17.2</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2025-02-15</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main">0.17.3</div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2025-04-02</span></div>
+              <div class="qprop"><a href="P153.html">version type <span class="id">(P153)</span></a></div><div class="qval"><a href="Q375.html"><span class="l" lang="en">stable version</span><span class="l" lang="de">stabile Version</span> <span class="id">(Q375)</span></a></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.3" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.3</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2025-05-01</span></div>
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.17.3</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2025-04-02</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="statement rank-preferred">
+          <span class="rank-icon rank-preferred" title="Rank: preferred"></span>
+          <div class="body">
+            <div class="main">0.17.4 <span class="rank rank-preferred"><span class="l" lang="en">preferred</span><span class="l" lang="de">bevorzugt</span></span></div>
+            <div class="qualifiers">
+              <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2025-12-19</span></div>
+              <div class="qprop"><a href="P153.html">version type <span class="id">(P153)</span></a></div><div class="qval"><a href="Q375.html"><span class="l" lang="en">stable version</span><span class="l" lang="de">stabile Version</span> <span class="id">(Q375)</span></a></div>
+            </div>
+            <details class="references">
+              <summary><span class="l" lang="en">2 references</span><span class="l" lang="de">2 Fundstellen</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+              <div class="reference">
+                <div class="qprop"><a href="P247.html">title <span class="id">(P247)</span></a></div><div class="qval"><span lang="en">Release 0.17.4</span> <span class="tag">en</span></div>
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.4" target="_blank" rel="noopener">https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.4</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-04-07</span></div>
+                <div class="qprop"><a href="P144.html">publication date <span class="id">(P144)</span></a></div><div class="qval"><span class="time">2025-12-19</span></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="claim-group" id="P247">
+      <div class="prop"><a href="P247.html">title <span class="id">(P247)</span></a></div>
+      <div class="values">
+        <div class="statement rank-normal">
+          <span class="rank-icon rank-normal" title="Rank: normal"></span>
+          <div class="body">
+            <div class="main"><span lang="en">SPARQLing Unicorn QGIS Plugin</span> <span class="tag">en</span></div>
+            <details class="references">
+              <summary><span class="l" lang="en">1 reference</span><span class="l" lang="de">Eine Fundstelle</span></summary>
+              <div class="reference">
+                <div class="qprop"><a href="P6.html"><span class="l" lang="en">reference URL</span><span class="l" lang="de">Beleg-URL</span> <span class="id">(P6)</span></a></div><div class="qval"><a href="https://www.wikidata.org/wiki/Q74005133" target="_blank" rel="noopener">https://www.wikidata.org/wiki/Q74005133</a></div>
+                <div class="qprop"><a href="P7.html"><span class="l" lang="en">retrieved</span><span class="l" lang="de">abgerufen am</span> <span class="id">(P7)</span></a></div><div class="qval"><span class="time">2026-08-18</span></div>
+                <div class="qprop"><a href="P8.html"><span class="l" lang="en">stated in</span><span class="l" lang="de">angegeben in</span> <span class="id">(P8)</span></a></div><div class="qval"><a href="Q364.html">Wikidata <span class="id">(Q364)</span></a></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</article>
+    </main>
+    <footer class="site-footer">
+      <p>
+        <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 (Public Domain)</a></span>
+      </p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.11.0</p>
+    </footer>
+  </div>
+</div>
+<script src="assets/app.js"></script>
+<script src="assets/search.js"></script>
+</body>
+</html>

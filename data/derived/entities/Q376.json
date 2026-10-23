@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q376$1DEC0160-DE7C-5AF6-850E-1BF1A5057170",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q67624599"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q67624599"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Forscher"
+    },
+    "en": {
+      "language": "en",
+      "value": "Researcher in Geospatial Semantics at Mainz University of Applied Sciences interested in standardization, semantic web technologies. Part of the OGC GeoSPARQL working group"
+    }
+  },
+  "id": "Q376",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Timo Homburg"
+    },
+    "en": {
+      "language": "en",
+      "value": "Timo Homburg"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

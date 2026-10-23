@@ -1,0 +1,104 @@
+{
+  "aliases": {},
+  "claims": {
+    "P1": [
+      {
+        "id": "Q372$26A9184A-7E2E-59B3-AF40-E22A49C3B4B9",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P1",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "Q372$B7180C62-8DFD-563E-965D-CFB938EB6812",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1",
+              "numeric-id": 1
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P4": [
+      {
+        "id": "Q372$BBC5B59B-C2D7-5A5D-820D-1CF6886896E3",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q312466"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q312466"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Computerprogramm, das allgemeine, oft systemnahe Aufgaben ausführt"
+    },
+    "en": {
+      "language": "en",
+      "value": "system software designed to help analyze, configure, optimize or maintain a computer"
+    }
+  },
+  "id": "Q372",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Dienstprogramm"
+    },
+    "en": {
+      "language": "en",
+      "value": "utility software"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

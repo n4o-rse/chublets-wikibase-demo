@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q366$F5E60C6B-2690-5ADC-964C-CB335077F1E0",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q47213994"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q47213994"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Mainzer Zentrum für Digitalität in den Geistes- und Kulturwissenschaften"
+    },
+    "en": {
+      "language": "en",
+      "value": "joint initiative of German institutes to promote digital methodolgies in humanities and cultural sciences"
+    }
+  },
+  "id": "Q366",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "mainzed"
+    },
+    "en": {
+      "language": "en",
+      "value": "mainzed"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

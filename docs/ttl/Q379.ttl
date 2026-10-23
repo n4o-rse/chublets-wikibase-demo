@@ -1,0 +1,117 @@
+# Q379: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.11.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q379
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Softwarekomponente zur Erweiterung einer bereits existierenden Anwendung"@de,
+        "software component that adds a specific feature to an existing software application"@en ;
+    dcterms:identifier "Q379" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q379 ;
+    dcterms:title "Plug-in"@de,
+        "plug-in"@en ;
+    schema:about wd:Q379 ;
+    dcat:distribution dist:Q379-html,
+        dist:Q379-json,
+        dist:Q379-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q379.html> .
+
+dist:Q379-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q379, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q379.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q379-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q379, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2404"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q379.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q379-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q379, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q379.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q379
+    a wikibase:Item ;
+    schema:description "Softwarekomponente zur Erweiterung einer bereits existierenden Anwendung"@de,
+        "software component that adds a specific feature to an existing software application"@en ;
+    schema:name "Plug-in"@de,
+        "plug-in"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Plug-in"@de,
+        "plug-in"@en ;
+    skos:prefLabel "Plug-in"@de,
+        "plug-in"@en ;
+    p:P1 wds:Q379-8EED49AE-6CFF-54C4-B09D-E061CD64724D ;
+    p:P2 wds:Q379-EF3AF108-9A58-5C57-9DC2-7C08AB18416C ;
+    p:P4 wds:Q379-058AB482-85C5-5198-8DCB-0E699B14F9DC ;
+    wdt:P1 wd:Q100 ;
+    wdt:P2 wd:Q1 ;
+    wdt:P4 "Q184148" .
+
+wds:Q379-8EED49AE-6CFF-54C4-B09D-E061CD64724D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1 wd:Q100 .
+
+wds:Q379-058AB482-85C5-5198-8DCB-0E699B14F9DC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:79cb4734429e962250772fb9bfe557b62f7faf23 ;
+    ps:P4 "Q184148" .
+
+wds:Q379-EF3AF108-9A58-5C57-9DC2-7C08AB18416C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q1 .
+
+wdref:79cb4734429e962250772fb9bfe557b62f7faf23
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q184148> .

@@ -1,0 +1,60 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q363$5DA51CC6-00A9-5F62-8D8D-60CEC49AF90F",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q364"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q364"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "webbasierter Hosting-Dienst für Software-Entwicklungsprojekte"
+    },
+    "en": {
+      "language": "en",
+      "value": "hosting service for software projects using Git"
+    }
+  },
+  "id": "Q363",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "GitHub"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

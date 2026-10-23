@@ -6,6 +6,8 @@
     python main.py --strict check-crm   SHACL check: every class reaches the CIDOC CRM (after the default run; needs wikibase-static 0.8.0)
     python main.py csv-fmt              bring the tables in data/csv/ into canonical form (--check: only report)
     python main.py import-open-archaeo  about 100 software entries of open-archaeo into data/csv/ (needs wikibase-static 0.9.0; --limit N, --all)
+    python main.py import-wikidata      the Wikidata items in data/csv/seeds-wikidata.csv into data/csv/ (needs wikibase-static 0.11.0;
+                                        fetches what changed, --offline uses data/raw/wikidata/ only, --from-dir DIR stores saved JSON first)
     python main.py --list               print the steps and exit
 
 The model is kept in data/csv/ (four tables and idmap.csv). ``tools/import_pack.py`` made them once from the
@@ -31,6 +33,7 @@ ROOT = Path(__file__).resolve().parent
 STEPS = [
     ("csv-fmt", "step_csv_fmt", False),
     ("import-open-archaeo", "step_import_open_archaeo", False),
+    ("import-wikidata", "step_import_wikidata", False),
     ("from-csv", "step_from_csv", True),
     ("load", "step_load", True),
     ("build", "step_build", True),

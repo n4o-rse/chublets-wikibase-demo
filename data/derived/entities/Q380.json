@@ -1,0 +1,56 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q380$B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q58529575"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q58529575"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "en": {
+      "language": "en",
+      "value": "researcher ORCID ID = 0000-0001-6966-1729"
+    }
+  },
+  "id": "Q380",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "Ronald Visser"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

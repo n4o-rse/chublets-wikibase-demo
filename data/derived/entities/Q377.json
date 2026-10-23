@@ -1,0 +1,56 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q377$FDE6F2DE-24E8-50CD-9AA8-E0529BF95833",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q73901970"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q73901970"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "en": {
+      "language": "en",
+      "value": "Network of Research Software Engineers with research interests in Digital Humanities and Geodata"
+    }
+  },
+  "id": "Q377",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "Research Squirrel Engineers Network"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

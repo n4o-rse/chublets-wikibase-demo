@@ -1,5 +1,5 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.10.0; data as of unknown
+# Generated with wikibase-static 0.11.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -305,7 +305,30 @@ cat:items
         data:Q354,
         data:Q355,
         data:Q356,
-        data:Q357 .
+        data:Q357,
+        data:Q358,
+        data:Q359,
+        data:Q360,
+        data:Q361,
+        data:Q362,
+        data:Q363,
+        data:Q364,
+        data:Q365,
+        data:Q366,
+        data:Q367,
+        data:Q368,
+        data:Q369,
+        data:Q370,
+        data:Q371,
+        data:Q372,
+        data:Q373,
+        data:Q374,
+        data:Q375,
+        data:Q376,
+        data:Q377,
+        data:Q378,
+        data:Q379,
+        data:Q380 .
 
 cat:properties
     a dcat:Catalog ;
@@ -7075,6 +7098,405 @@ data:Q357
         dist:Q357-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q357.html> .
 
+data:Q358
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Eine Ontologie und Web-App zur Modellierung von Vagheit im Graphen mit integriertem Reasoning."@de,
+        "ontology and webapp for modelling vagueness in graphs including reasoning"@en ;
+    dcterms:identifier "Q358" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q358 ;
+    dcterms:title "Academic Meta Tool (AMT)"@de,
+        "Academic Meta Tool (AMT)"@en ;
+    schema:about wd:Q358 ;
+    dcat:distribution dist:Q358-html,
+        dist:Q358-json,
+        dist:Q358-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q358.html> .
+
+data:Q359
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Ontologie und Webapplikation zur Transformation einer Korrespondenzanalyse mit fixen und schwebenden Intervallen in eine relative Chronologie und RDF Repräsentation unter Nutzung des Allen Kalküls."@de,
+        "ontology and web app for transforming a correspondence analyses with fixed and floating time intervals to a relative chronology and RDF representation using Allen's interval algebra"@en ;
+    dcterms:identifier "Q359" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q359 ;
+    dcterms:title "Alligator - Allen Transformator"@de,
+        "Alligator - Allen Transformer"@en ;
+    schema:about wd:Q359 ;
+    dcat:distribution dist:Q359-html,
+        dist:Q359-json,
+        dist:Q359-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q359.html> .
+
+data:Q360
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Plugin to add a layer in QGIS from Linked Data SPARQL endpoints."@en,
+        "Plugin zum Hinzufügen eines Vektor-Layer in QGIS aus SPARQL endpoints."@de ;
+    dcterms:identifier "Q360" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q360 ;
+    dcterms:title "SPARQLing Unicorn QGIS Plugin"@de,
+        "SPARQLing Unicorn QGIS Plugin"@en ;
+    schema:about wd:Q360 ;
+    dcat:distribution dist:Q360-html,
+        dist:Q360-json,
+        dist:Q360-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q360.html> .
+
+data:Q361
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "The plugin profileAAR transforms profile control points for fotogrammetric rectification of section images of archaeological excavations."@en ;
+    dcterms:identifier "Q361" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q361 ;
+    dcterms:title "profileAAR"@en ;
+    schema:about wd:Q361 ;
+    dcat:distribution dist:Q361-html,
+        dist:Q361-json,
+        dist:Q361-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q361.html> .
+
+data:Q362
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "text mining tools to search archaeological reports"@en ;
+    dcterms:identifier "Q362" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q362 ;
+    dcterms:title "Text mining minion"@en ;
+    schema:about wd:Q362 ;
+    dcat:distribution dist:Q362-html,
+        dist:Q362-json,
+        dist:Q362-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q362.html> .
+
+data:Q363
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "hosting service for software projects using Git"@en,
+        "webbasierter Hosting-Dienst für Software-Entwicklungsprojekte"@de ;
+    dcterms:identifier "Q363" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q363 ;
+    dcterms:title "GitHub"@en ;
+    schema:about wd:Q363 ;
+    dcat:distribution dist:Q363-html,
+        dist:Q363-json,
+        dist:Q363-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q363.html> .
+
+data:Q364
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:identifier "Q364" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q364 ;
+    dcterms:title "Wikidata"@en ;
+    schema:about wd:Q364 ;
+    dcat:distribution dist:Q364-html,
+        dist:Q364-json,
+        dist:Q364-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q364.html> .
+
+data:Q365
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "deutscher Geodät, Research Software Engineer und Wissenschaftler"@de,
+        "researcher in the field of digital humanities"@en ;
+    dcterms:identifier "Q365" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q365 ;
+    dcterms:title "Florian Thiery"@de,
+        "Florian Thiery"@en ;
+    schema:about wd:Q365 ;
+    dcat:distribution dist:Q365-html,
+        dist:Q365-json,
+        dist:Q365-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q365.html> .
+
+data:Q366
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Mainzer Zentrum für Digitalität in den Geistes- und Kulturwissenschaften"@de,
+        "joint initiative of German institutes to promote digital methodolgies in humanities and cultural sciences"@en ;
+    dcterms:identifier "Q366" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q366 ;
+    dcterms:title "mainzed"@de,
+        "mainzed"@en ;
+    schema:about wd:Q366 ;
+    dcat:distribution dist:Q366-html,
+        dist:Q366-json,
+        dist:Q366-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q366.html> .
+
+data:Q367
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte"@de,
+        "Research Data Infrastructure for the Material Remains of Human History"@en ;
+    dcterms:identifier "Q367" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q367 ;
+    dcterms:title "NFDI4Objects"@de,
+        "NFDI4Objects"@en ;
+    schema:about wd:Q367 ;
+    dcat:distribution dist:Q367-html,
+        dist:Q367-json,
+        dist:Q367-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q367.html> .
+
+data:Q368
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Forschungsinstitut und Forschungsmuseum für Archäologie in der Leibniz-Gemeinschaft"@de,
+        "Research institute and museum for archaeology as part of the Leibniz association"@en ;
+    dcterms:identifier "Q368" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q368 ;
+    dcterms:title "Leibniz-Zentrum für Archäologie"@de,
+        "Leibniz-Zentrum für Archäologie"@en ;
+    schema:about wd:Q368 ;
+    dcat:distribution dist:Q368-html,
+        dist:Q368-json,
+        dist:Q368-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q368.html> .
+
+data:Q369
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "freizügige Open-Source-Lizenz vom Massachusetts Institute of Technology mit mehreren Varianten"@de,
+        "permissive free software license"@en ;
+    dcterms:identifier "Q369" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q369 ;
+    dcterms:title "MIT License"@en,
+        "MIT-Lizenz"@de ;
+    schema:about wd:Q369 ;
+    dcat:distribution dist:Q369-html,
+        dist:Q369-json,
+        dist:Q369-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q369.html> .
+
+data:Q370
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Programmiersprache"@de,
+        "general-purpose programming language"@en ;
+    dcterms:identifier "Q370" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q370 ;
+    dcterms:title "Python"@de,
+        "Python"@en ;
+    schema:about wd:Q370 ;
+    dcat:distribution dist:Q370-html,
+        dist:Q370-json,
+        dist:Q370-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q370.html> .
+
+data:Q371
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Skriptsprache"@de,
+        "high-level programming language"@en ;
+    dcterms:identifier "Q371" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q371 ;
+    dcterms:title "JavaScript"@en ;
+    schema:about wd:Q371 ;
+    dcat:distribution dist:Q371-html,
+        dist:Q371-json,
+        dist:Q371-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q371.html> .
+
+data:Q372
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Computerprogramm, das allgemeine, oft systemnahe Aufgaben ausführt"@de,
+        "system software designed to help analyze, configure, optimize or maintain a computer"@en ;
+    dcterms:identifier "Q372" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q372 ;
+    dcterms:title "Dienstprogramm"@de,
+        "utility software"@en ;
+    schema:about wd:Q372 ;
+    dcat:distribution dist:Q372-html,
+        dist:Q372-json,
+        dist:Q372-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q372.html> .
+
+data:Q373
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "West Germanic language"@en,
+        "westgermanische Sprache"@de ;
+    dcterms:identifier "Q373" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q373 ;
+    dcterms:title "Englisch"@de,
+        "English"@en ;
+    schema:about wd:Q373 ;
+    dcat:distribution dist:Q373-html,
+        dist:Q373-json,
+        dist:Q373-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q373.html> .
+
+data:Q374
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Dutch archaeologist"@en,
+        "Niederländischer Archäologe"@de ;
+    dcterms:identifier "Q374" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q374 ;
+    dcterms:title "Allard Wijnand Mees"@de,
+        "Allard Wijnand Mees"@en ;
+    schema:about wd:Q374 ;
+    dcat:distribution dist:Q374-html,
+        dist:Q374-json,
+        dist:Q374-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q374.html> .
+
+data:Q375
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "software version which is stable"@en,
+        "stabile Version einer Software"@de ;
+    dcterms:identifier "Q375" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q375 ;
+    dcterms:title "stabile Version"@de,
+        "stable version"@en ;
+    schema:about wd:Q375 ;
+    dcat:distribution dist:Q375-html,
+        dist:Q375-json,
+        dist:Q375-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q375.html> .
+
+data:Q376
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Forscher"@de,
+        "Researcher in Geospatial Semantics at Mainz University of Applied Sciences interested in standardization, semantic web technologies. Part of the OGC GeoSPARQL working group"@en ;
+    dcterms:identifier "Q376" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q376 ;
+    dcterms:title "Timo Homburg"@de,
+        "Timo Homburg"@en ;
+    schema:about wd:Q376 ;
+    dcat:distribution dist:Q376-html,
+        dist:Q376-json,
+        dist:Q376-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q376.html> .
+
+data:Q377
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Network of Research Software Engineers with research interests in Digital Humanities and Geodata"@en ;
+    dcterms:identifier "Q377" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q377 ;
+    dcterms:title "Research Squirrel Engineers Network"@en ;
+    schema:about wd:Q377 ;
+    dcat:distribution dist:Q377-html,
+        dist:Q377-json,
+        dist:Q377-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q377.html> .
+
+data:Q378
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "plugin used in QGIS"@en ;
+    dcterms:identifier "Q378" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q378 ;
+    dcterms:title "QGIS plugin"@en ;
+    schema:about wd:Q378 ;
+    dcat:distribution dist:Q378-html,
+        dist:Q378-json,
+        dist:Q378-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q378.html> .
+
+data:Q379
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Softwarekomponente zur Erweiterung einer bereits existierenden Anwendung"@de,
+        "software component that adds a specific feature to an existing software application"@en ;
+    dcterms:identifier "Q379" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q379 ;
+    dcterms:title "Plug-in"@de,
+        "plug-in"@en ;
+    schema:about wd:Q379 ;
+    dcat:distribution dist:Q379-html,
+        dist:Q379-json,
+        dist:Q379-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q379.html> .
+
+data:Q380
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "researcher ORCID ID = 0000-0001-6966-1729"@en ;
+    dcterms:identifier "Q380" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q380 ;
+    dcterms:title "Ronald Visser"@en ;
+    schema:about wd:Q380 ;
+    dcat:distribution dist:Q380-html,
+        dist:Q380-json,
+        dist:Q380-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q380.html> .
+
 dist:P1-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
@@ -9113,7 +9535,7 @@ dist:P171-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P171, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2565"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3428"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P171.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -17800,6 +18222,581 @@ dist:Q357-ttl
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q357.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
+dist:Q358-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q358, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q358.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q358-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q358, as archived from the Wikibase API"@en ;
+    dcat:byteSize "38321"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q358.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q358-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q358, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q358.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q359-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q359, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q359.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q359-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q359, as archived from the Wikibase API"@en ;
+    dcat:byteSize "53208"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q359.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q359-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q359, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q359.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q360-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q360, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q360.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q360-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q360, as archived from the Wikibase API"@en ;
+    dcat:byteSize "153197"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q360.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q360-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q360, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q360.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q361-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q361, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q361.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q361-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q361, as archived from the Wikibase API"@en ;
+    dcat:byteSize "34982"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q361.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q361-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q361, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q361.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q362-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q362, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q362.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q362-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q362, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15441"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q362.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q362-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q362, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q362.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q363-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q363, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q363.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q363-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q363, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1305"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q363.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q363-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q363, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q363.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q364-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q364, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q364.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q364-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q364, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1076"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q364.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q364-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q364, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q364.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q365-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q365, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q365.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q365-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q365, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1399"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q365.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q365-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q365, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q365.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q366-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q366, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q366.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q366-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q366, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1454"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q366.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q366-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q366, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q366.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q367-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q367, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q367.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q367-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q367, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1451"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q367.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q367-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q367, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q367.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q368-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q368, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q368.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q368-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q368, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1494"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q368.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q368-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q368, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q368.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q369-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q369, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q369.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q369-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q369, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1405"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q369.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q369-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q369, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q369.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q370-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q370, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q370.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q370-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q370, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1321"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q370.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q370-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q370, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q370.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q371-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q371, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q371.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q371-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q371, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1246"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q371.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q371-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q371, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q371.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q372-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q372, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q372.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q372-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q372, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2416"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q372.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q372-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q372, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q372.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q373-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q373, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q373.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q373-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q373, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1313"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q373.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q373-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q373, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q373.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q374-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q374, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q374.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q374-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q374, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1347"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q374.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q374-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q374, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q374.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q375-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q375, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q375.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q375-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q375, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1350"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q375.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q375-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q375, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q375.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q376-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q376, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q376.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q376-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q376, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1465"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q376.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q376-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q376, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q376.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q377-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q377, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q377.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q377-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q377, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1270"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q377.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q377-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q377, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q377.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q378-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q378, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q378.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q378-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q378, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2149"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q378.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q378-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q378, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q378.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q379-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q379, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q379.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q379-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q379, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2404"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q379.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q379-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q379, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q379.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q380-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q380, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q380.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q380-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q380, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1193"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q380.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q380-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q380, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q380.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
 dist:export
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -23146,6 +24143,481 @@ wd:Q357
     wdt:P123 wd:Q111 ;
     wdt:P125 <https://github.com/jwilczek-dotcom/RACORD> .
 
+wd:Q358
+    a wikibase:Item ;
+    schema:description "Eine Ontologie und Web-App zur Modellierung von Vagheit im Graphen mit integriertem Reasoning."@de,
+        "ontology and webapp for modelling vagueness in graphs including reasoning"@en ;
+    schema:name "Academic Meta Tool (AMT)"@de,
+        "Academic Meta Tool (AMT)"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    rdfs:label "Academic Meta Tool (AMT)"@de,
+        "Academic Meta Tool (AMT)"@en ;
+    skos:altLabel "AMT"@de,
+        "AMT"@en ;
+    skos:prefLabel "Academic Meta Tool (AMT)"@de,
+        "Academic Meta Tool (AMT)"@en ;
+    p:P2 wds:Q358-9E5494C5-8463-510F-A849-9555FEC11E37,
+        wds:Q358-73E89E6A-9815-543E-9EEA-CA7060399673,
+        wds:Q358-C6944BFB-3E9A-5D4E-AE28-FE5B67458465,
+        wds:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1 ;
+    p:P4 wds:Q358-9D950A77-08CD-5A1D-9EB8-FD0582E2546F ;
+    p:P107 wds:Q358-8D12BB7A-2723-504E-934F-2A987F669E1F ;
+    p:P113 wds:Q358-2EF705B6-A5DF-5658-B758-A2784D801EFD,
+        wds:Q358-27BC3B11-2B2F-5AFF-A3E0-AC7DB74C3934,
+        wds:Q358-44AC366F-3755-599D-88ED-BE877CF57F49,
+        wds:Q358-6630B41F-9232-524C-A468-CDB70D0F140F ;
+    p:P120 wds:Q358-B61C5573-747E-5EA8-BDEE-D18D9B5CE81C ;
+    p:P123 wds:Q358-11FF88AC-E512-50E7-A062-279E9359C0CF,
+        wds:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B ;
+    p:P125 wds:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E,
+        wds:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80 ;
+    p:P204 wds:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72,
+        wds:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54 ;
+    wdt:P2 wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q372 ;
+    wdt:P4 "Q74003194" ;
+    wdt:P107 wd:Q369 ;
+    wdt:P113 wd:Q365,
+        wd:Q366,
+        wd:Q367,
+        wd:Q368 ;
+    wdt:P120 <http://academic-meta-tool.xyz> ;
+    wdt:P123 wd:Q370,
+        wd:Q371 ;
+    wdt:P125 <https://github.com/n4o-rse/amt-engine>,
+        <https://github.com/n4o-rse/amt-runner> ;
+    wdt:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png>,
+        <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20RoleChainAxiom.png> .
+
+wd:Q359
+    a wikibase:Item ;
+    schema:description "Ontologie und Webapplikation zur Transformation einer Korrespondenzanalyse mit fixen und schwebenden Intervallen in eine relative Chronologie und RDF Repräsentation unter Nutzung des Allen Kalküls."@de,
+        "ontology and web app for transforming a correspondence analyses with fixed and floating time intervals to a relative chronology and RDF representation using Allen's interval algebra"@en ;
+    schema:name "Alligator - Allen Transformator"@de,
+        "Alligator - Allen Transformer"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
+    rdfs:label "Alligator - Allen Transformator"@de,
+        "Alligator - Allen Transformer"@en ;
+    skos:prefLabel "Alligator - Allen Transformator"@de,
+        "Alligator - Allen Transformer"@en ;
+    p:P2 wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01,
+        wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976,
+        wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9,
+        wds:Q359-FB9C9883-030D-57B7-9C1B-AA7E5878BC58 ;
+    p:P4 wds:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F ;
+    p:P106 wds:Q359-54ABD82A-3518-5A93-BEF9-A7B3ADB252BA ;
+    p:P107 wds:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9 ;
+    p:P113 wds:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F,
+        wds:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD,
+        wds:Q359-EEC02582-2679-519C-9581-BB5C63818E17 ;
+    p:P115 wds:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B ;
+    p:P116 wds:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419 ;
+    p:P118 wds:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87 ;
+    p:P120 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0 ;
+    p:P122 wds:Q359-9F6AF8E5-F559-5419-A57D-1C905AB6FFD4,
+        wds:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF ;
+    p:P125 wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C ;
+    p:P148 wds:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28,
+        wds:Q359-AC0E33A2-2D88-533F-98B4-1094B40E6664,
+        wds:Q359-EFF15EB9-DC41-5F35-8C6B-FE9F582EE1D2 ;
+    wdt:P2 wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q372 ;
+    wdt:P4 "Q74004218" ;
+    wdt:P106 wd:Q110 ;
+    wdt:P107 wd:Q369 ;
+    wdt:P113 wd:Q365,
+        wd:Q368,
+        wd:Q374 ;
+    wdt:P115 <https://open-archaeo.info/post/alligator/> ;
+    wdt:P116 "alligator" ;
+    wdt:P118 wd:Q108 ;
+    wdt:P120 <https://rgzm.github.io/alligator/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/RGZM/alligator> ;
+    wdt:P148 "1.1" .
+
+wd:Q360
+    a wikibase:Item ;
+    schema:description "Plugin to add a layer in QGIS from Linked Data SPARQL endpoints."@en,
+        "Plugin zum Hinzufügen eines Vektor-Layer in QGIS aus SPARQL endpoints."@de ;
+    schema:name "SPARQLing Unicorn QGIS Plugin"@de,
+        "SPARQLing Unicorn QGIS Plugin"@en ;
+    wikibase:identifiers "2"^^xsd:integer ;
+    wikibase:statements "39"^^xsd:integer ;
+    rdfs:label "SPARQLing Unicorn QGIS Plugin"@de,
+        "SPARQLing Unicorn QGIS Plugin"@en ;
+    skos:prefLabel "SPARQLing Unicorn QGIS Plugin"@de,
+        "SPARQLing Unicorn QGIS Plugin"@en ;
+    p:P2 wds:Q360-CB3317E4-173D-5C2E-9475-EB3548C257D0,
+        wds:Q360-CFD8B070-DA72-5D77-95D5-E87EAFEC1694,
+        wds:Q360-D8EB34FB-0AB6-5053-B431-2637C0BE42BA,
+        wds:Q360-DE79AC85-001A-56A3-9F44-838796EA01B5,
+        wds:Q360-E3F778AF-EB34-593C-9156-59DED3F2C956 ;
+    p:P4 wds:Q360-AFB675A2-5BE5-58DE-BB56-97394F47CE86 ;
+    p:P113 wds:Q360-32CD544F-CB42-5D3B-948C-58629A5171A9,
+        wds:Q360-116C6087-43DC-5CCB-B4CB-A8B12A5E75F8,
+        wds:Q360-B6AB058F-A8F0-5C4D-A359-47A4CB31A7C9 ;
+    p:P114 wds:Q360-AD66066E-3E62-5C09-9460-38661294FEBA ;
+    p:P120 wds:Q360-7BCDD934-6F44-5BCC-87AF-89F1A2CA9C91 ;
+    p:P123 wds:Q360-737532F6-BD7A-5FEB-98A3-28CC2FFB5E6F ;
+    p:P125 wds:Q360-DC2E7FC8-DAD7-5314-A8DC-D0AC5A9AFCF7 ;
+    p:P148 wds:Q360-1B54A203-0BFE-5667-BF1F-C8CB754B4932,
+        wds:Q360-2C99FE6B-B379-58FC-946C-4A9FF518CF52,
+        wds:Q360-4FA25ECF-ECF9-5EE5-A815-5A5AB7A9B096,
+        wds:Q360-5DE1B938-AB03-5F68-B029-E4D744BFEA3C,
+        wds:Q360-7BDAA46A-16CB-5F4B-A33E-79E28C2947AC,
+        wds:Q360-7C489A94-B2B0-5AF6-928D-C5575722D21E,
+        wds:Q360-7ECD79F9-CC4F-5420-BDFA-DAF4B598E89E,
+        wds:Q360-8F9004FF-076B-52F6-A9C7-84695134AB66,
+        wds:Q360-9A0002F9-70BE-5012-9D9E-8BD9BEC60C31,
+        wds:Q360-13A49D96-7F59-5648-96F8-4B104D302C38,
+        wds:Q360-25A317EE-3253-5985-A60F-C8F87228FA71,
+        wds:Q360-71B3030B-38F8-5665-A3A5-9FE24100EDFA,
+        wds:Q360-327E9A22-070C-587F-89A4-9433F36126E0,
+        wds:Q360-332FFBC0-2A46-53A7-AE35-4F9D4AF30705,
+        wds:Q360-942C5FA0-DC96-525A-B12E-F92AA29E6BD1,
+        wds:Q360-987AADCC-07A9-5FA8-86B8-ABCC2F4F3024,
+        wds:Q360-9922CDE1-E961-5F0F-8F08-F9F4B2445D4B,
+        wds:Q360-68408A23-682A-5350-A6A2-0F69621C54F3,
+        wds:Q360-54050881-A3B4-5A93-BE55-98900E48BDB1,
+        wds:Q360-A94E927D-3127-58D9-8CA1-B03908EDA048,
+        wds:Q360-B3A93286-628B-51D0-A57E-B2E39E3A1EDB,
+        wds:Q360-B6DEE3D0-F242-5EAE-9C66-167AB8EADEF5,
+        wds:Q360-BEDB9B9A-6112-59B7-85E3-401D5CABE625,
+        wds:Q360-BF70EDD2-E23E-5091-A59F-57F1A15EF9A6,
+        wds:Q360-C2617642-1FE8-508F-8A6D-C8143CA6A945 ;
+    p:P247 wds:Q360-531C30AE-F70B-58BF-AAAD-ECF8766100E8 ;
+    wdt:P2 wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q372,
+        wd:Q378 ;
+    wdt:P4 "Q74005133" ;
+    wdt:P113 wd:Q365,
+        wd:Q376,
+        wd:Q377 ;
+    wdt:P114 "10.5281/ZENODO.13828632" ;
+    wdt:P120 <https://plugins.qgis.org/plugins/sparqlunicorn/> ;
+    wdt:P123 wd:Q370 ;
+    wdt:P125 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS> ;
+    wdt:P148 "0.17.4" ;
+    wdt:P247 "SPARQLing Unicorn QGIS Plugin"@en .
+
+wd:Q361
+    a wikibase:Item ;
+    schema:description "The plugin profileAAR transforms profile control points for fotogrammetric rectification of section images of archaeological excavations."@en ;
+    schema:name "profileAAR"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "11"^^xsd:integer ;
+    rdfs:label "profileAAR"@en ;
+    skos:prefLabel "profileAAR"@en ;
+    p:P2 wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491,
+        wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291,
+        wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA,
+        wds:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1 ;
+    p:P4 wds:Q361-54B1C044-5014-5CD0-88F3-069D4319815F ;
+    p:P120 wds:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F ;
+    p:P125 wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822 ;
+    p:P148 wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5,
+        wds:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE,
+        wds:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A,
+        wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1 ;
+    wdt:P2 wd:Q100,
+        wd:Q105,
+        wd:Q372,
+        wd:Q379 ;
+    wdt:P4 "Q74823867" ;
+    wdt:P120 <http://plugins.qgis.org/plugins/profileAAR/> ;
+    wdt:P125 <https://github.com/ISAAKiel/profileAAR> ;
+    wdt:P148 "3.0" .
+
+wd:Q362
+    a wikibase:Item ;
+    schema:description "text mining tools to search archaeological reports"@en ;
+    schema:name "Text mining minion"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "6"^^xsd:integer ;
+    rdfs:label "Text mining minion"@en ;
+    skos:prefLabel "Text mining minion"@en ;
+    p:P2 wds:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC,
+        wds:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B ;
+    p:P4 wds:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E ;
+    p:P125 wds:Q362-B81B637D-4146-519A-A207-2725C56D4039 ;
+    p:P148 wds:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37 ;
+    p:P171 wds:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB ;
+    wdt:P2 wd:Q100,
+        wd:Q105 ;
+    wdt:P4 "Q74824570" ;
+    wdt:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> ;
+    wdt:P148 "1.0" ;
+    wdt:P171 wd:Q380 .
+
+wd:Q363
+    a wikibase:Item ;
+    schema:description "hosting service for software projects using Git"@en,
+        "webbasierter Hosting-Dienst für Software-Entwicklungsprojekte"@de ;
+    schema:name "GitHub"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "GitHub"@en ;
+    skos:prefLabel "GitHub"@en ;
+    p:P4 wds:Q363-5DA51CC6-00A9-5F62-8D8D-60CEC49AF90F ;
+    wdt:P4 "Q364" .
+
+wd:Q364
+    a wikibase:Item ;
+    schema:name "Wikidata"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Wikidata"@en ;
+    skos:prefLabel "Wikidata"@en ;
+    p:P4 wds:Q364-D8D6478E-B4F4-5F8A-B223-F2C1BAC5E407 ;
+    wdt:P4 "Q2013" .
+
+wd:Q365
+    a wikibase:Item ;
+    schema:description "deutscher Geodät, Research Software Engineer und Wissenschaftler"@de,
+        "researcher in the field of digital humanities"@en ;
+    schema:name "Florian Thiery"@de,
+        "Florian Thiery"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Florian Thiery"@de,
+        "Florian Thiery"@en ;
+    skos:prefLabel "Florian Thiery"@de,
+        "Florian Thiery"@en ;
+    p:P4 wds:Q365-1192F728-6813-590F-89B6-83120D80E796 ;
+    wdt:P4 "Q66606154" .
+
+wd:Q366
+    a wikibase:Item ;
+    schema:description "Mainzer Zentrum für Digitalität in den Geistes- und Kulturwissenschaften"@de,
+        "joint initiative of German institutes to promote digital methodolgies in humanities and cultural sciences"@en ;
+    schema:name "mainzed"@de,
+        "mainzed"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "mainzed"@de,
+        "mainzed"@en ;
+    skos:prefLabel "mainzed"@de,
+        "mainzed"@en ;
+    p:P4 wds:Q366-F5E60C6B-2690-5ADC-964C-CB335077F1E0 ;
+    wdt:P4 "Q47213994" .
+
+wd:Q367
+    a wikibase:Item ;
+    schema:description "Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte"@de,
+        "Research Data Infrastructure for the Material Remains of Human History"@en ;
+    schema:name "NFDI4Objects"@de,
+        "NFDI4Objects"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "NFDI4Objects"@de,
+        "NFDI4Objects"@en ;
+    skos:prefLabel "NFDI4Objects"@de,
+        "NFDI4Objects"@en ;
+    p:P4 wds:Q367-C33275E1-2B1C-51A6-AB48-B83CDA804504 ;
+    wdt:P4 "Q98229157" .
+
+wd:Q368
+    a wikibase:Item ;
+    schema:description "Forschungsinstitut und Forschungsmuseum für Archäologie in der Leibniz-Gemeinschaft"@de,
+        "Research institute and museum for archaeology as part of the Leibniz association"@en ;
+    schema:name "Leibniz-Zentrum für Archäologie"@de,
+        "Leibniz-Zentrum für Archäologie"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Leibniz-Zentrum für Archäologie"@de,
+        "Leibniz-Zentrum für Archäologie"@en ;
+    skos:prefLabel "Leibniz-Zentrum für Archäologie"@de,
+        "Leibniz-Zentrum für Archäologie"@en ;
+    p:P4 wds:Q368-552837A6-DF87-577D-A839-3892C0D8F1F4 ;
+    wdt:P4 "Q115755098" .
+
+wd:Q369
+    a wikibase:Item ;
+    schema:description "freizügige Open-Source-Lizenz vom Massachusetts Institute of Technology mit mehreren Varianten"@de,
+        "permissive free software license"@en ;
+    schema:name "MIT License"@en,
+        "MIT-Lizenz"@de ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "MIT License"@en,
+        "MIT-Lizenz"@de ;
+    skos:prefLabel "MIT License"@en,
+        "MIT-Lizenz"@de ;
+    p:P4 wds:Q369-1D7EC427-ECCA-5826-B6F6-7A8EE581CE3A ;
+    wdt:P4 "Q334661" .
+
+wd:Q370
+    a wikibase:Item ;
+    schema:description "Programmiersprache"@de,
+        "general-purpose programming language"@en ;
+    schema:name "Python"@de,
+        "Python"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Python"@de,
+        "Python"@en ;
+    skos:prefLabel "Python"@de,
+        "Python"@en ;
+    p:P4 wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332 ;
+    wdt:P4 "Q28865" .
+
+wd:Q371
+    a wikibase:Item ;
+    schema:description "Skriptsprache"@de,
+        "high-level programming language"@en ;
+    schema:name "JavaScript"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "JavaScript"@en ;
+    skos:prefLabel "JavaScript"@en ;
+    p:P4 wds:Q371-7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905 ;
+    wdt:P4 "Q2005" .
+
+wd:Q372
+    a wikibase:Item ;
+    schema:description "Computerprogramm, das allgemeine, oft systemnahe Aufgaben ausführt"@de,
+        "system software designed to help analyze, configure, optimize or maintain a computer"@en ;
+    schema:name "Dienstprogramm"@de,
+        "utility software"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Dienstprogramm"@de,
+        "utility software"@en ;
+    skos:prefLabel "Dienstprogramm"@de,
+        "utility software"@en ;
+    p:P1 wds:Q372-26A9184A-7E2E-59B3-AF40-E22A49C3B4B9 ;
+    p:P2 wds:Q372-B7180C62-8DFD-563E-965D-CFB938EB6812 ;
+    p:P4 wds:Q372-BBC5B59B-C2D7-5A5D-820D-1CF6886896E3 ;
+    wdt:P1 wd:Q100 ;
+    wdt:P2 wd:Q1 ;
+    wdt:P4 "Q312466" .
+
+wd:Q373
+    a wikibase:Item ;
+    schema:description "West Germanic language"@en,
+        "westgermanische Sprache"@de ;
+    schema:name "Englisch"@de,
+        "English"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Englisch"@de,
+        "English"@en ;
+    skos:prefLabel "Englisch"@de,
+        "English"@en ;
+    p:P4 wds:Q373-1BE125AF-4DF5-56EA-8F6F-9756F8890C32 ;
+    wdt:P4 "Q1860" .
+
+wd:Q374
+    a wikibase:Item ;
+    schema:description "Dutch archaeologist"@en,
+        "Niederländischer Archäologe"@de ;
+    schema:name "Allard Wijnand Mees"@de,
+        "Allard Wijnand Mees"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Allard Wijnand Mees"@de,
+        "Allard Wijnand Mees"@en ;
+    skos:prefLabel "Allard Wijnand Mees"@de,
+        "Allard Wijnand Mees"@en ;
+    p:P4 wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3 ;
+    wdt:P4 "Q88865971" .
+
+wd:Q375
+    a wikibase:Item ;
+    schema:description "software version which is stable"@en,
+        "stabile Version einer Software"@de ;
+    schema:name "stabile Version"@de,
+        "stable version"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "stabile Version"@de,
+        "stable version"@en ;
+    skos:prefLabel "stabile Version"@de,
+        "stable version"@en ;
+    p:P4 wds:Q375-563585A2-F886-5939-AD1F-5C039195460C ;
+    wdt:P4 "Q2804309" .
+
+wd:Q376
+    a wikibase:Item ;
+    schema:description "Forscher"@de,
+        "Researcher in Geospatial Semantics at Mainz University of Applied Sciences interested in standardization, semantic web technologies. Part of the OGC GeoSPARQL working group"@en ;
+    schema:name "Timo Homburg"@de,
+        "Timo Homburg"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Timo Homburg"@de,
+        "Timo Homburg"@en ;
+    skos:prefLabel "Timo Homburg"@de,
+        "Timo Homburg"@en ;
+    p:P4 wds:Q376-1DEC0160-DE7C-5AF6-850E-1BF1A5057170 ;
+    wdt:P4 "Q67624599" .
+
+wd:Q377
+    a wikibase:Item ;
+    schema:description "Network of Research Software Engineers with research interests in Digital Humanities and Geodata"@en ;
+    schema:name "Research Squirrel Engineers Network"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Research Squirrel Engineers Network"@en ;
+    skos:prefLabel "Research Squirrel Engineers Network"@en ;
+    p:P4 wds:Q377-FDE6F2DE-24E8-50CD-9AA8-E0529BF95833 ;
+    wdt:P4 "Q73901970" .
+
+wd:Q378
+    a wikibase:Item ;
+    schema:description "plugin used in QGIS"@en ;
+    schema:name "QGIS plugin"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "QGIS plugin"@en ;
+    skos:prefLabel "QGIS plugin"@en ;
+    p:P1 wds:Q378-CD19F084-AE61-5AB7-BC8A-95C15FD0AF95 ;
+    p:P2 wds:Q378-F2E805D6-DBF6-54A6-BB72-1F778DCB5412 ;
+    p:P4 wds:Q378-EB546834-C1B7-5020-B82A-4FA944F31395 ;
+    wdt:P1 wd:Q100 ;
+    wdt:P2 wd:Q1 ;
+    wdt:P4 "Q123054280" .
+
+wd:Q379
+    a wikibase:Item ;
+    schema:description "Softwarekomponente zur Erweiterung einer bereits existierenden Anwendung"@de,
+        "software component that adds a specific feature to an existing software application"@en ;
+    schema:name "Plug-in"@de,
+        "plug-in"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Plug-in"@de,
+        "plug-in"@en ;
+    skos:prefLabel "Plug-in"@de,
+        "plug-in"@en ;
+    p:P1 wds:Q379-8EED49AE-6CFF-54C4-B09D-E061CD64724D ;
+    p:P2 wds:Q379-EF3AF108-9A58-5C57-9DC2-7C08AB18416C ;
+    p:P4 wds:Q379-058AB482-85C5-5198-8DCB-0E699B14F9DC ;
+    wdt:P1 wd:Q100 ;
+    wdt:P2 wd:Q1 ;
+    wdt:P4 "Q184148" .
+
+wd:Q380
+    a wikibase:Item ;
+    schema:description "researcher ORCID ID = 0000-0001-6966-1729"@en ;
+    schema:name "Ronald Visser"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Ronald Visser"@en ;
+    skos:prefLabel "Ronald Visser"@en ;
+    p:P4 wds:Q380-B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C ;
+    wdt:P4 "Q58529575" .
+
 wd:P1
     a wikibase:Property ;
     schema:description "Diese Klasse ist eine speziellere Form der Wertklasse."@de,
@@ -25343,7 +26815,7 @@ wd:P171
     schema:name "creator"@en ;
     wikibase:claim p:P171 ;
     wikibase:directClaim wdt:P171 ;
-    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:identifiers "2"^^xsd:integer ;
     wikibase:novalue wdno:P171 ;
     wikibase:propertyType wikibase:WikibaseItem ;
     wikibase:qualifier pq:P171 ;
@@ -25352,15 +26824,17 @@ wd:P171
     wikibase:referenceValue prv:P171 ;
     wikibase:statementProperty ps:P171 ;
     wikibase:statementValue psv:P171 ;
-    wikibase:statements "4"^^xsd:integer ;
+    wikibase:statements "5"^^xsd:integer ;
     rdfs:label "creator"@en ;
     skos:prefLabel "creator"@en ;
     p:P2 wds:P171-FC778F0D-19FE-5732-AF54-5B8C86221EBD ;
-    p:P4 wds:P171-948699AE-51DE-532E-9956-FDFC2FB51552 ;
+    p:P4 wds:P171-86BBCEB1-0498-5E4C-B93A-EE4065021AC8,
+        wds:P171-948699AE-51DE-532E-9956-FDFC2FB51552 ;
     p:P9 wds:P171-51074883-6A72-5351-853C-DC751C162084 ;
     p:P10 wds:P171-892C0BBE-9767-531C-8306-3482B919C9A8 ;
     wdt:P2 wd:Q2 ;
-    wdt:P4 "P170" ;
+    wdt:P4 "P50",
+        "P170" ;
     wdt:P9 wd:Q100 ;
     wdt:P10 wd:Q3 .
 
@@ -29660,6 +31134,13 @@ wds:P170-45E12FD9-050F-5492-A135-FD5A7CD021E6
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     ps:P102 "countriesSupported" .
+
+wds:P171-86BBCEB1-0498-5E4C-B93A-EE4065021AC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b9ca74e8a9a3fada685b80dbcf0407a4c7b0aa2 ;
+    ps:P4 "P50" .
 
 wds:P171-892C0BBE-9767-531C-8306-3482B919C9A8
     a wikibase:BestRank,
@@ -43097,6 +44578,915 @@ wds:Q357-F4A31CDB-31E5-58B1-B23D-127065A59731
     prov:wasDerivedFrom wdref:368c3f84973d6a5358ec7f92a0fc7d728e5482de ;
     ps:P106 wd:Q110 .
 
+wds:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/n4o-rse/amt-runner> .
+
+wds:Q358-2EF705B6-A5DF-5658-B758-A2784D801EFD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P113 wd:Q366 .
+
+wds:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2514df4efe1c5d521d10dda3cae1cb387c21a23a,
+        wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png> .
+
+wds:Q358-8D12BB7A-2723-504E-934F-2A987F669E1F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P107 wd:Q369 .
+
+wds:Q358-9D950A77-08CD-5A1D-9EB8-FD0582E2546F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cb26a11a171aa20a2536363624882149d05fbd51 ;
+    ps:P4 "Q74003194" .
+
+wds:Q358-9E5494C5-8463-510F-A849-9555FEC11E37
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P2 wd:Q105 .
+
+wds:Q358-11FF88AC-E512-50E7-A062-279E9359C0CF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P123 wd:Q370 .
+
+wds:Q358-27BC3B11-2B2F-5AFF-A3E0-AC7DB74C3934
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P113 wd:Q367 .
+
+wds:Q358-44AC366F-3755-599D-88ED-BE877CF57F49
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P113 wd:Q365 .
+
+wds:Q358-73E89E6A-9815-543E-9EEA-CA7060399673
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P2 wd:Q106 .
+
+wds:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/n4o-rse/amt-engine> .
+
+wds:Q358-6630B41F-9232-524C-A468-CDB70D0F140F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P113 wd:Q368 .
+
+wds:Q358-B61C5573-747E-5EA8-BDEE-D18D9B5CE81C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    pq:P251 wd:Q373 ;
+    ps:P120 <http://academic-meta-tool.xyz> .
+
+wds:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2514df4efe1c5d521d10dda3cae1cb387c21a23a,
+        wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20RoleChainAxiom.png> .
+
+wds:Q358-C6944BFB-3E9A-5D4E-AE28-FE5B67458465
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P2 wd:Q100 .
+
+wds:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P123 wd:Q371 .
+
+wds:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    ps:P2 wd:Q372 .
+
+wds:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    prov:wasDerivedFrom wdref:6ca4ce2a03f59fbac230a37dbd508778903b89d1,
+        wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    pq:P144 "2024-04-25T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:948be4d8efe371299e6c67935d6b596f ;
+    ps:P148 "1.1" .
+
+wds:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P113 wd:Q368 .
+
+wds:Q359-9F6AF8E5-F559-5419-A57D-1C905AB6FFD4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P122 wd:Q109 .
+
+wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P2 wd:Q100 .
+
+wds:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "alligator" .
+
+wds:Q359-54ABD82A-3518-5A93-BEF9-A7B3ADB252BA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P106 wd:Q110 .
+
+wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    pq:P251 wd:Q373 ;
+    ps:P120 <https://rgzm.github.io/alligator/> .
+
+wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P2 wd:Q105 .
+
+wds:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:707c0156c388067fc8a523813f02784c2664d39b ;
+    ps:P4 "Q74004218" .
+
+wds:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P122 wd:Q110 .
+
+wds:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P113 wd:Q365 .
+
+wds:Q359-AC0E33A2-2D88-533F-98B4-1094B40E6664
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:02e782bb6f1d71d763cc0888ec9e0f97f1dddb5f,
+        wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    pq:P144 "2019-01-15T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:41b096cbd9198b6db3ee11512ea05e7d ;
+    ps:P148 "0.1" .
+
+wds:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P118 wd:Q108 .
+
+wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P2 wd:Q372 .
+
+wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/RGZM/alligator> .
+
+wds:Q359-EEC02582-2679-519C-9581-BB5C63818E17
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P113 wd:Q374 .
+
+wds:Q359-EFF15EB9-DC41-5F35-8C6B-FE9F582EE1D2
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b302ee88408f3ad441424a86198476176589647,
+        wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    pq:P144 "2022-12-02T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:731c3b6065118808f8daa6302d034c8c ;
+    ps:P148 "1.0" .
+
+wds:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P115 <https://open-archaeo.info/post/alligator/> .
+
+wds:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:ce3347706f9a3c70d94d7ef9b161283c8288add0 ;
+    ps:P107 wd:Q369 .
+
+wds:Q359-FB9C9883-030D-57B7-9C1B-AA7E5878BC58
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    ps:P2 wd:Q106 .
+
+wds:Q360-1B54A203-0BFE-5667-BF1F-C8CB754B4932
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c,
+        wdref:dd30dc662e7e8c4234e157b3d0b25a751f50e53b ;
+    pq:P144 "2025-02-15T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:15acf8fe99df570c70abc2312a9788db ;
+    ps:P148 "0.17.2" .
+
+wds:Q360-2C99FE6B-B379-58FC-946C-4A9FF518CF52
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c92e6a6260e9abff6a9c6b4dccf438add75070a9,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2019-11-02T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:50a4aef5a3166d4a095628fbd0d3e4dc ;
+    ps:P148 "0.6" .
+
+wds:Q360-4FA25ECF-ECF9-5EE5-A815-5A5AB7A9B096
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c,
+        wdref:f0a38e0d74a92f9f1f2b2ea8eaa642780c77cf40 ;
+    pq:P144 "2025-12-19T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:fbb429f4b03ca4055622f20d154495c4 ;
+    ps:P148 "0.17.4" .
+
+wds:Q360-5DE1B938-AB03-5F68-B029-E4D744BFEA3C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c,
+        wdref:fc1d9e1ffc82558b005e47202bcbd28d58775507 ;
+    pq:P144 "2020-07-06T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:fae00b53fb41d4f54c83712920d6a5d6 ;
+    ps:P148 "0.11" .
+
+wds:Q360-7BCDD934-6F44-5BCC-87AF-89F1A2CA9C91
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P120 <https://plugins.qgis.org/plugins/sparqlunicorn/> .
+
+wds:Q360-7BDAA46A-16CB-5F4B-A33E-79E28C2947AC
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:621215a65595bf6f338c84ca373b35063d43fc36,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2024-09-23T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:4300e5a47d5fbecf1a5753fd08fd85ed ;
+    ps:P148 "0.17.1" .
+
+wds:Q360-7C489A94-B2B0-5AF6-928D-C5575722D21E
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c609dfc788a693c31432c124b00afbf50b70fca5,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2021-11-26T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:86ea97363d82e542ebabaa2eea9b2ef9 ;
+    ps:P148 "0.13" .
+
+wds:Q360-7ECD79F9-CC4F-5420-BDFA-DAF4B598E89E
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:75171071eca2bca581aa55a35f6dfcb4c65fed15,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2020-05-05T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:564266561011b7b05a1398d9e8e0fa42 ;
+    ps:P148 "0.10a" .
+
+wds:Q360-8F9004FF-076B-52F6-A9C7-84695134AB66
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0cebd5aa527ddb45bfb0601992c5c3a2f88fcbea,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2021-01-21T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:195d322253f84db8787a94abda6caf2d ;
+    ps:P148 "0.12.1" .
+
+wds:Q360-9A0002F9-70BE-5012-9D9E-8BD9BEC60C31
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:15baa3f910643129258d1b500927fd44f486204e,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2023-07-28T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:e73678ef16145efed2b524893ad462bd ;
+    ps:P148 "0.16" .
+
+wds:Q360-13A49D96-7F59-5648-96F8-4B104D302C38
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a9acef052fada4e87d12a95e3f3fb9314d5e310a,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2019-10-30T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:f78fda75dfa3738385d93a6fbb7b070d ;
+    ps:P148 "0.4" .
+
+wds:Q360-25A317EE-3253-5985-A60F-C8F87228FA71
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b013186bcd4beb74dee69a8353139b83dff5e38d,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2019-10-29T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:3ebda50405d806ac24128e49dfcfe008 ;
+    ps:P148 "0.2" .
+
+wds:Q360-32CD544F-CB42-5D3B-948C-58629A5171A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P113 wd:Q365 .
+
+wds:Q360-71B3030B-38F8-5665-A3A5-9FE24100EDFA
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:aead9703f73c1d76e7d965d2e8341ed61fa4a7e8,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2019-10-30T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:f78fda75dfa3738385d93a6fbb7b070d ;
+    ps:P148 "0.5" .
+
+wds:Q360-116C6087-43DC-5CCB-B4CB-A8B12A5E75F8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P113 wd:Q376 .
+
+wds:Q360-327E9A22-070C-587F-89A4-9433F36126E0
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:a784e84f9dd84a4eaeadac63a3a0fea619d5a014,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2021-01-15T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:5e98247fa97bafe72d0ebcdbfcd664a9 ;
+    ps:P148 "0.12" .
+
+wds:Q360-332FFBC0-2A46-53A7-AE35-4F9D4AF30705
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c,
+        wdref:e20227f775f2e9666782381e5649736d85469ac3 ;
+    pq:P144 "2025-04-02T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:d990303f8b7181e9e25f88ae67f0804a ;
+    ps:P148 "0.17.3" .
+
+wds:Q360-531C30AE-F70B-58BF-AAAD-ECF8766100E8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P247 "SPARQLing Unicorn QGIS Plugin"@en .
+
+wds:Q360-942C5FA0-DC96-525A-B12E-F92AA29E6BD1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4b3a7c7981acd406bc92eba18b6289ca2357ec01,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2020-03-11T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:57430bc7eeac8455cbc8cec2b1304779 ;
+    ps:P148 "0.9" .
+
+wds:Q360-987AADCC-07A9-5FA8-86B8-ABCC2F4F3024
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bbab2afdb900deaa5a14e1fc0923d2343ac38141,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2019-11-03T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:82e5fe2125f9a2d065ca6999888afa2c ;
+    ps:P148 "0.7" .
+
+wds:Q360-9922CDE1-E961-5F0F-8F08-F9F4B2445D4B
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:731265765e898c76c09f6d9972ee68aba9958aed,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2022-02-05T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:eb19d7d48b2db8425187bd0422df5c81 ;
+    ps:P148 "0.14" .
+
+wds:Q360-68408A23-682A-5350-A6A2-0F69621C54F3
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c,
+        wdref:f561411dc12b23c995dc74e2c7b2a92ae571bb71 ;
+    pq:P144 "2019-10-30T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:f78fda75dfa3738385d93a6fbb7b070d ;
+    ps:P148 "0.3" .
+
+wds:Q360-737532F6-BD7A-5FEB-98A3-28CC2FFB5E6F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P123 wd:Q370 .
+
+wds:Q360-54050881-A3B4-5A93-BE55-98900E48BDB1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1d836321f663b01654050bf4c78cb195557a327b,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2024-03-04T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:5bdc86e865576bc5b058815f936714b5 ;
+    ps:P148 "0.17" .
+
+wds:Q360-A94E927D-3127-58D9-8CA1-B03908EDA048
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:72d1d1106896df2a1ecc32b08fae75583592dcaf,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2020-02-19T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:d89ec98817bd7e3f351068f90c3e6609 ;
+    ps:P148 "0.8" .
+
+wds:Q360-AD66066E-3E62-5C09-9460-38661294FEBA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P114 "10.5281/ZENODO.13828632" .
+
+wds:Q360-AFB675A2-5BE5-58DE-BB56-97394F47CE86
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:20895c9dd7ee02897b00c606a37ca7b0116418f2 ;
+    ps:P4 "Q74005133" .
+
+wds:Q360-B3A93286-628B-51D0-A57E-B2E39E3A1EDB
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:878e3b1378955a098e751361e54856c3db83e8bd,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2022-11-08T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:1dd9e7bde1678cfdbe9a43bf8f633f98 ;
+    ps:P148 "0.15" .
+
+wds:Q360-B6AB058F-A8F0-5C4D-A359-47A4CB31A7C9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P113 wd:Q377 .
+
+wds:Q360-B6DEE3D0-F242-5EAE-9C66-167AB8EADEF5
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:78e64d16113704a4dbfa4b1fca53542bafc5c6c3,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2021-12-01T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:e5f799f88f339689fb87302aaaf4869c ;
+    ps:P148 "0.13.1" .
+
+wds:Q360-BEDB9B9A-6112-59B7-85E3-401D5CABE625
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23250132a728ceb320054217c7b9abd6d0186b90,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2020-04-26T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:8854d7e8ff5352092e305daa9356d47d ;
+    ps:P148 "0.10" .
+
+wds:Q360-BF70EDD2-E23E-5091-A59F-57F1A15EF9A6
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:387ed10b24c52b2d6fd28fd520cff0a415b4a763,
+        wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P144 "2019-10-28T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:25607d484a662e580c22c62ee158425d ;
+    ps:P148 "0.1" .
+
+wds:Q360-C2617642-1FE8-508F-8A6D-C8143CA6A945
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c,
+        wdref:da95f7c35fa61d2d1436eb6dc0c18e1d79ca5496 ;
+    pq:P144 "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:cc186a7391366b1833ce947f55710546 ;
+    ps:P148 "0.12.2" .
+
+wds:Q360-CB3317E4-173D-5C2E-9475-EB3548C257D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P2 wd:Q378 .
+
+wds:Q360-CFD8B070-DA72-5D77-95D5-E87EAFEC1694
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P2 wd:Q100 .
+
+wds:Q360-D8EB34FB-0AB6-5053-B431-2637C0BE42BA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P2 wd:Q106 .
+
+wds:Q360-DC2E7FC8-DAD7-5314-A8DC-D0AC5A9AFCF7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS> .
+
+wds:Q360-DE79AC85-001A-56A3-9F44-838796EA01B5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P2 wd:Q105 .
+
+wds:Q360-E3F778AF-EB34-593C-9156-59DED3F2C956
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
+    ps:P2 wd:Q372 .
+
+wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    ps:P2 wd:Q105 .
+
+wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        wdref:645d725f4444ec9511cd6dadd22235d929928cb1 ;
+    pq:P144 "2023-08-09T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:3c33c427e8a3a1a021169f9eec5fb712 ;
+    ps:P148 "2.0.3" .
+
+wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    ps:P2 wd:Q100 .
+
+wds:Q361-54B1C044-5014-5CD0-88F3-069D4319815F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ecfe75204b3821706c79b48b9566f1e7c6d2d855 ;
+    ps:P4 "Q74823867" .
+
+wds:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        wdref:5e2e6d4b22fc6bd17def8fc5d647569a8862dcba ;
+    pq:P144 "2019-03-21T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:c507d2c9bf02d67f5ce8b10c7fc3c315 ;
+    ps:P148 "1.0" .
+
+wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    ps:P2 wd:Q379 .
+
+wds:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        wdref:26fc0a9df290a1c9df7021e6f5295f53783164b5 ;
+    pq:P144 "2026-06-24T00:00:00Z"^^xsd:dateTime ;
+    pq:P153 wd:Q375 ;
+    pqv:P144 wdv:44257e6a09cec8cf732caa4130ca43fe ;
+    ps:P148 "3.0" .
+
+wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/ISAAKiel/profileAAR> .
+
+wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        wdref:cfe369f3fee86976b187322b783129f371614b0a ;
+    pq:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:733674f41790c6c1009a3375da675660 ;
+    ps:P148 "2.0.1" .
+
+wds:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    ps:P120 <http://plugins.qgis.org/plugins/profileAAR/> .
+
+wds:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    ps:P2 wd:Q372 .
+
+wds:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:43e5506c3377bce7424b765fb5c89d60ace51787 ;
+    ps:P4 "Q74824570" .
+
+wds:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    ps:P2 wd:Q100 .
+
+wds:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    ps:P2 wd:Q105 .
+
+wds:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    ps:P171 wd:Q380 .
+
+wds:Q362-B81B637D-4146-519A-A207-2725C56D4039
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> .
+
+wds:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854,
+        wdref:d12d7ac994d818a41de46548a1a7f2407cf030be ;
+    pq:P144 "2022-10-07T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:c04837e4f3f9cf76d9d7e6fb1293eb95 ;
+    ps:P148 "1.0" .
+
+wds:Q363-5DA51CC6-00A9-5F62-8D8D-60CEC49AF90F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5c5c5df55d2afd583ff7bd6308068efa971fccfc ;
+    ps:P4 "Q364" .
+
+wds:Q364-D8D6478E-B4F4-5F8A-B223-F2C1BAC5E407
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:321f96353b9a5438c759b11cc8fd5fed59f3816c ;
+    ps:P4 "Q2013" .
+
+wds:Q365-1192F728-6813-590F-89B6-83120D80E796
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f867211e270ca1ad6ac9d36bfbedfde5567dec85 ;
+    ps:P4 "Q66606154" .
+
+wds:Q366-F5E60C6B-2690-5ADC-964C-CB335077F1E0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4730cc925523e99c0bd46044437f4b807df9ca32 ;
+    ps:P4 "Q47213994" .
+
+wds:Q367-C33275E1-2B1C-51A6-AB48-B83CDA804504
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:3563ddaee0eb075b79aebfef6f54484f29a91f32 ;
+    ps:P4 "Q98229157" .
+
+wds:Q368-552837A6-DF87-577D-A839-3892C0D8F1F4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7b6914123f8ad861be9716c7cac347d6dddb56fd ;
+    ps:P4 "Q115755098" .
+
+wds:Q369-1D7EC427-ECCA-5826-B6F6-7A8EE581CE3A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d5d0bca1a0ab4a50c1e2545d79ea107197a8bc68 ;
+    ps:P4 "Q334661" .
+
+wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:000f2b81e99bbe75bf7c61252febbc605d562e83 ;
+    ps:P4 "Q28865" .
+
+wds:Q371-7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:72f441d054b57c8b490a71e7d9c54552bc0053e3 ;
+    ps:P4 "Q2005" .
+
+wds:Q372-26A9184A-7E2E-59B3-AF40-E22A49C3B4B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1 wd:Q100 .
+
+wds:Q372-B7180C62-8DFD-563E-965D-CFB938EB6812
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q1 .
+
+wds:Q372-BBC5B59B-C2D7-5A5D-820D-1CF6886896E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:141bfc9fbcd7fbac54db223adaa419e2b21bcf43 ;
+    ps:P4 "Q312466" .
+
+wds:Q373-1BE125AF-4DF5-56EA-8F6F-9756F8890C32
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:593db950a93e355d09f297c96dffbce87c234962 ;
+    ps:P4 "Q1860" .
+
+wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e294052bd47b53d6e5f964846748d24271b6ad63 ;
+    ps:P4 "Q88865971" .
+
+wds:Q375-563585A2-F886-5939-AD1F-5C039195460C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:543b070fbb12c492a1280a64b4ec7280ccbe68b6 ;
+    ps:P4 "Q2804309" .
+
+wds:Q376-1DEC0160-DE7C-5AF6-850E-1BF1A5057170
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:57585663992769d91862e3d8b43cea93747952bd ;
+    ps:P4 "Q67624599" .
+
+wds:Q377-FDE6F2DE-24E8-50CD-9AA8-E0529BF95833
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b55b3978731d5a2446271d0113bea73bb82e8972 ;
+    ps:P4 "Q73901970" .
+
+wds:Q378-CD19F084-AE61-5AB7-BC8A-95C15FD0AF95
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1 wd:Q100 .
+
+wds:Q378-EB546834-C1B7-5020-B82A-4FA944F31395
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:260227dc9bdbe3609854ca50670116eea183b70b ;
+    ps:P4 "Q123054280" .
+
+wds:Q378-F2E805D6-DBF6-54A6-BB72-1F778DCB5412
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q1 .
+
+wds:Q379-8EED49AE-6CFF-54C4-B09D-E061CD64724D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1 wd:Q100 .
+
+wds:Q379-058AB482-85C5-5198-8DCB-0E699B14F9DC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:79cb4734429e962250772fb9bfe557b62f7faf23 ;
+    ps:P4 "Q184148" .
+
+wds:Q379-EF3AF108-9A58-5C57-9DC2-7C08AB18416C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q1 .
+
+wds:Q380-B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:20696860e0334f73341df5c81dd1b88c2a96b0b3 ;
+    ps:P4 "Q58529575" .
+
 wdref:0b9e0b3f18013fa55965b41a40421882f8440254
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/pxrf/> .
@@ -43113,6 +45503,15 @@ wdref:0b137728675929ed07fb2b444ecc15a0713126ed
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/ancient-artifacts/> .
 
+wdref:0cebd5aa527ddb45bfb0601992c5c3a2f88fcbea
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.1> ;
+    pr:P7 "2021-02-17T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2021-01-21T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.12.1"@en ;
+    prv:P7 wdv:4ce4bcc9e9dd79b29f2aff8bc31dee80 ;
+    prv:P144 wdv:195d322253f84db8787a94abda6caf2d .
+
 wdref:00cf7cdd975b3677a7e5bb6aed19fd1db8873b64
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P275> .
@@ -43121,9 +45520,22 @@ wdref:0e7a605e47485300347113692607930b5f5192c0
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/pointpattern/> .
 
+wdref:000f2b81e99bbe75bf7c61252febbc605d562e83
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q28865> .
+
 wdref:1a976353ce9d610234e4b6a4e80712c40b4ad664
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/kidstats/> .
+
+wdref:1d836321f663b01654050bf4c78cb195557a327b
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17> ;
+    pr:P7 "2024-03-25T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2024-03-04T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.17"@en ;
+    prv:P7 wdv:9fc5485536fef53a329a600c6fd8c3a0 ;
+    prv:P144 wdv:5bdc86e865576bc5b058815f936714b5 .
 
 wdref:2b1627c84873e9d58e260013141f411a51be4359
     a wikibase:Reference ;
@@ -43132,6 +45544,22 @@ wdref:2b1627c84873e9d58e260013141f411a51be4359
 wdref:2cfb006ecf46acb6257c82dab1f18ee7aa3fc6ae
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P485> .
+
+wdref:02e782bb6f1d71d763cc0888ec9e0f97f1dddb5f
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/RGZM/alligator/releases/tag/v0.1> ;
+    pr:P7 "2019-11-08T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-01-15T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.1"@en ;
+    prv:P7 wdv:d3200bf0e2b5a196987f6406d46e05a4 ;
+    prv:P144 wdv:41b096cbd9198b6db3ee11512ea05e7d .
+
+wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74823867> ;
+    pr:P7 "2026-06-25T00:00:00Z"^^xsd:dateTime ;
+    pr:P8 wd:Q364 ;
+    prv:P7 wdv:64f94e569085af5cb37810e668ad5627 .
 
 wdref:3b62d1a50233207e701a32c765dae150d94a6c61
     a wikibase:Reference ;
@@ -43164,6 +45592,15 @@ wdref:4ab1d4ad74423bb203d2a8d6e1b71da67e3a8de1
 wdref:4adda74d4fdde1ed55dbf82f1259c78a7a43eac1
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P2701> .
+
+wdref:4b3a7c7981acd406bc92eba18b6289ca2357ec01
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.9> ;
+    pr:P7 "2020-03-12T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2020-03-11T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.9"@en ;
+    prv:P7 wdv:afbb6d51530b677b9b754ba4635121e0 ;
+    prv:P144 wdv:57430bc7eeac8455cbc8cec2b1304779 .
 
 wdref:4b235c554cec407a884f565a111d2ebbbcc115d6
     a wikibase:Reference ;
@@ -43205,6 +45642,10 @@ wdref:5bedff74a234dbfdb56852023da0c2d4ad0f5917
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P767> .
 
+wdref:5c5c5df55d2afd583ff7bd6308068efa971fccfc
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q364> .
+
 wdref:5c485b0892de9f26263c33685bfdb1baf2f5eb42
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/tldating/> .
@@ -43220,6 +45661,15 @@ wdref:5c755133a6ed8824d00a95399643e552cb6989e9
 wdref:5cc6457cae94f4e2592a23ce47a5c8af650b8417
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P10627> .
+
+wdref:5e2e6d4b22fc6bd17def8fc5d647569a8862dcba
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/v1.0> ;
+    pr:P7 "2019-11-15T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-03-21T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 1.0"@en ;
+    prv:P7 wdv:5e97dc0acd0b5130d8dca39a8a4cd491 ;
+    prv:P144 wdv:c507d2c9bf02d67f5ce8b10c7fc3c315 .
 
 wdref:5f8406455fc4d40824c31c21b5281f26b6494f82
     a wikibase:Reference ;
@@ -43245,6 +45695,15 @@ wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/qgis-scripts/> .
 
+wdref:6ca4ce2a03f59fbac230a37dbd508778903b89d1
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/leiza-rse/alligator/releases/tag/v1.1> ;
+    pr:P7 "2024-05-20T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2024-04-25T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 1.1"@en ;
+    prv:P7 wdv:3d94285c295eb939eb6ec714d7fde0f3 ;
+    prv:P144 wdv:948be4d8efe371299e6c67935d6b596f .
+
 wdref:7afb1dbc82647ff21e8023c7cebf641af60f50d4
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/osteogis/> .
@@ -43252,6 +45711,10 @@ wdref:7afb1dbc82647ff21e8023c7cebf641af60f50d4
 wdref:7b29a09071507834dd96d43c9da3d215c78ae3cc
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1641> .
+
+wdref:7b6914123f8ad861be9716c7cac347d6dddb56fd
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q115755098> .
 
 wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7
     a wikibase:Reference ;
@@ -43272,6 +45735,10 @@ wdref:7fc096b0dd5829798d0448a697f9eca3069ea4f4
 wdref:7fd1228a692c868b92445041d7de4d6e03164f4b
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P479> .
+
+wdref:8b9ca74e8a9a3fada685b80dbcf0407a4c7b0aa2
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Property:P50> .
 
 wdref:8ba539a8b921eeed1d230c80d42eae34ad8b7d0d
     a wikibase:Reference ;
@@ -43297,6 +45764,15 @@ wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/cawd/> .
 
+wdref:9b302ee88408f3ad441424a86198476176589647
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/RGZM/alligator/releases/tag/v1.0> ;
+    pr:P7 "2022-12-05T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2022-12-02T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 1.0"@en ;
+    prv:P7 wdv:3358d3fc716579985bdf6f5a6c9c8745 ;
+    prv:P144 wdv:731c3b6065118808f8daa6302d034c8c .
+
 wdref:9d3f8d4cd7670d530766dc0c21fac761980c2c9a
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P179> .
@@ -43321,6 +45797,15 @@ wdref:12f26e263cfc08d4aede675a3559f2ef2d7c966f
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/alkahest/> .
 
+wdref:15baa3f910643129258d1b500927fd44f486204e
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.16> ;
+    pr:P7 "2023-08-01T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2023-07-28T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.16"@en ;
+    prv:P7 wdv:dbcb8c396781ef490f014d938d582095 ;
+    prv:P144 wdv:e73678ef16145efed2b524893ad462bd .
+
 wdref:15d9de6713b8429f1fde2c9fa40f216e238fea39
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1372> .
@@ -43336,6 +45821,15 @@ wdref:20be91d1c9cd94c12b6b54f4975efaa9d8116a92
 wdref:21a94adf7adb8f9ef246e27776192141dfe0feaf
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/meshlab/> .
+
+wdref:26fc0a9df290a1c9df7021e6f5295f53783164b5
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/v3.0> ;
+    pr:P7 "2026-06-25T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2026-06-24T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 3.0"@en ;
+    prv:P7 wdv:64f94e569085af5cb37810e668ad5627 ;
+    prv:P144 wdv:44257e6a09cec8cf732caa4130ca43fe .
 
 wdref:30e6900d90158697a38b32e2ec7eaa31d0991f08
     a wikibase:Reference ;
@@ -43353,9 +45847,20 @@ wdref:39cb65734712eeab186247629a5218a328ec6480
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P3499> .
 
+wdref:43e5506c3377bce7424b765fb5c89d60ace51787
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74824570> .
+
 wdref:45b98e14c28ed416bea040779093dac62a3d7b22
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P6104> .
+
+wdref:46a492107246cf6a8c796783f58c8d659ef1f854
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74824570> ;
+    pr:P7 "2024-11-30T00:00:00Z"^^xsd:dateTime ;
+    pr:P8 wd:Q364 ;
+    prv:P7 wdv:c28a6b123bb7449aa4bf17d56643e781 .
 
 wdref:51b1835e66941ac1a3a7414392096dffb331890f
     a wikibase:Reference ;
@@ -43397,6 +45902,19 @@ wdref:70d3185f7736d6e14ba0998bf1657def1e3895fe
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P154> .
 
+wdref:72d1d1106896df2a1ecc32b08fae75583592dcaf
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.8> ;
+    pr:P7 "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2020-02-19T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.8"@en ;
+    prv:P7 wdv:22a88ee22c4e8232a01fa1cfeeb6e11c ;
+    prv:P144 wdv:d89ec98817bd7e3f351068f90c3e6609 .
+
+wdref:72f441d054b57c8b490a71e7d9c54552bc0053e3
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q2005> .
+
 wdref:73d5586f60b6ca8afaad4d27a425d74028d25828
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P2992> .
@@ -43416,6 +45934,19 @@ wdref:74e6fc0bdeaa4c6f1a36b105fbc120e29c57df00
 wdref:75bc09bdff236865c298ea3952faf40d920b41f3
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/totalstation-tools/> .
+
+wdref:78e64d16113704a4dbfa4b1fca53542bafc5c6c3
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13.1> ;
+    pr:P7 "2022-10-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2021-12-01T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.13.1"@en ;
+    prv:P7 wdv:6b85ca567a67da1015b76f574039f789 ;
+    prv:P144 wdv:e5f799f88f339689fb87302aaaf4869c .
+
+wdref:79cb4734429e962250772fb9bfe557b62f7faf23
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q184148> .
 
 wdref:85c7a369e841e02f3b62533e889f5353015aab20
     a wikibase:Reference ;
@@ -43437,6 +45968,10 @@ wdref:099aa7d4c83871185ffe3ec56c8a85831582cb5a
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P2888> .
 
+wdref:141bfc9fbcd7fbac54db223adaa419e2b21bcf43
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q312466> .
+
 wdref:181efddcf9706383229ea45ea8ea6b1ffdc5c408
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1269> .
@@ -43453,6 +45988,10 @@ wdref:316dd127a1c391fc56d7d72772db55ca623a5fdd
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P2209> .
 
+wdref:321f96353b9a5438c759b11cc8fd5fed59f3816c
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q2013> .
+
 wdref:327d6fec56fbab1a52884ad81cf058c315cdbb7c
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P356> .
@@ -43465,9 +46004,22 @@ wdref:368c3f84973d6a5358ec7f92a0fc7d728e5482de
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/racord/> .
 
+wdref:387ed10b24c52b2d6fd28fd520cff0a415b4a763
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.1> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-10-28T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.1"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:25607d484a662e580c22c62ee158425d .
+
 wdref:428a0b4f5475d9a2f11f90ea6a5c67f86bcd42ef
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/ais/> .
+
+wdref:543b070fbb12c492a1280a64b4ec7280ccbe68b6
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q2804309> .
 
 wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb
     a wikibase:Reference ;
@@ -43477,13 +46029,30 @@ wdref:568bac577db87fafe2bd81871bbdb8f1758beee7
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P735> .
 
+wdref:593db950a93e355d09f297c96dffbce87c234962
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q1860> .
+
 wdref:632b43c864ea9f6f00091ac9005421c0a3f1bed1
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P4945> .
 
+wdref:645d725f4444ec9511cd6dadd22235d929928cb1
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/2.0.3> ;
+    pr:P7 "2023-09-19T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2023-08-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 2.0.3"@en ;
+    prv:P7 wdv:ebea60f9eaa4d334a8a4f305e8b4ee6d ;
+    prv:P144 wdv:3c33c427e8a3a1a021169f9eec5fb712 .
+
 wdref:703d78ef8ce35252e91fc6cac35ba4f697d74f3c
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P3463> .
+
+wdref:707c0156c388067fc8a523813f02784c2664d39b
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74004218> .
 
 wdref:0727cb971e6066b29eac99b989ade6754d799a02
     a wikibase:Reference ;
@@ -43509,6 +46078,15 @@ wdref:846b18f96569672645d745f3270dc4d9c5f8115e
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/photogrammetry-object-scannner/> .
 
+wdref:878e3b1378955a098e751361e54856c3db83e8bd
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.15> ;
+    pr:P7 "2022-11-25T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2022-11-08T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.15"@en ;
+    prv:P7 wdv:5768629fb7ad8ed19aafe5c8005b536e ;
+    prv:P144 wdv:1dd9e7bde1678cfdbe9a43bf8f633f98 .
+
 wdref:953cf5fab7a1cc86d3e713bc24e8d5f540283582
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1414> .
@@ -43525,9 +46103,21 @@ wdref:1890e4efddc4d9fe75a00adbb1e188a8dfbc84f1
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P348> .
 
+wdref:2514df4efe1c5d521d10dda3cae1cb387c21a23a
+    a wikibase:Reference ;
+    pr:P6 <http://academic-meta-tool.xyz/ontology/> .
+
 wdref:2820c56be41b90d0fe6ea05db5bd32915894b9cd
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/shoredate/> .
+
+wdref:3563ddaee0eb075b79aebfef6f54484f29a91f32
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q98229157> .
+
+wdref:4730cc925523e99c0bd46044437f4b807df9ca32
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q47213994> .
 
 wdref:5719adc96c8f27b025f656817ed45cfd5d02d67d
     a wikibase:Reference ;
@@ -43561,6 +46151,10 @@ wdref:12808ea4d884e9d0fb714940516d10bbfa718828
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P178> .
 
+wdref:20895c9dd7ee02897b00c606a37ca7b0116418f2
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74005133> .
+
 wdref:21204c97253098b56d3bf7caa314d15248e2ccb5
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/rdss/> .
@@ -43593,6 +46187,10 @@ wdref:84436ebbdea0d1af3490ee17f64327905958426b
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1324> .
 
+wdref:260227dc9bdbe3609854ca50670116eea183b70b
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q123054280> .
+
 wdref:0501724da0ece1b0d7fb0f5be49f08d4e92466e7
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/paleographic-networks/> .
@@ -43600,6 +46198,15 @@ wdref:0501724da0ece1b0d7fb0f5be49f08d4e92466e7
 wdref:581439e3def30578ba1ad8866bf6db1af2706e40
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1073> .
+
+wdref:621215a65595bf6f338c84ca373b35063d43fc36
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.1> ;
+    pr:P7 "2024-09-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2024-09-23T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.17.1"@en ;
+    prv:P7 wdv:d67297c9595f2630664a21f69307303c ;
+    prv:P144 wdv:4300e5a47d5fbecf1a5753fd08fd85ed .
 
 wdref:647158eceb428acc3ccecec0eaad556ed340527a
     a wikibase:Reference ;
@@ -43621,6 +46228,13 @@ wdref:4694946f1d238af26a883965759b39dd1e3a621f
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/basicmapping/> .
 
+wdref:6536936bb024b24f990451bfed4a269c69a4a63f
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74003194> ;
+    pr:P7 "2026-08-18T00:00:00Z"^^xsd:dateTime ;
+    pr:P8 wd:Q364 ;
+    prv:P7 wdv:746f03b026878aca3ef0cccaef37ff82 .
+
 wdref:7053244fef03ecd7d13f010d694f549443170f6d
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/murature/> .
@@ -43628,6 +46242,37 @@ wdref:7053244fef03ecd7d13f010d694f549443170f6d
 wdref:7530861b042dbdeebf404b815ccd3f7fca804aea
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P571> .
+
+wdref:20696860e0334f73341df5c81dd1b88c2a96b0b3
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q58529575> .
+
+wdref:23250132a728ceb320054217c7b9abd6d0186b90
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10> ;
+    pr:P7 "2020-04-27T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2020-04-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.10"@en ;
+    prv:P7 wdv:28345ae133d4710d7b3ee6845cadf5eb ;
+    prv:P144 wdv:8854d7e8ff5352092e305daa9356d47d .
+
+wdref:75171071eca2bca581aa55a35f6dfcb4c65fed15
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.10a> ;
+    pr:P7 "2020-05-06T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2020-05-05T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.10a"@en ;
+    prv:P7 wdv:c513b5ae03530927fc6cf54c4a2ae455 ;
+    prv:P144 wdv:564266561011b7b05a1398d9e8e0fa42 .
+
+wdref:731265765e898c76c09f6d9972ee68aba9958aed
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.14> ;
+    pr:P7 "2022-10-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2022-02-05T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.14"@en ;
+    prv:P7 wdv:6b85ca567a67da1015b76f574039f789 ;
+    prv:P144 wdv:eb19d7d48b2db8425187bd0422df5c81 .
 
 wdref:767272475ea5a4d4d1049ad6cb3318dfdd715340
     a wikibase:Reference ;
@@ -43645,6 +46290,10 @@ wdref:2246792742620cacc2b58803a403fdfb31ef36f1
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P11201> .
 
+wdref:57585663992769d91862e3d8b43cea93747952bd
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q67624599> .
+
 wdref:a3c470856e54cf21999b1ff6f153881766de4a0a
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1552> .
@@ -43656,6 +46305,15 @@ wdref:a5b3a9ce943ee42bd35b27cc7257d10ee75f4374
 wdref:a09a8a0112472399b4600cbce72d1dcb9c59d393
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P463> .
+
+wdref:a9acef052fada4e87d12a95e3f3fb9314d5e310a
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.4> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-10-30T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.4"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:f78fda75dfa3738385d93a6fbb7b070d .
 
 wdref:a22b8578575061f7121abd666096a0764fafbe7c
     a wikibase:Reference ;
@@ -43680,6 +46338,15 @@ wdref:a98e171b41e493b2c1a0b2366a3f36160fc4b423
 wdref:a578b1986fa127da0c590ef9dbe8220fe42d9962
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/pleistodist/> .
+
+wdref:a784e84f9dd84a4eaeadac63a3a0fea619d5a014
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12> ;
+    pr:P7 "2021-01-17T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2021-01-15T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.12"@en ;
+    prv:P7 wdv:507f832485a7f3c8bbe4c5c3ac61b671 ;
+    prv:P144 wdv:5e98247fa97bafe72d0ebcdbfcd664a9 .
 
 wdref:a33389c2f99ae86ffbfff7f46f8eb1bf488b2045
     a wikibase:Reference ;
@@ -43709,6 +46376,15 @@ wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/fastmarching/> .
 
+wdref:aead9703f73c1d76e7d965d2e8341ed61fa4a7e8
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.5> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-10-30T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.5"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:f78fda75dfa3738385d93a6fbb7b070d .
+
 wdref:b1d788f91ca55a6d83d64e5b1f06e995cac69c4c
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P123> .
@@ -43729,6 +46405,10 @@ wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> .
 
+wdref:b55b3978731d5a2446271d0113bea73bb82e8972
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q73901970> .
+
 wdref:b66d1f80209d70ddecd5eb01ff20ddb1b23703d9
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P8324> .
@@ -43737,9 +46417,27 @@ wdref:b9753a8554b2f8ad163f1ace6c91f8ffeab4a38f
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1343> .
 
+wdref:b013186bcd4beb74dee69a8353139b83dff5e38d
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.2> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-10-29T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.2"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:3ebda50405d806ac24128e49dfcfe008 .
+
 wdref:ba5eb9719ad2e73d7a9445e60a96ff8b0d1d27bb
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/kmeans/> .
+
+wdref:bbab2afdb900deaa5a14e1fc0923d2343ac38141
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.7> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-11-03T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.7"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:82e5fe2125f9a2d065ca6999888afa2c .
 
 wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d
     a wikibase:Reference ;
@@ -43777,6 +46475,31 @@ wdref:c47dbf14973fd811c11af922c8ff98cdb0815e89
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1545> .
 
+wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74004218> ;
+    pr:P7 "2026-08-27T00:00:00Z"^^xsd:dateTime ;
+    pr:P8 wd:Q364 ;
+    prv:P7 wdv:4cbf38603c3008596f10a77bac92a6d3 .
+
+wdref:c92e6a6260e9abff6a9c6b4dccf438add75070a9
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.6> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-11-02T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.6"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:50a4aef5a3166d4a095628fbd0d3e4dc .
+
+wdref:c609dfc788a693c31432c124b00afbf50b70fca5
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.13> ;
+    pr:P7 "2022-10-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2021-11-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.13"@en ;
+    prv:P7 wdv:6b85ca567a67da1015b76f574039f789 ;
+    prv:P144 wdv:86ea97363d82e542ebabaa2eea9b2ef9 .
+
 wdref:c8313c204bb8e206001414c170ac4edd54d33878
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P18> .
@@ -43789,9 +46512,20 @@ wdref:c586860114b1896e84f8321dd383dbd0ee3c125f
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P217> .
 
+wdref:c12291193662f196730f54d2964c4b1b4aafba5c
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74005133> ;
+    pr:P7 "2026-08-18T00:00:00Z"^^xsd:dateTime ;
+    pr:P8 wd:Q364 ;
+    prv:P7 wdv:746f03b026878aca3ef0cccaef37ff82 .
+
 wdref:ca3bf4b4b3fc3949340097117cb6308ac0d3e7d1
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/luminescence/> .
+
+wdref:cb26a11a171aa20a2536363624882149d05fbd51
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74003194> .
 
 wdref:cc3fd8791790a4cf83a725f3ca024a581f0fb1e7
     a wikibase:Reference ;
@@ -43805,9 +46539,28 @@ wdref:ce8a36955281993582d9e067471bf55bf9a3a803
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P737> .
 
+wdref:ce3347706f9a3c70d94d7ef9b161283c8288add0
+    a wikibase:Reference ;
+    pr:P6 <https://api.github.com/repos/RGZM/alligator> ;
+    pr:P7 "2019-11-08T00:00:00Z"^^xsd:dateTime ;
+    prv:P7 wdv:d3200bf0e2b5a196987f6406d46e05a4 .
+
+wdref:cfe369f3fee86976b187322b783129f371614b0a
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/2.0.1> ;
+    pr:P7 "2019-11-15T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 2.0.1"@en ;
+    prv:P7 wdv:5e97dc0acd0b5130d8dca39a8a4cd491 ;
+    prv:P144 wdv:733674f41790c6c1009a3375da675660 .
+
 wdref:d2a4df92c260dd4105fd97570a5cfd7663a962c1
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/fellingdater/> .
+
+wdref:d5d0bca1a0ab4a50c1e2545d79ea107197a8bc68
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q334661> .
 
 wdref:d6c6569bcd7d498370bfb1833f2947ecc271b793
     a wikibase:Reference ;
@@ -43816,6 +46569,15 @@ wdref:d6c6569bcd7d498370bfb1833f2947ecc271b793
 wdref:d7ca0ab36156cebab9994a05211f0d61beef60b3
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/fieldwalkr/> .
+
+wdref:d12d7ac994d818a41de46548a1a7f2407cf030be
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/RonaldVisser/Mining_Archaeological_Reports/releases/tag/V1.0> ;
+    pr:P7 "2022-10-24T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2022-10-07T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 1.0"@en ;
+    prv:P7 wdv:37ff8b7ddeb5fcbacde9dd670ba47410 ;
+    prv:P144 wdv:c04837e4f3f9cf76d9d7e6fb1293eb95 .
 
 wdref:d91e55bec78b5025022bbdd71873d43548e77d99
     a wikibase:Reference ;
@@ -43833,6 +46595,15 @@ wdref:da4f4c453dd90f6b1aa41cc10815887eca9cc855
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P4107> .
 
+wdref:da95f7c35fa61d2d1436eb6dc0c18e1d79ca5496
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.12.2> ;
+    pr:P7 "2022-10-26T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.12.2"@en ;
+    prv:P7 wdv:6b85ca567a67da1015b76f574039f789 ;
+    prv:P144 wdv:cc186a7391366b1833ce947f55710546 .
+
 wdref:dc65cecb5f367f2b226e7f936f82bda494ce5c6a
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/stochasi/> .
@@ -43840,6 +46611,15 @@ wdref:dc65cecb5f367f2b226e7f936f82bda494ce5c6a
 wdref:dc906c3393fbc6176570171267cda31b20e6153b
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/hm-generator-site/> .
+
+wdref:dd30dc662e7e8c4234e157b3d0b25a751f50e53b
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.2> ;
+    pr:P7 "2025-02-28T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2025-02-15T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.17.2"@en ;
+    prv:P7 wdv:2a209d1edaae7e66322d92e1445100df ;
+    prv:P144 wdv:15acf8fe99df570c70abc2312a9788db .
 
 wdref:de59d927847b19f88f473f93c8ed5635e1daca56
     a wikibase:Reference ;
@@ -43893,6 +46673,19 @@ wdref:e3950b71a7bc752b94e316cdf5500788fc164190
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P437> .
 
+wdref:e20227f775f2e9666782381e5649736d85469ac3
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.3> ;
+    pr:P7 "2025-05-01T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2025-04-02T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.17.3"@en ;
+    prv:P7 wdv:b860ffc10fe6852e5acbe77559859510 ;
+    prv:P144 wdv:d990303f8b7181e9e25f88ae67f0804a .
+
+wdref:e294052bd47b53d6e5f964846748d24271b6ad63
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q88865971> .
+
 wdref:e76701603e8d96ce6cfde5a9e4879f953e623060
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Q141115627> .
@@ -43908,6 +46701,19 @@ wdref:eb8cfdbe5dfe6f3ee50b078054873504b40ca9b2
 wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/baydem/> .
+
+wdref:ecfe75204b3821706c79b48b9566f1e7c6d2d855
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q74823867> .
+
+wdref:f0a38e0d74a92f9f1f2b2ea8eaa642780c77cf40
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.17.4> ;
+    pr:P7 "2026-04-07T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2025-12-19T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.17.4"@en ;
+    prv:P7 wdv:d9c05bb7b0d06cfd6be5f8ce1effd1d3 ;
+    prv:P144 wdv:fbb429f4b03ca4055622f20d154495c4 .
 
 wdref:f73e05173e448f6db06c38ebaac5f8a2ea9a44be
     a wikibase:Reference ;
@@ -43933,6 +46739,19 @@ wdref:f9243ac56c6cb9a45f9c14af0c07ee2c61012190
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/brainerd-robinson-similarity-coefficient-and-sampling-error-assessment/> .
 
+wdref:f561411dc12b23c995dc74e2c7b2a92ae571bb71
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.3> ;
+    pr:P7 "2019-11-09T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2019-10-30T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.3"@en ;
+    prv:P7 wdv:862ea575c092390be42591dbf54ef0ba ;
+    prv:P144 wdv:f78fda75dfa3738385d93a6fbb7b070d .
+
+wdref:f867211e270ca1ad6ac9d36bfbedfde5567dec85
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q66606154> .
+
 wdref:f5892324ba331e1dc5f0c10f63632343cde0ca63
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Q95001953> .
@@ -43945,6 +46764,15 @@ wdref:fa439050ff21e258bba90f76a00c46c3dd70eb3b
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/katun/> .
 
+wdref:fc1d9e1ffc82558b005e47202bcbd28d58775507
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/sparqlunicorn/sparqlunicornGoesGIS/releases/tag/v0.11> ;
+    pr:P7 "2020-07-07T00:00:00Z"^^xsd:dateTime ;
+    pr:P144 "2020-07-06T00:00:00Z"^^xsd:dateTime ;
+    pr:P247 "Release 0.11"@en ;
+    prv:P7 wdv:9ccf6aebf5ff80b8cec23465c749e006 ;
+    prv:P144 wdv:fae00b53fb41d4f54c83712920d6a5d6 .
+
 wdref:fc321652a352d1dc33f79afb2bbfa23caab06ec8
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P1993> .
@@ -43953,6 +46781,55 @@ wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/mtreering/> .
 
+wdv:1dd9e7bde1678cfdbe9a43bf8f633f98
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-11-08T00:00:00Z"^^xsd:dateTime .
+
+wdv:2a209d1edaae7e66322d92e1445100df
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2025-02-28T00:00:00Z"^^xsd:dateTime .
+
+wdv:3c33c427e8a3a1a021169f9eec5fb712
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2023-08-09T00:00:00Z"^^xsd:dateTime .
+
+wdv:3d94285c295eb939eb6ec714d7fde0f3
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-05-20T00:00:00Z"^^xsd:dateTime .
+
+wdv:3ebda50405d806ac24128e49dfcfe008
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-10-29T00:00:00Z"^^xsd:dateTime .
+
+wdv:4cbf38603c3008596f10a77bac92a6d3
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2026-08-27T00:00:00Z"^^xsd:dateTime .
+
+wdv:4ce4bcc9e9dd79b29f2aff8bc31dee80
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-02-17T00:00:00Z"^^xsd:dateTime .
+
 wdv:5a088cb0d595838e5bd3514f733a6f04
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -43960,12 +46837,40 @@ wdv:5a088cb0d595838e5bd3514f733a6f04
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-11-18T00:00:00Z"^^xsd:dateTime .
 
+wdv:5bdc86e865576bc5b058815f936714b5
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-03-04T00:00:00Z"^^xsd:dateTime .
+
 wdv:5d5356642c067d0be453f31e5fe84deb
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2018-05-10T00:00:00Z"^^xsd:dateTime .
+
+wdv:5e97dc0acd0b5130d8dca39a8a4cd491
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-11-15T00:00:00Z"^^xsd:dateTime .
+
+wdv:5e98247fa97bafe72d0ebcdbfcd664a9
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-01-15T00:00:00Z"^^xsd:dateTime .
+
+wdv:6b85ca567a67da1015b76f574039f789
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-10-26T00:00:00Z"^^xsd:dateTime .
 
 wdv:7b0f2dacc6f0f1ea89c8da72a597b9a6
     a wikibase:TimeValue ;
@@ -43980,6 +46885,20 @@ wdv:9a7b1399a1af8e34b3ecefb87ea75c5b
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-08-27T00:00:00Z"^^xsd:dateTime .
+
+wdv:9ccf6aebf5ff80b8cec23465c749e006
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-07-07T00:00:00Z"^^xsd:dateTime .
+
+wdv:9fc5485536fef53a329a600c6fd8c3a0
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-03-25T00:00:00Z"^^xsd:dateTime .
 
 wdv:09ffc0f656fe841e4d8aeb477a68f5bb
     a wikibase:TimeValue ;
@@ -44009,6 +46928,13 @@ wdv:14dc0cf9d4dbbe176da3a0f291c42b84
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-01-28T00:00:00Z"^^xsd:dateTime .
 
+wdv:15acf8fe99df570c70abc2312a9788db
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2025-02-15T00:00:00Z"^^xsd:dateTime .
+
 wdv:22a88ee22c4e8232a01fa1cfeeb6e11c
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -44030,12 +46956,26 @@ wdv:25fd86fcb7f666eda1b21a961ace31ab
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2020-10-06T00:00:00Z"^^xsd:dateTime .
 
+wdv:37ff8b7ddeb5fcbacde9dd670ba47410
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-10-24T00:00:00Z"^^xsd:dateTime .
+
 wdv:39c25496be10707812dd140104fb3d08
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2020-06-15T00:00:00Z"^^xsd:dateTime .
+
+wdv:41b096cbd9198b6db3ee11512ea05e7d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-01-15T00:00:00Z"^^xsd:dateTime .
 
 wdv:41ea5026816ee3c7498524f29c115275
     a wikibase:TimeValue ;
@@ -44044,12 +46984,40 @@ wdv:41ea5026816ee3c7498524f29c115275
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2017-01-25T00:00:00Z"^^xsd:dateTime .
 
+wdv:50a4aef5a3166d4a095628fbd0d3e4dc
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-11-02T00:00:00Z"^^xsd:dateTime .
+
 wdv:053ee0368febfd5c0845bc935cde9a44
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2018-03-14T00:00:00Z"^^xsd:dateTime .
+
+wdv:64f94e569085af5cb37810e668ad5627
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2026-06-25T00:00:00Z"^^xsd:dateTime .
+
+wdv:82e5fe2125f9a2d065ca6999888afa2c
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-11-03T00:00:00Z"^^xsd:dateTime .
+
+wdv:86ea97363d82e542ebabaa2eea9b2ef9
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-11-26T00:00:00Z"^^xsd:dateTime .
 
 wdv:86fdbcbedde62038d55756c5a75f7127
     a wikibase:TimeValue ;
@@ -44065,12 +47033,33 @@ wdv:195d322253f84db8787a94abda6caf2d
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-01-21T00:00:00Z"^^xsd:dateTime .
 
+wdv:507f832485a7f3c8bbe4c5c3ac61b671
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-01-17T00:00:00Z"^^xsd:dateTime .
+
+wdv:731c3b6065118808f8daa6302d034c8c
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-12-02T00:00:00Z"^^xsd:dateTime .
+
 wdv:739a13167983a728ab015f81103d0e16
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2020-08-12T00:00:00Z"^^xsd:dateTime .
+
+wdv:746f03b026878aca3ef0cccaef37ff82
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2026-08-18T00:00:00Z"^^xsd:dateTime .
 
 wdv:773cafe9d4d4b5f65cf956f3dc5884bd
     a wikibase:TimeValue ;
@@ -44086,6 +47075,13 @@ wdv:841f4f883e529209684612a4061b0b1a
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-09-05T00:00:00Z"^^xsd:dateTime .
 
+wdv:862ea575c092390be42591dbf54ef0ba
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-11-09T00:00:00Z"^^xsd:dateTime .
+
 wdv:867f8c2cb0659dde8b4d798878e30377
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -44093,12 +47089,33 @@ wdv:867f8c2cb0659dde8b4d798878e30377
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-03-16T00:00:00Z"^^xsd:dateTime .
 
+wdv:948be4d8efe371299e6c67935d6b596f
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-04-25T00:00:00Z"^^xsd:dateTime .
+
 wdv:992c84c57f608d72408133072c7e4011
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2016-10-29T00:00:00Z"^^xsd:dateTime .
+
+wdv:3358d3fc716579985bdf6f5a6c9c8745
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-12-05T00:00:00Z"^^xsd:dateTime .
+
+wdv:4300e5a47d5fbecf1a5753fd08fd85ed
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-09-23T00:00:00Z"^^xsd:dateTime .
 
 wdv:4410f38af260cdb2a81337c5b28ed9cb
     a wikibase:TimeValue ;
@@ -44121,6 +47138,13 @@ wdv:5460fefe5bc8287c2fdc6fd8a3106b3d
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2016-11-02T00:00:00Z"^^xsd:dateTime .
 
+wdv:8854d7e8ff5352092e305daa9356d47d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-04-26T00:00:00Z"^^xsd:dateTime .
+
 wdv:9662bc53bc5a638eee1899f2be1c93f6
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -44134,6 +47158,34 @@ wdv:25214ec81a3420a17f8c055ebe36aebd
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-04-18T00:00:00Z"^^xsd:dateTime .
+
+wdv:25607d484a662e580c22c62ee158425d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-10-28T00:00:00Z"^^xsd:dateTime .
+
+wdv:28345ae133d4710d7b3ee6845cadf5eb
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-04-27T00:00:00Z"^^xsd:dateTime .
+
+wdv:44257e6a09cec8cf732caa4130ca43fe
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2026-06-24T00:00:00Z"^^xsd:dateTime .
+
+wdv:57430bc7eeac8455cbc8cec2b1304779
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-03-11T00:00:00Z"^^xsd:dateTime .
 
 wdv:65403e290b3c88d821409d80ec2d8878
     a wikibase:TimeValue ;
@@ -44156,6 +47208,13 @@ wdv:250530f6fdc8b6060812e84f3f4da1ec
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2017-10-31T00:00:00Z"^^xsd:dateTime .
 
+wdv:733674f41790c6c1009a3375da675660
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-05-29T00:00:00Z"^^xsd:dateTime .
+
 wdv:2137334a7c335c8c6637a710fc75c173
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -44163,12 +47222,26 @@ wdv:2137334a7c335c8c6637a710fc75c173
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2018-10-20T00:00:00Z"^^xsd:dateTime .
 
+wdv:5768629fb7ad8ed19aafe5c8005b536e
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-11-25T00:00:00Z"^^xsd:dateTime .
+
 wdv:2368053198a86274c093ea976da61ffc
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2018-12-13T00:00:00Z"^^xsd:dateTime .
+
+wdv:564266561011b7b05a1398d9e8e0fa42
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-05-05T00:00:00Z"^^xsd:dateTime .
 
 wdv:2203886293893597a9119d5f8c44483f
     a wikibase:TimeValue ;
@@ -44212,6 +47285,20 @@ wdv:acc231249f415b171f5d41734025a73e
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-03-18T00:00:00Z"^^xsd:dateTime .
 
+wdv:afbb6d51530b677b9b754ba4635121e0
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-03-12T00:00:00Z"^^xsd:dateTime .
+
+wdv:b860ffc10fe6852e5acbe77559859510
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2025-05-01T00:00:00Z"^^xsd:dateTime .
+
 wdv:b3411ab341fdfc10c5f614f228278c7c
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -44226,12 +47313,47 @@ wdv:bd91224ff7d9469c901c44d2c9581cee
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2015-12-27T00:00:00Z"^^xsd:dateTime .
 
+wdv:c28a6b123bb7449aa4bf17d56643e781
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-11-30T00:00:00Z"^^xsd:dateTime .
+
+wdv:c507d2c9bf02d67f5ce8b10c7fc3c315
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-03-21T00:00:00Z"^^xsd:dateTime .
+
+wdv:c513b5ae03530927fc6cf54c4a2ae455
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-05-06T00:00:00Z"^^xsd:dateTime .
+
+wdv:c04837e4f3f9cf76d9d7e6fb1293eb95
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-10-07T00:00:00Z"^^xsd:dateTime .
+
 wdv:cb3bf561007b980b6feaa51a78e84da6
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2018-03-10T00:00:00Z"^^xsd:dateTime .
+
+wdv:cc186a7391366b1833ce947f55710546
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-06-11T00:00:00Z"^^xsd:dateTime .
 
 wdv:d4b636033335599ddf7bba396c4a0446
     a wikibase:TimeValue ;
@@ -44247,12 +47369,54 @@ wdv:d4eb8a356bde4238f20e2158dc4e2728
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-02-01T00:00:00Z"^^xsd:dateTime .
 
+wdv:d9c05bb7b0d06cfd6be5f8ce1effd1d3
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2026-04-07T00:00:00Z"^^xsd:dateTime .
+
+wdv:d89ec98817bd7e3f351068f90c3e6609
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-02-19T00:00:00Z"^^xsd:dateTime .
+
+wdv:d3200bf0e2b5a196987f6406d46e05a4
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-11-08T00:00:00Z"^^xsd:dateTime .
+
+wdv:d67297c9595f2630664a21f69307303c
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2024-09-26T00:00:00Z"^^xsd:dateTime .
+
+wdv:d990303f8b7181e9e25f88ae67f0804a
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2025-04-02T00:00:00Z"^^xsd:dateTime .
+
 wdv:d4359407d2c1670de4d47d65bdbe6a0c
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2017-12-17T00:00:00Z"^^xsd:dateTime .
+
+wdv:dbcb8c396781ef490f014d938d582095
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2023-08-01T00:00:00Z"^^xsd:dateTime .
 
 wdv:e01ee5b5a9fdc964b8e24c7b2c9d29b1
     a wikibase:TimeValue ;
@@ -44261,12 +47425,40 @@ wdv:e01ee5b5a9fdc964b8e24c7b2c9d29b1
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2020-01-06T00:00:00Z"^^xsd:dateTime .
 
+wdv:e5f799f88f339689fb87302aaaf4869c
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-12-01T00:00:00Z"^^xsd:dateTime .
+
+wdv:e73678ef16145efed2b524893ad462bd
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2023-07-28T00:00:00Z"^^xsd:dateTime .
+
+wdv:eb19d7d48b2db8425187bd0422df5c81
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2022-02-05T00:00:00Z"^^xsd:dateTime .
+
 wdv:eb9699a747ad776e4adab440e651c3bb
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2016-05-29T00:00:00Z"^^xsd:dateTime .
+
+wdv:ebea60f9eaa4d334a8a4f305e8b4ee6d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2023-09-19T00:00:00Z"^^xsd:dateTime .
 
 wdv:f7ec15092ae04385fc2d644ce3e86e94
     a wikibase:TimeValue ;
@@ -44296,6 +47488,13 @@ wdv:f58fbfa5fad88590fcc17bab0c9925a8
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2020-12-11T00:00:00Z"^^xsd:dateTime .
 
+wdv:f78fda75dfa3738385d93a6fbb7b070d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-10-30T00:00:00Z"^^xsd:dateTime .
+
 wdv:f96cf26a85704b24c00f4dbb31484d87
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -44323,6 +47522,20 @@ wdv:fab22b18474a1a5936330ed0507f8b01
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2020-06-22T00:00:00Z"^^xsd:dateTime .
+
+wdv:fae00b53fb41d4f54c83712920d6a5d6
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-07-06T00:00:00Z"^^xsd:dateTime .
+
+wdv:fbb429f4b03ca4055622f20d154495c4
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2025-12-19T00:00:00Z"^^xsd:dateTime .
 
 wdv:fc2a96fa5a1889d925c4695e30b26c2a
     a wikibase:TimeValue ;
@@ -50327,6 +53540,44 @@ wd:Q355
 wd:Q357
     a wd:Q104,
         wd:Q106 .
+
+wd:Q358
+    a wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q372 .
+
+wd:Q359
+    a wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q372 .
+
+wd:Q360
+    a wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q372,
+        wd:Q378 .
+
+wd:Q361
+    a wd:Q100,
+        wd:Q105,
+        wd:Q372,
+        wd:Q379 .
+
+wd:Q362
+    a wd:Q100,
+        wd:Q105 .
+
+wd:Q372
+    rdfs:subClassOf wd:Q100 .
+
+wd:Q378
+    rdfs:subClassOf wd:Q100 .
+
+wd:Q379
+    rdfs:subClassOf wd:Q100 .
 
 crmdig:D1_Digital_Object
     rdfs:subClassOf crm:E73_Information_Object .
