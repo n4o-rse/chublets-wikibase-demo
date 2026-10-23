@@ -1,5 +1,5 @@
 # Q374: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q374-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q374, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1347"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1534"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q374.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -84,6 +84,8 @@ wd:Q374
     wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
+    skos:altLabel "Allard W. Mees"@en,
+        "Dr. Allard Wijnand Mees FSA"@en ;
     skos:prefLabel "Allard Wijnand Mees"@de,
         "Allard Wijnand Mees"@en ;
     p:P4 wds:Q374-3436E4D9-7CA6-5E8B-B081-8CB21E9658E3 ;

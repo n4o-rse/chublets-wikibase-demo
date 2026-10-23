@@ -1,0 +1,216 @@
+# Q811: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q811
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "What is the correlation between the exposure time of your photographs and the time of the day?"@en ;
+    dcterms:identifier "Q811" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q811 ;
+    dcterms:title "expotime"@en ;
+    schema:about wd:Q811 ;
+    dcat:distribution dist:Q811-html,
+        dist:Q811-json,
+        dist:Q811-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q811.html> .
+
+dist:Q811-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q811, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q811.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q811-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q811, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15321"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q811.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q811-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q811, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q811.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q811
+    a wikibase:Item ;
+    schema:description "What is the correlation between the exposure time of your photographs and the time of the day?"@en ;
+    schema:name "expotime"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "expotime"@en ;
+    skos:prefLabel "expotime"@en ;
+    p:P2 wds:Q811-211D190C-29AC-591B-9E9E-C4F083A743F0,
+        wds:Q811-E48CECF6-B763-56A1-987D-8328DFCAB14E ;
+    p:P106 wds:Q811-A177B3F4-2CD6-5BE7-AA9A-3E33F3C780F7 ;
+    p:P113 wds:Q811-10509FAA-3B6E-5401-A697-AA87938A5D5D ;
+    p:P115 wds:Q811-65BCD39A-FF58-5299-8958-F78F911B42D1 ;
+    p:P116 wds:Q811-5057C1A3-7BFF-53E4-8C6C-CBB4998B8314 ;
+    p:P117 wds:Q811-DC78E24E-CD26-53C8-B8B3-D138C51AC3BE ;
+    p:P118 wds:Q811-CA4BC3DB-0D20-5B93-BE60-6E7C5BFF65B7 ;
+    p:P119 wds:Q811-CA1247D1-C051-54BB-8F44-E1DEFF227631 ;
+    p:P122 wds:Q811-09D64FAF-1DAE-5F6C-886D-59BD2843BB97,
+        wds:Q811-7340CBDF-4358-5C4B-B7CF-4BEBC844143F ;
+    p:P123 wds:Q811-F39274AC-C4FD-5781-920C-90458AA751F8 ;
+    p:P125 wds:Q811-CDAE2E0C-E22D-5FC0-9997-D1E213DE78D8 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q182 ;
+    wdt:P115 <https://open-archaeo.info/post/expotime/> ;
+    wdt:P116 "expotime" ;
+    wdt:P117 wd:Q549 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "expotime"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://codeberg.org/steko/expotime> .
+
+wds:Q811-09D64FAF-1DAE-5F6C-886D-59BD2843BB97
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P122 wd:Q110 .
+
+wds:Q811-65BCD39A-FF58-5299-8958-F78F911B42D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P115 <https://open-archaeo.info/post/expotime/> .
+
+wds:Q811-211D190C-29AC-591B-9E9E-C4F083A743F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P2 wd:Q104 .
+
+wds:Q811-5057C1A3-7BFF-53E4-8C6C-CBB4998B8314
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "expotime" .
+
+wds:Q811-7340CBDF-4358-5C4B-B7CF-4BEBC844143F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P122 wd:Q109 .
+
+wds:Q811-10509FAA-3B6E-5401-A697-AA87938A5D5D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q182 .
+
+wds:Q811-A177B3F4-2CD6-5BE7-AA9A-3E33F3C780F7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P106 wd:Q110 .
+
+wds:Q811-CA4BC3DB-0D20-5B93-BE60-6E7C5BFF65B7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P118 wd:Q108 .
+
+wds:Q811-CA1247D1-C051-54BB-8F44-E1DEFF227631
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P119 "expotime"@en .
+
+wds:Q811-CDAE2E0C-E22D-5FC0-9997-D1E213DE78D8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    pq:P104 "2020-08-08T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/codeberg.org-steko-expotime_-_2020-08-08_08-20-45> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:11451b114366c3dadcafd9f4470a2f0b ;
+    ps:P125 <https://codeberg.org/steko/expotime> .
+
+wds:Q811-DC78E24E-CD26-53C8-B8B3-D138C51AC3BE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P117 wd:Q549 .
+
+wds:Q811-E48CECF6-B763-56A1-987D-8328DFCAB14E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P2 wd:Q106 .
+
+wds:Q811-F39274AC-C4FD-5781-920C-90458AA751F8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
+    ps:P123 wd:Q139 .
+
+wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/expotime/> .
+
+wdv:11451b114366c3dadcafd9f4470a2f0b
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-08-08T00:00:00Z"^^xsd:dateTime .

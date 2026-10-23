@@ -1,0 +1,235 @@
+# Q491: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q491
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Bayesian modeling of archaeological chronologies."@en ;
+    dcterms:identifier "Q491" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q491 ;
+    dcterms:title "ArchaeoChron"@en ;
+    schema:about wd:Q491 ;
+    dcat:distribution dist:Q491-html,
+        dist:Q491-json,
+        dist:Q491-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q491.html> .
+
+dist:Q491-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q491, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q491.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q491-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q491, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17632"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q491.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q491-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q491, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q491.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q491
+    a wikibase:Item ;
+    schema:description "Bayesian modeling of archaeological chronologies."@en ;
+    schema:name "ArchaeoChron"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "ArchaeoChron"@en ;
+    skos:prefLabel "ArchaeoChron"@en ;
+    p:P2 wds:Q491-306C9E5B-B138-5FF2-86E7-CE0B460DD35F,
+        wds:Q491-C17DE86F-40D5-539C-AF50-1429947D50B6 ;
+    p:P106 wds:Q491-2001821C-33E2-55AC-964A-85FEF8EBBF57 ;
+    p:P113 wds:Q491-3F7F5AE5-BF69-5774-8758-27FE555CF584,
+        wds:Q491-9A713CFD-46C2-57DE-B123-4CE46A404EAE ;
+    p:P115 wds:Q491-C727D801-26F6-5113-ACE2-72FFC8971C21 ;
+    p:P116 wds:Q491-2AAEA54B-7F14-5B53-8A81-68E97A27080B ;
+    p:P117 wds:Q491-071084B8-0EB3-5429-B48B-6A2784F2EA4D ;
+    p:P118 wds:Q491-0BF69508-3107-58AE-99D1-2C628970D4CF ;
+    p:P119 wds:Q491-DD9EA55C-60F8-5EF0-AAC8-0C183A994E2E ;
+    p:P120 wds:Q491-DDD8001D-1B75-558A-96D4-1145BC34B4ED ;
+    p:P122 wds:Q491-1E5B2530-FD43-5A6D-AA0F-E207C4589006,
+        wds:Q491-AFFF27B0-1B16-54D2-B8E6-44F3B95ED163 ;
+    p:P123 wds:Q491-57C94D09-8FF7-58EF-A07A-DE66D0502901 ;
+    p:P125 wds:Q491-764855E0-F56C-5AB5-B473-9E0E59F210CE ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q423,
+        wd:Q492 ;
+    wdt:P115 <https://open-archaeo.info/post/archaeochron/> ;
+    wdt:P116 "archaeochron" ;
+    wdt:P117 wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ArchaeoChron"@en ;
+    wdt:P120 <https://archaeostat.github.io/ArchaeoChron/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/ArchaeoStat/ArchaeoChron> .
+
+wds:Q491-0BF69508-3107-58AE-99D1-2C628970D4CF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P118 wd:Q108 .
+
+wds:Q491-1E5B2530-FD43-5A6D-AA0F-E207C4589006
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P122 wd:Q110 .
+
+wds:Q491-2AAEA54B-7F14-5B53-8A81-68E97A27080B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "archaeochron" .
+
+wds:Q491-3F7F5AE5-BF69-5774-8758-27FE555CF584
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q423 .
+
+wds:Q491-9A713CFD-46C2-57DE-B123-4CE46A404EAE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q492 .
+
+wds:Q491-57C94D09-8FF7-58EF-A07A-DE66D0502901
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P123 wd:Q111 .
+
+wds:Q491-306C9E5B-B138-5FF2-86E7-CE0B460DD35F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P2 wd:Q103 .
+
+wds:Q491-071084B8-0EB3-5429-B48B-6A2784F2EA4D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P117 wd:Q126 .
+
+wds:Q491-764855E0-F56C-5AB5-B473-9E0E59F210CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    pq:P104 "2019-09-11T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-ArchaeoStat-ArchaeoChron_-_2019-09-11_12-58-29> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:fee652fb4f65e8ec081d195f16d5338b ;
+    ps:P125 <https://github.com/ArchaeoStat/ArchaeoChron> .
+
+wds:Q491-2001821C-33E2-55AC-964A-85FEF8EBBF57
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P106 wd:Q110 .
+
+wds:Q491-AFFF27B0-1B16-54D2-B8E6-44F3B95ED163
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P122 wd:Q109 .
+
+wds:Q491-C17DE86F-40D5-539C-AF50-1429947D50B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P2 wd:Q106 .
+
+wds:Q491-C727D801-26F6-5113-ACE2-72FFC8971C21
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P115 <https://open-archaeo.info/post/archaeochron/> .
+
+wds:Q491-DD9EA55C-60F8-5EF0-AAC8-0C183A994E2E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P119 "ArchaeoChron"@en .
+
+wds:Q491-DDD8001D-1B75-558A-96D4-1145BC34B4ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:202f5acbbaf54743c1c77e390e69be44b341699a ;
+    ps:P120 <https://archaeostat.github.io/ArchaeoChron/> .
+
+wdref:202f5acbbaf54743c1c77e390e69be44b341699a
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/archaeochron/> .
+
+wdv:fee652fb4f65e8ec081d195f16d5338b
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-09-11T00:00:00Z"^^xsd:dateTime .

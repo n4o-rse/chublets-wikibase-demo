@@ -1,0 +1,216 @@
+# Q623: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q623
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "R package to simulate a luminescence reader"@en ;
+    dcterms:identifier "Q623" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q623 ;
+    dcterms:title "LumReader"@en ;
+    schema:about wd:Q623 ;
+    dcat:distribution dist:Q623-html,
+        dist:Q623-json,
+        dist:Q623-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q623.html> .
+
+dist:Q623-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q623, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q623.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q623-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q623, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15291"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q623.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q623-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q623, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q623.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q623
+    a wikibase:Item ;
+    schema:description "R package to simulate a luminescence reader"@en ;
+    schema:name "LumReader"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "LumReader"@en ;
+    skos:prefLabel "LumReader"@en ;
+    p:P2 wds:Q623-072FBDF2-4538-56B6-A6F7-C9F49D09E880,
+        wds:Q623-CA17ABC0-47E6-5F0E-8E06-312E52D35ED5 ;
+    p:P106 wds:Q623-8F814EE9-D01B-5970-AF49-0DFD8BDBD7E0 ;
+    p:P113 wds:Q623-A2FD1F5E-B5B4-5E2F-80CE-9A9F39CB3A17 ;
+    p:P115 wds:Q623-0681B045-E62D-540F-978A-804C62CDB4EE ;
+    p:P116 wds:Q623-4020CE0B-F8B2-5253-8CBC-0EB35BFA9A6C ;
+    p:P117 wds:Q623-FA5FB35E-659E-5F3F-A91B-9F126E5783C8 ;
+    p:P118 wds:Q623-686180DC-C570-50D5-AFEE-50E6EC7632BE ;
+    p:P119 wds:Q623-7C09FC06-9C35-5BCF-8FF9-4A10F1DB237B ;
+    p:P122 wds:Q623-20EDE2A0-36DC-50B7-BB48-91A28D7F14E9,
+        wds:Q623-CDB56A51-B3EE-5B96-ABBC-920519850F10 ;
+    p:P123 wds:Q623-D01F90DE-B2BF-5C33-8982-4DBCF0407C7D ;
+    p:P125 wds:Q623-C8E8BE30-86D2-5DA0-825F-8E49A4D2FFD8 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q254 ;
+    wdt:P115 <https://open-archaeo.info/post/lumreader/> ;
+    wdt:P116 "lumreader" ;
+    wdt:P117 wd:Q253 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "LumReader"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/dstreble/LumReader> .
+
+wds:Q623-7C09FC06-9C35-5BCF-8FF9-4A10F1DB237B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P119 "LumReader"@en .
+
+wds:Q623-8F814EE9-D01B-5970-AF49-0DFD8BDBD7E0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P106 wd:Q110 .
+
+wds:Q623-20EDE2A0-36DC-50B7-BB48-91A28D7F14E9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P122 wd:Q110 .
+
+wds:Q623-072FBDF2-4538-56B6-A6F7-C9F49D09E880
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P2 wd:Q106 .
+
+wds:Q623-0681B045-E62D-540F-978A-804C62CDB4EE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P115 <https://open-archaeo.info/post/lumreader/> .
+
+wds:Q623-4020CE0B-F8B2-5253-8CBC-0EB35BFA9A6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "lumreader" .
+
+wds:Q623-686180DC-C570-50D5-AFEE-50E6EC7632BE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P118 wd:Q108 .
+
+wds:Q623-A2FD1F5E-B5B4-5E2F-80CE-9A9F39CB3A17
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q254 .
+
+wds:Q623-C8E8BE30-86D2-5DA0-825F-8E49A4D2FFD8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    pq:P104 "2017-01-26T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-dstreble-LumReader_-_2017-01-26_13-55-17> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:19bab5163372e34354774bd8ac8a0e00 ;
+    ps:P125 <https://github.com/dstreble/LumReader> .
+
+wds:Q623-CA17ABC0-47E6-5F0E-8E06-312E52D35ED5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P2 wd:Q103 .
+
+wds:Q623-CDB56A51-B3EE-5B96-ABBC-920519850F10
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P122 wd:Q109 .
+
+wds:Q623-D01F90DE-B2BF-5C33-8982-4DBCF0407C7D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P123 wd:Q111 .
+
+wds:Q623-FA5FB35E-659E-5F3F-A91B-9F126E5783C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180 ;
+    ps:P117 wd:Q253 .
+
+wdref:65de8e66ca1f1cb4c9c37d22a8d40c3489ff1180
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/lumreader/> .
+
+wdv:19bab5163372e34354774bd8ac8a0e00
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2017-01-26T00:00:00Z"^^xsd:dateTime .

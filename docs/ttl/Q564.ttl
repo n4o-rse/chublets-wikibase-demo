@@ -1,0 +1,216 @@
+# Q564: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q564
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Arches is a web platform for creating, managing, & visualizing geospatial data. Arches was inspired by the needs of the Cultural Heritage community, particularly the widespread need of organizations to build & manage cultural heritage inventories."@en ;
+    dcterms:identifier "Q564" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q564 ;
+    dcterms:title "arches"@en ;
+    schema:about wd:Q564 ;
+    dcat:distribution dist:Q564-html,
+        dist:Q564-json,
+        dist:Q564-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q564.html> .
+
+dist:Q564-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q564, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q564.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q564-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q564, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15347"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q564.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q564-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q564, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q564.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q564
+    a wikibase:Item ;
+    schema:description "Arches is a web platform for creating, managing, & visualizing geospatial data. Arches was inspired by the needs of the Cultural Heritage community, particularly the widespread need of organizations to build & manage cultural heritage inventories."@en ;
+    schema:name "arches"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "arches"@en ;
+    skos:prefLabel "arches"@en ;
+    p:P2 wds:Q564-068BB0AD-4B08-5322-96B2-E05D68875183,
+        wds:Q564-AC701EA2-88FD-5A32-B83E-A31E77D98B85 ;
+    p:P106 wds:Q564-E9AD354B-7012-5DEE-9E0A-EB5624CDDAD7 ;
+    p:P113 wds:Q564-668F8402-94F6-5276-AE83-EB966B7A4160 ;
+    p:P115 wds:Q564-3484E24B-790F-52FE-9EF6-FA0BA28FBA35 ;
+    p:P116 wds:Q564-C7105DFA-3203-5BDB-8D08-40D2EA56FE59 ;
+    p:P117 wds:Q564-7F999651-A377-5220-B755-471EA2918AF2 ;
+    p:P118 wds:Q564-73F8F51F-920C-589F-8568-E0F4898A99D9 ;
+    p:P119 wds:Q564-E3CAB883-6147-5C4F-98A0-1794A37EE5E7 ;
+    p:P120 wds:Q564-A09DD141-3D46-5EDF-86A4-A239FE9C037E ;
+    p:P122 wds:Q564-63A29DAB-03F5-5F7A-9EBA-7C32E8C7958E,
+        wds:Q564-A6483106-571C-5FE9-B2A1-3226F3FE3734 ;
+    p:P125 wds:Q564-6530C781-E3DE-536F-BE96-409E0E476261 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q565 ;
+    wdt:P115 <https://open-archaeo.info/post/arches/> ;
+    wdt:P116 "arches" ;
+    wdt:P117 wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "arches"@en ;
+    wdt:P120 <https://www.archesproject.org/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/archesproject/arches> .
+
+wds:Q564-7F999651-A377-5220-B755-471EA2918AF2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P117 wd:Q148 .
+
+wds:Q564-63A29DAB-03F5-5F7A-9EBA-7C32E8C7958E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P122 wd:Q110 .
+
+wds:Q564-068BB0AD-4B08-5322-96B2-E05D68875183
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P2 wd:Q106 .
+
+wds:Q564-73F8F51F-920C-589F-8568-E0F4898A99D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P118 wd:Q108 .
+
+wds:Q564-668F8402-94F6-5276-AE83-EB966B7A4160
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q565 .
+
+wds:Q564-3484E24B-790F-52FE-9EF6-FA0BA28FBA35
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P115 <https://open-archaeo.info/post/arches/> .
+
+wds:Q564-6530C781-E3DE-536F-BE96-409E0E476261
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    pq:P104 "2021-02-04T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-archesproject-arches_-_2021-02-04_04-54-27> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:012e9a24ff658950d72faff27d693835 ;
+    ps:P125 <https://github.com/archesproject/arches> .
+
+wds:Q564-A09DD141-3D46-5EDF-86A4-A239FE9C037E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P120 <https://www.archesproject.org/> .
+
+wds:Q564-A6483106-571C-5FE9-B2A1-3226F3FE3734
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P122 wd:Q109 .
+
+wds:Q564-AC701EA2-88FD-5A32-B83E-A31E77D98B85
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P2 wd:Q102 .
+
+wds:Q564-C7105DFA-3203-5BDB-8D08-40D2EA56FE59
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "arches" .
+
+wds:Q564-E3CAB883-6147-5C4F-98A0-1794A37EE5E7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P119 "arches"@en .
+
+wds:Q564-E9AD354B-7012-5DEE-9E0A-EB5624CDDAD7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46 ;
+    ps:P106 wd:Q110 .
+
+wdref:c1baeb89db716d22b0de067d3e9bc0d25574fa46
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/arches/> .
+
+wdv:012e9a24ff658950d72faff27d693835
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-02-04T00:00:00Z"^^xsd:dateTime .

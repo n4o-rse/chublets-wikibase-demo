@@ -1,0 +1,216 @@
+# Q437: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q437
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Scrapers for public radiocarbon databases"@en ;
+    dcterms:identifier "Q437" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q437 ;
+    dcterms:title "radiocarbon-scrapers"@en ;
+    schema:about wd:Q437 ;
+    dcat:distribution dist:Q437-html,
+        dist:Q437-json,
+        dist:Q437-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q437.html> .
+
+dist:Q437-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q437, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q437.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q437-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q437, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15496"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q437.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q437-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q437, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q437.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q437
+    a wikibase:Item ;
+    schema:description "Scrapers for public radiocarbon databases"@en ;
+    schema:name "radiocarbon-scrapers"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "radiocarbon-scrapers"@en ;
+    skos:prefLabel "radiocarbon-scrapers"@en ;
+    p:P2 wds:Q437-9F4E6751-9BF1-5C14-8F32-C90C1E0CE44B,
+        wds:Q437-19824FAB-E741-5B66-A43D-E6D567FF91E8 ;
+    p:P106 wds:Q437-5AEFBEE3-31FE-5DA4-8DB0-D4BF6B1E3DFC ;
+    p:P113 wds:Q437-0ADF6752-B5FE-520F-ABEC-2E852A07DA5F ;
+    p:P115 wds:Q437-7965C9B0-AC02-53F0-9741-D59B3E0FE63E ;
+    p:P116 wds:Q437-8A926BA7-6E70-54A7-A400-4EC1B4765714 ;
+    p:P117 wds:Q437-AA498D56-48B3-5306-85A1-5C38E7CF677C ;
+    p:P118 wds:Q437-C9B9F375-B216-518E-BB6C-105E96147409 ;
+    p:P119 wds:Q437-C8CF219B-9DE6-5503-9881-A250B4319E6C ;
+    p:P122 wds:Q437-99C333BC-8C41-5E14-AF12-F2A608375307,
+        wds:Q437-99EC3F06-D43F-5021-A2F6-E21885D68FA5 ;
+    p:P123 wds:Q437-64757B61-8357-5E28-A712-8AA3726CDC8D ;
+    p:P125 wds:Q437-69E2AA86-5D4D-5EFC-8B6A-58B3FE645EBF ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q182 ;
+    wdt:P115 <https://open-archaeo.info/post/radiocarbon-scrapers/> ;
+    wdt:P116 "radiocarbon-scrapers" ;
+    wdt:P117 wd:Q157 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "radiocarbon-scrapers"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q406 ;
+    wdt:P125 <https://codeberg.org/steko/radiocarbon-scrapers> .
+
+wds:Q437-0ADF6752-B5FE-520F-ABEC-2E852A07DA5F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q182 .
+
+wds:Q437-5AEFBEE3-31FE-5DA4-8DB0-D4BF6B1E3DFC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P106 wd:Q110 .
+
+wds:Q437-8A926BA7-6E70-54A7-A400-4EC1B4765714
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "radiocarbon-scrapers" .
+
+wds:Q437-9F4E6751-9BF1-5C14-8F32-C90C1E0CE44B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P2 wd:Q104 .
+
+wds:Q437-69E2AA86-5D4D-5EFC-8B6A-58B3FE645EBF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    pq:P104 "2020-03-27T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/codeberg.org-steko-radiocarbon-scrapers_-_2020-03-27_10-55-09> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:1efe3f82d3fca6f5e1d8bec14b7ffec7 ;
+    ps:P125 <https://codeberg.org/steko/radiocarbon-scrapers> .
+
+wds:Q437-99C333BC-8C41-5E14-AF12-F2A608375307
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P122 wd:Q110 .
+
+wds:Q437-99EC3F06-D43F-5021-A2F6-E21885D68FA5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P122 wd:Q109 .
+
+wds:Q437-7965C9B0-AC02-53F0-9741-D59B3E0FE63E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P115 <https://open-archaeo.info/post/radiocarbon-scrapers/> .
+
+wds:Q437-19824FAB-E741-5B66-A43D-E6D567FF91E8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P2 wd:Q106 .
+
+wds:Q437-64757B61-8357-5E28-A712-8AA3726CDC8D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P123 wd:Q406 .
+
+wds:Q437-AA498D56-48B3-5306-85A1-5C38E7CF677C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P117 wd:Q157 .
+
+wds:Q437-C8CF219B-9DE6-5503-9881-A250B4319E6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P119 "radiocarbon-scrapers"@en .
+
+wds:Q437-C9B9F375-B216-518E-BB6C-105E96147409
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
+    ps:P118 wd:Q108 .
+
+wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/radiocarbon-scrapers/> .
+
+wdv:1efe3f82d3fca6f5e1d8bec14b7ffec7
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-03-27T00:00:00Z"^^xsd:dateTime .

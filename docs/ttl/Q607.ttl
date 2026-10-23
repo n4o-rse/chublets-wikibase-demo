@@ -1,0 +1,207 @@
+# Q607: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q607
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Platform for crowdsourcing the digital recreation of lost heritage"@en ;
+    dcterms:identifier "Q607" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q607 ;
+    dcterms:title "rekrei"@en ;
+    schema:about wd:Q607 ;
+    dcat:distribution dist:Q607-html,
+        dist:Q607-json,
+        dist:Q607-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q607.html> .
+
+dist:Q607-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q607, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q607.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q607-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q607, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14252"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q607.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q607-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q607, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q607.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q607
+    a wikibase:Item ;
+    schema:description "Platform for crowdsourcing the digital recreation of lost heritage"@en ;
+    schema:name "rekrei"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "rekrei"@en ;
+    skos:prefLabel "rekrei"@en ;
+    p:P2 wds:Q607-30991E0E-6B2A-5273-BE2F-78007E02ACC8,
+        wds:Q607-AA724753-7ADC-5C87-BDC4-826D9B24216F ;
+    p:P106 wds:Q607-E34FAF83-6729-5B8F-A5E7-9F2065AD5726 ;
+    p:P113 wds:Q607-FC94155B-5CB4-5C5F-B361-DB9B28107754 ;
+    p:P115 wds:Q607-8A1A3DE2-0508-5585-9E39-79EF81AFFE91 ;
+    p:P116 wds:Q607-16A17DDC-80B9-59A5-B880-74D23BB77722 ;
+    p:P117 wds:Q607-A8293806-19A4-5109-B51A-0B65E1B3BA28 ;
+    p:P118 wds:Q607-3F8A71E7-2B5B-5EAC-81C9-F3DDE7E52331 ;
+    p:P119 wds:Q607-49B2E4E6-5393-5F76-9BFD-A6E5E742DA0F ;
+    p:P122 wds:Q607-371014B6-73DD-54D3-BD54-DF9F7CB14C84,
+        wds:Q607-E9D998E9-CFA5-534E-BD22-DCD8C57B962D ;
+    p:P125 wds:Q607-955CD709-1550-5701-84C8-9612F6D91972 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q608 ;
+    wdt:P115 <https://open-archaeo.info/post/rekrei/> ;
+    wdt:P116 "rekrei" ;
+    wdt:P117 wd:Q209 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "rekrei"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/rekrei/rekrei> .
+
+wds:Q607-3F8A71E7-2B5B-5EAC-81C9-F3DDE7E52331
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P118 wd:Q108 .
+
+wds:Q607-8A1A3DE2-0508-5585-9E39-79EF81AFFE91
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P115 <https://open-archaeo.info/post/rekrei/> .
+
+wds:Q607-16A17DDC-80B9-59A5-B880-74D23BB77722
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "rekrei" .
+
+wds:Q607-49B2E4E6-5393-5F76-9BFD-A6E5E742DA0F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P119 "rekrei"@en .
+
+wds:Q607-955CD709-1550-5701-84C8-9612F6D91972
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    pq:P104 "2021-01-14T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-rekrei-rekrei_-_2021-01-14_19-27-48> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:bb7c011e9f5759b1d68b211540447632 ;
+    ps:P125 <https://github.com/rekrei/rekrei> .
+
+wds:Q607-30991E0E-6B2A-5273-BE2F-78007E02ACC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P2 wd:Q102 .
+
+wds:Q607-371014B6-73DD-54D3-BD54-DF9F7CB14C84
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P122 wd:Q110 .
+
+wds:Q607-A8293806-19A4-5109-B51A-0B65E1B3BA28
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P117 wd:Q209 .
+
+wds:Q607-AA724753-7ADC-5C87-BDC4-826D9B24216F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P2 wd:Q106 .
+
+wds:Q607-E9D998E9-CFA5-534E-BD22-DCD8C57B962D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P122 wd:Q109 .
+
+wds:Q607-E34FAF83-6729-5B8F-A5E7-9F2065AD5726
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    ps:P106 wd:Q110 .
+
+wds:Q607-FC94155B-5CB4-5C5F-B361-DB9B28107754
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q608 .
+
+wdref:71a7f6a91fe803e05f08eb26fc8371de1af3c560
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/rekrei/> .
+
+wdv:bb7c011e9f5759b1d68b211540447632
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-01-14T00:00:00Z"^^xsd:dateTime .

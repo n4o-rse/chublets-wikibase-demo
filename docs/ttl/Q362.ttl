@@ -1,5 +1,5 @@
 # Q362: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -60,7 +60,7 @@ dist:Q362-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q362, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15441"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "15914"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q362.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -77,17 +77,19 @@ wd:Q362
     schema:description "text mining tools to search archaeological reports"@en ;
     schema:name "Text mining minion"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "6"^^xsd:integer ;
+    wikibase:statements "7"^^xsd:integer ;
     rdfs:label "Text mining minion"@en ;
     skos:prefLabel "Text mining minion"@en ;
     p:P2 wds:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC,
+        wds:Q362-88508FDC-DD87-547F-9A89-8CD5D1CBCFAE,
         wds:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B ;
     p:P4 wds:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E ;
     p:P125 wds:Q362-B81B637D-4146-519A-A207-2725C56D4039 ;
     p:P148 wds:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37 ;
     p:P171 wds:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB ;
     wdt:P2 wd:Q100,
-        wd:Q105 ;
+        wd:Q105,
+        wd:Q106 ;
     wdt:P4 "Q74824570" ;
     wdt:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> ;
     wdt:P148 "1.0" ;
@@ -106,6 +108,12 @@ wds:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
     ps:P2 wd:Q100 .
+
+wds:Q362-88508FDC-DD87-547F-9A89-8CD5D1CBCFAE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wds:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B
     a wikibase:BestRank,

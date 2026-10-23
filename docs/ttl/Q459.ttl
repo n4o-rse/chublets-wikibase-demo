@@ -1,0 +1,216 @@
+# Q459: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q459
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "The r package 'rcarb' provides a collection of various r functions to model dose rates in carbonate-rich samples. The package is a translation of the 'matlab' program carb by roger p. Nathan"@en ;
+    dcterms:identifier "Q459" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q459 ;
+    dcterms:title "Rcarb"@en ;
+    schema:about wd:Q459 ;
+    dcat:distribution dist:Q459-html,
+        dist:Q459-json,
+        dist:Q459-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q459.html> .
+
+dist:Q459-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q459, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q459.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q459-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q459, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15356"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q459.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q459-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q459, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q459.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q459
+    a wikibase:Item ;
+    schema:description "The r package 'rcarb' provides a collection of various r functions to model dose rates in carbonate-rich samples. The package is a translation of the 'matlab' program carb by roger p. Nathan"@en ;
+    schema:name "Rcarb"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Rcarb"@en ;
+    skos:prefLabel "Rcarb"@en ;
+    p:P2 wds:Q459-65D50F3F-80EB-52F4-8BCD-73B929D65346,
+        wds:Q459-B67FB50E-C4CF-5248-A560-D3D4BA9920DF ;
+    p:P106 wds:Q459-5A441D1E-114C-5D25-81E1-AEA84BBAA342 ;
+    p:P113 wds:Q459-A8E8AC2A-20E0-5234-9365-9D39F974C452 ;
+    p:P115 wds:Q459-873443A6-0073-509B-9981-5111A4D0FB9E ;
+    p:P116 wds:Q459-75E27994-18E2-5AAA-93CF-42933F51F3E3 ;
+    p:P117 wds:Q459-2D460A18-C826-5053-BC6F-9543A60D8CE6 ;
+    p:P118 wds:Q459-3578D4F0-4793-524A-BFEB-1ADBFEE5045A ;
+    p:P119 wds:Q459-196A503F-37C0-528D-8489-36A772E2E100 ;
+    p:P122 wds:Q459-118F7051-8DAD-526A-A4CE-9EEB7DE7188F,
+        wds:Q459-B8076679-7C9B-58DB-85C9-9B393975BBBF ;
+    p:P123 wds:Q459-84C0A1B6-9487-560A-B5CD-FB765EA3A014 ;
+    p:P125 wds:Q459-52B18AE5-4C65-5796-8E85-D34C11EC2B18 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q336 ;
+    wdt:P115 <https://open-archaeo.info/post/rcarb/> ;
+    wdt:P116 "rcarb" ;
+    wdt:P117 wd:Q253 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Rcarb"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/R-Lum/RCarb> .
+
+wds:Q459-2D460A18-C826-5053-BC6F-9543A60D8CE6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P117 wd:Q253 .
+
+wds:Q459-5A441D1E-114C-5D25-81E1-AEA84BBAA342
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P106 wd:Q110 .
+
+wds:Q459-52B18AE5-4C65-5796-8E85-D34C11EC2B18
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    pq:P104 "2021-01-03T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-R-Lum-RCarb_-_2021-01-03_12-21-09> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:0149edf5562a84428ca987d4b6260467 ;
+    ps:P125 <https://github.com/R-Lum/RCarb> .
+
+wds:Q459-65D50F3F-80EB-52F4-8BCD-73B929D65346
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P2 wd:Q106 .
+
+wds:Q459-75E27994-18E2-5AAA-93CF-42933F51F3E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "rcarb" .
+
+wds:Q459-84C0A1B6-9487-560A-B5CD-FB765EA3A014
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P123 wd:Q111 .
+
+wds:Q459-118F7051-8DAD-526A-A4CE-9EEB7DE7188F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P122 wd:Q110 .
+
+wds:Q459-196A503F-37C0-528D-8489-36A772E2E100
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P119 "Rcarb"@en .
+
+wds:Q459-3578D4F0-4793-524A-BFEB-1ADBFEE5045A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P118 wd:Q108 .
+
+wds:Q459-873443A6-0073-509B-9981-5111A4D0FB9E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P115 <https://open-archaeo.info/post/rcarb/> .
+
+wds:Q459-A8E8AC2A-20E0-5234-9365-9D39F974C452
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q336 .
+
+wds:Q459-B67FB50E-C4CF-5248-A560-D3D4BA9920DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P2 wd:Q103 .
+
+wds:Q459-B8076679-7C9B-58DB-85C9-9B393975BBBF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8f796e266d518c0491a41cf59cbaea34bdda477a ;
+    ps:P122 wd:Q109 .
+
+wdref:8f796e266d518c0491a41cf59cbaea34bdda477a
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/rcarb/> .
+
+wdv:0149edf5562a84428ca987d4b6260467
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-01-03T00:00:00Z"^^xsd:dateTime .

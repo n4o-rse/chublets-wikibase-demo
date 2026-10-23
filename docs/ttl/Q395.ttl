@@ -1,0 +1,224 @@
+# Q395: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q395
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A QGIS plug-in that provides one-step-processing of airborne LiDAR data from point cloud to LiDAR visualisations."@en ;
+    dcterms:identifier "Q395" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q395 ;
+    dcterms:title "OpenLidarToolbox"@en ;
+    schema:about wd:Q395 ;
+    dcat:distribution dist:Q395-html,
+        dist:Q395-json,
+        dist:Q395-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q395.html> .
+
+dist:Q395-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q395, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q395.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q395-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q395, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16546"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q395.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q395-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q395, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q395.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q395
+    a wikibase:Item ;
+    schema:description "A QGIS plug-in that provides one-step-processing of airborne LiDAR data from point cloud to LiDAR visualisations."@en ;
+    schema:name "OpenLidarToolbox"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "OpenLidarToolbox"@en ;
+    skos:prefLabel "OpenLidarToolbox"@en ;
+    p:P2 wds:Q395-98D27513-F17C-5B3E-985B-2F6259654E38,
+        wds:Q395-9063E2CD-CEFD-522B-A702-69BA978A3E85 ;
+    p:P106 wds:Q395-A48538BE-375C-5B40-A105-6F7BC0389909 ;
+    p:P109 wds:Q395-3A91C0A7-C715-59C3-8D2C-6D9E7B075C18 ;
+    p:P113 wds:Q395-A01CC21E-542E-512E-94EE-5B60A85691B5 ;
+    p:P115 wds:Q395-E8C3EE4F-FE78-53EC-A878-DBC690188A1B ;
+    p:P116 wds:Q395-90B183A7-3BCB-5438-BD0E-233D820DFA55 ;
+    p:P117 wds:Q395-85F5959A-FDBA-517C-B229-488621B61611,
+        wds:Q395-6023C686-3D46-5DD7-8F02-0001FD6991A1,
+        wds:Q395-E5D35C2B-6CDB-5C61-AF51-79AF31FB8169 ;
+    p:P118 wds:Q395-222D2CDB-2BDE-5949-A977-0652964DBD20 ;
+    p:P119 wds:Q395-0B17A571-FE09-506B-AAF8-913E5AF159E2 ;
+    p:P122 wds:Q395-810252BB-030B-5738-8E81-B9C47C5B06E2,
+        wds:Q395-EAD49FB3-538C-5553-9C33-65F9EDDC83E2 ;
+    p:P125 wds:Q395-A7DA2022-6570-5E44-9E01-C0DB122C36AB ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q135 ;
+    wdt:P113 wd:Q397 ;
+    wdt:P115 <https://open-archaeo.info/post/openlidartoolbox/> ;
+    wdt:P116 "openlidartoolbox" ;
+    wdt:P117 wd:Q144,
+        wd:Q356,
+        wd:Q396 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "OpenLidarToolbox"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/stefaneichert/OpenLidarToolbox> .
+
+wds:Q395-0B17A571-FE09-506B-AAF8-913E5AF159E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P119 "OpenLidarToolbox"@en .
+
+wds:Q395-3A91C0A7-C715-59C3-8D2C-6D9E7B075C18
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P109 wd:Q135 .
+
+wds:Q395-85F5959A-FDBA-517C-B229-488621B61611
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P117 wd:Q396 .
+
+wds:Q395-90B183A7-3BCB-5438-BD0E-233D820DFA55
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "openlidartoolbox" .
+
+wds:Q395-98D27513-F17C-5B3E-985B-2F6259654E38
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P2 wd:Q103 .
+
+wds:Q395-222D2CDB-2BDE-5949-A977-0652964DBD20
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P118 wd:Q108 .
+
+wds:Q395-6023C686-3D46-5DD7-8F02-0001FD6991A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P117 wd:Q356 .
+
+wds:Q395-9063E2CD-CEFD-522B-A702-69BA978A3E85
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P2 wd:Q106 .
+
+wds:Q395-810252BB-030B-5738-8E81-B9C47C5B06E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P122 wd:Q110 .
+
+wds:Q395-A01CC21E-542E-512E-94EE-5B60A85691B5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q397 .
+
+wds:Q395-A7DA2022-6570-5E44-9E01-C0DB122C36AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/stefaneichert/OpenLidarToolbox> .
+
+wds:Q395-A48538BE-375C-5B40-A105-6F7BC0389909
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P106 wd:Q110 .
+
+wds:Q395-E5D35C2B-6CDB-5C61-AF51-79AF31FB8169
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P117 wd:Q144 .
+
+wds:Q395-E8C3EE4F-FE78-53EC-A878-DBC690188A1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P115 <https://open-archaeo.info/post/openlidartoolbox/> .
+
+wds:Q395-EAD49FB3-538C-5553-9C33-65F9EDDC83E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
+    ps:P122 wd:Q109 .
+
+wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/openlidartoolbox/> .

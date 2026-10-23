@@ -1,0 +1,215 @@
+# Q713: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q713
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Building chronological charts easily with R."@en ;
+    dcterms:identifier "Q713" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q713 ;
+    dcterms:title "chronochrt"@en ;
+    schema:about wd:Q713 ;
+    dcat:distribution dist:Q713-html,
+        dist:Q713-json,
+        dist:Q713-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q713.html> .
+
+dist:Q713-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q713, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q713.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q713-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q713, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15271"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q713.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q713-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q713, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q713.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q713
+    a wikibase:Item ;
+    schema:description "Building chronological charts easily with R."@en ;
+    schema:name "chronochrt"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "chronochrt"@en ;
+    skos:prefLabel "chronochrt"@en ;
+    p:P2 wds:Q713-4B2A309E-D938-586C-A04D-579F891666E2,
+        wds:Q713-E9A12278-C573-5C1E-ACC7-42B93ECAAC6C ;
+    p:P106 wds:Q713-F1D1AC6E-4C5C-592A-80C8-8E276F37009A ;
+    p:P108 wds:Q713-A01817DB-1BCF-5249-9BC7-EDF73F69C1BC ;
+    p:P113 wds:Q713-6832848C-2464-51AA-A3F2-0D6DA6318121 ;
+    p:P115 wds:Q713-B2E48C74-FCF4-5BF8-85C9-5A1376EB38BD ;
+    p:P116 wds:Q713-E7A63683-B2E4-5790-8399-F92DBF32120F ;
+    p:P117 wds:Q713-9809977B-3F89-5EF8-939C-8288EED19674 ;
+    p:P118 wds:Q713-27DFF7F8-3FC2-517A-9BA4-5CE426072E00 ;
+    p:P119 wds:Q713-DD304931-3B16-53EE-A708-3F79392361EB ;
+    p:P122 wds:Q713-9650348B-FA12-59E1-AC0F-77FFADA1EDA4,
+        wds:Q713-E5663B4F-2CCE-52BF-9603-6602E91B7978 ;
+    p:P123 wds:Q713-45F8436E-3F4C-5018-80E3-062DD26DDB75 ;
+    p:P125 wds:Q713-4200B00E-ACE8-58F1-B4BB-4C70C44538BF ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "chronochrt" ;
+    wdt:P113 wd:Q714 ;
+    wdt:P115 <https://open-archaeo.info/post/chronochrt/> ;
+    wdt:P116 "chronochrt" ;
+    wdt:P117 wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "chronochrt"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://gitlab.com/roset/chronochrt> .
+
+wds:Q713-4B2A309E-D938-586C-A04D-579F891666E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P2 wd:Q103 .
+
+wds:Q713-27DFF7F8-3FC2-517A-9BA4-5CE426072E00
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P118 wd:Q108 .
+
+wds:Q713-45F8436E-3F4C-5018-80E3-062DD26DDB75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P123 wd:Q111 .
+
+wds:Q713-4200B00E-ACE8-58F1-B4BB-4C70C44538BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://gitlab.com/roset/chronochrt> .
+
+wds:Q713-6832848C-2464-51AA-A3F2-0D6DA6318121
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q714 .
+
+wds:Q713-9650348B-FA12-59E1-AC0F-77FFADA1EDA4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P122 wd:Q109 .
+
+wds:Q713-9809977B-3F89-5EF8-939C-8288EED19674
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P117 wd:Q126 .
+
+wds:Q713-A01817DB-1BCF-5249-9BC7-EDF73F69C1BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P108 "chronochrt" .
+
+wds:Q713-B2E48C74-FCF4-5BF8-85C9-5A1376EB38BD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P115 <https://open-archaeo.info/post/chronochrt/> .
+
+wds:Q713-DD304931-3B16-53EE-A708-3F79392361EB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P119 "chronochrt"@en .
+
+wds:Q713-E7A63683-B2E4-5790-8399-F92DBF32120F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "chronochrt" .
+
+wds:Q713-E9A12278-C573-5C1E-ACC7-42B93ECAAC6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P2 wd:Q106 .
+
+wds:Q713-E5663B4F-2CCE-52BF-9603-6602E91B7978
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P122 wd:Q110 .
+
+wds:Q713-F1D1AC6E-4C5C-592A-80C8-8E276F37009A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935 ;
+    ps:P106 wd:Q110 .
+
+wdref:ada4a7cc8b838ae1759b3bd783fa7901ab9ab935
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/chronochrt/> .

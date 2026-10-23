@@ -1,0 +1,225 @@
+# Q748: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q748
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Peer reviewed and indexed articles published on Caddo archaeology since 2000."@en ;
+    dcterms:identifier "Q748" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q748 ;
+    dcterms:title "caddonet"@en ;
+    schema:about wd:Q748 ;
+    dcat:distribution dist:Q748-html,
+        dist:Q748-json,
+        dist:Q748-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q748.html> .
+
+dist:Q748-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q748, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q748.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q748-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q748, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16206"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q748.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q748-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q748, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q748.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q748
+    a wikibase:Item ;
+    schema:description "Peer reviewed and indexed articles published on Caddo archaeology since 2000."@en ;
+    schema:name "caddonet"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "caddonet"@en ;
+    skos:prefLabel "caddonet"@en ;
+    p:P2 wds:Q748-17F9D71F-3620-5E0B-A8B6-E721A5EE5B43,
+        wds:Q748-B99D0F4B-84A2-58CD-9E91-12ABAA8B5BE3 ;
+    p:P106 wds:Q748-418F00D7-9BCF-5FFF-A0AC-4A3984C86576 ;
+    p:P113 wds:Q748-12D47D4D-4DB1-5342-8AC0-4B5543B333C8 ;
+    p:P115 wds:Q748-0EF98959-C887-5C34-BA1A-DCE577EAEB06 ;
+    p:P116 wds:Q748-944985FF-8EE3-5F46-8E5E-46EB029FDEAD ;
+    p:P117 wds:Q748-C7FFDD07-4324-5556-B420-66572BEA31F3,
+        wds:Q748-FBD4CACA-5A94-5F82-847A-0DC432CC2714 ;
+    p:P118 wds:Q748-B846D085-4F15-5B49-8A3B-1373AF19EE19 ;
+    p:P119 wds:Q748-A699CFDE-A8BE-59A8-8A93-C48A869A126B ;
+    p:P120 wds:Q748-D6816BAD-5C6C-5703-896F-E1EF30981886 ;
+    p:P122 wds:Q748-9916CFD3-9614-5EA4-B460-09862407BFD3,
+        wds:Q748-15994A8E-547A-5EDE-9674-7B1EE4422400 ;
+    p:P125 wds:Q748-28EF964A-FFAC-57C3-8EE5-65AE347FE918 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q749 ;
+    wdt:P115 <https://open-archaeo.info/post/caddonet/> ;
+    wdt:P116 "caddonet" ;
+    wdt:P117 wd:Q207,
+        wd:Q208 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "caddonet"@en ;
+    wdt:P120 <https://aksel-blaise.github.io/caddonet/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/aksel-blaise/caddonet> .
+
+wds:Q748-0EF98959-C887-5C34-BA1A-DCE577EAEB06
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P115 <https://open-archaeo.info/post/caddonet/> .
+
+wds:Q748-12D47D4D-4DB1-5342-8AC0-4B5543B333C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q749 .
+
+wds:Q748-17F9D71F-3620-5E0B-A8B6-E721A5EE5B43
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P2 wd:Q106 .
+
+wds:Q748-28EF964A-FFAC-57C3-8EE5-65AE347FE918
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    pq:P104 "2020-04-03T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-aksel-blaise-caddonet_-_2020-04-03_11-10-46> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:b051d97bff14d5b3d2187c19d802bfc2 ;
+    ps:P125 <https://github.com/aksel-blaise/caddonet> .
+
+wds:Q748-418F00D7-9BCF-5FFF-A0AC-4A3984C86576
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P106 wd:Q110 .
+
+wds:Q748-9916CFD3-9614-5EA4-B460-09862407BFD3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P122 wd:Q110 .
+
+wds:Q748-15994A8E-547A-5EDE-9674-7B1EE4422400
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P122 wd:Q109 .
+
+wds:Q748-944985FF-8EE3-5F46-8E5E-46EB029FDEAD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "caddonet" .
+
+wds:Q748-A699CFDE-A8BE-59A8-8A93-C48A869A126B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P119 "caddonet"@en .
+
+wds:Q748-B99D0F4B-84A2-58CD-9E91-12ABAA8B5BE3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P2 wd:Q102 .
+
+wds:Q748-B846D085-4F15-5B49-8A3B-1373AF19EE19
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P118 wd:Q108 .
+
+wds:Q748-C7FFDD07-4324-5556-B420-66572BEA31F3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P117 wd:Q208 .
+
+wds:Q748-D6816BAD-5C6C-5703-896F-E1EF30981886
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P120 <https://aksel-blaise.github.io/caddonet/> .
+
+wds:Q748-FBD4CACA-5A94-5F82-847A-0DC432CC2714
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd ;
+    ps:P117 wd:Q207 .
+
+wdref:279ed042a5eccb00c8d6fe51a2e4aaa2db931abd
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/caddonet/> .
+
+wdv:b051d97bff14d5b3d2187c19d802bfc2
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-04-03T00:00:00Z"^^xsd:dateTime .

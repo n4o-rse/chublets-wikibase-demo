@@ -1,0 +1,205 @@
+# Q644: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q644
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Application (in libreoffice calc) for serializing a graphic matrix from counting tables. The application makes it possible to obtain either a serograph or a graph of the pvi matrograph type (visualization of the differences in independence from the percentages of independence values) which does not favor the vision of the variables over that of the lines and more suitable for non-chronological treatments."@en ;
+    dcterms:identifier "Q644" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q644 ;
+    dcterms:title "Explographe"@en ;
+    schema:about wd:Q644 ;
+    dcat:distribution dist:Q644-html,
+        dist:Q644-json,
+        dist:Q644-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q644.html> .
+
+dist:Q644-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q644, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q644.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q644-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q644, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14355"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q644.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q644-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q644, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q644.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q644
+    a wikibase:Item ;
+    schema:description "Application (in libreoffice calc) for serializing a graphic matrix from counting tables. The application makes it possible to obtain either a serograph or a graph of the pvi matrograph type (visualization of the differences in independence from the percentages of independence values) which does not favor the vision of the variables over that of the lines and more suitable for non-chronological treatments."@en ;
+    schema:name "Explographe"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Explographe"@en ;
+    skos:prefLabel "Explographe"@en ;
+    p:P2 wds:Q644-7524413D-9633-5D8E-A875-8F1DBEF8A704,
+        wds:Q644-EE8E0620-46AB-5025-AE54-78889FCEA2FF ;
+    p:P106 wds:Q644-25E8D5EB-281B-5E33-93C7-15896EFC961E ;
+    p:P109 wds:Q644-59383955-FF6A-5B05-95AE-B2F6BE90EBB2 ;
+    p:P113 wds:Q644-DABAF6C9-88C3-52F3-8166-A71D9FDB4FE2 ;
+    p:P115 wds:Q644-06351A15-6F72-59A5-933A-42E39F99FB1C ;
+    p:P116 wds:Q644-853DA461-E6B3-52C9-BBFF-C24E9F72D43A ;
+    p:P117 wds:Q644-1362A72A-FA66-5558-95D4-5A1092342E11 ;
+    p:P118 wds:Q644-F4CA91A1-C46F-574F-8665-D8A052E57A65 ;
+    p:P119 wds:Q644-21AE757E-56CC-5B87-88C5-224582C93A59 ;
+    p:P120 wds:Q644-96FCE6B8-00C0-5238-847A-C50EA52F55E6 ;
+    p:P122 wds:Q644-0F0F9DBF-7141-54F3-B3C3-715156D5ED1B,
+        wds:Q644-858B09CF-71CB-5BA5-8F08-C339B2A00411 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q645 ;
+    wdt:P113 wd:Q262 ;
+    wdt:P115 <https://open-archaeo.info/post/explographe/> ;
+    wdt:P116 "explographe" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Explographe"@en ;
+    wdt:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/outils-danalyse-graphique-des-donnees> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 .
+
+wds:Q644-0F0F9DBF-7141-54F3-B3C3-715156D5ED1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P122 wd:Q109 .
+
+wds:Q644-21AE757E-56CC-5B87-88C5-224582C93A59
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P119 "Explographe"@en .
+
+wds:Q644-25E8D5EB-281B-5E33-93C7-15896EFC961E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P106 wd:Q110 .
+
+wds:Q644-96FCE6B8-00C0-5238-847A-C50EA52F55E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/outils-danalyse-graphique-des-donnees> .
+
+wds:Q644-853DA461-E6B3-52C9-BBFF-C24E9F72D43A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "explographe" .
+
+wds:Q644-858B09CF-71CB-5BA5-8F08-C339B2A00411
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P122 wd:Q110 .
+
+wds:Q644-1362A72A-FA66-5558-95D4-5A1092342E11
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P117 wd:Q116 .
+
+wds:Q644-06351A15-6F72-59A5-933A-42E39F99FB1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P115 <https://open-archaeo.info/post/explographe/> .
+
+wds:Q644-7524413D-9633-5D8E-A875-8F1DBEF8A704
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P2 wd:Q103 .
+
+wds:Q644-59383955-FF6A-5B05-95AE-B2F6BE90EBB2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P109 wd:Q645 .
+
+wds:Q644-DABAF6C9-88C3-52F3-8166-A71D9FDB4FE2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q262 .
+
+wds:Q644-EE8E0620-46AB-5025-AE54-78889FCEA2FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P2 wd:Q106 .
+
+wds:Q644-F4CA91A1-C46F-574F-8665-D8A052E57A65
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
+    ps:P118 wd:Q108 .
+
+wdref:1e4667326de1574e55f8b3b62db11f3020f5a196
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/explographe/> .

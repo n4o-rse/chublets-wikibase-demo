@@ -1,0 +1,215 @@
+# Q812: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q812
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A web application for field geological and sedimentological core logging. Create sedimentary logs in the field using any device with a browser."@en ;
+    dcterms:identifier "Q812" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q812 ;
+    dcterms:title "Gneisswork"@en ;
+    schema:about wd:Q812 ;
+    dcat:distribution dist:Q812-html,
+        dist:Q812-json,
+        dist:Q812-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q812.html> .
+
+dist:Q812-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q812, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q812.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q812-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q812, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15359"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q812.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q812-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q812, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q812.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q812
+    a wikibase:Item ;
+    schema:description "A web application for field geological and sedimentological core logging. Create sedimentary logs in the field using any device with a browser."@en ;
+    schema:name "Gneisswork"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "Gneisswork"@en ;
+    skos:prefLabel "Gneisswork"@en ;
+    p:P2 wds:Q812-5BB1F02F-3A55-573B-A546-CA8CC63E4006,
+        wds:Q812-CE223BAB-421B-5827-AF6A-B56D29A44892 ;
+    p:P106 wds:Q812-C3953578-DC09-5112-AFCA-01510D3C4B6B ;
+    p:P113 wds:Q812-3DE6DDE7-10A4-5F9E-BAD0-B667F57D31A2 ;
+    p:P115 wds:Q812-FE625929-166F-5876-8ACE-5C33C6A77305 ;
+    p:P116 wds:Q812-B06D577F-8BCE-5360-98D0-E88A800D0FDA ;
+    p:P117 wds:Q812-CECAE2E8-0F73-5A8C-A2DB-0455B01CB70A,
+        wds:Q812-F3313672-4BCA-5534-AD2E-303FD57E8B56 ;
+    p:P118 wds:Q812-6F3CEACD-9C1C-53E5-A907-9C7CD60E21D1 ;
+    p:P119 wds:Q812-F10878FE-5E39-5356-8560-D20E6F4E9014 ;
+    p:P120 wds:Q812-E6264DF3-B23A-5270-AC8B-33BDFB83B227 ;
+    p:P122 wds:Q812-5B911EF6-FA5C-5E72-9154-0C678041CEF4,
+        wds:Q812-984DB00D-FD8D-5842-8F02-CF3B59A775A8 ;
+    p:P125 wds:Q812-2EC6AE7D-FFA7-5EE6-938E-536AA9DCAAF9 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q539 ;
+    wdt:P115 <https://open-archaeo.info/post/gneisswork/> ;
+    wdt:P116 "gneisswork" ;
+    wdt:P117 wd:Q154,
+        wd:Q414 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Gneisswork"@en ;
+    wdt:P120 <https://gneisswork.app/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/stark1tty/Gneisswork> .
+
+wds:Q812-2EC6AE7D-FFA7-5EE6-938E-536AA9DCAAF9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/stark1tty/Gneisswork> .
+
+wds:Q812-3DE6DDE7-10A4-5F9E-BAD0-B667F57D31A2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q539 .
+
+wds:Q812-5B911EF6-FA5C-5E72-9154-0C678041CEF4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P122 wd:Q110 .
+
+wds:Q812-5BB1F02F-3A55-573B-A546-CA8CC63E4006
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P2 wd:Q102 .
+
+wds:Q812-6F3CEACD-9C1C-53E5-A907-9C7CD60E21D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P118 wd:Q108 .
+
+wds:Q812-984DB00D-FD8D-5842-8F02-CF3B59A775A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P122 wd:Q109 .
+
+wds:Q812-B06D577F-8BCE-5360-98D0-E88A800D0FDA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "gneisswork" .
+
+wds:Q812-C3953578-DC09-5112-AFCA-01510D3C4B6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P106 wd:Q110 .
+
+wds:Q812-CE223BAB-421B-5827-AF6A-B56D29A44892
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P2 wd:Q106 .
+
+wds:Q812-CECAE2E8-0F73-5A8C-A2DB-0455B01CB70A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P117 wd:Q414 .
+
+wds:Q812-E6264DF3-B23A-5270-AC8B-33BDFB83B227
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P120 <https://gneisswork.app/> .
+
+wds:Q812-F10878FE-5E39-5356-8560-D20E6F4E9014
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P119 "Gneisswork"@en .
+
+wds:Q812-F3313672-4BCA-5534-AD2E-303FD57E8B56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P117 wd:Q154 .
+
+wds:Q812-FE625929-166F-5876-8ACE-5C33C6A77305
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:ae44748315ae9eadb25108692ef99dfb441409e8 ;
+    ps:P115 <https://open-archaeo.info/post/gneisswork/> .
+
+wdref:ae44748315ae9eadb25108692ef99dfb441409e8
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/gneisswork/> .

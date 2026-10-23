@@ -1,0 +1,206 @@
+# Q759: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q759
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Python script for analyzing data sets of archaeological artifacts containing only Boolean and categorical variables."@en ;
+    dcterms:identifier "Q759" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q759 ;
+    dcterms:title "Artifacts-Analyzer"@en ;
+    schema:about wd:Q759 ;
+    dcat:distribution dist:Q759-html,
+        dist:Q759-json,
+        dist:Q759-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q759.html> .
+
+dist:Q759-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q759, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q759.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q759-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q759, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14598"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q759.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q759-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q759, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q759.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q759
+    a wikibase:Item ;
+    schema:description "Python script for analyzing data sets of archaeological artifacts containing only Boolean and categorical variables."@en ;
+    schema:name "Artifacts-Analyzer"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Artifacts-Analyzer"@en ;
+    skos:prefLabel "Artifacts-Analyzer"@en ;
+    p:P2 wds:Q759-9F181202-67D9-5E02-810F-5C73468BE165,
+        wds:Q759-797736C4-158D-54FC-8FAE-35AEEE997FB7 ;
+    p:P106 wds:Q759-0101171E-6CD0-5F00-9C41-BF183F4EF8D6 ;
+    p:P113 wds:Q759-F0CC8363-B721-56E2-AC82-737EF389821A ;
+    p:P115 wds:Q759-82AB883E-D5A3-547B-B68D-FD31B7184FC9 ;
+    p:P116 wds:Q759-27335211-45F3-5451-BC8D-4F20224A48EF ;
+    p:P117 wds:Q759-2CBC72FB-6099-57FF-A21B-817A686CE0CE ;
+    p:P118 wds:Q759-C708BE34-612B-5033-A70D-975B9A1B6B64 ;
+    p:P119 wds:Q759-434A4621-D604-58A2-A4AA-097DC22D0E34 ;
+    p:P122 wds:Q759-837E4C49-6A38-50F9-B549-6D63CBBA4DDA,
+        wds:Q759-8880AF58-8894-5E04-B024-30BB6EBEC97B ;
+    p:P123 wds:Q759-0B093059-1863-5886-AA30-43178CB27793 ;
+    p:P125 wds:Q759-6C0E3864-379C-5C77-8070-19ACDB02D8B0 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q226 ;
+    wdt:P115 <https://open-archaeo.info/post/artifacts-analyzer/> ;
+    wdt:P116 "artifacts-analyzer" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Artifacts-Analyzer"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/Eythan31/Artifacts-Analyzer> .
+
+wds:Q759-0B093059-1863-5886-AA30-43178CB27793
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P123 wd:Q139 .
+
+wds:Q759-2CBC72FB-6099-57FF-A21B-817A686CE0CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P117 wd:Q116 .
+
+wds:Q759-6C0E3864-379C-5C77-8070-19ACDB02D8B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/Eythan31/Artifacts-Analyzer> .
+
+wds:Q759-9F181202-67D9-5E02-810F-5C73468BE165
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P2 wd:Q106 .
+
+wds:Q759-82AB883E-D5A3-547B-B68D-FD31B7184FC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P115 <https://open-archaeo.info/post/artifacts-analyzer/> .
+
+wds:Q759-434A4621-D604-58A2-A4AA-097DC22D0E34
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P119 "Artifacts-Analyzer"@en .
+
+wds:Q759-837E4C49-6A38-50F9-B549-6D63CBBA4DDA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P122 wd:Q109 .
+
+wds:Q759-8880AF58-8894-5E04-B024-30BB6EBEC97B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P122 wd:Q110 .
+
+wds:Q759-0101171E-6CD0-5F00-9C41-BF183F4EF8D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P106 wd:Q110 .
+
+wds:Q759-797736C4-158D-54FC-8FAE-35AEEE997FB7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P2 wd:Q103 .
+
+wds:Q759-27335211-45F3-5451-BC8D-4F20224A48EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "artifacts-analyzer" .
+
+wds:Q759-C708BE34-612B-5033-A70D-975B9A1B6B64
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    ps:P118 wd:Q108 .
+
+wds:Q759-F0CC8363-B721-56E2-AC82-737EF389821A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q226 .
+
+wdref:28248beaeb5fe31961f500811cbcf03c190675f3
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/artifacts-analyzer/> .

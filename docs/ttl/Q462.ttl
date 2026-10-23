@@ -1,0 +1,215 @@
+# Q462: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q462
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Script to convert a folder of Dutch archaeological reports (PDFs) to XML files nested by section, chapter, heading."@en ;
+    dcterms:identifier "Q462" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q462 ;
+    dcterms:title "pdf-to-nested-xml"@en ;
+    schema:about wd:Q462 ;
+    dcat:distribution dist:Q462-html,
+        dist:Q462-json,
+        dist:Q462-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q462.html> .
+
+dist:Q462-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q462, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q462.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q462-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q462, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15575"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q462.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q462-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q462, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q462.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q462
+    a wikibase:Item ;
+    schema:description "Script to convert a folder of Dutch archaeological reports (PDFs) to XML files nested by section, chapter, heading."@en ;
+    schema:name "pdf-to-nested-xml"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "pdf-to-nested-xml"@en ;
+    skos:prefLabel "pdf-to-nested-xml"@en ;
+    p:P2 wds:Q462-8FCA6530-A3CD-5C5E-B4CC-ECD5978F3A06,
+        wds:Q462-B506E760-103B-5E23-842F-5E274353202C ;
+    p:P106 wds:Q462-176D633E-BE32-58A7-B5C9-EBAF73DBA40D ;
+    p:P113 wds:Q462-5700628F-4E87-533A-BC9E-EF765812E70F ;
+    p:P115 wds:Q462-55B076D6-F035-59B9-A8AA-32CE360F3252 ;
+    p:P116 wds:Q462-A2DCC689-262C-5DB9-937A-943871601CAC ;
+    p:P117 wds:Q462-1CE01DE8-6311-5669-9D4F-098D7BEE79C8,
+        wds:Q462-33184E87-4ACB-5DA1-9D10-EE1FC8E26338 ;
+    p:P118 wds:Q462-9F1119BE-99AF-5621-BB5E-52FE7D74CFF7 ;
+    p:P119 wds:Q462-681A0193-0311-537D-B3F6-C33B3B14F2CD ;
+    p:P122 wds:Q462-0ACBE8B0-5748-56FC-8316-AF1D8F3EF7A9,
+        wds:Q462-24312763-5F02-5E5A-8A09-62A61298CE2F ;
+    p:P123 wds:Q462-9F064D9A-7EEB-57E9-BF4E-8D27F8DFBF0B ;
+    p:P125 wds:Q462-18666CB8-AFE7-5860-98A9-05169E44C0DD ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q340 ;
+    wdt:P115 <https://open-archaeo.info/post/pdf-to-nested-xml/> ;
+    wdt:P116 "pdf-to-nested-xml" ;
+    wdt:P117 wd:Q132,
+        wd:Q463 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "pdf-to-nested-xml"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/alexbrandsen/pdf-to-nested-xml> .
+
+wds:Q462-0ACBE8B0-5748-56FC-8316-AF1D8F3EF7A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P122 wd:Q110 .
+
+wds:Q462-1CE01DE8-6311-5669-9D4F-098D7BEE79C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P117 wd:Q463 .
+
+wds:Q462-8FCA6530-A3CD-5C5E-B4CC-ECD5978F3A06
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P2 wd:Q104 .
+
+wds:Q462-9F064D9A-7EEB-57E9-BF4E-8D27F8DFBF0B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P123 wd:Q139 .
+
+wds:Q462-9F1119BE-99AF-5621-BB5E-52FE7D74CFF7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P118 wd:Q108 .
+
+wds:Q462-55B076D6-F035-59B9-A8AA-32CE360F3252
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P115 <https://open-archaeo.info/post/pdf-to-nested-xml/> .
+
+wds:Q462-176D633E-BE32-58A7-B5C9-EBAF73DBA40D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P106 wd:Q110 .
+
+wds:Q462-681A0193-0311-537D-B3F6-C33B3B14F2CD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P119 "pdf-to-nested-xml"@en .
+
+wds:Q462-18666CB8-AFE7-5860-98A9-05169E44C0DD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/alexbrandsen/pdf-to-nested-xml> .
+
+wds:Q462-33184E87-4ACB-5DA1-9D10-EE1FC8E26338
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P117 wd:Q132 .
+
+wds:Q462-5700628F-4E87-533A-BC9E-EF765812E70F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q340 .
+
+wds:Q462-24312763-5F02-5E5A-8A09-62A61298CE2F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P122 wd:Q109 .
+
+wds:Q462-A2DCC689-262C-5DB9-937A-943871601CAC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "pdf-to-nested-xml" .
+
+wds:Q462-B506E760-103B-5E23-842F-5E274353202C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
+    ps:P2 wd:Q106 .
+
+wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/pdf-to-nested-xml/> .

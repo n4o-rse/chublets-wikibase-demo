@@ -1,0 +1,206 @@
+# Q529: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q529
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Functions to help with the preprocessing steps in anthropological research."@en ;
+    dcterms:identifier "Q529" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q529 ;
+    dcterms:title "anthroFun"@en ;
+    schema:about wd:Q529 ;
+    dcat:distribution dist:Q529-html,
+        dist:Q529-json,
+        dist:Q529-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q529.html> .
+
+dist:Q529-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q529, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q529.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q529-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q529, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14397"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q529.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q529-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q529, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q529.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q529
+    a wikibase:Item ;
+    schema:description "Functions to help with the preprocessing steps in anthropological research."@en ;
+    schema:name "anthroFun"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "anthroFun"@en ;
+    skos:prefLabel "anthroFun"@en ;
+    p:P2 wds:Q529-9A053585-419E-53CF-B45A-683F090E12B4,
+        wds:Q529-14B20732-F10D-5A70-AE08-0C6E5D327BD9 ;
+    p:P106 wds:Q529-7102236F-F0EB-5609-AA7D-DCF8A659C92E ;
+    p:P113 wds:Q529-F8E3DFEA-2684-57A7-8CEA-8620ECF4DE64 ;
+    p:P115 wds:Q529-65872208-CDFC-50A7-8553-E0F9671BCC90 ;
+    p:P116 wds:Q529-97395821-E164-5347-B826-2DD5005C46F5 ;
+    p:P117 wds:Q529-F357C966-229F-555E-ADEF-AE44961F2F57 ;
+    p:P118 wds:Q529-FEB3BDBB-0D46-553D-880B-9AA65C55C010 ;
+    p:P119 wds:Q529-8AA02EC2-898F-535A-8F66-AFCD854E8477 ;
+    p:P122 wds:Q529-5D14055F-CF25-528D-8695-2263D1CBEF61,
+        wds:Q529-A96CB2FA-9506-5EE4-B91D-60B8F8D5BD8C ;
+    p:P123 wds:Q529-8B500E40-6CC0-5989-B293-6C463C25160B ;
+    p:P125 wds:Q529-844AD367-E238-524F-8815-2010D454EFAE ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q342 ;
+    wdt:P115 <https://open-archaeo.info/post/anthrofun/> ;
+    wdt:P116 "anthrofun" ;
+    wdt:P117 wd:Q132 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "anthroFun"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/ElaineYChu/anthroFun> .
+
+wds:Q529-5D14055F-CF25-528D-8695-2263D1CBEF61
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P122 wd:Q109 .
+
+wds:Q529-8AA02EC2-898F-535A-8F66-AFCD854E8477
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P119 "anthroFun"@en .
+
+wds:Q529-8B500E40-6CC0-5989-B293-6C463C25160B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P123 wd:Q111 .
+
+wds:Q529-9A053585-419E-53CF-B45A-683F090E12B4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P2 wd:Q104 .
+
+wds:Q529-14B20732-F10D-5A70-AE08-0C6E5D327BD9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P2 wd:Q106 .
+
+wds:Q529-844AD367-E238-524F-8815-2010D454EFAE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/ElaineYChu/anthroFun> .
+
+wds:Q529-7102236F-F0EB-5609-AA7D-DCF8A659C92E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P106 wd:Q110 .
+
+wds:Q529-65872208-CDFC-50A7-8553-E0F9671BCC90
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P115 <https://open-archaeo.info/post/anthrofun/> .
+
+wds:Q529-97395821-E164-5347-B826-2DD5005C46F5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "anthrofun" .
+
+wds:Q529-A96CB2FA-9506-5EE4-B91D-60B8F8D5BD8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P122 wd:Q110 .
+
+wds:Q529-F8E3DFEA-2684-57A7-8CEA-8620ECF4DE64
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q342 .
+
+wds:Q529-F357C966-229F-555E-ADEF-AE44961F2F57
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P117 wd:Q132 .
+
+wds:Q529-FEB3BDBB-0D46-553D-880B-9AA65C55C010
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:772c62ade8f5b477b98bec690a05f5f874d6f273 ;
+    ps:P118 wd:Q108 .
+
+wdref:772c62ade8f5b477b98bec690a05f5f874d6f273
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/anthrofun/> .

@@ -1,0 +1,206 @@
+# Q925: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q925
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Set of quantitative tools for finding a common measurement unit (quantum) in archeological research."@en ;
+    dcterms:identifier "Q925" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q925 ;
+    dcterms:title "quantum-archeo"@en ;
+    schema:about wd:Q925 ;
+    dcat:distribution dist:Q925-html,
+        dist:Q925-json,
+        dist:Q925-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q925.html> .
+
+dist:Q925-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q925, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q925.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q925-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q925, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14516"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q925.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q925-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q925, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q925.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q925
+    a wikibase:Item ;
+    schema:description "Set of quantitative tools for finding a common measurement unit (quantum) in archeological research."@en ;
+    schema:name "quantum-archeo"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "quantum-archeo"@en ;
+    skos:prefLabel "quantum-archeo"@en ;
+    p:P2 wds:Q925-6D7A3F6F-5DDD-57BC-A6F2-E2E9401BDD58,
+        wds:Q925-D5EC0874-DE2B-5548-AE2D-225C4704CD09 ;
+    p:P106 wds:Q925-08374AB3-13EC-554C-9C33-E8049C469FE4 ;
+    p:P113 wds:Q925-F6851998-6E99-5ADB-A627-730B7180EFD5 ;
+    p:P115 wds:Q925-33664790-C61C-52E4-BFD9-B25470AEF980 ;
+    p:P116 wds:Q925-3436AF3F-5792-524D-B7EE-EDCFE35D1EF7 ;
+    p:P117 wds:Q925-059CCC02-A495-5E2E-8E6C-97EE9337B4B4 ;
+    p:P118 wds:Q925-406F40C4-02E1-59AE-AC18-9E5F3D16688C ;
+    p:P119 wds:Q925-6AB14C3C-7916-59BD-AD29-CB9048CC5A73 ;
+    p:P122 wds:Q925-101DBAA4-F648-5A66-A221-FDDDCB102D71,
+        wds:Q925-DA2E1489-15D9-57FF-9C6A-00DCD7F482DF ;
+    p:P123 wds:Q925-325A9292-DDBF-597D-9BBF-4BD1D9A2CD81 ;
+    p:P125 wds:Q925-26C11EAC-8EF7-5A97-9A3A-3E5AD5C18960 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q486 ;
+    wdt:P115 <https://open-archaeo.info/post/quantum-archeo/> ;
+    wdt:P116 "quantum-archeo" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "quantum-archeo"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/maciejkasinski/quantum-archeo> .
+
+wds:Q925-6AB14C3C-7916-59BD-AD29-CB9048CC5A73
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P119 "quantum-archeo"@en .
+
+wds:Q925-6D7A3F6F-5DDD-57BC-A6F2-E2E9401BDD58
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P2 wd:Q104 .
+
+wds:Q925-26C11EAC-8EF7-5A97-9A3A-3E5AD5C18960
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/maciejkasinski/quantum-archeo> .
+
+wds:Q925-059CCC02-A495-5E2E-8E6C-97EE9337B4B4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P117 wd:Q116 .
+
+wds:Q925-101DBAA4-F648-5A66-A221-FDDDCB102D71
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P122 wd:Q109 .
+
+wds:Q925-325A9292-DDBF-597D-9BBF-4BD1D9A2CD81
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P123 wd:Q111 .
+
+wds:Q925-406F40C4-02E1-59AE-AC18-9E5F3D16688C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P118 wd:Q108 .
+
+wds:Q925-3436AF3F-5792-524D-B7EE-EDCFE35D1EF7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "quantum-archeo" .
+
+wds:Q925-08374AB3-13EC-554C-9C33-E8049C469FE4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P106 wd:Q110 .
+
+wds:Q925-33664790-C61C-52E4-BFD9-B25470AEF980
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P115 <https://open-archaeo.info/post/quantum-archeo/> .
+
+wds:Q925-D5EC0874-DE2B-5548-AE2D-225C4704CD09
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P2 wd:Q106 .
+
+wds:Q925-DA2E1489-15D9-57FF-9C6A-00DCD7F482DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    ps:P122 wd:Q110 .
+
+wds:Q925-F6851998-6E99-5ADB-A627-730B7180EFD5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4ce201c877e7026db260d6237662e97b105fd6f6 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q486 .
+
+wdref:4ce201c877e7026db260d6237662e97b105fd6f6
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/quantum-archeo/> .

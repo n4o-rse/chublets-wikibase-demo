@@ -1,0 +1,197 @@
+# Q911: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q911
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Ark (the archaeological recording kit) 2.0 development repository. Ark (the archaeological recording kit) is a web-based 'toolkit' for the collection, storage and dissemination of archaeological data. It includes data-editing, data-creation, data-viewing and data-sharing tools, all of which are delivered using a web-based front-end."@en ;
+    dcterms:identifier "Q911" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q911 ;
+    dcterms:title "Ark2"@en ;
+    schema:about wd:Q911 ;
+    dcat:distribution dist:Q911-html,
+        dist:Q911-json,
+        dist:Q911-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q911.html> .
+
+dist:Q911-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q911, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q911.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q911-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q911, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13570"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q911.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q911-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q911, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q911.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q911
+    a wikibase:Item ;
+    schema:description "Ark (the archaeological recording kit) 2.0 development repository. Ark (the archaeological recording kit) is a web-based 'toolkit' for the collection, storage and dissemination of archaeological data. It includes data-editing, data-creation, data-viewing and data-sharing tools, all of which are delivered using a web-based front-end."@en ;
+    schema:name "Ark2"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "Ark2"@en ;
+    skos:prefLabel "Ark2"@en ;
+    p:P2 wds:Q911-9B727B28-D079-5EB7-8118-7DFCD1DCEEF5,
+        wds:Q911-CA1AA429-7182-5702-AF16-8831A0857302 ;
+    p:P106 wds:Q911-51C44333-1C67-51CF-997D-D714D2B5EB9B ;
+    p:P113 wds:Q911-C1094964-1078-5365-8E13-C4041F9DA08D ;
+    p:P115 wds:Q911-1B313D6F-DCC5-5624-96BC-E6353F154A90 ;
+    p:P116 wds:Q911-27F24A84-F3B7-52E1-BC18-E0BC8819A2D5 ;
+    p:P117 wds:Q911-57CEBB00-3BDA-56B9-9EF0-402BC5CAA30D ;
+    p:P118 wds:Q911-6C49BAD9-BE04-5F77-8A9C-78544987A033 ;
+    p:P119 wds:Q911-B17BC9AD-BE44-52A6-AEC7-1530E559AC41 ;
+    p:P122 wds:Q911-0807C3CD-151C-5E10-8440-B39685519A2C,
+        wds:Q911-7570F15A-BA5B-5B07-B1FE-7F95200A993B ;
+    p:P125 wds:Q911-D22BFFFB-57BE-5337-8A4E-D6771E2EBB7C ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q137 ;
+    wdt:P115 <https://open-archaeo.info/post/ark2/> ;
+    wdt:P116 "ark2" ;
+    wdt:P117 wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Ark2"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/lparchaeology/ARK2> .
+
+wds:Q911-1B313D6F-DCC5-5624-96BC-E6353F154A90
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P115 <https://open-archaeo.info/post/ark2/> .
+
+wds:Q911-6C49BAD9-BE04-5F77-8A9C-78544987A033
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P118 wd:Q108 .
+
+wds:Q911-9B727B28-D079-5EB7-8118-7DFCD1DCEEF5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P2 wd:Q102 .
+
+wds:Q911-27F24A84-F3B7-52E1-BC18-E0BC8819A2D5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "ark2" .
+
+wds:Q911-51C44333-1C67-51CF-997D-D714D2B5EB9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P106 wd:Q110 .
+
+wds:Q911-57CEBB00-3BDA-56B9-9EF0-402BC5CAA30D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P117 wd:Q148 .
+
+wds:Q911-0807C3CD-151C-5E10-8440-B39685519A2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P122 wd:Q110 .
+
+wds:Q911-7570F15A-BA5B-5B07-B1FE-7F95200A993B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P122 wd:Q109 .
+
+wds:Q911-B17BC9AD-BE44-52A6-AEC7-1530E559AC41
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P119 "Ark2"@en .
+
+wds:Q911-C1094964-1078-5365-8E13-C4041F9DA08D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q137 .
+
+wds:Q911-CA1AA429-7182-5702-AF16-8831A0857302
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    ps:P2 wd:Q106 .
+
+wds:Q911-D22BFFFB-57BE-5337-8A4E-D6771E2EBB7C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/lparchaeology/ARK2> .
+
+wdref:33c10a120e3bfcf77feebe3b8301a3e0a43d3e7d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/ark2/> .

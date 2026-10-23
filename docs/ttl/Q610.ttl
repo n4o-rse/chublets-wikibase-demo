@@ -1,0 +1,225 @@
+# Q610: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q610
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "An open source, web application for the presentation of archaeological data especially for burial studies."@en ;
+    dcterms:identifier "Q610" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q610 ;
+    dcterms:title "THANADOS"@en ;
+    schema:about wd:Q610 ;
+    dcat:distribution dist:Q610-html,
+        dist:Q610-json,
+        dist:Q610-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q610.html> .
+
+dist:Q610-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q610, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q610.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q610-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q610, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16218"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q610.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q610-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q610, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q610.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q610
+    a wikibase:Item ;
+    schema:description "An open source, web application for the presentation of archaeological data especially for burial studies."@en ;
+    schema:name "THANADOS"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "THANADOS"@en ;
+    skos:prefLabel "THANADOS"@en ;
+    p:P2 wds:Q610-31F010AD-F699-52D8-BBA9-3D6BAD7B7587,
+        wds:Q610-DBFA9D9D-5951-57D9-B9CE-F3512FE952CA ;
+    p:P106 wds:Q610-3993777B-C7D2-5792-A55D-CDDBD4BBDC4D ;
+    p:P113 wds:Q610-B1E50D90-B164-53C7-A47F-AD3D005296DF ;
+    p:P115 wds:Q610-DEE27633-65B2-5E7C-8DC3-6C44391C912F ;
+    p:P116 wds:Q610-6CA708E2-3F1A-5007-A223-AA4F6CDA3C93 ;
+    p:P117 wds:Q610-66242A2E-2E6C-5E0C-94D4-86786D9F169E,
+        wds:Q610-E4FDAA3A-5AC4-57FD-808A-7946D330CFA3 ;
+    p:P118 wds:Q610-476D7ED5-8FC3-5D36-B317-65BFEC91EB14 ;
+    p:P119 wds:Q610-3663F43E-8B19-5581-91BC-CCD5F70E0CB7 ;
+    p:P120 wds:Q610-1E28117F-30E6-5478-91F2-20321160C959 ;
+    p:P122 wds:Q610-1ED31433-ACB9-5282-87CB-AC81E9687E8C,
+        wds:Q610-16058357-ADC3-5076-8CF2-412E03666D03 ;
+    p:P125 wds:Q610-7F448EAD-7030-523D-A3A0-8BC3820CCDD0 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q397 ;
+    wdt:P115 <https://open-archaeo.info/post/thanados/> ;
+    wdt:P116 "thanados" ;
+    wdt:P117 wd:Q148,
+        wd:Q157 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "THANADOS"@en ;
+    wdt:P120 <https://thanados.net/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/stefaneichert/thanados> .
+
+wds:Q610-1E28117F-30E6-5478-91F2-20321160C959
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P120 <https://thanados.net/> .
+
+wds:Q610-1ED31433-ACB9-5282-87CB-AC81E9687E8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P122 wd:Q110 .
+
+wds:Q610-6CA708E2-3F1A-5007-A223-AA4F6CDA3C93
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "thanados" .
+
+wds:Q610-7F448EAD-7030-523D-A3A0-8BC3820CCDD0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    pq:P104 "2021-06-29T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-stefaneichert-thanados_-_2021-06-29_09-29-29> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:595e005486e65eaf065839e23bec7aa4 ;
+    ps:P125 <https://github.com/stefaneichert/thanados> .
+
+wds:Q610-31F010AD-F699-52D8-BBA9-3D6BAD7B7587
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P2 wd:Q102 .
+
+wds:Q610-476D7ED5-8FC3-5D36-B317-65BFEC91EB14
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P118 wd:Q108 .
+
+wds:Q610-3663F43E-8B19-5581-91BC-CCD5F70E0CB7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P119 "THANADOS"@en .
+
+wds:Q610-66242A2E-2E6C-5E0C-94D4-86786D9F169E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P117 wd:Q148 .
+
+wds:Q610-3993777B-C7D2-5792-A55D-CDDBD4BBDC4D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P106 wd:Q110 .
+
+wds:Q610-16058357-ADC3-5076-8CF2-412E03666D03
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P122 wd:Q109 .
+
+wds:Q610-B1E50D90-B164-53C7-A47F-AD3D005296DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q397 .
+
+wds:Q610-DBFA9D9D-5951-57D9-B9CE-F3512FE952CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P2 wd:Q106 .
+
+wds:Q610-DEE27633-65B2-5E7C-8DC3-6C44391C912F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P115 <https://open-archaeo.info/post/thanados/> .
+
+wds:Q610-E4FDAA3A-5AC4-57FD-808A-7946D330CFA3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10 ;
+    ps:P117 wd:Q157 .
+
+wdref:2fd1f194316614ae6f0e7039f289854a0f44bf10
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/thanados/> .
+
+wdv:595e005486e65eaf065839e23bec7aa4
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-06-29T00:00:00Z"^^xsd:dateTime .

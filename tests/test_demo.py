@@ -10,6 +10,7 @@ property table with the local ids added.
 from __future__ import annotations
 
 import csv
+from collections import defaultdict
 import json
 import re
 import sys
@@ -313,7 +314,7 @@ class Attribution(unittest.TestCase):
 
 
 class OpenArchaeo(unittest.TestCase):
-    """S7c: about 100 of the 416 software entries of open-archaeo, imported into the tables (identity block V2)."""
+    """S7c: the 416 software entries of open-archaeo, imported into the tables (identity block V2); since 2026-10-23 all of them."""
 
     RAW = ROOT / "data" / "raw" / "open-archaeo-software.csv"
     MAPPING = CSV / "mapping" / "open-archaeo.csv"
@@ -331,13 +332,13 @@ class OpenArchaeo(unittest.TestCase):
     def values(self, subject: str, prop: str) -> list[str]:
         return [s["value"] for s in self.statements if s["subject"] == subject and s["property"] == prop]
 
-    def test_the_source_is_the_whole_list_and_the_import_is_the_stratified_hundred(self) -> None:
+    def test_the_source_is_the_whole_list_and_the_import_is_all_of_it(self) -> None:
         self.assertEqual(len(self.entries), 416)
-        self.assertEqual(sorted(e["id"] for e in importer.select(self.entries, 100)), sorted(e["id"] for e in self.items.values()))
-        self.assertEqual(len(self.items), 100)
+        self.assertEqual(sorted(e["id"] for e in importer.select(self.entries, None)), sorted(e["id"] for e in self.items.values()))
+        self.assertEqual(len(self.items), 416)
         counts = {c: sum(1 for e in self.items.values() if e["category"] == c)
                   for c in ("Packages and libraries", "Scripts", "Standalone software")}
-        self.assertEqual(counts, {"Packages and libraries": 60, "Scripts": 18, "Standalone software": 22})
+        self.assertEqual(counts, {"Packages and libraries": 248, "Scripts": 74, "Standalone software": 94})
 
     def test_every_item_is_a_chublet_of_its_category_with_the_identity_block(self) -> None:
         by_label = {r["label_en"]: r["id"] for r in self.entities.values()}
@@ -389,10 +390,28 @@ class OpenArchaeo(unittest.TestCase):
             target.mkdir()
             for path in CSV.glob("*.csv"):
                 (target / path.name).write_bytes(path.read_bytes())
-            args = ["--csv", str(target), "--input", str(self.RAW), "--mapping", str(self.MAPPING), "--vocabulary", str(self.VOCABULARY)]
+            args = ["--csv", str(target), "--input", str(self.RAW), "--mapping", str(self.MAPPING), "--vocabulary", str(self.VOCABULARY), "--all"]
             self.assertEqual(importer.main(args), 0)
             for path in CSV.glob("*.csv"):
                 self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
+
+
+class EveryItemIsAChublet(unittest.TestCase):
+    """Florian, 2026-10-23: every software item of chublets is an instance of chublet (Q106)."""
+
+    def test_all_software_items_are_chublets(self) -> None:
+        statements = table("statements.csv")
+        classes = defaultdict(set)
+        for s in statements:
+            if s["property"] == "P2":
+                classes[s["subject"]].add(s["value"])
+        entities = {r["id"]: r for r in table("entities.csv")}
+        software = {i for i, c in classes.items() if "Q100" in c or "Q105" in c or entities[i]["origin"] in ("open-archaeo", "wikidata") and "Q106" in c}
+        seeds = {r["id"] for r in entities.values() if r["origin"] == "wikidata"}
+        self.assertGreaterEqual(len(software), 421)
+        self.assertTrue(seeds <= software)
+        self.assertEqual(sorted(i for i in software if "Q106" not in classes[i]), [])
+        self.assertEqual(sum(1 for i in software if entities[i]["origin"] == "open-archaeo"), 416)
 
 
 class Wikidata(unittest.TestCase):
@@ -410,6 +429,11 @@ class Wikidata(unittest.TestCase):
 
     def values(self, subject: str, prop: str) -> list[str]:
         return [s["value"] for s in self.statements if s["subject"] == subject and s["property"] == prop]
+
+    def test_the_report_finds_two_seeds_that_open_archaeo_has_as_well(self) -> None:
+        report = (ROOT / "dist" / "wikidata-import.txt").read_text(encoding="utf-8")
+        self.assertIn("share the repository URL https://github.com/ISAAKiel/profileAAR", report)
+        self.assertIn("share the exact match URL https://open-archaeo.info/post/alligator/", report)
 
     def test_the_five_seeds_are_research_software_and_each_is_an_item_with_its_twin(self) -> None:
         self.assertEqual([s["qid"] for s in self.seeds], ["Q74003194", "Q74004218", "Q74005133", "Q74823867", "Q74824570"])

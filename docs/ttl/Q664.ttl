@@ -1,0 +1,196 @@
+# Q664: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q664
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Enables you to view and explore reflectance transformation imaging (rti) files at very high resolution (polynomial texture maps, hemispherical harmonics map, and multiview rti). You can view image files stored on your local file system, and remote files through http."@en ;
+    dcterms:identifier "Q664" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q664 ;
+    dcterms:title "RTIViewer"@en ;
+    schema:about wd:Q664 ;
+    dcat:distribution dist:Q664-html,
+        dist:Q664-json,
+        dist:Q664-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q664.html> .
+
+dist:Q664-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q664, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q664.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q664-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q664, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13111"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q664.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q664-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q664, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q664.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q664
+    a wikibase:Item ;
+    schema:description "Enables you to view and explore reflectance transformation imaging (rti) files at very high resolution (polynomial texture maps, hemispherical harmonics map, and multiview rti). You can view image files stored on your local file system, and remote files through http."@en ;
+    schema:name "RTIViewer"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "RTIViewer"@en ;
+    skos:prefLabel "RTIViewer"@en ;
+    p:P2 wds:Q664-2CB30F4B-4E0F-5E3A-B59B-23C4242E8E82,
+        wds:Q664-61A2726C-AA9A-5548-8F5A-2F796622D62A ;
+    p:P106 wds:Q664-504B79A5-F5D8-53AF-92AC-96B1679BF1F0 ;
+    p:P113 wds:Q664-0973213C-6564-53E2-9031-82FB239AEF6C ;
+    p:P115 wds:Q664-5FAD49CA-1BEC-5635-8B18-55B16C0792EF ;
+    p:P116 wds:Q664-2AEEDF44-A0FE-5749-A1D3-33619F07325E ;
+    p:P117 wds:Q664-7DE3B592-BE4B-5E9F-9D67-60A8685F6155 ;
+    p:P118 wds:Q664-8C8C345E-2526-5D86-8423-08C2ED4D7B8E ;
+    p:P119 wds:Q664-CC5458E0-26FE-5A8A-B750-B624C0C60ED0 ;
+    p:P120 wds:Q664-C25FF1DF-D88C-5E2A-A66F-35D85E832489 ;
+    p:P122 wds:Q664-7B03178E-D007-5E6F-B31C-FA9C9454A868,
+        wds:Q664-48B9533C-E2E3-5B45-BEBC-3FE2E62114EC ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q665 ;
+    wdt:P115 <https://open-archaeo.info/post/rtiviewer/> ;
+    wdt:P116 "rtiviewer" ;
+    wdt:P117 wd:Q129 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "RTIViewer"@en ;
+    wdt:P120 <http://culturalheritageimaging.org/What_We_Offer/Downloads/View/index.html> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 .
+
+wds:Q664-2AEEDF44-A0FE-5749-A1D3-33619F07325E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "rtiviewer" .
+
+wds:Q664-2CB30F4B-4E0F-5E3A-B59B-23C4242E8E82
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P2 wd:Q102 .
+
+wds:Q664-5FAD49CA-1BEC-5635-8B18-55B16C0792EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P115 <https://open-archaeo.info/post/rtiviewer/> .
+
+wds:Q664-7B03178E-D007-5E6F-B31C-FA9C9454A868
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P122 wd:Q109 .
+
+wds:Q664-7DE3B592-BE4B-5E9F-9D67-60A8685F6155
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P117 wd:Q129 .
+
+wds:Q664-8C8C345E-2526-5D86-8423-08C2ED4D7B8E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P118 wd:Q108 .
+
+wds:Q664-48B9533C-E2E3-5B45-BEBC-3FE2E62114EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P122 wd:Q110 .
+
+wds:Q664-61A2726C-AA9A-5548-8F5A-2F796622D62A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P2 wd:Q106 .
+
+wds:Q664-504B79A5-F5D8-53AF-92AC-96B1679BF1F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P106 wd:Q110 .
+
+wds:Q664-0973213C-6564-53E2-9031-82FB239AEF6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q665 .
+
+wds:Q664-C25FF1DF-D88C-5E2A-A66F-35D85E832489
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P120 <http://culturalheritageimaging.org/What_We_Offer/Downloads/View/index.html> .
+
+wds:Q664-CC5458E0-26FE-5A8A-B750-B624C0C60ED0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5 ;
+    ps:P119 "RTIViewer"@en .
+
+wdref:5cfaa6a5281cc3837bb11db39ca4ff2eb57967c5
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/rtiviewer/> .

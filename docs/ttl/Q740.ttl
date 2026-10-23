@@ -1,0 +1,216 @@
+# Q740: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q740
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "R package to help interpreting correspondence analysis' results."@en ;
+    dcterms:identifier "Q740" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q740 ;
+    dcterms:title "CAinterprTools"@en ;
+    schema:about wd:Q740 ;
+    dcat:distribution dist:Q740-html,
+        dist:Q740-json,
+        dist:Q740-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q740.html> .
+
+dist:Q740-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q740, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q740.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q740-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q740, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15423"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q740.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q740-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q740, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q740.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q740
+    a wikibase:Item ;
+    schema:description "R package to help interpreting correspondence analysis' results."@en ;
+    schema:name "CAinterprTools"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "CAinterprTools"@en ;
+    skos:prefLabel "CAinterprTools"@en ;
+    p:P2 wds:Q740-CA494BCA-7D4A-5BD9-BA58-7BE8B4CFB589,
+        wds:Q740-EB2DDE95-EB55-5945-A300-A5AC461DC4D9 ;
+    p:P106 wds:Q740-5F37CC1A-7EE9-5BFC-9564-C39B2BF35E32 ;
+    p:P113 wds:Q740-EF95AAF8-CBFA-58BA-ADB6-3165BBE39EAA ;
+    p:P115 wds:Q740-BD86CDB3-CDD9-5088-ACDD-54C73F116F9C ;
+    p:P116 wds:Q740-3F2AF27D-AD21-5B73-9FFF-9432106D79B9 ;
+    p:P117 wds:Q740-9B8FD07A-351A-5F63-8B7D-E59FFDDA76B9 ;
+    p:P118 wds:Q740-7266C611-AB1E-5B1B-91B5-16A3F9EA65FC ;
+    p:P119 wds:Q740-DA9123EA-30D5-53EB-A019-591285853AE6 ;
+    p:P122 wds:Q740-2B35E890-6858-58FD-887C-758D7FC076ED,
+        wds:Q740-7D93C138-CB7F-5D3D-80AB-7B69E3FA866E ;
+    p:P123 wds:Q740-F1C35C79-3D61-587E-9C74-A8AFE18E0C9C ;
+    p:P125 wds:Q740-469449A1-26E3-5D94-A192-663BE4DB8D3D ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q124 ;
+    wdt:P115 <https://open-archaeo.info/post/cainterprtools/> ;
+    wdt:P116 "cainterprtools" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "CAinterprTools"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/gianmarcoalberti/CAinterprTools> .
+
+wds:Q740-2B35E890-6858-58FD-887C-758D7FC076ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P122 wd:Q109 .
+
+wds:Q740-3F2AF27D-AD21-5B73-9FFF-9432106D79B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "cainterprtools" .
+
+wds:Q740-5F37CC1A-7EE9-5BFC-9564-C39B2BF35E32
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P106 wd:Q110 .
+
+wds:Q740-7D93C138-CB7F-5D3D-80AB-7B69E3FA866E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P122 wd:Q110 .
+
+wds:Q740-9B8FD07A-351A-5F63-8B7D-E59FFDDA76B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P117 wd:Q116 .
+
+wds:Q740-7266C611-AB1E-5B1B-91B5-16A3F9EA65FC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P118 wd:Q108 .
+
+wds:Q740-469449A1-26E3-5D94-A192-663BE4DB8D3D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    pq:P104 "2018-05-30T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-gianmarcoalberti-CAinterprTools_-_2018-05-30_15-29-32> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:1afa1e23f5071cc766244e450f38f23d ;
+    ps:P125 <https://github.com/gianmarcoalberti/CAinterprTools> .
+
+wds:Q740-BD86CDB3-CDD9-5088-ACDD-54C73F116F9C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P115 <https://open-archaeo.info/post/cainterprtools/> .
+
+wds:Q740-CA494BCA-7D4A-5BD9-BA58-7BE8B4CFB589
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P2 wd:Q103 .
+
+wds:Q740-DA9123EA-30D5-53EB-A019-591285853AE6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P119 "CAinterprTools"@en .
+
+wds:Q740-EB2DDE95-EB55-5945-A300-A5AC461DC4D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P2 wd:Q106 .
+
+wds:Q740-EF95AAF8-CBFA-58BA-ADB6-3165BBE39EAA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q124 .
+
+wds:Q740-F1C35C79-3D61-587E-9C74-A8AFE18E0C9C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:29a808880fe56649581d870160859f8efbfc9191 ;
+    ps:P123 wd:Q111 .
+
+wdref:29a808880fe56649581d870160859f8efbfc9191
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/cainterprtools/> .
+
+wdv:1afa1e23f5071cc766244e450f38f23d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2018-05-30T00:00:00Z"^^xsd:dateTime .

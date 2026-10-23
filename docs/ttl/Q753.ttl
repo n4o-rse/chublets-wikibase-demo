@@ -1,0 +1,224 @@
+# Q753: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q753
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Historical Street View API"@en ;
+    dcterms:identifier "Q753" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q753 ;
+    dcterms:title "hsv-api"@en ;
+    schema:about wd:Q753 ;
+    dcat:distribution dist:Q753-html,
+        dist:Q753-json,
+        dist:Q753-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q753.html> .
+
+dist:Q753-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q753, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q753.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q753-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q753, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16179"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q753.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q753-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q753, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q753.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q753
+    a wikibase:Item ;
+    schema:description "Historical Street View API"@en ;
+    schema:name "hsv-api"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "hsv-api"@en ;
+    skos:prefLabel "hsv-api"@en ;
+    p:P2 wds:Q753-783FAF88-73A2-57BF-9857-2849FA75AC2A,
+        wds:Q753-F9A2E8EC-A61B-5602-93E1-D57481E7A57C ;
+    p:P106 wds:Q753-198514E7-5093-50AE-ACB9-9BAAE993892E ;
+    p:P113 wds:Q753-F9A08EB0-9690-5E92-8172-25F7D0CD927A ;
+    p:P115 wds:Q753-D3F412C2-21D4-56F8-877C-EFE6A77A53C1 ;
+    p:P116 wds:Q753-DE20396A-E237-5504-9E4E-C7723C6911B2 ;
+    p:P117 wds:Q753-B1A77EE7-CD5B-5787-A707-44A7B5739215,
+        wds:Q753-B4239ED9-230C-5A69-8B8F-E65D2269C6BF,
+        wds:Q753-FDE181F7-D6B3-50AE-83B1-90F233E3B3C4 ;
+    p:P118 wds:Q753-001F7358-6BA9-529E-972B-4ACCDDD99D61 ;
+    p:P119 wds:Q753-FFD7925C-B03C-5C7A-A2E1-1C1CB2C20310 ;
+    p:P120 wds:Q753-5844D70B-314A-5F77-9C1D-15F6DEB09C1C ;
+    p:P122 wds:Q753-21AA0C9F-F657-551C-9994-393ED3C361CE,
+        wds:Q753-89B5496C-AF7B-54FE-9DD2-252CD714E4DB ;
+    p:P125 wds:Q753-4F467D87-F5A2-5C03-AC3F-89403785456F ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q257 ;
+    wdt:P115 <https://open-archaeo.info/post/hsv-api/> ;
+    wdt:P116 "hsv-api" ;
+    wdt:P117 wd:Q136,
+        wd:Q144,
+        wd:Q256 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "hsv-api"@en ;
+    wdt:P120 <https://visions.ofthepast.org/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/openhistorymap/hsv-api> .
+
+wds:Q753-001F7358-6BA9-529E-972B-4ACCDDD99D61
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P118 wd:Q108 .
+
+wds:Q753-4F467D87-F5A2-5C03-AC3F-89403785456F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/openhistorymap/hsv-api> .
+
+wds:Q753-21AA0C9F-F657-551C-9994-393ED3C361CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P122 wd:Q109 .
+
+wds:Q753-89B5496C-AF7B-54FE-9DD2-252CD714E4DB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P122 wd:Q110 .
+
+wds:Q753-783FAF88-73A2-57BF-9857-2849FA75AC2A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P2 wd:Q106 .
+
+wds:Q753-5844D70B-314A-5F77-9C1D-15F6DEB09C1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P120 <https://visions.ofthepast.org/> .
+
+wds:Q753-198514E7-5093-50AE-ACB9-9BAAE993892E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P106 wd:Q110 .
+
+wds:Q753-B1A77EE7-CD5B-5787-A707-44A7B5739215
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P117 wd:Q136 .
+
+wds:Q753-B4239ED9-230C-5A69-8B8F-E65D2269C6BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P117 wd:Q144 .
+
+wds:Q753-D3F412C2-21D4-56F8-877C-EFE6A77A53C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P115 <https://open-archaeo.info/post/hsv-api/> .
+
+wds:Q753-DE20396A-E237-5504-9E4E-C7723C6911B2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "hsv-api" .
+
+wds:Q753-F9A2E8EC-A61B-5602-93E1-D57481E7A57C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P2 wd:Q102 .
+
+wds:Q753-F9A08EB0-9690-5E92-8172-25F7D0CD927A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q257 .
+
+wds:Q753-FDE181F7-D6B3-50AE-83B1-90F233E3B3C4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P117 wd:Q256 .
+
+wds:Q753-FFD7925C-B03C-5C7A-A2E1-1C1CB2C20310
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b ;
+    ps:P119 "hsv-api"@en .
+
+wdref:f5a5d7905b832dea64f946e0fdce817f8ea6545b
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/hsv-api/> .

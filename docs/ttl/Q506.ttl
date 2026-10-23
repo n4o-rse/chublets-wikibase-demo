@@ -1,0 +1,224 @@
+# Q506: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q506
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Automated detection and classification of multi-cell phytoliths at genera and species-level using Deep Learning algorithm."@en ;
+    dcterms:identifier "Q506" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q506 ;
+    dcterms:title "ArchaeolPhytoliths"@en ;
+    schema:about wd:Q506 ;
+    dcat:distribution dist:Q506-html,
+        dist:Q506-json,
+        dist:Q506-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q506.html> .
+
+dist:Q506-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q506, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q506.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q506-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q506, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16591"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q506.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q506-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q506, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q506.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q506
+    a wikibase:Item ;
+    schema:description "Automated detection and classification of multi-cell phytoliths at genera and species-level using Deep Learning algorithm."@en ;
+    schema:name "ArchaeolPhytoliths"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "ArchaeolPhytoliths"@en ;
+    skos:prefLabel "ArchaeolPhytoliths"@en ;
+    p:P2 wds:Q506-9707E956-1CCD-50FF-9BEB-DC9D76B7151C,
+        wds:Q506-32927F4A-B414-5145-A864-C85A27E26FA2 ;
+    p:P106 wds:Q506-58C8F76F-EC4B-5A1B-9A7C-BC7B01829669 ;
+    p:P113 wds:Q506-F26A421A-8559-559E-99EA-850C4C0CA7A7 ;
+    p:P115 wds:Q506-EC355995-B347-5B43-AB2C-C8205D0EC388 ;
+    p:P116 wds:Q506-C31AB1AA-D230-5A49-8067-084423608E0D ;
+    p:P117 wds:Q506-5B12306E-5ABE-5140-9EFA-31503AE3729F,
+        wds:Q506-26E08B4F-0A92-5BFD-99B3-E0A299B4B407,
+        wds:Q506-8188A5F6-A91C-5D91-98DB-43AA775B70E2 ;
+    p:P118 wds:Q506-F0B3B1F4-53F8-5E9F-BE5F-1E56DBFC04B6 ;
+    p:P119 wds:Q506-E1801BAC-11B4-51B2-9FFE-02FC352BC09C ;
+    p:P122 wds:Q506-58554F03-177A-5154-925F-6945FB59C1CB,
+        wds:Q506-DB9464DD-EFBE-5D68-9BD6-C03A6EF98053 ;
+    p:P123 wds:Q506-6F45F7F9-7593-5C14-B007-43696B50D3E2 ;
+    p:P125 wds:Q506-AC3D0D88-CBA1-5EF3-A2E2-6608C26FB0A4 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q507 ;
+    wdt:P115 <https://open-archaeo.info/post/archaeolphytoliths/> ;
+    wdt:P116 "archaeolphytoliths" ;
+    wdt:P117 wd:Q112,
+        wd:Q181,
+        wd:Q239 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ArchaeolPhytoliths"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/iberganzo/ArchaeolPhytoliths> .
+
+wds:Q506-5B12306E-5ABE-5140-9EFA-31503AE3729F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P117 wd:Q239 .
+
+wds:Q506-6F45F7F9-7593-5C14-B007-43696B50D3E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P123 wd:Q139 .
+
+wds:Q506-26E08B4F-0A92-5BFD-99B3-E0A299B4B407
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P117 wd:Q181 .
+
+wds:Q506-58C8F76F-EC4B-5A1B-9A7C-BC7B01829669
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P106 wd:Q110 .
+
+wds:Q506-8188A5F6-A91C-5D91-98DB-43AA775B70E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P117 wd:Q112 .
+
+wds:Q506-9707E956-1CCD-50FF-9BEB-DC9D76B7151C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P2 wd:Q106 .
+
+wds:Q506-32927F4A-B414-5145-A864-C85A27E26FA2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P2 wd:Q103 .
+
+wds:Q506-58554F03-177A-5154-925F-6945FB59C1CB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P122 wd:Q110 .
+
+wds:Q506-AC3D0D88-CBA1-5EF3-A2E2-6608C26FB0A4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/iberganzo/ArchaeolPhytoliths> .
+
+wds:Q506-C31AB1AA-D230-5A49-8067-084423608E0D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "archaeolphytoliths" .
+
+wds:Q506-DB9464DD-EFBE-5D68-9BD6-C03A6EF98053
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P122 wd:Q109 .
+
+wds:Q506-E1801BAC-11B4-51B2-9FFE-02FC352BC09C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P119 "ArchaeolPhytoliths"@en .
+
+wds:Q506-EC355995-B347-5B43-AB2C-C8205D0EC388
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P115 <https://open-archaeo.info/post/archaeolphytoliths/> .
+
+wds:Q506-F0B3B1F4-53F8-5E9F-BE5F-1E56DBFC04B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    ps:P118 wd:Q108 .
+
+wds:Q506-F26A421A-8559-559E-99EA-850C4C0CA7A7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q507 .
+
+wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/archaeolphytoliths/> .

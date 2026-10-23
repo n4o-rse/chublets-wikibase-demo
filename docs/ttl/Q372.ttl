@@ -1,5 +1,5 @@
 # Q372: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q372-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q372, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2416"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2894"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q372.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -84,6 +84,12 @@ wd:Q372
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Dienstprogramm"@de,
         "utility software"@en ;
+    skos:altLabel "Hilfsprogramm"@de,
+        "System-Werkzeug"@de,
+        "Tool"@de,
+        "Utility"@de,
+        "software utility"@en,
+        "utility"@en ;
     skos:prefLabel "Dienstprogramm"@de,
         "utility software"@en ;
     p:P1 wds:Q372-26A9184A-7E2E-59B3-AF40-E22A49C3B4B9 ;

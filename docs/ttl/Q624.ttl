@@ -1,0 +1,234 @@
+# Q624: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q624
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "An R package for Smith's Mean Measure of Divergence (MMD), with a graphical user interface, facilities for trait selection and graphical representations."@en ;
+    dcterms:identifier "Q624" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q624 ;
+    dcterms:title "anthropmmd"@en ;
+    schema:about wd:Q624 ;
+    dcat:distribution dist:Q624-html,
+        dist:Q624-json,
+        dist:Q624-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q624.html> .
+
+dist:Q624-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q624, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q624.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q624-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q624, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17319"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q624.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q624-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q624, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q624.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q624
+    a wikibase:Item ;
+    schema:description "An R package for Smith's Mean Measure of Divergence (MMD), with a graphical user interface, facilities for trait selection and graphical representations."@en ;
+    schema:name "anthropmmd"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "anthropmmd"@en ;
+    skos:prefLabel "anthropmmd"@en ;
+    p:P2 wds:Q624-C11D0D38-6061-5A68-AD19-D80E2E05769E,
+        wds:Q624-DC3AA858-C96D-5F8D-97C9-57F8BA6149FC ;
+    p:P106 wds:Q624-AD36A5DD-83B9-5D68-8B4C-EEA44A8F221C ;
+    p:P113 wds:Q624-61AF4411-1C0F-5678-A6F3-C344CAC0FC31 ;
+    p:P114 wds:Q624-009DFF23-A24E-587E-B6CB-1E44BA086776 ;
+    p:P115 wds:Q624-E2B886B6-A7B7-54CD-8783-E33E302D8628 ;
+    p:P116 wds:Q624-BD5F01C2-5926-5811-A01B-8A4F3823E6A4 ;
+    p:P117 wds:Q624-13C0CF6B-8863-508A-9D3D-886C34D1C65A,
+        wds:Q624-E3157321-5584-5A7E-9E7D-E2E62E341200 ;
+    p:P118 wds:Q624-CAA37B20-C6F5-5FE3-9989-69C58D34F1DA ;
+    p:P119 wds:Q624-C7A96A1D-FE98-58C2-BED9-19451EB21868 ;
+    p:P122 wds:Q624-06406D43-5508-5807-B532-5632FCB68066,
+        wds:Q624-E532C430-4F55-5280-B0ED-CEC60DFFD072 ;
+    p:P123 wds:Q624-EC40CAB4-C090-5E51-98D9-FC929E4D9610 ;
+    p:P125 wds:Q624-7411AA30-4A2B-5D5D-BD50-C224E9E5889D ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q264 ;
+    wdt:P114 "10.1002/ajpa.23336" ;
+    wdt:P115 <https://open-archaeo.info/post/anthropmmd/> ;
+    wdt:P116 "anthropmmd" ;
+    wdt:P117 wd:Q116,
+        wd:Q213 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "anthropmmd"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/frederic-santos/anthropmmd> .
+
+wds:Q624-009DFF23-A24E-587E-B6CB-1E44BA086776
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P114 "10.1002/ajpa.23336" .
+
+wds:Q624-13C0CF6B-8863-508A-9D3D-886C34D1C65A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P117 wd:Q213 .
+
+wds:Q624-61AF4411-1C0F-5678-A6F3-C344CAC0FC31
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q264 .
+
+wds:Q624-06406D43-5508-5807-B532-5632FCB68066
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P122 wd:Q109 .
+
+wds:Q624-7411AA30-4A2B-5D5D-BD50-C224E9E5889D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    pq:P104 "2020-09-22T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-frederic-santos-anthropmmd_-_2020-09-22_11-43-32> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:b3ddf773276209db2df3d9065abdd11a ;
+    ps:P125 <https://github.com/frederic-santos/anthropmmd> .
+
+wds:Q624-AD36A5DD-83B9-5D68-8B4C-EEA44A8F221C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P106 wd:Q110 .
+
+wds:Q624-BD5F01C2-5926-5811-A01B-8A4F3823E6A4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "anthropmmd" .
+
+wds:Q624-C7A96A1D-FE98-58C2-BED9-19451EB21868
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P119 "anthropmmd"@en .
+
+wds:Q624-C11D0D38-6061-5A68-AD19-D80E2E05769E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P2 wd:Q103 .
+
+wds:Q624-CAA37B20-C6F5-5FE3-9989-69C58D34F1DA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P118 wd:Q108 .
+
+wds:Q624-DC3AA858-C96D-5F8D-97C9-57F8BA6149FC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P2 wd:Q106 .
+
+wds:Q624-E2B886B6-A7B7-54CD-8783-E33E302D8628
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P115 <https://open-archaeo.info/post/anthropmmd/> .
+
+wds:Q624-E532C430-4F55-5280-B0ED-CEC60DFFD072
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P122 wd:Q110 .
+
+wds:Q624-E3157321-5584-5A7E-9E7D-E2E62E341200
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P117 wd:Q116 .
+
+wds:Q624-EC40CAB4-C090-5E51-98D9-FC929E4D9610
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2 ;
+    ps:P123 wd:Q111 .
+
+wdref:73e9d399f65b4d7173eba2ac6ee50a33423714d2
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/anthropmmd/> .
+
+wdv:b3ddf773276209db2df3d9065abdd11a
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-09-22T00:00:00Z"^^xsd:dateTime .

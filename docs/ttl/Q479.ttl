@@ -1,0 +1,216 @@
+# Q479: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q479
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Room Accumulation Simulation ro estimate archaeological population growth rates."@en ;
+    dcterms:identifier "Q479" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q479 ;
+    dcterms:title "RoomAccum"@en ;
+    schema:about wd:Q479 ;
+    dcat:distribution dist:Q479-html,
+        dist:Q479-json,
+        dist:Q479-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q479.html> .
+
+dist:Q479-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q479, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q479.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q479-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q479, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15306"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q479.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q479-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q479, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q479.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q479
+    a wikibase:Item ;
+    schema:description "Room Accumulation Simulation ro estimate archaeological population growth rates."@en ;
+    schema:name "RoomAccum"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "RoomAccum"@en ;
+    skos:prefLabel "RoomAccum"@en ;
+    p:P2 wds:Q479-9DC50A99-1001-59B6-8B79-609DEAA9DE58,
+        wds:Q479-B6AF6FC3-E324-5DBC-9A32-7D79F5FAC553 ;
+    p:P106 wds:Q479-EF389D90-F17B-5571-8100-3AEC4B935F56 ;
+    p:P113 wds:Q479-E910F757-9AEF-591D-ADAE-BE3FDAF02F41 ;
+    p:P115 wds:Q479-697E5C33-6D8E-5B17-BBCD-8F2EF919CE83 ;
+    p:P116 wds:Q479-97D3AB06-2BC8-5088-99D5-C8DFB6CF37BB ;
+    p:P117 wds:Q479-05C7CDD1-FA91-5F29-A196-BCE666EC1EBD,
+        wds:Q479-B291F553-F486-5C16-B313-7B446BAF9567 ;
+    p:P118 wds:Q479-F88D6F11-61E0-5761-B79D-BA208644F718 ;
+    p:P119 wds:Q479-622BC963-516C-55D7-BB0E-94A82CB16465 ;
+    p:P122 wds:Q479-21EB20A8-ADE5-528E-B55D-97085A942758,
+        wds:Q479-F9EABFFB-2B8E-5D03-AEB3-FFD34D64235E ;
+    p:P125 wds:Q479-EF7B8FE9-6C91-55FB-BEDD-260657B5D33E ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q480 ;
+    wdt:P115 <https://open-archaeo.info/post/roomaccum/> ;
+    wdt:P116 "roomaccum" ;
+    wdt:P117 wd:Q212,
+        wd:Q213 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "RoomAccum"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/kintigh/RoomAccum> .
+
+wds:Q479-05C7CDD1-FA91-5F29-A196-BCE666EC1EBD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P117 wd:Q212 .
+
+wds:Q479-9DC50A99-1001-59B6-8B79-609DEAA9DE58
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P2 wd:Q106 .
+
+wds:Q479-21EB20A8-ADE5-528E-B55D-97085A942758
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P122 wd:Q109 .
+
+wds:Q479-97D3AB06-2BC8-5088-99D5-C8DFB6CF37BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "roomaccum" .
+
+wds:Q479-622BC963-516C-55D7-BB0E-94A82CB16465
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P119 "RoomAccum"@en .
+
+wds:Q479-697E5C33-6D8E-5B17-BBCD-8F2EF919CE83
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P115 <https://open-archaeo.info/post/roomaccum/> .
+
+wds:Q479-B6AF6FC3-E324-5DBC-9A32-7D79F5FAC553
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P2 wd:Q102 .
+
+wds:Q479-B291F553-F486-5C16-B313-7B446BAF9567
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P117 wd:Q213 .
+
+wds:Q479-E910F757-9AEF-591D-ADAE-BE3FDAF02F41
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q480 .
+
+wds:Q479-EF7B8FE9-6C91-55FB-BEDD-260657B5D33E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    pq:P104 "2020-06-15T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-kintigh-RoomAccum_-_2020-06-15_19-37-46> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:39c25496be10707812dd140104fb3d08 ;
+    ps:P125 <https://github.com/kintigh/RoomAccum> .
+
+wds:Q479-EF389D90-F17B-5571-8100-3AEC4B935F56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P106 wd:Q110 .
+
+wds:Q479-F9EABFFB-2B8E-5D03-AEB3-FFD34D64235E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P122 wd:Q110 .
+
+wds:Q479-F88D6F11-61E0-5761-B79D-BA208644F718
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f ;
+    ps:P118 wd:Q108 .
+
+wdref:b7159ce1647a3b8125cad45c4960efbfcb379d4f
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/roomaccum/> .
+
+wdv:39c25496be10707812dd140104fb3d08
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-06-15T00:00:00Z"^^xsd:dateTime .

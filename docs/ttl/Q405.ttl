@@ -1,0 +1,251 @@
+# Q405: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q405
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "TypeScript library for extracting structured data from archaeological excavation report PDFs using Docling and LLM-powered analysis"@en ;
+    dcterms:identifier "Q405" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q405 ;
+    dcterms:title "heripo engine"@en ;
+    schema:about wd:Q405 ;
+    dcat:distribution dist:Q405-html,
+        dist:Q405-json,
+        dist:Q405-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q405.html> .
+
+dist:Q405-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q405, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q405.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q405-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q405, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19404"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q405.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q405-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q405, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q405.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q405
+    a wikibase:Item ;
+    schema:description "TypeScript library for extracting structured data from archaeological excavation report PDFs using Docling and LLM-powered analysis"@en ;
+    schema:name "heripo engine"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "18"^^xsd:integer ;
+    rdfs:label "heripo engine"@en ;
+    skos:prefLabel "heripo engine"@en ;
+    p:P2 wds:Q405-72AF7CB2-B8B2-5176-AB26-06CF45459BC9,
+        wds:Q405-B584DA69-FF8F-51A2-9944-EFC5F522D935 ;
+    p:P106 wds:Q405-0141BF8A-821B-5697-B094-9E5F3B9A7641 ;
+    p:P111 wds:Q405-E2307556-179E-5402-9A5D-F3CB8C7056E4 ;
+    p:P113 wds:Q405-62044F86-BAF5-5973-9D42-E263B0952622 ;
+    p:P115 wds:Q405-CA59D581-B322-596C-BA25-87CE7ED664FF ;
+    p:P116 wds:Q405-37EB654B-E84B-5FDC-BF77-3C3B20A6E4D8 ;
+    p:P117 wds:Q405-7ADCBCA3-2B73-56A3-A113-6CDC5C653C2D,
+        wds:Q405-17A49C58-38FE-5D32-9411-6CB382D1F16B,
+        wds:Q405-70A23AD5-FAAD-5889-A8C2-EF6F988B80A0,
+        wds:Q405-7422940D-4D14-503A-86D5-B050510BA52F ;
+    p:P118 wds:Q405-65801A84-F435-5A15-A8D6-32D5B1A68847 ;
+    p:P119 wds:Q405-BADB81C4-2CB4-5073-880B-839E80DC9349 ;
+    p:P120 wds:Q405-0DF1CE80-C68C-5FF6-9926-6D500D80C08E ;
+    p:P122 wds:Q405-3E718F2F-BD3C-5154-9E2B-D07554E83335,
+        wds:Q405-CA705DDF-1ECD-5A35-B2FC-797F496413EB ;
+    p:P123 wds:Q405-9420D048-AC80-56FC-93EA-C7CCDA536802 ;
+    p:P125 wds:Q405-32D9EFF7-7FCA-5D48-95F1-C9AB1DEEF4AD ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P111 wd:Q408 ;
+    wdt:P113 wd:Q407 ;
+    wdt:P115 <https://open-archaeo.info/post/heripo-engine/> ;
+    wdt:P116 "heripo-engine" ;
+    wdt:P117 wd:Q144,
+        wd:Q148,
+        wd:Q193,
+        wd:Q239 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "heripo engine"@en ;
+    wdt:P120 <https://engine-demo.heripo.org> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q406 ;
+    wdt:P125 <https://github.com/heripo-lab/heripo-engine> .
+
+wds:Q405-0DF1CE80-C68C-5FF6-9926-6D500D80C08E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P120 <https://engine-demo.heripo.org> .
+
+wds:Q405-3E718F2F-BD3C-5154-9E2B-D07554E83335
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P122 wd:Q109 .
+
+wds:Q405-7ADCBCA3-2B73-56A3-A113-6CDC5C653C2D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P117 wd:Q148 .
+
+wds:Q405-17A49C58-38FE-5D32-9411-6CB382D1F16B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P117 wd:Q144 .
+
+wds:Q405-32D9EFF7-7FCA-5D48-95F1-C9AB1DEEF4AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/heripo-lab/heripo-engine> .
+
+wds:Q405-37EB654B-E84B-5FDC-BF77-3C3B20A6E4D8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "heripo-engine" .
+
+wds:Q405-70A23AD5-FAAD-5889-A8C2-EF6F988B80A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P117 wd:Q239 .
+
+wds:Q405-72AF7CB2-B8B2-5176-AB26-06CF45459BC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P2 wd:Q103 .
+
+wds:Q405-0141BF8A-821B-5697-B094-9E5F3B9A7641
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P106 wd:Q110 .
+
+wds:Q405-9420D048-AC80-56FC-93EA-C7CCDA536802
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P123 wd:Q406 .
+
+wds:Q405-62044F86-BAF5-5973-9D42-E263B0952622
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q407 .
+
+wds:Q405-65801A84-F435-5A15-A8D6-32D5B1A68847
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P118 wd:Q108 .
+
+wds:Q405-7422940D-4D14-503A-86D5-B050510BA52F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P117 wd:Q193 .
+
+wds:Q405-B584DA69-FF8F-51A2-9944-EFC5F522D935
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P2 wd:Q106 .
+
+wds:Q405-BADB81C4-2CB4-5073-880B-839E80DC9349
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P119 "heripo engine"@en .
+
+wds:Q405-CA59D581-B322-596C-BA25-87CE7ED664FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P115 <https://open-archaeo.info/post/heripo-engine/> .
+
+wds:Q405-CA705DDF-1ECD-5A35-B2FC-797F496413EB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P122 wd:Q110 .
+
+wds:Q405-E2307556-179E-5402-9A5D-F3CB8C7056E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P111 wd:Q408 .
+
+wdref:cc04fd5419bb627117136f56461c90e87c54ae6b
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/heripo-engine/> .

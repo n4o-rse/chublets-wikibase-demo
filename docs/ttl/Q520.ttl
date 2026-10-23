@@ -1,0 +1,225 @@
+# Q520: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q520
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Tools for Quantitative Archaeology - in R."@en ;
+    dcterms:identifier "Q520" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q520 ;
+    dcterms:title "tfqar"@en ;
+    schema:about wd:Q520 ;
+    dcat:distribution dist:Q520-html,
+        dist:Q520-json,
+        dist:Q520-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q520.html> .
+
+dist:Q520-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q520, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q520.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q520-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q520, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16097"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q520.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q520-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q520, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q520.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q520
+    a wikibase:Item ;
+    schema:description "Tools for Quantitative Archaeology - in R."@en ;
+    schema:name "tfqar"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "tfqar"@en ;
+    skos:prefLabel "tfqar"@en ;
+    p:P2 wds:Q520-8317E6F7-BB2B-597A-B723-5394B46AE46F,
+        wds:Q520-590922DE-A104-5641-90DA-B04D4BEA7FC8 ;
+    p:P106 wds:Q520-DD4E9DFF-98C2-5D02-8E78-AC07B9D23A2E ;
+    p:P113 wds:Q520-3F2945F0-20D0-5F26-A592-A791F9CB60A1 ;
+    p:P115 wds:Q520-6793B92F-4872-5F87-91DA-49FB792884A6 ;
+    p:P116 wds:Q520-ECD52171-255E-5452-BB6C-E1CA565266A9 ;
+    p:P117 wds:Q520-07415FF1-242B-5860-96E5-097A5C522476 ;
+    p:P118 wds:Q520-37673FDD-8AB6-5F19-B7EB-1987F6E44EA3 ;
+    p:P119 wds:Q520-10F24990-388F-5195-8570-EE38FD704AD1 ;
+    p:P120 wds:Q520-6EC2968A-8645-52AC-AB51-CD5B588C0B28 ;
+    p:P122 wds:Q520-3EA8C7DA-1A0E-539E-BCB1-4E7DEF640952,
+        wds:Q520-16D58174-8188-5906-871C-0AFA90F0FF6D ;
+    p:P123 wds:Q520-85A16690-E009-5B74-8FD1-C2712CACB75C ;
+    p:P125 wds:Q520-F2202BDE-E532-5C8E-A7C0-6874E4DC274B ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q521 ;
+    wdt:P115 <https://open-archaeo.info/post/tfqar/> ;
+    wdt:P116 "tfqar" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "tfqar"@en ;
+    wdt:P120 <http://tfqa.com/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/sslarch/tfqar> .
+
+wds:Q520-3EA8C7DA-1A0E-539E-BCB1-4E7DEF640952
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P122 wd:Q109 .
+
+wds:Q520-3F2945F0-20D0-5F26-A592-A791F9CB60A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q521 .
+
+wds:Q520-6EC2968A-8645-52AC-AB51-CD5B588C0B28
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P120 <http://tfqa.com/> .
+
+wds:Q520-10F24990-388F-5195-8570-EE38FD704AD1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P119 "tfqar"@en .
+
+wds:Q520-16D58174-8188-5906-871C-0AFA90F0FF6D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P122 wd:Q110 .
+
+wds:Q520-85A16690-E009-5B74-8FD1-C2712CACB75C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P123 wd:Q111 .
+
+wds:Q520-6793B92F-4872-5F87-91DA-49FB792884A6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P115 <https://open-archaeo.info/post/tfqar/> .
+
+wds:Q520-07415FF1-242B-5860-96E5-097A5C522476
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P117 wd:Q116 .
+
+wds:Q520-8317E6F7-BB2B-597A-B723-5394B46AE46F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P2 wd:Q103 .
+
+wds:Q520-37673FDD-8AB6-5F19-B7EB-1987F6E44EA3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P118 wd:Q108 .
+
+wds:Q520-590922DE-A104-5641-90DA-B04D4BEA7FC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P2 wd:Q106 .
+
+wds:Q520-DD4E9DFF-98C2-5D02-8E78-AC07B9D23A2E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    ps:P106 wd:Q110 .
+
+wds:Q520-ECD52171-255E-5452-BB6C-E1CA565266A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "tfqar" .
+
+wds:Q520-F2202BDE-E532-5C8E-A7C0-6874E4DC274B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee ;
+    pq:P104 "2020-11-06T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-sslarch-tfqar_-_2020-11-06_14-44-53> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:fb1c27b4c8c292b3502a8129e83a62b6 ;
+    ps:P125 <https://github.com/sslarch/tfqar> .
+
+wdref:41ad68ab4a85bb5cf1cea237fac4ec64764fa4ee
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/tfqar/> .
+
+wdv:fb1c27b4c8c292b3502a8129e83a62b6
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-11-06T00:00:00Z"^^xsd:dateTime .

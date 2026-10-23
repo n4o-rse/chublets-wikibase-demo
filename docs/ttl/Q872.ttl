@@ -1,0 +1,206 @@
+# Q872: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q872
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "An application to generate temperature curves during pottery firing."@en ;
+    dcterms:identifier "Q872" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q872 ;
+    dcterms:title "CoccionCeramica"@en ;
+    schema:about wd:Q872 ;
+    dcat:distribution dist:Q872-html,
+        dist:Q872-json,
+        dist:Q872-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q872.html> .
+
+dist:Q872-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q872, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q872.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q872-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q872, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14503"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q872.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q872-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q872, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q872.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q872
+    a wikibase:Item ;
+    schema:description "An application to generate temperature curves during pottery firing."@en ;
+    schema:name "CoccionCeramica"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "CoccionCeramica"@en ;
+    skos:prefLabel "CoccionCeramica"@en ;
+    p:P2 wds:Q872-5D1891B8-3B94-5730-9B32-250CCA443CD2,
+        wds:Q872-7725712E-B764-5B1A-95BB-239D06AE4F95 ;
+    p:P106 wds:Q872-FAA49100-01C1-5F2D-95F6-5531D35ADF67 ;
+    p:P113 wds:Q872-CDBFFD9B-BA9E-59F5-B7F0-8DEBDD454672 ;
+    p:P115 wds:Q872-F2C6E737-5F50-55AF-8B47-0F62DCB0A859 ;
+    p:P116 wds:Q872-58D61B09-FFD3-58F2-88C9-23891B407054 ;
+    p:P117 wds:Q872-A0C20CA4-C404-5F36-9161-FE2123BF966E ;
+    p:P118 wds:Q872-FAF35903-F2FB-54E1-9D1A-8B71F201A90E ;
+    p:P119 wds:Q872-12907994-70FA-5CEC-8895-6226D98286E4 ;
+    p:P122 wds:Q872-7049FA9D-944C-5C56-B70A-3270D3EABCB8,
+        wds:Q872-C009FCF8-BC44-5E15-AE85-81D2A8596D0C ;
+    p:P123 wds:Q872-275513C8-933E-5CC3-B66A-5169AFE83B1F ;
+    p:P125 wds:Q872-D7056E4D-0C77-585D-B598-27C95652F6B5 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q873 ;
+    wdt:P115 <https://open-archaeo.info/post/coccionceramica/> ;
+    wdt:P116 "coccionceramica" ;
+    wdt:P117 wd:Q222 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "CoccionCeramica"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/marcelocardillo/CoccionCeramica> .
+
+wds:Q872-5D1891B8-3B94-5730-9B32-250CCA443CD2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P2 wd:Q106 .
+
+wds:Q872-58D61B09-FFD3-58F2-88C9-23891B407054
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "coccionceramica" .
+
+wds:Q872-7049FA9D-944C-5C56-B70A-3270D3EABCB8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P122 wd:Q110 .
+
+wds:Q872-275513C8-933E-5CC3-B66A-5169AFE83B1F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P123 wd:Q139 .
+
+wds:Q872-7725712E-B764-5B1A-95BB-239D06AE4F95
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P2 wd:Q103 .
+
+wds:Q872-12907994-70FA-5CEC-8895-6226D98286E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P119 "CoccionCeramica"@en .
+
+wds:Q872-A0C20CA4-C404-5F36-9161-FE2123BF966E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P117 wd:Q222 .
+
+wds:Q872-C009FCF8-BC44-5E15-AE85-81D2A8596D0C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P122 wd:Q109 .
+
+wds:Q872-CDBFFD9B-BA9E-59F5-B7F0-8DEBDD454672
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q873 .
+
+wds:Q872-D7056E4D-0C77-585D-B598-27C95652F6B5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/marcelocardillo/CoccionCeramica> .
+
+wds:Q872-F2C6E737-5F50-55AF-8B47-0F62DCB0A859
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P115 <https://open-archaeo.info/post/coccionceramica/> .
+
+wds:Q872-FAA49100-01C1-5F2D-95F6-5531D35ADF67
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P106 wd:Q110 .
+
+wds:Q872-FAF35903-F2FB-54E1-9D1A-8B71F201A90E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
+    ps:P118 wd:Q108 .
+
+wdref:d439044bd857b35173abc82d6a4af4505085268e
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/coccionceramica/> .

@@ -1,5 +1,5 @@
 # Q375: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q375-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q375, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1350"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1707"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q375.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -84,6 +84,10 @@ wd:Q375
     wikibase:statements "1"^^xsd:integer ;
     rdfs:label "stabile Version"@de,
         "stable version"@en ;
+    skos:altLabel "production version"@en,
+        "production"@en,
+        "stabile Veröffentlichung"@de,
+        "stable release"@en ;
     skos:prefLabel "stabile Version"@de,
         "stable version"@en ;
     p:P4 wds:Q375-563585A2-F886-5939-AD1F-5C039195460C ;

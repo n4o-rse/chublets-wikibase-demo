@@ -1,0 +1,207 @@
+# Q631: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q631
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Floor plan app using augmented reality."@en ;
+    dcterms:identifier "Q631" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q631 ;
+    dcterms:title "ARFloorPlanApp"@en ;
+    schema:about wd:Q631 ;
+    dcat:distribution dist:Q631-html,
+        dist:Q631-json,
+        dist:Q631-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q631.html> .
+
+dist:Q631-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q631, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q631.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q631-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q631, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14375"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q631.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q631-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q631, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q631.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q631
+    a wikibase:Item ;
+    schema:description "Floor plan app using augmented reality."@en ;
+    schema:name "ARFloorPlanApp"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "ARFloorPlanApp"@en ;
+    skos:prefLabel "ARFloorPlanApp"@en ;
+    p:P2 wds:Q631-36E4602F-4182-59C5-8F60-AEF5FD1CFF0D,
+        wds:Q631-C8E043C9-7742-5592-A459-3C5C3F7D0763 ;
+    p:P106 wds:Q631-2A7F436F-752E-523A-8E14-6BDD0AE66C0E ;
+    p:P113 wds:Q631-C27DDCAA-2DC5-5F73-B9BE-B8A2E8891BDA ;
+    p:P115 wds:Q631-35CD3182-8A2F-507F-9AF3-BB368ADFE919 ;
+    p:P116 wds:Q631-5852CE07-55AB-51AF-A392-8228B62D1D6A ;
+    p:P117 wds:Q631-4EA6D868-F022-5011-9F5D-1E2DE4254CA0 ;
+    p:P118 wds:Q631-6F618E40-961B-5E70-B04F-B931F5934F39 ;
+    p:P119 wds:Q631-AF1DDBC6-F6D6-5D32-82D7-9F7DF9C397FA ;
+    p:P122 wds:Q631-537F940B-5E41-5BA4-8D73-2683A4B5699F,
+        wds:Q631-23869853-C5A8-566A-9611-45A4A5CCA4C1 ;
+    p:P125 wds:Q631-176111F8-C96F-593C-A983-1CAB14E6FF75 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q632 ;
+    wdt:P115 <https://open-archaeo.info/post/arfloorplanapp/> ;
+    wdt:P116 "arfloorplanapp" ;
+    wdt:P117 wd:Q169 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ARFloorPlanApp"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/carlsun98/ARFloorPlanApp> .
+
+wds:Q631-2A7F436F-752E-523A-8E14-6BDD0AE66C0E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P106 wd:Q110 .
+
+wds:Q631-4EA6D868-F022-5011-9F5D-1E2DE4254CA0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P117 wd:Q169 .
+
+wds:Q631-6F618E40-961B-5E70-B04F-B931F5934F39
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P118 wd:Q108 .
+
+wds:Q631-35CD3182-8A2F-507F-9AF3-BB368ADFE919
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P115 <https://open-archaeo.info/post/arfloorplanapp/> .
+
+wds:Q631-36E4602F-4182-59C5-8F60-AEF5FD1CFF0D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P2 wd:Q102 .
+
+wds:Q631-537F940B-5E41-5BA4-8D73-2683A4B5699F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P122 wd:Q109 .
+
+wds:Q631-5852CE07-55AB-51AF-A392-8228B62D1D6A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "arfloorplanapp" .
+
+wds:Q631-176111F8-C96F-593C-A983-1CAB14E6FF75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    pq:P104 "2018-07-27T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-carlsun98-ARFloorPlanApp_-_2018-07-27_22-02-36> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:7b0f2dacc6f0f1ea89c8da72a597b9a6 ;
+    ps:P125 <https://github.com/carlsun98/ARFloorPlanApp> .
+
+wds:Q631-23869853-C5A8-566A-9611-45A4A5CCA4C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P122 wd:Q110 .
+
+wds:Q631-AF1DDBC6-F6D6-5D32-82D7-9F7DF9C397FA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P119 "ARFloorPlanApp"@en .
+
+wds:Q631-C8E043C9-7742-5592-A459-3C5C3F7D0763
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    ps:P2 wd:Q106 .
+
+wds:Q631-C27DDCAA-2DC5-5F73-B9BE-B8A2E8891BDA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q632 .
+
+wdref:69318695766c9e9c90bec866efcd6d2ed6b0c47d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/arfloorplanapp/> .
+
+wdv:7b0f2dacc6f0f1ea89c8da72a597b9a6
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2018-07-27T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,206 @@
+# Q765: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q765
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Management tool for archaeologists."@en ;
+    dcterms:identifier "Q765" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q765 ;
+    dcterms:title "archio"@en ;
+    schema:about wd:Q765 ;
+    dcat:distribution dist:Q765-html,
+        dist:Q765-json,
+        dist:Q765-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q765.html> .
+
+dist:Q765-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q765, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q765.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q765-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q765, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14302"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q765.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q765-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q765, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q765.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q765
+    a wikibase:Item ;
+    schema:description "Management tool for archaeologists."@en ;
+    schema:name "archio"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "archio"@en ;
+    skos:prefLabel "archio"@en ;
+    p:P2 wds:Q765-5D75E21A-92D7-5B04-B8E6-FADF2558194D,
+        wds:Q765-441E04F0-FDF2-53F0-8591-2EAEB9E05D1F ;
+    p:P106 wds:Q765-4F9444B3-06B4-523B-B281-A5670DB7ADA4 ;
+    p:P113 wds:Q765-91582561-3F95-5E39-9010-B73F6E9894D1 ;
+    p:P115 wds:Q765-CF7D8D91-AB99-50BD-92BA-4B6B60BDA422 ;
+    p:P116 wds:Q765-4B1F6FD8-503D-546D-AF1F-BB4C8DEE242B ;
+    p:P117 wds:Q765-7B1473DB-E632-5C15-8A49-A913BC1010B4 ;
+    p:P118 wds:Q765-81FEDCEA-00D3-58A4-B76D-0B16ADF286B0 ;
+    p:P119 wds:Q765-B1019707-5805-52B5-93AE-88ABD14599F0 ;
+    p:P122 wds:Q765-42717CF4-427F-5B2A-85F6-7226A4476B2B,
+        wds:Q765-CF707510-742C-592B-BFD8-1F61F80C0CC9 ;
+    p:P123 wds:Q765-EDB76AAC-3577-5A79-AA4C-40FA13678D75 ;
+    p:P125 wds:Q765-7E78BAF0-5219-5E4B-84FD-65412CDC58FD ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q766 ;
+    wdt:P115 <https://open-archaeo.info/post/archio/> ;
+    wdt:P116 "archio" ;
+    wdt:P117 wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "archio"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q679 ;
+    wdt:P125 <https://github.com/weberjavi/archio> .
+
+wds:Q765-4B1F6FD8-503D-546D-AF1F-BB4C8DEE242B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "archio" .
+
+wds:Q765-4F9444B3-06B4-523B-B281-A5670DB7ADA4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P106 wd:Q110 .
+
+wds:Q765-5D75E21A-92D7-5B04-B8E6-FADF2558194D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P2 wd:Q106 .
+
+wds:Q765-7B1473DB-E632-5C15-8A49-A913BC1010B4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P117 wd:Q148 .
+
+wds:Q765-7E78BAF0-5219-5E4B-84FD-65412CDC58FD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/weberjavi/archio> .
+
+wds:Q765-81FEDCEA-00D3-58A4-B76D-0B16ADF286B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P118 wd:Q108 .
+
+wds:Q765-441E04F0-FDF2-53F0-8591-2EAEB9E05D1F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P2 wd:Q102 .
+
+wds:Q765-42717CF4-427F-5B2A-85F6-7226A4476B2B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P122 wd:Q110 .
+
+wds:Q765-91582561-3F95-5E39-9010-B73F6E9894D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q766 .
+
+wds:Q765-B1019707-5805-52B5-93AE-88ABD14599F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P119 "archio"@en .
+
+wds:Q765-CF7D8D91-AB99-50BD-92BA-4B6B60BDA422
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P115 <https://open-archaeo.info/post/archio/> .
+
+wds:Q765-CF707510-742C-592B-BFD8-1F61F80C0CC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P122 wd:Q109 .
+
+wds:Q765-EDB76AAC-3577-5A79-AA4C-40FA13678D75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f2028a0c45e673b19648f7fd57cbdfb477428401 ;
+    ps:P123 wd:Q679 .
+
+wdref:f2028a0c45e673b19648f7fd57cbdfb477428401
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/archio/> .

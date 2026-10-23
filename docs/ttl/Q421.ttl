@@ -1,0 +1,216 @@
+# Q421: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q421
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A r package for the aoristic analysis of archaeological data."@en ;
+    dcterms:identifier "Q421" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q421 ;
+    dcterms:title "aoristAAR"@en ;
+    schema:about wd:Q421 ;
+    dcat:distribution dist:Q421-html,
+        dist:Q421-json,
+        dist:Q421-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q421.html> .
+
+dist:Q421-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q421, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q421.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q421-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q421, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15309"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q421.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q421-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q421, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q421.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q421
+    a wikibase:Item ;
+    schema:description "A r package for the aoristic analysis of archaeological data."@en ;
+    schema:name "aoristAAR"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "aoristAAR"@en ;
+    skos:prefLabel "aoristAAR"@en ;
+    p:P2 wds:Q421-05E3EA16-7CB2-57E7-ADA8-6164746E4AA2,
+        wds:Q421-A21E0F53-FAA7-5C2A-8FB1-E6553DD98C61 ;
+    p:P106 wds:Q421-52BA4A98-AFCE-5A5B-815F-31BB48AC7DE5 ;
+    p:P113 wds:Q421-7F55C2F0-1DBE-54C5-A587-02B9E26F22B4 ;
+    p:P115 wds:Q421-4F401675-2B66-5743-8BAC-75F73E65825A ;
+    p:P116 wds:Q421-FE5030A4-0144-5F15-8C82-C5AAAF0C7092 ;
+    p:P117 wds:Q421-8A8AABCC-EE66-51BC-98B5-B34D2C010468 ;
+    p:P118 wds:Q421-37744534-02D9-5CAB-A302-4A18EED89FCC ;
+    p:P119 wds:Q421-E69CF100-21BA-5E6C-988F-265A2E878B62 ;
+    p:P122 wds:Q421-7D8F5B21-E2C9-525A-BA2F-70EE0E7710A0,
+        wds:Q421-FD0E9167-AA91-53BF-BCD3-29F02AB1CBC1 ;
+    p:P123 wds:Q421-4FD9BCE3-B5EB-5F6F-B4B2-E45A61490CF6 ;
+    p:P125 wds:Q421-B4584981-6FF7-5EAA-959D-C4E2CF896A17 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q158 ;
+    wdt:P115 <https://open-archaeo.info/post/aoristaar/> ;
+    wdt:P116 "aoristaar" ;
+    wdt:P117 wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "aoristAAR"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/ISAAKiel/aoristAAR> .
+
+wds:Q421-4F401675-2B66-5743-8BAC-75F73E65825A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P115 <https://open-archaeo.info/post/aoristaar/> .
+
+wds:Q421-4FD9BCE3-B5EB-5F6F-B4B2-E45A61490CF6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P123 wd:Q111 .
+
+wds:Q421-05E3EA16-7CB2-57E7-ADA8-6164746E4AA2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P2 wd:Q106 .
+
+wds:Q421-7D8F5B21-E2C9-525A-BA2F-70EE0E7710A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P122 wd:Q110 .
+
+wds:Q421-7F55C2F0-1DBE-54C5-A587-02B9E26F22B4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q158 .
+
+wds:Q421-8A8AABCC-EE66-51BC-98B5-B34D2C010468
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P117 wd:Q126 .
+
+wds:Q421-52BA4A98-AFCE-5A5B-815F-31BB48AC7DE5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P106 wd:Q110 .
+
+wds:Q421-37744534-02D9-5CAB-A302-4A18EED89FCC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P118 wd:Q108 .
+
+wds:Q421-A21E0F53-FAA7-5C2A-8FB1-E6553DD98C61
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P2 wd:Q103 .
+
+wds:Q421-B4584981-6FF7-5EAA-959D-C4E2CF896A17
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    pq:P104 "2020-07-09T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-ISAAKiel-aoristAAR_-_2020-07-09_13-13-06> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:ef364aedf8d5c3342ddb5766b1a8b588 ;
+    ps:P125 <https://github.com/ISAAKiel/aoristAAR> .
+
+wds:Q421-E69CF100-21BA-5E6C-988F-265A2E878B62
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P119 "aoristAAR"@en .
+
+wds:Q421-FD0E9167-AA91-53BF-BCD3-29F02AB1CBC1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    ps:P122 wd:Q109 .
+
+wds:Q421-FE5030A4-0144-5F15-8C82-C5AAAF0C7092
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "aoristaar" .
+
+wdref:7f10ac7d16aa869619b9cfa23fb89cd3ccc653c1
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/aoristaar/> .
+
+wdv:ef364aedf8d5c3342ddb5766b1a8b588
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-07-09T00:00:00Z"^^xsd:dateTime .

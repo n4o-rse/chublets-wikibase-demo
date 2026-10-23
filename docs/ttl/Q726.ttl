@@ -1,0 +1,225 @@
+# Q726: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q726
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Series of common tols used by most reflectance transformation imaging (rti) projects, plus some custom programs to help with the workflow from the camera to the output."@en ;
+    dcterms:identifier "Q726" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q726 ;
+    dcterms:title "rti"@en ;
+    schema:about wd:Q726 ;
+    dcat:distribution dist:Q726-html,
+        dist:Q726-json,
+        dist:Q726-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q726.html> .
+
+dist:Q726-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q726, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q726.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q726-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q726, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16209"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q726.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q726-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q726, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q726.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q726
+    a wikibase:Item ;
+    schema:description "Series of common tols used by most reflectance transformation imaging (rti) projects, plus some custom programs to help with the workflow from the camera to the output."@en ;
+    schema:name "rti"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "rti"@en ;
+    skos:prefLabel "rti"@en ;
+    p:P2 wds:Q726-42234394-BAC0-5DA7-ADE4-7B81CD34A98D,
+        wds:Q726-B7DC77D2-A438-5E2B-BB3E-BAE9FB5F71F9 ;
+    p:P106 wds:Q726-1B9D801B-1FA4-59D0-9902-B37026C5D7E3 ;
+    p:P113 wds:Q726-8346599E-8098-5750-91E7-6CF1346397B6 ;
+    p:P115 wds:Q726-7A0D1956-FD95-5294-9924-D972C1A4CE2C ;
+    p:P116 wds:Q726-8F2AFC63-3C9D-5257-BE2D-25EAE94BB69F ;
+    p:P117 wds:Q726-47067615-37F3-5EAF-AE35-6224F45B2E5F ;
+    p:P118 wds:Q726-88A2092B-FB56-54AF-B9A3-8ADC7410B33F ;
+    p:P119 wds:Q726-E1C8576E-4EC6-520C-B015-944F47B334A3 ;
+    p:P120 wds:Q726-AA043A09-7352-5DD5-BA9E-F545D1791288 ;
+    p:P122 wds:Q726-0C67BB7F-5266-570C-A041-A252AA50071C,
+        wds:Q726-1DDC0A9C-B01B-5654-B069-DCD92524A5A0 ;
+    p:P123 wds:Q726-7F12BD47-EA22-5165-8BED-15C778088C65 ;
+    p:P125 wds:Q726-81AA7BFD-B55D-5087-B248-2F5BEDE7436A ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q727 ;
+    wdt:P115 <https://open-archaeo.info/post/rti/> ;
+    wdt:P116 "rti" ;
+    wdt:P117 wd:Q129 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "rti"@en ;
+    wdt:P120 <https://custom-imaging.co.uk/software/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/kmartinez/rti> .
+
+wds:Q726-0C67BB7F-5266-570C-A041-A252AA50071C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P122 wd:Q110 .
+
+wds:Q726-1B9D801B-1FA4-59D0-9902-B37026C5D7E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P106 wd:Q110 .
+
+wds:Q726-1DDC0A9C-B01B-5654-B069-DCD92524A5A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P122 wd:Q109 .
+
+wds:Q726-7A0D1956-FD95-5294-9924-D972C1A4CE2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P115 <https://open-archaeo.info/post/rti/> .
+
+wds:Q726-7F12BD47-EA22-5165-8BED-15C778088C65
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P123 wd:Q139 .
+
+wds:Q726-8F2AFC63-3C9D-5257-BE2D-25EAE94BB69F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "rti" .
+
+wds:Q726-81AA7BFD-B55D-5087-B248-2F5BEDE7436A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    pq:P104 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-kmartinez-rti_-_2019-05-29_15-38-12> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:733674f41790c6c1009a3375da675660 ;
+    ps:P125 <https://github.com/kmartinez/rti> .
+
+wds:Q726-88A2092B-FB56-54AF-B9A3-8ADC7410B33F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P118 wd:Q108 .
+
+wds:Q726-8346599E-8098-5750-91E7-6CF1346397B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q727 .
+
+wds:Q726-42234394-BAC0-5DA7-ADE4-7B81CD34A98D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P2 wd:Q104 .
+
+wds:Q726-47067615-37F3-5EAF-AE35-6224F45B2E5F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P117 wd:Q129 .
+
+wds:Q726-AA043A09-7352-5DD5-BA9E-F545D1791288
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P120 <https://custom-imaging.co.uk/software/> .
+
+wds:Q726-B7DC77D2-A438-5E2B-BB3E-BAE9FB5F71F9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P2 wd:Q106 .
+
+wds:Q726-E1C8576E-4EC6-520C-B015-944F47B334A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
+    ps:P119 "rti"@en .
+
+wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/rti/> .
+
+wdv:733674f41790c6c1009a3375da675660
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-05-29T00:00:00Z"^^xsd:dateTime .

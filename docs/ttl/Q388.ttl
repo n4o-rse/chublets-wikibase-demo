@@ -1,0 +1,216 @@
+# Q388: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q388
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A simple app for tracing outlines of an irregular shape and exporting the coordinates of the outline."@en ;
+    dcterms:identifier "Q388" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q388 ;
+    dcterms:title "outliner"@en ;
+    schema:about wd:Q388 ;
+    dcat:distribution dist:Q388-html,
+        dist:Q388-json,
+        dist:Q388-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q388.html> .
+
+dist:Q388-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q388, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q388.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q388-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q388, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15499"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q388.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q388-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q388, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q388.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q388
+    a wikibase:Item ;
+    schema:description "A simple app for tracing outlines of an irregular shape and exporting the coordinates of the outline."@en ;
+    schema:name "outliner"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "outliner"@en ;
+    skos:prefLabel "outliner"@en ;
+    p:P2 wds:Q388-64CE89B6-04DF-54F0-BC9E-9F613359C456,
+        wds:Q388-F7D146CD-BDFE-51A5-9C78-888EA63EDE75 ;
+    p:P106 wds:Q388-CD6D9409-E153-57BF-81B1-70E33BED3E7A ;
+    p:P113 wds:Q388-C4BABF3C-D4F9-5A57-B5BC-E3CADBF641D6 ;
+    p:P115 wds:Q388-4672F19F-ED1D-5D08-9EF3-C1A0A5B92606 ;
+    p:P116 wds:Q388-CBF3AE7F-C005-55D6-AB17-7983F751AB5F ;
+    p:P117 wds:Q388-9E1A3E1D-E290-5E38-AC84-D7627D50A3C3 ;
+    p:P118 wds:Q388-54235F20-3904-537B-AFA1-4DB80BD88E56 ;
+    p:P119 wds:Q388-9993CDCB-6170-52E0-81F8-8D60E56A4C8B ;
+    p:P122 wds:Q388-59C50613-323B-51BB-91EA-CB846100BE2B,
+        wds:Q388-087FF25E-1EDE-5110-9246-959C296E5FDF ;
+    p:P123 wds:Q388-20704833-1C02-5F6B-8EEF-E9C3A3255037 ;
+    p:P125 wds:Q388-C074CDAA-84A3-5791-966A-68B9DD71D2EF ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q321 ;
+    wdt:P115 <https://open-archaeo.info/post/outliner-benmarwick/> ;
+    wdt:P116 "outliner-benmarwick" ;
+    wdt:P117 wd:Q228 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "outliner"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/benmarwick/outliner> .
+
+wds:Q388-9E1A3E1D-E290-5E38-AC84-D7627D50A3C3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P117 wd:Q228 .
+
+wds:Q388-59C50613-323B-51BB-91EA-CB846100BE2B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P122 wd:Q109 .
+
+wds:Q388-64CE89B6-04DF-54F0-BC9E-9F613359C456
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P2 wd:Q106 .
+
+wds:Q388-087FF25E-1EDE-5110-9246-959C296E5FDF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P122 wd:Q110 .
+
+wds:Q388-4672F19F-ED1D-5D08-9EF3-C1A0A5B92606
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P115 <https://open-archaeo.info/post/outliner-benmarwick/> .
+
+wds:Q388-9993CDCB-6170-52E0-81F8-8D60E56A4C8B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P119 "outliner"@en .
+
+wds:Q388-54235F20-3904-537B-AFA1-4DB80BD88E56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P118 wd:Q108 .
+
+wds:Q388-20704833-1C02-5F6B-8EEF-E9C3A3255037
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P123 wd:Q111 .
+
+wds:Q388-C4BABF3C-D4F9-5A57-B5BC-E3CADBF641D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q321 .
+
+wds:Q388-C074CDAA-84A3-5791-966A-68B9DD71D2EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    pq:P104 "2021-01-31T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-benmarwick-outliner_-_2021-01-31_08-26-33> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:7f6eb7c75d005edd0102e514a5115ddc ;
+    ps:P125 <https://github.com/benmarwick/outliner> .
+
+wds:Q388-CBF3AE7F-C005-55D6-AB17-7983F751AB5F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "outliner-benmarwick" .
+
+wds:Q388-CD6D9409-E153-57BF-81B1-70E33BED3E7A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P106 wd:Q110 .
+
+wds:Q388-F7D146CD-BDFE-51A5-9C78-888EA63EDE75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3006457a910f93fb98225e3e5852d23773df233 ;
+    ps:P2 wd:Q103 .
+
+wdref:c3006457a910f93fb98225e3e5852d23773df233
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/outliner-benmarwick/> .
+
+wdv:7f6eb7c75d005edd0102e514a5115ddc
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-01-31T00:00:00Z"^^xsd:dateTime .

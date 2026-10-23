@@ -1,0 +1,216 @@
+# Q574: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q574
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Provides some utility functions for cleaning radiocarbon data in R."@en ;
+    dcterms:identifier "Q574" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q574 ;
+    dcterms:title "cleanc14"@en ;
+    schema:about wd:Q574 ;
+    dcat:distribution dist:Q574-html,
+        dist:Q574-json,
+        dist:Q574-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q574.html> .
+
+dist:Q574-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q574, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q574.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q574-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q574, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15292"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q574.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q574-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q574, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q574.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q574
+    a wikibase:Item ;
+    schema:description "Provides some utility functions for cleaning radiocarbon data in R."@en ;
+    schema:name "cleanc14"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "cleanc14"@en ;
+    skos:prefLabel "cleanc14"@en ;
+    p:P2 wds:Q574-80E70449-FE96-5758-8A08-E90FE577682F,
+        wds:Q574-C07A4FA0-B119-5BF3-9446-C9AC6846E1EE ;
+    p:P106 wds:Q574-0B1217B6-5C71-5248-B872-9C74B604DF54 ;
+    p:P113 wds:Q574-41D2C219-584E-5D33-A6F0-816434BF1003 ;
+    p:P115 wds:Q574-3B50C78D-1B0B-51AA-9C42-7B92ED34E9A8 ;
+    p:P116 wds:Q574-1BC1D48F-A5F9-5DB9-BBAB-14A911113563 ;
+    p:P117 wds:Q574-F2D68D44-3AD5-5472-BC26-A7A10A5BB320 ;
+    p:P118 wds:Q574-CAC38DCD-84A4-5C4B-A2C1-FCFE71B617D6 ;
+    p:P119 wds:Q574-6C3951EA-3A97-57AE-A481-07148C9F457C ;
+    p:P122 wds:Q574-A36085ED-A052-5019-BDD7-34790AF3828A,
+        wds:Q574-DE260FA2-A315-5745-92C2-C563E03CD9BC ;
+    p:P123 wds:Q574-FD40E400-B715-5218-AF0A-BC61FA635136 ;
+    p:P125 wds:Q574-D85ADDD7-CBF7-5DF7-BD2C-4FC4732A3036 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q295 ;
+    wdt:P115 <https://open-archaeo.info/post/cleanc14/> ;
+    wdt:P116 "cleanc14" ;
+    wdt:P117 wd:Q140 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "cleanc14"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/joeroe/cleanc14> .
+
+wds:Q574-0B1217B6-5C71-5248-B872-9C74B604DF54
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P106 wd:Q110 .
+
+wds:Q574-1BC1D48F-A5F9-5DB9-BBAB-14A911113563
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "cleanc14" .
+
+wds:Q574-3B50C78D-1B0B-51AA-9C42-7B92ED34E9A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P115 <https://open-archaeo.info/post/cleanc14/> .
+
+wds:Q574-6C3951EA-3A97-57AE-A481-07148C9F457C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P119 "cleanc14"@en .
+
+wds:Q574-41D2C219-584E-5D33-A6F0-816434BF1003
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q295 .
+
+wds:Q574-80E70449-FE96-5758-8A08-E90FE577682F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P2 wd:Q103 .
+
+wds:Q574-A36085ED-A052-5019-BDD7-34790AF3828A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P122 wd:Q110 .
+
+wds:Q574-C07A4FA0-B119-5BF3-9446-C9AC6846E1EE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P2 wd:Q106 .
+
+wds:Q574-CAC38DCD-84A4-5C4B-A2C1-FCFE71B617D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P118 wd:Q108 .
+
+wds:Q574-D85ADDD7-CBF7-5DF7-BD2C-4FC4732A3036
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    pq:P104 "2021-05-04T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-joeroe-cleanc14_-_2021-05-04_08-45-08> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:59eb5be88f7087f0976fb7b1e11fd285 ;
+    ps:P125 <https://github.com/joeroe/cleanc14> .
+
+wds:Q574-DE260FA2-A315-5745-92C2-C563E03CD9BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P122 wd:Q109 .
+
+wds:Q574-F2D68D44-3AD5-5472-BC26-A7A10A5BB320
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P117 wd:Q140 .
+
+wds:Q574-FD40E400-B715-5218-AF0A-BC61FA635136
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320 ;
+    ps:P123 wd:Q111 .
+
+wdref:c17b5ece5e7eaf75bcb9633b7c3088a2d8e16320
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/cleanc14/> .
+
+wdv:59eb5be88f7087f0976fb7b1e11fd285
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-05-04T00:00:00Z"^^xsd:dateTime .

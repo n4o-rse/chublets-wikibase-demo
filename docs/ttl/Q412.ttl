@@ -1,0 +1,225 @@
+# Q412: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q412
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Allen relations from Bayesian calibration: R function to compare two indefinite intervals produced by a Bayesian calibration using the Allen algebra."@en ;
+    dcterms:identifier "Q412" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q412 ;
+    dcterms:title "allen-relations"@en ;
+    schema:about wd:Q412 ;
+    dcat:distribution dist:Q412-html,
+        dist:Q412-json,
+        dist:Q412-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q412.html> .
+
+dist:Q412-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q412, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q412.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q412-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q412, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16432"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q412.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q412-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q412, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q412.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q412
+    a wikibase:Item ;
+    schema:description "Allen relations from Bayesian calibration: R function to compare two indefinite intervals produced by a Bayesian calibration using the Allen algebra."@en ;
+    schema:name "allen-relations"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "allen-relations"@en ;
+    skos:prefLabel "allen-relations"@en ;
+    p:P2 wds:Q412-5DD61864-980F-59F1-83CD-6A400F85CD01,
+        wds:Q412-2225AEFF-FC22-564B-8CCD-E14F70B59907 ;
+    p:P106 wds:Q412-45F0E1DA-3BA8-51C7-A538-4358DB5337EA ;
+    p:P110 wds:Q412-115226CB-665E-5F9A-8563-193FE33F90A0 ;
+    p:P113 wds:Q412-658740B7-1830-58FD-B8AD-60360A4D59D9 ;
+    p:P115 wds:Q412-3D2D20DB-0A47-5F21-9983-FC73886EBDC5 ;
+    p:P116 wds:Q412-D0FB1079-91FC-5DB7-84D8-1926E23697D2 ;
+    p:P117 wds:Q412-5FAAF11F-62BA-5673-BF3C-B0A578B617C9 ;
+    p:P118 wds:Q412-4FFF1A01-5826-50F8-AEE1-B0D4571EBA6C ;
+    p:P119 wds:Q412-E9E2B3D0-9AC4-522A-8663-85520A5AB512 ;
+    p:P122 wds:Q412-A8CD3483-45E1-530B-9A2B-EE0286961BC9,
+        wds:Q412-C27F845E-773D-5F07-9776-10A3C49C77AD ;
+    p:P123 wds:Q412-A31BEFC6-3665-5918-AD2C-153FC6826E4E ;
+    p:P125 wds:Q412-94F7E61B-B18D-5C26-BAB7-B9E06AD4C6BF ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P110 <http://tsdye.online/tsdye/posts/allen-relations/> ;
+    wdt:P113 wd:Q308 ;
+    wdt:P115 <https://open-archaeo.info/post/allen-relations/> ;
+    wdt:P116 "allen-relations" ;
+    wdt:P117 wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "allen-relations"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/tsdye/allen-relations> .
+
+wds:Q412-3D2D20DB-0A47-5F21-9983-FC73886EBDC5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P115 <https://open-archaeo.info/post/allen-relations/> .
+
+wds:Q412-4FFF1A01-5826-50F8-AEE1-B0D4571EBA6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P118 wd:Q108 .
+
+wds:Q412-5DD61864-980F-59F1-83CD-6A400F85CD01
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P2 wd:Q103 .
+
+wds:Q412-5FAAF11F-62BA-5673-BF3C-B0A578B617C9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P117 wd:Q126 .
+
+wds:Q412-45F0E1DA-3BA8-51C7-A538-4358DB5337EA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P106 wd:Q110 .
+
+wds:Q412-94F7E61B-B18D-5C26-BAB7-B9E06AD4C6BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    pq:P104 "2019-07-07T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-tsdye-allen-relations_-_2019-07-07_02-55-15> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:7a85228edf09d5eb7996266870d5bec7 ;
+    ps:P125 <https://github.com/tsdye/allen-relations> .
+
+wds:Q412-2225AEFF-FC22-564B-8CCD-E14F70B59907
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P2 wd:Q106 .
+
+wds:Q412-115226CB-665E-5F9A-8563-193FE33F90A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P110 <http://tsdye.online/tsdye/posts/allen-relations/> .
+
+wds:Q412-658740B7-1830-58FD-B8AD-60360A4D59D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q308 .
+
+wds:Q412-A8CD3483-45E1-530B-9A2B-EE0286961BC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P122 wd:Q110 .
+
+wds:Q412-A31BEFC6-3665-5918-AD2C-153FC6826E4E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P123 wd:Q111 .
+
+wds:Q412-C27F845E-773D-5F07-9776-10A3C49C77AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P122 wd:Q109 .
+
+wds:Q412-D0FB1079-91FC-5DB7-84D8-1926E23697D2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "allen-relations" .
+
+wds:Q412-E9E2B3D0-9AC4-522A-8663-85520A5AB512
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4 ;
+    ps:P119 "allen-relations"@en .
+
+wdref:4bf5b7ab8b3d6809c88800e90d8e13b03a1697a4
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/allen-relations/> .
+
+wdv:7a85228edf09d5eb7996266870d5bec7
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-07-07T00:00:00Z"^^xsd:dateTime .

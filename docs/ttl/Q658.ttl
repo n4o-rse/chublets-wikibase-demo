@@ -1,0 +1,215 @@
+# Q658: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q658
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "This simulation tool aims to help students and researchers to start to see what pollen looks like under the microscope, and start to identify common pollen grains."@en ;
+    dcterms:identifier "Q658" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q658 ;
+    dcterms:title "pollencount"@en ;
+    schema:about wd:Q658 ;
+    dcat:distribution dist:Q658-html,
+        dist:Q658-json,
+        dist:Q658-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q658.html> .
+
+dist:Q658-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q658, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q658.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q658-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q658, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15507"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q658.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q658-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q658, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q658.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q658
+    a wikibase:Item ;
+    schema:description "This simulation tool aims to help students and researchers to start to see what pollen looks like under the microscope, and start to identify common pollen grains."@en ;
+    schema:name "pollencount"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "pollencount"@en ;
+    skos:prefLabel "pollencount"@en ;
+    p:P2 wds:Q658-45DD472B-DCEB-5EBA-912D-59840F34E97D,
+        wds:Q658-11007FBC-4CDD-5FE2-BC9D-9E55579C6C92 ;
+    p:P106 wds:Q658-2CA78490-9520-5ED0-BE97-EC92CA3408E0 ;
+    p:P113 wds:Q658-048DC043-9BC7-5A10-8985-CCFAFF8D41CA ;
+    p:P115 wds:Q658-C7D3A808-CF91-53CB-B1E7-CEE16E8A2E45 ;
+    p:P116 wds:Q658-FBF19355-653F-5886-A0DA-2B9518731F2D ;
+    p:P117 wds:Q658-5B13A8B4-08F5-5BBF-BE27-C55FFDD69952,
+        wds:Q658-A848670C-9AF8-5050-8C7E-9DA700F1940A ;
+    p:P118 wds:Q658-C05AEAB4-7B50-5431-90AD-5B26BBB491E3 ;
+    p:P119 wds:Q658-EC23C655-5947-5A8A-8CD6-C4F8C08CF67C ;
+    p:P122 wds:Q658-02B14950-2678-5FC7-9C20-266172759C52,
+        wds:Q658-91D86989-34F5-5F46-816C-B575BDC2732D ;
+    p:P123 wds:Q658-5B49BE6A-8F0D-52E4-A0A2-968AC8E1AF50 ;
+    p:P125 wds:Q658-03627577-2928-5365-90C7-39AABED2F0C6 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q162 ;
+    wdt:P115 <https://open-archaeo.info/post/pollencount/> ;
+    wdt:P116 "pollencount" ;
+    wdt:P117 wd:Q112,
+        wd:Q164 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "pollencount"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/Maarten14C/pollencount> .
+
+wds:Q658-02B14950-2678-5FC7-9C20-266172759C52
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P122 wd:Q109 .
+
+wds:Q658-2CA78490-9520-5ED0-BE97-EC92CA3408E0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P106 wd:Q110 .
+
+wds:Q658-5B13A8B4-08F5-5BBF-BE27-C55FFDD69952
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P117 wd:Q112 .
+
+wds:Q658-5B49BE6A-8F0D-52E4-A0A2-968AC8E1AF50
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P123 wd:Q111 .
+
+wds:Q658-45DD472B-DCEB-5EBA-912D-59840F34E97D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P2 wd:Q106 .
+
+wds:Q658-048DC043-9BC7-5A10-8985-CCFAFF8D41CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q162 .
+
+wds:Q658-91D86989-34F5-5F46-816C-B575BDC2732D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P122 wd:Q110 .
+
+wds:Q658-11007FBC-4CDD-5FE2-BC9D-9E55579C6C92
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P2 wd:Q103 .
+
+wds:Q658-03627577-2928-5365-90C7-39AABED2F0C6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/Maarten14C/pollencount> .
+
+wds:Q658-A848670C-9AF8-5050-8C7E-9DA700F1940A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P117 wd:Q164 .
+
+wds:Q658-C05AEAB4-7B50-5431-90AD-5B26BBB491E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P118 wd:Q108 .
+
+wds:Q658-C7D3A808-CF91-53CB-B1E7-CEE16E8A2E45
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P115 <https://open-archaeo.info/post/pollencount/> .
+
+wds:Q658-EC23C655-5947-5A8A-8CD6-C4F8C08CF67C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    ps:P119 "pollencount"@en .
+
+wds:Q658-FBF19355-653F-5886-A0DA-2B9518731F2D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "pollencount" .
+
+wdref:05b5ebb410f1cacc3e77777e16c2c2a78e0e72d2
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/pollencount/> .

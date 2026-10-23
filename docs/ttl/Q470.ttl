@@ -1,0 +1,264 @@
+# Q470: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q470
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Performs the Splitting-Coalescence-Estimation Method to model birth seasonality in studies of herd animals."@en ;
+    dcterms:identifier "Q470" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q470 ;
+    dcterms:title "SCEM"@en ;
+    schema:about wd:Q470 ;
+    dcat:distribution dist:Q470-html,
+        dist:Q470-json,
+        dist:Q470-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q470.html> .
+
+dist:Q470-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q470, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q470.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q470-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q470, as archived from the Wikibase API"@en ;
+    dcat:byteSize "21576"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q470.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q470-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q470, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q470.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q470
+    a wikibase:Item ;
+    schema:description "Performs the Splitting-Coalescence-Estimation Method to model birth seasonality in studies of herd animals."@en ;
+    schema:name "SCEM"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "19"^^xsd:integer ;
+    rdfs:label "SCEM"@en ;
+    skos:prefLabel "SCEM"@en ;
+    p:P2 wds:Q470-100D37D2-3311-5B0C-9C26-83D6BFE340E8,
+        wds:Q470-7297D902-37C5-5411-85CB-0D9299FC7F60 ;
+    p:P106 wds:Q470-B54D2A97-EF70-5BBD-AD6A-1B60EB3BCF5C ;
+    p:P108 wds:Q470-063D53FA-1C5E-5A66-814E-6F9CADB612B1 ;
+    p:P113 wds:Q470-9C7FFCBE-4120-525F-9E3E-176F569532CE,
+        wds:Q470-56BC8880-9560-52D2-AE29-3FB56F4FC519,
+        wds:Q470-614E6579-1B3D-5EA2-B6B2-D40F5EF2906C,
+        wds:Q470-3188AEB6-6C34-5DF5-996B-CB1D073553B8,
+        wds:Q470-F94B2EFA-BE10-5A55-969B-F9B2C6D23576 ;
+    p:P115 wds:Q470-C5B208C2-20B7-55C1-BCAD-754D68A10AB2 ;
+    p:P116 wds:Q470-3980E2AE-B9FA-58AA-AA4A-678E774829D9 ;
+    p:P117 wds:Q470-2EC0B480-CC3B-520E-8262-16BA7A4817F3,
+        wds:Q470-69A3C552-B1CF-521D-AEC5-92C8ECEBA3DF ;
+    p:P118 wds:Q470-2728E212-3880-5CB1-BB88-9603F2A589C8 ;
+    p:P119 wds:Q470-1F2CABDB-4E29-541C-ACC5-3C4CFA0BA38E ;
+    p:P122 wds:Q470-1F5C8E9D-12BC-54D1-8903-5B578A9ABC33,
+        wds:Q470-823BFE43-7791-5BE0-9D32-FED28E9C988C ;
+    p:P123 wds:Q470-EA99A00F-9E49-5E81-B550-3B17F2012C2D ;
+    p:P125 wds:Q470-35EB81BA-DF16-5D56-A68A-EF156E976F35 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "SCEM" ;
+    wdt:P113 wd:Q471,
+        wd:Q472,
+        wd:Q473,
+        wd:Q474,
+        wd:Q475 ;
+    wdt:P115 <https://open-archaeo.info/post/scem/> ;
+    wdt:P116 "scem" ;
+    wdt:P117 wd:Q175,
+        wd:Q244 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "SCEM"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/kserkcho/SCEM> .
+
+wds:Q470-1F2CABDB-4E29-541C-ACC5-3C4CFA0BA38E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P119 "SCEM"@en .
+
+wds:Q470-1F5C8E9D-12BC-54D1-8903-5B578A9ABC33
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P122 wd:Q109 .
+
+wds:Q470-2EC0B480-CC3B-520E-8262-16BA7A4817F3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P117 wd:Q244 .
+
+wds:Q470-9C7FFCBE-4120-525F-9E3E-176F569532CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P146 "3" ;
+    ps:P113 wd:Q473 .
+
+wds:Q470-35EB81BA-DF16-5D56-A68A-EF156E976F35
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/kserkcho/SCEM> .
+
+wds:Q470-56BC8880-9560-52D2-AE29-3FB56F4FC519
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q471 .
+
+wds:Q470-063D53FA-1C5E-5A66-814E-6F9CADB612B1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P108 "SCEM" .
+
+wds:Q470-69A3C552-B1CF-521D-AEC5-92C8ECEBA3DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P117 wd:Q175 .
+
+wds:Q470-100D37D2-3311-5B0C-9C26-83D6BFE340E8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P2 wd:Q103 .
+
+wds:Q470-614E6579-1B3D-5EA2-B6B2-D40F5EF2906C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P146 "5" ;
+    ps:P113 wd:Q475 .
+
+wds:Q470-823BFE43-7791-5BE0-9D32-FED28E9C988C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P122 wd:Q110 .
+
+wds:Q470-2728E212-3880-5CB1-BB88-9603F2A589C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P118 wd:Q108 .
+
+wds:Q470-3188AEB6-6C34-5DF5-996B-CB1D073553B8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q472 .
+
+wds:Q470-3980E2AE-B9FA-58AA-AA4A-678E774829D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "scem" .
+
+wds:Q470-7297D902-37C5-5411-85CB-0D9299FC7F60
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P2 wd:Q106 .
+
+wds:Q470-B54D2A97-EF70-5BBD-AD6A-1B60EB3BCF5C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P106 wd:Q110 .
+
+wds:Q470-C5B208C2-20B7-55C1-BCAD-754D68A10AB2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P115 <https://open-archaeo.info/post/scem/> .
+
+wds:Q470-EA99A00F-9E49-5E81-B550-3B17F2012C2D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    ps:P123 wd:Q111 .
+
+wds:Q470-F94B2EFA-BE10-5A55-969B-F9B2C6D23576
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7330bace6265cb02327f92d4533a615bbc5801b2 ;
+    pq:P146 "4" ;
+    ps:P113 wd:Q474 .
+
+wdref:7330bace6265cb02327f92d4533a615bbc5801b2
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/scem/> .

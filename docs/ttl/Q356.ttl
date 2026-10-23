@@ -1,5 +1,5 @@
 # Q356: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q356-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q356, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1275"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1223"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q356.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -85,9 +85,9 @@ wds:Q356-9FA6AC23-627D-5BF5-8882-45C72049AA55
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    prov:wasDerivedFrom wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39 ;
     ps:P2 wd:Q3 .
 
-wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6
+wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> .
+    pr:P6 <https://open-archaeo.info/post/openlidartoolbox/> .

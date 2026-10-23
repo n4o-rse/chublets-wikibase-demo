@@ -1,0 +1,215 @@
+# Q537: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q537
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Meta guidance, tools, repositories, databases, search engines, and online resources for the exploration of Historic and Historical Maps."@en ;
+    dcterms:identifier "Q537" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q537 ;
+    dcterms:title "awesome-historical-maps"@en ;
+    schema:about wd:Q537 ;
+    dcat:distribution dist:Q537-html,
+        dist:Q537-json,
+        dist:Q537-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q537.html> .
+
+dist:Q537-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q537, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q537.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q537-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q537, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15603"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q537.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q537-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q537, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q537.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q537
+    a wikibase:Item ;
+    schema:description "Meta guidance, tools, repositories, databases, search engines, and online resources for the exploration of Historic and Historical Maps."@en ;
+    schema:name "awesome-historical-maps"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "awesome-historical-maps"@en ;
+    skos:prefLabel "awesome-historical-maps"@en ;
+    p:P2 wds:Q537-44975AE3-85E6-5432-9B27-2BFB9E63B638,
+        wds:Q537-B984D2AA-109D-5E61-86BD-3A91570D47CC ;
+    p:P106 wds:Q537-38B649E0-6409-5D0E-B921-AC2505C0ED8E ;
+    p:P113 wds:Q537-3A4E5BB2-CA07-5FED-8F57-E4CBBE2A6F16 ;
+    p:P115 wds:Q537-734F0BF1-5844-53AC-84D0-7D264C4F64CE ;
+    p:P116 wds:Q537-1C7DA525-5189-5B8C-B452-5985446E4F9A ;
+    p:P117 wds:Q537-4AC0502B-3D2C-5AD1-837A-6773B7574A1C,
+        wds:Q537-BD5A4632-D587-5266-AE42-856E265FA471 ;
+    p:P118 wds:Q537-F0CE7E78-D21A-524D-BDD3-FACF1F8F4D70 ;
+    p:P119 wds:Q537-E91D88E7-5933-546A-9F95-4C2F0417AE2C ;
+    p:P120 wds:Q537-73CAF4C3-CA39-5D29-B2CD-5561FAC45FFC ;
+    p:P122 wds:Q537-1B4721E4-45FC-5D27-9C0A-559BCAFB193C,
+        wds:Q537-A2954A6C-0BCC-5CBC-83CC-A0078454C608 ;
+    p:P125 wds:Q537-78FEE0BE-A442-5DCC-8CBA-955BD59BF866 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q539 ;
+    wdt:P115 <https://open-archaeo.info/post/awesome-historical-maps/> ;
+    wdt:P116 "awesome-historical-maps" ;
+    wdt:P117 wd:Q164,
+        wd:Q538 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "awesome-historical-maps"@en ;
+    wdt:P120 <https://historicmaps.world/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/stark1tty/awesome-historical-maps> .
+
+wds:Q537-1B4721E4-45FC-5D27-9C0A-559BCAFB193C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P122 wd:Q110 .
+
+wds:Q537-1C7DA525-5189-5B8C-B452-5985446E4F9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "awesome-historical-maps" .
+
+wds:Q537-3A4E5BB2-CA07-5FED-8F57-E4CBBE2A6F16
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q539 .
+
+wds:Q537-4AC0502B-3D2C-5AD1-837A-6773B7574A1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P117 wd:Q164 .
+
+wds:Q537-38B649E0-6409-5D0E-B921-AC2505C0ED8E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P106 wd:Q110 .
+
+wds:Q537-73CAF4C3-CA39-5D29-B2CD-5561FAC45FFC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P120 <https://historicmaps.world/> .
+
+wds:Q537-78FEE0BE-A442-5DCC-8CBA-955BD59BF866
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/stark1tty/awesome-historical-maps> .
+
+wds:Q537-734F0BF1-5844-53AC-84D0-7D264C4F64CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P115 <https://open-archaeo.info/post/awesome-historical-maps/> .
+
+wds:Q537-44975AE3-85E6-5432-9B27-2BFB9E63B638
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P2 wd:Q102 .
+
+wds:Q537-A2954A6C-0BCC-5CBC-83CC-A0078454C608
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P122 wd:Q109 .
+
+wds:Q537-B984D2AA-109D-5E61-86BD-3A91570D47CC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P2 wd:Q106 .
+
+wds:Q537-BD5A4632-D587-5266-AE42-856E265FA471
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P117 wd:Q538 .
+
+wds:Q537-E91D88E7-5933-546A-9F95-4C2F0417AE2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P119 "awesome-historical-maps"@en .
+
+wds:Q537-F0CE7E78-D21A-524D-BDD3-FACF1F8F4D70
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739 ;
+    ps:P118 wd:Q108 .
+
+wdref:2e57bc8229b0db65e66792c11ccdbea7f1fd5739
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/awesome-historical-maps/> .

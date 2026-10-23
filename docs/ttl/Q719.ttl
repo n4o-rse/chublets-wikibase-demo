@@ -1,0 +1,225 @@
+# Q719: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q719
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "The zooarchgui package provides a graphical user interface (gui) to analytical tools for zooarchaeological data in the r package."@en ;
+    dcterms:identifier "Q719" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q719 ;
+    dcterms:title "zooaRchGUI"@en ;
+    schema:about wd:Q719 ;
+    dcat:distribution dist:Q719-html,
+        dist:Q719-json,
+        dist:Q719-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q719.html> .
+
+dist:Q719-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q719, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q719.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q719-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q719, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16300"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q719.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q719-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q719, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q719.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q719
+    a wikibase:Item ;
+    schema:description "The zooarchgui package provides a graphical user interface (gui) to analytical tools for zooarchaeological data in the r package."@en ;
+    schema:name "zooaRchGUI"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "zooaRchGUI"@en ;
+    skos:prefLabel "zooaRchGUI"@en ;
+    p:P2 wds:Q719-0C5A15EE-D45E-5389-83F8-61B50CF4CD18,
+        wds:Q719-86F8B5D4-4CD6-5BF6-9059-D41F8E5D621B ;
+    p:P106 wds:Q719-CD7A3225-78F7-509A-B038-6F7EE49B08B0 ;
+    p:P113 wds:Q719-0D69CE8D-32AB-5AF0-B7A2-8F569A73286E ;
+    p:P115 wds:Q719-C65FFA3E-0379-5C20-B67C-157EAA7D438F ;
+    p:P116 wds:Q719-C3D3AB19-6F8F-5DFD-8FC4-A98844AB683B ;
+    p:P117 wds:Q719-14A9D399-6F7C-59E4-A67B-09D5C43B250B ;
+    p:P118 wds:Q719-7F878199-7329-550B-9596-45ED024B3960 ;
+    p:P119 wds:Q719-BF347C1B-4044-56A1-8A91-C541B5FE0FFF ;
+    p:P120 wds:Q719-FECA3776-E804-5FEA-8B05-3FED9FB765D0 ;
+    p:P122 wds:Q719-5AD4A9E7-2843-59B1-B18A-96553B6A78EC,
+        wds:Q719-31185FCE-A905-5B23-9B2F-D402CBCB8249 ;
+    p:P123 wds:Q719-9ADFD531-53A7-5434-87E6-5DF1FEED9C01 ;
+    p:P125 wds:Q719-276D1873-3AE9-5447-A8D4-446E0F85DF69 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q720 ;
+    wdt:P115 <https://open-archaeo.info/post/zooarchgui/> ;
+    wdt:P116 "zooarchgui" ;
+    wdt:P117 wd:Q175 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "zooaRchGUI"@en ;
+    wdt:P120 <http://www.zooarchgui.org/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/zooaRchGUI/zooaRchGUI> .
+
+wds:Q719-0C5A15EE-D45E-5389-83F8-61B50CF4CD18
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P2 wd:Q103 .
+
+wds:Q719-0D69CE8D-32AB-5AF0-B7A2-8F569A73286E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q720 .
+
+wds:Q719-5AD4A9E7-2843-59B1-B18A-96553B6A78EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P122 wd:Q110 .
+
+wds:Q719-7F878199-7329-550B-9596-45ED024B3960
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P118 wd:Q108 .
+
+wds:Q719-9ADFD531-53A7-5434-87E6-5DF1FEED9C01
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P123 wd:Q111 .
+
+wds:Q719-14A9D399-6F7C-59E4-A67B-09D5C43B250B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P117 wd:Q175 .
+
+wds:Q719-86F8B5D4-4CD6-5BF6-9059-D41F8E5D621B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P2 wd:Q106 .
+
+wds:Q719-276D1873-3AE9-5447-A8D4-446E0F85DF69
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    pq:P104 "2019-05-20T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-zooaRchGUI-zooaRchGUI_-_2019-05-20_20-51-27> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:1a03c75ca17ec463531f51fe438e9d5b ;
+    ps:P125 <https://github.com/zooaRchGUI/zooaRchGUI> .
+
+wds:Q719-31185FCE-A905-5B23-9B2F-D402CBCB8249
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P122 wd:Q109 .
+
+wds:Q719-BF347C1B-4044-56A1-8A91-C541B5FE0FFF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P119 "zooaRchGUI"@en .
+
+wds:Q719-C3D3AB19-6F8F-5DFD-8FC4-A98844AB683B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "zooarchgui" .
+
+wds:Q719-C65FFA3E-0379-5C20-B67C-157EAA7D438F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P115 <https://open-archaeo.info/post/zooarchgui/> .
+
+wds:Q719-CD7A3225-78F7-509A-B038-6F7EE49B08B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P106 wd:Q110 .
+
+wds:Q719-FECA3776-E804-5FEA-8B05-3FED9FB765D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:63bc41adfb29128ee6c6962937ba2711b4950032 ;
+    ps:P120 <http://www.zooarchgui.org/> .
+
+wdref:63bc41adfb29128ee6c6962937ba2711b4950032
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/zooarchgui/> .
+
+wdv:1a03c75ca17ec463531f51fe438e9d5b
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2019-05-20T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,207 @@
+# Q399: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q399
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Android apps for archaeology that enable photography during field work."@en ;
+    dcterms:identifier "Q399" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q399 ;
+    dcterms:title "field-photographs"@en ;
+    schema:about wd:Q399 ;
+    dcat:distribution dist:Q399-html,
+        dist:Q399-json,
+        dist:Q399-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q399.html> .
+
+dist:Q399-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q399, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q399.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q399-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q399, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14461"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q399.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q399-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q399, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q399.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q399
+    a wikibase:Item ;
+    schema:description "Android apps for archaeology that enable photography during field work."@en ;
+    schema:name "field-photographs"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "field-photographs"@en ;
+    skos:prefLabel "field-photographs"@en ;
+    p:P2 wds:Q399-58F4257C-0C32-52BD-9727-D687B70AD70C,
+        wds:Q399-D7780E8A-DE5C-52EA-A8D0-B2D45B8A9B9B ;
+    p:P106 wds:Q399-962E8D76-A7C6-5F35-B3F3-BB58C8568CDB ;
+    p:P113 wds:Q399-DD81E256-AE66-538F-ABEF-1D4C8D2760F7 ;
+    p:P115 wds:Q399-632D4991-BC52-5668-8EEF-0DCD4C5DD3A8 ;
+    p:P116 wds:Q399-E05B9B37-AA87-55A8-8D5B-CA0E9FD1BEF0 ;
+    p:P117 wds:Q399-60B12260-73A0-50AD-A6FA-D8798F99FBFE ;
+    p:P118 wds:Q399-7E62DDE0-4D30-56A0-8B2A-66AB98A24844 ;
+    p:P119 wds:Q399-5AA206A8-61DF-5F3A-98C5-74E0CDAF4A39 ;
+    p:P122 wds:Q399-67F61391-8EBF-55AD-AA5A-E57F6332BBB5,
+        wds:Q399-F3CC1B83-378C-563D-8DEF-B5D5C644BDAA ;
+    p:P125 wds:Q399-F9F4F1AD-DDA3-5948-8B6E-EBE39B62A8BE ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q130 ;
+    wdt:P115 <https://open-archaeo.info/post/field-photographs/> ;
+    wdt:P116 "field-photographs" ;
+    wdt:P117 wd:Q136 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "field-photographs"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/anatolian/field-photographs> .
+
+wds:Q399-5AA206A8-61DF-5F3A-98C5-74E0CDAF4A39
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P119 "field-photographs"@en .
+
+wds:Q399-7E62DDE0-4D30-56A0-8B2A-66AB98A24844
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P118 wd:Q108 .
+
+wds:Q399-58F4257C-0C32-52BD-9727-D687B70AD70C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P2 wd:Q106 .
+
+wds:Q399-60B12260-73A0-50AD-A6FA-D8798F99FBFE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P117 wd:Q136 .
+
+wds:Q399-67F61391-8EBF-55AD-AA5A-E57F6332BBB5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P122 wd:Q109 .
+
+wds:Q399-632D4991-BC52-5668-8EEF-0DCD4C5DD3A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P115 <https://open-archaeo.info/post/field-photographs/> .
+
+wds:Q399-962E8D76-A7C6-5F35-B3F3-BB58C8568CDB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P106 wd:Q110 .
+
+wds:Q399-D7780E8A-DE5C-52EA-A8D0-B2D45B8A9B9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P2 wd:Q103 .
+
+wds:Q399-DD81E256-AE66-538F-ABEF-1D4C8D2760F7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q130 .
+
+wds:Q399-E05B9B37-AA87-55A8-8D5B-CA0E9FD1BEF0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "field-photographs" .
+
+wds:Q399-F3CC1B83-378C-563D-8DEF-B5D5C644BDAA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    ps:P122 wd:Q110 .
+
+wds:Q399-F9F4F1AD-DDA3-5948-8B6E-EBE39B62A8BE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:149d646cea3ca469363f66d148d2e8f66184264c ;
+    pq:P104 "2016-03-06T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-anatolian-field-photographs_-_2016-03-06_19-58-32> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:95c23f47bd3f6f7aa99e267d086e4ca2 ;
+    ps:P125 <https://github.com/anatolian/field-photographs> .
+
+wdref:149d646cea3ca469363f66d148d2e8f66184264c
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/field-photographs/> .
+
+wdv:95c23f47bd3f6f7aa99e267d086e4ca2
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2016-03-06T00:00:00Z"^^xsd:dateTime .

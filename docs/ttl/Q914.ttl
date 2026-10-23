@@ -1,0 +1,196 @@
+# Q914: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q914
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Fiche stratigraphique numerique (fsn) is an application project for field recording and management of archaeological operations data."@en ;
+    dcterms:identifier "Q914" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q914 ;
+    dcterms:title "Fiche Stratigraphique Numérique (FSN)"@en ;
+    schema:about wd:Q914 ;
+    dcat:distribution dist:Q914-html,
+        dist:Q914-json,
+        dist:Q914-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q914.html> .
+
+dist:Q914-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q914, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q914.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q914-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q914, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13496"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q914.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q914-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q914, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q914.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q914
+    a wikibase:Item ;
+    schema:description "Fiche stratigraphique numerique (fsn) is an application project for field recording and management of archaeological operations data."@en ;
+    schema:name "Fiche Stratigraphique Numérique (FSN)"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "Fiche Stratigraphique Numérique (FSN)"@en ;
+    skos:prefLabel "Fiche Stratigraphique Numérique (FSN)"@en ;
+    p:P2 wds:Q914-8A9919BA-839E-5097-B38E-79BA9D5BA9D0,
+        wds:Q914-C91CA874-E970-56F1-BC3F-7C287F9976C0 ;
+    p:P106 wds:Q914-35F02DC0-0585-554A-8294-FF777BBCF67A ;
+    p:P113 wds:Q914-960DCDB2-03AD-5A8C-8EEE-70E9540CB38B ;
+    p:P115 wds:Q914-66A9A728-49E3-57E0-89A9-194CD567E07F ;
+    p:P116 wds:Q914-29AA17FA-DF26-506B-8903-725807C846AB ;
+    p:P117 wds:Q914-9F17BFC4-6CC6-5791-84B3-B8B9BE2E6917 ;
+    p:P118 wds:Q914-71A63B2B-C3E4-58EE-83CF-E2A09D9AB7AE ;
+    p:P119 wds:Q914-1423098B-65E7-54CA-B3F3-9C5D768D9C07 ;
+    p:P120 wds:Q914-6C7B386B-4D43-5244-B8A5-8D56371DA9E1 ;
+    p:P122 wds:Q914-B9C41868-FDB3-54DC-A2F9-D80F5B5C1A19,
+        wds:Q914-F8D85F93-FB85-5B3F-8FB6-366B5FB464AD ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q262 ;
+    wdt:P115 <https://open-archaeo.info/post/fiche-stratigraphique-num%C3%A9rique-fsn/> ;
+    wdt:P116 "fiche-stratigraphique-numérique-fsn" ;
+    wdt:P117 wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Fiche Stratigraphique Numérique (FSN)"@en ;
+    wdt:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/fsn> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 .
+
+wds:Q914-6C7B386B-4D43-5244-B8A5-8D56371DA9E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/fsn> .
+
+wds:Q914-8A9919BA-839E-5097-B38E-79BA9D5BA9D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P2 wd:Q102 .
+
+wds:Q914-9F17BFC4-6CC6-5791-84B3-B8B9BE2E6917
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P117 wd:Q148 .
+
+wds:Q914-29AA17FA-DF26-506B-8903-725807C846AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "fiche-stratigraphique-numérique-fsn" .
+
+wds:Q914-35F02DC0-0585-554A-8294-FF777BBCF67A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P106 wd:Q110 .
+
+wds:Q914-66A9A728-49E3-57E0-89A9-194CD567E07F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P115 <https://open-archaeo.info/post/fiche-stratigraphique-num%C3%A9rique-fsn/> .
+
+wds:Q914-71A63B2B-C3E4-58EE-83CF-E2A09D9AB7AE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P118 wd:Q108 .
+
+wds:Q914-960DCDB2-03AD-5A8C-8EEE-70E9540CB38B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q262 .
+
+wds:Q914-1423098B-65E7-54CA-B3F3-9C5D768D9C07
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P119 "Fiche Stratigraphique Numérique (FSN)"@en .
+
+wds:Q914-B9C41868-FDB3-54DC-A2F9-D80F5B5C1A19
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P122 wd:Q109 .
+
+wds:Q914-C91CA874-E970-56F1-BC3F-7C287F9976C0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P2 wd:Q106 .
+
+wds:Q914-F8D85F93-FB85-5B3F-8FB6-366B5FB464AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8 ;
+    ps:P122 wd:Q110 .
+
+wdref:0df7c68577e1b69bf23f08d1a016be2da96416d8
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/fiche-stratigraphique-num%C3%A9rique-fsn/> .

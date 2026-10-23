@@ -1,5 +1,5 @@
 # Q361: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -60,7 +60,7 @@ dist:Q361-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q361, as archived from the Wikibase API"@en ;
-    dcat:byteSize "34982"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "35455"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q361.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -77,10 +77,11 @@ wd:Q361
     schema:description "The plugin profileAAR transforms profile control points for fotogrammetric rectification of section images of archaeological excavations."@en ;
     schema:name "profileAAR"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "11"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
     rdfs:label "profileAAR"@en ;
     skos:prefLabel "profileAAR"@en ;
     p:P2 wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491,
+        wds:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5,
         wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291,
         wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA,
         wds:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1 ;
@@ -93,6 +94,7 @@ wd:Q361
         wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1 ;
     wdt:P2 wd:Q100,
         wd:Q105,
+        wd:Q106,
         wd:Q372,
         wd:Q379 ;
     wdt:P4 "Q74823867" ;
@@ -116,6 +118,12 @@ wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5
     pq:P153 wd:Q375 ;
     pqv:P144 wdv:3c33c427e8a3a1a021169f9eec5fb712 ;
     ps:P148 "2.0.3" .
+
+wds:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291
     a wikibase:BestRank,

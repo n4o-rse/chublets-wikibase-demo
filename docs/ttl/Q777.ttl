@@ -1,0 +1,215 @@
+# Q777: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q777
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Tools for chronological uncertainty propagation."@en ;
+    dcterms:identifier "Q777" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q777 ;
+    dcterms:title "chronup"@en ;
+    schema:about wd:Q777 ;
+    dcat:distribution dist:Q777-html,
+        dist:Q777-json,
+        dist:Q777-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q777.html> .
+
+dist:Q777-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q777, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q777.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q777-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q777, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15316"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q777.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q777-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q777, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q777.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q777
+    a wikibase:Item ;
+    schema:description "Tools for chronological uncertainty propagation."@en ;
+    schema:name "chronup"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "chronup"@en ;
+    skos:prefLabel "chronup"@en ;
+    p:P2 wds:Q777-00ED0EB5-C29F-5570-8866-FC2FE5B1C84D,
+        wds:Q777-87E1067D-1BA6-5E56-9792-728CC4B88A3B ;
+    p:P106 wds:Q777-8D513F29-0D73-5ECA-99B9-2488FAF47A20 ;
+    p:P113 wds:Q777-8D717D7F-D7EA-5C8C-8984-69B88F42D288 ;
+    p:P115 wds:Q777-EAA49672-79DB-5415-9F3C-BCE613D8A871 ;
+    p:P116 wds:Q777-26B6D00B-1C85-536B-941E-C555F74900D5 ;
+    p:P117 wds:Q777-4EABA4C5-F247-524B-81E4-0F53F56D93DF,
+        wds:Q777-8E6C3D43-5826-5B4E-9C88-311F6B41D145 ;
+    p:P118 wds:Q777-B380F14E-290E-5220-81DA-E283D878B861 ;
+    p:P119 wds:Q777-65B8A3F7-14BE-5093-8295-83AF1F375D8F ;
+    p:P122 wds:Q777-6D7CCAA2-14DF-59D6-B56E-6D5677585163,
+        wds:Q777-9046E40B-A428-5250-928C-0A7C738C6ED7 ;
+    p:P123 wds:Q777-84CB1C5E-AC84-5428-9A93-C37FCF010024 ;
+    p:P125 wds:Q777-86A7C04A-F071-5BA7-9310-05EEA60A8BB6 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q224 ;
+    wdt:P115 <https://open-archaeo.info/post/chronup/> ;
+    wdt:P116 "chronup" ;
+    wdt:P117 wd:Q116,
+        wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "chronup"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/wccarleton/chronup> .
+
+wds:Q777-00ED0EB5-C29F-5570-8866-FC2FE5B1C84D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P2 wd:Q103 .
+
+wds:Q777-4EABA4C5-F247-524B-81E4-0F53F56D93DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P117 wd:Q116 .
+
+wds:Q777-6D7CCAA2-14DF-59D6-B56E-6D5677585163
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P122 wd:Q109 .
+
+wds:Q777-8D513F29-0D73-5ECA-99B9-2488FAF47A20
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P106 wd:Q110 .
+
+wds:Q777-8D717D7F-D7EA-5C8C-8984-69B88F42D288
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q224 .
+
+wds:Q777-8E6C3D43-5826-5B4E-9C88-311F6B41D145
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P117 wd:Q126 .
+
+wds:Q777-26B6D00B-1C85-536B-941E-C555F74900D5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "chronup" .
+
+wds:Q777-65B8A3F7-14BE-5093-8295-83AF1F375D8F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P119 "chronup"@en .
+
+wds:Q777-84CB1C5E-AC84-5428-9A93-C37FCF010024
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P123 wd:Q111 .
+
+wds:Q777-86A7C04A-F071-5BA7-9310-05EEA60A8BB6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/wccarleton/chronup> .
+
+wds:Q777-87E1067D-1BA6-5E56-9792-728CC4B88A3B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P2 wd:Q106 .
+
+wds:Q777-9046E40B-A428-5250-928C-0A7C738C6ED7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P122 wd:Q110 .
+
+wds:Q777-B380F14E-290E-5220-81DA-E283D878B861
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P118 wd:Q108 .
+
+wds:Q777-EAA49672-79DB-5415-9F3C-BCE613D8A871
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0 ;
+    ps:P115 <https://open-archaeo.info/post/chronup/> .
+
+wdref:d85aee9a37fc3f94c2582e941727bfe1cfb115c0
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/chronup/> .

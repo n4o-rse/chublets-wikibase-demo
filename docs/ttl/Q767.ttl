@@ -1,0 +1,224 @@
+# Q767: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q767
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Provides a Bayesian inferential tool for analysing time-frequencies of archaeological events associated with time spans typically obtained from relative chronological sequences (e.g. periods and phases)."@en ;
+    dcterms:identifier "Q767" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q767 ;
+    dcterms:title "baorista"@en ;
+    schema:about wd:Q767 ;
+    dcat:distribution dist:Q767-html,
+        dist:Q767-json,
+        dist:Q767-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q767.html> .
+
+dist:Q767-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q767, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q767.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q767-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q767, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16490"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q767.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q767-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q767, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q767.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q767
+    a wikibase:Item ;
+    schema:description "Provides a Bayesian inferential tool for analysing time-frequencies of archaeological events associated with time spans typically obtained from relative chronological sequences (e.g. periods and phases)."@en ;
+    schema:name "baorista"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "baorista"@en ;
+    skos:prefLabel "baorista"@en ;
+    p:P2 wds:Q767-50599BBD-CF98-5B47-A9F1-133852C183C7,
+        wds:Q767-DE351BE0-B054-5435-9D6F-8EC994FDAF03 ;
+    p:P106 wds:Q767-C03897A5-B4A3-57FD-9ADF-7187DE5A725B ;
+    p:P111 wds:Q767-15865B45-9CAA-5322-95B4-E32B2EFFE28D ;
+    p:P113 wds:Q767-A4D66E52-F931-54A5-A368-7B87AFAE7657 ;
+    p:P115 wds:Q767-27456161-F744-567C-AF6A-A4D543CD135D ;
+    p:P116 wds:Q767-C46F1E17-2763-5D61-838B-B483A5E2185A ;
+    p:P117 wds:Q767-3B5708EE-98A7-57C0-9F7C-B30ABDF517C2,
+        wds:Q767-07A29D94-D0DB-5CF3-8A5F-88DF67DB54AB ;
+    p:P118 wds:Q767-4C81CB75-5663-53ED-A557-E20312004465 ;
+    p:P119 wds:Q767-468BDBD4-BB8D-53EB-B4BB-D603E2000E40 ;
+    p:P122 wds:Q767-8D313133-26AF-581F-BAC9-EF2D179042E5,
+        wds:Q767-EDA31FA3-53DA-5E84-B267-30C941646A93 ;
+    p:P123 wds:Q767-F5B957BB-0B22-5455-BFD0-DED2E098B54A ;
+    p:P125 wds:Q767-8167F961-2B05-5ACC-AE0D-DBDD2D7497B0 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P111 wd:Q768 ;
+    wdt:P113 wd:Q511 ;
+    wdt:P115 <https://open-archaeo.info/post/baorista/> ;
+    wdt:P116 "baorista" ;
+    wdt:P117 wd:Q126,
+        wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "baorista"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/ercrema/baorista> .
+
+wds:Q767-3B5708EE-98A7-57C0-9F7C-B30ABDF517C2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P117 wd:Q148 .
+
+wds:Q767-4C81CB75-5663-53ED-A557-E20312004465
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P118 wd:Q108 .
+
+wds:Q767-07A29D94-D0DB-5CF3-8A5F-88DF67DB54AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P117 wd:Q126 .
+
+wds:Q767-8D313133-26AF-581F-BAC9-EF2D179042E5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P122 wd:Q110 .
+
+wds:Q767-468BDBD4-BB8D-53EB-B4BB-D603E2000E40
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P119 "baorista"@en .
+
+wds:Q767-8167F961-2B05-5ACC-AE0D-DBDD2D7497B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/ercrema/baorista> .
+
+wds:Q767-15865B45-9CAA-5322-95B4-E32B2EFFE28D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P111 wd:Q768 .
+
+wds:Q767-50599BBD-CF98-5B47-A9F1-133852C183C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P2 wd:Q106 .
+
+wds:Q767-27456161-F744-567C-AF6A-A4D543CD135D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P115 <https://open-archaeo.info/post/baorista/> .
+
+wds:Q767-A4D66E52-F931-54A5-A368-7B87AFAE7657
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q511 .
+
+wds:Q767-C46F1E17-2763-5D61-838B-B483A5E2185A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "baorista" .
+
+wds:Q767-C03897A5-B4A3-57FD-9ADF-7187DE5A725B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P106 wd:Q110 .
+
+wds:Q767-DE351BE0-B054-5435-9D6F-8EC994FDAF03
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P2 wd:Q103 .
+
+wds:Q767-EDA31FA3-53DA-5E84-B267-30C941646A93
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P122 wd:Q109 .
+
+wds:Q767-F5B957BB-0B22-5455-BFD0-DED2E098B54A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130 ;
+    ps:P123 wd:Q111 .
+
+wdref:9b24998325cbe7ef8e0dc523e82982f7f5a65130
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/baorista/> .

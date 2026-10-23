@@ -1,0 +1,225 @@
+# Q822: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q822
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "R script for analyzing presence/absence data in irregularly distributed archaeological survey units."@en ;
+    dcterms:identifier "Q822" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q822 ;
+    dcterms:title "Near-Presence-Analysis"@en ;
+    schema:about wd:Q822 ;
+    dcat:distribution dist:Q822-html,
+        dist:Q822-json,
+        dist:Q822-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q822.html> .
+
+dist:Q822-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q822, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q822.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q822-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q822, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16598"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q822.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q822-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q822, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q822.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q822
+    a wikibase:Item ;
+    schema:description "R script for analyzing presence/absence data in irregularly distributed archaeological survey units."@en ;
+    schema:name "Near-Presence-Analysis"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "Near-Presence-Analysis"@en ;
+    skos:prefLabel "Near-Presence-Analysis"@en ;
+    p:P2 wds:Q822-9D9D5DCB-7AD4-5703-AD61-E562474C796B,
+        wds:Q822-E3ABAD9E-C42A-5081-A142-898137235D1F ;
+    p:P106 wds:Q822-1CB64B41-B969-58B2-9506-6188DCE8E2DC ;
+    p:P113 wds:Q822-F8A6E447-E30E-50DE-A93E-74EF9DB7C975 ;
+    p:P115 wds:Q822-C8416D57-B73E-5C64-80FA-B7D98F6ADD92 ;
+    p:P116 wds:Q822-8A38B161-F17A-504E-8BA5-0CA7BF14169E ;
+    p:P117 wds:Q822-E536F721-EF1D-5FCA-AB53-9B33597AD0CE,
+        wds:Q822-F1291BF9-7D3B-589C-BA46-B5D76246D1D4 ;
+    p:P118 wds:Q822-7002CD6B-F706-572F-ADB1-5963AB668411 ;
+    p:P119 wds:Q822-1D44008F-46F3-58F9-BF9B-C20F4EFBC4C9 ;
+    p:P122 wds:Q822-4EFCA3C9-D748-5BDA-A4A7-A5E51A8049D2,
+        wds:Q822-87881B9B-E45D-59CE-A291-28BE896AF135 ;
+    p:P123 wds:Q822-3EFFC062-32E8-57C5-842D-E0E52C524E15 ;
+    p:P125 wds:Q822-E497A498-2CA7-5ABF-9F0E-0D6BD74A2BAC ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q392 ;
+    wdt:P115 <https://open-archaeo.info/post/near-presence-analysis/> ;
+    wdt:P116 "near-presence-analysis" ;
+    wdt:P117 wd:Q116,
+        wd:Q119 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Near-Presence-Analysis"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/eweaverdyck/Near-Presence-Analysis> .
+
+wds:Q822-1CB64B41-B969-58B2-9506-6188DCE8E2DC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P106 wd:Q110 .
+
+wds:Q822-1D44008F-46F3-58F9-BF9B-C20F4EFBC4C9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P119 "Near-Presence-Analysis"@en .
+
+wds:Q822-3EFFC062-32E8-57C5-842D-E0E52C524E15
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P123 wd:Q111 .
+
+wds:Q822-4EFCA3C9-D748-5BDA-A4A7-A5E51A8049D2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P122 wd:Q109 .
+
+wds:Q822-8A38B161-F17A-504E-8BA5-0CA7BF14169E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "near-presence-analysis" .
+
+wds:Q822-9D9D5DCB-7AD4-5703-AD61-E562474C796B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P2 wd:Q104 .
+
+wds:Q822-7002CD6B-F706-572F-ADB1-5963AB668411
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P118 wd:Q108 .
+
+wds:Q822-87881B9B-E45D-59CE-A291-28BE896AF135
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P122 wd:Q110 .
+
+wds:Q822-C8416D57-B73E-5C64-80FA-B7D98F6ADD92
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P115 <https://open-archaeo.info/post/near-presence-analysis/> .
+
+wds:Q822-E3ABAD9E-C42A-5081-A142-898137235D1F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P2 wd:Q106 .
+
+wds:Q822-E497A498-2CA7-5ABF-9F0E-0D6BD74A2BAC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    pq:P104 "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-eweaverdyck-Near-Presence-Analysis_-_2021-06-11_19-30-34> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:cc186a7391366b1833ce947f55710546 ;
+    ps:P125 <https://github.com/eweaverdyck/Near-Presence-Analysis> .
+
+wds:Q822-E536F721-EF1D-5FCA-AB53-9B33597AD0CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P117 wd:Q116 .
+
+wds:Q822-F8A6E447-E30E-50DE-A93E-74EF9DB7C975
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q392 .
+
+wds:Q822-F1291BF9-7D3B-589C-BA46-B5D76246D1D4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f676fc2a420879ae01f366e22689f338b98af849 ;
+    ps:P117 wd:Q119 .
+
+wdref:f676fc2a420879ae01f366e22689f338b98af849
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/near-presence-analysis/> .
+
+wdv:cc186a7391366b1833ce947f55710546
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-06-11T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,224 @@
+# Q888: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q888
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A template to create an archaeological catalogue from a spreadsheet using the LaTeX csvsimple package."@en ;
+    dcterms:identifier "Q888" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q888 ;
+    dcterms:title "Archaeological_Catalogue_from_CSV_Spreadsheet"@en ;
+    schema:about wd:Q888 ;
+    dcat:distribution dist:Q888-html,
+        dist:Q888-json,
+        dist:Q888-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q888.html> .
+
+dist:Q888-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q888, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q888.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q888-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q888, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17109"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q888.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q888-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q888, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q888.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q888
+    a wikibase:Item ;
+    schema:description "A template to create an archaeological catalogue from a spreadsheet using the LaTeX csvsimple package."@en ;
+    schema:name "Archaeological_Catalogue_from_CSV_Spreadsheet"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "Archaeological_Catalogue_from_CSV_Spreadsheet"@en ;
+    skos:prefLabel "Archaeological_Catalogue_from_CSV_Spreadsheet"@en ;
+    p:P2 wds:Q888-70AC792C-7431-567B-B8C0-2AF78A5AB6AF,
+        wds:Q888-05334990-14CE-5990-8F6F-7CAFABE01ADA ;
+    p:P106 wds:Q888-1D7CC679-90DB-5B51-BFF1-77EC83C9DA44 ;
+    p:P110 wds:Q888-36F014DE-B9B8-5843-AAB5-C6775A2EFF78 ;
+    p:P113 wds:Q888-45AA8715-ECB5-551B-891B-370D6C7BFC06 ;
+    p:P115 wds:Q888-D0928BAD-F354-5F5F-8F3A-348360F20C88 ;
+    p:P116 wds:Q888-C3B862ED-F8C1-593D-9237-566262F48C3B ;
+    p:P117 wds:Q888-D9872824-4D93-5C4E-973C-9828710496AC,
+        wds:Q888-DDF13F29-E548-5183-B186-770A74334A80 ;
+    p:P118 wds:Q888-C2333916-5650-5A40-8138-22809C78BF1F ;
+    p:P119 wds:Q888-CCFDB4C5-7008-5E7E-8BB8-3CB940A21F9B ;
+    p:P122 wds:Q888-9140F2A6-5676-5417-83E1-0EEDE397A989,
+        wds:Q888-E4F884B4-3100-591E-800D-433CA369E7D0 ;
+    p:P123 wds:Q888-594BFC55-99D9-549C-9D89-F81063A73FBD ;
+    p:P125 wds:Q888-30F161C1-7991-5E76-94DE-3B04D71A26C1 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P110 <https://latex-ninja.com/2021/07/16/latex-for-archaeologists-an-archaeological-catalogue-from-a-spreadsheet/> ;
+    wdt:P113 wd:Q891 ;
+    wdt:P115 <https://open-archaeo.info/post/archaeological-catalogue-from-csv-spreadsheet/> ;
+    wdt:P116 "archaeological-catalogue-from-csv-spreadsheet" ;
+    wdt:P117 wd:Q463,
+        wd:Q890 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Archaeological_Catalogue_from_CSV_Spreadsheet"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q889 ;
+    wdt:P125 <https://github.com/latex-ninja/Archaeological_Catalogue_from_CSV_Spreadsheet> .
+
+wds:Q888-1D7CC679-90DB-5B51-BFF1-77EC83C9DA44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P106 wd:Q110 .
+
+wds:Q888-30F161C1-7991-5E76-94DE-3B04D71A26C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/latex-ninja/Archaeological_Catalogue_from_CSV_Spreadsheet> .
+
+wds:Q888-36F014DE-B9B8-5843-AAB5-C6775A2EFF78
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P110 <https://latex-ninja.com/2021/07/16/latex-for-archaeologists-an-archaeological-catalogue-from-a-spreadsheet/> .
+
+wds:Q888-45AA8715-ECB5-551B-891B-370D6C7BFC06
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q891 .
+
+wds:Q888-70AC792C-7431-567B-B8C0-2AF78A5AB6AF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P2 wd:Q106 .
+
+wds:Q888-594BFC55-99D9-549C-9D89-F81063A73FBD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P123 wd:Q889 .
+
+wds:Q888-9140F2A6-5676-5417-83E1-0EEDE397A989
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P122 wd:Q110 .
+
+wds:Q888-05334990-14CE-5990-8F6F-7CAFABE01ADA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P2 wd:Q104 .
+
+wds:Q888-C3B862ED-F8C1-593D-9237-566262F48C3B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "archaeological-catalogue-from-csv-spreadsheet" .
+
+wds:Q888-C2333916-5650-5A40-8138-22809C78BF1F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P118 wd:Q108 .
+
+wds:Q888-CCFDB4C5-7008-5E7E-8BB8-3CB940A21F9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P119 "Archaeological_Catalogue_from_CSV_Spreadsheet"@en .
+
+wds:Q888-D0928BAD-F354-5F5F-8F3A-348360F20C88
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P115 <https://open-archaeo.info/post/archaeological-catalogue-from-csv-spreadsheet/> .
+
+wds:Q888-D9872824-4D93-5C4E-973C-9828710496AC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P117 wd:Q890 .
+
+wds:Q888-DDF13F29-E548-5183-B186-770A74334A80
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P117 wd:Q463 .
+
+wds:Q888-E4F884B4-3100-591E-800D-433CA369E7D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
+    ps:P122 wd:Q109 .
+
+wdref:5ec1a439cbe3638bcdabe782b550466d825c802d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/archaeological-catalogue-from-csv-spreadsheet/> .

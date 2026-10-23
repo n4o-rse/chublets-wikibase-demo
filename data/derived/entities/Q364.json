@@ -1,5 +1,16 @@
 {
-  "aliases": {},
+  "aliases": {
+    "en": [
+      {
+        "language": "en",
+        "value": "wikidatawiki"
+      },
+      {
+        "language": "en",
+        "value": "datawiki"
+      }
+    ]
+  },
   "claims": {
     "P4": [
       {
@@ -38,7 +49,16 @@
       }
     ]
   },
-  "descriptions": {},
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "freie Wissensdatenbank, die von der Wikimedia Foundation gehostet und von Freiwilligen bearbeitet wird"
+    },
+    "en": {
+      "language": "en",
+      "value": "free multilingual online knowledge graph"
+    }
+  },
   "id": "Q364",
   "labels": {
     "en": {

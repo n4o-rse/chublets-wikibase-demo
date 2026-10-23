@@ -1,0 +1,224 @@
+# Q464: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q464
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Reconstructing rock art chronology with transfer learning"@en ;
+    dcterms:identifier "Q464" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q464 ;
+    dcterms:title "rock-art-transfer-learning"@en ;
+    schema:about wd:Q464 ;
+    dcat:distribution dist:Q464-html,
+        dist:Q464-json,
+        dist:Q464-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q464.html> .
+
+dist:Q464-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q464, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q464.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q464-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q464, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16683"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q464.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q464-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q464, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q464.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q464
+    a wikibase:Item ;
+    schema:description "Reconstructing rock art chronology with transfer learning"@en ;
+    schema:name "rock-art-transfer-learning"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "rock-art-transfer-learning"@en ;
+    skos:prefLabel "rock-art-transfer-learning"@en ;
+    p:P2 wds:Q464-2AA47427-E4A2-570A-AC60-1E0E8D51BC1B,
+        wds:Q464-21A2FC4D-E7DF-54DC-B3B5-2BB18AFAA00D ;
+    p:P106 wds:Q464-2B9FE277-FB73-5BA1-830A-19180A931AE0 ;
+    p:P113 wds:Q464-176E8111-BF91-5968-89AA-001207136896 ;
+    p:P115 wds:Q464-4BDB222A-71E5-5447-8561-1E2415899CF5 ;
+    p:P116 wds:Q464-470C88A0-FE7A-52DE-90BF-5C2D1D246898 ;
+    p:P117 wds:Q464-6A2FD477-72AD-55F2-9DE7-158C59D3C2EF,
+        wds:Q464-A1371EBA-F835-5361-BDFE-EDE1AF2A80BF,
+        wds:Q464-DDAA0530-BBC4-54B0-AB69-375498AB1293 ;
+    p:P118 wds:Q464-81982F54-116B-56A8-8D86-841EF960E600 ;
+    p:P119 wds:Q464-CDE30096-C31D-5103-AAF6-3A4D86FE492A ;
+    p:P122 wds:Q464-13ED60CC-DDA7-5BB6-B6AD-C08CA4E593AA,
+        wds:Q464-32B23005-C272-5646-9DA6-BB83EDDFC1C2 ;
+    p:P123 wds:Q464-A143F13F-E698-5C10-B669-F48B62206998 ;
+    p:P125 wds:Q464-950969EF-F244-5E25-AEA1-9BA419037D19 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q465 ;
+    wdt:P115 <https://open-archaeo.info/post/rock-art-transfer-learning/> ;
+    wdt:P116 "rock-art-transfer-learning" ;
+    wdt:P117 wd:Q126,
+        wd:Q181,
+        wd:Q299 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "rock-art-transfer-learning"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/keeeal/rock-art-transfer-learning> .
+
+wds:Q464-2AA47427-E4A2-570A-AC60-1E0E8D51BC1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P2 wd:Q103 .
+
+wds:Q464-2B9FE277-FB73-5BA1-830A-19180A931AE0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P106 wd:Q110 .
+
+wds:Q464-4BDB222A-71E5-5447-8561-1E2415899CF5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P115 <https://open-archaeo.info/post/rock-art-transfer-learning/> .
+
+wds:Q464-6A2FD477-72AD-55F2-9DE7-158C59D3C2EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P117 wd:Q181 .
+
+wds:Q464-13ED60CC-DDA7-5BB6-B6AD-C08CA4E593AA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P122 wd:Q110 .
+
+wds:Q464-21A2FC4D-E7DF-54DC-B3B5-2BB18AFAA00D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P2 wd:Q106 .
+
+wds:Q464-32B23005-C272-5646-9DA6-BB83EDDFC1C2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P122 wd:Q109 .
+
+wds:Q464-176E8111-BF91-5968-89AA-001207136896
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q465 .
+
+wds:Q464-470C88A0-FE7A-52DE-90BF-5C2D1D246898
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "rock-art-transfer-learning" .
+
+wds:Q464-81982F54-116B-56A8-8D86-841EF960E600
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P118 wd:Q108 .
+
+wds:Q464-950969EF-F244-5E25-AEA1-9BA419037D19
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/keeeal/rock-art-transfer-learning> .
+
+wds:Q464-A143F13F-E698-5C10-B669-F48B62206998
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P123 wd:Q139 .
+
+wds:Q464-A1371EBA-F835-5361-BDFE-EDE1AF2A80BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P117 wd:Q299 .
+
+wds:Q464-CDE30096-C31D-5103-AAF6-3A4D86FE492A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P119 "rock-art-transfer-learning"@en .
+
+wds:Q464-DDAA0530-BBC4-54B0-AB69-375498AB1293
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
+    ps:P117 wd:Q126 .
+
+wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/rock-art-transfer-learning/> .

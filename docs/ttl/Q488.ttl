@@ -1,0 +1,216 @@
+# Q488: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q488
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Total open station downloads and exports survey data from your total station."@en ;
+    dcterms:identifier "Q488" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q488 ;
+    dcterms:title "totalopenstation"@en ;
+    schema:about wd:Q488 ;
+    dcat:distribution dist:Q488-html,
+        dist:Q488-json,
+        dist:Q488-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q488.html> .
+
+dist:Q488-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q488, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q488.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q488-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q488, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15342"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q488.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q488-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q488, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q488.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q488
+    a wikibase:Item ;
+    schema:description "Total open station downloads and exports survey data from your total station."@en ;
+    schema:name "totalopenstation"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "totalopenstation"@en ;
+    skos:prefLabel "totalopenstation"@en ;
+    p:P2 wds:Q488-A87CF368-9982-5977-956F-E8BA05ECF105,
+        wds:Q488-E45A5AE4-AA35-52FD-9733-4651EA1C4344 ;
+    p:P106 wds:Q488-BC5FF79F-FC6D-5E29-874E-50A69476C120 ;
+    p:P113 wds:Q488-9DE2799E-D7B2-5AF3-BA12-59265C7F613D ;
+    p:P115 wds:Q488-CD0290E3-CC72-55F6-AFDB-4F7E743AE5A9 ;
+    p:P116 wds:Q488-F5B97964-68B6-526B-835D-C7F4A23999E6 ;
+    p:P117 wds:Q488-732B8B73-68D4-5F13-B03E-35C0FC338711 ;
+    p:P118 wds:Q488-30AE0FDB-73E5-5A11-ADD8-53A64BDBE23A ;
+    p:P119 wds:Q488-D605E03B-6C34-5377-A02C-3EA6D1444376 ;
+    p:P120 wds:Q488-8CE8C56E-3180-56CE-BDD3-A068706C7BE9 ;
+    p:P122 wds:Q488-48310513-8147-54D9-B83B-60B252CA7C8C,
+        wds:Q488-DE8950BE-28B5-5C23-9319-8FFF8C20046D ;
+    p:P125 wds:Q488-0B5E8BEE-2B73-5C20-A906-EEF151C0B493 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q182 ;
+    wdt:P115 <https://open-archaeo.info/post/totalopenstation/> ;
+    wdt:P116 "totalopenstation" ;
+    wdt:P117 wd:Q144 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "totalopenstation"@en ;
+    wdt:P120 <https://tops.iosa.it/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/steko/totalopenstation> .
+
+wds:Q488-0B5E8BEE-2B73-5C20-A906-EEF151C0B493
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    pq:P104 "2020-11-18T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-steko-totalopenstation_-_2020-11-18_11-12-29> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:e9c1f089e914d3a0470f0af9f1bd36bb ;
+    ps:P125 <https://github.com/steko/totalopenstation> .
+
+wds:Q488-8CE8C56E-3180-56CE-BDD3-A068706C7BE9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P120 <https://tops.iosa.it/> .
+
+wds:Q488-9DE2799E-D7B2-5AF3-BA12-59265C7F613D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q182 .
+
+wds:Q488-30AE0FDB-73E5-5A11-ADD8-53A64BDBE23A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P118 wd:Q108 .
+
+wds:Q488-732B8B73-68D4-5F13-B03E-35C0FC338711
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P117 wd:Q144 .
+
+wds:Q488-48310513-8147-54D9-B83B-60B252CA7C8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P122 wd:Q109 .
+
+wds:Q488-A87CF368-9982-5977-956F-E8BA05ECF105
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P2 wd:Q106 .
+
+wds:Q488-BC5FF79F-FC6D-5E29-874E-50A69476C120
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P106 wd:Q110 .
+
+wds:Q488-CD0290E3-CC72-55F6-AFDB-4F7E743AE5A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P115 <https://open-archaeo.info/post/totalopenstation/> .
+
+wds:Q488-D605E03B-6C34-5377-A02C-3EA6D1444376
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P119 "totalopenstation"@en .
+
+wds:Q488-DE8950BE-28B5-5C23-9319-8FFF8C20046D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P122 wd:Q110 .
+
+wds:Q488-E45A5AE4-AA35-52FD-9733-4651EA1C4344
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    ps:P2 wd:Q102 .
+
+wds:Q488-F5B97964-68B6-526B-835D-C7F4A23999E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "totalopenstation" .
+
+wdref:7aa0713acb21ae165e12d72165aa986dcf82bda2
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/totalopenstation/> .
+
+wdv:e9c1f089e914d3a0470f0af9f1bd36bb
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2020-11-18T00:00:00Z"^^xsd:dateTime .

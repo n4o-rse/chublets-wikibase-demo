@@ -1,5 +1,5 @@
 # Q370: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q370-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q370, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1321"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2536"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q370.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -84,6 +84,20 @@ wd:Q370
     wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Python"@de,
         "Python"@en ;
+    skos:altLabel "Programmiersprache Python"@de,
+        "Python (Programming Language)"@en,
+        "Python (computer language)"@en,
+        "Python (computing)"@en,
+        "Python (lang)"@en,
+        "Python (language)"@en,
+        "Python (programming)"@en,
+        "Python (scripting language)"@en,
+        "Python (software)"@en,
+        "Python Programming Language"@en,
+        "Python computer language"@en,
+        "Python language"@en,
+        "Python programming language"@en,
+        "Python.org"@en ;
     skos:prefLabel "Python"@de,
         "Python"@en ;
     p:P4 wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332 ;

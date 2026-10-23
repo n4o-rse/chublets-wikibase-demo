@@ -5,8 +5,8 @@
     python main.py --strict             the same, but any WARN line (a dead link, a model rule) is an error
     python main.py --strict check-crm   SHACL check: every class reaches the CIDOC CRM (after the default run; needs wikibase-static 0.8.0)
     python main.py csv-fmt              bring the tables in data/csv/ into canonical form (--check: only report)
-    python main.py import-open-archaeo  about 100 software entries of open-archaeo into data/csv/ (needs wikibase-static 0.9.0; --limit N, --all)
-    python main.py import-wikidata      the Wikidata items in data/csv/seeds-wikidata.csv into data/csv/ (needs wikibase-static 0.11.0;
+    python main.py import-open-archaeo  software entries of open-archaeo into data/csv/ (needs wikibase-static 0.9.0; the demo uses --all, otherwise 100 or --limit N)
+    python main.py import-wikidata      the Wikidata items in data/csv/seeds-wikidata.csv into data/csv/ (needs wikibase-static 0.12.0;
                                         fetches what changed, --offline uses data/raw/wikidata/ only, --from-dir DIR stores saved JSON first)
     python main.py --list               print the steps and exit
 

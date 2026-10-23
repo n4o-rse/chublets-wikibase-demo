@@ -1,0 +1,234 @@
+# Q869: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q869
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "This is a libreoffice calc spreadsheet designed to help you plan an aerial drone mapping survey mission."@en ;
+    dcterms:identifier "Q869" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q869 ;
+    dcterms:title "DroneSurveyPlanner"@en ;
+    schema:about wd:Q869 ;
+    dcat:distribution dist:Q869-html,
+        dist:Q869-json,
+        dist:Q869-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q869.html> .
+
+dist:Q869-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q869, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q869.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q869-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q869, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17449"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q869.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q869-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q869, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q869.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q869
+    a wikibase:Item ;
+    schema:description "This is a libreoffice calc spreadsheet designed to help you plan an aerial drone mapping survey mission."@en ;
+    schema:name "DroneSurveyPlanner"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "DroneSurveyPlanner"@en ;
+    skos:prefLabel "DroneSurveyPlanner"@en ;
+    p:P2 wds:Q869-A3578946-70AE-5F93-848B-D6C2D290083C,
+        wds:Q869-D3889164-6C1B-5DED-9E62-47171487CCAF ;
+    p:P106 wds:Q869-0C43381D-F981-58B3-80C5-1A57B1D5F676 ;
+    p:P109 wds:Q869-7FD4833D-72A2-5DC1-A113-D65B59884F89 ;
+    p:P113 wds:Q869-724B50B4-94D1-511F-B5AB-9D3967B1EFF2 ;
+    p:P115 wds:Q869-EF212013-5EED-5DA9-87E5-7C63E5E29222 ;
+    p:P116 wds:Q869-8F8C4F7D-780D-5F84-9F45-CBA81BAF4DC8 ;
+    p:P117 wds:Q869-82F11EFB-F4A8-5D9F-8E16-ECE06443E986,
+        wds:Q869-ED6DA5B5-FDF1-56EA-9AA9-46987BBE53F0 ;
+    p:P118 wds:Q869-2DCE81BE-ECAE-53B1-9D2B-693081083F0B ;
+    p:P119 wds:Q869-52E90600-044C-5625-A04B-760F7DF6CF72 ;
+    p:P120 wds:Q869-D3DB720F-88F9-54A2-B77D-1AC07C1AF0ED ;
+    p:P122 wds:Q869-63C6A37F-D01F-57F1-89EF-0A423A49B387,
+        wds:Q869-C777265C-8E4A-5ECA-9A9D-D4E2D1C7F703 ;
+    p:P125 wds:Q869-5AC19C2F-DC81-5D89-84C4-8D46488D4439 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q645 ;
+    wdt:P113 wd:Q870 ;
+    wdt:P115 <https://open-archaeo.info/post/dronesurveyplanner/> ;
+    wdt:P116 "dronesurveyplanner" ;
+    wdt:P117 wd:Q356,
+        wd:Q577 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "DroneSurveyPlanner"@en ;
+    wdt:P120 <http://isaacullah.github.io/DroneSurveyPlanner/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/isaacullah/DroneSurveyPlanner> .
+
+wds:Q869-0C43381D-F981-58B3-80C5-1A57B1D5F676
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P106 wd:Q110 .
+
+wds:Q869-2DCE81BE-ECAE-53B1-9D2B-693081083F0B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P118 wd:Q108 .
+
+wds:Q869-5AC19C2F-DC81-5D89-84C4-8D46488D4439
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    pq:P104 "2018-01-02T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-isaacullah-DroneSurveyPlanner_-_2018-01-02_23-32-47> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:d31639dd5ad3130b2e6f8962d2e1beaa ;
+    ps:P125 <https://github.com/isaacullah/DroneSurveyPlanner> .
+
+wds:Q869-7FD4833D-72A2-5DC1-A113-D65B59884F89
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P109 wd:Q645 .
+
+wds:Q869-8F8C4F7D-780D-5F84-9F45-CBA81BAF4DC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "dronesurveyplanner" .
+
+wds:Q869-52E90600-044C-5625-A04B-760F7DF6CF72
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P119 "DroneSurveyPlanner"@en .
+
+wds:Q869-63C6A37F-D01F-57F1-89EF-0A423A49B387
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P122 wd:Q110 .
+
+wds:Q869-82F11EFB-F4A8-5D9F-8E16-ECE06443E986
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P117 wd:Q356 .
+
+wds:Q869-724B50B4-94D1-511F-B5AB-9D3967B1EFF2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q870 .
+
+wds:Q869-A3578946-70AE-5F93-848B-D6C2D290083C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P2 wd:Q106 .
+
+wds:Q869-C777265C-8E4A-5ECA-9A9D-D4E2D1C7F703
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P122 wd:Q109 .
+
+wds:Q869-D3DB720F-88F9-54A2-B77D-1AC07C1AF0ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P120 <http://isaacullah.github.io/DroneSurveyPlanner/> .
+
+wds:Q869-D3889164-6C1B-5DED-9E62-47171487CCAF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P2 wd:Q103 .
+
+wds:Q869-ED6DA5B5-FDF1-56EA-9AA9-46987BBE53F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P117 wd:Q577 .
+
+wds:Q869-EF212013-5EED-5DA9-87E5-7C63E5E29222
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2715bb2068e4e0c3438de49a18016a524d727105 ;
+    ps:P115 <https://open-archaeo.info/post/dronesurveyplanner/> .
+
+wdref:2715bb2068e4e0c3438de49a18016a524d727105
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/dronesurveyplanner/> .
+
+wdv:d31639dd5ad3130b2e6f8962d2e1beaa
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2018-01-02T00:00:00Z"^^xsd:dateTime .

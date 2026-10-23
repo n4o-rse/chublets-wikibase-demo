@@ -1,5 +1,5 @@
 # Q380: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -60,7 +60,7 @@ dist:Q380-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q380, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1193"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1292"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q380.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -79,6 +79,7 @@ wd:Q380
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Ronald Visser"@en ;
+    skos:altLabel "Ronald M. Visser"@en ;
     skos:prefLabel "Ronald Visser"@en ;
     p:P4 wds:Q380-B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C ;
     wdt:P4 "Q58529575" .

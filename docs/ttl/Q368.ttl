@@ -1,5 +1,5 @@
 # Q368: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q368-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q368, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1494"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1668"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q368.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -84,6 +84,8 @@ wd:Q368
     wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Leibniz-Zentrum für Archäologie"@de,
         "Leibniz-Zentrum für Archäologie"@en ;
+    skos:altLabel "LEIZA"@de,
+        "LEIZA"@en ;
     skos:prefLabel "Leibniz-Zentrum für Archäologie"@de,
         "Leibniz-Zentrum für Archäologie"@en ;
     p:P4 wds:Q368-552837A6-DF87-577D-A839-3892C0D8F1F4 ;

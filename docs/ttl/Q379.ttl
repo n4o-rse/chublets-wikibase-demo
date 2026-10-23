@@ -1,5 +1,5 @@
 # Q379: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.11.0; data as of unknown
+# Generated with wikibase-static 0.12.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q379-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q379, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2404"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3867"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q379.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -84,6 +84,25 @@ wd:Q379
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Plug-in"@de,
         "plug-in"@en ;
+    skos:altLabel "Add-in"@de,
+        "Add-on"@de,
+        "Ergänzungsmodul Plugin"@de,
+        "Erweiterung"@de,
+        "Erweiterungsmodul"@de,
+        "Serverplugin"@de,
+        "Softwareerweiterung"@de,
+        "Softwarekomponente"@de,
+        "Softwaremodul"@de,
+        "Zusatzmodul"@de,
+        "add-on"@en,
+        "addon"@en,
+        "extension"@en,
+        "plugin"@en,
+        "snap-in"@en,
+        "software add-on"@en,
+        "software addon"@en,
+        "software module"@en,
+        "software plugin"@en ;
     skos:prefLabel "Plug-in"@de,
         "plug-in"@en ;
     p:P1 wds:Q379-8EED49AE-6CFF-54C4-B09D-E061CD64724D ;

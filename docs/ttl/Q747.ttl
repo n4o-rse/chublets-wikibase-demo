@@ -1,0 +1,216 @@
+# Q747: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q747
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "R script that implements a means for statistically assessing the degree of co-occurrence between classes within a dataset."@en ;
+    dcterms:identifier "Q747" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q747 ;
+    dcterms:title "Binomial-Co-occurrence-Assessment"@en ;
+    schema:about wd:Q747 ;
+    dcat:distribution dist:Q747-html,
+        dist:Q747-json,
+        dist:Q747-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q747.html> .
+
+dist:Q747-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q747, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q747.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q747-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q747, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15834"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q747.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q747-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q747, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q747.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q747
+    a wikibase:Item ;
+    schema:description "R script that implements a means for statistically assessing the degree of co-occurrence between classes within a dataset."@en ;
+    schema:name "Binomial-Co-occurrence-Assessment"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Binomial-Co-occurrence-Assessment"@en ;
+    skos:prefLabel "Binomial-Co-occurrence-Assessment"@en ;
+    p:P2 wds:Q747-C8DD1CF9-F1D9-54D9-A1DF-0E63F3E862F1,
+        wds:Q747-E0BAB357-6B4C-5C43-A92D-35F655EE4E10 ;
+    p:P106 wds:Q747-3C132275-2395-54E4-B3A3-4043A1EA9880 ;
+    p:P113 wds:Q747-3EB396B4-6B58-5296-9C5C-17070462222B ;
+    p:P115 wds:Q747-70548618-1F07-5BAD-93AF-838D06D11D2C ;
+    p:P116 wds:Q747-9B4D6E16-21E3-5799-BB5D-A3619299DB66 ;
+    p:P117 wds:Q747-6089E90C-B47F-5A07-A5DA-D26A8FE036D4 ;
+    p:P118 wds:Q747-02CF0179-FE2B-541C-A714-72DE99F332ED ;
+    p:P119 wds:Q747-C79C8C6F-E36A-542D-8982-B28A3E9F5F23 ;
+    p:P122 wds:Q747-3C20290F-FB88-589D-915D-B06BF4EB1967,
+        wds:Q747-F5795CC1-2195-5613-A7EC-6A057097CC5A ;
+    p:P123 wds:Q747-83536E25-8530-54C4-8B84-60F15896BA5B ;
+    p:P125 wds:Q747-7DF45362-0B57-55F4-9F85-88B2974EF9CC ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q167 ;
+    wdt:P115 <https://open-archaeo.info/post/binomial-co-occurrence-assessment/> ;
+    wdt:P116 "binomial-co-occurrence-assessment" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Binomial-Co-occurrence-Assessment"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/mpeeples2008/Binomial-Co-occurrence-Assessment> .
+
+wds:Q747-02CF0179-FE2B-541C-A714-72DE99F332ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P118 wd:Q108 .
+
+wds:Q747-3C20290F-FB88-589D-915D-B06BF4EB1967
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P122 wd:Q109 .
+
+wds:Q747-3C132275-2395-54E4-B3A3-4043A1EA9880
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P106 wd:Q110 .
+
+wds:Q747-3EB396B4-6B58-5296-9C5C-17070462222B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q167 .
+
+wds:Q747-7DF45362-0B57-55F4-9F85-88B2974EF9CC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    pq:P104 "2018-05-11T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-mpeeples2008-Binomial-Co-occurrence-Assessment_-_2018-05-11_03-58-41> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:67705d7d4af12c5cfa77faa85e04c9de ;
+    ps:P125 <https://github.com/mpeeples2008/Binomial-Co-occurrence-Assessment> .
+
+wds:Q747-9B4D6E16-21E3-5799-BB5D-A3619299DB66
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "binomial-co-occurrence-assessment" .
+
+wds:Q747-6089E90C-B47F-5A07-A5DA-D26A8FE036D4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P117 wd:Q116 .
+
+wds:Q747-83536E25-8530-54C4-8B84-60F15896BA5B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P123 wd:Q111 .
+
+wds:Q747-70548618-1F07-5BAD-93AF-838D06D11D2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P115 <https://open-archaeo.info/post/binomial-co-occurrence-assessment/> .
+
+wds:Q747-C8DD1CF9-F1D9-54D9-A1DF-0E63F3E862F1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P2 wd:Q104 .
+
+wds:Q747-C79C8C6F-E36A-542D-8982-B28A3E9F5F23
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P119 "Binomial-Co-occurrence-Assessment"@en .
+
+wds:Q747-E0BAB357-6B4C-5C43-A92D-35F655EE4E10
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P2 wd:Q106 .
+
+wds:Q747-F5795CC1-2195-5613-A7EC-6A057097CC5A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:09af27c719d876f4fc494927174f2a27072aeef9 ;
+    ps:P122 wd:Q110 .
+
+wdref:09af27c719d876f4fc494927174f2a27072aeef9
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/binomial-co-occurrence-assessment/> .
+
+wdv:67705d7d4af12c5cfa77faa85e04c9de
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2018-05-11T00:00:00Z"^^xsd:dateTime .

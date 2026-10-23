@@ -1,0 +1,224 @@
+# Q744: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q744
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "The PHASER application is intended to aid in the editing and analysis of archaeological stratigraphic data."@en ;
+    dcterms:identifier "Q744" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q744 ;
+    dcterms:title "PHASER"@en ;
+    schema:about wd:Q744 ;
+    dcat:distribution dist:Q744-html,
+        dist:Q744-json,
+        dist:Q744-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q744.html> .
+
+dist:Q744-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q744, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q744.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q744-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q744, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16247"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q744.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q744-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q744, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q744.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q744
+    a wikibase:Item ;
+    schema:description "The PHASER application is intended to aid in the editing and analysis of archaeological stratigraphic data."@en ;
+    schema:name "PHASER"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "PHASER"@en ;
+    skos:prefLabel "PHASER"@en ;
+    p:P2 wds:Q744-14DC75D2-4F68-5EE1-BCD4-923C0BE6B9B6,
+        wds:Q744-AD4975DA-7B40-5C43-A5ED-282DA3181AAD ;
+    p:P106 wds:Q744-D27A05AC-1CA6-5994-A520-3057EA19BE52 ;
+    p:P113 wds:Q744-832D22E8-F663-54E3-A074-67ABAF481464 ;
+    p:P115 wds:Q744-DA9A6147-3100-529D-A608-F66D00FA028F ;
+    p:P116 wds:Q744-00799B2B-CD19-5517-B5E2-32E396A00ECA ;
+    p:P117 wds:Q744-3DFDDC16-FCBF-5AC8-8E04-3D608515B07E,
+        wds:Q744-164E5FA6-1DF3-5ACE-BD16-DFE5E9C2BE1C,
+        wds:Q744-D0CB5847-CBB0-5803-9FB6-1778AC148907 ;
+    p:P118 wds:Q744-E44A36BC-EE4A-5F83-A80E-C44EC551325F ;
+    p:P119 wds:Q744-8C34DE99-FCB0-5F53-AA38-42163CC70677 ;
+    p:P120 wds:Q744-B3EC776D-93E3-52AB-9318-896840E0063F ;
+    p:P122 wds:Q744-9A6FFD36-61FA-5154-8622-D1B6ABFB76C7,
+        wds:Q744-604A427B-6927-5820-9A65-B4D3BDEE9AFB ;
+    p:P125 wds:Q744-10305081-A173-5A2C-BCDF-50CD73CB62BE ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q745 ;
+    wdt:P115 <https://open-archaeo.info/post/phaser/> ;
+    wdt:P116 "phaser" ;
+    wdt:P117 wd:Q126,
+        wd:Q148,
+        wd:Q185 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "PHASER"@en ;
+    wdt:P120 <https://stratigraphic.github.io/phaser-app/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/cbinding/phaser> .
+
+wds:Q744-3DFDDC16-FCBF-5AC8-8E04-3D608515B07E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P117 wd:Q148 .
+
+wds:Q744-8C34DE99-FCB0-5F53-AA38-42163CC70677
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P119 "PHASER"@en .
+
+wds:Q744-9A6FFD36-61FA-5154-8622-D1B6ABFB76C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P122 wd:Q109 .
+
+wds:Q744-14DC75D2-4F68-5EE1-BCD4-923C0BE6B9B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P2 wd:Q106 .
+
+wds:Q744-164E5FA6-1DF3-5ACE-BD16-DFE5E9C2BE1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P117 wd:Q126 .
+
+wds:Q744-604A427B-6927-5820-9A65-B4D3BDEE9AFB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P122 wd:Q110 .
+
+wds:Q744-00799B2B-CD19-5517-B5E2-32E396A00ECA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "phaser" .
+
+wds:Q744-832D22E8-F663-54E3-A074-67ABAF481464
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q745 .
+
+wds:Q744-10305081-A173-5A2C-BCDF-50CD73CB62BE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/cbinding/phaser> .
+
+wds:Q744-AD4975DA-7B40-5C43-A5ED-282DA3181AAD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P2 wd:Q102 .
+
+wds:Q744-B3EC776D-93E3-52AB-9318-896840E0063F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P120 <https://stratigraphic.github.io/phaser-app/> .
+
+wds:Q744-D0CB5847-CBB0-5803-9FB6-1778AC148907
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P117 wd:Q185 .
+
+wds:Q744-D27A05AC-1CA6-5994-A520-3057EA19BE52
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P106 wd:Q110 .
+
+wds:Q744-DA9A6147-3100-529D-A608-F66D00FA028F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P115 <https://open-archaeo.info/post/phaser/> .
+
+wds:Q744-E44A36BC-EE4A-5F83-A80E-C44EC551325F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c962bc266429183945ed1bb60fab84455af3516f ;
+    ps:P118 wd:Q108 .
+
+wdref:c962bc266429183945ed1bb60fab84455af3516f
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/phaser/> .

@@ -1,0 +1,217 @@
+# Q525: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q525
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Enables you to create geometries directly from tachymeter input while at the same time adding vertices manually."@en ;
+    dcterms:identifier "Q525" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q525 ;
+    dcterms:title "Tachy2GIS"@en ;
+    schema:about wd:Q525 ;
+    dcat:distribution dist:Q525-html,
+        dist:Q525-json,
+        dist:Q525-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q525.html> .
+
+dist:Q525-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q525, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q525.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q525-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q525, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15722"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q525.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q525-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q525, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q525.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q525
+    a wikibase:Item ;
+    schema:description "Enables you to create geometries directly from tachymeter input while at the same time adding vertices manually."@en ;
+    schema:name "Tachy2GIS"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Tachy2GIS"@en ;
+    skos:prefLabel "Tachy2GIS"@en ;
+    p:P2 wds:Q525-9B5330D6-7888-5D04-B952-7CEDD9F14122,
+        wds:Q525-90E85551-864B-5D5D-89DD-59C2289FE15F ;
+    p:P106 wds:Q525-134E805F-4DB7-5340-A962-44F9D1128718 ;
+    p:P113 wds:Q525-5A0D8AE9-C9FE-5120-87E3-FED49AA0CC62,
+        wds:Q525-65F26DAB-1848-56DB-8841-259E0214C1D8 ;
+    p:P115 wds:Q525-482DE9E4-6C2B-5F3A-ABAB-54C81FD6CEE7 ;
+    p:P116 wds:Q525-EEE2EE9C-C622-5B18-94DF-5F73C8E0A901 ;
+    p:P117 wds:Q525-1CC38630-0944-56CC-ADB5-1B86FED7F25B ;
+    p:P118 wds:Q525-E75CB2ED-B42E-574B-955A-F91BC4EB4D34 ;
+    p:P119 wds:Q525-858DC97B-7DBB-56E1-AA7B-6A93ECCF5DC9 ;
+    p:P122 wds:Q525-58F0B3F9-BFBE-51BD-B825-8730D50A7C4F,
+        wds:Q525-1742C9C4-46E3-551B-B6B9-C5CD518F7040 ;
+    p:P125 wds:Q525-94FF949D-049F-5C89-819F-ECAAA0C96D06 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q526,
+        wd:Q527 ;
+    wdt:P115 <https://open-archaeo.info/post/tachy2gis/> ;
+    wdt:P116 "tachy2gis" ;
+    wdt:P117 wd:Q144 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Tachy2GIS"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/Archaeological-Museum-Hamburg/Tachy2GIS> .
+
+wds:Q525-1CC38630-0944-56CC-ADB5-1B86FED7F25B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P117 wd:Q144 .
+
+wds:Q525-5A0D8AE9-C9FE-5120-87E3-FED49AA0CC62
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q527 .
+
+wds:Q525-9B5330D6-7888-5D04-B952-7CEDD9F14122
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P2 wd:Q106 .
+
+wds:Q525-58F0B3F9-BFBE-51BD-B825-8730D50A7C4F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P122 wd:Q109 .
+
+wds:Q525-65F26DAB-1848-56DB-8841-259E0214C1D8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q526 .
+
+wds:Q525-90E85551-864B-5D5D-89DD-59C2289FE15F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P2 wd:Q102 .
+
+wds:Q525-94FF949D-049F-5C89-819F-ECAAA0C96D06
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    pq:P104 "2021-04-23T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-gbv-Tachy2GIS_-_2021-04-23_09-17-43> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:9c56edb4355c23fd100f745d2c90a0c1 ;
+    ps:P125 <https://github.com/Archaeological-Museum-Hamburg/Tachy2GIS> .
+
+wds:Q525-134E805F-4DB7-5340-A962-44F9D1128718
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P106 wd:Q110 .
+
+wds:Q525-482DE9E4-6C2B-5F3A-ABAB-54C81FD6CEE7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P115 <https://open-archaeo.info/post/tachy2gis/> .
+
+wds:Q525-858DC97B-7DBB-56E1-AA7B-6A93ECCF5DC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P119 "Tachy2GIS"@en .
+
+wds:Q525-1742C9C4-46E3-551B-B6B9-C5CD518F7040
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P122 wd:Q110 .
+
+wds:Q525-E75CB2ED-B42E-574B-955A-F91BC4EB4D34
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    ps:P118 wd:Q108 .
+
+wds:Q525-EEE2EE9C-C622-5B18-94DF-5F73C8E0A901
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "tachy2gis" .
+
+wdref:bcc76d4676b8bc7f5400d23af25f701bb34cee15
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/tachy2gis/> .
+
+wdv:9c56edb4355c23fd100f745d2c90a0c1
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-04-23T00:00:00Z"^^xsd:dateTime .

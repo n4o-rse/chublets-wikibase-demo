@@ -1,0 +1,215 @@
+# Q621: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q621
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Provides an interactive platform and critical measures for seriating binary data matrices through the exploration, selection, and consensus of partially seriated sequences."@en ;
+    dcterms:identifier "Q621" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q621 ;
+    dcterms:title "lakhesis"@en ;
+    schema:about wd:Q621 ;
+    dcat:distribution dist:Q621-html,
+        dist:Q621-json,
+        dist:Q621-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q621.html> .
+
+dist:Q621-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q621, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q621.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q621-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q621, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15369"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q621.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q621-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q621, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q621.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q621
+    a wikibase:Item ;
+    schema:description "Provides an interactive platform and critical measures for seriating binary data matrices through the exploration, selection, and consensus of partially seriated sequences."@en ;
+    schema:name "lakhesis"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "lakhesis"@en ;
+    skos:prefLabel "lakhesis"@en ;
+    p:P2 wds:Q621-41F99715-6A32-5130-8BF7-83A263E55F33,
+        wds:Q621-65A54366-A264-5F75-B2F2-A2ABEC892851 ;
+    p:P106 wds:Q621-83A132D3-CEC6-5153-8984-34EF70F88625 ;
+    p:P108 wds:Q621-FF2DE1F0-E92D-56F7-937F-D7FD410625B2 ;
+    p:P113 wds:Q621-6FB3E044-5C28-59F7-BC31-4D16793E56A3 ;
+    p:P115 wds:Q621-5E6836E1-E769-5B17-9B1D-6622C5D76112 ;
+    p:P116 wds:Q621-D6FD4AE6-3ECC-5ED3-980E-498A45E69E3F ;
+    p:P117 wds:Q621-8D1ECF64-CE2F-500F-AA67-24DA7C5044C7 ;
+    p:P118 wds:Q621-7C7BFA1B-DA3C-520F-BD53-3761DA9696DA ;
+    p:P119 wds:Q621-22B70E37-1C5F-53A3-9996-7AE136F4AB6D ;
+    p:P122 wds:Q621-74CDEB34-83AE-5E05-B7DF-52201DF3E8F4,
+        wds:Q621-D75E82D5-1689-50A0-9B83-BB4B785E4DAE ;
+    p:P123 wds:Q621-D84AAEFE-9210-51C1-A90A-AB1A46FBAC60 ;
+    p:P125 wds:Q621-5C6DEEDC-8401-5EA3-B90C-632CC8756D70 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "lakhesis" ;
+    wdt:P113 wd:Q622 ;
+    wdt:P115 <https://open-archaeo.info/post/lakhesis/> ;
+    wdt:P116 "lakhesis" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "lakhesis"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/scollinselliott/lakhesis> .
+
+wds:Q621-5C6DEEDC-8401-5EA3-B90C-632CC8756D70
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/scollinselliott/lakhesis> .
+
+wds:Q621-5E6836E1-E769-5B17-9B1D-6622C5D76112
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P115 <https://open-archaeo.info/post/lakhesis/> .
+
+wds:Q621-6FB3E044-5C28-59F7-BC31-4D16793E56A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q622 .
+
+wds:Q621-7C7BFA1B-DA3C-520F-BD53-3761DA9696DA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P118 wd:Q108 .
+
+wds:Q621-8D1ECF64-CE2F-500F-AA67-24DA7C5044C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P117 wd:Q116 .
+
+wds:Q621-22B70E37-1C5F-53A3-9996-7AE136F4AB6D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P119 "lakhesis"@en .
+
+wds:Q621-41F99715-6A32-5130-8BF7-83A263E55F33
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P2 wd:Q103 .
+
+wds:Q621-65A54366-A264-5F75-B2F2-A2ABEC892851
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P2 wd:Q106 .
+
+wds:Q621-74CDEB34-83AE-5E05-B7DF-52201DF3E8F4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P122 wd:Q109 .
+
+wds:Q621-83A132D3-CEC6-5153-8984-34EF70F88625
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P106 wd:Q110 .
+
+wds:Q621-D6FD4AE6-3ECC-5ED3-980E-498A45E69E3F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "lakhesis" .
+
+wds:Q621-D75E82D5-1689-50A0-9B83-BB4B785E4DAE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P122 wd:Q110 .
+
+wds:Q621-D84AAEFE-9210-51C1-A90A-AB1A46FBAC60
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P123 wd:Q111 .
+
+wds:Q621-FF2DE1F0-E92D-56F7-937F-D7FD410625B2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:4406eb89217b5089df7084630754dc1787e5a8cb ;
+    ps:P108 "lakhesis" .
+
+wdref:4406eb89217b5089df7084630754dc1787e5a8cb
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/lakhesis/> .

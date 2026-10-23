@@ -1,0 +1,215 @@
+# Q861: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q861
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A plugin to connect with totalopenstation software developed as part of the IOSA project."@en ;
+    dcterms:identifier "Q861" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q861 ;
+    dcterms:title "totalopenstationToQgis"@en ;
+    schema:about wd:Q861 ;
+    dcat:distribution dist:Q861-html,
+        dist:Q861-json,
+        dist:Q861-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q861.html> .
+
+dist:Q861-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q861, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q861.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q861-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q861, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15641"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q861.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q861-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q861, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q861.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q861
+    a wikibase:Item ;
+    schema:description "A plugin to connect with totalopenstation software developed as part of the IOSA project."@en ;
+    schema:name "totalopenstationToQgis"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "totalopenstationToQgis"@en ;
+    skos:prefLabel "totalopenstationToQgis"@en ;
+    p:P2 wds:Q861-0F29105A-4374-54EB-ADF0-9D922530AACC,
+        wds:Q861-050335A1-646A-5F25-BCC1-FE94F9BCBF32 ;
+    p:P106 wds:Q861-6A3D266B-B6A7-593D-BF67-A7C5B7CCD955 ;
+    p:P109 wds:Q861-F19065A3-B9AE-568C-AEB9-EE0C213882A5 ;
+    p:P113 wds:Q861-29717366-81A3-5A26-A698-834BFEB2281F ;
+    p:P115 wds:Q861-B9C17416-4EE5-532D-A4F7-EB56690D921F ;
+    p:P116 wds:Q861-26598DD5-694E-57B2-A816-07749E66B854 ;
+    p:P117 wds:Q861-4BDDF0FA-A034-5898-AE25-AA87A28D47E7,
+        wds:Q861-F513829B-94D9-57E7-B073-90D133169DC8 ;
+    p:P118 wds:Q861-2A9D946A-4CD7-5F82-B041-7940967342FB ;
+    p:P119 wds:Q861-4EE81FA2-D291-5DA3-8E63-215E99676164 ;
+    p:P122 wds:Q861-86A6A004-787E-5EFB-868B-592B370A28A3,
+        wds:Q861-091E8556-A0D7-5EC5-AAD9-4C002A935A70 ;
+    p:P125 wds:Q861-A7D722DB-0A6F-52BA-81F4-FB8FA4BE92D7 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q135 ;
+    wdt:P113 wd:Q862 ;
+    wdt:P115 <https://open-archaeo.info/post/totalopenstationtoqgis/> ;
+    wdt:P116 "totalopenstationtoqgis" ;
+    wdt:P117 wd:Q119,
+        wd:Q144 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "totalopenstationToQgis"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/enzococca/totalopenstationToQgis> .
+
+wds:Q861-0F29105A-4374-54EB-ADF0-9D922530AACC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P2 wd:Q103 .
+
+wds:Q861-2A9D946A-4CD7-5F82-B041-7940967342FB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P118 wd:Q108 .
+
+wds:Q861-4BDDF0FA-A034-5898-AE25-AA87A28D47E7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P117 wd:Q119 .
+
+wds:Q861-4EE81FA2-D291-5DA3-8E63-215E99676164
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P119 "totalopenstationToQgis"@en .
+
+wds:Q861-6A3D266B-B6A7-593D-BF67-A7C5B7CCD955
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P106 wd:Q110 .
+
+wds:Q861-86A6A004-787E-5EFB-868B-592B370A28A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P122 wd:Q110 .
+
+wds:Q861-091E8556-A0D7-5EC5-AAD9-4C002A935A70
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P122 wd:Q109 .
+
+wds:Q861-26598DD5-694E-57B2-A816-07749E66B854
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "totalopenstationtoqgis" .
+
+wds:Q861-050335A1-646A-5F25-BCC1-FE94F9BCBF32
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P2 wd:Q106 .
+
+wds:Q861-29717366-81A3-5A26-A698-834BFEB2281F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q862 .
+
+wds:Q861-A7D722DB-0A6F-52BA-81F4-FB8FA4BE92D7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/enzococca/totalopenstationToQgis> .
+
+wds:Q861-B9C17416-4EE5-532D-A4F7-EB56690D921F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P115 <https://open-archaeo.info/post/totalopenstationtoqgis/> .
+
+wds:Q861-F19065A3-B9AE-568C-AEB9-EE0C213882A5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P109 wd:Q135 .
+
+wds:Q861-F513829B-94D9-57E7-B073-90D133169DC8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:454c14fec47c449b3310538a85e4a73ebbd63949 ;
+    ps:P117 wd:Q144 .
+
+wdref:454c14fec47c449b3310538a85e4a73ebbd63949
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/totalopenstationtoqgis/> .

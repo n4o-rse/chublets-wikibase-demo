@@ -1,0 +1,225 @@
+# Q723: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q723
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "R scripts for digitizing, processing, analyzing, and comparing archaeological ceramic 2d profile drawings, photographs, and other data."@en ;
+    dcterms:identifier "Q723" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q723 ;
+    dcterms:title "ceramic-computation"@en ;
+    schema:about wd:Q723 ;
+    dcat:distribution dist:Q723-html,
+        dist:Q723-json,
+        dist:Q723-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q723.html> .
+
+dist:Q723-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q723, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q723.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q723-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q723, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16569"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q723.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q723-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q723, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q723.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q723
+    a wikibase:Item ;
+    schema:description "R scripts for digitizing, processing, analyzing, and comparing archaeological ceramic 2d profile drawings, photographs, and other data."@en ;
+    schema:name "ceramic-computation"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "ceramic-computation"@en ;
+    skos:prefLabel "ceramic-computation"@en ;
+    p:P2 wds:Q723-09D76FB1-41D4-5C64-9BE8-CD6B89940D1C,
+        wds:Q723-260C8017-1D01-581B-B2E5-701F30896552 ;
+    p:P106 wds:Q723-A02F3CCA-5D32-5799-8FB6-9A3DAE4ED484 ;
+    p:P113 wds:Q723-66E3169B-9914-5D19-A9CE-746D54C48C79 ;
+    p:P115 wds:Q723-3C9B2A52-4C2C-5261-B0B8-86834AF4D347 ;
+    p:P116 wds:Q723-B5654526-441B-573D-AE6C-2DBBB155CA1E ;
+    p:P117 wds:Q723-6CDABE7E-04A6-5135-8A65-BEB50EE0B2AD,
+        wds:Q723-AA3A4581-9F42-5892-9D77-F647D948409B ;
+    p:P118 wds:Q723-10617234-C18D-566C-B623-8DCEBD74AF54 ;
+    p:P119 wds:Q723-FCE29138-7D6C-51A8-952A-F8083F71F15B ;
+    p:P122 wds:Q723-864E17FC-0D94-5EDD-A1CE-628934008D8C,
+        wds:Q723-70712FCA-70D5-5812-97F9-8046690AE905 ;
+    p:P123 wds:Q723-60CC3487-D41C-5184-A8D1-93BFD62B626F ;
+    p:P125 wds:Q723-B195B29C-3424-5CE7-9899-37DD7576EC68 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q130 ;
+    wdt:P115 <https://open-archaeo.info/post/ceramic-computation/> ;
+    wdt:P116 "ceramic-computation" ;
+    wdt:P117 wd:Q181,
+        wd:Q222 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ceramic-computation"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/anatolian/ceramic-computation> .
+
+wds:Q723-3C9B2A52-4C2C-5261-B0B8-86834AF4D347
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P115 <https://open-archaeo.info/post/ceramic-computation/> .
+
+wds:Q723-6CDABE7E-04A6-5135-8A65-BEB50EE0B2AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P117 wd:Q181 .
+
+wds:Q723-09D76FB1-41D4-5C64-9BE8-CD6B89940D1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P2 wd:Q106 .
+
+wds:Q723-60CC3487-D41C-5184-A8D1-93BFD62B626F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P123 wd:Q111 .
+
+wds:Q723-66E3169B-9914-5D19-A9CE-746D54C48C79
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q130 .
+
+wds:Q723-260C8017-1D01-581B-B2E5-701F30896552
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P2 wd:Q104 .
+
+wds:Q723-864E17FC-0D94-5EDD-A1CE-628934008D8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P122 wd:Q110 .
+
+wds:Q723-70712FCA-70D5-5812-97F9-8046690AE905
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P122 wd:Q109 .
+
+wds:Q723-10617234-C18D-566C-B623-8DCEBD74AF54
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P118 wd:Q108 .
+
+wds:Q723-A02F3CCA-5D32-5799-8FB6-9A3DAE4ED484
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P106 wd:Q110 .
+
+wds:Q723-AA3A4581-9F42-5892-9D77-F647D948409B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P117 wd:Q222 .
+
+wds:Q723-B195B29C-3424-5CE7-9899-37DD7576EC68
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    pq:P104 "2017-10-19T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-anatolian-ceramic-computation_-_2017-10-19_23-59-22> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:64f4499c55055e77441f336354ee9f08 ;
+    ps:P125 <https://github.com/anatolian/ceramic-computation> .
+
+wds:Q723-B5654526-441B-573D-AE6C-2DBBB155CA1E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "ceramic-computation" .
+
+wds:Q723-FCE29138-7D6C-51A8-952A-F8083F71F15B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42 ;
+    ps:P119 "ceramic-computation"@en .
+
+wdref:e15db1648d78a4ccb34c7695d3513ebc08f03f42
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/ceramic-computation/> .
+
+wdv:64f4499c55055e77441f336354ee9f08
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2017-10-19T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,233 @@
+# Q813: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q813
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "A set of programs for total station surveying."@en ;
+    dcterms:identifier "Q813" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q813 ;
+    dcterms:title "ShootPoints-Web"@en ;
+    schema:about wd:Q813 ;
+    dcat:distribution dist:Q813-html,
+        dist:Q813-json,
+        dist:Q813-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q813.html> .
+
+dist:Q813-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q813, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q813.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q813-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q813, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17288"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q813.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q813-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q813, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q813.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q813
+    a wikibase:Item ;
+    schema:description "A set of programs for total station surveying."@en ;
+    schema:name "ShootPoints-Web"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    rdfs:label "ShootPoints-Web"@en ;
+    skos:prefLabel "ShootPoints-Web"@en ;
+    p:P2 wds:Q813-99A1C245-06EA-5AA6-8507-353D8E798E57,
+        wds:Q813-B00443C1-6CE9-5184-A4B8-D4B0A0E9B2A2 ;
+    p:P106 wds:Q813-BF06ECBD-EE87-510F-AEC5-F28EA4979124 ;
+    p:P110 wds:Q813-C1B89DBC-B14A-5A3E-A0C4-D08EA22A1EA9 ;
+    p:P113 wds:Q813-501415E7-4625-5FD5-BE3F-DAE3777AD4E3 ;
+    p:P115 wds:Q813-9A7C6822-FC34-5730-B850-BC0363D01248 ;
+    p:P116 wds:Q813-11373B05-CEF4-54AF-A1A5-B310C9422A12 ;
+    p:P117 wds:Q813-2BB75D28-98FD-5F85-9CAA-C60C16E00C26,
+        wds:Q813-D7C3A72F-F5CF-59D5-8482-EB7AF6C99330 ;
+    p:P118 wds:Q813-D7EF7B65-7D79-5652-938A-68AE5DEAF3A9 ;
+    p:P119 wds:Q813-4EB2E1CF-9CB4-5E55-A30B-342E4B83C56D ;
+    p:P120 wds:Q813-8102FCBA-9EEF-5544-A630-3A9C732205EF ;
+    p:P122 wds:Q813-7BEE7130-4EEF-5F94-A22A-4C6F4F267A67,
+        wds:Q813-B3529257-8A7C-5D4B-882D-04C08D709C50 ;
+    p:P123 wds:Q813-0E68FE71-F28E-5940-837A-15F9E56EE499 ;
+    p:P125 wds:Q813-D2D380D8-9D8F-59D4-B98A-C2BE84351CB1 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P110 <https://www.youtube.com/watch?v=kiFEff1Kne4> ;
+    wdt:P113 wd:Q814 ;
+    wdt:P115 <https://open-archaeo.info/post/shootpoints-web/> ;
+    wdt:P116 "shootpoints-web" ;
+    wdt:P117 wd:Q136,
+        wd:Q329 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ShootPoints-Web"@en ;
+    wdt:P120 <http://shootpoints.io/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/Lugal-PCZ/ShootPoints-Web> .
+
+wds:Q813-0E68FE71-F28E-5940-837A-15F9E56EE499
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P123 wd:Q139 .
+
+wds:Q813-2BB75D28-98FD-5F85-9CAA-C60C16E00C26
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P117 wd:Q136 .
+
+wds:Q813-4EB2E1CF-9CB4-5E55-A30B-342E4B83C56D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P119 "ShootPoints-Web"@en .
+
+wds:Q813-7BEE7130-4EEF-5F94-A22A-4C6F4F267A67
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P122 wd:Q109 .
+
+wds:Q813-9A7C6822-FC34-5730-B850-BC0363D01248
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P115 <https://open-archaeo.info/post/shootpoints-web/> .
+
+wds:Q813-99A1C245-06EA-5AA6-8507-353D8E798E57
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P2 wd:Q106 .
+
+wds:Q813-8102FCBA-9EEF-5544-A630-3A9C732205EF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P120 <http://shootpoints.io/> .
+
+wds:Q813-11373B05-CEF4-54AF-A1A5-B310C9422A12
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "shootpoints-web" .
+
+wds:Q813-501415E7-4625-5FD5-BE3F-DAE3777AD4E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q814 .
+
+wds:Q813-B00443C1-6CE9-5184-A4B8-D4B0A0E9B2A2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P2 wd:Q102 .
+
+wds:Q813-B3529257-8A7C-5D4B-882D-04C08D709C50
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P122 wd:Q110 .
+
+wds:Q813-BF06ECBD-EE87-510F-AEC5-F28EA4979124
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P106 wd:Q110 .
+
+wds:Q813-C1B89DBC-B14A-5A3E-A0C4-D08EA22A1EA9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P110 <https://www.youtube.com/watch?v=kiFEff1Kne4> .
+
+wds:Q813-D2D380D8-9D8F-59D4-B98A-C2BE84351CB1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/Lugal-PCZ/ShootPoints-Web> .
+
+wds:Q813-D7C3A72F-F5CF-59D5-8482-EB7AF6C99330
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P117 wd:Q329 .
+
+wds:Q813-D7EF7B65-7D79-5652-938A-68AE5DEAF3A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
+    ps:P118 wd:Q108 .
+
+wdref:6dcff0c15466d0758aa93b492a6943bf64efed44
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/shootpoints-web/> .

@@ -1,0 +1,215 @@
+# Q687: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q687
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Scripts querying the ariadne infrastructure."@en ;
+    dcterms:identifier "Q687" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q687 ;
+    dcterms:title "ariadne"@en ;
+    schema:about wd:Q687 ;
+    dcat:distribution dist:Q687-html,
+        dist:Q687-json,
+        dist:Q687-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q687.html> .
+
+dist:Q687-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q687, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q687.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q687-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q687, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15311"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q687.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q687-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q687, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q687.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q687
+    a wikibase:Item ;
+    schema:description "Scripts querying the ariadne infrastructure."@en ;
+    schema:name "ariadne"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "ariadne"@en ;
+    skos:prefLabel "ariadne"@en ;
+    p:P2 wds:Q687-0DC1CFE6-0074-5798-9D71-D3CE1996225B,
+        wds:Q687-07881691-1571-5347-A7D4-A9E55DC42D08 ;
+    p:P106 wds:Q687-ADC449FE-03B4-53B6-B8F2-351918F40819 ;
+    p:P113 wds:Q687-7630CECF-599D-523F-AA21-6E4B87DE1AD4 ;
+    p:P115 wds:Q687-C857F634-F216-5CF3-9E1E-6E9B130787CA ;
+    p:P116 wds:Q687-144319F0-5D86-566B-802B-00144F27A248 ;
+    p:P117 wds:Q687-3DBB99BD-DEBD-5B63-9F47-0599E5BA287D,
+        wds:Q687-176B9F85-630E-55D1-A132-4B0098DD2804 ;
+    p:P118 wds:Q687-5AA64BE7-3077-582B-B6BE-8592B1D52B1B ;
+    p:P119 wds:Q687-8810EF0C-9B48-5C25-84CA-A62C480240D0 ;
+    p:P122 wds:Q687-456B2FA6-0001-5818-AD39-83B0C26A9AA7,
+        wds:Q687-FAE94C63-CF0A-5C74-91D1-A09228083ECC ;
+    p:P123 wds:Q687-49A04856-1FB1-5804-9821-818F70CFB43D ;
+    p:P125 wds:Q687-1F0C40D2-F76D-5832-BEA2-CBFA2E79C0D0 ;
+    wdt:P2 wd:Q104,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q513 ;
+    wdt:P115 <https://open-archaeo.info/post/ariadne/> ;
+    wdt:P116 "ariadne" ;
+    wdt:P117 wd:Q144,
+        wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "ariadne"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/SCSchmidt/ariadne> .
+
+wds:Q687-0DC1CFE6-0074-5798-9D71-D3CE1996225B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P2 wd:Q106 .
+
+wds:Q687-1F0C40D2-F76D-5832-BEA2-CBFA2E79C0D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/SCSchmidt/ariadne> .
+
+wds:Q687-3DBB99BD-DEBD-5B63-9F47-0599E5BA287D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P117 wd:Q148 .
+
+wds:Q687-5AA64BE7-3077-582B-B6BE-8592B1D52B1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P118 wd:Q108 .
+
+wds:Q687-49A04856-1FB1-5804-9821-818F70CFB43D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P123 wd:Q111 .
+
+wds:Q687-176B9F85-630E-55D1-A132-4B0098DD2804
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P117 wd:Q144 .
+
+wds:Q687-456B2FA6-0001-5818-AD39-83B0C26A9AA7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P122 wd:Q110 .
+
+wds:Q687-7630CECF-599D-523F-AA21-6E4B87DE1AD4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q513 .
+
+wds:Q687-8810EF0C-9B48-5C25-84CA-A62C480240D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P119 "ariadne"@en .
+
+wds:Q687-144319F0-5D86-566B-802B-00144F27A248
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "ariadne" .
+
+wds:Q687-07881691-1571-5347-A7D4-A9E55DC42D08
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P2 wd:Q104 .
+
+wds:Q687-ADC449FE-03B4-53B6-B8F2-351918F40819
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P106 wd:Q110 .
+
+wds:Q687-C857F634-F216-5CF3-9E1E-6E9B130787CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P115 <https://open-archaeo.info/post/ariadne/> .
+
+wds:Q687-FAE94C63-CF0A-5C74-91D1-A09228083ECC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:606556b2a141172541fdcf8dccad5426cc1a0e66 ;
+    ps:P122 wd:Q109 .
+
+wdref:606556b2a141172541fdcf8dccad5426cc1a0e66
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/ariadne/> .

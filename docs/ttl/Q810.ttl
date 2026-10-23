@@ -1,0 +1,206 @@
+# Q810: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q810
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Functions for analysing and visualizing rates of evolution."@en ;
+    dcterms:identifier "Q810" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q810 ;
+    dcterms:title "roev"@en ;
+    schema:about wd:Q810 ;
+    dcat:distribution dist:Q810-html,
+        dist:Q810-json,
+        dist:Q810-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q810.html> .
+
+dist:Q810-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q810, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q810.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q810-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q810, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14291"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q810.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q810-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q810, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q810.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q810
+    a wikibase:Item ;
+    schema:description "Functions for analysing and visualizing rates of evolution."@en ;
+    schema:name "roev"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "roev"@en ;
+    skos:prefLabel "roev"@en ;
+    p:P2 wds:Q810-9C67BEB9-3D7C-520C-B23F-885E7B282A40,
+        wds:Q810-16426826-06EA-562A-9D56-39774E4C3DD1 ;
+    p:P106 wds:Q810-FBDDE742-E8DE-5899-8E54-116F67F31A1C ;
+    p:P113 wds:Q810-68165DC5-D54A-570C-9C18-5673698D3A65 ;
+    p:P115 wds:Q810-F47D987E-53D7-50CC-A68D-54F7125D1833 ;
+    p:P116 wds:Q810-F4EE16CF-B50C-5100-B026-44CFF4A92183 ;
+    p:P117 wds:Q810-46ADCDF8-E73E-588B-BB23-EB31F0F29C75 ;
+    p:P118 wds:Q810-A43D863E-7A8F-5849-8C43-72EA6A3B3A91 ;
+    p:P119 wds:Q810-3CB160BD-108B-589E-A6B2-A2DBB47EC4A9 ;
+    p:P122 wds:Q810-B62AFFA9-23AA-5286-A131-FEDC4175F033,
+        wds:Q810-FFEC4CE7-1725-5635-A117-048FA1CF3CC0 ;
+    p:P123 wds:Q810-1B4E6E37-C332-5C45-8D84-4135D0829696 ;
+    p:P125 wds:Q810-23977358-7ED5-5C1F-94D4-7B7724C47C7A ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q321 ;
+    wdt:P115 <https://open-archaeo.info/post/roev/> ;
+    wdt:P116 "roev" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "roev"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/benmarwick/roev> .
+
+wds:Q810-1B4E6E37-C332-5C45-8D84-4135D0829696
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P123 wd:Q111 .
+
+wds:Q810-3CB160BD-108B-589E-A6B2-A2DBB47EC4A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P119 "roev"@en .
+
+wds:Q810-9C67BEB9-3D7C-520C-B23F-885E7B282A40
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P2 wd:Q106 .
+
+wds:Q810-46ADCDF8-E73E-588B-BB23-EB31F0F29C75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P117 wd:Q116 .
+
+wds:Q810-68165DC5-D54A-570C-9C18-5673698D3A65
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q321 .
+
+wds:Q810-16426826-06EA-562A-9D56-39774E4C3DD1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P2 wd:Q103 .
+
+wds:Q810-23977358-7ED5-5C1F-94D4-7B7724C47C7A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/benmarwick/roev> .
+
+wds:Q810-A43D863E-7A8F-5849-8C43-72EA6A3B3A91
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P118 wd:Q108 .
+
+wds:Q810-B62AFFA9-23AA-5286-A131-FEDC4175F033
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P122 wd:Q109 .
+
+wds:Q810-F4EE16CF-B50C-5100-B026-44CFF4A92183
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "roev" .
+
+wds:Q810-F47D987E-53D7-50CC-A68D-54F7125D1833
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P115 <https://open-archaeo.info/post/roev/> .
+
+wds:Q810-FBDDE742-E8DE-5899-8E54-116F67F31A1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P106 wd:Q110 .
+
+wds:Q810-FFEC4CE7-1725-5635-A117-048FA1CF3CC0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8 ;
+    ps:P122 wd:Q110 .
+
+wdref:9145f861931a219a883e24f4bd8cd4db5a0c1bb8
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/roev/> .

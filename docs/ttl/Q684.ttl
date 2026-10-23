@@ -1,0 +1,215 @@
+# Q684: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q684
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "The IntCal20 radiocarbon calibration curves are provided here in a single data package, together with previous IntCal curves and postbomb curves."@en ;
+    dcterms:identifier "Q684" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q684 ;
+    dcterms:title "IntCal"@en ;
+    schema:about wd:Q684 ;
+    dcat:distribution dist:Q684-html,
+        dist:Q684-json,
+        dist:Q684-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q684.html> .
+
+dist:Q684-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q684, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q684.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q684-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q684, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15297"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q684.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q684-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q684, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q684.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q684
+    a wikibase:Item ;
+    schema:description "The IntCal20 radiocarbon calibration curves are provided here in a single data package, together with previous IntCal curves and postbomb curves."@en ;
+    schema:name "IntCal"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "IntCal"@en ;
+    skos:prefLabel "IntCal"@en ;
+    p:P2 wds:Q684-16D3A371-115D-5DCD-A43D-379B4C69D3B6,
+        wds:Q684-C6DE8542-6A19-5334-9315-AC3AB2300561 ;
+    p:P106 wds:Q684-DB26C631-E4CE-5B5D-A822-882F01F395FF ;
+    p:P108 wds:Q684-B74984B9-C074-566A-A572-2042145DFCAB ;
+    p:P113 wds:Q684-9F343DD0-668B-5299-8725-6D747E271CC9 ;
+    p:P115 wds:Q684-C4981988-2C02-527E-8DB2-3F1C6BFF91C2 ;
+    p:P116 wds:Q684-102CD069-94C1-5ABA-AB31-081268ED8364 ;
+    p:P117 wds:Q684-8F27D860-0F6C-5FC2-874C-B20B4F7D38CD ;
+    p:P118 wds:Q684-EA60690E-45BA-5B99-B8D6-86FEEC5FA325 ;
+    p:P119 wds:Q684-A4784560-1614-5CCC-B20E-180467F1019B ;
+    p:P122 wds:Q684-A45E2BC0-501A-5A1F-B3AB-075BC8DFB0DF,
+        wds:Q684-FC935F84-F531-55BC-BF80-2C234323B6ED ;
+    p:P123 wds:Q684-67FA23DD-2A51-50BD-84C8-6E9A48913032 ;
+    p:P125 wds:Q684-8DA64A9B-FAE4-548B-A87F-0414AAD9E385 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P108 "IntCal" ;
+    wdt:P113 wd:Q162 ;
+    wdt:P115 <https://open-archaeo.info/post/intcal/> ;
+    wdt:P116 "intcal" ;
+    wdt:P117 wd:Q140 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "IntCal"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/Maarten14C/IntCal> .
+
+wds:Q684-8DA64A9B-FAE4-548B-A87F-0414AAD9E385
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/Maarten14C/IntCal> .
+
+wds:Q684-8F27D860-0F6C-5FC2-874C-B20B4F7D38CD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P117 wd:Q140 .
+
+wds:Q684-9F343DD0-668B-5299-8725-6D747E271CC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q162 .
+
+wds:Q684-16D3A371-115D-5DCD-A43D-379B4C69D3B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P2 wd:Q103 .
+
+wds:Q684-67FA23DD-2A51-50BD-84C8-6E9A48913032
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P123 wd:Q111 .
+
+wds:Q684-102CD069-94C1-5ABA-AB31-081268ED8364
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "intcal" .
+
+wds:Q684-A45E2BC0-501A-5A1F-B3AB-075BC8DFB0DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P122 wd:Q109 .
+
+wds:Q684-A4784560-1614-5CCC-B20E-180467F1019B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P119 "IntCal"@en .
+
+wds:Q684-B74984B9-C074-566A-A572-2042145DFCAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P108 "IntCal" .
+
+wds:Q684-C6DE8542-6A19-5334-9315-AC3AB2300561
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P2 wd:Q106 .
+
+wds:Q684-C4981988-2C02-527E-8DB2-3F1C6BFF91C2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P115 <https://open-archaeo.info/post/intcal/> .
+
+wds:Q684-DB26C631-E4CE-5B5D-A822-882F01F395FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P106 wd:Q110 .
+
+wds:Q684-EA60690E-45BA-5B99-B8D6-86FEEC5FA325
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P118 wd:Q108 .
+
+wds:Q684-FC935F84-F531-55BC-BF80-2C234323B6ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:fd89d656b51a6f1c726302200637bc782787e7dd ;
+    ps:P122 wd:Q110 .
+
+wdref:fd89d656b51a6f1c726302200637bc782787e7dd
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/intcal/> .

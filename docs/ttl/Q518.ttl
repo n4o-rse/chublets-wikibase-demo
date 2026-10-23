@@ -1,0 +1,224 @@
+# Q518: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q518
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Python library to access data in the GEOROC database."@en ;
+    dcterms:identifier "Q518" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q518 ;
+    dcterms:title "pygeoroc"@en ;
+    schema:about wd:Q518 ;
+    dcat:distribution dist:Q518-html,
+        dist:Q518-json,
+        dist:Q518-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q518.html> .
+
+dist:Q518-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q518, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q518.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q518-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q518, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16319"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q518.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q518-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q518, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q518.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q518
+    a wikibase:Item ;
+    schema:description "Python library to access data in the GEOROC database."@en ;
+    schema:name "pygeoroc"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "pygeoroc"@en ;
+    skos:prefLabel "pygeoroc"@en ;
+    p:P2 wds:Q518-79EA218D-B679-5054-A0CA-BEB0B1695CC6,
+        wds:Q518-7736D1C6-7285-565C-8FAC-C938810EDE41 ;
+    p:P106 wds:Q518-A9765546-C702-595C-8D11-5BDDAAD202BE ;
+    p:P113 wds:Q518-6DA5549A-2262-5DEC-8188-74E2AB0BBDB8 ;
+    p:P115 wds:Q518-783F5EBB-D4DB-58BA-A697-6D684E92B891 ;
+    p:P116 wds:Q518-C36E8937-01DF-5661-8044-E8C353D5D6B9 ;
+    p:P117 wds:Q518-0FA35798-A0DB-55FE-A47F-F1380EFD9180,
+        wds:Q518-292D44DA-EFF3-580D-87E3-9F1AE038EF8F,
+        wds:Q518-E5EE1BB4-E628-504A-B6D2-27DA52CE87ED ;
+    p:P118 wds:Q518-57854480-8A7F-5D5A-9F16-236829819A71 ;
+    p:P119 wds:Q518-9A3C8888-AE44-524A-B149-6BD99D548D9A ;
+    p:P122 wds:Q518-0067D100-6596-57ED-A0C3-F612C771D19D,
+        wds:Q518-86766693-187E-5840-B5AD-41A8F74534D4 ;
+    p:P123 wds:Q518-95AB3F54-9BFF-5039-8E46-F132C66CD210 ;
+    p:P125 wds:Q518-03C92244-EBAC-582C-B8A7-ED4F6AE2BA73 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q519 ;
+    wdt:P115 <https://open-archaeo.info/post/pygeoroc/> ;
+    wdt:P116 "pygeoroc" ;
+    wdt:P117 wd:Q144,
+        wd:Q207,
+        wd:Q414 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "pygeoroc"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/pofatu/pygeoroc> .
+
+wds:Q518-0FA35798-A0DB-55FE-A47F-F1380EFD9180
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P117 wd:Q207 .
+
+wds:Q518-03C92244-EBAC-582C-B8A7-ED4F6AE2BA73
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/pofatu/pygeoroc> .
+
+wds:Q518-6DA5549A-2262-5DEC-8188-74E2AB0BBDB8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q519 .
+
+wds:Q518-9A3C8888-AE44-524A-B149-6BD99D548D9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P119 "pygeoroc"@en .
+
+wds:Q518-0067D100-6596-57ED-A0C3-F612C771D19D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P122 wd:Q109 .
+
+wds:Q518-79EA218D-B679-5054-A0CA-BEB0B1695CC6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P2 wd:Q103 .
+
+wds:Q518-95AB3F54-9BFF-5039-8E46-F132C66CD210
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P123 wd:Q139 .
+
+wds:Q518-292D44DA-EFF3-580D-87E3-9F1AE038EF8F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P117 wd:Q144 .
+
+wds:Q518-783F5EBB-D4DB-58BA-A697-6D684E92B891
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P115 <https://open-archaeo.info/post/pygeoroc/> .
+
+wds:Q518-7736D1C6-7285-565C-8FAC-C938810EDE41
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P2 wd:Q106 .
+
+wds:Q518-57854480-8A7F-5D5A-9F16-236829819A71
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P118 wd:Q108 .
+
+wds:Q518-86766693-187E-5840-B5AD-41A8F74534D4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P122 wd:Q110 .
+
+wds:Q518-A9765546-C702-595C-8D11-5BDDAAD202BE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P106 wd:Q110 .
+
+wds:Q518-C36E8937-01DF-5661-8044-E8C353D5D6B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "pygeoroc" .
+
+wds:Q518-E5EE1BB4-E628-504A-B6D2-27DA52CE87ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
+    ps:P117 wd:Q414 .
+
+wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/pygeoroc/> .

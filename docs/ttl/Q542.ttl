@@ -1,0 +1,216 @@
+# Q542: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q542
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "An R package that provides datasets useful for biological and forensic anthropology."@en ;
+    dcterms:identifier "Q542" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q542 ;
+    dcterms:title "bioanth"@en ;
+    schema:about wd:Q542 ;
+    dcat:distribution dist:Q542-html,
+        dist:Q542-json,
+        dist:Q542-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q542.html> .
+
+dist:Q542-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q542, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q542.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q542-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q542, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15290"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q542.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q542-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q542, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q542.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q542
+    a wikibase:Item ;
+    schema:description "An R package that provides datasets useful for biological and forensic anthropology."@en ;
+    schema:name "bioanth"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "bioanth"@en ;
+    skos:prefLabel "bioanth"@en ;
+    p:P2 wds:Q542-84074125-7A9F-5924-8026-578DC46CC6E1,
+        wds:Q542-DA7070D4-96BA-5682-8486-D69E11E3A914 ;
+    p:P106 wds:Q542-395E6BAF-EE5A-5C93-9045-3A3A11450B55 ;
+    p:P113 wds:Q542-702A4D05-D0B7-540E-979C-E645E80FC165 ;
+    p:P115 wds:Q542-003AF4AB-6D16-52B9-8BCC-193921CD2AFF ;
+    p:P116 wds:Q542-6890A903-BF04-5EA1-89D0-2541A2D07C68 ;
+    p:P117 wds:Q542-33DC6D8D-8428-5D44-98EC-94EE580E4DF9 ;
+    p:P118 wds:Q542-53316DE6-14B7-5E95-8DA2-40A71CEF2E1D ;
+    p:P119 wds:Q542-5018108C-0347-59E7-AF12-9773BB870067 ;
+    p:P122 wds:Q542-68A04A81-AD8E-5A78-8433-E8A19C0D3070,
+        wds:Q542-C0666387-506F-5A5E-825A-FAB8C9B7924E ;
+    p:P123 wds:Q542-81A63BDE-80EF-5B98-9524-2D5372248289 ;
+    p:P125 wds:Q542-337A51CA-1F0F-50A0-A67C-8769CC55000C ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q543 ;
+    wdt:P115 <https://open-archaeo.info/post/bioanth/> ;
+    wdt:P116 "bioanth" ;
+    wdt:P117 wd:Q272 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "bioanth"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q111 ;
+    wdt:P125 <https://github.com/geanes/bioanth> .
+
+wds:Q542-003AF4AB-6D16-52B9-8BCC-193921CD2AFF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P115 <https://open-archaeo.info/post/bioanth/> .
+
+wds:Q542-33DC6D8D-8428-5D44-98EC-94EE580E4DF9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P117 wd:Q272 .
+
+wds:Q542-68A04A81-AD8E-5A78-8433-E8A19C0D3070
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P122 wd:Q110 .
+
+wds:Q542-81A63BDE-80EF-5B98-9524-2D5372248289
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P123 wd:Q111 .
+
+wds:Q542-337A51CA-1F0F-50A0-A67C-8769CC55000C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    pq:P104 "2015-02-27T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-geanes-bioanth_-_2015-02-27_03-40-21> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:d7a25f53309d4e5402a219d81cfe052d ;
+    ps:P125 <https://github.com/geanes/bioanth> .
+
+wds:Q542-395E6BAF-EE5A-5C93-9045-3A3A11450B55
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P106 wd:Q110 .
+
+wds:Q542-702A4D05-D0B7-540E-979C-E645E80FC165
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q543 .
+
+wds:Q542-6890A903-BF04-5EA1-89D0-2541A2D07C68
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "bioanth" .
+
+wds:Q542-53316DE6-14B7-5E95-8DA2-40A71CEF2E1D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P118 wd:Q108 .
+
+wds:Q542-5018108C-0347-59E7-AF12-9773BB870067
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P119 "bioanth"@en .
+
+wds:Q542-84074125-7A9F-5924-8026-578DC46CC6E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P2 wd:Q106 .
+
+wds:Q542-C0666387-506F-5A5E-825A-FAB8C9B7924E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P122 wd:Q109 .
+
+wds:Q542-DA7070D4-96BA-5682-8486-D69E11E3A914
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:c3613efe448cca934671fcc97a16601c9b9f4d76 ;
+    ps:P2 wd:Q103 .
+
+wdref:c3613efe448cca934671fcc97a16601c9b9f4d76
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/bioanth/> .
+
+wdv:d7a25f53309d4e5402a219d81cfe052d
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2015-02-27T00:00:00Z"^^xsd:dateTime .

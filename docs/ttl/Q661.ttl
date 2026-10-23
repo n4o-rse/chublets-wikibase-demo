@@ -1,0 +1,205 @@
+# Q661: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q661
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Applications for obtaining chronograms (quantified chronology diagrams) and time distribution curves of archaeological or historical units from quantified dating indicators treated as inaccuracy intervals."@en ;
+    dcterms:identifier "Q661" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q661 ;
+    dcterms:title "Chronophage"@en ;
+    schema:about wd:Q661 ;
+    dcat:distribution dist:Q661-html,
+        dist:Q661-json,
+        dist:Q661-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q661.html> .
+
+dist:Q661-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q661, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q661.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q661-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q661, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14044"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q661.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q661-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q661, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q661.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q661
+    a wikibase:Item ;
+    schema:description "Applications for obtaining chronograms (quantified chronology diagrams) and time distribution curves of archaeological or historical units from quantified dating indicators treated as inaccuracy intervals."@en ;
+    schema:name "Chronophage"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Chronophage"@en ;
+    skos:prefLabel "Chronophage"@en ;
+    p:P2 wds:Q661-0E4B64A7-145E-51B3-B250-EF88AAF53908,
+        wds:Q661-77718897-5B2A-529D-B09F-BD1DCCEDE145 ;
+    p:P106 wds:Q661-F87698A7-995A-5045-AB3C-F34EC1B0732E ;
+    p:P109 wds:Q661-DFBE712D-1726-53CA-8092-D060AE273E10 ;
+    p:P113 wds:Q661-EE32E211-4DEB-59F5-84A7-0E0E0C5D0A44 ;
+    p:P115 wds:Q661-963A0250-6228-5CF1-9A26-0AC99D16737C ;
+    p:P116 wds:Q661-891CD6CC-AC1A-5ED7-A5AD-721047246203 ;
+    p:P117 wds:Q661-BBE65CC6-26CE-51C8-8006-556621458D71 ;
+    p:P118 wds:Q661-C921B47F-50B7-5F20-AFAA-B0295F8F8DDC ;
+    p:P119 wds:Q661-2BD8F532-0076-5A36-88AA-597E1CF86FF7 ;
+    p:P120 wds:Q661-23F441CD-66FF-5864-8790-92E76B9354DD ;
+    p:P122 wds:Q661-63CB1AA1-DFC6-5ACB-ADA2-C229C52A0FE4,
+        wds:Q661-BD3F5E26-41FC-536A-89E4-0C6D6B76B3A8 ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q645 ;
+    wdt:P113 wd:Q262 ;
+    wdt:P115 <https://open-archaeo.info/post/chronophage/> ;
+    wdt:P116 "chronophage" ;
+    wdt:P117 wd:Q126 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "Chronophage"@en ;
+    wdt:P120 <https://abp.hypotheses.org/4284> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 .
+
+wds:Q661-0E4B64A7-145E-51B3-B250-EF88AAF53908
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P2 wd:Q103 .
+
+wds:Q661-2BD8F532-0076-5A36-88AA-597E1CF86FF7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P119 "Chronophage"@en .
+
+wds:Q661-23F441CD-66FF-5864-8790-92E76B9354DD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P120 <https://abp.hypotheses.org/4284> .
+
+wds:Q661-63CB1AA1-DFC6-5ACB-ADA2-C229C52A0FE4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P122 wd:Q110 .
+
+wds:Q661-891CD6CC-AC1A-5ED7-A5AD-721047246203
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "chronophage" .
+
+wds:Q661-963A0250-6228-5CF1-9A26-0AC99D16737C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P115 <https://open-archaeo.info/post/chronophage/> .
+
+wds:Q661-77718897-5B2A-529D-B09F-BD1DCCEDE145
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P2 wd:Q106 .
+
+wds:Q661-BBE65CC6-26CE-51C8-8006-556621458D71
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P117 wd:Q126 .
+
+wds:Q661-BD3F5E26-41FC-536A-89E4-0C6D6B76B3A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P122 wd:Q109 .
+
+wds:Q661-C921B47F-50B7-5F20-AFAA-B0295F8F8DDC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P118 wd:Q108 .
+
+wds:Q661-DFBE712D-1726-53CA-8092-D060AE273E10
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P109 wd:Q645 .
+
+wds:Q661-EE32E211-4DEB-59F5-84A7-0E0E0C5D0A44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q262 .
+
+wds:Q661-F87698A7-995A-5045-AB3C-F34EC1B0732E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:76a008741fe9729b5d10e67f5de1d370b3597635 ;
+    ps:P106 wd:Q110 .
+
+wdref:76a008741fe9729b5d10e67f5de1d370b3597635
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/chronophage/> .

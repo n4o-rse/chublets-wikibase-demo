@@ -1,0 +1,206 @@
+# Q625: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q625
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Extends the game back millions years and multiple eras into the days when \"man\" first descended from the trees!"@en ;
+    dcterms:identifier "Q625" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q625 ;
+    dcterms:title "civ5-prehistoric"@en ;
+    schema:about wd:Q625 ;
+    dcat:distribution dist:Q625-html,
+        dist:Q625-json,
+        dist:Q625-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q625.html> .
+
+dist:Q625-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q625, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q625.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q625-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q625, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14494"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q625.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q625-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q625, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q625.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q625
+    a wikibase:Item ;
+    schema:description "Extends the game back millions years and multiple eras into the days when \"man\" first descended from the trees!"@en ;
+    schema:name "civ5-prehistoric"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "civ5-prehistoric"@en ;
+    skos:prefLabel "civ5-prehistoric"@en ;
+    p:P2 wds:Q625-AE67A1E8-45F8-54B4-9B65-4452C6F04E81,
+        wds:Q625-EB3C2C2B-6FDA-5F9A-B87D-4D27FEE9541E ;
+    p:P106 wds:Q625-66B185D2-09D1-53EC-B6D2-AAD93CF3674A ;
+    p:P113 wds:Q625-D2125420-A751-5968-90BE-BF90035AFE3F ;
+    p:P115 wds:Q625-592FF1DE-97EA-5C3E-ADC4-C9E0CABF79AE ;
+    p:P116 wds:Q625-80A8739D-5236-5E37-B6E8-624EFA6A9E46 ;
+    p:P117 wds:Q625-83A3DD91-916D-58A9-9C64-2D0CEF9CE41E ;
+    p:P118 wds:Q625-8C7E3C14-C393-58D4-9027-303C9F8E53A8 ;
+    p:P119 wds:Q625-62CCBDEA-638D-50D8-A660-F0C4F9323D19 ;
+    p:P120 wds:Q625-786D74A9-F3F5-51C8-86F1-33B14C8E9CA7 ;
+    p:P122 wds:Q625-249AD130-5549-5457-8A62-0306DB24FFE4,
+        wds:Q625-C65E1D17-B1DA-5A52-A285-7CDB52C5E8D2 ;
+    p:P125 wds:Q625-E0170EF2-DC86-508E-8B57-A910FBF57F97 ;
+    wdt:P2 wd:Q102,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q627 ;
+    wdt:P115 <https://open-archaeo.info/post/civ5-prehistoric/> ;
+    wdt:P116 "civ5-prehistoric" ;
+    wdt:P117 wd:Q626 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "civ5-prehistoric"@en ;
+    wdt:P120 <https://github.com/carlosfhernandez/civ5-prehistoric/wiki/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P125 <https://github.com/carlosfhernandez/civ5-prehistoric> .
+
+wds:Q625-8C7E3C14-C393-58D4-9027-303C9F8E53A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P118 wd:Q108 .
+
+wds:Q625-62CCBDEA-638D-50D8-A660-F0C4F9323D19
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P119 "civ5-prehistoric"@en .
+
+wds:Q625-66B185D2-09D1-53EC-B6D2-AAD93CF3674A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P106 wd:Q110 .
+
+wds:Q625-80A8739D-5236-5E37-B6E8-624EFA6A9E46
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "civ5-prehistoric" .
+
+wds:Q625-83A3DD91-916D-58A9-9C64-2D0CEF9CE41E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P117 wd:Q626 .
+
+wds:Q625-249AD130-5549-5457-8A62-0306DB24FFE4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P122 wd:Q110 .
+
+wds:Q625-592FF1DE-97EA-5C3E-ADC4-C9E0CABF79AE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P115 <https://open-archaeo.info/post/civ5-prehistoric/> .
+
+wds:Q625-786D74A9-F3F5-51C8-86F1-33B14C8E9CA7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P120 <https://github.com/carlosfhernandez/civ5-prehistoric/wiki/> .
+
+wds:Q625-AE67A1E8-45F8-54B4-9B65-4452C6F04E81
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P2 wd:Q106 .
+
+wds:Q625-C65E1D17-B1DA-5A52-A285-7CDB52C5E8D2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P122 wd:Q109 .
+
+wds:Q625-D2125420-A751-5968-90BE-BF90035AFE3F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q627 .
+
+wds:Q625-E0170EF2-DC86-508E-8B57-A910FBF57F97
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/carlosfhernandez/civ5-prehistoric> .
+
+wds:Q625-EB3C2C2B-6FDA-5F9A-B87D-4D27FEE9541E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:127861892e9ffeda209732147afa617d517e6ada ;
+    ps:P2 wd:Q102 .
+
+wdref:127861892e9ffeda209732147afa617d517e6ada
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/civ5-prehistoric/> .

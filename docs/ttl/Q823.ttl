@@ -1,0 +1,215 @@
+# Q823: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
+# Generated with wikibase-static 0.12.0; data as of unknown
+# Licence: CC0 1.0 (Public Domain)
+
+@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Q823
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Estimate probabilities of find numbers per period."@en ;
+    dcterms:identifier "Q823" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q823 ;
+    dcterms:title "aoristic-analysis"@en ;
+    schema:about wd:Q823 ;
+    dcat:distribution dist:Q823-html,
+        dist:Q823-json,
+        dist:Q823-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q823.html> .
+
+dist:Q823-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q823, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q823.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q823-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q823, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15434"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q823.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q823-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q823, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q823.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+wd:Q823
+    a wikibase:Item ;
+    schema:description "Estimate probabilities of find numbers per period."@en ;
+    schema:name "aoristic-analysis"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "aoristic-analysis"@en ;
+    skos:prefLabel "aoristic-analysis"@en ;
+    p:P2 wds:Q823-762C9F02-4992-5D8F-8ECD-7D91BB8F48DF,
+        wds:Q823-F5F8C150-4E7D-543A-B008-3435E516985F ;
+    p:P106 wds:Q823-29FEA768-0E9B-5348-BC40-087545D653A9 ;
+    p:P113 wds:Q823-C2423D33-48E8-52C3-8B0F-814C48B0A27B ;
+    p:P114 wds:Q823-41367E44-2529-5C9C-A5AF-C6E73BC3C7FA ;
+    p:P115 wds:Q823-1543BCA3-A2E1-59EF-9AE7-A4E8E09A02CE ;
+    p:P116 wds:Q823-95748533-A5A6-59DF-AFB9-6FF651545B0F ;
+    p:P117 wds:Q823-AAD80DD8-757C-5471-AD41-FCB98F29178D ;
+    p:P118 wds:Q823-A9108E9F-8C90-5B56-AFC2-11C9367B28FE ;
+    p:P119 wds:Q823-AC1535C6-5AF1-5B49-AFD7-D522AC8EFB85 ;
+    p:P122 wds:Q823-BE1A62A7-5455-50CA-BFFA-4D8AABDA291B,
+        wds:Q823-C08E3754-1488-5EBD-B334-1D263B9B81BA ;
+    p:P123 wds:Q823-FA7A5735-C2BE-5FAA-B42D-38AE16DA86A1 ;
+    p:P125 wds:Q823-97A4BC58-AD0B-5A6E-87E5-478FFB4FCF2C ;
+    wdt:P2 wd:Q103,
+        wd:Q106 ;
+    wdt:P106 wd:Q110 ;
+    wdt:P113 wd:Q824 ;
+    wdt:P114 "10.1016/j.jasrep.2016.10.006" ;
+    wdt:P115 <https://open-archaeo.info/post/aoristic-analysis/> ;
+    wdt:P116 "aoristic-analysis" ;
+    wdt:P117 wd:Q116 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "aoristic-analysis"@en ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
+    wdt:P123 wd:Q139 ;
+    wdt:P125 <https://github.com/LimesLimits/aoristic-analysis> .
+
+wds:Q823-29FEA768-0E9B-5348-BC40-087545D653A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P106 wd:Q110 .
+
+wds:Q823-97A4BC58-AD0B-5A6E-87E5-478FFB4FCF2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    pq:P126 wd:Q114 ;
+    ps:P125 <https://github.com/LimesLimits/aoristic-analysis> .
+
+wds:Q823-762C9F02-4992-5D8F-8ECD-7D91BB8F48DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P2 wd:Q106 .
+
+wds:Q823-1543BCA3-A2E1-59EF-9AE7-A4E8E09A02CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P115 <https://open-archaeo.info/post/aoristic-analysis/> .
+
+wds:Q823-41367E44-2529-5C9C-A5AF-C6E73BC3C7FA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P114 "10.1016/j.jasrep.2016.10.006" .
+
+wds:Q823-95748533-A5A6-59DF-AFB9-6FF651545B0F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "aoristic-analysis" .
+
+wds:Q823-A9108E9F-8C90-5B56-AFC2-11C9367B28FE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P118 wd:Q108 .
+
+wds:Q823-AAD80DD8-757C-5471-AD41-FCB98F29178D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P117 wd:Q116 .
+
+wds:Q823-AC1535C6-5AF1-5B49-AFD7-D522AC8EFB85
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P119 "aoristic-analysis"@en .
+
+wds:Q823-BE1A62A7-5455-50CA-BFFA-4D8AABDA291B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P122 wd:Q110 .
+
+wds:Q823-C08E3754-1488-5EBD-B334-1D263B9B81BA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P122 wd:Q109 .
+
+wds:Q823-C2423D33-48E8-52C3-8B0F-814C48B0A27B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q824 .
+
+wds:Q823-F5F8C150-4E7D-543A-B008-3435E516985F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P2 wd:Q103 .
+
+wds:Q823-FA7A5735-C2BE-5FAA-B42D-38AE16DA86A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    ps:P123 wd:Q139 .
+
+wdref:0a53c5e6688ed158de578ad32749056d03a20cf0
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/aoristic-analysis/> .

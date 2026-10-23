@@ -21,8 +21,8 @@ pages, a search index, RDF and a SPARQL page, with the same code as for a harves
 The logo (`assets/logo.png`, set in `site.yaml`) is the chublets raven.
 Every entity page offers its RDF as Turtle and as JSON for download (`docs/ttl/`, `docs/json/`) and a button that copies the concept URI to the clipboard.
 
-**About 100 software entries** from open-archaeo (S7c, chosen in proportion to the three categories: 60 packages and libraries,
-18 scripts, 22 standalone programs out of 416), each a chublet with the identity block (instance of chublet and of its category class,
+**All 416 software entries** from open-archaeo (S7c; first a hundred chosen in proportion to the three categories, since 2026-10-23 all of them:
+248 packages and libraries, 74 scripts, 94 standalone programs), each a chublet with the identity block (instance of chublet and of its category class,
 maintained by the WikiProject, part of chublets.software and of the open-archaeo collection, collection, inventory number = slug),
 its authors, tags, languages, repository with archive link, registry package and links.
 
@@ -100,10 +100,11 @@ Needs `wikibase-static` 0.8.0.
 ## Where the software entries came from
 
 `data/raw/open-archaeo-software.csv` is a copy of `out/open-archaeo-software.csv` of [open-archaeo](https://github.com/n4o-rse/open-archaeo)
-(416 entries, never edited). The package imports a part of it into the tables:
+(416 entries, never edited). The package imports it into the tables; without `--all` it takes a hundred in proportion to the three
+categories (`--limit N` for another size), the demo keeps all of them:
 
 ```cmd
-python main.py import-open-archaeo
+python main.py import-open-archaeo --all
 python main.py --strict
 ```
 
@@ -129,10 +130,12 @@ python main.py --strict
 Without `--offline` the importer asks Wikidata which revisions changed and fetches only those (`--from-dir DIR` stores JSON files you saved in a
 browser first). A Wikidata property becomes a local one through its Wikidata twin (`P4`); three have none and are listed in
 `dist/wikidata-gaps.csv` and `dist/wikidata-import.txt` (genre, used by, uses). Wikidata "author" (P50) is a twin of "creator" (P171) next to P170, a
-decision of 2026-10-23. Items the seeds point to become stubs with label, description and their Wikidata twin; three types without a local twin
+decision of 2026-10-23. The column `instance_of` of the seed list (here `Q106`, chublet) makes every seed a chublet, also those that Wikidata calls only software or Little Minion. Items the seeds point to become stubs with label, description and their Wikidata twin; three types without a local twin
 (utility software, plug-in, QGIS plugin) become classes below software, which is an assumption of the importer. Rows written by the importer have
 `origin=wikidata` or `wikidata-stub`; empty that cell in a row you change by hand and the next import leaves it alone. The report also says which
-repository and exact-match URLs occur in the open-archaeo items; it merges nothing. Needs `wikibase-static` 0.11.0.
+repository and exact-match URLs occur in the open-archaeo items; it merges nothing. With all 416 entries it finds two of the five: profileAAR
+by its repository URL and Alligator by the open-archaeo page that Wikidata names as exact match; each exists twice for now, once from each source.
+Needs `wikibase-static` 0.12.0.
 
 ## Where the model came from
 
