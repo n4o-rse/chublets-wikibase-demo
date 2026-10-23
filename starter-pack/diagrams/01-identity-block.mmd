@@ -1,0 +1,29 @@
+---
+title: "The identity of an open-archaeo chublet (as in pipeline model.py)"
+---
+flowchart LR
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+
+  item(["chublet item<br/>e.g. Alligator"]):::so
+  chub["chublet<br/>Q141115627"]:::cls
+  minion["Little Minion<br/>Q73899440"]:::cls
+  wp["WikiProject chublets.software<br/>Q141169143"]:::ro
+  plat["chublets.software<br/>Q141115774"]:::ro
+  oa["open-archaeo (Repository)<br/>Q141190255"]:::ro
+  slug["P217 inventory number: 'alligator'<br/>qualifier P195 collection: open-archaeo"]:::pm
+  url["https://open-archaeo.info/post/alligator/"]:::ro
+  item -->|"P31 instance of"| chub
+  chub -->|"subclass of"| minion
+  item -->|"P6104 maintained by WikiProject"| wp
+  item -->|"P361 part of"| plat
+  item -->|"P361 part of"| oa
+  item -->|"P195 collection"| oa
+  item --> slug
+  item -->|"P2888 exact match"| url
+

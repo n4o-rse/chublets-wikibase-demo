@@ -1,0 +1,65 @@
+wikidata_pid,wikidata_label,wikiproject_category,in_csv_transcription,wikibase_property,status,codemeta_terms,phase,label_confidence
+P31,instance of,Identity & people,yes,instance of,wikidata-only,,1,checked
+P144,based on,Relations,yes,based on,wikidata-only,,2,source-claimed
+P155,follows,Relations,yes,follows,wikidata-only,,3,source-claimed
+P156,followed by,Relations,yes,followed by,wikidata-only,,3,source-claimed
+P170,creator,Identity & people,yes,creator,wikidata-only,,3,source-claimed
+P178,developer,Identity & people,yes,developer,crosswalked,author,1,source-claimed
+P179,part of the series,Relations,yes,part of the series,wikidata-only,,3,source-claimed
+P275,copyright license,Versioning & rights,yes,copyright license,crosswalked,license,1,source-claimed
+P277,programmed in,Technical,yes,programmed in,crosswalked,programmingLanguage,1,checked
+P306,operating system,Technical,yes,operating system,crosswalked,operatingSystem,2,source-claimed
+P348,software version identifier,Versioning & rights,yes,software version identifier,crosswalked,softwareVersion,2,checked
+P356,DOI,Versioning & rights,yes,DOI,crosswalked,identifier,1,checked
+P361,part of,Relations,yes,part of,crosswalked,isPartOf,1,checked
+P400,platform,Technical,yes,platform,crosswalked,runtimePlatform,2,source-claimed
+P408,software engine,Technical,yes,software engine,wikidata-only,,3,source-claimed
+P437,distribution format,(page excerpt in earlier chat; not in CSV),no,distribution format,wikidata-only,,3,source-claimed
+P479,input device,Technical,yes,input device,wikidata-only,,3,source-claimed
+P527,has part(s),Relations,yes,has part(s),crosswalked,hasPart,2,source-claimed
+P548,version type,(page excerpt in earlier chat; not in CSV),no,version type,wikidata-only,,2,source-claimed
+P571,inception,Versioning & rights,yes,inception,crosswalked,dateCreated,2,source-claimed
+P577,publication date,Versioning & rights,yes,publication date,crosswalked,datePublished,2,source-claimed
+P580,start time,(page excerpt in earlier chat; not in CSV),no,start time,wikidata-only,,3,source-claimed
+P582,end time,Versioning & rights,yes,end time,wikidata-only,,3,source-claimed
+P585,point in time,(page excerpt in earlier chat; not in CSV),no,point in time,wikidata-only,,3,source-claimed
+P629,edition or translation of,Relations,yes,edition or translation of,wikidata-only,,3,source-claimed
+P737,influenced by,Identity & people,yes,influenced by,wikidata-only,,3,source-claimed
+P813,retrieved,(page excerpt in earlier chat; not in CSV),no,retrieved,wikidata-only,,1,source-claimed
+P856,official website,Links & registries,yes,official website,crosswalked,url,1,checked
+P1072,readable file format,Technical,yes,readable file format,wikidata-only,,2,source-claimed
+P1073,writable file format,Technical,yes,writable file format,wikidata-only,,2,source-claimed
+P1163,media type,Technical,yes,media type,wikidata-only,,3,source-claimed
+P1269,facet of,Relations,yes,facet of,wikidata-only,,3,source-claimed
+P1324,source code repository URL,Links & registries,yes,source code repository URL,crosswalked,codeRepository,1,checked
+P1372,binding of software library,Technical,yes,binding of software library,wikidata-only,,3,source-claimed
+P1401,issue tracker URL,Links & registries,yes,issue tracker URL,crosswalked,issueTracker,2,source-claimed
+P1414,GUI toolkit or framework,Technical,yes,GUI toolkit or framework,wikidata-only,,3,source-claimed
+P1476,title,(page excerpt in earlier chat; not in CSV),no,title,wikidata-only,,3,source-claimed
+P1547,depends on software,Technical,yes,depends on software,crosswalked,softwareRequirements,1,checked
+P1552,has characteristic,(page excerpt in earlier chat; not in CSV),no,has characteristic,wikidata-only,,3,source-claimed
+P1581,official blog URL,Links & registries,yes,official blog URL,wikidata-only,,3,source-claimed
+P1613,IRC channel URL,Links & registries,yes,IRC channel URL,wikidata-only,,3,source-claimed
+P1641,port,Technical,yes,port,wikidata-only,,3,source-claimed
+P1972,Open Hub ID,Links & registries,yes,Open Hub ID,wikidata-only,,3,source-claimed
+P2037,GitHub username,Links & registries,yes,GitHub username,wikidata-only,,2,source-claimed
+P2078,user manual URL,Links & registries,yes,user manual URL,crosswalked,softwareHelp,2,source-claimed
+P2159,computes solution to,(page excerpt in earlier chat; not in CSV),no,computes solution to,wikidata-only,,3,source-claimed
+P2209,SourceForge project,Links & registries,yes,SourceForge project,wikidata-only,,3,source-claimed
+P2284,price,Versioning & rights,yes,price,wikidata-only,,3,source-claimed
+P2537,Free Software Directory entry,Links & registries,yes,Free Software Directory entry,wikidata-only,,3,source-claimed
+P2992,software quality assurance,Versioning & rights,yes,software quality assurance,wikidata-only,,3,source-claimed
+P3033,package management system,Technical,yes,package management system,wikidata-only,,3,source-claimed
+P3112,distribution package ID P3112 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3112 (label to be filled),wikidata-only,,3,pid-only
+P3418,distribution package ID P3418 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3418 (label to be filled),wikidata-only,,3,pid-only
+P3442,distribution package ID P3442 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3442 (label to be filled),wikidata-only,,3,pid-only
+P3454,distribution package ID P3454 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3454 (label to be filled),wikidata-only,,3,pid-only
+P3463,distribution package ID P3463 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3463 (label to be filled),wikidata-only,,3,pid-only
+P3473,distribution package ID P3473 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3473 (label to be filled),wikidata-only,,3,pid-only
+P3499,distribution package ID P3499 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3499 (label to be filled),wikidata-only,,3,pid-only
+P3597,distribution package ID P3597 (label to be filled),(page excerpt in earlier chat; not in CSV),no,distribution package ID P3597 (label to be filled),wikidata-only,,3,pid-only
+P4107,Framalibre ID,(page excerpt in earlier chat; not in CSV),no,Framalibre ID,wikidata-only,,3,source-claimed
+P4945,download link,Versioning & rights,yes,download link,crosswalked,downloadUrl,2,source-claimed
+P5196,output device,Technical,yes,output device,wikidata-only,,3,source-claimed
+P6830,swMATH work ID,Links & registries,yes,swMATH work ID,wikidata-only,,3,source-claimed
+(unidentified),further package-registry ID properties,Links & registries,yes (as one row),,GAP,,,not enumerated: the CSV row reads '12 more package-registry IDs'; run tools/check_completeness.py against the page

@@ -1,0 +1,13 @@
+# Illustrative Turtle sketch -- not an export of a real Wikibase. Local prefix and IDs are placeholders.
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix cb:  <https://chublets.example.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cb:Alligator rdfs:label "Alligator"@en ;
+  wdt:P31 wd:Q141115627, wd:Q166142 ;
+  wdt:P6104 wd:Q141169143 ;
+  wdt:P361 wd:Q141115774, wd:Q141190255 ;
+  wdt:P1324 <https://github.com/leiza-rse/alligator> ;
+  wdt:P856 <https://tools.leiza.de/alligator/> ;
+  wdt:P178 wd:Q66606154, wd:Q88865971 .

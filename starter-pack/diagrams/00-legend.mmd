@@ -1,0 +1,20 @@
+---
+title: "Colour legend for all diagrams"
+---
+flowchart TB
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+
+  a(["item or process step"]):::so
+  b["real object: repository, website, person, service"]:::ro
+  c["class"]:::cls
+  d["term: controlled-vocabulary value"]:::term
+  e["vocabulary term: CodeMeta, schema.org"]:::owl
+  f["property, qualifier, property metadata"]:::pm
+  a ~~~ b ~~~ c ~~~ d ~~~ e ~~~ f
+

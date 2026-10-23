@@ -1,0 +1,28 @@
+---
+title: "How the Wikibase property set is composed (all CodeMeta terms and all WikiProject properties)"
+---
+flowchart LR
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+
+  cm["CodeMeta terms<br/>83"]:::owl
+  wp["WikiProject Software list<br/>63 identified, plus registry IDs not enumerated"]:::owl
+  cw["crosswalked<br/>37 Wikibase properties<br/>CodeMeta term = Wikidata property"]:::ro
+  co["CodeMeta only<br/>46 new properties<br/>no Wikidata twin"]:::cls
+  wo["Wikidata only<br/>52 properties<br/>no CodeMeta term"]:::pm
+  ad["chublets additions<br/>18 properties<br/>pipeline and Wikibase needs"]:::term
+  cm -->|"37 terms"| cw
+  cm -->|"46 terms"| co
+  wp -->|"17 properties"| cw
+  wp -->|"46 properties"| wo
+  wb["Wikibase property set<br/>153 properties, nothing excluded"]:::so
+  cw --> wb
+  co --> wb
+  wo --> wb
+  ad --> wb
+

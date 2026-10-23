@@ -1,0 +1,69 @@
+---
+title: "All 28 entities of the model, grouped by kind (no hierarchy)"
+---
+flowchart TB
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+  subgraph G0["Classes"]
+    direction LR
+    Q7397["software<br/>Q7397"]:::cls
+    Q40056["computer program<br/>Q40056"]:::cls
+    Q166142["application software<br/>Q166142"]:::cls
+    Q188860["software library<br/>Q188860"]:::cls
+    Q1070421["script file<br/>Q1070421"]:::cls
+  end
+  subgraph G1["Classes (cont.)"]
+    direction LR
+    Q95001953["research software<br/>Q95001953"]:::cls
+    Q506883["free and open-source software<br/>Q506883"]:::cls
+    Q128751["source code<br/>Q128751"]:::cls
+    Q20826013["software version<br/>Q20826013"]:::cls
+    Q9143["programming language<br/>Q9143"]:::cls
+  end
+  subgraph G2["Classes (cont.)"]
+    direction LR
+    Q281039["abandonware<br/>Q281039"]:::cls
+    Q141115627["chublet<br/>Q141115627"]:::cls
+    Q73899440["Little Minion<br/>Q73899440"]:::cls
+  end
+  subgraph G3["Topic"]
+    direction LR
+    Q4027615["informatics<br/>Q4027615"]:::term
+  end
+  subgraph G4["Version types (P548 values)"]
+    direction LR
+    Q151885["concept<br/>Q151885"]:::term
+    Q2804309["stable version<br/>Q2804309"]:::term
+    Q3295609["beta version<br/>Q3295609"]:::term
+    Q21683863["obsolete version<br/>Q21683863"]:::term
+  end
+  subgraph G5["Version control"]
+    direction LR
+    Q186055["Git<br/>Q186055"]:::term
+  end
+  subgraph G6["Forge"]
+    direction LR
+    Q364["GitHub<br/>Q364"]:::ro
+  end
+  subgraph G7["chublets platform items"]
+    direction LR
+    Q141115774["chublets.software<br/>Q141115774"]:::ro
+    Q141169143["WikiProject chublets.software<br/>Q141169143"]:::ro
+    Q141190255["open-archaeo (Repository)<br/>Q141190255"]:::ro
+  end
+  subgraph G8["People and organisations"]
+    direction LR
+    Q66606154["Florian Thiery<br/>Q66606154"]:::ro
+    Q88865971["Allard W. Mees<br/>Q88865971"]:::ro
+    Q73901110["CAA SIG Data-Dragon<br/>Q73901110"]:::ro
+  end
+  subgraph G9["Native Wikidata examples"]
+    direction LR
+    Q1765672["Akregator<br/>Q1765672"]:::so
+    Q8045810["YAGO<br/>Q8045810"]:::so
+  end

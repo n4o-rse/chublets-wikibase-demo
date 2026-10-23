@@ -1,0 +1,12 @@
+step,title,detail,kind
+1,Create the Wikibase instance,Decide host (wikibase.cloud or self-hosted) and the item/property prefix; the paper draft shows chublets.wikibase.cloud as illustrative only.,decision
+2,Create the property-metadata properties,"The four rows with origin 'new' and phase 0 in wikibase-property-set.csv: equivalent Wikidata property, equivalent CodeMeta term, equivalent schema.org term, close match Wikidata property. Everything created afterwards can document itself.",properties
+3,Create ALL properties of the set in one go,"Every row of wikibase-property-set.csv: crosswalked, codemeta-only, wikidata-only and chublets-addition. `phase` says when a property is first populated, not whether it exists. Keep a table Wikidata PID -> local PID.",properties
+4,Fill the property metadata,"For every property: equivalent Wikidata property (the twin PID), equivalent CodeMeta term, close match Wikidata property for CodeMeta-only rows, formatter URL for external-ids, constraints copied from Wikidata where useful (P1324 requires P8423).",property metadata
+5,Create the class items,"chublet (local twin of Q141115627), Little Minion, research software, software library, application software, script file; link each to its Wikidata twin.",items
+6,Create the controlled-vocabulary items,"Git, the programming languages and host applications from vocabulary.json (currently all unresolved), the 56 open-archaeo tags after reconciliation, version types, licences.",items
+7,Create person and organisation items,"Developers: reconcile through GitHub username (P2037) first, name string second. Q66606154 and Q88865971 already exist in Wikidata.",items
+8,Import the example chublets,Start with the examples in examples/ and check them in the UI before any batch.,items
+9,Batch-import open-archaeo (phase 1),Use the 208+208 split from n4o-rse/open-archaeo; QuickStatements syntax with local property IDs.,import
+10,Populate phases 2 and 3,"Phase 2 from repository metadata (CFF, CodeMeta, GitHub API); phase 3 properties exist but are filled manually or by later sources.",import
+11,Export check,Run the SPARQL queries in sparql/ against the new instance and compare with the CodeMeta projection.,verification

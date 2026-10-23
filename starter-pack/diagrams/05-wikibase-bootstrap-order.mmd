@@ -1,0 +1,32 @@
+---
+title: "Bootstrapping a new chublets Wikibase"
+---
+flowchart TB
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+  s1(["1. Create the Wikibase instance"]):::so
+  s2(["2. Create the property-metadata properties"]):::so
+  s3(["3. Create ALL properties of the set in one go"]):::so
+  s4(["4. Fill the property metadata"]):::so
+  s5(["5. Create the class items"]):::so
+  s6(["6. Create the controlled-vocabulary items"]):::so
+  s7(["7. Create person and organisation items"]):::so
+  s8(["8. Import the example chublets"]):::so
+  s9(["9. Batch-import open-archaeo (phase 1)"]):::so
+  s10(["10. Populate phases 2 and 3"]):::so
+  s11(["11. Export check"]):::so
+  s1 --> s2
+  s2 --> s3
+  s3 --> s4
+  s4 --> s5
+  s5 --> s6
+  s6 --> s7
+  s7 --> s8
+  s8 --> s9
+  s9 --> s10
+  s10 --> s11

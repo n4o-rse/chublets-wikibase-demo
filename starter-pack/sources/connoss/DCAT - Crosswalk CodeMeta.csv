@@ -1,0 +1,108 @@
+Property,Range,Description,Comment,,Property,Range,Description,Comment,Mapping type
+Properties from Thing -> CreativeWork -> SoftwareSourceCode,,,,,Properties from Thing -> CreativeWork -> SoftwareSourceCode,,,,
+codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.).",In Codemeta also used for SoftwareApplication,,,,,,
+codeSampleType,Text,"What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template. Supersedes sampleType.",Not in CodeMeta,,,,,,
+programmingLanguage,ComputerLanguage or Text,The computer programming language.,In Codemeta also used for SoftwareApplication,,,,,,
+runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime.",In Codemeta also used for SoftwareApplication,,,,,,
+targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used.",In Codemeta also used for SoftwareApplication,,,,,,
+Properties from Thing -> CreativeWork -> SoftwareApplication,,,,,Properties from Thing -> CreativeWork -> SoftwareApplication,,,,
+applicationCategory,Text or URL,"Type of software application, e.g. 'Game, Multimedia'.",In Codemeta also used for SoftwareSourceCode,,theme/category,,A main category of the resource. A resource can have multiple themes.,,close match
+applicationSubCategory,Text or URL,"Subcategory of the application, e.g. 'Arcade Game'.",In Codemeta also used for SoftwareSourceCode,,,,,,
+applicationSuite,Text,The name of the application suite to which the application belongs (e.g. Excel belongs to Office).,Not in Codemeta,,,,,,
+availableOnDevice,Text,Device required to run the application. Used in cases where a specific make/model is required to run the application. Supersedes device.,Not in Codemeta,,,,,,
+countriesNotSupported,Text,Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.,Not in Codemeta,,,,,,
+countriesSupported,Text,Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.,Not in Codemeta,,,,,,
+downloadUrl,URL,"If the file can be downloaded, URL to download the binary.",In Codemeta also used for SoftwareSourceCode,,corrected: downloadURL,,,,close match
+featureList,Text or URL,Features or modules provided by this application (and possibly required by other applications).,Not in Codemeta,,,,,,
+fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.",In Codemeta also used for SoftwareSourceCode,,corrected: byteSize,,,,close match
+installUrl,URL,"URL at which the app may be installed, if different from the URL of the item.",In Codemeta also used for SoftwareSourceCode,,,,,,
+memoryRequirements,Text or URL,Minimum memory requirements.,In Codemeta also used for SoftwareSourceCode,,,,,,
+operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",In Codemeta also used for SoftwareSourceCode,,,,,,
+permissions,Text,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",In Codemeta also used for SoftwareSourceCode,,,,,,
+processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,In Codemeta also used for SoftwareSourceCode,,,,,,
+releaseNotes,Text or URL,Description of what changed in this version.,In Codemeta also used for SoftwareSourceCode,,corrected: adms:versionNotes,,A description of changes between this version and the previous version of the resource.,,close match
+screenshot,"ImageObject  or
+URL",A link to a screenshot image of the app.,Not in Codemeta,,,,,,
+softwareAddOn,SoftwareApplication,Additional content for a software application.,Not in Codemeta,,,,,,
+softwareHelp,CreativeWork,Software application help.,In Codemeta also used for SoftwareSourceCode,,,,,,
+softwareRequirements,SoftwareSourceCode,Required software dependencies,In Codemeta also used for SoftwareSourceCode,,corrected: dcterms:requires,,"A related resource that is required by the described resource to support its function, delivery, or coherence.",,partial match
+softwareVersion,Text,Version of the software instance.,In Codemeta also used for SoftwareSourceCode,,"
+corrected: dcat:version
+",,"This resource has a more specific, versioned resource [PAV].","another match can be ""has current version"".",close match
+storageRequirements,Text or URL,Storage requirements (free space required).,In Codemeta also used for SoftwareSourceCode,,,,,,
+supportingData,DataFeed,Supporting data for a SoftwareApplication.,In Codemeta also used for SoftwareSourceCode,,,,,,
+Properties from Thing -> CreativeWork,,,,,,,,,
+author,Organization or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,,,creator,	foaf:Agent,The entity responsible for producing the resource.,,close match
+citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",,,,,,,
+contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.,,,"
+corrected: prov:qualifiedAttribution with dcat:hadRole, Role: contributor",prov:Entity,Link to an Agent having some form of responsibility for the resource,,close match
+copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.,,,"
+corrected: prov:qualifiedAttribution with dcat:hadRole, Role: rightsHolder",prov:Entity,Link to an Agent having some form of responsibility for the resource,,close match
+copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,
+dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.,,,,,,,
+dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,,,update/modification date,"rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).","Most recent date on which the resource was changed, updated or modified.",,close match
+datePublished,Date,Date of first broadcast/publication.,,,release date,"rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).","Date of formal issuance (e.g., publication) of the resource.",,close match
+editor,Person,Specifies the Person who edited the CreativeWork.,,,"
+corrected: prov:qualifiedAttribution with dcat:hadRole, Role: editor",prov:Entity,Link to an Agent having some form of responsibility for the resource,,close match
+encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.,,,,,,,
+encodingFormat,Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.
+Supersedes fileFormat.",Codemeta uses fileFormat which is superseeded by encodingFormat,,corrected: dcat:mediaType,,,,close match
+encodingFormat,Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.
+Supersedes fileFormat.",Codemeta uses fileFormat which is superseeded by encodingFormat,,dcterms:format ,,,,close match
+funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.,,,corrected: prov:qualifiedAttribution with dcat:hadRole (Role:funder) ,,,,close match
+hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf,,,has part,,A related resource that is included either physically or logically in the described resource.,,close match
+isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.,,,,,,,
+isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart,,,corrected: dcterms:isPartOf,,,,close match
+keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.,,,keyword/tag,rdfs:Literal,A keyword or tag describing the resource.,,close match
+license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL.",,,license,dcterms:LicenseDocument,A legal document under which the resource is made available.,,close match
+producer,Organization or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",,,"
+corrected: prov:qualifiedAttribution with dcat:hadRole (Role:originator)",foaf:Agent,The entity responsible for producing the resource.,,close match
+provider,Organization or Person,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier.",,,"
+corrected: prov:qualifiedAttribution with dcat:hadRole, Role: resourceProvider
+",prov:Entity,Link to an Agent having some form of responsibility for the resource,,close match
+publisher,Organization or Person,The publisher of the creative work.,,,publisher,,The entity responsible for making the resource available.,Usage note in the documentation: Resources of type foaf:Agent are recommended as values for this property.,close match
+review,Review,A review of the item.,,,,,,,
+sponsor,Organization or Person,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",,,"
+corrected: prov:qualifiedAttribution with dcat:hadRole, Role:sponsor
+",prov:Entity,Link to an Agent having some form of responsibility for the resource,,close match
+Properties from Thing,,,,,,,,,
+description,Text,A description of the item.,,,description,rdfs:Literal,A free-text account of the resource.,,close match
+identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",,,identifier,rdfs:Literal,A unique identifier of the resource being described or cataloged.,,close match
+name,Text,"The name of the item (software, Organization)",,,title,rdfs:Literal,A name given to the resource.,,close match
+sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",,,,,,,
+url,URL,URL of the item.,,,landing page,foaf:Document,"A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.",,close match
+url,URL,URL of the item.,,,foaf:homepage,,A homepage of the catalog (a public Web document usually available in HTML).,,close match
+Properties outside the hierarchy from Thing -> CreativeWork -> WebPage,,,,,,,,,
+relatedLink,URL,"A link related to this object, e.g. related web pages",,,relation,,A resource with an unspecified relationship to the cataloged resource.,,close match
+Additional properties from Codemeta Thing -> CreativeWork -> Codemeta:Software,,,,,,,,,
+buildInstructions,URL,link to installation instructions/documentation,"v2, v3",,,,,,
+continuousIntegration,URL,link to continuous integration service,v3,,,,,,
+developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org","v2, v3",,corrected: adms:status,,The status of the resource in the context of a particular workflow process.,,close match
+embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",v2,,,,,,
+embargoEndDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",v3,,,,,,
+funding,Text,Funding source (e.g. specific grant),"v2, v3",,,,,,
+hasSourceCode,SoftwareSourceCode,Link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.,v3,,,,,,
+isSourceCodeOf,SoftwareApplication,Link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode'.,v3,,,,,,
+issueTracker,URL,link to software bug reporting or issue tracking system,"v2, v3",,,,,,
+maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),"v2, v3",,"
+corrected: prov:qualifiedAttribution with dcat:hadRole, Role:pointOfContact
+",prov:Entity,Link to an Agent having some form of responsibility for the resource,,close match
+readme,URL,link to software Readme file,"v2, v3",,,,,,
+referencePublication,ScholarlyArticle,An academic publication related to the software.,"v2, v3",,corrected: dcterms:isReferencedBy,,,,close match
+softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc.","v2, v3",,,,,,
+,,,,,,Properties only in the other metadata schema,,,
+,,,,,language,dcterms:LinguisticSystem,"A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution",,
+,,,,,conforms to,"dcterms:Standard (""A basis for comparison; a reference point against which other things can be evaluated."" [DCTERMS])",An established standard to which the described resource conforms.,,
+,,,,,contact point,vcard:Kind,Relevant contact information for the cataloged resource. Use of vCard is recommended [VCARD-RDF].,,
+,,,,,is referenced by,,"A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource.",,
+,,,,,qualified relation,dcat:Relationship,Link to a description of a relationship with another resource,"Mapped to ""sameAs"", not sure about it. If mapping is accepted it should be removed from this part.",
+,,,,,type/genre,rdfs:Class,The nature or genre of the resource.,,
+,,,,,qualified attribution,prov:Entity,Link to an Agent having some form of responsibility for the resource,"mapped to multiple properties above, if accepted it should be removed from this part.",
+,,,,,has current version,,"This resource has a more specific, versioned resource with equivalent content [PAV].","Also commented as a match for ""version"" or ""softwareVersion"". Not sure if it can be mapped.",
+,,,,,previous version,,The previous version of a resource in a lineage [PAV].,"Usage note os documentation: ""This property is meant to be used to specify a version chain, consisting of snapshots of a resource.""",
+,,,,,replaces,,"A related resource that is supplanted, displaced, or superseded by the described resource [DCTERMS].",,
+,,,,,status,skos:Concept,The status of the resource in the context of a particular workflow process [VOCAB-ADMS].,,
+,,,,,version notes,rdfs:Literal,A description of changes between this version and the previous version of the resource [VOCAB-ADMS].,,
+,,,,,first,,"The first resource in an ordered collection or series of resources, to which the current resource belongs.",,
+,,,,,last,,"The last resource in an ordered collection or series of resources, to which the current resource belongs.",,
+,,,,,previous,,The previous resource (before the current one) in an ordered collection or series of resources.,,

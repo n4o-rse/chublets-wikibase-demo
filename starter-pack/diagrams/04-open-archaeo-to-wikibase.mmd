@@ -1,0 +1,37 @@
+---
+title: "open-archaeo to Wikidata to a chublets Wikibase"
+---
+flowchart LR
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+
+  csv["open-archaeo.csv<br/>562 entries"]:::ro
+  sw["software subset<br/>416 entries"]:::ro
+  split{{"stratified split<br/>208 + 208"}}:::so
+  py["Python route<br/>py/wikidata/main.py"]:::so
+  orf["OpenRefine route<br/>find.software"]:::so
+  wd["Wikidata<br/>P31 chublet · P6104 WikiProject"]:::ro
+  rec["reconcile first<br/>P1324 repository, then DOI"]:::so
+  wb["chublets Wikibase<br/>waves 0 to 3"]:::ro
+  cmj["CodeMeta"]:::owl
+  dcat["DCAT"]:::owl
+  dc["DataCite"]:::owl
+  nfdi["nfdi.software"]:::ro
+  csv -->|"filter 3 categories"| sw
+  sw --> split
+  split --> py
+  split --> orf
+  py --> rec
+  orf --> rec
+  rec --> wd
+  wd -->|"Wikidata item property"| wb
+  wb --> cmj
+  wb --> dcat
+  wb --> dc
+  dcat --> nfdi
+

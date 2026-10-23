@@ -1,0 +1,1 @@
+Copied unchanged from chublets-software/chublets-visuals (MIT, same author). They predate the union model and may show the workbook-only numbers (68 rows / 33 mapped / 35 unmapped); the numbers of this pack are in data/mapping-summary.csv.

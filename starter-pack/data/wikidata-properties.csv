@@ -1,0 +1,110 @@
+pid,label_en,datatype,group,role,in_wikiproject_software_list,codemeta_terms_final,codemeta_terms_reviewer_suggested,in_workbook_wikidata_only_block,crosswalk_range,pipeline_expected_datatype,used_by_open_archaeo_pipeline,wikibase_status,provenance,confidence
+P10,video,commonsMedia,media,statement,,,encoding,,,,,candidate only (not in set),S1,recalled
+P18,image,commonsMedia,media,statement,,screenshot,,,,,,crosswalked,S1,source-claimed
+P31,instance of,wikibase-item,identity,statement,yes,,,,,wikibase-item,yes,wikidata-only,S3,checked
+P50,author,wikibase-item,people,statement,,,,,,,,candidate only (not in set),S1;S5,source-claimed
+P98,editor,wikibase-item,people,statement,,,editor,,,,,candidate only (not in set),S1;S5,source-claimed
+P101,field of work,wikibase-item,people,statement,,,,yes,,,,wikidata-only,S1,source-claimed
+P123,publisher,wikibase-item,people,statement,,publisher,,,Item,,,crosswalked,S1;S5,source-claimed
+P126,maintained by,wikibase-item,people,statement,,maintainer,,,,,,crosswalked,S1,source-claimed
+P144,based on,wikibase-item,relations,statement,yes,,,yes,,,,wikidata-only,S1;S2,source-claimed
+P154,logo image,commonsMedia,media,statement,,,,yes,,,,wikidata-only,S1,source-claimed
+P155,follows,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P156,followed by,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P162,producer,wikibase-item,people,statement,,producer,,,Item,,,crosswalked,S1;S5,source-claimed
+P166,award received,wikibase-item,people,statement,,,,yes,,,,wikidata-only,S1,source-claimed
+P170,creator,wikibase-item,people,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P178,developer,wikibase-item,people,statement,yes,author,,,Item,,,crosswalked,S1;S2;S3,source-claimed
+P179,part of the series,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P195,collection,wikibase-item,identity,statement,,,,,,wikibase-item,yes,chublets-addition,S3,checked
+P217,inventory number,string,identity,statement,,,,,,string,yes,chublets-addition,S3,checked
+P275,copyright license,wikibase-item,rights,statement,yes,license,,,Item,,,crosswalked,S1;S2;S3,source-claimed
+P277,programmed in,wikibase-item,technical,statement,yes,programmingLanguage,,,Item,wikibase-item,yes,crosswalked,S1;S2;S3;S4,checked
+P279,subclass of,wikibase-item,identity,statement,,,,,,,,chublets-addition,R,recalled
+P306,operating system,wikibase-item,technical,statement,yes,operatingSystem,,,Item,,,crosswalked,S1;S2,source-claimed
+P348,software version identifier,string,versioning,statement,yes,softwareVersion,,,String,,,crosswalked,S1;S2;S4;S6,checked
+P356,DOI,external-id,rights,statement,yes,identifier,,,,external-id,yes,crosswalked,S1;S2;S3,checked
+P361,part of,wikibase-item,identity,statement,yes,isPartOf,applicationSuite,,Item,wikibase-item,yes,crosswalked,S1;S2;S3;S4,checked
+P400,platform,wikibase-item,technical,statement,yes,runtimePlatform,availableOnDevice,,Item,,,crosswalked,S1;S2,source-claimed
+P408,software engine,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P437,distribution format,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S7,source-claimed
+P463,member of,wikibase-item,people,statement,,,,yes,,,,wikidata-only,S1,source-claimed
+P479,input device,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P485,archives at,wikibase-item,media,statement,,,,yes,,,,wikidata-only,S1,source-claimed
+P496,ORCID iD,external-id,people,statement,,,,,,,,candidate only (not in set),R,recalled
+P527,has part(s),wikibase-item,relations,statement,yes,hasPart,,,Item,,,crosswalked,S1;S5,source-claimed
+P548,version type,wikibase-item,versioning,qualifier,yes,,,,,,,wikidata-only,S4;S7,source-claimed
+P571,inception,time,versioning,statement,yes,dateCreated,,,Point in time,,,crosswalked,S1;S2,source-claimed
+P577,publication date,time,versioning,qualifier,yes,datePublished,,,Point in time,,,crosswalked,S1;S2;S4,source-claimed
+P580,start time,time,versioning,qualifier,yes,,,,,,,wikidata-only,S7,source-claimed
+P582,end time,time,versioning,qualifier,yes,,,,,,,wikidata-only,S2;S7,source-claimed
+P585,point in time,time,versioning,qualifier,yes,,,,,,,wikidata-only,S7,source-claimed
+P629,edition or translation of,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P734,family name,wikibase-item,people,statement,,,,,,,,crosswalked,S1;S5,source-claimed
+P735,given name,wikibase-item,people,statement,,,,,,,,crosswalked,S1;S5,source-claimed
+P737,influenced by,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P767,contributor to the creative work or subject,wikibase-item,people,statement,,contributor,,,Item,,,crosswalked,S1;S5,source-claimed
+P800,notable work,wikibase-item,people,statement,,,,yes,,,,wikidata-only,S1,source-claimed
+P813,retrieved,time,versioning,reference,yes,,,,,,,wikidata-only,S7,source-claimed
+P856,official website,url,links,statement,yes,url,,,URL,url,yes,crosswalked,S1;S2;S3,checked
+P859,sponsor,wikibase-item,people,statement,,sponsor,,,,,,crosswalked,S1;S5,source-claimed
+P921,main subject,wikibase-item,classification,statement,,keywords,,,Item,wikibase-item,yes,crosswalked,S1;S3,checked
+P968,email address,url,people,statement,,,,,,,,crosswalked,S1;S5,source-claimed
+P973,described at URL,url,links,statement,,relatedLink,description,,URL,url,yes,crosswalked,S1;S3,checked
+P1065,archive URL,url,links,qualifier,,,,,,url,yes,chublets-addition,S3;S4,checked
+P1072,readable file format,wikibase-item,technical,statement,yes,,,yes,,,,wikidata-only,S1;S2,source-claimed
+P1073,writable file format,wikibase-item,technical,statement,yes,,,yes,,,,wikidata-only,S1;S2,source-claimed
+P1163,media type,string,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1269,facet of,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1324,source code repository URL,url,links,statement,yes,codeRepository,,,URL,url,yes,crosswalked,S1;S2;S3;S4,checked
+P1343,described by source,wikibase-item,publication,statement,,,description;referencePublication,yes,,,,crosswalked,S1;S3,checked
+P1372,binding of software library,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1401,issue tracker URL,url,links,statement,yes,issueTracker,,,URL,,,crosswalked,S1;S2;S5,source-claimed
+P1414,GUI toolkit or framework,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1416,affiliation,wikibase-item,people,statement,,,,,,,,candidate only (not in set),R,recalled
+P1448,official name,monolingualtext,identity,statement,,,name,,,,,candidate only (not in set),S6,source-claimed
+P1476,title,monolingualtext,identity,statement,yes,,,,,,,wikidata-only,S7;S6,source-claimed
+P1545,series ordinal,string,people,qualifier,,,,,,,,chublets-addition,S3,source-claimed
+P1547,depends on software,wikibase-item,technical,statement,yes,softwareRequirements,,,Item,wikibase-item,yes,crosswalked,S1;S2;S3,checked
+P1552,has characteristic,wikibase-item,versioning,qualifier,yes,,,,,,,wikidata-only,S7,source-claimed
+P1581,official blog URL,url,links,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1613,IRC channel URL,url,links,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1641,port,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P1705,native label,monolingualtext,identity,statement,,,name,,,,,candidate only (not in set),S1,recalled
+P1972,Open Hub ID,external-id,registries,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P2037,GitHub username,external-id,people,statement,yes,,,,,,,wikidata-only,S2;S3,source-claimed
+P2078,user manual URL,url,links,statement,yes,softwareHelp,relatedLink,,,,,crosswalked,S1;S2,source-claimed
+P2093,author name string,string,people,statement,,,author,,,,,candidate only (not in set),S1,source-claimed
+P2159,computes solution to,wikibase-item,relations,statement,yes,,,,,,,wikidata-only,S7,source-claimed
+P2209,SourceForge project,external-id,registries,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P2284,price,quantity,rights,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P2537,Free Software Directory entry,external-id,registries,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P2561,name,monolingualtext,identity,statement,,name,,,,monolingualtext,yes,crosswalked,S1;S3,checked
+P2701,file format,wikibase-item,technical,statement,,encodingFormat,,,Item,,,crosswalked,S1;S5,source-claimed
+P2860,cites work,wikibase-item,publication,statement,,citation,referencePublication,,Item,,,crosswalked,S1;S5,source-claimed
+P2888,exact match,url,identity,statement,,sameAs,,,URL,url,yes,crosswalked,S1;S3;S4,checked
+P2960,archive date,time,links,qualifier,,,,,,time,yes,chublets-addition,S3;S4,checked
+P2992,software quality assurance,wikibase-item,rights,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P3033,package management system,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P3112,distribution package ID P3112 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3418,distribution package ID P3418 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3442,distribution package ID P3442 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3454,distribution package ID P3454 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3463,distribution package ID P3463 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3473,distribution package ID P3473 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3499,distribution package ID P3499 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P3575,data size,quantity,technical,statement,,fileSize,,,Quantity,,,crosswalked,S1;S5,source-claimed
+P3597,distribution package ID P3597 (label to be filled),external-id,registries,statement,yes,,,,,,,wikidata-only,S7,pid-only
+P4107,Framalibre ID,external-id,registries,statement,yes,,,,,,,wikidata-only,S7,source-claimed
+P4945,download link,url,versioning,qualifier,yes,downloadUrl,,,URL,,,crosswalked,S1;S2;S4;S5,source-claimed
+P5017,last update,time,versioning,statement,,dateModified,,,Point in time,,,crosswalked,S1;S6,source-claimed
+P5196,output device,wikibase-item,technical,statement,yes,,,,,,,wikidata-only,S2,source-claimed
+P5565,CRAN project,external-id,registries,statement,,,,,,external-id,yes,chublets-addition,S3,checked
+P5568,PyPI project,external-id,registries,statement,,,,,,external-id,yes,chublets-addition,S3,checked
+P6104,maintained by WikiProject,wikibase-item,identity,statement,,,,,,wikibase-item,yes,chublets-addition,S3;S4,checked
+P6138,SoftWare Hash IDentifier (SWHID),external-id,registries,statement,,,identifier,,,,,chublets-addition,S4;S3,source-claimed
+P6830,swMATH work ID,external-id,registries,statement,yes,,,,,,,wikidata-only,S2;S3,source-claimed
+P8324,funder,wikibase-item,people,statement,,funder,,,Item,,,crosswalked,S1,source-claimed
+P8423,version control system,wikibase-item,links,qualifier,,,,,,wikibase-item,yes,chublets-addition,S3;S4,checked
+P10627,web interface software,wikibase-item,links,qualifier,,,,,,,,chublets-addition,S3;S6,source-claimed
+P11201,official demo URL,url,links,statement,,relatedLink,relatedLink,,,,,crosswalked,S1,source-claimed

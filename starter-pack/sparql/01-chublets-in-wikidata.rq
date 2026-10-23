@@ -1,0 +1,6 @@
+# All chublets: maintained by WikiProject chublets.software (P6104 = Q141169143)
+SELECT ?item ?itemLabel ?repo WHERE {
+  ?item wdt:P6104 wd:Q141169143 .
+  OPTIONAL { ?item wdt:P1324 ?repo }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

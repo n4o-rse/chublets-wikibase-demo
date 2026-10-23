@@ -1,0 +1,157 @@
+Property,Range,Description,Comment,,Property,Range,Description,Comment ,Mapping type
+Properties from Thing -> CreativeWork -> SoftwareSourceCode,,,,,Properties from Thing -> CreativeWork -> SoftwareSourceCode,,,,
+codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.).",In Codemeta also used for SoftwareApplication,,code repository,URL,URL to the code repository of a software component,Elemens which the software description ontology reuses from schema.org or codemeta are not mapped here. They are the same elements.,close match
+codeSampleType,Text,"What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template. Supersedes sampleType.",Not in CodeMeta,,,,,,
+programmingLanguage,ComputerLanguage or Text,The computer programming language.,In Codemeta also used for SoftwareApplication,,programming language,string,Language used to code a software component,,close match
+runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime.",In Codemeta also used for SoftwareApplication,,,,,,
+targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used.",In Codemeta also used for SoftwareApplication,,,,,,
+Properties from Thing -> CreativeWork -> SoftwareApplication,,,,,Properties from Thing -> CreativeWork -> SoftwareApplication,,,,
+applicationCategory,Text or URL,"Type of software application, e.g. 'Game, Multimedia'.",In Codemeta also used for SoftwareSourceCode,,,,,,
+applicationSubCategory,Text or URL,"Subcategory of the application, e.g. 'Arcade Game'.",In Codemeta also used for SoftwareSourceCode,,,,,,
+applicationSuite,Text,The name of the application suite to which the application belongs (e.g. Excel belongs to Office).,Not in Codemeta,,,,,,
+availableOnDevice,Text,Device required to run the application. Used in cases where a specific make/model is required to run the application. Supersedes device.,Not in Codemeta,,,,,,
+countriesNotSupported,Text,Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.,Not in Codemeta,,,,,,
+countriesSupported,Text,Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.,Not in Codemeta,,,,,,
+downloadUrl,URL,"If the file can be downloaded, URL to download the binary.",In Codemeta also used for SoftwareSourceCode,,has download URL,URL,Download URL where to obtain the source/executable of the software,,close match
+featureList,Text or URL,Features or modules provided by this application (and possibly required by other applications).,Not in Codemeta,,,,,,
+fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.",In Codemeta also used for SoftwareSourceCode,,,,,,
+installUrl,URL,"URL at which the app may be installed, if different from the URL of the item.",In Codemeta also used for SoftwareSourceCode,,,,,,
+memoryRequirements,Text or URL,Minimum memory requirements.,In Codemeta also used for SoftwareSourceCode,,memory requirements,string,Memory requirements of a software,,close match
+operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",In Codemeta also used for SoftwareSourceCode,,operating systems,string,Operating systems under which a software component can operate,,close match
+permissions,Text,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",In Codemeta also used for SoftwareSourceCode,,,,,,
+processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,In Codemeta also used for SoftwareSourceCode,,processor requirements,string,Processor requirements of a software component,,close match
+releaseNotes,Text or URL,Description of what changed in this version.,In Codemeta also used for SoftwareSourceCode,,,,,,
+screenshot,"ImageObject  or
+URL",A link to a screenshot image of the app.,Not in Codemeta,,screenshot,Image,Image illustrating a snapshot of the target software,,close match
+softwareAddOn,SoftwareApplication,Additional content for a software application.,Not in Codemeta,,,,,,
+softwareHelp,CreativeWork,Software application help.,In Codemeta also used for SoftwareSourceCode,,,,,,
+softwareRequirements,SoftwareSourceCode,Required software dependencies,In Codemeta also used for SoftwareSourceCode,,software requirements,string,Software requirements needed to install a software component,,close match
+softwareVersion,Text,Version of the software instance.,In Codemeta also used for SoftwareSourceCode,,has software version,Software Version,Property designed to link a software component with its corresponding versions,,close match
+storageRequirements,Text or URL,Storage requirements (free space required).,In Codemeta also used for SoftwareSourceCode,,,,,,
+supportingData,DataFeed,Supporting data for a SoftwareApplication.,In Codemeta also used for SoftwareSourceCode,,,,,,
+Properties from Thing -> CreativeWork,,,,,,,,,
+author,Organization or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,,,author,Organization or Person,The creator of a software component,,close match
+citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",,,citation,string,How to cite this software,,close match
+contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.,,,contributor,Person,Contributor to a software component,,close match
+copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.,,,copyright holder,Organization or Person,Copyright holder for a software component,,close match
+copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,copyright year,,Year in which the software component was copyrighted,,close match
+dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.,,,date created,date time,Date when a software component was created,,close match
+dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,,,,,,,
+datePublished,Date,Date of first broadcast/publication.,,,date published,date time,Date when a software component was published,,close match
+editor,Person,Specifies the Person who edited the CreativeWork.,,,,,,,
+encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.,,,,,,,
+encodingFormat,Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.
+Supersedes fileFormat.",Codemeta uses fileFormat which is superseeded by encodingFormat,,,,,,
+funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.,,,funding source,Organization,Link to the organization funding a software component,The domain is Funding Information.,partial match
+hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf,,,,,,,
+isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.,,,,,,,
+isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart,,,,,,,
+keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.,,,keywords,string,Keywords associated with a software component,,close match
+license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL.",,,license,URL,License of a software component or its source code,,close match
+producer,Organization or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",,,,,,,
+provider,Organization or Person,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier.",,,,,,,
+publisher,Organization or Person,The publisher of the creative work.,,,publisher,Organization or Person,Publisher organization or person responsible for a software component,,close match
+review,Review,A review of the item.,,,,,,,
+sponsor,Organization or Person,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",,,,,,,
+Properties from Thing,,,,,,,,,
+description,Text,A description of the item.,,,description,string,A description of a resource,,close match
+identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",,,identifier,string,Identifier of the resource being described,,close match
+name,Text,"The name of the item (software, Organization)",,,name,string,Name of the resource,,close match
+sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",,,,,,,
+url,URL,URL of the item.,,,,,,,
+Properties outside the hierarchy from Thing -> CreativeWork -> WebPage,,,,,,,,,
+relatedLink,URL,"A link related to this object, e.g. related web pages",,,,,,,
+Additional properties from Codemeta Thing -> CreativeWork -> Codemeta:Software,,,,,,,,,
+buildInstructions,URL,link to installation instructions/documentation,"v2, v3",,has installation instructions,string,Instructions required to install this particular piece of software. Installation instructions usually are available in a human-readable manner.,,close match
+continuousIntegration,URL,link to continuous integration service,v3,,,,,,
+developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org","v2, v3",,,,,,
+embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",v2,,,,,,
+embargoEndDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",v3,,,,,,
+funding,Text,Funding source (e.g. specific grant),"v2, v3",,Funding Information,,,,close match
+hasSourceCode,SoftwareSourceCode,Link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.,v3,,has source code,Source Code,Property designed to link a software with its software source code (which may reside in a code repository such as GitHub),,close match
+isSourceCodeOf,SoftwareApplication,Link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode'.,v3,,,,,,
+issueTracker,URL,link to software bug reporting or issue tracking system,"v2, v3",,issue tracker,URL,Pointer to the issue tracker of a software component,,close match
+maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),"v2, v3",,has contact person,Organization or Person,Contact person responsible for a software component,,partial match
+readme,URL,link to software Readme file,"v2, v3",,readme,URL,URl to the readme file of a software component,,close match
+referencePublication,ScholarlyArticle,An academic publication related to the software.,"v2, v3",,reference publication,string,Main publication to cite for this software component,,close match
+softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc.","v2, v3",,,,,,
+,,,,,Properties only in the other metadata schema,,,,
+,,,,,has executable instructions,string,"Instructions that indicate how a software component should be executed. The difference with `hasExecutionCommand` is that the execution instructions aim to be human-readable, and have explanations between the different commands and instructions",,
+,,,,,has build file,URL,"A file (e.g., Dockerfile) with executable instructions indicating how a Software Image or a Software component is built",,
+,,,,,has purpose,string,Objective or main functionality that can be achieved by running this software,,
+,,,,,has assumption,string,"Assumptions of a software, e.g. the solver being used for a particular model, the source of the data (e.g., all data must have a given resolution), etc.",,
+,,,,,has usage notes,string,"Property that describes the usage considerations of a particular software. These notes capture the rationale of for that software configuration, along with an explanation for sample inputs, things to consider when running the model with data, etc.",,
+,,,,,has executable notebook,URL,"Property that links a software component with an executable notebook (e.g., Jupyter notebook) that illustrates how to use it in an executable manner.",,
+,,,,,logo,Image,Property that links to the image used as logo for a software component,,
+,,,,,has software image,Software Image,Function to link a function with its corresponding container,,
+,,,,,has sample visualization,Visualization,A typical sample visualization of the software outputs,,
+,,,,,has code of conduct,string or URL,Property linking the software component to the code of conduct to be followed by potential contributors. The range of this property may be a strin or a URI to the target file.,,
+,,,,,has acknowledgements,string,"String with the people, organizations and other contributors acknowledged by the authors.",,
+,,,,,has typical data source,URL,Typical data sources that are used by a software component,,
+,,,,,has download instructions,string,"Instructions needed to download a software component. The difference with `hasDownloadURL` is that this property captures the human readable instructions required to download software. For example, sometimes an authentication is needed, users need to fill in a form, etc.",,
+,,,,,has documentation,URL,Pointer to the documentation of the model,,
+,,,,,has FAQ,string,Frequently asked questions about a software,,
+,,,,,has example,string,An example explaining a scenario where the software component was used in plain language.,,
+,,,,,support details,string,"Property to link details, such as mailing lists in case a contact person is not provided",,
+,,,,,doi,string,Digital Object Identifier associated with a software component,,
+,,,,,has funding information,Funding Information,Property that links a software project to its funding information,,
+,,,,,had primary source,thing,"Property to identify the original source of the information of the annotated resource. It could be a web page, an organization, a person, some experiment notes, etc.",,
+,,,,,website,URL,Website of the software,,
+,,,,,has setup,Configuration Setup,Property used to define configurations with some fixed resources and values. The rationale of this property is to allow predefined configurations,,
+,,,,,adjustable parameter,Parameter,Parameter that can be adjusted in a configuration setup,,
+,,,,,has support script location,URL,Property that links to the location of scripts that may be used from the main runnable script.,,
+,,,,,has sample result,Sample Ressource,Property designed to link a software configuration to a sample resource resulting from its execution,,
+,,,,,has output,Dataset Specification,Property that expresses what are the outputs of a model,,
+,,,,,has input,Dataset Specification,Property that links a model configuration to the input types expected by it.,,
+,,,,,has constraint,Constrain,"Constraint or rule associated to a variable or software configuration. For example: ""This model accepts only monthly data"", or ""all inputs of this model configuration must share the same location"". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property",,
+,,,,,has sample execution,Sample Execution,Property pointing to a sample execution of a software configuration,,
+,,,,,has implementation script location,URL,Property that points to the main runnable script for the current function,,
+,,,,,has execution command,string,Execution instructions on how to run the image,,
+,,,,,status,string,"Data property to indicate the status of a configuration setups. For example, to indicate that a setup has been executed in a platform, that the setup should notbe shown to users (it's an auxiliary setup), etc.",,
+,,,,,tag,string,"Tag used to annotate a version or a software configuration. This annotation is useful to show which version is the latest, or which version is deprecated. Supported tags are: ""latest"", ""deprecated""",,
+,,,,,has component location,URL,"Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts, including specification files",,
+,,,,,has parameter,Parameter,Property that indicates the parameters of a model configuration,,
+,,,,,was derived from setup,Configuration Setup,Property that links a setup to a previous version of that setup. This property is needed (for example) when creating snapshots of setups.,,
+,,,,,has format,string,"Format followed by a file. For example, txt, nc, etc.",,
+,,,,,has minimum accepted value,date time or float or integer,Minimum accepted value of a variable presentation (or a parameter),,
+,,,,,has step size,float,"Property that determines what are the increments (step size) that are commonly used to vary a parameter. This is commonly used for automatically setting up software tests. For example, if I want to set up a model and try 30 reasonable values on a parameter, I may use the default value and the step size to create the appropriate increments. If the step size is 0.1 and the default value is 0, then I will will be able to create setups: 0, 0.1, 0.2...2.9,3",,
+,,,,,path location,string,"Property that indicates the relative path of an input or output with respect to the folder structure of the executable. 
+ 
+ For example, let's assume we have an input that has to exist in the folder `/datasets` or the executable will not work. This property ensures that this knowledge is captured for a given software component execution.
+ 
+ In this case the property would capture this as follows:
+ 
+ ```
+ :input_prep a sd:DatasetSpecification .
+ :input_prep rdfs:label ""precipitation file"" .
+ :input_precip sd:pathLocation ""/datasets/"".
+ ```",,
+,,,,,has data transformation setup,Data Transformation Setup,Property to link an input/output dataset to the specific data transformation (with URLs,,
+,,,,,has data type,string,Property that indicates the data type of a parameter,,
+,,,,,has long name,string,"Properties that relate the variable representation to its long name. The long name is useful for context (e.g., precipitation is less ambiguous than P) but not as precise as the standard name.",,
+,,,,,uses unit,Unit,Property used to link a variable presentation or time interval to the unit they are represented in,,
+,,,,,has variable,Variable presentation,Property that links a rule and the variable that will test it,,
+,,,,,recommended increment,float,"Value that represents how a parameter should be incremented on each iteration of a software component execution. This value is important when preparing execution ensembles automatically, e.g., simulating crop production varying the parameter ""fertilizer amount"" in increments of 10%.",,
+,,,,,has dimensionality,integer,Property to indicate dimensionality of the input or output of a dataset specification,,
+,,,,,has standard variable,Standard Variable,the standard name of a variable,,
+,,,,,has default value,URL or boolean or date time or float or integer or string,Default accepted value of a variable presentation (or a parameter),,
+,,,,,adjusts variable,Variable,"Property that links parameter with the variable they adjust. This property can be used when parameters quantify variables without directly representing them. For example, a ""fertilizer percentage adjustment"" parameter can quantify a ""fertilizer price"" variable",,
+,,,,,is transformed from,Dataset Specification,"Property that links a dataset specification from a model configuration or setup to the output from a target data transformation. This occurs when a data transformation produces several outputs, but only one of them is the one needed for a model",,
+,,,,,has maximum accepted value,date time or float or integer,Maximum accepted value of a variable presentation (or a parameter),,
+,,,,,has fixed value,URL or boolean or date time or float or integer or string,Value of a parameter in a software setup.,,
+,,,,,has presentation,part of dataset,Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it.,,
+,,,,,value,URL or boolean or date time or float or integer or string,Value associated to the described entity,,
+,,,,,has rule,string,Rule that defines this constraint,,
+,,,,,has accepted values,string,"Property that constraints which values are accepted for a parameter. For example, the name of a crop can only be ""Maize"" or ""Sorghum""",,
+,,,,,was derived from software,Software,Property that identifies the software used to create a visualization,,
+,,,,,has data transformation,Data Transformation,Property that associates an input/output with their corresponding data transformation.,,
+,,,,,has fixed resource,Sample Ressource,"Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region.",,
+,,,,,has file structure,Dataset Specification,Relates a dataset specification to the data structure definition,,
+,,,,,has short name,string,"A short name (e.g., temperature) capturing the high-level concept of the variable",,
+,,,,,available in registry,URL,"Property that indicates in which registry the software image being described can be found. For example, https://hub.docker.com",,
+,,,,,data catalog identifier,string,An identifier for resources with metadata entries in a data catalog,,
+,,,,,has configuration,Software Configuration,"Property that links a model to one of its configurations. A model may have multiple configurations, each of which is unique in terms of the inputs and outputs it uses.",,
+,,,,,part of dataset,Dataset Specification,Associates a presentation with a dataset where the presentation occurs,,
+,,,,,funding grant,string,Grant number used for funding,,
+,,,,,has part,Sample Resource,Property designed to reference the elements included in a sample collection.,,
+,,,,,position,Integer,Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution,,

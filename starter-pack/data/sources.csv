@@ -1,0 +1,11 @@
+code,local_file,description,origin,retrieved,reliability
+S1,sources/codemeta-wikidata-crosswalk.xlsx,"CodeMeta <-> Wikidata crosswalk workbook (template Leyla Jael Castro; review Stephan Ferenz; filled by Florian Thiery; reviewers Maryam, Lu, Aida)",chublets-software/chublets-visuals data/raw/ (HEAD 0a9c5a7),2026-10-21,"primary, read in full"
+S2,sources/wikidata-software-properties.csv,"47-row transcription of the WikiProject Informatics/Software/Properties PDF, five categories",chublets-software/chublets-visuals data/raw/,2026-10-21,hand-transcribed by Flo (2026-09-10); the PDF itself was not available
+S3,"sources/open-archaeo-MAPPING.md, sources/open-archaeo-software.csv, sources/vocabulary.json","n4o-rse/open-archaeo: target model, 416-entry software subset, controlled vocabulary; model.py read for constants",n4o-rse/open-archaeo (HEAD 51d23b1),2026-10-21,primary; MAPPING.md is older than model.py (see identity-block-variants.csv)
+S4,-,Wikidata:WikiProject chublets-software,https://www.wikidata.org/wiki/Wikidata:WikiProject_chublets-software,2026-10-21,search snippet only; direct fetch blocked
+S5,-,CodeMeta crosswalk for Wikidata properties (30 rows),https://codemeta.github.io/crosswalk/wikidata/,2026-10-21,fetched in full; differs from S1 in places (S1 contains the reviewers' corrections)
+S6,-,Various Wikidata pages and tutorials seen as search snippets,see docs/05-open-points.md,2026-10-21,snippets only
+S9,sources/connoss/ (25 files from Zenodo),"Official ConnOSS crosswalk 'Crosswalks of Research Software Metadata Schemas to CodeMeta', v1.2.0 (2026-08-14), CC BY 4.0; 21 schemas incl. Wikidata and DataCite 4.6; 68 properties",https://doi.org/10.5281/zenodo.21935688,2026-10-21,supplied by Flo as ZIP; read in full; supersedes S1 as the citable source (Wikidata column identical to S1 for all 67 shared terms)
+S8,-,"CodeMeta terms page (all terms with ranges, v2 and v3)",https://codemeta.github.io/terms/,2026-10-21,fetched in full; source of the 16 terms that have no workbook row
+S7,-,"Earlier chats with Flo (Wikidata Properties fuer Software, 2026-08-25; chublets-visuals talk chat, 2026-09-10)",claude.ai chat history,2026-10-21,summaries and excerpts; the files produced there are not available
+R,-,Assistant recall,-,2026-10-21,unchecked; run tools/verify_wikidata.py

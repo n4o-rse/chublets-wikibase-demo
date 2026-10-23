@@ -1,0 +1,5 @@
+# Which properties do chublet items actually use?
+SELECT ?p (COUNT(*) AS ?n) WHERE {
+  ?item wdt:P6104 wd:Q141169143 ; ?p ?o .
+  FILTER(STRSTARTS(STR(?p), "http://www.wikidata.org/prop/direct/"))
+} GROUP BY ?p ORDER BY DESC(?n)

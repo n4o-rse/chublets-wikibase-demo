@@ -1,0 +1,24 @@
+---
+title: "How an open-archaeo item receives its classes (P31, not P279)"
+---
+flowchart LR
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+
+  item(["chublet item<br/>e.g. Alligator"]):::so
+  chub["chublet<br/>Q141115627"]:::cls
+  rs["research software<br/>Q95001953<br/>vocabulary.json superclass"]:::cls
+  app["application software<br/>Q166142<br/>Standalone software"]:::cls
+  lib["software library<br/>Q188860<br/>Packages and libraries"]:::cls
+  scr["script file<br/>Q1070421<br/>Scripts"]:::cls
+  item -->|"P31 always"| chub
+  item -->|"P31 applied to every item"| rs
+  item -->|"P31 by open-archaeo category"| app
+  item -->|"P31 by open-archaeo category"| lib
+  item -->|"P31 by open-archaeo category"| scr
+

@@ -1,0 +1,10 @@
+# Find the Q-IDs of Alligator and Academic Meta Tool (the pack does not know them)
+SELECT ?item ?itemLabel ?desc WHERE {
+  SERVICE wikibase:mwapi {
+    bd:serviceParam wikibase:api "EntitySearch"; wikibase:endpoint "www.wikidata.org";
+                    mwapi:search "Alligator"; mwapi:language "en".
+    ?item wikibase:apiOutputItem mwapi:item .
+  }
+  ?item wdt:P31/wdt:P279* wd:Q7397 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

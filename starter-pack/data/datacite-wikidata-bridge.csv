@@ -1,0 +1,69 @@
+codemeta_term,domain,wikidata_pids,wikidata_cell,datacite_cell,bridge
+codeRepository,SoftwareSourceCode,P1324,P1324 - source code repository URL,,wikidata-only
+codeSampleType,SoftwareSourceCode,,,,neither
+programmingLanguage,SoftwareSourceCode,P277,P277 - programmed in,,wikidata-only
+runtimePlatform,SoftwareSourceCode,P400,P400 - platform,,wikidata-only
+targetProduct,SoftwareSourceCode,,,,neither
+applicationCategory,SoftwareApplication,,,,neither
+applicationSubCategory,SoftwareApplication,,,,neither
+applicationSuite,SoftwareApplication,,,,neither
+availableOnDevice,SoftwareApplication,,,,neither
+countriesNotSupported,SoftwareApplication,,,,neither
+countriesSupported,SoftwareApplication,,,,neither
+downloadUrl,SoftwareApplication,P4945,P4945 - download URL,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsIdenticalTo"">",both
+featureList,SoftwareApplication,,,,neither
+fileSize,SoftwareApplication,P3575,P3575 - data size,size,both
+installUrl,SoftwareApplication,,,,neither
+memoryRequirements,SoftwareApplication,,,,neither
+operatingSystem,SoftwareApplication,P306,P306 - operating system,,wikidata-only
+permissions,SoftwareApplication,,,,neither
+processorRequirements,SoftwareApplication,,,,neither
+releaseNotes,SoftwareApplication,,,,neither
+screenshot,SoftwareApplication,P18,P18 - image,,wikidata-only
+softwareAddOn,SoftwareApplication,,,,neither
+softwareHelp,SoftwareApplication,P2078,P2078 - user manual,,wikidata-only
+softwareRequirements,SoftwareApplication,P1547,P1547 - depends on software,,wikidata-only
+softwareVersion,SoftwareApplication,P348,P348 - software version identifier,version,both
+storageRequirements,SoftwareApplication,,,,neither
+supportingData,SoftwareApplication,,,,neither
+author,CreativeWork,P178,P178 - developer,creator,both
+citation,CreativeWork,P2860,P2860 - cites work,"<relatedItem relatedItemType=""JournalArticle"" relationType=""Cites"">",both
+contributor,CreativeWork,P767,P767 - contributor to the creative work or subject,"<contributor contributorType=""Contributor"">",both
+copyrightHolder,CreativeWork,,,"<contributor contributorType=""RightsHolder"">",datacite-only
+copyrightYear,CreativeWork,,,"<date dateType=""Copyrighted"">",datacite-only
+dateCreated,CreativeWork,P571,P571 - inception,"<date dateType=""Created"">",both
+dateModified,CreativeWork,P5017,P5017 - last update,"<date dateType=""Updated"">",both
+datePublished,CreativeWork,P577,P577 - publication date,"<date dateType=""Issued""> / PublicationYear",both
+editor,CreativeWork,,,"<contributor contributorType=""Editor"">",datacite-only
+encoding,CreativeWork,,,,neither
+encodingFormat,CreativeWork,P2701,P2701 - file format,format,both
+funder,CreativeWork,P8324,P8324 - funder,<fundingReference> <funderName> .... </funderName>,both
+hasPart,CreativeWork,P527,P527 - has part(s),"<relatedItem relationType=""HasPart"">",both
+isAccessibleForFree,CreativeWork,,,,neither
+isPartOf,CreativeWork,P361,P361 - part of,"<relatedItem relationType=""IsPartOf"">",both
+keywords,CreativeWork,P921,P921 - main subject,subject,both
+license,CreativeWork,P275,P275 - copyright license,"<rights rightsIdentifier="".....""> (A short, standardized version of the license name)",both
+producer,CreativeWork,P162,P162 - producer,"<contributor contributorType=""Producer"">",both
+provider,CreativeWork,,,"<contributor contributorType=""HostingInstitution"">",datacite-only
+publisher,CreativeWork,P123,P123 - publisher,publisher,both
+review,CreativeWork,,,,neither
+sponsor,CreativeWork,P859,P859 - sponsor,"<contributor contributorType=""Sponsor"">",both
+description,Thing,,,"<description descriptionType=""....."">",datacite-only
+identifier,Thing,P356,P356 – DOI,identifier,both
+name,Thing,P2561,P2561 - name,title,both
+sameAs,Thing,P2888,P2888 - exact match,"<relatedItem relationType=""IsIdenticalTo""> <relatedItemIdentifier relatedItemIdentifierType=""URL"">",both
+url,Thing,P856,P856 - official website,"<relatedItem relationType=""IsIdenticalTo""> <relatedItemIdentifier relatedItemIdentifierType=""URL"">",both
+relatedLink,WebPage,P973;P11201,P973 – described at URL / P11201 - official demo URL,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsSupplementTo"">",both
+buildInstructions,codemeta:software,,,,neither
+continuousIntegration,codemeta:software,,,,neither
+developmentStatus,codemeta:software,,,,neither
+embargoDate,codemeta:software,,,"<date dateType=""Accepted"">",datacite-only
+embargoEndDate,codemeta:software,,,"<date dateType=""Available"">",datacite-only
+funding,codemeta:software,,,<fundingReference>,datacite-only
+hasSourceCode,codemeta:software,,,,neither
+isSourceCodeOf,codemeta:software,,,,neither
+issueTracker,codemeta:software,P1401,P1401 - issue tracker URL,,wikidata-only
+maintainer,codemeta:software,P126,P126 - maintained by,"<contributor contributorType=""ContactPerson"">",both
+readme,codemeta:software,,,,neither
+referencePublication,codemeta:software,,,"<relatedItem relatedItemType=""JournalArticle"" relationType=""IsDocumentedBy"">",datacite-only
+softwareSuggestions,codemeta:software,,,,neither

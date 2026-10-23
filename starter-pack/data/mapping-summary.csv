@@ -1,0 +1,22 @@
+metric,value,note
+codemeta_terms_total,83,distinct term names over 84 rows (relatedLink has two rows; `identifier (Person)` is separate)
+codemeta_terms_in_reviewed_workbook,68,"68 properties of the published ConnOSS crosswalk (S9) = 68 rows of the earlier workbook S1 = 67 distinct terms (relatedLink twice) + releaseNotes, which only S9 has"
+codemeta_terms_not_in_workbook,15,"listed on codemeta.github.io/terms (S8) but not in the ConnOSS crosswalk: address, affiliation, contIntegration, email, endDate, familyName, fileFormat, givenName, identifier (Person), position, reviewAspect, reviewBody, roleName, startDate, version"
+codemeta_terms_crosswalked_to_wikidata,37,"32 via the reviewed workbook (S1), 5 only via codemeta.org crosswalk (S5): email, familyName, fileFormat, givenName, referencePublication"
+codemeta_terms_without_wikidata_property,46,these become new CodeMeta-only properties in the Wikibase
+wikidata_pids_used_by_crosswalk,37,distinct Wikidata properties that have a CodeMeta term
+  of which in the WikiProject Software list,17,"P178, P275, P277, P306, P348, P356, P361, P400, P527, P571, P577, P856, P1324, P1401, P1547, P2078, P4945"
+  of which NOT in the WikiProject Software list,20,"P18, P123, P126, P162, P734, P735, P767, P859, P921, P968, P973, P1343, P2561, P2701, P2860, P2888, P3575, P5017, P8324, P11201"
+wikiproject_software_pids_known,63,46 in the CSV transcription + 17 only in the earlier page excerpt; PLUS an unknown number of registry IDs (see GAP row)
+  of which with a CodeMeta term,17,
+  of which Wikidata-only (no CodeMeta term),46,
+published_wikidata_only_block_not_in_wikiproject_list,7,"P101, P154, P166, P463, P485, P800, P1343"
+s9_bridge_both_wikidata_and_datacite,24,"CodeMeta terms with a Wikidata property AND a DataCite element in S9 (DataCite<->Wikidata is derived via CodeMeta, not published)"
+s9_bridge_wikidata_only,8,term has a Wikidata property but no DataCite element
+s9_bridge_datacite_only,9,term has a DataCite element but no Wikidata property (CodeMeta-only property in the Wikibase)
+s9_bridge_neither,27,term in neither
+wikibase_properties_total,153,the union; nothing excluded
+  status crosswalked,37,"CodeMeta term and Wikidata property, one Wikibase property"
+  status codemeta-only,46,CodeMeta term without Wikidata twin: new property
+  status wikidata-only,52,Wikidata property without CodeMeta term
+  status chublets-addition,18,needed by the chublets pipeline or the Wikibase itself; in neither vocabulary

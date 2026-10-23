@@ -1,0 +1,112 @@
+Property,Range,Description,Comment,,Property,Range,Description,Mapping type
+Properties from Thing -> CreativeWork -> SoftwareSourceCode,,,,,Properties from Thing -> CreativeWork -> SoftwareSourceCode,,,
+codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.).",In Codemeta also used for SoftwareApplication,,,,,
+codeSampleType,Text,"What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template. Supersedes sampleType.",Not in CodeMeta,,,,,
+programmingLanguage,ComputerLanguage or Text,The computer programming language.,In Codemeta also used for SoftwareApplication,,,,,
+runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime.",In Codemeta also used for SoftwareApplication,,,,,
+targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used.",In Codemeta also used for SoftwareApplication,,,,,
+Properties from Thing -> CreativeWork -> SoftwareApplication,,,,,Properties from Thing -> CreativeWork -> SoftwareApplication,,,
+applicationCategory,Text or URL,"Type of software application, e.g. 'Game, Multimedia'.",In Codemeta also used for SoftwareSourceCode,,,,,
+applicationSubCategory,Text or URL,"Subcategory of the application, e.g. 'Arcade Game'.",In Codemeta also used for SoftwareSourceCode,,,,,
+applicationSuite,Text,The name of the application suite to which the application belongs (e.g. Excel belongs to Office).,Not in Codemeta,,,,,
+availableOnDevice,Text,Device required to run the application. Used in cases where a specific make/model is required to run the application. Supersedes device.,Not in Codemeta,,,,,
+countriesNotSupported,Text,Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.,Not in Codemeta,,,,,
+countriesSupported,Text,Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.,Not in Codemeta,,,,,
+downloadUrl,URL,"If the file can be downloaded, URL to download the binary.",In Codemeta also used for SoftwareSourceCode,,has download location,string,The location from where the software can be downloaded.,close match
+featureList,Text or URL,,,,,,,
+fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.",In Codemeta also used for SoftwareSourceCode,,,,,
+installUrl,URL,"URL at which the app may be installed, if different from the URL of the item.",In Codemeta also used for SoftwareSourceCode,,,,,
+memoryRequirements,Text or URL,Minimum memory requirements.,In Codemeta also used for SoftwareSourceCode,,,,,
+operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",In Codemeta also used for SoftwareSourceCode,,uses platform,operating system,uses platform should be used to link a particular piece of software to one or more operating systems which that software can run on.,close match
+permissions,Text,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",In Codemeta also used for SoftwareSourceCode,,,,,
+processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,In Codemeta also used for SoftwareSourceCode,,,,,
+releaseNotes,Text or URL,Description of what changed in this version.,In Codemeta also used for SoftwareSourceCode,,,,,
+screenshot,"ImageObject  or
+URL",A link to a screenshot image of the app.,Not in Codemeta,,,,,
+softwareAddOn,SoftwareApplication,Additional content for a software application.,Not in Codemeta,,,,,
+softwareHelp,CreativeWork,Software application help.,In Codemeta also used for SoftwareSourceCode,,corrected: has support URL,URL,A URL for a source of support information about software,close match
+softwareRequirements,SoftwareSourceCode,Required software dependencies,In Codemeta also used for SoftwareSourceCode,,,,,
+softwareVersion,Text,Version of the software instance.,In Codemeta also used for SoftwareSourceCode,,,,,
+storageRequirements,Text or URL,Storage requirements (free space required).,In Codemeta also used for SoftwareSourceCode,,,,,
+supportingData,DataFeed,Supporting data for a SoftwareApplication.,In Codemeta also used for SoftwareSourceCode,,,,,
+Properties from Thing -> CreativeWork,,,,,,,,
+author,Organization or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,,,is developed by,,The relationship between a software and software developer.,close match
+citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",,,,,,
+contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.,,,,,,
+contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.,,,dc:Contributor,,An entity responsible for making contributions to the resource.,close match
+copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.,,,,,,
+copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,
+dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.,,,,,,
+dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,,,,,,
+datePublished,Date,Date of first broadcast/publication.,,,has release date,string,The official date of release of software,close match
+editor,Person,Specifies the Person who edited the CreativeWork.,,,,,,
+encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.,,,,,,
+encodingFormat,Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.
+Supersedes fileFormat.",Codemeta uses fileFormat which is superseeded by encodingFormat,,dc:Format,,"The file format, physical medium, or dimensions of the resource.",close match
+funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.,,,,,,
+hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf,,,has_part,,a core relation that holds between a whole and its part,partial match
+isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.,,,,,,
+isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart,,,part_of,,a core relation that holds between a part and its whole,partial match
+keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.,,,corrected: dc:Subject,,The topic of the resource.,partial match
+license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL.",,,has license,,"The relationship between an entity and the set of legal restrictions, i.e. license, which are applied in using or otherwise interacting with that entity.",close match
+license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL.",,,dc:license,LicenseDocument,A legal document giving official permission to do something with the resource.,close match
+producer,Organization or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",,,,,,
+provider,Organization or Person,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier.",,,,,,
+publisher,Organization or Person,The publisher of the creative work.,,,is published by,organization,the relationship between a piece of software or a data format specification and its owning organization.,close match
+review,Review,A review of the item.,,,,,,
+sponsor,Organization or Person,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",,,,,,
+Properties from Thing,,,,,,,,
+description,Text,A description of the item.,,,corrected: dc:description,," An account of the resource.
+ ",close match
+identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",,,,,,
+name,Text,"The name of the item (software, Organization)",,,corrected: dc:title,rdf-schema#Literal,A name given to the resource.,close match
+sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",,,,,,
+url,URL,URL of the item.,,,has website homepage,URL,The URL of the homepage for the resource this property is associated with.,partial match
+url,URL,URL of the item.,,,foaf:homepage, Document,,partial match
+Properties outside the hierarchy from Thing -> CreativeWork -> WebPage,,,,,,,,
+relatedLink,URL,"A link related to this object, e.g. related web pages",,,,,,
+Additional properties from Codemeta Thing -> CreativeWork -> Codemeta:Software,,,,,,,,
+buildInstructions,URL,link to installation instructions/documentation,"v2, v3",,,,,
+continuousIntegration,URL,link to continuous integration service,v3,,,,,
+developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org","v2, v3",,has declared status,Development status,"provides a way to assert the developmental status of a class, such as whether it is stable or under development. Is especially useful for software that might not be complete or stable yet, and when combined with version information.",close match
+embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",v2,,,,,
+embargoEndDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",v3,,,,,
+funding,Text,Funding source (e.g. specific grant),"v2, v3",,,,,
+hasSourceCode,SoftwareSourceCode,Link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.,v3,,,,,
+isSourceCodeOf,SoftwareApplication,Link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode'.,v3,,,,,
+issueTracker,URL,link to software bug reporting or issue tracking system,"v2, v3",,,,,
+maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),"v2, v3",,,,,
+readme,URL,link to software Readme file,"v2, v3",,,,,
+referencePublication,ScholarlyArticle,An academic publication related to the software.,"v2, v3",,corrected: has_documentation,string,Should be used to link a particular class (e.g. a piece of software or an algorithm) with a publication(s) which act as the primary reference(s) for that class.,partial match
+softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc.","v2, v3",,,,,
+,,,,,,Properties only in the other metadata schema,,
+,,,,,preceded_by,,x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts.,
+,,,,,precedes,,x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts.,
+,,,,,has_specified_input,,The inverse property of is specified input of,
+,,,,,is_specified_input_of,,A relation between a planned process and a continuant participating in that process that is not created during  the process.,
+,,,,,has_specified_output,,The inverse property of is specified output of,
+,,,,,is_specified_output_of,,A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.,
+,,,,,achieves_planned_objective,objective specification,This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.,
+,,,,,objective_achieved_by,planned process,This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.,
+,,,,,participates_in,occurrent,"a relation between a continuant and a process, in which the continuant is somehow involved in the process",
+,,,,,function_of,function,"a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence",
+,,,,,has_function,function,"a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence",
+,,,,,has_quality,quality,"a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence",
+,,,,,has input,,"p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.",
+,,,,,has output,,"p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.",
+,,,,,enables,,c enables p iff c is capable of p and c acts to execute p.,
+,,,,,functionally related to,,"A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.",
+,,,,,involved in,,"c involved_in p if and only if c enables some process p', and p' is part of p",
+,,,,,enabled by,,inverse of enables,
+,,,,,is implemented by,software,the relationship between an algorithm and a piece of software which includes an implementation of that software for use when the software is executed.,
+,,,,,has specified data input,data item,The relationship between input data which is permitted to a piece of software.,
+,,,,,has specified data output,data item,The relationship between a piece of software and the data that it is possible to output.,
+,,,,,is software for,software,,
+,,,,,implements,algorithm,the relationship between software and an algorithm that is defined for use within that software when executed.,
+,,,,,has interface,software interface,Provides a method of asserting what type of interactions are possible for the class in question. The interface must be from the 'software interface' hierarchy.,
+,,,,,is executed in,data transformation / data visualization,"defines the relationship between a software class and an appropriate process in the information processing hierarchy. Specifically, it allows the linking of a particular piece of software to a process of a particular purpose",
+,,,,,is license for,,"The relationship between an entity and the set of legal restrictions, i.e. license, which are applied in using or otherwise interacting with that entity. Eg. relationship between a software license and the software which implements it.",
+,,,,,is alternative format of,data format specification,this property provides a means of stating that two different data format specifications are valid specifications for the same type of data.,
+,,,,,is compatible license of,licence,"provides a method of marking two software licenses as compatible and without conflicts, e.g. that the Apache License version 2 is compatible with GNU GPL version 3. If two licenses are connected with this property, it means code released under one license can be released with code from the other license in a larger program.",
+,,,,,is encoded in,,,
+,,,,,uses software,,"This property allows the linkage of two different pieces of software such that one directly executes or uses the other. The has_part relationship should instead be used to describe related but independent members of a larger software package, and 'uses platform' relationship should be used to describe which operating system(s) a particular piece of software can use. ",

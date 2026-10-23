@@ -834,6 +834,49 @@
         "type": "statement"
       }
     ],
+    "P137": [
+      {
+        "id": "Q358$DE043553-5D3A-5759-B455-A08A8B49A0A1",
+        "mainsnak": {
+          "datatype": "time",
+          "datavalue": {
+            "type": "time",
+            "value": {
+              "after": 0,
+              "before": 0,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
+              "precision": 9,
+              "time": "+2017-00-00T00:00:00Z",
+              "timezone": 0
+            }
+          },
+          "property": "P137",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.nfdi4objects.net/en/services/academic-meta-tool-amt/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
     "P2": [
       {
         "id": "Q358$C6944BFB-3E9A-5D4E-AE28-FE5B67458465",

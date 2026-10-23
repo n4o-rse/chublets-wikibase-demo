@@ -65,7 +65,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 11, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 15, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -488,6 +488,80 @@ class Merges(unittest.TestCase):
     def test_the_wikidata_report_knows_that_they_are_merged(self) -> None:
         report = (ROOT / "dist" / "wikidata-import.txt").read_text(encoding="utf-8")
         self.assertIn("2 of them merged already", report)
+
+
+class StarterPack(unittest.TestCase):
+    """The pack lies in ``starter-pack/`` and its QuickStatements examples have local versions that ``apply-qs`` accepts."""
+
+    PACK = ROOT / "starter-pack"
+
+    def test_the_pack_is_there_as_delivered(self) -> None:
+        for name in ("README.md", "CHANGELOG.md", "data/wikibase-property-set.csv", "data/wikidata-entities.csv", "examples/alligator.qs",
+                     "examples/quantaar.qs", "examples/amt-sketch.qs", "docs/05-open-points.md", "tools/verify_wikidata.py"):
+            self.assertTrue((self.PACK / name).is_file(), name)
+
+    def test_the_local_examples_are_what_the_script_makes(self) -> None:
+        sys.path.insert(0, str(ROOT / "tools"))
+        try:
+            import qs_to_local
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(qs_to_local.main(["--check"]), 0)
+        finally:
+            sys.path.remove(str(ROOT / "tools"))
+        self.assertEqual(sorted(p.name for p in (self.PACK / "examples-local").glob("*.qs")), ["alligator.qs", "amt-sketch.qs", "quantaar.qs"])
+
+    def test_no_local_example_names_a_wikidata_id_for_a_property(self) -> None:
+        for path in (self.PACK / "examples-local").glob("*.qs"):
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if line and not line.startswith("#"):
+                    fields = line.split("\t")
+                    if len(fields) > 1:
+                        self.assertNotRegex(fields[1], r"^P[0-9]{4,}$", f"{path.name}: {line}")
+
+    def test_each_local_example_can_be_applied_to_a_copy_of_the_tables(self) -> None:
+        import shutil
+        from wikibase_static import step_apply_qs
+        with tempfile.TemporaryDirectory() as scratch:
+            copy = Path(scratch) / "csv"
+            shutil.copytree(CSV, copy)
+            for path in sorted((self.PACK / "examples-local").glob("*.qs")):
+                out = io.StringIO()
+                with contextlib.redirect_stdout(out):
+                    code = step_apply_qs.main([str(path), "--csv", str(copy), "--applied", str(Path(scratch) / "applied.csv")])
+                self.assertEqual(code, 0, f"{path.name}: {out.getvalue()}")
+                self.assertIn("item(s) created", out.getvalue())
+
+
+class Edits(unittest.TestCase):
+    """S7e: the first QuickStatements file was applied and is remembered."""
+
+    FILE = ROOT / "data" / "edits" / "2026-10-23-amt-inception.qs"
+
+    def test_the_file_is_listed_with_its_hash(self) -> None:
+        import hashlib
+        rows = table_at(ROOT / "data" / "edits" / "applied.csv")
+        digest = hashlib.sha256(self.FILE.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+        self.assertEqual([(r["sha256"], r["file"]) for r in rows], [(digest, "data/edits/2026-10-23-amt-inception.qs")])
+
+    def test_amt_has_its_inception_with_a_reference_and_no_origin(self) -> None:
+        (statement,) = [r for r in table("statements.csv") if r["subject"] == "Q358" and r["property"] == "P137"]
+        self.assertEqual((statement["value"], statement["origin"]), ("2017", ""))
+        refs = [(r["property"], r["value"]) for r in table("references.csv") if r["sid"] == statement["sid"]]
+        self.assertEqual(refs, [("P6", "https://www.nfdi4objects.net/en/services/academic-meta-tool-amt/")])
+
+    def test_applying_it_again_changes_nothing(self) -> None:
+        from wikibase_static import step_apply_qs
+        before = {p.name: p.read_bytes() for p in CSV.glob("*.csv")}
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            code = step_apply_qs.main([str(self.FILE), "--csv", str(CSV), "--applied", str(ROOT / "data" / "edits" / "applied.csv")])
+        self.assertEqual(code, 0)
+        self.assertIn("applied already", out.getvalue())
+        self.assertEqual({p.name: p.read_bytes() for p in CSV.glob("*.csv")}, before)
+
+    def test_the_published_page_of_amt_shows_the_year(self) -> None:
+        page = (ROOT / "docs" / "Q358.html").read_text(encoding="utf-8")
+        self.assertIn("2017", page)
 
 
 class Wikidata(unittest.TestCase):

@@ -1,0 +1,8 @@
+# Chublets lacking a licence (P275) or developer (P178)
+SELECT ?item ?itemLabel ?noLicence ?noDeveloper WHERE {
+  ?item wdt:P6104 wd:Q141169143 .
+  BIND(NOT EXISTS { ?item wdt:P275 [] } AS ?noLicence)
+  BIND(NOT EXISTS { ?item wdt:P178 [] } AS ?noDeveloper)
+  FILTER(?noLicence || ?noDeveloper)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

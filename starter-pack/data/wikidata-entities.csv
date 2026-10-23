@@ -1,0 +1,29 @@
+qid,label_en,kind,used_for,provenance,confidence
+Q7397,software,class,"root class for software; its ""properties for this type"" list drives the WikiProject property set",S6,source-claimed
+Q40056,computer program,class,narrower than software; programme as executable,R,recalled
+Q166142,application software,class,"vocabulary.json item_class for ""Standalone software""",S3,checked
+Q188860,software library,class,"vocabulary.json item_class for ""Packages and libraries""",S3,checked
+Q1070421,script file,class,"vocabulary.json item_class for ""Scripts""",S3,checked
+Q95001953,research software,class,vocabulary.json superclass; also parent of the chublet class,S3,checked
+Q506883,free and open-source software,class,used as P31 value in a ShEx schema for research software,S6,source-claimed
+Q128751,source code,class,schema:SoftwareSourceCode equivalent class,S6,source-claimed
+Q20826013,software version,class,"""defined and identifiable development stage of a software product""",S6,source-claimed
+Q9143,programming language,class,programming-language items; value domain of P277,S6,source-claimed
+Q4027615,informatics,topic,scope of WikiProject Informatics,S6,source-claimed
+Q281039,abandonware,class,P31 value for software that is no longer maintained (with P582/P585),S7,source-claimed
+Q151885,concept,version-type,value of P548 version type (publiccode.yml mapping),S6,source-claimed
+Q2804309,stable version,version-type,value of P548 version type,S6,source-claimed
+Q3295609,beta version,version-type,value of P548 version type,S6,source-claimed
+Q21683863,obsolete version,version-type,value of P548 version type,S6,source-claimed
+Q186055,Git,vcs,vocabulary.json version_control_system; value of P8423,S3,checked
+Q364,GitHub,forge,example value of P10627 web interface software,S6,source-claimed
+Q141115627,chublet,class,"THE chublet class; subclass of Q73899440, belonging to Q141115774",S3;S4,checked
+Q73899440,Little Minion,class,parent class of chublet (CAA Little Minions working group),S4,source-claimed
+Q141115774,chublets.software,platform,the platform item; value of P361 on every chublet,S3;S4,checked
+Q141169143,WikiProject chublets.software,wikiproject,value of P6104 on every chublet,S3;S4,checked
+Q141190255,open-archaeo (Repository),collection,value of P361 and P195 on open-archaeo chublets,S3;S4,checked
+Q66606154,Florian Thiery,person,developer of Alligator and AMT; Zenodo record 6976176 cites this QID,S6,source-claimed
+Q88865971,Allard W. Mees,person,co-developer of Alligator and AMT; same Zenodo record,S6,source-claimed
+Q73901110,CAA SIG Data-Dragon,organisation,CAA special interest group; same Zenodo record,S6,source-claimed
+Q1765672,Akregator,software-example,worked example of a software item cited in a Wikidata tutorial,S6,source-claimed
+Q8045810,YAGO,software-example,worked example with P1324 + P8423 + P10627 + P348 qualifiers,S6,source-claimed

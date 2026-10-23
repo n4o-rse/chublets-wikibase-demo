@@ -1,5 +1,5 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.14.0; data as of unknown
+# Generated with wikibase-static 0.15.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -27221,7 +27221,7 @@ dist:Q358-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q358, as archived from the Wikibase API"@en ;
-    dcat:byteSize "38321"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "39461"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q358.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -46797,7 +46797,7 @@ wd:Q358
     schema:name "Academic Meta Tool (AMT)"@de,
         "Academic Meta Tool (AMT)"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "17"^^xsd:integer ;
+    wikibase:statements "18"^^xsd:integer ;
     rdfs:label "Academic Meta Tool (AMT)"@de,
         "Academic Meta Tool (AMT)"@en ;
     skos:altLabel "AMT"@de,
@@ -46819,6 +46819,7 @@ wd:Q358
         wds:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B ;
     p:P125 wds:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E,
         wds:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80 ;
+    p:P137 wds:Q358-DE043553-5D3A-5759-B455-A08A8B49A0A1 ;
     p:P204 wds:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72,
         wds:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54 ;
     wdt:P2 wd:Q100,
@@ -46836,6 +46837,7 @@ wd:Q358
         wd:Q371 ;
     wdt:P125 <https://github.com/n4o-rse/amt-engine>,
         <https://github.com/n4o-rse/amt-runner> ;
+    wdt:P137 "2017-01-01T00:00:00Z"^^xsd:dateTime ;
     wdt:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png>,
         <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20RoleChainAxiom.png> .
 
@@ -81425,6 +81427,14 @@ wds:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
     ps:P123 wd:Q371 .
+
+wds:Q358-DE043553-5D3A-5759-B455-A08A8B49A0A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:f69b3acffda211555205f1124711f87206e32f01 ;
+    ps:P137 "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+    psv:P137 wdv:bfda54cd5d3dd53932e30c706bc3d03a .
 
 wds:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1
     a wikibase:BestRank,
@@ -118779,6 +118789,10 @@ wdref:f63ce98d3581886a74c8b73fd5a732a9c53644ce
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/hammurabi-markov/> .
 
+wdref:f69b3acffda211555205f1124711f87206e32f01
+    a wikibase:Reference ;
+    pr:P6 <https://www.nfdi4objects.net/en/services/academic-meta-tool-amt/> .
+
 wdref:f73e05173e448f6db06c38ebaac5f8a2ea9a44be
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Property:P166> .
@@ -120030,6 +120044,13 @@ wdv:bd2670008c671d35d687814564d3e0a0
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-02-09T00:00:00Z"^^xsd:dateTime .
+
+wdv:bfda54cd5d3dd53932e30c706bc3d03a
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "9"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2017-01-01T00:00:00Z"^^xsd:dateTime .
 
 wdv:c2d95bbaa02e0f4160b40f3095f676b3
     a wikibase:TimeValue ;

@@ -1,0 +1,36 @@
+---
+title: "Example item: Alligator (open-archaeo row 2f00c7)"
+---
+flowchart LR
+
+  classDef so fill:#e2e8f0,stroke:#000000,color:#000000
+  classDef ro fill:#166534,stroke:#000000,color:#ffffff
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef pm fill:#fbbf24,stroke:#000000,color:#000000
+
+  item(["Alligator"]):::so
+  chub["chublet"]:::cls
+  app["application software<br/>Q166142"]:::cls
+  repo["github.com/leiza-rse/alligator"]:::ro
+  q1["P8423 version control system → Git"]:::pm
+  q2["P1065 archive URL (Internet Archive)<br/>P2960 archive date 2021-06-04"]:::pm
+  web["tools.leiza.de/alligator/"]:::ro
+  git["Git<br/>Q186055"]:::term
+  tag1["Statistical analysis"]:::term
+  tag2["Schemas and ontologies"]:::term
+  p1["Florian Thiery<br/>Q66606154"]:::ro
+  p2["Allard W. Mees<br/>Q88865971"]:::ro
+  item -->|"P31"| chub
+  item -->|"P31 (category: Standalone software)"| app
+  item -->|"P1324 source code repository URL"| repo
+  repo -.-> q1
+  q1 -.-> git
+  repo -.-> q2
+  item -->|"P856 official website"| web
+  item -->|"P921 main subject (unresolved)"| tag1
+  item -->|"P921 main subject (unresolved)"| tag2
+  item -->|"P178 developer, ordinal 1 (to reconcile)"| p1
+  item -->|"P178 developer, ordinal 2 (to reconcile)"| p2
+

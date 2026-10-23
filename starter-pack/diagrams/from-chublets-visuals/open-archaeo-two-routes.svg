@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630">
+<style>@font-face { font-family: "Fira Sans"; src: url("../../fonts/FiraSans-Regular.ttf"); font-weight: 400; } @font-face { font-family: "Fira Sans"; src: url("../../fonts/FiraSans-Bold.ttf"); font-weight: 700; }</style>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5B5568"/></marker>
+</defs>
+<rect x="60.0" y="60" width="260" height="110" rx="10" fill="#F1F1F2" stroke="#5B5568" stroke-width="3"/><text x="190.0" y="108.0" text-anchor="middle" font-family="Fira Sans" font-weight="700" font-size="20" fill="#1E1425">open-archaeo.csv</text><text x="190.0" y="138.0" text-anchor="middle" font-family="Fira Sans" font-weight="400" font-size="14" fill="#1E1425">562 entries</text>
+<line x1="320.0" y1="115.0" x2="364.0" y2="115.0" stroke="#5B5568" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="370.0" y="60" width="260" height="110" rx="10" fill="#F1F1F2" stroke="#5B5568" stroke-width="3"/><text x="500.0" y="108.0" text-anchor="middle" font-family="Fira Sans" font-weight="700" font-size="20" fill="#1E1425">transform</text><text x="500.0" y="138.0" text-anchor="middle" font-family="Fira Sans" font-weight="400" font-size="14" fill="#1E1425">416-entry software subset</text>
+<line x1="630.0" y1="115.0" x2="674.0" y2="115.0" stroke="#5B5568" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="680.0" y="60" width="260" height="110" rx="10" fill="#F1F1F2" stroke="#5B5568" stroke-width="3"/><text x="810.0" y="108.0" text-anchor="middle" font-family="Fira Sans" font-weight="700" font-size="20" fill="#1E1425">split</text><text x="810.0" y="138.0" text-anchor="middle" font-family="Fira Sans" font-weight="400" font-size="14" fill="#1E1425">stratified, deterministic</text>
+<line x1="810.0" y1="170" x2="295.0" y2="250" stroke="#5B5568" stroke-width="3.5" marker-end="url(#arrow)"/>
+<rect x="125.0" y="250" width="340" height="130" rx="10" fill="#E6F1F0" stroke="#0E7A6E" stroke-width="3"/><text x="295.0" y="308.0" text-anchor="middle" font-family="Fira Sans" font-weight="700" font-size="22" fill="#1E1425">OpenRefine slice</text><text x="295.0" y="338.0" text-anchor="middle" font-family="Fira Sans" font-weight="400" font-size="15" fill="#1E1425">208 entries → out/OpenRefine/</text>
+<line x1="810.0" y1="170" x2="705.0" y2="250" stroke="#5B5568" stroke-width="3.5" marker-end="url(#arrow)"/>
+<rect x="535.0" y="250" width="340" height="130" rx="10" fill="#EBE8EC" stroke="#3B1F4A" stroke-width="3"/><text x="705.0" y="308.0" text-anchor="middle" font-family="Fira Sans" font-weight="700" font-size="22" fill="#1E1425">Python slice</text><text x="705.0" y="338.0" text-anchor="middle" font-family="Fira Sans" font-weight="400" font-size="15" fill="#1E1425">208 entries → out/Python/</text>
+<line x1="295.0" y1="380" x2="500.0" y2="460" stroke="#5B5568" stroke-width="3.5" marker-end="url(#arrow)"/>
+<line x1="705.0" y1="380" x2="500.0" y2="460" stroke="#5B5568" stroke-width="3.5" marker-end="url(#arrow)"/>
+<rect x="270.0" y="460" width="460" height="110" rx="10" fill="#EBEAEC" stroke="#5B5568" stroke-width="3"/><text x="500.0" y="508.0" text-anchor="middle" font-family="Fira Sans" font-weight="700" font-size="21" fill="#1E1425">Shared vocabulary + concordance</text><text x="500.0" y="538.0" text-anchor="middle" font-family="Fira Sans" font-weight="400" font-size="14" fill="#1E1425">vocabulary.json (from OpenRefine) + concordance.csv (id, qid)</text>
+</svg>

@@ -1,0 +1,6 @@
+# Does an item with this repository URL already exist? (reconcile before creating)
+SELECT ?item ?itemLabel WHERE {
+  VALUES ?repo { "https://github.com/leiza-rse/alligator" }
+  ?item wdt:P1324 ?repo .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

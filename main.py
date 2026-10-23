@@ -9,6 +9,7 @@
     python main.py import-wikidata      the Wikidata items in data/csv/seeds-wikidata.csv into data/csv/ (needs wikibase-static 0.12.0;
                                         fetches what changed, --offline uses data/raw/wikidata/ only, --from-dir DIR stores saved JSON first)
     python main.py merge Q381 Q359      merge an item into another (data/csv/merges.csv; --dry-run, --list, --undo ID, --suggest; needs wikibase-static 0.14.0)
+    python main.py apply-qs FILE.qs     change the tables with a QuickStatements file (data/edits/; applied.csv remembers it; --dry-run; needs wikibase-static 0.15.0)
     python main.py --list               print the steps and exit
 
 The model is kept in data/csv/ (four tables and idmap.csv). ``tools/import_pack.py`` made them once from the
@@ -36,6 +37,7 @@ STEPS = [
     ("import-open-archaeo", "step_import_open_archaeo", False),
     ("import-wikidata", "step_import_wikidata", False),
     ("merge", "step_merge", False),
+    ("apply-qs", "step_apply_qs", False),
     ("from-csv", "step_from_csv", True),
     ("load", "step_load", True),
     ("build", "step_build", True),

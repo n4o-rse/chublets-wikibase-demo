@@ -1,0 +1,69 @@
+domain,term,range,comment,DOAP,DCAT Version 3,RSD Data Model,ERSmeta,Software Ontology Version: 2023-03-05,SDO Version: 1.9.0,R Package Metadata version 4.5.2,Python Package Metadata version 2.5,CFF Version: 1.2.0,AlgoOnto Version: 0.1,maSMP Version: 2.1.1,HITO Version: 22.10,BARTOC,swMath Version: 1.8.3,Java (maven/pom) Version 4.0.0,Wikidata,SPDX Version 3.0.1,DataCite Version 4.6,OntoSoft Version: 1.0.1,biotools version: 3.3.0,DataDesc Version: 1.1
+SoftwareSourceCode,codeRepository,URL,In Codemeta also used for SoftwareApplication,repository / location,,repository_url.url,codeRepository,,codeRepository,URL,Project-URL: (Source|Repository),repository-code,,codeRepository,repository,codeRepository,source_code,<scm><url>,P1324 - source code repository URL,,,hasCodeLocation,"link - type:""Repository""",codeRepository
+SoftwareSourceCode,codeSampleType,Text,Not in CodeMeta,,,,,,,,,,,codeSampleType,,,,,,,,,,
+SoftwareSourceCode,programmingLanguage,ComputerLanguage or Text,In Codemeta also used for SoftwareApplication,programming-language,,repository_url.Languages,programmingLanguage,,programmingLanguage,,Classifier: Programming Language,,,programmingLanguage,programmingLanguage,programmingLanguage,programming_languages,,P277 - programmed in,,,hasImplementationLanguage,language,programmingLanguages
+SoftwareSourceCode,runtimePlatform,Text,In Codemeta also used for SoftwareApplication,platform,,,,,,,Requires-Python,,,runtimePlatform,,,,,P400 - platform,,,,,
+SoftwareSourceCode,targetProduct,SoftwareApplication,In Codemeta also used for SoftwareApplication,,,,targetProduct,,,,,,,targetProduct,,,,,,,,,,
+SoftwareApplication,applicationCategory,Text or URL,In Codemeta also used for SoftwareSourceCode,category,dcat:theme,,,,,,,,category,,,applicationCategory,,,,,,hasSoftwareCategory,,
+SoftwareApplication,applicationSubCategory,Text or URL,In Codemeta also used for SoftwareSourceCode,,,,,,,,,,,,,applicationSubCategory,,,,,,,,
+SoftwareApplication,applicationSuite,Text,Not in Codemeta,,,,,,,,,,,,,,,,,,,,,
+SoftwareApplication,availableOnDevice,Text,Not in Codemeta,,,,typicalHardware,,,,,,,,,,,,,,,,,
+SoftwareApplication,countriesNotSupported,Text,Not in Codemeta,,,,,,,,,,,,,,,,,,,,,
+SoftwareApplication,countriesSupported,Text,Not in Codemeta,,,,,,,,,,,,,,,,,,,,,
+SoftwareApplication,downloadUrl,URL,In Codemeta also used for SoftwareSourceCode,file-release / download-mirror,dcat:downloadURL,,downloadURL,has download location,hasDownloadURL,,Project-URL: download,repository-artifact,,,,,,<distributionManagement>:<downloadUrl>,P4945 - download URL,downloadLocation,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsIdenticalTo"">",,"download - type:""Binaries"" / ""Software package""",downloadUrl
+SoftwareApplication,featureList,Text or URL,Not in Codemeta,,,,featureList,,,,,,,,,,,,,,,,,
+SoftwareApplication,fileSize,Text,In Codemeta also used for SoftwareSourceCode,,dcat:byteSize,,fileSize,,,,,,,,,,,,P3575 - data size,,size,,,
+SoftwareApplication,installUrl,URL,In Codemeta also used for SoftwareSourceCode,,,,,,,,,,,installUrl,,,,,,,,hasExecutableLocation,,
+SoftwareApplication,memoryRequirements,Text or URL,In Codemeta also used for SoftwareSourceCode,,,,memoryRequirements,,memoryRequirements,,,,,memoryRequirements,,,,,,,,requiresAverageMemory,,
+SoftwareApplication,operatingSystem,Text,In Codemeta also used for SoftwareSourceCode,os,,,operatingSystem,uses platform,operatingSystems,OS_type,Classifer: Operating System,,,operatingSystem,operatingSystem,operatingSystem,operating_systems,,P306 - operating system,,,supportsOperatingSystem,operatingSystem,
+SoftwareApplication,permissions,Text,In Codemeta also used for SoftwareSourceCode,,,,,,,,,,,,,,,,,,,,,
+SoftwareApplication,processorRequirements,Text,In Codemeta also used for SoftwareSourceCode,,,,processorRequirements,,processorRequirements,,,,,processorRequirements,,,,,,,,,,
+SoftwareApplication,releaseNotes,Text or URL,In Codemeta also used for SoftwareSourceCode,,adms:versionNotes,,,,,,Project-URL: releaseNotes,,,releaseNotes,,,,,,,,,"documentation - type:""Release notes""",
+SoftwareApplication,screenshot,ImageObject or URL,Not in Codemeta,screenshots,,,,,screenshot,,,,,,,,,,P18 - image,,,,,
+SoftwareApplication,softwareAddOn,SoftwareApplication,Not in Codemeta,,,,,,,,,,,,,,,,,,,,,
+SoftwareApplication,softwareHelp,CreativeWork,In Codemeta also used for SoftwareSourceCode,,,,,has support URL,,,,,,softwareHelp,,,,,P2078 - user manual,,,hasSoftwareSupport,"link - type:""Helpdesk""",
+SoftwareApplication,softwareRequirements,SoftwareSourceCode,In Codemeta also used for SoftwareSourceCode,,dcterms:requires,,softwareRequirements,,softwareRequirements,Depends,Requires-Dist,,,softwareRequirements,,,dependencies,<dependencies>,P1547 - depends on software,,,hasDependency,,
+SoftwareApplication,softwareVersion,Text,In Codemeta also used for SoftwareSourceCode,revision,dcat:version,,softwareVersion,,hasVersion,Version,Version,version,,softwareVersion,,,,<version>,P348 - software version identifier,packageVersion,version,hasSoftwareVersion,version,version
+SoftwareApplication,storageRequirements,Text or URL,In Codemeta also used for SoftwareSourceCode,,,,storageRequirements,,,,,,,storageRequirements,,,,,,,,,,
+SoftwareApplication,supportingData,DataFeed,In Codemeta also used for SoftwareSourceCode,,,,,,,,,,,,,,,,,,,hasRelevantDataSources,,
+CreativeWork,author,Organization or Person,,developer,dcterms:creator,,author,is developed by,author,[aut] in Author,Author / Author-email,authors,,author,,,authors,<developers>,P178 - developer,originatedBy,creator,hasCreator / dc:creator,"credit - typeRole:""Developer""",authors
+CreativeWork,citation,CreativeWork or URL,,,,,preferredCitation,,citation,Citation,,preferred-citation,,citation,,,,,P2860 - cites work,,"<relatedItem relatedItemType=""JournalArticle"" relationType=""Cites"">",hasCitationLocation,,
+CreativeWork,contributor,Organization or Person,,documenter / translator / tester / helper,"prov:qualifiedAttribution with dcat:hadRole, Role: contributor",contributor,contributor,dc:Contributor,contributor,"[ctb, com, dtc] in Author",,,,contributor,,,,<contributors>,P767 - contributor to the creative work or subject,,"<contributor contributorType=""Contributor"">",hasMajorContributor / dc:contributor,"credit - typeRole:""Contributor""",
+CreativeWork,copyrightHolder,Organization or Person,,,"prov:qualifiedAttribution with dcat:hadRole, Role: rightsHolder",,copyrightHolder,,copyrightHolder,[cph] in Author or 'COPYRIGHT' field,,,,copyrightHolder,,,,,,,"<contributor contributorType=""RightsHolder"">",,,copyrightHolders
+CreativeWork,copyrightYear,Number,,,,,,,copyrightYear,,,,,,,,,,,,"<date dateType=""Copyrighted"">",,,copyrightYear
+CreativeWork,dateCreated,Date,,created,,software.created_at,dateCreated,,dateCreated,,,,,,,,,<inceptionYear>,P571 - inception,created,"<date dateType=""Created"">",,,
+CreativeWork,dateModified,Date,,,dcterms:modified,software.updated_at,dateModified,,,,,,,dateModified,,dateModified,,,P5017 - last update,,"<date dateType=""Updated"">",,,
+CreativeWork,datePublished,Date,,,dcterms:issued,,,has release date,datePublished,Date,,date-published,,datePublished,,,,,P577 - publication date,releaseTime,"<date dateType=""Issued""> / PublicationYear",hasVersionReleaseDate,,datePublished
+CreativeWork,editor,Person,,,"prov:qualifiedAttribution with dcat:hadRole, Role: editor",,,,,,,editors,,,,,,,,,"<contributor contributorType=""Editor"">",,,
+CreativeWork,encoding,MediaObject,,,,,,,,,,,,,,,,,,,,,,
+CreativeWork,encodingFormat,Text or URL,Codemeta uses fileFormat which is superseeded by encodingFormat,,dcat:mediaType / dcterms:format,,,dc:Format,,Encoding,,,,,,,,<packaging>,P2701 - file format,contentType,format,,,
+CreativeWork,funder,Organization or Person,,,"prov:qualifiedAttribution with dcat:hadRole, Role:funder",,,,fundingSource,[fnd] in Author,ProjectURL: Funding,,,,,,,,P8324 - funder,,<fundingReference> <funderName> .... </funderName>,,"credit with ""fundrefid""",funders
+CreativeWork,hasPart,CreativeWork,,,dcterms:hasPart,,,has_part,,,,,,,softwareProductComponent,,,,P527 - has part(s),element,"<relatedItem relationType=""HasPart"">",,"relation - type:""includes""",
+CreativeWork,isAccessibleForFree,Boolean,,,,,isAccessibleForFree,,,,,,,isAccessibleForFree,,,,,,,,,"""accessibility"" - type: ""Open access""",
+CreativeWork,isPartOf,CreativeWork,,,dcterms:isPartOf,,,part_of,,,,,,,,,,,P361 - part of,,"<relatedItem relationType=""IsPartOf"">",,"relation - type:""includedIn""",
+CreativeWork,keywords,Text,,,dcat:keyword,keyword.value,keywords,dc:Subject,keywords,,Keywords,keywords,,keywords,,,keywords,,P921 - main subject,,subject,hasDomainKeywords,topic,keywords
+CreativeWork,license,CreativeWork or URL,,license,dcterms:license,license_for_software.license,license,has license / dc:license,license,License,License-Expression,license AND license-url,,license,license,license,license_terms,<licenses>,P275 - copyright license,,"<rights rightsIdentifier="".....""> (A short, standardized version of the license name)",hasLicense / dc:license,license,license
+CreativeWork,producer,Organization or Person,,,"prov:qualifiedAttribution with dcat:hadRole, Role:originator",,sourceOrganization,,,,,,,,,,,,P162 - producer,,"<contributor contributorType=""Producer"">",,,
+CreativeWork,provider,Organization or Person,,vendor,"prov:qualifiedAttribution with dcat:hadRole, Role: resourceProvider",,,,,,,,,,,,,,,suppliedBy,"<contributor contributorType=""HostingInstitution"">",,"credit - typeRole:""Provider""",
+CreativeWork,publisher,Organization or Person,,,dcterms:publisher,,,is published by,publisher,,,publisher,,,,,,,P123 - publisher,,publisher,hasPublisher,,
+CreativeWork,review,Review,,,,testimonial,review,,,,,,,,,,,,,,,,,
+CreativeWork,sponsor,Organization or Person,,,"prov:qualifiedAttribution with dcat:hadRole, Role:sponsor",,,,,,Project-URL:sponsor,,,,,,,,P859 - sponsor,,"<contributor contributorType=""Sponsor"">",,,
+Thing,description,Text,,description,dcterms:description,software.description,description,dc:description,description,Description,Description,abstract,,description,,,description,<description>,,description / Summary,"<description descriptionType=""....."">",hasShortDescription,description,description
+Thing,identifier,PropertyValue or URL,,,dcterms:identifier,software.concept_doi,identifier,,identifier,Package,,identifiers,hasIdentifier,identifier,,,id,<groupId>:<artifactId>:<version>,P356 – DOI,externalIdentifier,identifier,hasUniqueId,otherID,identifier
+Thing,name,Text,,name,dcterms:title,software.brand_name,name,dc:title,name,Title,Name,title,,name,,name,name,<name>,P2561 - name,name,title,hasName,name,title
+Thing,sameAs,URL,,,,,,,,,Project-URL: Registry,,,sameAs,,,,,P2888 - exact match,,"<relatedItem relationType=""IsIdenticalTo""> <relatedItemIdentifier relatedItemIdentifierType=""URL"">",,,
+Thing,url,URL,,homepage,foaf:homepage / dcat:landingPage,software.get_started_url,url,has website homepage / foaf:homepage,,URL (The URL may give a list of URLs separated by commas or whitespace),Project-URL: Homepage,url,,url,homepage,url,zbmath_url / homepage,<url>,P856 - official website,homePage / packageUrl,"<relatedItem relationType=""IsIdenticalTo""> <relatedItemIdentifier relatedItemIdentifierType=""URL"">",hasProjectWebsite,homepage,url
+WebPage,relatedLink,URL,,download-page,dcterms:relation,software.description_url,,,,,Project-URL: Documentation,repository,,,,,,,P973 – described at URL / P11201 - official demo URL,externalRef,"<relatedIdentifier relatedIdentifierType=""URL"" relationType=""IsSupplementTo"">",,link,externalDocs
+codemeta:software,buildInstructions,URL,"v2, v3",,,,buildInstruction,,hasInstallationInstructions,,,,,buildInstructions,,,,,,,,hasInstallationInstructions,"documentation - type ""Installation instructions""",
+codemeta:software,continuousIntegration,URL,v3,,,,,,,,Project-URL: CI,,,,,,,<ciManagement>,,,,,,
+codemeta:software,developmentStatus,Text,"v2, v3",,adms:status,,developmentStatus,has declared status,,,Classifier: Development Status :: …,,,,,,,,,,,,maturity,
+codemeta:software,embargoDate,Date,v2,,,,,,,,,,,,,,,,,,"<date dateType=""Accepted"">",,,
+codemeta:software,embargoEndDate,Date,v3,,,,,,,,,,,,,,,,,,"<date dateType=""Available"">",,,
+codemeta:software,funding,Text,"v2, v3",,,,funding,,hasFunding,,Project-URL: Funding,,,,,,,,,,<fundingReference>,hasFundingSources,,fundings
+codemeta:software,hasSourceCode,SoftwareSourceCode,v3,,,,,,hasSourceCode,,Project-URL: Source,,,,,,,,,,,,,
+codemeta:software,isSourceCodeOf,SoftwareApplication,v3,repositoryOf,,,,,,,,,,,,,,,,,,,,
+codemeta:software,issueTracker,URL,"v2, v3",bug-database,,,issueTracker,,issueTracker,BugReports,Project-URL: Tracker,,,issueTracker,,,,<issueManagement>,P1401 - issue tracker URL,,,,"link - type:""Issue tracker""",
+codemeta:software,maintainer,Person,"v2, v3",maintainer,"prov:qualifiedAttribution with dcat:hadRole, Role:pointOfContact",maintainer_for_software.maintainer,maintainer,,hasContactPerson,[cre] in Author,Maintainer/ Maintainer-email,contact,,maintainer,,,,,P126 - maintained by,,"<contributor contributorType=""ContactPerson"">",hasEmailContact,"credit - typeRole:""Maintainer""",contact
+codemeta:software,readme,URL,"v2, v3",documentation,,,readme,has_documentation,readme,,Project-URL: Readme,,,readme,,,,,,,,hasDocumentation,documentation,readme
+codemeta:software,referencePublication,ScholarlyArticle,"v2, v3",,dcterms:isReferencedBy,mention,referencePublication,,referencePublication,,,,documentedIn,referencePublication,inverse of :evaluatesProduct,,standard_articles,,,,"<relatedItem relatedItemType=""JournalArticle"" relationType=""IsDocumentedBy"">",hasPreferredCitation,publication,referencePublication
+codemeta:software,softwareSuggestions,SoftwareSourceCode,"v2, v3",,,,,,,Suggests,,references,,,,,,,,,,,,

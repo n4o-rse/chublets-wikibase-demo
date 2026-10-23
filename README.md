@@ -149,13 +149,26 @@ The merged items keep their ids as redirects (their pages forward, the RDF says 
 as two repository URLs for Alligator (the project moved from RGZM to leiza-rse) or the authors that exist as items from both sources,
 are all kept; the run names the properties. Needs `wikibase-static` 0.14.0.
 
+## Changes with QuickStatements
+
+`python main.py apply-qs data/edits/FILE.qs` changes the tables with a QuickStatements file (a subset of v1, local ids, `wd:Q42` for
+Wikidata; all or nothing per file; `--dry-run` says what would happen). `data/edits/applied.csv` remembers the hash of every applied
+file, so the same file does not act twice. The first file, `data/edits/2026-10-23-amt-inception.qs`, adds the year 2017 as inception of
+the Academic Meta Tool (Q358) with a reference; it comes from `examples/amt-sketch.qs` of the Starter Pack. Rows made this way have no
+origin: they count as hand work and the importers never overwrite them. Needs `wikibase-static` 0.15.0.
+
 ## Where the model came from
 
 `tools/import_pack.py` made the tables once from the unzipped Starter Pack (v1.1, which adds the published ConnOSS crosswalk as source `S9`; the model is the same as in v1.0, only `background/` changed):
 
 ```cmd
-python tools/import_pack.py C:\git\chublets-wikibase-starter-pack
+python tools/import_pack.py starter-pack
 ```
+
+The pack itself lies in `starter-pack/` since 2026-10-23, as it was delivered (v1.1, with its own README; its licence is still undecided,
+`background/starter-pack-open-points.md`, point 7). `starter-pack/examples-local/` has its three QuickStatements examples with local ids,
+made by `python tools/qs_to_local.py`; they are templates for `apply-qs` (Alligator exists already as Q359, so applying that file would
+make a second item) and a test applies them to a copy of the tables.
 
 It is kept for the record. **Since the review of 2026-10-22 the tables are maintained by hand; do not run it again** (it would overwrite the
 reviewed rows). It can be run again against a changed pack: it reads `data/csv/idmap.csv` first, so the same pack row gets the same
