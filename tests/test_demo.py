@@ -175,7 +175,8 @@ class Site(unittest.TestCase):
 
     def test_it_holds_the_model_and_what_the_importer_added(self) -> None:
         imported = sum(1 for r in table("entities.csv") if r["origin"] in ("open-archaeo", "wikidata", "wikidata-stub"))
-        self.assertEqual(len(self.site.entities), 3 + 10 + 149 + len(NEW_PROPERTIES) + 7 + imported)
+        merged = len(table_at(CSV / "merges.csv"))              # a merged item is a redirect, no entity
+        self.assertEqual(len(self.site.entities), 3 + 10 + 149 + len(NEW_PROPERTIES) + 7 + imported - merged)
         self.assertEqual(len(self.site.properties), 10 + 149 + len(NEW_PROPERTIES))
 
     def test_the_kernel_properties_carry_their_wikidata_twins(self) -> None:
@@ -412,6 +413,46 @@ class EveryItemIsAChublet(unittest.TestCase):
         self.assertTrue(seeds <= software)
         self.assertEqual(sorted(i for i in software if "Q106" not in classes[i]), [])
         self.assertEqual(sum(1 for i in software if entities[i]["origin"] == "open-archaeo"), 416)
+
+
+class Merges(unittest.TestCase):
+    """S7h: the two items that came from Wikidata and from open-archaeo are merged (Florian, 2026-10-23: Wikidata stays)."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.rows = table_at(CSV / "merges.csv")
+        cls.site = loader.load_site(ROOT / "data" / "raw", ROOT / "data" / "derived")
+        cls.idmap = {r["key"]: r["id"] for r in table("idmap.csv") if r["source"] == "wikidata"}
+
+    def test_alligator_and_profileaar_are_merged_into_their_wikidata_items(self) -> None:
+        self.assertEqual({(r["from"], r["to"]) for r in self.rows},
+                         {("Q381", self.idmap["Q74004218"]), ("Q846", self.idmap["Q74823867"])})
+        self.assertEqual(self.site.redirects, {r["from"]: r["to"] for r in self.rows})
+
+    def test_there_is_one_item_with_both_sources_in_it(self) -> None:
+        for row in self.rows:
+            self.assertNotIn(row["from"], self.site.entities)
+            target = self.site.entities[row["to"]]
+            props = {s.mainsnak.property for s in target.statements}
+            self.assertTrue({"P4", "P115", "P116", "P118"} <= props, (row, props))      # twin from Wikidata, identity block from open-archaeo
+            self.assertEqual([s.mainsnak.entity_id for s in target.statements if s.mainsnak.property == "P2"].count("Q106"), 1)
+
+    def test_nothing_points_at_a_merged_id_any_more(self) -> None:
+        merged = set(self.site.redirects)
+        for entity in self.site.entities.values():
+            self.assertFalse(merged & set(entity.referenced_ids()), entity.id)
+
+    def test_the_merged_ids_forward_and_are_same_as_in_the_rdf(self) -> None:
+        ttl = next((ROOT / "dist").glob("*.ttl")).read_text(encoding="utf-8")
+        for row in self.rows:
+            page = (ROOT / "docs" / f"{row['from']}.html").read_text(encoding="utf-8")
+            self.assertIn(f'url={row["to"]}.html', page)
+            self.assertIn(f"wd:{row['to']}", ttl)
+            self.assertRegex(ttl, rf"wd:{row['from']}\s+owl:sameAs wd:{row['to']}")
+
+    def test_the_wikidata_report_knows_that_they_are_merged(self) -> None:
+        report = (ROOT / "dist" / "wikidata-import.txt").read_text(encoding="utf-8")
+        self.assertIn("2 of them merged already", report)
 
 
 class Wikidata(unittest.TestCase):

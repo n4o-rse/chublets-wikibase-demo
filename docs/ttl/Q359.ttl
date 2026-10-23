@@ -1,5 +1,5 @@
 # Q359: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.12.0; data as of unknown
+# Generated with wikibase-static 0.13.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -62,7 +62,7 @@ dist:Q359-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q359, as archived from the Wikibase API"@en ;
-    dcat:byteSize "53208"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "66478"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q359.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -81,32 +81,42 @@ wd:Q359
     schema:name "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "20"^^xsd:integer ;
+    wikibase:statements "28"^^xsd:integer ;
     rdfs:label "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
+    skos:altLabel "Alligator"@en ;
     skos:prefLabel "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     p:P2 wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01,
         wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976,
         wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9,
+        wds:Q359-DAC2107D-F077-5B03-877F-4B982CDF1AC4,
         wds:Q359-FB9C9883-030D-57B7-9C1B-AA7E5878BC58 ;
     p:P4 wds:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F ;
     p:P106 wds:Q359-54ABD82A-3518-5A93-BEF9-A7B3ADB252BA ;
     p:P107 wds:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9 ;
     p:P113 wds:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F,
+        wds:Q359-410B885B-C909-5384-BB43-59D5B42418C4,
         wds:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD,
+        wds:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F,
         wds:Q359-EEC02582-2679-519C-9581-BB5C63818E17 ;
     p:P115 wds:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B ;
     p:P116 wds:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419 ;
+    p:P117 wds:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8,
+        wds:Q359-17C65C2D-E135-5188-8789-195EA8928C08 ;
     p:P118 wds:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87 ;
-    p:P120 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0 ;
+    p:P119 wds:Q359-7827DDD2-57F3-5423-A8CD-CB51EEC1E98E ;
+    p:P120 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0,
+        wds:Q359-6241A75B-0969-5169-850A-75C411409DE7 ;
     p:P122 wds:Q359-9F6AF8E5-F559-5419-A57D-1C905AB6FFD4,
         wds:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF ;
-    p:P125 wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C ;
+    p:P125 wds:Q359-7F16742A-A072-53FD-9477-D6A04EF0CBA3,
+        wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C ;
     p:P148 wds:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28,
         wds:Q359-AC0E33A2-2D88-533F-98B4-1094B40E6664,
         wds:Q359-EFF15EB9-DC41-5F35-8C6B-FE9F582EE1D2 ;
     wdt:P2 wd:Q100,
+        wd:Q102,
         wd:Q105,
         wd:Q106,
         wd:Q372 ;
@@ -115,15 +125,32 @@ wd:Q359
     wdt:P107 wd:Q369 ;
     wdt:P113 wd:Q365,
         wd:Q368,
-        wd:Q374 ;
+        wd:Q374,
+        wd:Q382,
+        wd:Q383 ;
     wdt:P115 <https://open-archaeo.info/post/alligator/> ;
     wdt:P116 "alligator" ;
+    wdt:P117 wd:Q116,
+        wd:Q193 ;
     wdt:P118 wd:Q108 ;
-    wdt:P120 <https://rgzm.github.io/alligator/> ;
+    wdt:P119 "Alligator"@en ;
+    wdt:P120 <https://rgzm.github.io/alligator/>,
+        <https://tools.leiza.de/alligator/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P125 <https://github.com/RGZM/alligator> ;
+    wdt:P125 <https://github.com/RGZM/alligator>,
+        <https://github.com/leiza-rse/alligator> ;
     wdt:P148 "1.1" .
+
+wd:Q381
+    owl:sameAs wd:Q359 .
+
+wds:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P117 wd:Q116 .
 
 wds:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28
     a wikibase:BestRank,
@@ -143,11 +170,23 @@ wds:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P113 wd:Q368 .
 
+wds:Q359-7F16742A-A072-53FD-9477-D6A04EF0CBA3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    pq:P104 "2021-06-04T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-RGZM-alligator_-_2021-06-04_01-29-28> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:10f3056cdd6121367440c10670dee56a ;
+    ps:P125 <https://github.com/leiza-rse/alligator> .
+
 wds:Q359-9F6AF8E5-F559-5419-A57D-1C905AB6FFD4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P122 wd:Q109 .
 
 wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01
@@ -157,11 +196,19 @@ wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P2 wd:Q100 .
 
+wds:Q359-17C65C2D-E135-5188-8789-195EA8928C08
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P117 wd:Q193 .
+
 wds:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     pq:P106 wd:Q110 ;
     ps:P116 "alligator" .
 
@@ -169,7 +216,8 @@ wds:Q359-54ABD82A-3518-5A93-BEF9-A7B3ADB252BA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P106 wd:Q110 .
 
 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0
@@ -180,12 +228,34 @@ wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0
     pq:P251 wd:Q373 ;
     ps:P120 <https://rgzm.github.io/alligator/> .
 
+wds:Q359-410B885B-C909-5384-BB43-59D5B42418C4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q383 .
+
 wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P2 wd:Q105 .
+
+wds:Q359-6241A75B-0969-5169-850A-75C411409DE7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P120 <https://tools.leiza.de/alligator/> .
+
+wds:Q359-7827DDD2-57F3-5423-A8CD-CB51EEC1E98E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P119 "Alligator"@en .
 
 wds:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F
     a wikibase:BestRank,
@@ -198,7 +268,8 @@ wds:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P122 wd:Q110 .
 
 wds:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD
@@ -221,8 +292,17 @@ wds:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P118 wd:Q108 .
+
+wds:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q382 .
 
 wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
     a wikibase:BestRank,
@@ -230,6 +310,13 @@ wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P2 wd:Q372 .
+
+wds:Q359-DAC2107D-F077-5B03-877F-4B982CDF1AC4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P2 wd:Q102 .
 
 wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C
     a wikibase:BestRank,
@@ -260,7 +347,8 @@ wds:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P115 <https://open-archaeo.info/post/alligator/> .
 
 wds:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9
@@ -275,7 +363,8 @@ wds:Q359-FB9C9883-030D-57B7-9C1B-AA7E5878BC58
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P2 wd:Q106 .
 
 wdref:02e782bb6f1d71d763cc0888ec9e0f97f1dddb5f
@@ -316,6 +405,10 @@ wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82
     pr:P8 wd:Q364 ;
     prv:P7 wdv:4cbf38603c3008596f10a77bac92a6d3 .
 
+wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/alligator/> .
+
 wdref:ce3347706f9a3c70d94d7ef9b161283c8288add0
     a wikibase:Reference ;
     pr:P6 <https://api.github.com/repos/RGZM/alligator> ;
@@ -335,6 +428,13 @@ wdv:4cbf38603c3008596f10a77bac92a6d3
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2026-08-27T00:00:00Z"^^xsd:dateTime .
+
+wdv:10f3056cdd6121367440c10670dee56a
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2021-06-04T00:00:00Z"^^xsd:dateTime .
 
 wdv:41b096cbd9198b6db3ee11512ea05e7d
     a wikibase:TimeValue ;

@@ -134,8 +134,17 @@ decision of 2026-10-23. The column `instance_of` of the seed list (here `Q106`, 
 (utility software, plug-in, QGIS plugin) become classes below software, which is an assumption of the importer. Rows written by the importer have
 `origin=wikidata` or `wikidata-stub`; empty that cell in a row you change by hand and the next import leaves it alone. The report also says which
 repository and exact-match URLs occur in the open-archaeo items; it merges nothing. With all 416 entries it finds two of the five: profileAAR
-by its repository URL and Alligator by the open-archaeo page that Wikidata names as exact match; each exists twice for now, once from each source.
-Needs `wikibase-static` 0.12.0.
+by its repository URL and Alligator by the open-archaeo page that Wikidata names as exact match; the two pairs are merged (see below).
+Needs `wikibase-static` 0.13.0.
+
+## Merged items
+
+Alligator and profileAAR came twice, once from Wikidata and once from open-archaeo. `data/csv/merges.csv` merges the open-archaeo items
+(Q381, Q846) into the Wikidata items (Q359, Q361), made with `python main.py merge Q381 Q359` (`--dry-run`, `--list`, `--undo Q381`).
+The tables are not changed; the merge is applied when the tables are read, so the importers can run again without undoing it.
+The merged items keep their ids as redirects (their pages forward, the RDF says `owl:sameAs`). Different values of one property, such
+as two repository URLs for Alligator (the project moved from RGZM to leiza-rse) or the authors that exist as items from both sources,
+are all kept; the run names the properties. Needs `wikibase-static` 0.13.0.
 
 ## Where the model came from
 

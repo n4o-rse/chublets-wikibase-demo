@@ -1,5 +1,5 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.12.0; data as of unknown
+# Generated with wikibase-static 0.13.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -329,7 +329,6 @@ cat:items
         data:Q378,
         data:Q379,
         data:Q380,
-        data:Q381,
         data:Q382,
         data:Q383,
         data:Q384,
@@ -794,7 +793,6 @@ cat:items
         data:Q843,
         data:Q844,
         data:Q845,
-        data:Q846,
         data:Q847,
         data:Q848,
         data:Q849,
@@ -8051,22 +8049,6 @@ data:Q380
         dist:Q380-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q380.html> .
 
-data:Q381
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:description "A Web tool for converting CAs with dating information to relative time intervals as RDF."@en ;
-    dcterms:identifier "Q381" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q381 ;
-    dcterms:title "Alligator"@en ;
-    schema:about wd:Q381 ;
-    dcat:distribution dist:Q381-html,
-        dist:Q381-json,
-        dist:Q381-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q381.html> .
-
 data:Q382
     a schema:Dataset,
         dcat:Dataset ;
@@ -15288,22 +15270,6 @@ data:Q845
         dist:Q845-json,
         dist:Q845-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q845.html> .
-
-data:Q846
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:description "Python qgis plugin of recexcavaar's archprofile"@en ;
-    dcterms:identifier "Q846" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q846 ;
-    dcterms:title "profileAAR"@en ;
-    schema:about wd:Q846 ;
-    dcat:distribution dist:Q846-html,
-        dist:Q846-json,
-        dist:Q846-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q846.html> .
 
 data:Q847
     a schema:Dataset,
@@ -27410,7 +27376,7 @@ dist:Q359-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q359, as archived from the Wikibase API"@en ;
-    dcat:byteSize "53208"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "66478"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q359.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27460,7 +27426,7 @@ dist:Q361-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q361, as archived from the Wikibase API"@en ;
-    dcat:byteSize "35455"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "49946"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q361.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27945,31 +27911,6 @@ dist:Q380-ttl
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q380, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q380.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
-dist:Q381-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q381, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q381.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q381-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q381, as archived from the Wikibase API"@en ;
-    dcat:byteSize "17569"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q381.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q381-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q381, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q381.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 dist:Q382-html
@@ -39572,31 +39513,6 @@ dist:Q845-ttl
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q845.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-dist:Q846-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q846, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q846.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q846-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q846, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15314"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q846.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q846-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q846, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q846.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
 dist:Q847-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
@@ -47149,32 +47065,42 @@ wd:Q359
     schema:name "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "20"^^xsd:integer ;
+    wikibase:statements "28"^^xsd:integer ;
     rdfs:label "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
+    skos:altLabel "Alligator"@en ;
     skos:prefLabel "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     p:P2 wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01,
         wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976,
         wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9,
+        wds:Q359-DAC2107D-F077-5B03-877F-4B982CDF1AC4,
         wds:Q359-FB9C9883-030D-57B7-9C1B-AA7E5878BC58 ;
     p:P4 wds:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F ;
     p:P106 wds:Q359-54ABD82A-3518-5A93-BEF9-A7B3ADB252BA ;
     p:P107 wds:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9 ;
     p:P113 wds:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F,
+        wds:Q359-410B885B-C909-5384-BB43-59D5B42418C4,
         wds:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD,
+        wds:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F,
         wds:Q359-EEC02582-2679-519C-9581-BB5C63818E17 ;
     p:P115 wds:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B ;
     p:P116 wds:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419 ;
+    p:P117 wds:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8,
+        wds:Q359-17C65C2D-E135-5188-8789-195EA8928C08 ;
     p:P118 wds:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87 ;
-    p:P120 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0 ;
+    p:P119 wds:Q359-7827DDD2-57F3-5423-A8CD-CB51EEC1E98E ;
+    p:P120 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0,
+        wds:Q359-6241A75B-0969-5169-850A-75C411409DE7 ;
     p:P122 wds:Q359-9F6AF8E5-F559-5419-A57D-1C905AB6FFD4,
         wds:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF ;
-    p:P125 wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C ;
+    p:P125 wds:Q359-7F16742A-A072-53FD-9477-D6A04EF0CBA3,
+        wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C ;
     p:P148 wds:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28,
         wds:Q359-AC0E33A2-2D88-533F-98B4-1094B40E6664,
         wds:Q359-EFF15EB9-DC41-5F35-8C6B-FE9F582EE1D2 ;
     wdt:P2 wd:Q100,
+        wd:Q102,
         wd:Q105,
         wd:Q106,
         wd:Q372 ;
@@ -47183,14 +47109,21 @@ wd:Q359
     wdt:P107 wd:Q369 ;
     wdt:P113 wd:Q365,
         wd:Q368,
-        wd:Q374 ;
+        wd:Q374,
+        wd:Q382,
+        wd:Q383 ;
     wdt:P115 <https://open-archaeo.info/post/alligator/> ;
     wdt:P116 "alligator" ;
+    wdt:P117 wd:Q116,
+        wd:Q193 ;
     wdt:P118 wd:Q108 ;
-    wdt:P120 <https://rgzm.github.io/alligator/> ;
+    wdt:P119 "Alligator"@en ;
+    wdt:P120 <https://rgzm.github.io/alligator/>,
+        <https://tools.leiza.de/alligator/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P125 <https://github.com/RGZM/alligator> ;
+    wdt:P125 <https://github.com/RGZM/alligator>,
+        <https://github.com/leiza-rse/alligator> ;
     wdt:P148 "1.1" .
 
 wd:Q360
@@ -47265,28 +47198,51 @@ wd:Q361
     schema:description "The plugin profileAAR transforms profile control points for fotogrammetric rectification of section images of archaeological excavations."@en ;
     schema:name "profileAAR"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "12"^^xsd:integer ;
+    wikibase:statements "24"^^xsd:integer ;
     rdfs:label "profileAAR"@en ;
     skos:prefLabel "profileAAR"@en ;
     p:P2 wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491,
+        wds:Q361-3DE64AC4-F7F9-5F29-952C-DA5F5AD36656,
         wds:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5,
         wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291,
         wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA,
         wds:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1 ;
     p:P4 wds:Q361-54B1C044-5014-5CD0-88F3-069D4319815F ;
+    p:P106 wds:Q361-2F67BD24-5907-5D2E-88EB-20B68EE55C7D ;
+    p:P109 wds:Q361-12538C6A-6E3E-5D6D-9882-629223C1D806 ;
+    p:P113 wds:Q361-D7034C63-7482-55D7-B98F-99DD1FF5EFA9 ;
+    p:P115 wds:Q361-3D7123F2-6BD0-5CFA-BA10-E09DBA1B364B ;
+    p:P116 wds:Q361-791E6265-9918-523B-A6D1-0686B301CBF3 ;
+    p:P117 wds:Q361-00BB5069-B824-5E33-828D-B1613339867E ;
+    p:P118 wds:Q361-BAA335DD-B728-529A-A474-500841D9164D ;
+    p:P119 wds:Q361-D747D6C0-10D0-5615-88E9-4996F29CE688 ;
     p:P120 wds:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F ;
-    p:P125 wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822 ;
+    p:P122 wds:Q361-8303D396-5E6C-574D-9219-DC52BA22346D,
+        wds:Q361-574534CF-37D1-502E-876E-587E6F4C0972 ;
+    p:P125 wds:Q361-7EAB35DE-AEBB-53BB-BE52-F6D6BD7223A8,
+        wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822 ;
     p:P148 wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5,
         wds:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE,
         wds:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A,
         wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1 ;
     wdt:P2 wd:Q100,
+        wd:Q103,
         wd:Q105,
         wd:Q106,
         wd:Q372,
         wd:Q379 ;
     wdt:P4 "Q74823867" ;
+    wdt:P106 wd:Q110 ;
+    wdt:P109 wd:Q135 ;
+    wdt:P113 wd:Q158 ;
+    wdt:P115 <https://open-archaeo.info/post/profileaar/> ;
+    wdt:P116 "profileaar" ;
+    wdt:P117 wd:Q148 ;
+    wdt:P118 wd:Q108 ;
+    wdt:P119 "profileAAR"@en ;
     wdt:P120 <http://plugins.qgis.org/plugins/profileAAR/> ;
+    wdt:P122 wd:Q109,
+        wd:Q110 ;
     wdt:P125 <https://github.com/ISAAKiel/profileAAR> ;
     wdt:P148 "3.0" .
 
@@ -47641,43 +47597,7 @@ wd:Q380
     wdt:P4 "Q58529575" .
 
 wd:Q381
-    a wikibase:Item ;
-    schema:description "A Web tool for converting CAs with dating information to relative time intervals as RDF."@en ;
-    schema:name "Alligator"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "15"^^xsd:integer ;
-    rdfs:label "Alligator"@en ;
-    skos:prefLabel "Alligator"@en ;
-    p:P2 wds:Q381-80A37998-A293-5C42-84DD-E3413C977DAB,
-        wds:Q381-F154595C-CD3C-5ED2-9733-C120609C4CEC ;
-    p:P106 wds:Q381-050A05FA-F372-5805-B58A-63636630918D ;
-    p:P113 wds:Q381-ECBC155F-0926-5D87-A2C6-2E8ADB0DB542,
-        wds:Q381-FABDF299-F899-5EA3-8609-B9542CC45C3C ;
-    p:P115 wds:Q381-CC187EB2-7061-5230-8C5A-D0F1F0D6B05F ;
-    p:P116 wds:Q381-70AB8DC1-EBB5-55B4-BDB3-8A32A38B2FCA ;
-    p:P117 wds:Q381-84BE2326-9382-5A52-BCD6-6B762F7971F7,
-        wds:Q381-A832838F-63F2-5D99-B997-2383E1CF1777 ;
-    p:P118 wds:Q381-ED8FAF34-A079-57DA-803D-4671079C9333 ;
-    p:P119 wds:Q381-5B98A689-C760-5C39-8A47-774C4531A2C8 ;
-    p:P120 wds:Q381-71E6E0F1-88CB-53F5-9BB3-5ED77C10F110 ;
-    p:P122 wds:Q381-EBEB9893-F981-5FAE-8368-6F3A9B76D298,
-        wds:Q381-FD89575F-04E5-5544-BBBD-E9712950CA8B ;
-    p:P125 wds:Q381-9A40EA06-4D38-5C57-B980-D84D6108F84F ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q382,
-        wd:Q383 ;
-    wdt:P115 <https://open-archaeo.info/post/alligator/> ;
-    wdt:P116 "alligator" ;
-    wdt:P117 wd:Q116,
-        wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Alligator"@en ;
-    wdt:P120 <https://tools.leiza.de/alligator/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/leiza-rse/alligator> .
+    owl:sameAs wd:Q359 .
 
 wd:Q382
     a wikibase:Item ;
@@ -59418,39 +59338,7 @@ wd:Q845
     wdt:P125 <https://github.com/paleolimbot/tidypaleo> .
 
 wd:Q846
-    a wikibase:Item ;
-    schema:description "Python qgis plugin of recexcavaar's archprofile"@en ;
-    schema:name "profileAAR"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "13"^^xsd:integer ;
-    rdfs:label "profileAAR"@en ;
-    skos:prefLabel "profileAAR"@en ;
-    p:P2 wds:Q846-6C2211CC-A14E-51DC-8DA7-FA5CD235B89B,
-        wds:Q846-CEBF2307-6570-5B1B-A2E9-9AA879F80333 ;
-    p:P106 wds:Q846-2D0DE7B7-DEC9-59FD-86A4-CE6A21CC3BE6 ;
-    p:P109 wds:Q846-695C46E0-F5B7-5FF2-A21E-BD3105BA9C82 ;
-    p:P113 wds:Q846-F2AC839E-C794-500D-892F-99412574AC08 ;
-    p:P115 wds:Q846-37F500F8-2869-518A-9CD8-3954113AB536 ;
-    p:P116 wds:Q846-6E6726A3-3A73-56BA-9E0F-AC913E73F03E ;
-    p:P117 wds:Q846-1DA3F62F-1DD9-5182-A74A-4D2F949E6DB5 ;
-    p:P118 wds:Q846-4F8F5C0C-70A9-5869-8FFD-DC297DE232FB ;
-    p:P119 wds:Q846-062C4EFE-17C1-5996-9CC0-5935B322AE7D ;
-    p:P122 wds:Q846-A3F53ACD-06C6-5B88-BAA1-7A19120687C8,
-        wds:Q846-B599B4DD-E07F-54BE-B0EB-47C7C2A10D1D ;
-    p:P125 wds:Q846-9144324F-E81D-5626-A69D-6335B2757638 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q158 ;
-    wdt:P115 <https://open-archaeo.info/post/profileaar/> ;
-    wdt:P116 "profileaar" ;
-    wdt:P117 wd:Q148 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "profileAAR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/ISAAKiel/profileAAR> .
+    owl:sameAs wd:Q361 .
 
 wd:Q847
     a wikibase:Item ;
@@ -81788,6 +81676,13 @@ wds:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1
     prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
     ps:P2 wd:Q372 .
 
+wds:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P117 wd:Q116 .
+
 wds:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -81806,11 +81701,23 @@ wds:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P113 wd:Q368 .
 
+wds:Q359-7F16742A-A072-53FD-9477-D6A04EF0CBA3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    pq:P104 "2021-06-04T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-RGZM-alligator_-_2021-06-04_01-29-28> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:10f3056cdd6121367440c10670dee56a ;
+    ps:P125 <https://github.com/leiza-rse/alligator> .
+
 wds:Q359-9F6AF8E5-F559-5419-A57D-1C905AB6FFD4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P122 wd:Q109 .
 
 wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01
@@ -81820,11 +81727,19 @@ wds:Q359-16C75E38-3989-522B-A6E9-3A5B269BBB01
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P2 wd:Q100 .
 
+wds:Q359-17C65C2D-E135-5188-8789-195EA8928C08
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P117 wd:Q193 .
+
 wds:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     pq:P106 wd:Q110 ;
     ps:P116 "alligator" .
 
@@ -81832,7 +81747,8 @@ wds:Q359-54ABD82A-3518-5A93-BEF9-A7B3ADB252BA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P106 wd:Q110 .
 
 wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0
@@ -81843,12 +81759,34 @@ wds:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0
     pq:P251 wd:Q373 ;
     ps:P120 <https://rgzm.github.io/alligator/> .
 
+wds:Q359-410B885B-C909-5384-BB43-59D5B42418C4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    pq:P146 "2" ;
+    ps:P113 wd:Q383 .
+
 wds:Q359-841ED2FD-07EB-5150-9FC7-F0E7B6D7B976
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P2 wd:Q105 .
+
+wds:Q359-6241A75B-0969-5169-850A-75C411409DE7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P120 <https://tools.leiza.de/alligator/> .
+
+wds:Q359-7827DDD2-57F3-5423-A8CD-CB51EEC1E98E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P119 "Alligator"@en .
 
 wds:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F
     a wikibase:BestRank,
@@ -81861,7 +81799,8 @@ wds:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P122 wd:Q110 .
 
 wds:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD
@@ -81884,8 +81823,17 @@ wds:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P118 wd:Q108 .
+
+wds:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q382 .
 
 wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
     a wikibase:BestRank,
@@ -81893,6 +81841,13 @@ wds:Q359-D26A3F06-490C-5193-8F73-0DB010501CA9
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
     ps:P2 wd:Q372 .
+
+wds:Q359-DAC2107D-F077-5B03-877F-4B982CDF1AC4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    ps:P2 wd:Q102 .
 
 wds:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C
     a wikibase:BestRank,
@@ -81923,7 +81878,8 @@ wds:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P115 <https://open-archaeo.info/post/alligator/> .
 
 wds:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9
@@ -81938,7 +81894,8 @@ wds:Q359-FB9C9883-030D-57B7-9C1B-AA7E5878BC58
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
+    prov:wasDerivedFrom wdref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
+        wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     ps:P2 wd:Q106 .
 
 wds:Q360-1B54A203-0BFE-5667-BF1F-C8CB754B4932
@@ -82272,12 +82229,40 @@ wds:Q360-E3F778AF-EB34-593C-9156-59DED3F2C956
     prov:wasDerivedFrom wdref:c12291193662f196730f54d2964c4b1b4aafba5c ;
     ps:P2 wd:Q372 .
 
+wds:Q361-00BB5069-B824-5E33-828D-B1613339867E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P117 wd:Q148 .
+
+wds:Q361-2F67BD24-5907-5D2E-88EB-20B68EE55C7D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P106 wd:Q110 .
+
 wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
     ps:P2 wd:Q105 .
+
+wds:Q361-3D7123F2-6BD0-5CFA-BA10-E09DBA1B364B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P115 <https://open-archaeo.info/post/profileaar/> .
+
+wds:Q361-3DE64AC4-F7F9-5F29-952C-DA5F5AD36656
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P2 wd:Q103 .
 
 wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5
     a wikibase:Statement ;
@@ -82289,10 +82274,22 @@ wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5
     pqv:P144 wdv:3c33c427e8a3a1a021169f9eec5fb712 ;
     ps:P148 "2.0.3" .
 
+wds:Q361-7EAB35DE-AEBB-53BB-BE52-F6D6BD7223A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    pq:P104 "2019-07-04T00:00:00Z"^^xsd:dateTime ;
+    pq:P105 <https://archive.org/details/github.com-ISAAKiel-profileAAR_-_2019-07-04_11-47-50> ;
+    pq:P126 wd:Q114 ;
+    pqv:P104 wdv:ce1de142f43fa692c07e79939508e839 ;
+    ps:P125 <https://github.com/ISAAKiel/profileAAR> .
+
 wds:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
     ps:P2 wd:Q106 .
 
 wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291
@@ -82325,6 +82322,35 @@ wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA
     prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
     ps:P2 wd:Q379 .
 
+wds:Q361-791E6265-9918-523B-A6D1-0686B301CBF3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    pq:P106 wd:Q110 ;
+    ps:P116 "profileaar" .
+
+wds:Q361-8303D396-5E6C-574D-9219-DC52BA22346D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P122 wd:Q109 .
+
+wds:Q361-12538C6A-6E3E-5D6D-9882-629223C1D806
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P109 wd:Q135 .
+
+wds:Q361-574534CF-37D1-502E-876E-587E6F4C0972
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P122 wd:Q110 .
+
 wds:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -82345,6 +82371,13 @@ wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822
     pq:P248 wd:Q363 ;
     ps:P125 <https://github.com/ISAAKiel/profileAAR> .
 
+wds:Q361-BAA335DD-B728-529A-A474-500841D9164D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P118 wd:Q108 .
+
 wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1
     a wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
@@ -82353,6 +82386,21 @@ wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1
     pq:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
     pqv:P144 wdv:733674f41790c6c1009a3375da675660 ;
     ps:P148 "2.0.1" .
+
+wds:Q361-D747D6C0-10D0-5615-88E9-4996F29CE688
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    ps:P119 "profileAAR"@en .
+
+wds:Q361-D7034C63-7482-55D7-B98F-99DD1FF5EFA9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    pq:P146 "1" ;
+    ps:P113 wd:Q158 .
 
 wds:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F
     a wikibase:BestRank,
@@ -82582,118 +82630,6 @@ wds:Q380-B3547BE4-CE31-56CD-B3D3-F8FBF2C98D5C
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:20696860e0334f73341df5c81dd1b88c2a96b0b3 ;
     ps:P4 "Q58529575" .
-
-wds:Q381-5B98A689-C760-5C39-8A47-774C4531A2C8
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P119 "Alligator"@en .
-
-wds:Q381-9A40EA06-4D38-5C57-B980-D84D6108F84F
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    pq:P104 "2021-06-04T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-RGZM-alligator_-_2021-06-04_01-29-28> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:10f3056cdd6121367440c10670dee56a ;
-    ps:P125 <https://github.com/leiza-rse/alligator> .
-
-wds:Q381-050A05FA-F372-5805-B58A-63636630918D
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P106 wd:Q110 .
-
-wds:Q381-70AB8DC1-EBB5-55B4-BDB3-8A32A38B2FCA
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "alligator" .
-
-wds:Q381-71E6E0F1-88CB-53F5-9BB3-5ED77C10F110
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P120 <https://tools.leiza.de/alligator/> .
-
-wds:Q381-80A37998-A293-5C42-84DD-E3413C977DAB
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P2 wd:Q106 .
-
-wds:Q381-84BE2326-9382-5A52-BCD6-6B762F7971F7
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P117 wd:Q193 .
-
-wds:Q381-A832838F-63F2-5D99-B997-2383E1CF1777
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P117 wd:Q116 .
-
-wds:Q381-CC187EB2-7061-5230-8C5A-D0F1F0D6B05F
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P115 <https://open-archaeo.info/post/alligator/> .
-
-wds:Q381-EBEB9893-F981-5FAE-8368-6F3A9B76D298
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P122 wd:Q109 .
-
-wds:Q381-ECBC155F-0926-5D87-A2C6-2E8ADB0DB542
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q382 .
-
-wds:Q381-ED8FAF34-A079-57DA-803D-4671079C9333
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P118 wd:Q108 .
-
-wds:Q381-F154595C-CD3C-5ED2-9733-C120609C4CEC
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P2 wd:Q102 .
-
-wds:Q381-FABDF299-F899-5EA3-8609-B9542CC45C3C
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q383 .
-
-wds:Q381-FD89575F-04E5-5544-BBBD-E9712950CA8B
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
-    ps:P122 wd:Q110 .
 
 wds:Q382-D333834E-BAFF-545D-8E3F-F3A24B59E1E6
     a wikibase:BestRank,
@@ -111136,103 +111072,6 @@ wds:Q845-FBF32B88-C365-571D-9C59-1AEFD18D0C56
     prov:wasDerivedFrom wdref:93cb258b0d69d2ea2965751f8ad72e55ce5d3eb5 ;
     ps:P123 wd:Q111 .
 
-wds:Q846-1DA3F62F-1DD9-5182-A74A-4D2F949E6DB5
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P117 wd:Q148 .
-
-wds:Q846-2D0DE7B7-DEC9-59FD-86A4-CE6A21CC3BE6
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P106 wd:Q110 .
-
-wds:Q846-4F8F5C0C-70A9-5869-8FFD-DC297DE232FB
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P118 wd:Q108 .
-
-wds:Q846-6C2211CC-A14E-51DC-8DA7-FA5CD235B89B
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P2 wd:Q103 .
-
-wds:Q846-6E6726A3-3A73-56BA-9E0F-AC913E73F03E
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "profileaar" .
-
-wds:Q846-37F500F8-2869-518A-9CD8-3954113AB536
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P115 <https://open-archaeo.info/post/profileaar/> .
-
-wds:Q846-062C4EFE-17C1-5996-9CC0-5935B322AE7D
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P119 "profileAAR"@en .
-
-wds:Q846-695C46E0-F5B7-5FF2-A21E-BD3105BA9C82
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P109 wd:Q135 .
-
-wds:Q846-9144324F-E81D-5626-A69D-6335B2757638
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    pq:P104 "2019-07-04T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-profileAAR_-_2019-07-04_11-47-50> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ce1de142f43fa692c07e79939508e839 ;
-    ps:P125 <https://github.com/ISAAKiel/profileAAR> .
-
-wds:Q846-A3F53ACD-06C6-5B88-BAA1-7A19120687C8
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P122 wd:Q109 .
-
-wds:Q846-B599B4DD-E07F-54BE-B0EB-47C7C2A10D1D
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P122 wd:Q110 .
-
-wds:Q846-CEBF2307-6570-5B1B-A2E9-9AA879F80333
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P2 wd:Q106 .
-
-wds:Q846-F2AC839E-C794-500D-892F-99412574AC08
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q158 .
-
 wds:Q847-3D031251-6710-5067-B186-60C83D8ABFE6
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -126888,6 +126727,7 @@ wd:Q358
 
 wd:Q359
     a wd:Q100,
+        wd:Q102,
         wd:Q105,
         wd:Q106,
         wd:Q372 .
@@ -126901,6 +126741,7 @@ wd:Q360
 
 wd:Q361
     a wd:Q100,
+        wd:Q103,
         wd:Q105,
         wd:Q106,
         wd:Q372,
@@ -126919,10 +126760,6 @@ wd:Q378
 
 wd:Q379
     rdfs:subClassOf wd:Q100 .
-
-wd:Q381
-    a wd:Q102,
-        wd:Q106 .
 
 wd:Q384
     a wd:Q102,
@@ -127969,10 +127806,6 @@ wd:Q844
         wd:Q106 .
 
 wd:Q845
-    a wd:Q103,
-        wd:Q106 .
-
-wd:Q846
     a wd:Q103,
         wd:Q106 .
 
