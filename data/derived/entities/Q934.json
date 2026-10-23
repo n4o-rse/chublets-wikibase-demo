@@ -1,0 +1,64 @@
+{
+  "aliases": {},
+  "claims": {
+    "P4": [
+      {
+        "id": "Q934$3D02F747-E78C-5356-9DD8-ED3950E9481C",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "Q10513450"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.wikidata.org/wiki/Q10513450"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Freie-Software-Lizenz mit Copyleft in Version 2.0"
+    },
+    "en": {
+      "language": "en",
+      "value": "previous version of the GNU GPL (version 2), free software license with copyleft"
+    }
+  },
+  "id": "Q934",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "GNU General Public License, Version 2"
+    },
+    "en": {
+      "language": "en",
+      "value": "GNU General Public License, version 2.0"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

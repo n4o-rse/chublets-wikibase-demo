@@ -120,7 +120,7 @@ Needs `wikibase-static` 0.9.0.
 ## Where the Wikidata items came from
 
 `data/csv/seeds-wikidata.csv` lists the Wikidata items (`qid, kind, note`); `data/raw/wikidata/` holds the answers of Wikidata as they were
-saved (the five items and the labels of the items they point to, 2026-10-23; never edited). The package turns them into items:
+saved (the six items and the labels of the items they point to, 2026-10-23; never edited; the sixth, Q141818802 (QSKOS Plugin), was saved in a browser and stored with `--from-dir`). The package turns them into items:
 
 ```cmd
 python main.py import-wikidata --offline

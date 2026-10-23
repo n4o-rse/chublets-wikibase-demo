@@ -506,6 +506,22 @@ class Hierarchy(unittest.TestCase):
         self.assertEqual(text.count('<div class="class-tree">'), text.count('<section id="class-'))
 
 
+class Qskos(unittest.TestCase):
+    """The sixth Wikidata seed, Q141818802 (QSKOS Plugin), brought in from a file saved in the browser (2026-10-23)."""
+
+    def test_the_plugin_is_a_chublet_with_its_repository_and_developer(self) -> None:
+        entities = {r["id"]: r for r in table("entities.csv")}
+        (item,) = [r for r in entities.values() if r["label_en"] == "QSKOS Plugin - Semantic Annotation for QGIS"]
+        self.assertEqual(item["origin"], "wikidata")
+        rows = [r for r in table("statements.csv") if r["subject"] == item["id"]]
+        by_property = lambda p: [r["value"] for r in rows if r["property"] == p]
+        self.assertIn("Q106", by_property("P2"))
+        self.assertEqual(by_property("P125"), ["https://github.com/leiza-rse/qskos"])
+        (developer,) = by_property("P113")
+        self.assertEqual(entities[developer]["label_en"], "Lasse Mempel-L\u00e4nger")
+        self.assertEqual(entities[developer]["origin"], "wikidata-stub")
+
+
 class Merges(unittest.TestCase):
     """S7h: the two items that came from Wikidata and from open-archaeo are merged (Florian, 2026-10-23: Wikidata stays)."""
 
@@ -706,7 +722,7 @@ class Wikidata(unittest.TestCase):
         self.assertIn("share the exact match URL https://open-archaeo.info/post/alligator/", report)
 
     def test_the_five_seeds_are_research_software_and_each_is_an_item_with_its_twin(self) -> None:
-        self.assertEqual([s["qid"] for s in self.seeds], ["Q74003194", "Q74004218", "Q74005133", "Q74823867", "Q74824570"])
+        self.assertEqual([s["qid"] for s in self.seeds], ["Q74003194", "Q74004218", "Q74005133", "Q74823867", "Q74824570", "Q141818802"])
         self.assertEqual({s["kind"] for s in self.seeds}, {"research software"})
         for seed in self.seeds:
             item = self.idmap[seed["qid"]]
@@ -749,7 +765,7 @@ class Wikidata(unittest.TestCase):
 
     def test_the_gap_report_names_the_three_properties_the_model_does_not_know(self) -> None:
         report = table_at(ROOT / "dist" / "wikidata-gaps.csv")
-        self.assertEqual([(r["wikidata_property"], r["snaks"]) for r in report], [("P136", "7"), ("P1535", "6"), ("P2283", "5")])
+        self.assertEqual([(r["wikidata_property"], r["snaks"]) for r in report], [("P136", "7"), ("P1535", "6"), ("P2283", "8")])
 
     def test_a_reimport_changes_nothing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

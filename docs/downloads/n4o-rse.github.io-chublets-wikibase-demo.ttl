@@ -873,7 +873,10 @@ cat:items
         data:Q929,
         data:Q930,
         data:Q931,
-        data:Q932 .
+        data:Q932,
+        data:Q933,
+        data:Q934,
+        data:Q935 .
 
 cat:properties
     a dcat:Catalog ;
@@ -16532,6 +16535,58 @@ data:Q932
         dist:Q932-json,
         dist:Q932-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q932.html> .
+
+data:Q933
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Semantic Annotation for QGIS"@en ;
+    dcterms:identifier "Q933" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q933 ;
+    dcterms:title "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
+    schema:about wd:Q933 ;
+    dcat:distribution dist:Q933-html,
+        dist:Q933-json,
+        dist:Q933-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q933.html> .
+
+data:Q934
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Freie-Software-Lizenz mit Copyleft in Version 2.0"@de,
+        "previous version of the GNU GPL (version 2), free software license with copyleft"@en ;
+    dcterms:identifier "Q934" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q934 ;
+    dcterms:title "GNU General Public License, Version 2"@de,
+        "GNU General Public License, version 2.0"@en ;
+    schema:about wd:Q934 ;
+    dcat:distribution dist:Q934-html,
+        dist:Q934-json,
+        dist:Q934-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q934.html> .
+
+data:Q935
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:description "Research Software Engineer"@de,
+        "researcher in the field of digital humanities"@en ;
+    dcterms:identifier "Q935" ;
+    dcterms:isPartOf cat:items ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:subject wd:Q935 ;
+    dcterms:title "Lasse Mempel-Länger"@de,
+        "Lasse Mempel-Länger"@en ;
+    schema:about wd:Q935 ;
+    dcat:distribution dist:Q935-html,
+        dist:Q935-json,
+        dist:Q935-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q935.html> .
 
 dist:P1-html
     a dcat:Distribution ;
@@ -41458,6 +41513,81 @@ dist:Q932-ttl
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q932.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
+dist:Q933-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q933, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q933.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q933-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q933, as archived from the Wikibase API"@en ;
+    dcat:byteSize "22578"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q933.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q933-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q933, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q933.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q934-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q934, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q934.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q934-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q934, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1466"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q934.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q934-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q934, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q934.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+dist:Q935-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q935, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q935.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+dist:Q935-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q935, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1374"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q935.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+dist:Q935-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:title "Q935, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q935.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
 dist:export
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -61406,6 +61536,65 @@ wd:Q932
         wd:Q110 ;
     wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/missing> .
+
+wd:Q933
+    a wikibase:Item ;
+    schema:description "Semantic Annotation for QGIS"@en ;
+    schema:name "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "10"^^xsd:integer ;
+    rdfs:label "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
+    skos:prefLabel "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
+    p:P2 wds:Q933-1BE0EB6A-1D03-5C84-B422-469B5E9EB9C4,
+        wds:Q933-039F0644-17FB-5F07-A4E8-4395CE789ED6,
+        wds:Q933-81D08E23-5409-5227-8F19-73A5B427FE8A,
+        wds:Q933-94EB026C-64F9-5876-8D7B-EEE52AADD703 ;
+    p:P4 wds:Q933-26276B86-C467-500D-A2E9-EB92994D3999 ;
+    p:P113 wds:Q933-455F0C37-FC43-5750-8DDA-3061B205825B ;
+    p:P123 wds:Q933-D018E770-64C5-5B75-8D30-9F37BBAC308E ;
+    p:P125 wds:Q933-93879D5D-9070-54FD-B924-F6F2EAA176EE ;
+    p:P148 wds:Q933-787E2C86-DE51-51EF-894E-742538048DCC ;
+    p:P247 wds:Q933-84DB5E3B-8F33-57AA-808A-453A7E57EF42 ;
+    wdt:P2 wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q378 ;
+    wdt:P4 "Q141818802" ;
+    wdt:P113 wd:Q935 ;
+    wdt:P123 wd:Q370 ;
+    wdt:P125 <https://github.com/leiza-rse/qskos> ;
+    wdt:P148 "0.1-alpha" ;
+    wdt:P247 "QSKOS Plugin - Semantic Annotation for QGIS"@en .
+
+wd:Q934
+    a wikibase:Item ;
+    schema:description "Freie-Software-Lizenz mit Copyleft in Version 2.0"@de,
+        "previous version of the GNU GPL (version 2), free software license with copyleft"@en ;
+    schema:name "GNU General Public License, Version 2"@de,
+        "GNU General Public License, version 2.0"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "GNU General Public License, Version 2"@de,
+        "GNU General Public License, version 2.0"@en ;
+    skos:prefLabel "GNU General Public License, Version 2"@de,
+        "GNU General Public License, version 2.0"@en ;
+    p:P4 wds:Q934-3D02F747-E78C-5356-9DD8-ED3950E9481C ;
+    wdt:P4 "Q10513450" .
+
+wd:Q935
+    a wikibase:Item ;
+    schema:description "Research Software Engineer"@de,
+        "researcher in the field of digital humanities"@en ;
+    schema:name "Lasse Mempel-Länger"@de,
+        "Lasse Mempel-Länger"@en ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Lasse Mempel-Länger"@de,
+        "Lasse Mempel-Länger"@en ;
+    skos:prefLabel "Lasse Mempel-Länger"@de,
+        "Lasse Mempel-Länger"@en ;
+    p:P4 wds:Q935-B1A006F2-1BC6-535D-893E-CD9DB2D730E7 ;
+    wdt:P4 "Q125400678" .
 
 wd:P1
     a wikibase:Property ;
@@ -116525,6 +116714,96 @@ wds:Q932-F869A512-99A9-51ED-82A6-ACDF71EEC603
     prov:wasDerivedFrom wdref:ffc98f92930060dabd371f1d7532542fd84fe984 ;
     ps:P117 wd:Q132 .
 
+wds:Q933-1BE0EB6A-1D03-5C84-B422-469B5E9EB9C4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P2 wd:Q105 .
+
+wds:Q933-039F0644-17FB-5F07-A4E8-4395CE789ED6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P2 wd:Q100 .
+
+wds:Q933-81D08E23-5409-5227-8F19-73A5B427FE8A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P2 wd:Q378 .
+
+wds:Q933-84DB5E3B-8F33-57AA-808A-453A7E57EF42
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P247 "QSKOS Plugin - Semantic Annotation for QGIS"@en .
+
+wds:Q933-94EB026C-64F9-5876-8D7B-EEE52AADD703
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P2 wd:Q106 .
+
+wds:Q933-455F0C37-FC43-5750-8DDA-3061B205825B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P113 wd:Q935 .
+
+wds:Q933-787E2C86-DE51-51EF-894E-742538048DCC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8,
+        wdref:b3e03fc575043e673c7bb462772700046709eb84 ;
+    pq:P144 "2025-11-05T00:00:00Z"^^xsd:dateTime ;
+    pqv:P144 wdv:10d3de10482a8f5e59b6226a2791ba5b ;
+    ps:P148 "0.1-alpha" .
+
+wds:Q933-26276B86-C467-500D-A2E9-EB92994D3999
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:89c676eff404e4da28daed4ef1b23a458c963062 ;
+    ps:P4 "Q141818802" .
+
+wds:Q933-93879D5D-9070-54FD-B924-F6F2EAA176EE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    pq:P107 wd:Q934 ;
+    pq:P126 wd:Q114 ;
+    pq:P248 wd:Q363 ;
+    ps:P125 <https://github.com/leiza-rse/qskos> .
+
+wds:Q933-D018E770-64C5-5B75-8D30-9F37BBAC308E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    ps:P123 wd:Q370 .
+
+wds:Q934-3D02F747-E78C-5356-9DD8-ED3950E9481C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:6d21f409af957dfe4e42bd0574f2305e710fdd02 ;
+    ps:P4 "Q10513450" .
+
+wds:Q935-B1A006F2-1BC6-535D-893E-CD9DB2D730E7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:621d8c230dc4e9dc3012bea2a442d27c2568f4f5 ;
+    ps:P4 "Q125400678" .
+
 wdref:0a2ac66b2564b56ff0ed9bf550a345baf7ad2aac
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/postaar/> .
@@ -116926,6 +117205,10 @@ wdref:6ca4ce2a03f59fbac230a37dbd508778903b89d1
     prv:P7 wdv:3d94285c295eb939eb6ec714d7fde0f3 ;
     prv:P144 wdv:948be4d8efe371299e6c67935d6b596f .
 
+wdref:6d21f409af957dfe4e42bd0574f2305e710fdd02
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q10513450> .
+
 wdref:6dcff0c15466d0758aa93b492a6943bf64efed44
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/shootpoints-web/> .
@@ -117126,6 +117409,13 @@ wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb
 wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/idaifieldr/> .
+
+wdref:11b6c701e86355670f62f97795e7370b4f4e43d8
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q141818802> ;
+    pr:P7 "2026-10-23T00:00:00Z"^^xsd:dateTime ;
+    pr:P8 wd:Q364 ;
+    prv:P7 wdv:6aa9463e68b08c293fee14849c276379 .
 
 wdref:12a62d4ac919b0150f423cb9d795e36c453102a0
     a wikibase:Reference ;
@@ -117458,6 +117748,10 @@ wdref:88c089f96e0b3e066a0cfab0dc074e9e27776c39
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/openlidartoolbox/> .
 
+wdref:89c676eff404e4da28daed4ef1b23a458c963062
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q141818802> .
+
 wdref:89e5366288f739663583cb46b0dcde32f13f83c6
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/spdates/> .
@@ -117638,6 +117932,10 @@ wdref:576e9eb13d6b5605b5f9e0fc118abc391ab19458
 wdref:593db950a93e355d09f297c96dffbce87c234962
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Q1860> .
+
+wdref:621d8c230dc4e9dc3012bea2a442d27c2568f4f5
+    a wikibase:Reference ;
+    pr:P6 <https://www.wikidata.org/wiki/Q125400678> .
 
 wdref:632b43c864ea9f6f00091ac9005421c0a3f1bed1
     a wikibase:Reference ;
@@ -118290,6 +118588,10 @@ wdref:b1d788f91ca55a6d83d64e5b1f06e995cac69c4c
 wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913
     a wikibase:Reference ;
     pr:P6 <https://open-archaeo.info/post/dacord/> .
+
+wdref:b3e03fc575043e673c7bb462772700046709eb84
+    a wikibase:Reference ;
+    pr:P6 <https://github.com/leiza-rse/QSKOS/releases/tag/v0.1-alpha> .
 
 wdref:b3eb72cd22e9fc98c3dabb60dc7243f601a48046
     a wikibase:Reference ;
@@ -119283,6 +119585,13 @@ wdv:5e98247fa97bafe72d0ebcdbfcd664a9
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-01-15T00:00:00Z"^^xsd:dateTime .
 
+wdv:6aa9463e68b08c293fee14849c276379
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2026-10-23T00:00:00Z"^^xsd:dateTime .
+
 wdv:6b85ca567a67da1015b76f574039f789
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
@@ -119394,6 +119703,13 @@ wdv:09ffc0f656fe841e4d8aeb477a68f5bb
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2021-05-27T00:00:00Z"^^xsd:dateTime .
+
+wdv:10d3de10482a8f5e59b6226a2791ba5b
+    a wikibase:TimeValue ;
+    wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
+    wikibase:timePrecision "11"^^xsd:integer ;
+    wikibase:timeTimezone "0"^^xsd:integer ;
+    wikibase:timeValue "2025-11-05T00:00:00Z"^^xsd:dateTime .
 
 wdv:10f3056cdd6121367440c10670dee56a
     a wikibase:TimeValue ;
@@ -128050,6 +128366,12 @@ wd:Q929
 wd:Q932
     a wd:Q104,
         wd:Q106 .
+
+wd:Q933
+    a wd:Q100,
+        wd:Q105,
+        wd:Q106,
+        wd:Q378 .
 
 crmdig:D1_Digital_Object
     rdfs:subClassOf crm:E73_Information_Object .

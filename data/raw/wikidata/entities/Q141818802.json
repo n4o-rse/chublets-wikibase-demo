@@ -1,0 +1,359 @@
+{
+  "aliases": {},
+  "claims": {
+    "P1324": [
+      {
+        "id": "Q141818802$becc8a19-4b34-8f83-4d65-3a5c898fd374",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://github.com/leiza-rse/qskos"
+          },
+          "hash": "fe2d2f90319a565f1e1fbba8c81c00c0b2963632",
+          "property": "P1324",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P10627": [
+            {
+              "datatype": "wikibase-item",
+              "datavalue": {
+                "type": "wikibase-entityid",
+                "value": {
+                  "entity-type": "item",
+                  "id": "Q364",
+                  "numeric-id": 364
+                }
+              },
+              "hash": "5e1fad984a9cf0e6be2c68760182ee59832c285a",
+              "property": "P10627",
+              "snaktype": "value"
+            }
+          ],
+          "P275": [
+            {
+              "datatype": "wikibase-item",
+              "datavalue": {
+                "type": "wikibase-entityid",
+                "value": {
+                  "entity-type": "item",
+                  "id": "Q10513450",
+                  "numeric-id": 10513450
+                }
+              },
+              "hash": "f8fc5cc351730a752551d27980896ab1faa4272d",
+              "property": "P275",
+              "snaktype": "value"
+            }
+          ],
+          "P8423": [
+            {
+              "datatype": "wikibase-item",
+              "datavalue": {
+                "type": "wikibase-entityid",
+                "value": {
+                  "entity-type": "item",
+                  "id": "Q186055",
+                  "numeric-id": 186055
+                }
+              },
+              "hash": "ce121f772d88712a3b496a80650ebcbc56afe6b9",
+              "property": "P8423",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P8423",
+          "P10627",
+          "P275"
+        ],
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P1476": [
+      {
+        "id": "Q141818802$8c6571df-4c3e-93c2-9615-3802bf5b930f",
+        "mainsnak": {
+          "datatype": "monolingualtext",
+          "datavalue": {
+            "type": "monolingualtext",
+            "value": {
+              "language": "en",
+              "text": "QSKOS Plugin - Semantic Annotation for QGIS"
+            }
+          },
+          "hash": "406739049967a49446b9faf4c679d203cae4c3d8",
+          "property": "P1476",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P178": [
+      {
+        "id": "Q141818802$cb5f769c-4ec7-bd3e-f336-f7b27c4e163c",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q125400678",
+              "numeric-id": 125400678
+            }
+          },
+          "hash": "bed896f73f2e5e9bc820f0d7debf9baf39eeaca8",
+          "property": "P178",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P2283": [
+      {
+        "id": "Q141818802$98ea25d4-4241-b0ee-7f61-e05c2c37ab36",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q1329181",
+              "numeric-id": 1329181
+            }
+          },
+          "hash": "091e37ff35f1946bbf8c0a2d59389b0ab0de3d0b",
+          "property": "P2283",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q141818802$6559cb39-49c9-2b5d-8743-5c3c9145f0f0",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q515701",
+              "numeric-id": 515701
+            }
+          },
+          "hash": "bfa3f1a088a0aa84251c86cc68e5cb9e72e13a69",
+          "property": "P2283",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q141818802$45259296-4031-79aa-19f5-dccf6499b2ea",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q54871",
+              "numeric-id": 54871
+            }
+          },
+          "hash": "7fd345ec45920147c6f790a3fa51f349cdd2a82e",
+          "property": "P2283",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P277": [
+      {
+        "id": "Q141818802$3a1073a1-45e3-b60c-c9a5-a83165eef6b1",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q28865",
+              "numeric-id": 28865
+            }
+          },
+          "hash": "e1685d1411bf12440b27bfc30e6637af7072d515",
+          "property": "P277",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P31": [
+      {
+        "id": "Q141818802$70fefa12-4bfb-2ef5-2472-27e441647e4d",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q7397",
+              "numeric-id": 7397
+            }
+          },
+          "hash": "108498abe70a9492000b3bd172031bd75d3ae4e9",
+          "property": "P31",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q141818802$312486c6-440e-66ac-b440-806747144a74",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q123054280",
+              "numeric-id": 123054280
+            }
+          },
+          "hash": "6933c09a6fc0b1947519582309a8dd79f92a74a0",
+          "property": "P31",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q141818802$0dff7c84-4517-244c-235b-20f139566112",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q73899440",
+              "numeric-id": 73899440
+            }
+          },
+          "hash": "9544f7fa3b232d35e2881706b80f2d00b3922adc",
+          "property": "P31",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q141818802$78768053-4e7e-ee21-ada1-eba81ac7e065",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q141115627",
+              "numeric-id": 141115627
+            }
+          },
+          "hash": "ea9e772592d655ff88a64275df101d8a86d88e96",
+          "property": "P31",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P348": [
+      {
+        "id": "Q141818802$88b26d45-4106-ce57-bcf7-f1d61c9bcdf2",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "0.1-alpha"
+          },
+          "hash": "597ecdcb8e533c5a31ddce7f5a51c8a1d827d9a7",
+          "property": "P348",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P577": [
+            {
+              "datatype": "time",
+              "datavalue": {
+                "type": "time",
+                "value": {
+                  "after": 0,
+                  "before": 0,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
+                  "precision": 11,
+                  "time": "+2025-11-05T00:00:00Z",
+                  "timezone": 0
+                }
+              },
+              "hash": "be71d362d6c08431057ccb44df319be630d475dd",
+              "property": "P577",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P577"
+        ],
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "891c1b7692f95a937593acd0319a8e278c4d58f8",
+            "snaks": {
+              "P854": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://github.com/leiza-rse/QSKOS/releases/tag/v0.1-alpha"
+                  },
+                  "hash": "278b4e257530739193ab0c43b27d0287db231372",
+                  "property": "P854",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P854"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "en": {
+      "language": "en",
+      "value": "Semantic Annotation for QGIS"
+    }
+  },
+  "id": "Q141818802",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "QSKOS Plugin - Semantic Annotation for QGIS"
+    }
+  },
+  "lastrevid": 2560008664,
+  "modified": "2026-10-23T14:46:57Z",
+  "ns": 0,
+  "pageid": 135394876,
+  "sitelinks": {},
+  "title": "Q141818802",
+  "type": "item"
+}
