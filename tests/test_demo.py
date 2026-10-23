@@ -66,7 +66,7 @@ def version() -> tuple[int, ...]:
 
 class Package(unittest.TestCase):
     def test_the_installed_package_is_new_enough(self) -> None:
-        self.assertGreaterEqual(version(), (0, 16, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
+        self.assertGreaterEqual(version(), (0, 17, 0), "pip install --upgrade --force-reinstall --no-deps -r requirements.txt")
 
 
 # The tables are hand-maintained since the review of 2026-10-22; these are the places where they differ from the pack snapshot
@@ -421,7 +421,89 @@ class EveryItemIsAChublet(unittest.TestCase):
         self.assertGreaterEqual(len(software), 421)
         self.assertTrue(seeds <= software)
         self.assertEqual(sorted(i for i in software if "Q106" not in classes[i]), [])
-        self.assertEqual(sum(1 for i in software if entities[i]["origin"] == "open-archaeo"), 416)
+        also = {line.split("\t")[0] for line in (ROOT / "data" / "edits" / "2026-10-23-chublets-everywhere.qs").read_text(encoding="utf-8").splitlines()
+                if line and not line.startswith("#")}
+        self.assertEqual(sum(1 for i in software if entities[i]["origin"] == "open-archaeo" and i not in also), 416)
+
+
+class Chublets(unittest.TestCase):
+    """Florian, 2026-10-23: everything that is software is a chublet; persons, accounts, topics and DOIs are not."""
+
+    FILE = ROOT / "data" / "edits" / "2026-10-23-chublets-everywhere.qs"
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.entities = {r["id"]: r for r in table("entities.csv")}
+        cls.classes = defaultdict(set)
+        for s in table("statements.csv"):
+            if s["property"] == "P2":
+                cls.classes[s["subject"]].add(s["value"])
+        cls.named = [line.split("\t")[0] for line in cls.FILE.read_text(encoding="utf-8").splitlines() if line and not line.startswith("#")]
+
+    def test_the_file_names_22_items_and_each_is_a_chublet_by_hand(self) -> None:
+        self.assertEqual(len(self.named), 22)
+        hand = {r["subject"] for r in table("statements.csv") if r["property"] == "P2" and r["value"] == "Q106" and r["origin"] == ""}
+        self.assertTrue(set(self.named) <= hand)
+
+    def test_the_host_programs_languages_and_platforms_are_chublets(self) -> None:
+        labels = {self.entities[i]["label_en"] for i in self.named}
+        self.assertTrue({"QGIS", "ArcGIS", "Blender", "R", "Python", "JavaScript", "Git", "GitHub"} <= labels, labels)
+        for i in self.named:
+            self.assertIn("Q106", self.classes[i], i)
+
+    def test_persons_organisations_topics_dois_licences_and_projects_are_not(self) -> None:
+        by_label = {r["label_en"]: i for i, r in self.entities.items() if r["kind"] == "item"}
+        for label in ("Florian Thiery", "Allard Wijnand Mees", "mainzed", "NFDI4Objects", "Palaeobotany", "10.1017/RDC.2020.129",
+                      "MIT License", "English", "WikiProject chublets.software", "chublets.software"):
+            self.assertNotIn("Q106", self.classes[by_label[label]], label)
+
+    def test_every_item_below_software_is_a_chublet(self) -> None:
+        sub = defaultdict(set)
+        for s in table("statements.csv"):
+            if s["property"] == "P1":
+                sub[s["value"]].add(s["subject"])
+        below, todo = {"Q100"}, ["Q100"]
+        while todo:
+            for child in sub[todo.pop()]:
+                if child not in below:
+                    below.add(child)
+                    todo.append(child)
+        merged = {r["from"] for r in table("merges.csv")}
+        missing = [i for i, c in self.classes.items() if c & below and i not in merged and self.entities[i]["kind"] == "item" and "Q106" not in c]
+        self.assertEqual(missing, [])
+
+    def test_the_file_is_listed_in_applied_csv(self) -> None:
+        import hashlib
+        digest = hashlib.sha256(self.FILE.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+        self.assertIn((digest, "data/edits/2026-10-23-chublets-everywhere.qs"), [(r["sha256"], r["file"]) for r in table_at(ROOT / "data" / "edits" / "applied.csv")])
+
+
+class Hierarchy(unittest.TestCase):
+    """The overview and the class pages show the whole hierarchy around a class (wikibase-static 0.17.0)."""
+
+    @staticmethod
+    def ids(page: str, index: int = 0) -> list[str]:
+        text = (ROOT / "docs" / page).read_text(encoding="utf-8")
+        block = re.findall(r'<div class="class-tree">(.*?)\n\s*</div>', text, re.S)[index]
+        return re.findall(r'<a href="(Q\d+)\.html"', block)
+
+    def test_software_library_has_its_superclasses_and_is_in_the_middle(self) -> None:
+        self.assertEqual(self.ids("Q103.html"), ["Q100", "Q103"])
+
+    def test_software_has_all_its_subclasses_below(self) -> None:
+        ids = self.ids("Q100.html")
+        self.assertEqual(ids[0], "Q100")
+        self.assertTrue({"Q101", "Q102", "Q103", "Q104", "Q106", "Q372", "Q378", "Q379"} <= set(ids), ids)
+
+    def test_chublet_stands_under_both_its_superclasses(self) -> None:
+        ids = self.ids("Q106.html")
+        self.assertEqual(ids.count("Q106"), 2)
+        self.assertTrue({"Q105", "Q101", "Q100"} <= set(ids), ids)
+        self.assertNotIn("Q3", ids)
+
+    def test_the_overview_has_the_tree_of_every_group(self) -> None:
+        text = (ROOT / "docs" / "overview.html").read_text(encoding="utf-8")
+        self.assertEqual(text.count('<div class="class-tree">'), text.count('<section id="class-'))
 
 
 class Merges(unittest.TestCase):
@@ -579,7 +661,7 @@ class Edits(unittest.TestCase):
         import hashlib
         rows = table_at(ROOT / "data" / "edits" / "applied.csv")
         digest = hashlib.sha256(self.FILE.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
-        self.assertEqual([(r["sha256"], r["file"]) for r in rows], [(digest, "data/edits/2026-10-23-amt-inception.qs")])
+        self.assertIn((digest, "data/edits/2026-10-23-amt-inception.qs"), [(r["sha256"], r["file"]) for r in rows])
 
     def test_amt_has_its_inception_with_a_reference_and_no_origin(self) -> None:
         (statement,) = [r for r in table("statements.csv") if r["subject"] == "Q358" and r["property"] == "P137"]
@@ -656,7 +738,7 @@ class Wikidata(unittest.TestCase):
         self.assertGreaterEqual(len(stubs), 15)
         for item in stubs:
             wanted = ["P1", "P4"] if self.entities[item]["kind"] == "class" else ["P4"]
-            self.assertEqual(sorted(s["property"] for s in self.statements if s["subject"] == item), wanted, item)
+            self.assertEqual(sorted(s["property"] for s in self.statements if s["subject"] == item and s["origin"]), wanted, item)     # hand rows (apply-qs) are not the importer's
             self.assertTrue(self.entities[item]["label_en"], item)
 
     def test_the_types_without_a_twin_are_classes_below_software(self) -> None:

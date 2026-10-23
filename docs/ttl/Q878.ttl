@@ -1,5 +1,5 @@
 # Q878: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q878-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q878, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1191"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1664"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q878.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q878
     a wikibase:Item ;
     schema:name "C"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "C"@en ;
     skos:prefLabel "C"@en ;
-    p:P2 wds:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D,
+        wds:Q878-078E2497-E998-5521-A209-0425CD6F9C9C ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:5c271c9a57239650cd1beabbf50d12c51533b667 ;
     ps:P2 wd:Q3 .
+
+wds:Q878-078E2497-E998-5521-A209-0425CD6F9C9C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:5c271c9a57239650cd1beabbf50d12c51533b667
     a wikibase:Reference ;

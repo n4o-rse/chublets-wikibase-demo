@@ -39,6 +39,24 @@
           }
         ],
         "type": "statement"
+      },
+      {
+        "id": "Q271$A6FCEBB7-3C3E-5EAD-ADDC-595D3C44C883",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q106",
+              "numeric-id": 106
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
       }
     ]
   },

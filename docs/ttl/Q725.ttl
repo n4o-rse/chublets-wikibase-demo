@@ -1,5 +1,5 @@
 # Q725: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q725-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q725, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1202"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1675"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q725.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q725
     a wikibase:Item ;
     schema:name "Blender"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Blender"@en ;
     skos:prefLabel "Blender"@en ;
-    p:P2 wds:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925 ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925,
+        wds:Q725-F598A0F4-6BB3-5FDD-9287-8A3255822832 ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:bbe43d0e593e4ab875368026f1644f3606acf647 ;
     ps:P2 wd:Q3 .
+
+wds:Q725-F598A0F4-6BB3-5FDD-9287-8A3255822832
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:bbe43d0e593e4ab875368026f1644f3606acf647
     a wikibase:Reference ;

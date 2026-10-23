@@ -1,5 +1,5 @@
 # Q349: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q349-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q349, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1197"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1670"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q349.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,19 @@ wd:Q349
     a wikibase:Item ;
     schema:name "Piwigo"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Piwigo"@en ;
     skos:prefLabel "Piwigo"@en ;
-    p:P2 wds:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q349-954EC2FD-C137-5932-B2C4-1C2830DF37C6,
+        wds:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
+
+wds:Q349-954EC2FD-C137-5932-B2C4-1C2830DF37C6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wds:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F
     a wikibase:BestRank,

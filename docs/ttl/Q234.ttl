@@ -1,5 +1,5 @@
 # Q234: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q234-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q234, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1193"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1666"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q234.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,19 @@ wd:Q234
     a wikibase:Item ;
     schema:name "Meshlab"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Meshlab"@en ;
     skos:prefLabel "Meshlab"@en ;
-    p:P2 wds:Q234-DDD43200-266C-5E68-96A5-49D31A70E3DA ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q234-30BA602D-0666-5711-9DF9-F9EADD0E123D,
+        wds:Q234-DDD43200-266C-5E68-96A5-49D31A70E3DA ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
+
+wds:Q234-30BA602D-0666-5711-9DF9-F9EADD0E123D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wds:Q234-DDD43200-266C-5E68-96A5-49D31A70E3DA
     a wikibase:BestRank,

@@ -1,5 +1,5 @@
 # Q800: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q800-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q800, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1201"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1674"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q800.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q800
     a wikibase:Item ;
     schema:name "Stellarium"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Stellarium"@en ;
     skos:prefLabel "Stellarium"@en ;
-    p:P2 wds:Q800-01611399-E8AF-5DEA-9617-F0709265F43B ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q800-01611399-E8AF-5DEA-9617-F0709265F43B,
+        wds:Q800-C021B557-5222-5B03-9665-3FB824545A5D ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q800-01611399-E8AF-5DEA-9617-F0709265F43B
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q800-01611399-E8AF-5DEA-9617-F0709265F43B
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
     ps:P2 wd:Q3 .
+
+wds:Q800-C021B557-5222-5B03-9665-3FB824545A5D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723
     a wikibase:Reference ;

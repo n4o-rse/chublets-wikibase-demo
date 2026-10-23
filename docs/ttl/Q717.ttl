@@ -1,5 +1,5 @@
 # Q717: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q717-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q717, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1204"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1677"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q717.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q717
     a wikibase:Item ;
     schema:name "Open Data Kit"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Open Data Kit"@en ;
     skos:prefLabel "Open Data Kit"@en ;
-    p:P2 wds:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44 ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44,
+        wds:Q717-0288CD06-C1B0-59AF-87F2-21792F7E9D91 ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:8e0e14dd382ab1eb2e8af04cbce740ecd5da8ff7 ;
     ps:P2 wd:Q3 .
+
+wds:Q717-0288CD06-C1B0-59AF-87F2-21792F7E9D91
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:8e0e14dd382ab1eb2e8af04cbce740ecd5da8ff7
     a wikibase:Reference ;

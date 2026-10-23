@@ -1,4 +1,4 @@
 # The tool that renders this site.
-# Needs wikibase-static 0.16.0 or later (0.6.0: RDFS bridge, formatter URL of the kernel, fast `references` query, page downloads; 0.9.0: import-open-archaeo; 0.11.0: import-wikidata; 0.11.1: no maxlag for Wikidata; 0.12.0: seeds column instance_of; 0.13.0: merge; 0.14.0: merge --suggest; 0.15.0: apply-qs; 0.16.0: tab Source rows). Pin a tag or commit here once
+# Needs wikibase-static 0.17.0 or later (0.6.0: RDFS bridge, formatter URL of the kernel, fast `references` query, page downloads; 0.9.0: import-open-archaeo; 0.11.0: import-wikidata; 0.11.1: no maxlag for Wikidata; 0.12.0: seeds column instance_of; 0.13.0: merge; 0.14.0: merge --suggest; 0.15.0: apply-qs; 0.16.0: tab Source rows; 0.17.0: class hierarchy). Pin a tag or commit here once
 # wikibase-static has releases.
 wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git

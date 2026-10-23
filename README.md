@@ -157,6 +157,17 @@ file, so the same file does not act twice. The first file, `data/edits/2026-10-2
 the Academic Meta Tool (Q358) with a reference; it comes from `examples/amt-sketch.qs` of the Starter Pack. Rows made this way have no
 origin: they count as hand work and the importers never overwrite them. Needs `wikibase-static` 0.15.0.
 
+## Chublets and the class hierarchy
+
+Everything that is software is an instance of chublet (Q106): the 416 open-archaeo entries and the Wikidata seeds from their importers, and
+by hand (`data/edits/2026-10-23-chublets-everywhere.qs`, applied with `apply-qs`) the host programs (QGIS, ArcGIS, Blender, ...), the
+programming languages (R, Python, ...) and the platforms Git and GitHub. Persons, accounts, organisations, topics, DOIs, licences, the
+language English, Wikidata and the three project items are not chublets. A new import brings new host programs and languages without that
+line: they need a line in a new `.qs` file (`python main.py apply-qs`).
+
+The overview shows, under every class, the whole hierarchy around it (all paths from the root down to the class, the class in bold, all
+subclasses below), and the class pages show it as well. Needs `wikibase-static` 0.17.0.
+
 ## Source rows
 
 Every entity page has a tab "Source rows" next to "Read": it opens the rows of `entities.csv`, `statements.csv`, `qualifiers.csv`,

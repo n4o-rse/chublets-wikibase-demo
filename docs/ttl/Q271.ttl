@@ -1,5 +1,5 @@
 # Q271: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q271-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q271, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1217"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1690"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q271.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,19 @@ wd:Q271
     a wikibase:Item ;
     schema:name "MATLAB"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "MATLAB"@en ;
     skos:prefLabel "MATLAB"@en ;
-    p:P2 wds:Q271-BCA91289-B244-5488-9F61-25606687AFD0 ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q271-A6FCEBB7-3C3E-5EAD-ADDC-595D3C44C883,
+        wds:Q271-BCA91289-B244-5488-9F61-25606687AFD0 ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
+
+wds:Q271-A6FCEBB7-3C3E-5EAD-ADDC-595D3C44C883
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wds:Q271-BCA91289-B244-5488-9F61-25606687AFD0
     a wikibase:BestRank,

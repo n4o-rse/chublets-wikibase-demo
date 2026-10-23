@@ -1,5 +1,5 @@
 # Q679: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q679-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q679, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1199"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1672"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q679.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q679
     a wikibase:Item ;
     schema:name "Ruby"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Ruby"@en ;
     skos:prefLabel "Ruby"@en ;
-    p:P2 wds:Q679-010D1901-9309-5892-BE43-330D3E064003 ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q679-010D1901-9309-5892-BE43-330D3E064003,
+        wds:Q679-D49B59DC-3A04-5907-A9D4-5DF3E0568273 ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q679-010D1901-9309-5892-BE43-330D3E064003
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q679-010D1901-9309-5892-BE43-330D3E064003
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:78ac2dfb34ff39c594da3146794ec834493e4ba3 ;
     ps:P2 wd:Q3 .
+
+wds:Q679-D49B59DC-3A04-5907-A9D4-5DF3E0568273
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:78ac2dfb34ff39c594da3146794ec834493e4ba3
     a wikibase:Reference ;

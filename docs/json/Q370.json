@@ -64,6 +64,24 @@
   "claims": {
     "P2": [
       {
+        "id": "Q370$64B68B52-DD00-58CA-BD7A-B27360AC3001",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q106",
+              "numeric-id": 106
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
         "id": "Q370$BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407",
         "mainsnak": {
           "datatype": "wikibase-item",

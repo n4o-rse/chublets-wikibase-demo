@@ -1,5 +1,5 @@
 # Q371: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -61,7 +61,7 @@ dist:Q371-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q371, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2246"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2719"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q371.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -79,12 +79,14 @@ wd:Q371
         "high-level programming language"@en ;
     schema:name "JavaScript"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "3"^^xsd:integer ;
     rdfs:label "JavaScript"@en ;
     skos:prefLabel "JavaScript"@en ;
-    p:P2 wds:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37 ;
+    p:P2 wds:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37,
+        wds:Q371-D24307A8-F380-5322-A590-FFDD66BDE731 ;
     p:P4 wds:Q371-7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905 ;
-    wdt:P2 wd:Q3 ;
+    wdt:P2 wd:Q3,
+        wd:Q106 ;
     wdt:P4 "Q2005" .
 
 wd:Q406
@@ -103,6 +105,12 @@ wds:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
     ps:P2 wd:Q3 .
+
+wds:Q371-D24307A8-F380-5322-A590-FFDD66BDE731
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:72f441d054b57c8b490a71e7d9c54552bc0053e3
     a wikibase:Reference ;

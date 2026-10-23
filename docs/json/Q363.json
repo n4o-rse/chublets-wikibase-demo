@@ -1,6 +1,26 @@
 {
   "aliases": {},
   "claims": {
+    "P2": [
+      {
+        "id": "Q363$9D96B097-DB22-545E-8A09-205CA555067A",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q106",
+              "numeric-id": 106
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
     "P4": [
       {
         "id": "Q363$5DA51CC6-00A9-5F62-8D8D-60CEC49AF90F",

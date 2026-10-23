@@ -1,5 +1,5 @@
 # Q324: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q324-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q324, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1210"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1683"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q324.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q324
     a wikibase:Item ;
     schema:name "Microsoft Excel"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Microsoft Excel"@en ;
     skos:prefLabel "Microsoft Excel"@en ;
-    p:P2 wds:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD,
+        wds:Q324-AFE5D95D-78D6-5698-B7D8-A127567F71F6 ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
     ps:P2 wd:Q3 .
+
+wds:Q324-AFE5D95D-78D6-5698-B7D8-A127567F71F6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:58e70c932dcd0764b8e4a3b2569c472efece935e
     a wikibase:Reference ;

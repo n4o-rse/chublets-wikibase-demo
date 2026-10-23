@@ -1,5 +1,5 @@
 # Q645: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q645-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q645, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1206"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1679"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q645.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q645
     a wikibase:Item ;
     schema:name "LibreOffice Calc"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "LibreOffice Calc"@en ;
     skos:prefLabel "LibreOffice Calc"@en ;
-    p:P2 wds:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0 ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0,
+        wds:Q645-EEF55E98-D4FC-561A-AA3B-5BFBB35C997A ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
     ps:P2 wd:Q3 .
+
+wds:Q645-EEF55E98-D4FC-561A-AA3B-5BFBB35C997A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:1e4667326de1574e55f8b3b62db11f3020f5a196
     a wikibase:Reference ;

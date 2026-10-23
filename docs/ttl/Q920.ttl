@@ -1,5 +1,5 @@
 # Q920: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.16.0; data as of unknown
+# Generated with wikibase-static 0.17.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
 
 @prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
@@ -59,7 +59,7 @@ dist:Q920-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q920, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1196"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1669"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q920.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -75,11 +75,13 @@ wd:Q920
     a wikibase:Item ;
     schema:name "AutoCAD"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "AutoCAD"@en ;
     skos:prefLabel "AutoCAD"@en ;
-    p:P2 wds:Q920-A59C6637-B9F7-5EAA-9747-754040035F70 ;
-    wdt:P2 wd:Q3 .
+    p:P2 wds:Q920-A59C6637-B9F7-5EAA-9747-754040035F70,
+        wds:Q920-CE2D471D-1A90-5F5A-95EC-02436CF9421E ;
+    wdt:P2 wd:Q3,
+        wd:Q106 .
 
 wds:Q920-A59C6637-B9F7-5EAA-9747-754040035F70
     a wikibase:BestRank,
@@ -87,6 +89,12 @@ wds:Q920-A59C6637-B9F7-5EAA-9747-754040035F70
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e3f30f64d83ad4ede9b7470d247cac5a0e451186 ;
     ps:P2 wd:Q3 .
+
+wds:Q920-CE2D471D-1A90-5F5A-95EC-02436CF9421E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2 wd:Q106 .
 
 wdref:e3f30f64d83ad4ede9b7470d247cac5a0e451186
     a wikibase:Reference ;
