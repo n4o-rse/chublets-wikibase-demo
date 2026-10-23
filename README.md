@@ -140,10 +140,10 @@ Needs `wikibase-static` 0.14.0.
 ## Merged items
 
 Alligator and profileAAR came twice, once from Wikidata and once from open-archaeo, and so did three people (Florian Thiery, Ronald Visser,
-Allard Mees: an open-archaeo account name and a Wikidata stub). `data/csv/merges.csv` merges the open-archaeo items into the Wikidata items,
+Allard Mees: an open-archaeo account name and a Wikidata stub) and two languages. `data/csv/merges.csv` merges the open-archaeo items into the Wikidata items,
 made with `python main.py merge Q381 Q359` (`--dry-run`, `--list`, `--undo Q381`). `python main.py merge --suggest` finds such pairs by
-name and writes `dist/merge-suggestions.csv`; two are left, the languages Python and JavaScript (open-archaeo item and Wikidata stub),
-not merged yet.
+name and writes `dist/merge-suggestions.csv`; the two languages Python and JavaScript (open-archaeo item and Wikidata stub) are merged
+as well, so the list is empty now.
 The tables are not changed; the merge is applied when the tables are read, so the importers can run again without undoing it.
 The merged items keep their ids as redirects (their pages forward, the RDF says `owl:sameAs`). Different values of one property, such
 as two repository URLs for Alligator (the project moved from RGZM to leiza-rse) or the authors that exist as items from both sources,

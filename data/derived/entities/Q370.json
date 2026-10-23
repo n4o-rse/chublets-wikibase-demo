@@ -62,6 +62,46 @@
     ]
   },
   "claims": {
+    "P2": [
+      {
+        "id": "Q370$BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q3",
+              "numeric-id": 3
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/sitesyncro/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
     "P4": [
       {
         "id": "Q370$9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332",

@@ -9,13 +9,15 @@ property table with the local ids added.
 
 from __future__ import annotations
 
+import contextlib
 import csv
-from collections import defaultdict
+import io
 import json
 import re
 import sys
 import tempfile
 import unittest
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -34,6 +36,12 @@ BRIDGE = {
     (BASE + "/entity/Q2", OWL + "equivalentClass", RDF + "Property"),
     (BASE + "/entity/Q3", OWL + "equivalentClass", OWL + "Thing"),
 }
+
+
+def quietly(step, args: list[str]) -> int:
+    """Run an importer's ``main`` without its report on the terminal (the test looks at the files, not at the text)."""
+    with contextlib.redirect_stdout(io.StringIO()):
+        return step.main(args)
 
 
 def table(name: str) -> list[dict[str, str]]:
@@ -392,7 +400,7 @@ class OpenArchaeo(unittest.TestCase):
             for path in CSV.glob("*.csv"):
                 (target / path.name).write_bytes(path.read_bytes())
             args = ["--csv", str(target), "--input", str(self.RAW), "--mapping", str(self.MAPPING), "--vocabulary", str(self.VOCABULARY), "--all"]
-            self.assertEqual(importer.main(args), 0)
+            self.assertEqual(quietly(importer, args), 0)
             for path in CSV.glob("*.csv"):
                 self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
 
@@ -441,12 +449,18 @@ class Merges(unittest.TestCase):
         self.assertEqual(len(plain), len(set(plain)))                         # nobody twice (the two with a role qualifier are a statement of their own)
         self.assertLessEqual({"Q365", "Q374"}, set(plain) | {s.mainsnak.entity_id for s in alligator.statements if s.mainsnak.property == "P113"})
 
-    def test_the_suggestions_name_what_is_left(self) -> None:
+    def test_the_suggestions_have_nothing_left_to_name(self) -> None:
         with (ROOT / "dist" / "merge-suggestions.csv").open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
         merged = {r["from"] for r in self.rows} | {r["to"] for r in self.rows}
         self.assertFalse([r for r in rows if r["from"] in merged or r["to"] in merged])         # a merged pair is not suggested again
-        self.assertEqual({r["command"] for r in rows}, {"merge Q139 Q370", "merge Q406 Q371"})   # the languages Python and JavaScript
+        self.assertEqual(rows, [])                                                              # nothing else looks like a duplicate
+
+    def test_the_languages_python_and_javascript_are_merged_into_their_wikidata_stubs(self) -> None:
+        pairs = {(r["from"], r["to"]) for r in self.rows}
+        self.assertLessEqual({("Q139", "Q370"), ("Q406", "Q371")}, pairs)
+        self.assertEqual(self.site.entities["Q370"].labels["en"], "Python")
+        self.assertEqual(self.site.entities["Q371"].labels["en"], "JavaScript")
 
     def test_there_is_one_item_with_both_sources_in_it(self) -> None:
         for row in self.rows:
@@ -550,7 +564,7 @@ class Wikidata(unittest.TestCase):
             for path in CSV.glob("*.csv"):
                 (target / path.name).write_bytes(path.read_bytes())
             args = ["--csv", str(target), "--seeds", str(self.SEEDS), "--raw", str(self.RAW), "--offline"]
-            self.assertEqual(wikidata.main(args), 0)
+            self.assertEqual(quietly(wikidata, args), 0)
             for path in CSV.glob("*.csv"):
                 self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
             for name in ("wikidata-gaps.csv", "wikidata-import.txt"):

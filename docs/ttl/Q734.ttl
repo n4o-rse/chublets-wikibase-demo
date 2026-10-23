@@ -108,7 +108,7 @@ wd:Q734
     wdt:P119 "hand_axes_database_downloader"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/jfpalomeque/hand_axes_database_downloader> .
 
 wds:Q734-0BFC3D8D-1D7C-591B-9FF8-2431649206B6
@@ -217,7 +217,7 @@ wds:Q734-E3CEA9F8-B7E7-5890-A9A3-8FCD50F91CB5
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wdref:3dbb99e600255723f3007c2ab206954e87f39bdf
     a wikibase:Reference ;

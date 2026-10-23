@@ -62,7 +62,7 @@ dist:Q370-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q370, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2536"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3533"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q370.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -74,6 +74,9 @@ dist:Q370-ttl
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q370.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
+wd:Q139
+    owl:sameAs wd:Q370 .
+
 wd:Q370
     a wikibase:Item ;
     schema:description "Programmiersprache"@de,
@@ -81,7 +84,7 @@ wd:Q370
     schema:name "Python"@de,
         "Python"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Python"@de,
         "Python"@en ;
     skos:altLabel "Programmiersprache Python"@de,
@@ -100,7 +103,9 @@ wd:Q370
         "Python.org"@en ;
     skos:prefLabel "Python"@de,
         "Python"@en ;
+    p:P2 wds:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407 ;
     p:P4 wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q28865" .
 
 wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332
@@ -110,6 +115,17 @@ wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332
     prov:wasDerivedFrom wdref:000f2b81e99bbe75bf7c61252febbc605d562e83 ;
     ps:P4 "Q28865" .
 
+wds:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:67c7988cefa1495ac753e4a66b1ef1644bc6fa9d ;
+    ps:P2 wd:Q3 .
+
 wdref:000f2b81e99bbe75bf7c61252febbc605d562e83
     a wikibase:Reference ;
     pr:P6 <https://www.wikidata.org/wiki/Q28865> .
+
+wdref:67c7988cefa1495ac753e4a66b1ef1644bc6fa9d
+    a wikibase:Reference ;
+    pr:P6 <https://open-archaeo.info/post/sitesyncro/> .

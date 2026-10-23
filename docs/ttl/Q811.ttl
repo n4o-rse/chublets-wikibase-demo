@@ -104,7 +104,7 @@ wd:Q811
     wdt:P119 "expotime"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/expotime> .
 
 wds:Q811-09D64FAF-1DAE-5F6C-886D-59BD2843BB97
@@ -202,7 +202,7 @@ wds:Q811-F39274AC-C4FD-5781-920C-90458AA751F8
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d
     a wikibase:Reference ;

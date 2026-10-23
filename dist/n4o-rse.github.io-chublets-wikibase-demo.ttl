@@ -87,7 +87,6 @@ cat:items
         data:Q136,
         data:Q137,
         data:Q138,
-        data:Q139,
         data:Q140,
         data:Q141,
         data:Q142,
@@ -350,7 +349,6 @@ cat:items
         data:Q403,
         data:Q404,
         data:Q405,
-        data:Q406,
         data:Q407,
         data:Q408,
         data:Q409,
@@ -4268,21 +4266,6 @@ data:Q138
         dist:Q138-json,
         dist:Q138-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q138.html> .
-
-data:Q139
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:identifier "Q139" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q139 ;
-    dcterms:title "Python"@en ;
-    schema:about wd:Q139 ;
-    dcat:distribution dist:Q139-html,
-        dist:Q139-json,
-        dist:Q139-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q139.html> .
 
 data:Q140
     a schema:Dataset,
@@ -8374,21 +8357,6 @@ data:Q405
         dist:Q405-json,
         dist:Q405-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q405.html> .
-
-data:Q406
-    a schema:Dataset,
-        dcat:Dataset ;
-    cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:identifier "Q406" ;
-    dcterms:isPartOf cat:items ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q406 ;
-    dcterms:title "JavaScript"@en ;
-    schema:about wd:Q406 ;
-    dcat:distribution dist:Q406-html,
-        dist:Q406-json,
-        dist:Q406-ttl ;
-    dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q406.html> .
 
 data:Q407
     a schema:Dataset,
@@ -21815,31 +21783,6 @@ dist:Q138-ttl
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q138.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-dist:Q139-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q139, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q139.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q139-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q139, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1195"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q139.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q139-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q139, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q139.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
 dist:Q140-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
@@ -27578,7 +27521,7 @@ dist:Q370-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q370, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2536"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3533"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q370.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27603,7 +27546,7 @@ dist:Q371-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q371, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1246"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2246"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q371.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -28388,31 +28331,6 @@ dist:Q405-ttl
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q405, RDF in the Wikibase data model"@en ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q405.ttl> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
-
-dist:Q406-html
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q406, page"@en ;
-    dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q406.html> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
-
-dist:Q406-json
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q406, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1202"^^xsd:nonNegativeInteger ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q406.json> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
-
-dist:Q406-ttl
-    a dcat:Distribution ;
-    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:title "Q406, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q406.ttl> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 dist:Q407-html
@@ -42264,18 +42182,11 @@ wd:Q138
     wdt:P120 <https://sitesyncro.readthedocs.io/en/latest/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/demjanp/SiteSyncro> .
 
 wd:Q139
-    a wikibase:Item ;
-    schema:name "Python"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
-    rdfs:label "Python"@en ;
-    skos:prefLabel "Python"@en ;
-    p:P2 wds:Q139-A89678EB-DB99-520C-AD36-CB83016DA3C1 ;
-    wdt:P2 wd:Q3 .
+    owl:sameAs wd:Q370 .
 
 wd:Q140
     a wikibase:Item ;
@@ -42339,7 +42250,7 @@ wd:Q143
     wdt:P119 "totalstation-tools"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/WiseLabCMU/totalstation-tools> .
 
 wd:Q144
@@ -42879,7 +42790,7 @@ wd:Q171
     wdt:P119 "STOCHASI"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/oeai-dac/STOCHASI> .
 
 wd:Q172
@@ -43046,7 +42957,7 @@ wd:Q180
     wdt:P119 "murature"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/murature> .
 
 wd:Q181
@@ -43117,7 +43028,7 @@ wd:Q184
     wdt:P120 <https://shawngraham.github.io/homecooked-history/hm-generator-site/enhanced.html> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/shawngraham/homecooked-history/tree/main/hm-generator-site> .
 
 wd:Q185
@@ -43465,7 +43376,7 @@ wd:Q203
     wdt:P119 "Iraq_mortar"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/apalmisano82/Iraq_mortar> .
 
 wd:Q204
@@ -43782,7 +43693,7 @@ wd:Q221
     wdt:P119 "CeraMatch"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/demjanp/CeraMatch> .
 
 wd:Q222
@@ -43874,7 +43785,7 @@ wd:Q225
     wdt:P119 "TPQ-Composer"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Eythan31/TPQ-Composer> .
 
 wd:Q226
@@ -44170,7 +44081,7 @@ wd:Q238
     wdt:P119 "PyPotteryLens"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lrncrd/PyPotteryLens> .
 
 wd:Q239
@@ -44782,7 +44693,7 @@ wd:Q267
     wdt:P119 "harris2graph"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lparchaeology/harris2graph/> .
 
 wd:Q268
@@ -45482,7 +45393,7 @@ wd:Q298
     wdt:P119 "paleographic-networks"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Eythan31/paleographic-networks> .
 
 wd:Q299
@@ -46166,7 +46077,7 @@ wd:Q328
     wdt:P119 "EDM"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/surf3s/EDM> .
 
 wd:Q329
@@ -46639,7 +46550,7 @@ wd:Q347
     wdt:P119 "archaeo-CRF"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/alexbrandsen/archaeo-CRF> .
 
 wd:Q348
@@ -46762,7 +46673,7 @@ wd:Q351
     wdt:P119 "3D-ORGAN"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/renato145/3D-ORGAN> .
 
 wd:Q352
@@ -47260,7 +47171,7 @@ wd:Q370
     schema:name "Python"@de,
         "Python"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Python"@de,
         "Python"@en ;
     skos:altLabel "Programmiersprache Python"@de,
@@ -47279,7 +47190,9 @@ wd:Q370
         "Python.org"@en ;
     skos:prefLabel "Python"@de,
         "Python"@en ;
+    p:P2 wds:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407 ;
     p:P4 wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q28865" .
 
 wd:Q371
@@ -47288,10 +47201,12 @@ wd:Q371
         "high-level programming language"@en ;
     schema:name "JavaScript"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "JavaScript"@en ;
     skos:prefLabel "JavaScript"@en ;
+    p:P2 wds:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37 ;
     p:P4 wds:Q371-7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905 ;
+    wdt:P2 wd:Q3 ;
     wdt:P4 "Q2005" .
 
 wd:Q372
@@ -47666,7 +47581,7 @@ wd:Q389
     wdt:P119 "p3k14c-data-scrubbing"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/people3k/p3k14c-data-scrubbing> .
 
 wd:Q390
@@ -48071,18 +47986,11 @@ wd:Q405
     wdt:P120 <https://engine-demo.heripo.org> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q406 ;
+    wdt:P123 wd:Q371 ;
     wdt:P125 <https://github.com/heripo-lab/heripo-engine> .
 
 wd:Q406
-    a wikibase:Item ;
-    schema:name "JavaScript"@en ;
-    wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "1"^^xsd:integer ;
-    rdfs:label "JavaScript"@en ;
-    skos:prefLabel "JavaScript"@en ;
-    p:P2 wds:Q406-1E608A52-DAC2-50E2-826D-A259E0E47D47 ;
-    wdt:P2 wd:Q3 .
+    owl:sameAs wd:Q371 .
 
 wd:Q407
     a wikibase:Item ;
@@ -48735,7 +48643,7 @@ wd:Q437
     wdt:P119 "radiocarbon-scrapers"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q406 ;
+    wdt:P123 wd:Q371 ;
     wdt:P125 <https://codeberg.org/steko/radiocarbon-scrapers> .
 
 wd:Q438
@@ -49366,7 +49274,7 @@ wd:Q461
     wdt:P120 <https://kotyle.readthedocs.io/en/latest/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/kotyle> .
 
 wd:Q462
@@ -49403,7 +49311,7 @@ wd:Q462
     wdt:P119 "pdf-to-nested-xml"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/alexbrandsen/pdf-to-nested-xml> .
 
 wd:Q463
@@ -49452,7 +49360,7 @@ wd:Q464
     wdt:P119 "rock-art-transfer-learning"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/keeeal/rock-art-transfer-learning> .
 
 wd:Q465
@@ -50483,7 +50391,7 @@ wd:Q505
     wdt:P119 "Digging-with-Python"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/jfpalomeque/Digging-with-Python> .
 
 wd:Q506
@@ -50522,7 +50430,7 @@ wd:Q506
     wdt:P119 "ArchaeolPhytoliths"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/iberganzo/ArchaeolPhytoliths> .
 
 wd:Q507
@@ -50860,7 +50768,7 @@ wd:Q518
     wdt:P119 "pygeoroc"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/pofatu/pygeoroc> .
 
 wd:Q519
@@ -50993,7 +50901,7 @@ wd:Q523
     wdt:P120 <https://bryonymoody.github.io/PolyChron/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/bryonymoody/PolyChron> .
 
 wd:Q524
@@ -51095,7 +51003,7 @@ wd:Q528
     wdt:P119 "CombiTab"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/oeai-dac/CombiTab> .
 
 wd:Q529
@@ -51210,7 +51118,7 @@ wd:Q531
     wdt:P119 "3D_EdgeAngle"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lschunk/3D_EdgeAngle> .
 
 wd:Q532
@@ -51557,7 +51465,7 @@ wd:Q546
     wdt:P119 "ithaca"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/deepmind/ithaca> .
 
 wd:Q547
@@ -51661,7 +51569,7 @@ wd:Q551
     wdt:P119 "charcoalhearths"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/jeffblackadar/charcoalhearths> .
 
 wd:Q552
@@ -52181,7 +52089,7 @@ wd:Q571
     wdt:P119 "timeperiod2daterange"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/alexbrandsen/timeperiod2daterange> .
 
 wd:Q572
@@ -52337,7 +52245,7 @@ wd:Q576
     wdt:P119 "Mask_UAV"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/maltaweel/Mask_UAV> .
 
 wd:Q577
@@ -52447,7 +52355,7 @@ wd:Q582
     wdt:P119 "qrcode-storage"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/qrcode-storage> .
 
 wd:Q583
@@ -52795,7 +52703,7 @@ wd:Q599
     wdt:P119 "ArkMatrix"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://gitlab.com/arklab/ArkMatrix> .
 
 wd:Q600
@@ -53125,7 +53033,7 @@ wd:Q611
     wdt:P119 "rock-art-radnet"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Swedish-Rock-Art-Research-Archives/rock-art-radnet> .
 
 wd:Q612
@@ -53205,7 +53113,7 @@ wd:Q614
     wdt:P119 "demjanp"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/demjanp/Res14C> .
 
 wd:Q615
@@ -53242,7 +53150,7 @@ wd:Q615
     wdt:P119 "hand_axes_image_processing"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/jfpalomeque/hand_axes_image_processing> .
 
 wd:Q616
@@ -53553,7 +53461,7 @@ wd:Q628
     wdt:P119 "rock-art-ratopoviz"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Swedish-Rock-Art-Research-Archives/rock-art-ratopoviz> .
 
 wd:Q629
@@ -53592,7 +53500,7 @@ wd:Q629
     wdt:P119 "pypofatu"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/pofatu/pypofatu> .
 
 wd:Q630
@@ -54445,7 +54353,7 @@ wd:Q668
     wdt:P119 "crom"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/thegetty/crom> .
 
 wd:Q669
@@ -54636,7 +54544,7 @@ wd:Q674
     wdt:P119 "PyPotteryInk"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lrncrd/PyPotteryInk> .
 
 wd:Q675
@@ -54968,7 +54876,7 @@ wd:Q685
     wdt:P119 "scientific-toolkit"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://gitlab.com/sefy76/scientific-toolkit> .
 
 wd:Q686
@@ -55323,7 +55231,7 @@ wd:Q701
     wdt:P119 "AutArch"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/kevin-klein/AutArch> .
 
 wd:Q702
@@ -55451,7 +55359,7 @@ wd:Q708
     wdt:P119 "postAAR-python"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/ISAAKiel/postAAR-python> .
 
 wd:Q709
@@ -55891,7 +55799,7 @@ wd:Q726
     wdt:P120 <https://custom-imaging.co.uk/software/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/kmartinez/rti> .
 
 wd:Q727
@@ -55936,7 +55844,7 @@ wd:Q728
     wdt:P119 "Fix-exif-artist"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/fix-exif-artist> .
 
 wd:Q729
@@ -56010,7 +55918,7 @@ wd:Q730
     wdt:P119 "heritage-scribe"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/sohinimallick16/heritage-scribe> .
 
 wd:Q731
@@ -56102,7 +56010,7 @@ wd:Q734
     wdt:P119 "hand_axes_database_downloader"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/jfpalomeque/hand_axes_database_downloader> .
 
 wd:Q735
@@ -56747,7 +56655,7 @@ wd:Q756
     wdt:P119 "carbonara_poc"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/MartinHinz/carbonara_poc> .
 
 wd:Q757
@@ -56827,7 +56735,7 @@ wd:Q759
     wdt:P119 "Artifacts-Analyzer"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Eythan31/Artifacts-Analyzer> .
 
 wd:Q760
@@ -57397,7 +57305,7 @@ wd:Q779
     wdt:P120 <https://www.iosa.it/2008/08/27/harris-matrix-with-graphviz-a-draft-application-with-python/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/harris-matrix-legacy> .
 
 wd:Q780
@@ -57702,7 +57610,7 @@ wd:Q791
     wdt:P119 "arqueologiaSVG"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q406 ;
+    wdt:P123 wd:Q371 ;
     wdt:P125 <https://github.com/weberjavi/arqueologiaSVG> .
 
 wd:Q792
@@ -58060,7 +57968,7 @@ wd:Q804
     wdt:P119 "Akkademia"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/gaigutherz/Akkademia> .
 
 wd:Q805
@@ -58207,7 +58115,7 @@ wd:Q811
     wdt:P119 "expotime"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/expotime> .
 
 wd:Q812
@@ -58285,7 +58193,7 @@ wd:Q813
     wdt:P120 <http://shootpoints.io/> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Lugal-PCZ/ShootPoints-Web> .
 
 wd:Q814
@@ -58330,7 +58238,7 @@ wd:Q815
     wdt:P119 "CQArchaeo"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lrncrd/CQArchaeo> .
 
 wd:Q816
@@ -58402,7 +58310,7 @@ wd:Q817
     wdt:P119 "HME-HarrisMatrixEditor"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q406 ;
+    wdt:P123 wd:Q371 ;
     wdt:P125 <https://github.com/oeai-dac/HME-HarrisMatrixEditor> .
 
 wd:Q818
@@ -58580,7 +58488,7 @@ wd:Q823
     wdt:P119 "aoristic-analysis"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/LimesLimits/aoristic-analysis> .
 
 wd:Q824
@@ -58891,7 +58799,7 @@ wd:Q835
     wdt:P119 "EDMWIN"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/surf3s/EDMWIN> .
 
 wd:Q836
@@ -59043,7 +58951,7 @@ wd:Q840
     wdt:P119 "synthkat"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/scollinselliott/synthkat> .
 
 wd:Q841
@@ -59398,7 +59306,7 @@ wd:Q854
     wdt:P119 "rockart-textanalysis"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lakillo/rockart-textanalysis> .
 
 wd:Q855
@@ -59443,7 +59351,7 @@ wd:Q856
     wdt:P119 "Arc-Team-Tools"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lucaarcteam/Arc-Team-Tools> .
 
 wd:Q857
@@ -59490,7 +59398,7 @@ wd:Q858
     wdt:P119 "Sherd_classification_Models_and_Code"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/ArchiScn/Sherd_classification_Models_and_Code> .
 
 wd:Q859
@@ -59535,7 +59443,7 @@ wd:Q860
     wdt:P119 "clustering_14C"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/demjanp/clustering_14C> .
 
 wd:Q861
@@ -59617,7 +59525,7 @@ wd:Q863
     wdt:P119 "OSA-Transcriber"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Lugal-PCZ/OSA-Transcriber> .
 
 wd:Q864
@@ -59728,7 +59636,7 @@ wd:Q866
     wdt:P119 "PhotoCaptionTool"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Lugal-PCZ/PhotoCaptionTool> .
 
 wd:Q867
@@ -59802,7 +59710,7 @@ wd:Q868
     wdt:P119 "Transect-Calculator"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/Lugal-PCZ/Transect-Calculator> .
 
 wd:Q869
@@ -59923,7 +59831,7 @@ wd:Q872
     wdt:P119 "CoccionCeramica"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/marcelocardillo/CoccionCeramica> .
 
 wd:Q873
@@ -60417,7 +60325,7 @@ wd:Q895
     wdt:P119 "SexEst"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/cconsta1/SexEst> .
 
 wd:Q896
@@ -60755,7 +60663,7 @@ wd:Q907
     wdt:P119 "StoneAdvisor"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/rbbristow/StoneAdvisor> .
 
 wd:Q908
@@ -61182,7 +61090,7 @@ wd:Q922
     wdt:P119 "Ceramatic2.0"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://github.com/lrncrd/Ceramatic2.0> .
 
 wd:Q923
@@ -61395,7 +61303,7 @@ wd:Q929
     wdt:P120 <https://poc.heripo.org> ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q406 ;
+    wdt:P123 wd:Q371 ;
     wdt:P125 <https://github.com/heripo-lab/archaeological-informatization-poc> .
 
 wd:Q930
@@ -61450,7 +61358,7 @@ wd:Q932
     wdt:P119 "missing"@en ;
     wdt:P122 wd:Q109,
         wd:Q110 ;
-    wdt:P123 wd:Q139 ;
+    wdt:P123 wd:Q370 ;
     wdt:P125 <https://codeberg.org/steko/missing> .
 
 wd:P1
@@ -71229,7 +71137,7 @@ wds:Q138-B9D1DE79-33E1-590C-AF5B-36C88642589F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:67c7988cefa1495ac753e4a66b1ef1644bc6fa9d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q138-B1472D14-DA5C-5680-9400-007A6B52C5FE
     a wikibase:BestRank,
@@ -71261,13 +71169,6 @@ wds:Q138-F96FBD16-237A-5D6D-B91A-3F0CB47C6CBA
     prov:wasDerivedFrom wdref:67c7988cefa1495ac753e4a66b1ef1644bc6fa9d ;
     ps:P115 <https://open-archaeo.info/post/sitesyncro/> .
 
-wds:Q139-A89678EB-DB99-520C-AD36-CB83016DA3C1
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:67c7988cefa1495ac753e4a66b1ef1644bc6fa9d ;
-    ps:P2 wd:Q3 .
-
 wds:Q140-8496AE62-07DC-5C1B-AFDB-B0D1980E70A0
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -71294,7 +71195,7 @@ wds:Q143-2B4F109D-D884-5E0D-BAC1-B4E3717FC9AF
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:75bc09bdff236865c298ea3952faf40d920b41f3 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q143-3A1390EA-8B52-51B9-A6E6-B7E9C115C925
     a wikibase:BestRank,
@@ -72499,7 +72400,7 @@ wds:Q171-F7CFA037-FCFA-5BCF-A526-A9672957CF19
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:dc65cecb5f367f2b226e7f936f82bda494ce5c6a ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q171-F4603AF4-98E5-5AFF-BD9E-3BD6847BF9F2
     a wikibase:BestRank,
@@ -72750,7 +72651,7 @@ wds:Q180-9D7B7FDF-5BA5-547B-9F13-A1FDC7755E7C
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:7053244fef03ecd7d13f010d694f549443170f6d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q180-92E11C69-940D-5D08-9E01-C63378582313
     a wikibase:BestRank,
@@ -72918,7 +72819,7 @@ wds:Q184-39139AED-C5F8-5E95-9813-870FC207E61F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:dc906c3393fbc6176570171267cda31b20e6153b ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q184-57175FF4-2A7F-53C2-B4A7-466DC079D408
     a wikibase:BestRank,
@@ -73576,7 +73477,7 @@ wds:Q203-0BF871A6-157C-5F99-9073-10A0D84D72D7
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:3e19a4e65115d2f50a5515c126bb3bfbfd02e86f ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q203-6A2F3551-3503-5E90-813C-20886F566899
     a wikibase:BestRank,
@@ -74269,7 +74170,7 @@ wds:Q221-C1681DB1-C559-5560-80A6-60A26E610AB4
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q221-E8705C59-E60C-5C8F-882B-0DA808CCAE2D
     a wikibase:BestRank,
@@ -74455,7 +74356,7 @@ wds:Q225-CF09E8B6-5BB1-5ECA-B657-54DA1ED151D1
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:8d9e432e6cfe142eb70cc631e5a4812ed64ea58c ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q225-DC798DDB-1933-5889-9A62-29F8FF9AC054
     a wikibase:BestRank,
@@ -75103,7 +75004,7 @@ wds:Q238-6B21B513-DD55-534A-9A54-D9F2D5BCD88F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q238-7AAC908E-B568-58F1-BF78-22CDD7859AF0
     a wikibase:BestRank,
@@ -76435,7 +76336,7 @@ wds:Q267-017DF626-5F99-5029-BF35-B623A9307D81
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:8c2c9234ac99999b48066a993c5ba83959a9a910 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q267-22DB9706-D70C-51D8-BAB1-2EEE3A99BE27
     a wikibase:BestRank,
@@ -78091,7 +77992,7 @@ wds:Q298-85E86536-2699-5C2A-BC04-C90F9664F673
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:0501724da0ece1b0d7fb0f5be49f08d4e92466e7 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q298-683BCFF2-0530-5B12-8D51-8A3B6624BF62
     a wikibase:BestRank,
@@ -79668,7 +79569,7 @@ wds:Q328-A775454C-7AD2-5C43-80A8-683C978B6491
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q328-B6C75157-35FD-5EAB-894D-DFAD2388ACAC
     a wikibase:BestRank,
@@ -80765,7 +80666,7 @@ wds:Q347-9E9343D8-874B-5E11-956F-B88409269D2D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:010633d8be1c49fcbd8d8eddee095b99d411a682 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q347-92FF7CEE-9C8F-5964-9EE6-8690BB30C0BF
     a wikibase:BestRank,
@@ -81066,7 +80967,7 @@ wds:Q351-02F5069B-3443-555A-B940-426B0AAF4D8D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q351-5F37AC64-0E2A-52F8-B161-23A9E20977FE
     a wikibase:BestRank,
@@ -82388,12 +82289,26 @@ wds:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332
     prov:wasDerivedFrom wdref:000f2b81e99bbe75bf7c61252febbc605d562e83 ;
     ps:P4 "Q28865" .
 
+wds:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:67c7988cefa1495ac753e4a66b1ef1644bc6fa9d ;
+    ps:P2 wd:Q3 .
+
 wds:Q371-7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:72f441d054b57c8b490a71e7d9c54552bc0053e3 ;
     ps:P4 "Q2005" .
+
+wds:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
+    ps:P2 wd:Q3 .
 
 wds:Q372-26A9184A-7E2E-59B3-AF40-E22A49C3B4B9
     a wikibase:BestRank,
@@ -82902,7 +82817,7 @@ wds:Q389-3FE06C2A-101E-5840-A4C0-E950EB36BEA0
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:342accc5a32076dbf6574b8aa43074224f18c2c8 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q389-4ED44D3E-888F-5CAA-84BA-18D0A4DA79C4
     a wikibase:BestRank,
@@ -83916,7 +83831,7 @@ wds:Q405-9420D048-AC80-56FC-93EA-C7CCDA536802
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
-    ps:P123 wd:Q406 .
+    ps:P123 wd:Q371 .
 
 wds:Q405-62044F86-BAF5-5973-9D42-E263B0952622
     a wikibase:BestRank,
@@ -83974,13 +83889,6 @@ wds:Q405-E2307556-179E-5402-9A5D-F3CB8C7056E4
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
     ps:P111 wd:Q408 .
-
-wds:Q406-1E608A52-DAC2-50E2-826D-A259E0E47D47
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
-    ps:P2 wd:Q3 .
 
 wds:Q407-5D4E2194-F66D-5FA8-8A7A-8FB6B868ADFA
     a wikibase:BestRank,
@@ -85409,7 +85317,7 @@ wds:Q437-64757B61-8357-5E28-A712-8AA3726CDC8D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:23ca002a8b26511f43210bb810b5a2563b9f68eb ;
-    ps:P123 wd:Q406 .
+    ps:P123 wd:Q371 .
 
 wds:Q437-AA498D56-48B3-5306-85A1-5C38E7CF677C
     a wikibase:BestRank,
@@ -86963,7 +86871,7 @@ wds:Q461-CD077343-20F8-5A2B-AB44-61E95B152BDF
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q461-DA076C24-85A5-5B03-B831-162CE663F954
     a wikibase:BestRank,
@@ -87020,7 +86928,7 @@ wds:Q462-9F064D9A-7EEB-57E9-BF4E-8D27F8DFBF0B
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:b71f1f9a51c37ae962a3d1101ceae72d2f0249b3 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q462-9F1119BE-99AF-5621-BB5E-52FE7D74CFF7
     a wikibase:BestRank,
@@ -87187,7 +87095,7 @@ wds:Q464-A143F13F-E698-5C10-B669-F48B62206998
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:d1aa8c1bfa5442359d5ed1415dc7a6c99f6a2b1f ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q464-A1371EBA-F835-5361-BDFE-EDE1AF2A80BF
     a wikibase:BestRank,
@@ -89673,7 +89581,7 @@ wds:Q505-41038E7C-FFA9-5CAA-A74E-41D0A42FF37D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q505-38806218-1140-5482-B580-65AB934082FF
     a wikibase:BestRank,
@@ -89724,7 +89632,7 @@ wds:Q506-6F45F7F9-7593-5C14-B007-43696B50D3E2
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:8b3d02373fbe72ee42752ee9f004e57ef3d0d431 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q506-26E08B4F-0A92-5BFD-99B3-E0A299B4B407
     a wikibase:BestRank,
@@ -90622,7 +90530,7 @@ wds:Q518-95AB3F54-9BFF-5039-8E46-F132C66CD210
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:805569e7ff92f4fd4f6f9298b261f84e479e0456 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q518-292D44DA-EFF3-580D-87E3-9F1AE038EF8F
     a wikibase:BestRank,
@@ -90958,7 +90866,7 @@ wds:Q523-74CACBF4-3AE5-5165-87DE-F8870147E280
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q523-317C26C2-2EEF-5962-A11B-D3A5EA0F1D14
     a wikibase:BestRank,
@@ -91165,7 +91073,7 @@ wds:Q528-951FBD54-C108-5DA1-83F7-D22374D965C6
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q528-68176DE1-DD8D-506E-8EE2-E5E89BBF0D6F
     a wikibase:BestRank,
@@ -91537,7 +91445,7 @@ wds:Q531-DD87F76C-EF67-5EA9-A2FB-1296AF037E27
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q531-EABABE61-323D-5E40-B52F-4D77B1DF9BE8
     a wikibase:BestRank,
@@ -92263,7 +92171,7 @@ wds:Q546-2B2BD00D-8A17-5665-8C36-25A138E7B065
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:44503495fbe9d66fdfe48c8a45886d7030bfebe4 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q546-2D3D1C1F-97B0-5A1D-9D56-FA8B32F50A6E
     a wikibase:BestRank,
@@ -92532,7 +92440,7 @@ wds:Q551-3516BAFC-CE90-5B3F-AC1D-CB86DC3009BA
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e49d6d312e062d45769a13a3ac34ea4480bbc937 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q551-43488699-9073-575C-BADC-11BDAAC83087
     a wikibase:BestRank,
@@ -93762,7 +93670,7 @@ wds:Q571-0A531FB1-945E-5069-B832-E9FE36799192
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:7f7a6b0b7c437ebb3572ccc1e8801e7a8180fb4a ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q571-1B85FBCB-0667-57A6-B3FC-0DEA5BB3991E
     a wikibase:BestRank,
@@ -94233,7 +94141,7 @@ wds:Q576-B194DA44-CAC1-50BD-895F-D3C73F6EF6DF
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q576-C8A197FD-78AD-5644-826A-F3044A2870FC
     a wikibase:BestRank,
@@ -94453,7 +94361,7 @@ wds:Q582-75245710-FB41-5818-B3F0-0F2AA6D45C07
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:22ccbcb018a547d4503f64c8a73e0b893cd327f5 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q582-A9E067FA-55DC-53D4-9B62-8C7BCBB104DB
     a wikibase:BestRank,
@@ -95190,7 +95098,7 @@ wds:Q599-5229FCCF-1CE2-5148-9956-4E54787E1CD1
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:32f63a520b347826f90aa34cf6144b9d8590309e ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q599-7725ED24-0029-5F1E-B917-6BD293C9161F
     a wikibase:BestRank,
@@ -96081,7 +95989,7 @@ wds:Q611-D8BDE3BA-1D76-5612-B4A5-4B656555C51F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:1b570e852ff74aba4ca37fccb332c37850a6bff1 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q611-FAD9996D-336E-5440-8DCF-E9C636C78360
     a wikibase:BestRank,
@@ -96212,7 +96120,7 @@ wds:Q614-04FDFF18-922F-5E25-B8B3-914B64A225C5
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:2c8dd776e250081cafcd3d501c165cb88c80577a ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q614-28D50277-6BA6-539E-A485-780D696A05B0
     a wikibase:BestRank,
@@ -96309,7 +96217,7 @@ wds:Q615-015C23BE-2135-56CC-A319-15DAF421B6A7
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:a14c479940188e60532015c942f4f9c293ca1d57 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q615-42C6C846-AC81-5F2B-B83E-2140199F6A90
     a wikibase:BestRank,
@@ -97049,7 +96957,7 @@ wds:Q628-30C7B167-9FF4-5D0C-9E69-E65AE456BD7E
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:19783e5b2a19070cda7b406c7a8cf8c266e1a0b0 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q628-38D5EABD-2ED4-59A5-A3E3-80A72CD05968
     a wikibase:BestRank,
@@ -97201,7 +97109,7 @@ wds:Q629-CE5D867E-BB90-5F23-BF05-B677E98A50A4
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:64ff9e485cea26823a1d5d2510b474d66771e4ab ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q629-D4656AA6-C781-5F8D-A96D-7BB3EC53A657
     a wikibase:BestRank,
@@ -99083,7 +98991,7 @@ wds:Q668-98E0CE88-4C34-5EC3-A00E-39912450DCB5
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q668-855AB52B-BF2D-502F-BB9A-4F82AC138E81
     a wikibase:BestRank,
@@ -99586,7 +99494,7 @@ wds:Q674-7306A400-680F-5BDB-AC9E-16E15E6F5F80
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:b5423b71ef67276554c292fe995610cf2342503e ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q674-A86FA5EB-F95F-5A83-A11B-5DE1C193116C
     a wikibase:BestRank,
@@ -100463,7 +100371,7 @@ wds:Q685-A5FA6546-9FF9-50B6-BF19-4CDC1F040BEF
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:5cc8a32fb671cdac98e512f562a1c039ff9d51c3 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q685-ABA27697-3BDF-5099-A5EB-B4D1F4A50E4A
     a wikibase:BestRank,
@@ -101314,7 +101222,7 @@ wds:Q701-EA85E1D8-B4BF-561D-9F2E-C0FE506CC64C
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:f6596f215d37e46d0b316ca0c43bff210ce22c0c ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q702-63A1B727-9ECB-5452-8714-B0A4BAD8D16C
     a wikibase:BestRank,
@@ -101563,7 +101471,7 @@ wds:Q708-D933CAB4-01EB-520B-86D8-F64381D516D2
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q708-EB14BE73-ABD2-5341-912E-3A3C427F1E74
     a wikibase:BestRank,
@@ -102551,7 +102459,7 @@ wds:Q726-7F12BD47-EA22-5165-8BED-15C778088C65
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:823eba0336c2b5c1a4a18cd6a47df320b6ba0f98 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q726-8F2AFC63-3C9D-5257-BE2D-25EAE94BB69F
     a wikibase:BestRank,
@@ -102688,7 +102596,7 @@ wds:Q728-52298363-AF2E-564E-9EA1-CD3DD36BAE90
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:436cd19549cba2f8abbc69e624013b9fa9755db7 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q728-A38E03E2-2806-570E-809A-2AE3B675C976
     a wikibase:BestRank,
@@ -102874,7 +102782,7 @@ wds:Q730-60A42784-6906-5B32-A0D6-5ADC97F57E13
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q730-434E360D-7C3E-58D6-BAD8-49E3827926A8
     a wikibase:BestRank,
@@ -103138,7 +103046,7 @@ wds:Q734-E3CEA9F8-B7E7-5890-A9A3-8FCD50F91CB5
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q735-0CAA1F57-AEBE-52BE-AFBB-D60C3AC74DA0
     a wikibase:BestRank,
@@ -104785,7 +104693,7 @@ wds:Q756-DE859F2A-402C-5CA5-8F8D-9B018EE445B9
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q756-DFC7F348-E715-5F59-9C72-3679E0CD3957
     a wikibase:BestRank,
@@ -104900,7 +104808,7 @@ wds:Q759-0B093059-1863-5886-AA30-43178CB27793
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:28248beaeb5fe31961f500811cbcf03c190675f3 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q759-2CBC72FB-6099-57FF-A21B-817A686CE0CE
     a wikibase:BestRank,
@@ -106425,7 +106333,7 @@ wds:Q779-EFF3D1AA-FD3C-5B94-A5AC-68F5994911CE
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:a1d409312710bea1fdeb7c49da79bf50f0411ec6 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q779-FC48768B-FB36-51A1-81FC-1108A7213B3D
     a wikibase:BestRank,
@@ -107100,7 +107008,7 @@ wds:Q791-7A146C55-DF6A-5A78-8A4E-A1058E1B97E3
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:632cfc54ce953aeb7b85096d78ad8de0b9d14431 ;
-    ps:P123 wd:Q406 .
+    ps:P123 wd:Q371 .
 
 wds:Q791-42AC0A08-E7F0-50FD-8E03-4EB3DFE4F704
     a wikibase:BestRank,
@@ -108069,7 +107977,7 @@ wds:Q804-DE2D1F50-2B73-5580-9F51-37195E08A087
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:416c404d62277a8ce4f970b04ff4165d1deea972 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q804-E59EA255-5E67-5971-A217-56728003611E
     a wikibase:BestRank,
@@ -108396,7 +108304,7 @@ wds:Q811-F39274AC-C4FD-5781-920C-90458AA751F8
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:62e2b4052a8cde739f83966b79c38c6f75c6fc1d ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q812-2EC6AE7D-FFA7-5EE6-938E-536AA9DCAAF9
     a wikibase:BestRank,
@@ -108504,7 +108412,7 @@ wds:Q813-0E68FE71-F28E-5940-837A-15F9E56EE499
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:6dcff0c15466d0758aa93b492a6943bf64efed44 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q813-2BB75D28-98FD-5F85-9CAA-C60C16E00C26
     a wikibase:BestRank,
@@ -108662,7 +108570,7 @@ wds:Q815-36AFCE6D-BC3D-57E7-9BAB-1B934924BE5D
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:a7dab5541895eca1342e1ae7ab37b44e5ea896bb ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q815-39F4086A-C052-54D0-9AB0-2758FED0F84B
     a wikibase:BestRank,
@@ -108854,7 +108762,7 @@ wds:Q817-52EA5E88-A058-5B4B-9812-EE5AF97ED986
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:186ceafd63410afca266c2d2c08869039dd4ce6e ;
-    ps:P123 wd:Q406 .
+    ps:P123 wd:Q371 .
 
 wds:Q817-240EAF30-9A5C-5F58-9A45-A3B15429277C
     a wikibase:BestRank,
@@ -109374,7 +109282,7 @@ wds:Q823-FA7A5735-C2BE-5FAA-B42D-38AE16DA86A1
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q824-F2DB1F49-09D9-5EE8-80FA-70233F3EBE8C
     a wikibase:BestRank,
@@ -110078,7 +109986,7 @@ wds:Q835-122174AF-1452-5AD3-A615-666C871D67B2
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q835-3184181C-7F2E-5BC4-B50B-3C620FB94E0E
     a wikibase:BestRank,
@@ -110499,7 +110407,7 @@ wds:Q840-35739248-0976-58BE-A5B6-88D6E2556879
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:1ccb6a7cc0b0b7cd6cdec647bb61fd2e73201eb3 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q840-BD468FBE-8FD0-504E-A40E-4AC0261330F1
     a wikibase:BestRank,
@@ -111375,7 +111283,7 @@ wds:Q854-15561874-4A19-5D53-84FF-03A6DA89AD4A
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:49fed1aaad2ec65ea9203d7338a1bc1f8fee6e8a ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q854-98686827-77E1-5490-97B0-458B7E159FEF
     a wikibase:BestRank,
@@ -111455,7 +111363,7 @@ wds:Q856-80DCADBA-348E-54B2-AE75-CC5C8BE8C6A0
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:d63e5ef6620200a071572a475187ada2fd0b6335 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q856-441C9B45-D5EA-56A2-9ED1-664E538C9AF7
     a wikibase:BestRank,
@@ -111592,7 +111500,7 @@ wds:Q858-C4093CDD-53A4-539B-B89C-A60A89BC1920
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:439553d226c69e207be3944b254128bc8c88fe5a ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q858-CFB3E645-208A-599C-8BC1-48A88CBE9DAE
     a wikibase:BestRank,
@@ -111656,7 +111564,7 @@ wds:Q860-26520757-8768-53B2-979F-3B40B5F8B2B5
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:ced7bcd4ec6dcb12ebe4693cbe63bfa57a6acddd ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q860-AE6B1690-A7E5-5CD7-944F-C1E3006119BE
     a wikibase:BestRank,
@@ -111904,7 +111812,7 @@ wds:Q863-F010D379-E2AC-5577-AE56-DCF8D7A42ADC
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q863-F7191A2E-2CCF-53CC-B0A4-381694DE25DA
     a wikibase:BestRank,
@@ -112159,7 +112067,7 @@ wds:Q866-43F891E7-554A-5A9B-BD82-430D01CF057F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:2489f9d8dbd305493991823aa8729fa0813caa00 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q866-46E20356-F7F9-5326-BDD1-01FEBED56EE9
     a wikibase:BestRank,
@@ -112410,7 +112318,7 @@ wds:Q868-D911953F-2327-5582-B777-3DB1F4C9DDB4
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q868-F360655B-40DE-5F44-A603-EDB799454F0E
     a wikibase:BestRank,
@@ -112674,7 +112582,7 @@ wds:Q872-275513C8-933E-5CC3-B66A-5169AFE83B1F
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:d439044bd857b35173abc82d6a4af4505085268e ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q872-7725712E-B764-5B1A-95BB-239D06AE4F95
     a wikibase:BestRank,
@@ -113817,7 +113725,7 @@ wds:Q895-BDBFF4AE-1204-5804-9B99-C695D128FDB9
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:08f48f70273d7f286321bfcee34c1b6bf93ae871 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q895-D324C9FF-0A48-50D3-A5B7-D3FE44E64EA7
     a wikibase:BestRank,
@@ -114686,7 +114594,7 @@ wds:Q907-FF548318-AA1B-52A8-9A14-693C46A0FC91
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:e496e4f22f1b30d934ba7955ea59cfd137ec3326 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q908-0DBFBD7D-6EB5-5C99-8DEC-F218A9DAAF9D
     a wikibase:BestRank,
@@ -115725,7 +115633,7 @@ wds:Q922-49974ED8-9154-5620-9B74-E7DE00D0ED23
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:b733e7c0b3cb53831f61e9b2901617c4354ffc2e ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q922-A0A195B3-551C-5231-895F-B2D138F853CF
     a wikibase:BestRank,
@@ -116248,7 +116156,7 @@ wds:Q929-8001B553-4876-5AC3-9BB9-16E5430B079C
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P123 wd:Q406 .
+    ps:P123 wd:Q371 .
 
 wds:Q929-75731B68-B3F9-5C53-8140-CAFAA0CC23F2
     a wikibase:BestRank,
@@ -116339,7 +116247,7 @@ wds:Q932-01B62BE9-4750-5ABE-9B87-D96EE87D9313
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom wdref:ffc98f92930060dabd371f1d7532542fd84fe984 ;
-    ps:P123 wd:Q139 .
+    ps:P123 wd:Q370 .
 
 wds:Q932-1FBF0708-7A1C-5BFF-BE62-976623DA74CC
     a wikibase:BestRank,
