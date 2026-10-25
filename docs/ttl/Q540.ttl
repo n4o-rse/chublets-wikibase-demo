@@ -1,53 +1,54 @@
 # Q540: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q540
+chbdata:Q540.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Developed by the Austrian Archaeological Institute, this plugin facilitate the integration of controlled vocabulary in QGIS."@en ;
     dcterms:identifier "Q540" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q540 ;
+    dcterms:subject chb:Q540 ;
     dcterms:title "QSaurus"@en ;
-    schema:about wd:Q540 ;
-    dcat:distribution dist:Q540-html,
-        dist:Q540-json,
-        dist:Q540-ttl ;
+    schema:about chb:Q540 ;
+    dcat:distribution chbdist:Q540-html,
+        chbdist:Q540-json,
+        chbdist:Q540-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q540.html> .
 
-dist:Q540-html
+chbdist:Q540-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q540-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q540.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q540-json
+chbdist:Q540-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q540-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q540.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q540-ttl
+chbdist:Q540-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q540, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q540.ttl> ;
+    dcat:downloadURL chbdata:Q540.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q540
+chb:Q540
     a wikibase:Item ;
     schema:description "Developed by the Austrian Archaeological Institute, this plugin facilitate the integration of controlled vocabulary in QGIS."@en ;
     schema:name "QSaurus"@en ;
@@ -80,145 +81,145 @@ wd:Q540
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "QSaurus"@en ;
     skos:prefLabel "QSaurus"@en ;
-    p:P2 wds:Q540-44426BF8-D982-507B-A1EA-135044DC308F,
-        wds:Q540-FEDF278E-2441-5BC8-8FF1-15D31996629B ;
-    p:P106 wds:Q540-C42BD294-1634-533C-BE01-03B853D930E2 ;
-    p:P109 wds:Q540-15ED7EAE-BA46-5F9B-BEBF-5CF1726CB927 ;
-    p:P113 wds:Q540-5FDB699E-54CA-56B8-BDFE-ADB5758BF29C ;
-    p:P115 wds:Q540-CDA1C894-F480-5EF6-99F0-5808B5AF5D1A ;
-    p:P116 wds:Q540-BFE3A926-CBAD-5A7C-9576-ED4DDD0ADB78 ;
-    p:P117 wds:Q540-2F8AE1FB-AD31-5F25-8936-CC91F568BE5B,
-        wds:Q540-88F4A1AC-7A6D-573E-B82E-AAAFB66D5683,
-        wds:Q540-93B75384-DBF2-526C-B8EE-01D6E574CC3D ;
-    p:P118 wds:Q540-A2E6F0DB-E718-5DC4-84B9-881603718AF8 ;
-    p:P119 wds:Q540-E913D138-DF50-5B38-B43E-FA90C4029C5C ;
-    p:P122 wds:Q540-694A3773-83D9-57E5-9837-702C8A0ABDB9,
-        wds:Q540-83719C31-3813-58FF-B8F5-BAAA9645BCE5 ;
-    p:P125 wds:Q540-7C6210EC-74B4-580F-8081-613AA557343E ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q172 ;
-    wdt:P115 <https://open-archaeo.info/post/qsaurus/> ;
-    wdt:P116 "qsaurus" ;
-    wdt:P117 wd:Q119,
-        wd:Q148,
-        wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "QSaurus"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/oeai-dac/QSaurus> .
+    chbp:P2 chbs:Q540-44426BF8-D982-507B-A1EA-135044DC308F,
+        chbs:Q540-FEDF278E-2441-5BC8-8FF1-15D31996629B ;
+    chbp:P106 chbs:Q540-C42BD294-1634-533C-BE01-03B853D930E2 ;
+    chbp:P109 chbs:Q540-15ED7EAE-BA46-5F9B-BEBF-5CF1726CB927 ;
+    chbp:P113 chbs:Q540-5FDB699E-54CA-56B8-BDFE-ADB5758BF29C ;
+    chbp:P115 chbs:Q540-CDA1C894-F480-5EF6-99F0-5808B5AF5D1A ;
+    chbp:P116 chbs:Q540-BFE3A926-CBAD-5A7C-9576-ED4DDD0ADB78 ;
+    chbp:P117 chbs:Q540-2F8AE1FB-AD31-5F25-8936-CC91F568BE5B,
+        chbs:Q540-88F4A1AC-7A6D-573E-B82E-AAAFB66D5683,
+        chbs:Q540-93B75384-DBF2-526C-B8EE-01D6E574CC3D ;
+    chbp:P118 chbs:Q540-A2E6F0DB-E718-5DC4-84B9-881603718AF8 ;
+    chbp:P119 chbs:Q540-E913D138-DF50-5B38-B43E-FA90C4029C5C ;
+    chbp:P122 chbs:Q540-694A3773-83D9-57E5-9837-702C8A0ABDB9,
+        chbs:Q540-83719C31-3813-58FF-B8F5-BAAA9645BCE5 ;
+    chbp:P125 chbs:Q540-7C6210EC-74B4-580F-8081-613AA557343E ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q172 ;
+    chbt:P115 <https://open-archaeo.info/post/qsaurus/> ;
+    chbt:P116 "qsaurus" ;
+    chbt:P117 chb:Q119,
+        chb:Q148,
+        chb:Q193 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "QSaurus"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/oeai-dac/QSaurus> .
 
-wds:Q540-2F8AE1FB-AD31-5F25-8936-CC91F568BE5B
+chbs:Q540-2F8AE1FB-AD31-5F25-8936-CC91F568BE5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q540-5FDB699E-54CA-56B8-BDFE-ADB5758BF29C
+chbs:Q540-5FDB699E-54CA-56B8-BDFE-ADB5758BF29C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q172 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q172 .
 
-wds:Q540-7C6210EC-74B4-580F-8081-613AA557343E
+chbs:Q540-7C6210EC-74B4-580F-8081-613AA557343E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/oeai-dac/QSaurus> .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/oeai-dac/QSaurus> .
 
-wds:Q540-15ED7EAE-BA46-5F9B-BEBF-5CF1726CB927
+chbs:Q540-15ED7EAE-BA46-5F9B-BEBF-5CF1726CB927
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P109 chb:Q135 .
 
-wds:Q540-88F4A1AC-7A6D-573E-B82E-AAAFB66D5683
+chbs:Q540-88F4A1AC-7A6D-573E-B82E-AAAFB66D5683
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P117 chb:Q193 .
 
-wds:Q540-93B75384-DBF2-526C-B8EE-01D6E574CC3D
+chbs:Q540-93B75384-DBF2-526C-B8EE-01D6E574CC3D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P117 chb:Q119 .
 
-wds:Q540-694A3773-83D9-57E5-9837-702C8A0ABDB9
+chbs:Q540-694A3773-83D9-57E5-9837-702C8A0ABDB9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q540-44426BF8-D982-507B-A1EA-135044DC308F
+chbs:Q540-44426BF8-D982-507B-A1EA-135044DC308F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q540-83719C31-3813-58FF-B8F5-BAAA9645BCE5
+chbs:Q540-83719C31-3813-58FF-B8F5-BAAA9645BCE5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q540-A2E6F0DB-E718-5DC4-84B9-881603718AF8
+chbs:Q540-A2E6F0DB-E718-5DC4-84B9-881603718AF8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q540-BFE3A926-CBAD-5A7C-9576-ED4DDD0ADB78
+chbs:Q540-BFE3A926-CBAD-5A7C-9576-ED4DDD0ADB78
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "qsaurus" .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "qsaurus" .
 
-wds:Q540-C42BD294-1634-533C-BE01-03B853D930E2
+chbs:Q540-C42BD294-1634-533C-BE01-03B853D930E2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q540-CDA1C894-F480-5EF6-99F0-5808B5AF5D1A
+chbs:Q540-CDA1C894-F480-5EF6-99F0-5808B5AF5D1A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P115 <https://open-archaeo.info/post/qsaurus/> .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P115 <https://open-archaeo.info/post/qsaurus/> .
 
-wds:Q540-E913D138-DF50-5B38-B43E-FA90C4029C5C
+chbs:Q540-E913D138-DF50-5B38-B43E-FA90C4029C5C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P119 "QSaurus"@en .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P119 "QSaurus"@en .
 
-wds:Q540-FEDF278E-2441-5BC8-8FF1-15D31996629B
+chbs:Q540-FEDF278E-2441-5BC8-8FF1-15D31996629B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7 ;
+    chbps:P2 chb:Q103 .
 
-wdref:d731d5c6d159df80bd24cb0b20160deeab21e1e7
+chbref:d731d5c6d159df80bd24cb0b20160deeab21e1e7
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/qsaurus/> .
+    chbpr:P6 <https://open-archaeo.info/post/qsaurus/> .

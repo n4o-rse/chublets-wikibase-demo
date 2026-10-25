@@ -1,53 +1,54 @@
 # Q834: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q834
+chbdata:Q834.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Tools of Virtual Anthropology to build virtual cavities as endocasts, to align two disarticulated models belonging to the same specimen, and functions to import and export format files into another format."@en ;
     dcterms:identifier "Q834" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q834 ;
+    dcterms:subject chb:Q834 ;
     dcterms:title "Arothron"@en ;
-    schema:about wd:Q834 ;
-    dcat:distribution dist:Q834-html,
-        dist:Q834-json,
-        dist:Q834-ttl ;
+    schema:about chb:Q834 ;
+    dcat:distribution chbdist:Q834-html,
+        chbdist:Q834-json,
+        chbdist:Q834-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q834.html> .
 
-dist:Q834-html
+chbdist:Q834-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q834-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q834.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q834-json
+chbdist:Q834-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q834-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q834.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q834-ttl
+chbdist:Q834-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q834, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q834.ttl> ;
+    dcat:downloadURL chbdata:Q834.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q834
+chb:Q834
     a wikibase:Item ;
     schema:description "Tools of Virtual Anthropology to build virtual cavities as endocasts, to align two disarticulated models belonging to the same specimen, and functions to import and export format files into another format."@en ;
     schema:name "Arothron"@en ;
@@ -80,162 +81,162 @@ wd:Q834
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "Arothron"@en ;
     skos:prefLabel "Arothron"@en ;
-    p:P2 wds:Q834-3A5B9ABB-B5F3-5CB2-8B04-46B663E40367,
-        wds:Q834-82CEE6C5-E9F7-5B95-A62E-C88FAAF09A71 ;
-    p:P106 wds:Q834-328B9A23-0F4D-5B03-998F-92DB52BDEC0A ;
-    p:P113 wds:Q834-5077690F-3030-55CB-8690-42B67F1D082A ;
-    p:P115 wds:Q834-B24A04D6-693E-530B-9AA4-0CEF3B1E48F0 ;
-    p:P116 wds:Q834-3EBD3976-80F7-5CA1-9A09-434A8EAB6050 ;
-    p:P117 wds:Q834-5D9CD96B-DA7A-509D-8CD7-37FA6CC7A903,
-        wds:Q834-444F7191-8C7E-5AC1-9D67-C62327D77872,
-        wds:Q834-04230FCE-0F43-50EE-8D30-F75592812425,
-        wds:Q834-F9FEB0C8-9034-5ADA-A52A-7336AE453032 ;
-    p:P118 wds:Q834-9D07999C-614B-53CA-A20C-9001FBC711CE ;
-    p:P119 wds:Q834-AD969766-FD2A-5222-A51B-2C109A7D9200 ;
-    p:P122 wds:Q834-0734EB24-6364-5EA6-80C2-88779903B390,
-        wds:Q834-09802E7E-A534-50E1-9612-2AB18D42CE4E ;
-    p:P123 wds:Q834-F13610A3-FE2F-5E66-A647-BF01843A951E ;
-    p:P125 wds:Q834-9E486397-9F9E-59A0-B4A1-BE706BDAFE60 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q603 ;
-    wdt:P115 <https://open-archaeo.info/post/arothron/> ;
-    wdt:P116 "arothron" ;
-    wdt:P117 wd:Q175,
-        wd:Q181,
-        wd:Q204,
-        wd:Q272 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Arothron"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/AProfico/Arothron> .
+    chbp:P2 chbs:Q834-3A5B9ABB-B5F3-5CB2-8B04-46B663E40367,
+        chbs:Q834-82CEE6C5-E9F7-5B95-A62E-C88FAAF09A71 ;
+    chbp:P106 chbs:Q834-328B9A23-0F4D-5B03-998F-92DB52BDEC0A ;
+    chbp:P113 chbs:Q834-5077690F-3030-55CB-8690-42B67F1D082A ;
+    chbp:P115 chbs:Q834-B24A04D6-693E-530B-9AA4-0CEF3B1E48F0 ;
+    chbp:P116 chbs:Q834-3EBD3976-80F7-5CA1-9A09-434A8EAB6050 ;
+    chbp:P117 chbs:Q834-5D9CD96B-DA7A-509D-8CD7-37FA6CC7A903,
+        chbs:Q834-444F7191-8C7E-5AC1-9D67-C62327D77872,
+        chbs:Q834-04230FCE-0F43-50EE-8D30-F75592812425,
+        chbs:Q834-F9FEB0C8-9034-5ADA-A52A-7336AE453032 ;
+    chbp:P118 chbs:Q834-9D07999C-614B-53CA-A20C-9001FBC711CE ;
+    chbp:P119 chbs:Q834-AD969766-FD2A-5222-A51B-2C109A7D9200 ;
+    chbp:P122 chbs:Q834-0734EB24-6364-5EA6-80C2-88779903B390,
+        chbs:Q834-09802E7E-A534-50E1-9612-2AB18D42CE4E ;
+    chbp:P123 chbs:Q834-F13610A3-FE2F-5E66-A647-BF01843A951E ;
+    chbp:P125 chbs:Q834-9E486397-9F9E-59A0-B4A1-BE706BDAFE60 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q603 ;
+    chbt:P115 <https://open-archaeo.info/post/arothron/> ;
+    chbt:P116 "arothron" ;
+    chbt:P117 chb:Q175,
+        chb:Q181,
+        chb:Q204,
+        chb:Q272 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Arothron"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/AProfico/Arothron> .
 
-wds:Q834-3A5B9ABB-B5F3-5CB2-8B04-46B663E40367
+chbs:Q834-3A5B9ABB-B5F3-5CB2-8B04-46B663E40367
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P2 chb:Q106 .
 
-wds:Q834-3EBD3976-80F7-5CA1-9A09-434A8EAB6050
+chbs:Q834-3EBD3976-80F7-5CA1-9A09-434A8EAB6050
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "arothron" .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "arothron" .
 
-wds:Q834-5D9CD96B-DA7A-509D-8CD7-37FA6CC7A903
+chbs:Q834-5D9CD96B-DA7A-509D-8CD7-37FA6CC7A903
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P117 wd:Q181 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P117 chb:Q181 .
 
-wds:Q834-9D07999C-614B-53CA-A20C-9001FBC711CE
+chbs:Q834-9D07999C-614B-53CA-A20C-9001FBC711CE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P118 chb:Q108 .
 
-wds:Q834-9E486397-9F9E-59A0-B4A1-BE706BDAFE60
+chbs:Q834-9E486397-9F9E-59A0-B4A1-BE706BDAFE60
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    pq:P104 "2019-04-26T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-AProfico-Arothron_-_2019-04-26_10-53-43> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:e031809ba13600279cad7b7133333a00 ;
-    ps:P125 <https://github.com/AProfico/Arothron> .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbpq:P104 "2019-04-26T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-AProfico-Arothron_-_2019-04-26_10-53-43> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:e031809ba13600279cad7b7133333a00 ;
+    chbps:P125 <https://github.com/AProfico/Arothron> .
 
-wds:Q834-82CEE6C5-E9F7-5B95-A62E-C88FAAF09A71
+chbs:Q834-82CEE6C5-E9F7-5B95-A62E-C88FAAF09A71
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P2 chb:Q103 .
 
-wds:Q834-328B9A23-0F4D-5B03-998F-92DB52BDEC0A
+chbs:Q834-328B9A23-0F4D-5B03-998F-92DB52BDEC0A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P106 chb:Q110 .
 
-wds:Q834-444F7191-8C7E-5AC1-9D67-C62327D77872
+chbs:Q834-444F7191-8C7E-5AC1-9D67-C62327D77872
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P117 wd:Q175 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P117 chb:Q175 .
 
-wds:Q834-0734EB24-6364-5EA6-80C2-88779903B390
+chbs:Q834-0734EB24-6364-5EA6-80C2-88779903B390
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P122 chb:Q109 .
 
-wds:Q834-04230FCE-0F43-50EE-8D30-F75592812425
+chbs:Q834-04230FCE-0F43-50EE-8D30-F75592812425
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P117 wd:Q204 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P117 chb:Q204 .
 
-wds:Q834-09802E7E-A534-50E1-9612-2AB18D42CE4E
+chbs:Q834-09802E7E-A534-50E1-9612-2AB18D42CE4E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P122 chb:Q110 .
 
-wds:Q834-5077690F-3030-55CB-8690-42B67F1D082A
+chbs:Q834-5077690F-3030-55CB-8690-42B67F1D082A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q603 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q603 .
 
-wds:Q834-AD969766-FD2A-5222-A51B-2C109A7D9200
+chbs:Q834-AD969766-FD2A-5222-A51B-2C109A7D9200
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P119 "Arothron"@en .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P119 "Arothron"@en .
 
-wds:Q834-B24A04D6-693E-530B-9AA4-0CEF3B1E48F0
+chbs:Q834-B24A04D6-693E-530B-9AA4-0CEF3B1E48F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P115 <https://open-archaeo.info/post/arothron/> .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P115 <https://open-archaeo.info/post/arothron/> .
 
-wds:Q834-F9FEB0C8-9034-5ADA-A52A-7336AE453032
+chbs:Q834-F9FEB0C8-9034-5ADA-A52A-7336AE453032
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P117 wd:Q272 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P117 chb:Q272 .
 
-wds:Q834-F13610A3-FE2F-5E66-A647-BF01843A951E
+chbs:Q834-F13610A3-FE2F-5E66-A647-BF01843A951E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c ;
+    chbps:P123 chb:Q111 .
 
-wdref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c
+chbref:a769bcbea6dc2380bf0699c589db2c05aaed6b8c
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/arothron/> .
+    chbpr:P6 <https://open-archaeo.info/post/arothron/> .
 
-wdv:e031809ba13600279cad7b7133333a00
+chbv:e031809ba13600279cad7b7133333a00
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

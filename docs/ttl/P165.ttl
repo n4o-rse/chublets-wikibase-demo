@@ -1,52 +1,53 @@
 # P165: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P165
+chbdata:P165.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P165" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P165 ;
+    dcterms:subject chb:P165 ;
     dcterms:title "cont integration"@en ;
-    schema:about wd:P165 ;
-    dcat:distribution dist:P165-html,
-        dist:P165-json,
-        dist:P165-ttl ;
+    schema:about chb:P165 ;
+    dcat:distribution chbdist:P165-html,
+        chbdist:P165-json,
+        chbdist:P165-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P165.html> .
 
-dist:P165-html
+chbdist:P165-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P165-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P165.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P165-json
+chbdist:P165-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,85 +64,85 @@ dist:P165-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P165.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P165-ttl
+chbdist:P165-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P165, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P165.ttl> ;
+    dcat:downloadURL chbdata:P165.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P165
+chb:P165
     a wikibase:Property ;
     schema:name "cont integration"@en ;
-    wikibase:claim p:P165 ;
-    wikibase:directClaim wdt:P165 ;
+    wikibase:claim chbp:P165 ;
+    wikibase:directClaim chbt:P165 ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:novalue wdno:P165 ;
+    wikibase:novalue chbno:P165 ;
     wikibase:propertyType wikibase:Url ;
-    wikibase:qualifier pq:P165 ;
-    wikibase:qualifierValue pqv:P165 ;
-    wikibase:reference pr:P165 ;
-    wikibase:referenceValue prv:P165 ;
-    wikibase:statementProperty ps:P165 ;
-    wikibase:statementValue psv:P165 ;
+    wikibase:qualifier chbpq:P165 ;
+    wikibase:qualifierValue chbpqv:P165 ;
+    wikibase:reference chbpr:P165 ;
+    wikibase:referenceValue chbprv:P165 ;
+    wikibase:statementProperty chbps:P165 ;
+    wikibase:statementValue chbpsv:P165 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "cont integration"@en ;
     skos:prefLabel "cont integration"@en ;
-    p:P2 wds:P165-C37433B9-4797-5841-8B37-A8AF460FE398 ;
-    p:P9 wds:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0 ;
-    p:P101 wds:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D ;
-    wdt:P2 wd:Q2 ;
-    wdt:P9 wd:Q100 ;
-    wdt:P101 "contIntegration" .
+    chbp:P2 chbs:P165-C37433B9-4797-5841-8B37-A8AF460FE398 ;
+    chbp:P9 chbs:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0 ;
+    chbp:P101 chbs:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D ;
+    chbt:P2 chb:Q2 ;
+    chbt:P9 chb:Q100 ;
+    chbt:P101 "contIntegration" .
 
-wds:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D
+chbs:P165-7AF27DBC-D989-5D8E-B53E-E56B0509874D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P101 "contIntegration" .
+    chbps:P101 "contIntegration" .
 
-wds:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0
+chbs:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-wds:P165-C37433B9-4797-5841-8B37-A8AF460FE398
+chbs:P165-C37433B9-4797-5841-8B37-A8AF460FE398
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-p:P165
+chbp:P165
     a owl:ObjectProperty .
 
-wdt:P165
+chbt:P165
     a owl:ObjectProperty .
 
-pq:P165
+chbpq:P165
     a owl:ObjectProperty .
 
-pqv:P165
+chbpqv:P165
     a owl:ObjectProperty .
 
-pr:P165
+chbpr:P165
     a owl:ObjectProperty .
 
-prv:P165
+chbprv:P165
     a owl:ObjectProperty .
 
-ps:P165
+chbps:P165
     a owl:ObjectProperty .
 
-psv:P165
+chbpsv:P165
     a owl:ObjectProperty .
 
-wdno:P165
+chbno:P165
     a owl:Class ;
     owl:complementOf _:4584be8d098605df3179c425a57d8253 .
 
 _:4584be8d098605df3179c425a57d8253
     a owl:Restriction ;
-    owl:onProperty wdt:P165 ;
+    owl:onProperty chbt:P165 ;
     owl:someValuesFrom owl:Thing .

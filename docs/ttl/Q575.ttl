@@ -1,53 +1,54 @@
 # Q575: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q575
+chbdata:Q575.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Osl_calibration"@en ;
     dcterms:identifier "Q575" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q575 ;
+    dcterms:subject chb:Q575 ;
     dcterms:title "osl_calibration.r"@en ;
-    schema:about wd:Q575 ;
-    dcat:distribution dist:Q575-html,
-        dist:Q575-json,
-        dist:Q575-ttl ;
+    schema:about chb:Q575 ;
+    dcat:distribution chbdist:Q575-html,
+        chbdist:Q575-json,
+        chbdist:Q575-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q575.html> .
 
-dist:Q575-html
+chbdist:Q575-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q575-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q575.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q575-json
+chbdist:Q575-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q575-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q575.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q575-ttl
+chbdist:Q575-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q575, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q575.ttl> ;
+    dcat:downloadURL chbdata:Q575.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q575
+chb:Q575
     a wikibase:Item ;
     schema:description "Osl_calibration"@en ;
     schema:name "osl_calibration.r"@en ;
@@ -80,135 +81,135 @@ wd:Q575
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "osl_calibration.r"@en ;
     skos:prefLabel "osl_calibration.r"@en ;
-    p:P2 wds:Q575-9F9B6EAE-3821-591B-9232-292BC639B518,
-        wds:Q575-E7D13C1E-F2B4-5DA9-81D6-27E6E9CD6861 ;
-    p:P106 wds:Q575-5159B104-BB8B-5A2A-9E7C-7B47A490B570 ;
-    p:P113 wds:Q575-B4F1E338-6A77-5D3A-9C87-F656CA26D1CC ;
-    p:P115 wds:Q575-C2962122-CE00-5BE1-845B-E685EF9F80E0 ;
-    p:P116 wds:Q575-5D0A11FC-6B6F-5A75-A690-62009E07AD14 ;
-    p:P117 wds:Q575-BDDA485E-9EF2-5400-96E8-F721B30EE291 ;
-    p:P118 wds:Q575-8FE414F6-226E-5D94-852C-D02190C58E41 ;
-    p:P119 wds:Q575-CFB3B6F2-8364-56E0-8079-6A43BB84D3F9 ;
-    p:P122 wds:Q575-2F22154A-4940-57D7-B741-170FEAFB5F38,
-        wds:Q575-26F8E814-387F-50DE-BB10-075E2BF59333 ;
-    p:P123 wds:Q575-2F63B0CE-7609-5873-A7BB-E06817B0293E ;
-    p:P125 wds:Q575-CF6AD430-B801-5634-98C0-A615B9FEC469 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q321 ;
-    wdt:P115 <https://open-archaeo.info/post/osl-calibration/> ;
-    wdt:P116 "osl-calibration" ;
-    wdt:P117 wd:Q253 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "osl_calibration.r"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://gist.github.com/benmarwick/5f996a0f52ba1d92f76968119f941bd8> .
+    chbp:P2 chbs:Q575-9F9B6EAE-3821-591B-9232-292BC639B518,
+        chbs:Q575-E7D13C1E-F2B4-5DA9-81D6-27E6E9CD6861 ;
+    chbp:P106 chbs:Q575-5159B104-BB8B-5A2A-9E7C-7B47A490B570 ;
+    chbp:P113 chbs:Q575-B4F1E338-6A77-5D3A-9C87-F656CA26D1CC ;
+    chbp:P115 chbs:Q575-C2962122-CE00-5BE1-845B-E685EF9F80E0 ;
+    chbp:P116 chbs:Q575-5D0A11FC-6B6F-5A75-A690-62009E07AD14 ;
+    chbp:P117 chbs:Q575-BDDA485E-9EF2-5400-96E8-F721B30EE291 ;
+    chbp:P118 chbs:Q575-8FE414F6-226E-5D94-852C-D02190C58E41 ;
+    chbp:P119 chbs:Q575-CFB3B6F2-8364-56E0-8079-6A43BB84D3F9 ;
+    chbp:P122 chbs:Q575-2F22154A-4940-57D7-B741-170FEAFB5F38,
+        chbs:Q575-26F8E814-387F-50DE-BB10-075E2BF59333 ;
+    chbp:P123 chbs:Q575-2F63B0CE-7609-5873-A7BB-E06817B0293E ;
+    chbp:P125 chbs:Q575-CF6AD430-B801-5634-98C0-A615B9FEC469 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q321 ;
+    chbt:P115 <https://open-archaeo.info/post/osl-calibration/> ;
+    chbt:P116 "osl-calibration" ;
+    chbt:P117 chb:Q253 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "osl_calibration.r"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://gist.github.com/benmarwick/5f996a0f52ba1d92f76968119f941bd8> .
 
-wds:Q575-2F63B0CE-7609-5873-A7BB-E06817B0293E
+chbs:Q575-2F63B0CE-7609-5873-A7BB-E06817B0293E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P123 chb:Q111 .
 
-wds:Q575-2F22154A-4940-57D7-B741-170FEAFB5F38
+chbs:Q575-2F22154A-4940-57D7-B741-170FEAFB5F38
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P122 chb:Q110 .
 
-wds:Q575-5D0A11FC-6B6F-5A75-A690-62009E07AD14
+chbs:Q575-5D0A11FC-6B6F-5A75-A690-62009E07AD14
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "osl-calibration" .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "osl-calibration" .
 
-wds:Q575-8FE414F6-226E-5D94-852C-D02190C58E41
+chbs:Q575-8FE414F6-226E-5D94-852C-D02190C58E41
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P118 chb:Q108 .
 
-wds:Q575-9F9B6EAE-3821-591B-9232-292BC639B518
+chbs:Q575-9F9B6EAE-3821-591B-9232-292BC639B518
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P2 chb:Q106 .
 
-wds:Q575-26F8E814-387F-50DE-BB10-075E2BF59333
+chbs:Q575-26F8E814-387F-50DE-BB10-075E2BF59333
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P122 chb:Q109 .
 
-wds:Q575-5159B104-BB8B-5A2A-9E7C-7B47A490B570
+chbs:Q575-5159B104-BB8B-5A2A-9E7C-7B47A490B570
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P106 chb:Q110 .
 
-wds:Q575-B4F1E338-6A77-5D3A-9C87-F656CA26D1CC
+chbs:Q575-B4F1E338-6A77-5D3A-9C87-F656CA26D1CC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q321 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q321 .
 
-wds:Q575-BDDA485E-9EF2-5400-96E8-F721B30EE291
+chbs:Q575-BDDA485E-9EF2-5400-96E8-F721B30EE291
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P117 wd:Q253 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P117 chb:Q253 .
 
-wds:Q575-C2962122-CE00-5BE1-845B-E685EF9F80E0
+chbs:Q575-C2962122-CE00-5BE1-845B-E685EF9F80E0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P115 <https://open-archaeo.info/post/osl-calibration/> .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P115 <https://open-archaeo.info/post/osl-calibration/> .
 
-wds:Q575-CF6AD430-B801-5634-98C0-A615B9FEC469
+chbs:Q575-CF6AD430-B801-5634-98C0-A615B9FEC469
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    pq:P104 "2016-05-10T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/gist.github.com-5f996a0f52ba1d92f76968119f941bd8_-_2016-05-10_07-53-04> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:cfe3e2616047ceb25fb1241dae66025e ;
-    ps:P125 <https://gist.github.com/benmarwick/5f996a0f52ba1d92f76968119f941bd8> .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbpq:P104 "2016-05-10T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/gist.github.com-5f996a0f52ba1d92f76968119f941bd8_-_2016-05-10_07-53-04> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:cfe3e2616047ceb25fb1241dae66025e ;
+    chbps:P125 <https://gist.github.com/benmarwick/5f996a0f52ba1d92f76968119f941bd8> .
 
-wds:Q575-CFB3B6F2-8364-56E0-8079-6A43BB84D3F9
+chbs:Q575-CFB3B6F2-8364-56E0-8079-6A43BB84D3F9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P119 "osl_calibration.r"@en .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P119 "osl_calibration.r"@en .
 
-wds:Q575-E7D13C1E-F2B4-5DA9-81D6-27E6E9CD6861
+chbs:Q575-E7D13C1E-F2B4-5DA9-81D6-27E6E9CD6861
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf ;
+    chbps:P2 chb:Q104 .
 
-wdref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf
+chbref:d903d1d50e4a7c0a5da1b444b38e126fffd286cf
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/osl-calibration/> .
+    chbpr:P6 <https://open-archaeo.info/post/osl-calibration/> .
 
-wdv:cfe3e2616047ceb25fb1241dae66025e
+chbv:cfe3e2616047ceb25fb1241dae66025e
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

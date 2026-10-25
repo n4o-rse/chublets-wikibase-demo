@@ -1,52 +1,53 @@
 # P187: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P187
+chbdata:P187.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P187" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P187 ;
+    dcterms:subject chb:P187 ;
     dcterms:title "encoding"@en ;
-    schema:about wd:P187 ;
-    dcat:distribution dist:P187-html,
-        dist:P187-json,
-        dist:P187-ttl ;
+    schema:about chb:P187 ;
+    dcat:distribution chbdist:P187-html,
+        chbdist:P187-json,
+        chbdist:P187-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P187.html> .
 
-dist:P187-html
+chbdist:P187-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P187-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P187.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P187-json
+chbdist:P187-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,109 +64,109 @@ dist:P187-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P187.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P187-ttl
+chbdist:P187-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P187, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P187.ttl> ;
+    dcat:downloadURL chbdata:P187.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P187
+chb:P187
     a wikibase:Property ;
     schema:name "encoding"@en ;
-    wikibase:claim p:P187 ;
-    wikibase:directClaim wdt:P187 ;
+    wikibase:claim chbp:P187 ;
+    wikibase:directClaim chbt:P187 ;
     wikibase:identifiers "3"^^xsd:integer ;
-    wikibase:novalue wdno:P187 ;
+    wikibase:novalue chbno:P187 ;
     wikibase:propertyType wikibase:WikibaseItem ;
-    wikibase:qualifier pq:P187 ;
-    wikibase:qualifierValue pqv:P187 ;
-    wikibase:reference pr:P187 ;
-    wikibase:referenceValue prv:P187 ;
-    wikibase:statementProperty ps:P187 ;
-    wikibase:statementValue psv:P187 ;
+    wikibase:qualifier chbpq:P187 ;
+    wikibase:qualifierValue chbpqv:P187 ;
+    wikibase:reference chbpr:P187 ;
+    wikibase:referenceValue chbprv:P187 ;
+    wikibase:statementProperty chbps:P187 ;
+    wikibase:statementValue chbpsv:P187 ;
     wikibase:statements "6"^^xsd:integer ;
     rdfs:label "encoding"@en ;
     skos:prefLabel "encoding"@en ;
-    p:P2 wds:P187-22FCD6D9-E80B-5406-887B-79C57F6F2B7E ;
-    p:P9 wds:P187-EFBB225C-A505-5E42-8206-9925C0D674BC ;
-    p:P10 wds:P187-79D24AE0-1681-559F-A4F5-08D315877A4A ;
-    p:P100 wds:P187-249F68A9-0604-5119-BA1F-C3FD7855FCB8 ;
-    p:P101 wds:P187-E92DDD53-5C33-518D-A071-3FD8DF838D52 ;
-    p:P102 wds:P187-3C56C113-CB29-57B3-B864-64CA0F824CB0 ;
-    wdt:P2 wd:Q2 ;
-    wdt:P9 wd:Q100 ;
-    wdt:P10 wd:Q3 ;
-    wdt:P100 "P10" ;
-    wdt:P101 "encoding" ;
-    wdt:P102 "encoding" .
+    chbp:P2 chbs:P187-22FCD6D9-E80B-5406-887B-79C57F6F2B7E ;
+    chbp:P9 chbs:P187-EFBB225C-A505-5E42-8206-9925C0D674BC ;
+    chbp:P10 chbs:P187-79D24AE0-1681-559F-A4F5-08D315877A4A ;
+    chbp:P100 chbs:P187-249F68A9-0604-5119-BA1F-C3FD7855FCB8 ;
+    chbp:P101 chbs:P187-E92DDD53-5C33-518D-A071-3FD8DF838D52 ;
+    chbp:P102 chbs:P187-3C56C113-CB29-57B3-B864-64CA0F824CB0 ;
+    chbt:P2 chb:Q2 ;
+    chbt:P9 chb:Q100 ;
+    chbt:P10 chb:Q3 ;
+    chbt:P100 "P10" ;
+    chbt:P101 "encoding" ;
+    chbt:P102 "encoding" .
 
-wds:P187-3C56C113-CB29-57B3-B864-64CA0F824CB0
+chbs:P187-3C56C113-CB29-57B3-B864-64CA0F824CB0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P102 "encoding" .
+    chbps:P102 "encoding" .
 
-wds:P187-22FCD6D9-E80B-5406-887B-79C57F6F2B7E
+chbs:P187-22FCD6D9-E80B-5406-887B-79C57F6F2B7E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-wds:P187-79D24AE0-1681-559F-A4F5-08D315877A4A
+chbs:P187-79D24AE0-1681-559F-A4F5-08D315877A4A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P10 wd:Q3 .
+    chbps:P10 chb:Q3 .
 
-wds:P187-249F68A9-0604-5119-BA1F-C3FD7855FCB8
+chbs:P187-249F68A9-0604-5119-BA1F-C3FD7855FCB8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P100 "P10" .
+    chbps:P100 "P10" .
 
-wds:P187-E92DDD53-5C33-518D-A071-3FD8DF838D52
+chbs:P187-E92DDD53-5C33-518D-A071-3FD8DF838D52
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P101 "encoding" .
+    chbps:P101 "encoding" .
 
-wds:P187-EFBB225C-A505-5E42-8206-9925C0D674BC
+chbs:P187-EFBB225C-A505-5E42-8206-9925C0D674BC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-p:P187
+chbp:P187
     a owl:ObjectProperty .
 
-wdt:P187
+chbt:P187
     a owl:ObjectProperty .
 
-pq:P187
+chbpq:P187
     a owl:ObjectProperty .
 
-pqv:P187
+chbpqv:P187
     a owl:ObjectProperty .
 
-pr:P187
+chbpr:P187
     a owl:ObjectProperty .
 
-prv:P187
+chbprv:P187
     a owl:ObjectProperty .
 
-ps:P187
+chbps:P187
     a owl:ObjectProperty .
 
-psv:P187
+chbpsv:P187
     a owl:ObjectProperty .
 
-wdno:P187
+chbno:P187
     a owl:Class ;
     owl:complementOf _:190083a9837a85891c2e3d156c5d6a9b .
 
 _:190083a9837a85891c2e3d156c5d6a9b
     a owl:Restriction ;
-    owl:onProperty wdt:P187 ;
+    owl:onProperty chbt:P187 ;
     owl:someValuesFrom owl:Thing .

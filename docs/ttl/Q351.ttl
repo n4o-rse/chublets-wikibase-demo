@@ -1,53 +1,54 @@
 # Q351: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q351
+chbdata:Q351.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "3D reconstruction of incomplete archaeological objects using a generative adversarial network (GAN)."@en ;
     dcterms:identifier "Q351" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q351 ;
+    dcterms:subject chb:Q351 ;
     dcterms:title "3D-ORGAN"@en ;
-    schema:about wd:Q351 ;
-    dcat:distribution dist:Q351-html,
-        dist:Q351-json,
-        dist:Q351-ttl ;
+    schema:about chb:Q351 ;
+    dcat:distribution chbdist:Q351-html,
+        chbdist:Q351-json,
+        chbdist:Q351-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q351.html> .
 
-dist:Q351-html
+chbdist:Q351-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q351-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q351.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q351-json
+chbdist:Q351-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q351-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q351.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q351-ttl
+chbdist:Q351-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q351, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q351.ttl> ;
+    dcat:downloadURL chbdata:Q351.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q351
+chb:Q351
     a wikibase:Item ;
     schema:description "3D reconstruction of incomplete archaeological objects using a generative adversarial network (GAN)."@en ;
     schema:name "3D-ORGAN"@en ;
@@ -80,163 +81,163 @@ wd:Q351
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "3D-ORGAN"@en ;
     skos:prefLabel "3D-ORGAN"@en ;
-    p:P2 wds:Q351-858E11C3-D310-54F9-B715-3BDB4722ECB8,
-        wds:Q351-E296CB12-17B3-575D-A3AC-8E306F6427DA ;
-    p:P106 wds:Q351-06EFAD58-F47E-5B1A-9C3F-D62FC7CF2B84 ;
-    p:P111 wds:Q351-63FD81F8-A1A4-517F-B7E7-C915A23E14F8 ;
-    p:P113 wds:Q351-5F37AC64-0E2A-52F8-B161-23A9E20977FE,
-        wds:Q351-7E81CC3B-E479-5BF2-9FC9-833FD0BAB68D ;
-    p:P114 wds:Q351-397FDDD1-89EE-5E96-9E50-F6F33C49769B ;
-    p:P115 wds:Q351-0B347A7C-6600-5B21-8CCB-0A5806C77FB9 ;
-    p:P116 wds:Q351-37385426-95CE-5F79-B9E2-D3D89563EA65 ;
-    p:P117 wds:Q351-56A4044E-19C1-54D1-80C9-2730B22EA7DC ;
-    p:P118 wds:Q351-9F7039DB-3753-5EA6-BAB4-37BF64F579D7 ;
-    p:P119 wds:Q351-AA0B8BE4-5684-5EC8-A23F-EE4957264AF2 ;
-    p:P122 wds:Q351-95F34951-4376-51C1-B2D5-3CE41496A9D5,
-        wds:Q351-94447CAF-0E82-5D0E-807F-8BE686F31E5E ;
-    p:P123 wds:Q351-02F5069B-3443-555A-B940-426B0AAF4D8D ;
-    p:P125 wds:Q351-DACDCBD2-F7C9-5C30-B48F-FB44198FCAC7 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P111 wd:Q354 ;
-    wdt:P113 wd:Q352,
-        wd:Q353 ;
-    wdt:P114 "10.1145/3208159.3208173" ;
-    wdt:P115 <https://open-archaeo.info/post/3d-organ/> ;
-    wdt:P116 "3d-organ" ;
-    wdt:P117 wd:Q204 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "3D-ORGAN"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/renato145/3D-ORGAN> .
+    chbp:P2 chbs:Q351-858E11C3-D310-54F9-B715-3BDB4722ECB8,
+        chbs:Q351-E296CB12-17B3-575D-A3AC-8E306F6427DA ;
+    chbp:P106 chbs:Q351-06EFAD58-F47E-5B1A-9C3F-D62FC7CF2B84 ;
+    chbp:P111 chbs:Q351-63FD81F8-A1A4-517F-B7E7-C915A23E14F8 ;
+    chbp:P113 chbs:Q351-5F37AC64-0E2A-52F8-B161-23A9E20977FE,
+        chbs:Q351-7E81CC3B-E479-5BF2-9FC9-833FD0BAB68D ;
+    chbp:P114 chbs:Q351-397FDDD1-89EE-5E96-9E50-F6F33C49769B ;
+    chbp:P115 chbs:Q351-0B347A7C-6600-5B21-8CCB-0A5806C77FB9 ;
+    chbp:P116 chbs:Q351-37385426-95CE-5F79-B9E2-D3D89563EA65 ;
+    chbp:P117 chbs:Q351-56A4044E-19C1-54D1-80C9-2730B22EA7DC ;
+    chbp:P118 chbs:Q351-9F7039DB-3753-5EA6-BAB4-37BF64F579D7 ;
+    chbp:P119 chbs:Q351-AA0B8BE4-5684-5EC8-A23F-EE4957264AF2 ;
+    chbp:P122 chbs:Q351-95F34951-4376-51C1-B2D5-3CE41496A9D5,
+        chbs:Q351-94447CAF-0E82-5D0E-807F-8BE686F31E5E ;
+    chbp:P123 chbs:Q351-02F5069B-3443-555A-B940-426B0AAF4D8D ;
+    chbp:P125 chbs:Q351-DACDCBD2-F7C9-5C30-B48F-FB44198FCAC7 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P111 chb:Q354 ;
+    chbt:P113 chb:Q352,
+        chb:Q353 ;
+    chbt:P114 "10.1145/3208159.3208173" ;
+    chbt:P115 <https://open-archaeo.info/post/3d-organ/> ;
+    chbt:P116 "3d-organ" ;
+    chbt:P117 chb:Q204 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "3D-ORGAN"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/renato145/3D-ORGAN> .
 
-wds:Q351-0B347A7C-6600-5B21-8CCB-0A5806C77FB9
+chbs:Q351-0B347A7C-6600-5B21-8CCB-0A5806C77FB9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P115 <https://open-archaeo.info/post/3d-organ/> .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P115 <https://open-archaeo.info/post/3d-organ/> .
 
-wds:Q351-02F5069B-3443-555A-B940-426B0AAF4D8D
+chbs:Q351-02F5069B-3443-555A-B940-426B0AAF4D8D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P123 chb:Q370 .
 
-wds:Q351-5F37AC64-0E2A-52F8-B161-23A9E20977FE
+chbs:Q351-5F37AC64-0E2A-52F8-B161-23A9E20977FE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q353 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q353 .
 
-wds:Q351-06EFAD58-F47E-5B1A-9C3F-D62FC7CF2B84
+chbs:Q351-06EFAD58-F47E-5B1A-9C3F-D62FC7CF2B84
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P106 chb:Q110 .
 
-wds:Q351-7E81CC3B-E479-5BF2-9FC9-833FD0BAB68D
+chbs:Q351-7E81CC3B-E479-5BF2-9FC9-833FD0BAB68D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q352 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q352 .
 
-wds:Q351-9F7039DB-3753-5EA6-BAB4-37BF64F579D7
+chbs:Q351-9F7039DB-3753-5EA6-BAB4-37BF64F579D7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P118 chb:Q108 .
 
-wds:Q351-56A4044E-19C1-54D1-80C9-2730B22EA7DC
+chbs:Q351-56A4044E-19C1-54D1-80C9-2730B22EA7DC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P117 wd:Q204 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P117 chb:Q204 .
 
-wds:Q351-63FD81F8-A1A4-517F-B7E7-C915A23E14F8
+chbs:Q351-63FD81F8-A1A4-517F-B7E7-C915A23E14F8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P111 wd:Q354 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P111 chb:Q354 .
 
-wds:Q351-95F34951-4376-51C1-B2D5-3CE41496A9D5
+chbs:Q351-95F34951-4376-51C1-B2D5-3CE41496A9D5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P122 chb:Q109 .
 
-wds:Q351-397FDDD1-89EE-5E96-9E50-F6F33C49769B
+chbs:Q351-397FDDD1-89EE-5E96-9E50-F6F33C49769B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P114 "10.1145/3208159.3208173" .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P114 "10.1145/3208159.3208173" .
 
-wds:Q351-858E11C3-D310-54F9-B715-3BDB4722ECB8
+chbs:Q351-858E11C3-D310-54F9-B715-3BDB4722ECB8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P2 chb:Q106 .
 
-wds:Q351-94447CAF-0E82-5D0E-807F-8BE686F31E5E
+chbs:Q351-94447CAF-0E82-5D0E-807F-8BE686F31E5E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P122 chb:Q110 .
 
-wds:Q351-37385426-95CE-5F79-B9E2-D3D89563EA65
+chbs:Q351-37385426-95CE-5F79-B9E2-D3D89563EA65
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "3d-organ" .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "3d-organ" .
 
-wds:Q351-AA0B8BE4-5684-5EC8-A23F-EE4957264AF2
+chbs:Q351-AA0B8BE4-5684-5EC8-A23F-EE4957264AF2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P119 "3D-ORGAN"@en .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P119 "3D-ORGAN"@en .
 
-wds:Q351-DACDCBD2-F7C9-5C30-B48F-FB44198FCAC7
+chbs:Q351-DACDCBD2-F7C9-5C30-B48F-FB44198FCAC7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    pq:P104 "2020-02-20T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-renato145-3D-ORGAN_-_2020-02-20_02-43-58> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:22a88ee22c4e8232a01fa1cfeeb6e11c ;
-    ps:P125 <https://github.com/renato145/3D-ORGAN> .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbpq:P104 "2020-02-20T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-renato145-3D-ORGAN_-_2020-02-20_02-43-58> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:22a88ee22c4e8232a01fa1cfeeb6e11c ;
+    chbps:P125 <https://github.com/renato145/3D-ORGAN> .
 
-wds:Q351-E296CB12-17B3-575D-A3AC-8E306F6427DA
+chbs:Q351-E296CB12-17B3-575D-A3AC-8E306F6427DA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb ;
+    chbps:P2 chb:Q104 .
 
-wdref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb
+chbref:9f6e445b675ca8830c2118ea0b2ae99a3ed5f6fb
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/3d-organ/> .
+    chbpr:P6 <https://open-archaeo.info/post/3d-organ/> .
 
-wdv:22a88ee22c4e8232a01fa1cfeeb6e11c
+chbv:22a88ee22c4e8232a01fa1cfeeb6e11c
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

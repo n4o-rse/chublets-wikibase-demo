@@ -1,53 +1,54 @@
 # Q338: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q338
+chbdata:Q338.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A set of extra utilities that extend the functionlaity provided by core packages for spatial data management and analysis in r."@en ;
     dcterms:identifier "Q338" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q338 ;
+    dcterms:subject chb:Q338 ;
     dcterms:title "sparch"@en ;
-    schema:about wd:Q338 ;
-    dcat:distribution dist:Q338-html,
-        dist:Q338-json,
-        dist:Q338-ttl ;
+    schema:about chb:Q338 ;
+    dcat:distribution chbdist:Q338-html,
+        chbdist:Q338-json,
+        chbdist:Q338-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q338.html> .
 
-dist:Q338-html
+chbdist:Q338-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q338-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q338.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q338-json
+chbdist:Q338-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q338-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q338.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q338-ttl
+chbdist:Q338-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q338, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q338.ttl> ;
+    dcat:downloadURL chbdata:Q338.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q338
+chb:Q338
     a wikibase:Item ;
     schema:description "A set of extra utilities that extend the functionlaity provided by core packages for spatial data management and analysis in r."@en ;
     schema:name "sparch"@en ;
@@ -80,135 +81,135 @@ wd:Q338
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "sparch"@en ;
     skos:prefLabel "sparch"@en ;
-    p:P2 wds:Q338-055D07FC-6473-5EC7-81F6-CC7AA8B1EF1A,
-        wds:Q338-D9159079-51AD-5B21-A73E-3865F79A5C75 ;
-    p:P106 wds:Q338-B9245B90-CB76-5334-8DC6-5E8270864B55 ;
-    p:P113 wds:Q338-40D19A54-69DD-5303-9641-0C4C3A0511EA ;
-    p:P115 wds:Q338-9D7229D7-6CD1-5831-962C-FEC51338E2F2 ;
-    p:P116 wds:Q338-9CDBEAD5-D10C-5605-9D35-03075E3C7D93 ;
-    p:P117 wds:Q338-3DD25340-7C10-53B3-A827-8473D9AF555B ;
-    p:P118 wds:Q338-5C323AD8-5B67-5C3B-8864-1DE1F3F8C730 ;
-    p:P119 wds:Q338-216C36DA-7630-5904-824D-D8748BC650F2 ;
-    p:P122 wds:Q338-1E0C0A9B-D0D0-5FD1-ADBE-A840C3A2E570,
-        wds:Q338-70A20600-F165-5F96-8A51-0DEC7D36B1E4 ;
-    p:P123 wds:Q338-43097507-9B9E-5ECA-A740-5F687FAB7E7C ;
-    p:P125 wds:Q338-208BD604-DDF2-5EA5-BE21-7548513643C3 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q332 ;
-    wdt:P115 <https://open-archaeo.info/post/sparch/> ;
-    wdt:P116 "sparch" ;
-    wdt:P117 wd:Q132 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "sparch"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ahb108/sparch> .
+    chbp:P2 chbs:Q338-055D07FC-6473-5EC7-81F6-CC7AA8B1EF1A,
+        chbs:Q338-D9159079-51AD-5B21-A73E-3865F79A5C75 ;
+    chbp:P106 chbs:Q338-B9245B90-CB76-5334-8DC6-5E8270864B55 ;
+    chbp:P113 chbs:Q338-40D19A54-69DD-5303-9641-0C4C3A0511EA ;
+    chbp:P115 chbs:Q338-9D7229D7-6CD1-5831-962C-FEC51338E2F2 ;
+    chbp:P116 chbs:Q338-9CDBEAD5-D10C-5605-9D35-03075E3C7D93 ;
+    chbp:P117 chbs:Q338-3DD25340-7C10-53B3-A827-8473D9AF555B ;
+    chbp:P118 chbs:Q338-5C323AD8-5B67-5C3B-8864-1DE1F3F8C730 ;
+    chbp:P119 chbs:Q338-216C36DA-7630-5904-824D-D8748BC650F2 ;
+    chbp:P122 chbs:Q338-1E0C0A9B-D0D0-5FD1-ADBE-A840C3A2E570,
+        chbs:Q338-70A20600-F165-5F96-8A51-0DEC7D36B1E4 ;
+    chbp:P123 chbs:Q338-43097507-9B9E-5ECA-A740-5F687FAB7E7C ;
+    chbp:P125 chbs:Q338-208BD604-DDF2-5EA5-BE21-7548513643C3 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q332 ;
+    chbt:P115 <https://open-archaeo.info/post/sparch/> ;
+    chbt:P116 "sparch" ;
+    chbt:P117 chb:Q132 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "sparch"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ahb108/sparch> .
 
-wds:Q338-1E0C0A9B-D0D0-5FD1-ADBE-A840C3A2E570
+chbs:Q338-1E0C0A9B-D0D0-5FD1-ADBE-A840C3A2E570
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P122 chb:Q109 .
 
-wds:Q338-3DD25340-7C10-53B3-A827-8473D9AF555B
+chbs:Q338-3DD25340-7C10-53B3-A827-8473D9AF555B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P117 wd:Q132 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P117 chb:Q132 .
 
-wds:Q338-5C323AD8-5B67-5C3B-8864-1DE1F3F8C730
+chbs:Q338-5C323AD8-5B67-5C3B-8864-1DE1F3F8C730
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P118 chb:Q108 .
 
-wds:Q338-9CDBEAD5-D10C-5605-9D35-03075E3C7D93
+chbs:Q338-9CDBEAD5-D10C-5605-9D35-03075E3C7D93
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "sparch" .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "sparch" .
 
-wds:Q338-9D7229D7-6CD1-5831-962C-FEC51338E2F2
+chbs:Q338-9D7229D7-6CD1-5831-962C-FEC51338E2F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P115 <https://open-archaeo.info/post/sparch/> .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P115 <https://open-archaeo.info/post/sparch/> .
 
-wds:Q338-40D19A54-69DD-5303-9641-0C4C3A0511EA
+chbs:Q338-40D19A54-69DD-5303-9641-0C4C3A0511EA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q332 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q332 .
 
-wds:Q338-055D07FC-6473-5EC7-81F6-CC7AA8B1EF1A
+chbs:Q338-055D07FC-6473-5EC7-81F6-CC7AA8B1EF1A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P2 chb:Q106 .
 
-wds:Q338-70A20600-F165-5F96-8A51-0DEC7D36B1E4
+chbs:Q338-70A20600-F165-5F96-8A51-0DEC7D36B1E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P122 chb:Q110 .
 
-wds:Q338-208BD604-DDF2-5EA5-BE21-7548513643C3
+chbs:Q338-208BD604-DDF2-5EA5-BE21-7548513643C3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    pq:P104 "2021-02-01T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ahb108-sparch_-_2021-02-01_09-55-02> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:d4eb8a356bde4238f20e2158dc4e2728 ;
-    ps:P125 <https://github.com/ahb108/sparch> .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbpq:P104 "2021-02-01T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ahb108-sparch_-_2021-02-01_09-55-02> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:d4eb8a356bde4238f20e2158dc4e2728 ;
+    chbps:P125 <https://github.com/ahb108/sparch> .
 
-wds:Q338-216C36DA-7630-5904-824D-D8748BC650F2
+chbs:Q338-216C36DA-7630-5904-824D-D8748BC650F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P119 "sparch"@en .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P119 "sparch"@en .
 
-wds:Q338-43097507-9B9E-5ECA-A740-5F687FAB7E7C
+chbs:Q338-43097507-9B9E-5ECA-A740-5F687FAB7E7C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P123 chb:Q111 .
 
-wds:Q338-B9245B90-CB76-5334-8DC6-5E8270864B55
+chbs:Q338-B9245B90-CB76-5334-8DC6-5E8270864B55
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P106 chb:Q110 .
 
-wds:Q338-D9159079-51AD-5B21-A73E-3865F79A5C75
+chbs:Q338-D9159079-51AD-5B21-A73E-3865F79A5C75
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb ;
+    chbps:P2 chb:Q103 .
 
-wdref:0560e4fb1d466c2df596c5eff770cd1445512fcb
+chbref:0560e4fb1d466c2df596c5eff770cd1445512fcb
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/sparch/> .
+    chbpr:P6 <https://open-archaeo.info/post/sparch/> .
 
-wdv:d4eb8a356bde4238f20e2158dc4e2728
+chbv:d4eb8a356bde4238f20e2158dc4e2728
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

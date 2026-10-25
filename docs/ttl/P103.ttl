@@ -1,52 +1,53 @@
 # P103: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P103
+chbdata:P103.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P103" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P103 ;
+    dcterms:subject chb:P103 ;
     dcterms:title "application category"@en ;
-    schema:about wd:P103 ;
-    dcat:distribution dist:P103-html,
-        dist:P103-json,
-        dist:P103-ttl ;
+    schema:about chb:P103 ;
+    dcat:distribution chbdist:P103-html,
+        chbdist:P103-json,
+        chbdist:P103-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P103.html> .
 
-dist:P103-html
+chbdist:P103-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P103-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P103.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P103-json
+chbdist:P103-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,101 +64,101 @@ dist:P103-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P103.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P103-ttl
+chbdist:P103-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P103, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P103.ttl> ;
+    dcat:downloadURL chbdata:P103.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P103
+chb:P103
     a wikibase:Property ;
     schema:name "application category"@en ;
-    wikibase:claim p:P103 ;
-    wikibase:directClaim wdt:P103 ;
+    wikibase:claim chbp:P103 ;
+    wikibase:directClaim chbt:P103 ;
     wikibase:identifiers "3"^^xsd:integer ;
-    wikibase:novalue wdno:P103 ;
+    wikibase:novalue chbno:P103 ;
     wikibase:propertyType wikibase:String ;
-    wikibase:qualifier pq:P103 ;
-    wikibase:qualifierValue pqv:P103 ;
-    wikibase:reference pr:P103 ;
-    wikibase:referenceValue prv:P103 ;
-    wikibase:statementProperty ps:P103 ;
-    wikibase:statementValue psv:P103 ;
+    wikibase:qualifier chbpq:P103 ;
+    wikibase:qualifierValue chbpqv:P103 ;
+    wikibase:reference chbpr:P103 ;
+    wikibase:referenceValue chbprv:P103 ;
+    wikibase:statementProperty chbps:P103 ;
+    wikibase:statementValue chbpsv:P103 ;
     wikibase:statements "5"^^xsd:integer ;
     rdfs:label "application category"@en ;
     skos:prefLabel "application category"@en ;
-    p:P2 wds:P103-37BCC465-5966-584B-AEAF-3AD2317783AB ;
-    p:P9 wds:P103-A20526C7-01DE-5FD0-94A1-3D1EB3533764 ;
-    p:P100 wds:P103-69FF7162-8D67-5CA8-86BA-BE712DDA79CE ;
-    p:P101 wds:P103-FC2B0BD8-1C7B-5455-BDA5-08B7FFAC86FE ;
-    p:P102 wds:P103-30FDDE1F-253D-5036-8DD1-C1571E868F6F ;
-    wdt:P2 wd:Q2 ;
-    wdt:P9 wd:Q100 ;
-    wdt:P100 "P31" ;
-    wdt:P101 "applicationCategory" ;
-    wdt:P102 "applicationCategory" .
+    chbp:P2 chbs:P103-37BCC465-5966-584B-AEAF-3AD2317783AB ;
+    chbp:P9 chbs:P103-A20526C7-01DE-5FD0-94A1-3D1EB3533764 ;
+    chbp:P100 chbs:P103-69FF7162-8D67-5CA8-86BA-BE712DDA79CE ;
+    chbp:P101 chbs:P103-FC2B0BD8-1C7B-5455-BDA5-08B7FFAC86FE ;
+    chbp:P102 chbs:P103-30FDDE1F-253D-5036-8DD1-C1571E868F6F ;
+    chbt:P2 chb:Q2 ;
+    chbt:P9 chb:Q100 ;
+    chbt:P100 "P31" ;
+    chbt:P101 "applicationCategory" ;
+    chbt:P102 "applicationCategory" .
 
-wds:P103-30FDDE1F-253D-5036-8DD1-C1571E868F6F
+chbs:P103-30FDDE1F-253D-5036-8DD1-C1571E868F6F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P102 "applicationCategory" .
+    chbps:P102 "applicationCategory" .
 
-wds:P103-37BCC465-5966-584B-AEAF-3AD2317783AB
+chbs:P103-37BCC465-5966-584B-AEAF-3AD2317783AB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-wds:P103-69FF7162-8D67-5CA8-86BA-BE712DDA79CE
+chbs:P103-69FF7162-8D67-5CA8-86BA-BE712DDA79CE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P100 "P31" .
+    chbps:P100 "P31" .
 
-wds:P103-A20526C7-01DE-5FD0-94A1-3D1EB3533764
+chbs:P103-A20526C7-01DE-5FD0-94A1-3D1EB3533764
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-wds:P103-FC2B0BD8-1C7B-5455-BDA5-08B7FFAC86FE
+chbs:P103-FC2B0BD8-1C7B-5455-BDA5-08B7FFAC86FE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P101 "applicationCategory" .
+    chbps:P101 "applicationCategory" .
 
-p:P103
+chbp:P103
     a owl:ObjectProperty .
 
-wdt:P103
+chbt:P103
     a owl:DatatypeProperty .
 
-pq:P103
+chbpq:P103
     a owl:DatatypeProperty .
 
-pqv:P103
+chbpqv:P103
     a owl:ObjectProperty .
 
-pr:P103
+chbpr:P103
     a owl:DatatypeProperty .
 
-prv:P103
+chbprv:P103
     a owl:ObjectProperty .
 
-ps:P103
+chbps:P103
     a owl:DatatypeProperty .
 
-psv:P103
+chbpsv:P103
     a owl:ObjectProperty .
 
-wdno:P103
+chbno:P103
     a owl:Class ;
     owl:complementOf _:2e0499be947ee6daedeef20ea889d1ee .
 
 _:2e0499be947ee6daedeef20ea889d1ee
     a owl:Restriction ;
-    owl:onProperty wdt:P103 ;
+    owl:onProperty chbt:P103 ;
     owl:someValuesFrom owl:Thing .

@@ -1,53 +1,54 @@
 # Q206: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q206
+chbdata:Q206.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Web app that uses the Crossref API to fetch and display publications on Predynastic Egyptian Archaeology."@en ;
     dcterms:identifier "Q206" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q206 ;
+    dcterms:subject chb:Q206 ;
     dcterms:title "crossref-predynastic"@en ;
-    schema:about wd:Q206 ;
-    dcat:distribution dist:Q206-html,
-        dist:Q206-json,
-        dist:Q206-ttl ;
+    schema:about chb:Q206 ;
+    dcat:distribution chbdist:Q206-html,
+        chbdist:Q206-json,
+        chbdist:Q206-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q206.html> .
 
-dist:Q206-html
+chbdist:Q206-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q206-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q206.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q206-json
+chbdist:Q206-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q206-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q206.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q206-ttl
+chbdist:Q206-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q206, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q206.ttl> ;
+    dcat:downloadURL chbdata:Q206.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q206
+chb:Q206
     a wikibase:Item ;
     schema:description "Web app that uses the Crossref API to fetch and display publications on Predynastic Egyptian Archaeology."@en ;
     schema:name "crossref-predynastic"@en ;
@@ -80,145 +81,145 @@ wd:Q206
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "crossref-predynastic"@en ;
     skos:prefLabel "crossref-predynastic"@en ;
-    p:P2 wds:Q206-0BEB3B9E-2D00-5E35-BC97-0DCAEE49E688,
-        wds:Q206-A3ED9600-94B1-5D77-941C-F9186FC93A35 ;
-    p:P106 wds:Q206-653977F7-A4F7-5C1D-B03D-AF5E6FEA2AD0 ;
-    p:P113 wds:Q206-A42CB29C-2EF4-58AE-A7DE-B791A1DB86F7 ;
-    p:P115 wds:Q206-6E65E1EF-A6F9-55EF-9D33-DA5CFDCA732B ;
-    p:P116 wds:Q206-E80FC59F-8E1D-5D45-BA65-494B94D3B24A ;
-    p:P117 wds:Q206-0B89CAF2-4A2D-5BEA-BA0F-AE919AD25DAB,
-        wds:Q206-5169830C-7F10-5D44-BD9C-27D1764F6399,
-        wds:Q206-11873044-1D84-54B9-A870-B1ECF64A76BF ;
-    p:P118 wds:Q206-EC556C74-61C1-5BDF-9734-5CC075E155EE ;
-    p:P119 wds:Q206-22B63C77-DCC3-5796-847E-40AB5292D3ED ;
-    p:P120 wds:Q206-0B36DF14-4C53-5597-A9A2-D17C396068F6 ;
-    p:P122 wds:Q206-4F4C362D-B010-5B63-99BC-F2F4C91D40D3,
-        wds:Q206-08187C2C-5E87-5ACA-B842-694997338529 ;
-    p:P125 wds:Q206-1B21C25A-F10E-5ED2-968E-3F09FFA9ED6D ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q210 ;
-    wdt:P115 <https://open-archaeo.info/post/crossref-predynastic/> ;
-    wdt:P116 "crossref-predynastic" ;
-    wdt:P117 wd:Q207,
-        wd:Q208,
-        wd:Q209 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "crossref-predynastic"@en ;
-    wdt:P120 <https://watrall.github.io/crossref-predynastic/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/watrall/crossref-predynastic> .
+    chbp:P2 chbs:Q206-0BEB3B9E-2D00-5E35-BC97-0DCAEE49E688,
+        chbs:Q206-A3ED9600-94B1-5D77-941C-F9186FC93A35 ;
+    chbp:P106 chbs:Q206-653977F7-A4F7-5C1D-B03D-AF5E6FEA2AD0 ;
+    chbp:P113 chbs:Q206-A42CB29C-2EF4-58AE-A7DE-B791A1DB86F7 ;
+    chbp:P115 chbs:Q206-6E65E1EF-A6F9-55EF-9D33-DA5CFDCA732B ;
+    chbp:P116 chbs:Q206-E80FC59F-8E1D-5D45-BA65-494B94D3B24A ;
+    chbp:P117 chbs:Q206-0B89CAF2-4A2D-5BEA-BA0F-AE919AD25DAB,
+        chbs:Q206-5169830C-7F10-5D44-BD9C-27D1764F6399,
+        chbs:Q206-11873044-1D84-54B9-A870-B1ECF64A76BF ;
+    chbp:P118 chbs:Q206-EC556C74-61C1-5BDF-9734-5CC075E155EE ;
+    chbp:P119 chbs:Q206-22B63C77-DCC3-5796-847E-40AB5292D3ED ;
+    chbp:P120 chbs:Q206-0B36DF14-4C53-5597-A9A2-D17C396068F6 ;
+    chbp:P122 chbs:Q206-4F4C362D-B010-5B63-99BC-F2F4C91D40D3,
+        chbs:Q206-08187C2C-5E87-5ACA-B842-694997338529 ;
+    chbp:P125 chbs:Q206-1B21C25A-F10E-5ED2-968E-3F09FFA9ED6D ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q210 ;
+    chbt:P115 <https://open-archaeo.info/post/crossref-predynastic/> ;
+    chbt:P116 "crossref-predynastic" ;
+    chbt:P117 chb:Q207,
+        chb:Q208,
+        chb:Q209 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "crossref-predynastic"@en ;
+    chbt:P120 <https://watrall.github.io/crossref-predynastic/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/watrall/crossref-predynastic> .
 
-wds:Q206-0B36DF14-4C53-5597-A9A2-D17C396068F6
+chbs:Q206-0B36DF14-4C53-5597-A9A2-D17C396068F6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P120 <https://watrall.github.io/crossref-predynastic/> .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P120 <https://watrall.github.io/crossref-predynastic/> .
 
-wds:Q206-0B89CAF2-4A2D-5BEA-BA0F-AE919AD25DAB
+chbs:Q206-0B89CAF2-4A2D-5BEA-BA0F-AE919AD25DAB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P117 wd:Q208 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P117 chb:Q208 .
 
-wds:Q206-0BEB3B9E-2D00-5E35-BC97-0DCAEE49E688
+chbs:Q206-0BEB3B9E-2D00-5E35-BC97-0DCAEE49E688
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P2 chb:Q102 .
 
-wds:Q206-1B21C25A-F10E-5ED2-968E-3F09FFA9ED6D
+chbs:Q206-1B21C25A-F10E-5ED2-968E-3F09FFA9ED6D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/watrall/crossref-predynastic> .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/watrall/crossref-predynastic> .
 
-wds:Q206-4F4C362D-B010-5B63-99BC-F2F4C91D40D3
+chbs:Q206-4F4C362D-B010-5B63-99BC-F2F4C91D40D3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P122 chb:Q109 .
 
-wds:Q206-6E65E1EF-A6F9-55EF-9D33-DA5CFDCA732B
+chbs:Q206-6E65E1EF-A6F9-55EF-9D33-DA5CFDCA732B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P115 <https://open-archaeo.info/post/crossref-predynastic/> .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P115 <https://open-archaeo.info/post/crossref-predynastic/> .
 
-wds:Q206-22B63C77-DCC3-5796-847E-40AB5292D3ED
+chbs:Q206-22B63C77-DCC3-5796-847E-40AB5292D3ED
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P119 "crossref-predynastic"@en .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P119 "crossref-predynastic"@en .
 
-wds:Q206-08187C2C-5E87-5ACA-B842-694997338529
+chbs:Q206-08187C2C-5E87-5ACA-B842-694997338529
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P122 chb:Q110 .
 
-wds:Q206-653977F7-A4F7-5C1D-B03D-AF5E6FEA2AD0
+chbs:Q206-653977F7-A4F7-5C1D-B03D-AF5E6FEA2AD0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P106 chb:Q110 .
 
-wds:Q206-5169830C-7F10-5D44-BD9C-27D1764F6399
+chbs:Q206-5169830C-7F10-5D44-BD9C-27D1764F6399
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P117 wd:Q209 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P117 chb:Q209 .
 
-wds:Q206-11873044-1D84-54B9-A870-B1ECF64A76BF
+chbs:Q206-11873044-1D84-54B9-A870-B1ECF64A76BF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P117 wd:Q207 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P117 chb:Q207 .
 
-wds:Q206-A3ED9600-94B1-5D77-941C-F9186FC93A35
+chbs:Q206-A3ED9600-94B1-5D77-941C-F9186FC93A35
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P2 chb:Q106 .
 
-wds:Q206-A42CB29C-2EF4-58AE-A7DE-B791A1DB86F7
+chbs:Q206-A42CB29C-2EF4-58AE-A7DE-B791A1DB86F7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q210 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q210 .
 
-wds:Q206-E80FC59F-8E1D-5D45-BA65-494B94D3B24A
+chbs:Q206-E80FC59F-8E1D-5D45-BA65-494B94D3B24A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "crossref-predynastic" .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "crossref-predynastic" .
 
-wds:Q206-EC556C74-61C1-5BDF-9734-5CC075E155EE
+chbs:Q206-EC556C74-61C1-5BDF-9734-5CC075E155EE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d ;
+    chbps:P118 chb:Q108 .
 
-wdref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d
+chbref:bc3f4e43c6d8903998cf787d125eb7ab7bc67f0d
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/crossref-predynastic/> .
+    chbpr:P6 <https://open-archaeo.info/post/crossref-predynastic/> .

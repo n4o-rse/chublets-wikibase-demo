@@ -1,53 +1,54 @@
 # Q192: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q192
+chbdata:Q192.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A scientific method and formal language for the Cultural Heritage domain that formalises complex interpretative philological phenomena such as virtual reconstructive hypotheses in a transparent and robust manner."@en ;
     dcterms:identifier "Q192" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q192 ;
+    dcterms:subject chb:Q192 ;
     dcterms:title "ExtendedMatrix"@en ;
-    schema:about wd:Q192 ;
-    dcat:distribution dist:Q192-html,
-        dist:Q192-json,
-        dist:Q192-ttl ;
+    schema:about chb:Q192 ;
+    dcat:distribution chbdist:Q192-html,
+        chbdist:Q192-json,
+        chbdist:Q192-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q192.html> .
 
-dist:Q192-html
+chbdist:Q192-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q192-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q192.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q192-json
+chbdist:Q192-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q192-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q192.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q192-ttl
+chbdist:Q192-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q192, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q192.ttl> ;
+    dcat:downloadURL chbdata:Q192.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q192
+chb:Q192
     a wikibase:Item ;
     schema:description "A scientific method and formal language for the Cultural Heritage domain that formalises complex interpretative philological phenomena such as virtual reconstructive hypotheses in a transparent and robust manner."@en ;
     schema:name "ExtendedMatrix"@en ;
@@ -80,156 +81,156 @@ wd:Q192
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "ExtendedMatrix"@en ;
     skos:prefLabel "ExtendedMatrix"@en ;
-    p:P2 wds:Q192-02A6C6E9-4FD0-5655-9435-646FD71DDD30,
-        wds:Q192-37D8319C-726A-5500-A9F5-314DB1284468 ;
-    p:P106 wds:Q192-813E98B2-B68C-53BD-9731-A3FAC6227094 ;
-    p:P111 wds:Q192-EF864DB6-5960-5C06-B291-A4B8F88C6C2A ;
-    p:P113 wds:Q192-1CE7E1A3-BB6B-514A-A420-9A8EE176F09E,
-        wds:Q192-4A98695C-FDA4-5506-B50D-DEF9273ED5FB,
-        wds:Q192-6E32E8D4-4BAE-560E-BE6A-C8BCC9FD920F ;
-    p:P115 wds:Q192-F2E6A30A-D476-594B-855E-68AB5FDEE050 ;
-    p:P116 wds:Q192-DC54E045-44C2-55A5-9261-A4B8FAB0C49E ;
-    p:P117 wds:Q192-37DF66CA-00F0-521B-8B16-01E41F2CE089 ;
-    p:P118 wds:Q192-D0E726E5-87B7-5691-A1B0-D73F6B3AFF78 ;
-    p:P119 wds:Q192-DE6D078A-8615-5035-BE68-E4FDD62941C5 ;
-    p:P120 wds:Q192-D08AA1A7-B142-5363-95BC-9A5A7DFCCEA2 ;
-    p:P122 wds:Q192-4E343CE9-B560-53D5-B901-4D702B460713,
-        wds:Q192-42A27FFB-D2EB-5EC1-977C-DC89E11DDC27 ;
-    p:P125 wds:Q192-134869B1-0ABD-5AC2-AA14-5966739A984A ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P111 wd:Q197 ;
-    wdt:P113 wd:Q194,
-        wd:Q195,
-        wd:Q196 ;
-    wdt:P115 <https://open-archaeo.info/post/extendedmatrix/> ;
-    wdt:P116 "extendedmatrix" ;
-    wdt:P117 wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ExtendedMatrix"@en ;
-    wdt:P120 <https://www.extendedmatrix.org/home> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/zalmoxes-laran/ExtendedMatrix> .
+    chbp:P2 chbs:Q192-02A6C6E9-4FD0-5655-9435-646FD71DDD30,
+        chbs:Q192-37D8319C-726A-5500-A9F5-314DB1284468 ;
+    chbp:P106 chbs:Q192-813E98B2-B68C-53BD-9731-A3FAC6227094 ;
+    chbp:P111 chbs:Q192-EF864DB6-5960-5C06-B291-A4B8F88C6C2A ;
+    chbp:P113 chbs:Q192-1CE7E1A3-BB6B-514A-A420-9A8EE176F09E,
+        chbs:Q192-4A98695C-FDA4-5506-B50D-DEF9273ED5FB,
+        chbs:Q192-6E32E8D4-4BAE-560E-BE6A-C8BCC9FD920F ;
+    chbp:P115 chbs:Q192-F2E6A30A-D476-594B-855E-68AB5FDEE050 ;
+    chbp:P116 chbs:Q192-DC54E045-44C2-55A5-9261-A4B8FAB0C49E ;
+    chbp:P117 chbs:Q192-37DF66CA-00F0-521B-8B16-01E41F2CE089 ;
+    chbp:P118 chbs:Q192-D0E726E5-87B7-5691-A1B0-D73F6B3AFF78 ;
+    chbp:P119 chbs:Q192-DE6D078A-8615-5035-BE68-E4FDD62941C5 ;
+    chbp:P120 chbs:Q192-D08AA1A7-B142-5363-95BC-9A5A7DFCCEA2 ;
+    chbp:P122 chbs:Q192-4E343CE9-B560-53D5-B901-4D702B460713,
+        chbs:Q192-42A27FFB-D2EB-5EC1-977C-DC89E11DDC27 ;
+    chbp:P125 chbs:Q192-134869B1-0ABD-5AC2-AA14-5966739A984A ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P111 chb:Q197 ;
+    chbt:P113 chb:Q194,
+        chb:Q195,
+        chb:Q196 ;
+    chbt:P115 <https://open-archaeo.info/post/extendedmatrix/> ;
+    chbt:P116 "extendedmatrix" ;
+    chbt:P117 chb:Q193 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ExtendedMatrix"@en ;
+    chbt:P120 <https://www.extendedmatrix.org/home> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/zalmoxes-laran/ExtendedMatrix> .
 
-wds:Q192-1CE7E1A3-BB6B-514A-A420-9A8EE176F09E
+chbs:Q192-1CE7E1A3-BB6B-514A-A420-9A8EE176F09E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q194 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q194 .
 
-wds:Q192-02A6C6E9-4FD0-5655-9435-646FD71DDD30
+chbs:Q192-02A6C6E9-4FD0-5655-9435-646FD71DDD30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P2 chb:Q102 .
 
-wds:Q192-4A98695C-FDA4-5506-B50D-DEF9273ED5FB
+chbs:Q192-4A98695C-FDA4-5506-B50D-DEF9273ED5FB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q195 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q195 .
 
-wds:Q192-4E343CE9-B560-53D5-B901-4D702B460713
+chbs:Q192-4E343CE9-B560-53D5-B901-4D702B460713
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P122 chb:Q110 .
 
-wds:Q192-6E32E8D4-4BAE-560E-BE6A-C8BCC9FD920F
+chbs:Q192-6E32E8D4-4BAE-560E-BE6A-C8BCC9FD920F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q196 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q196 .
 
-wds:Q192-37D8319C-726A-5500-A9F5-314DB1284468
+chbs:Q192-37D8319C-726A-5500-A9F5-314DB1284468
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P2 chb:Q106 .
 
-wds:Q192-37DF66CA-00F0-521B-8B16-01E41F2CE089
+chbs:Q192-37DF66CA-00F0-521B-8B16-01E41F2CE089
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P117 chb:Q193 .
 
-wds:Q192-42A27FFB-D2EB-5EC1-977C-DC89E11DDC27
+chbs:Q192-42A27FFB-D2EB-5EC1-977C-DC89E11DDC27
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P122 chb:Q109 .
 
-wds:Q192-813E98B2-B68C-53BD-9731-A3FAC6227094
+chbs:Q192-813E98B2-B68C-53BD-9731-A3FAC6227094
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P106 chb:Q110 .
 
-wds:Q192-134869B1-0ABD-5AC2-AA14-5966739A984A
+chbs:Q192-134869B1-0ABD-5AC2-AA14-5966739A984A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/zalmoxes-laran/ExtendedMatrix> .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/zalmoxes-laran/ExtendedMatrix> .
 
-wds:Q192-D0E726E5-87B7-5691-A1B0-D73F6B3AFF78
+chbs:Q192-D0E726E5-87B7-5691-A1B0-D73F6B3AFF78
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P118 chb:Q108 .
 
-wds:Q192-D08AA1A7-B142-5363-95BC-9A5A7DFCCEA2
+chbs:Q192-D08AA1A7-B142-5363-95BC-9A5A7DFCCEA2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P120 <https://www.extendedmatrix.org/home> .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P120 <https://www.extendedmatrix.org/home> .
 
-wds:Q192-DC54E045-44C2-55A5-9261-A4B8FAB0C49E
+chbs:Q192-DC54E045-44C2-55A5-9261-A4B8FAB0C49E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "extendedmatrix" .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "extendedmatrix" .
 
-wds:Q192-DE6D078A-8615-5035-BE68-E4FDD62941C5
+chbs:Q192-DE6D078A-8615-5035-BE68-E4FDD62941C5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P119 "ExtendedMatrix"@en .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P119 "ExtendedMatrix"@en .
 
-wds:Q192-EF864DB6-5960-5C06-B291-A4B8F88C6C2A
+chbs:Q192-EF864DB6-5960-5C06-B291-A4B8F88C6C2A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P111 wd:Q197 .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P111 chb:Q197 .
 
-wds:Q192-F2E6A30A-D476-594B-855E-68AB5FDEE050
+chbs:Q192-F2E6A30A-D476-594B-855E-68AB5FDEE050
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
-    ps:P115 <https://open-archaeo.info/post/extendedmatrix/> .
+    prov:wasDerivedFrom chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c ;
+    chbps:P115 <https://open-archaeo.info/post/extendedmatrix/> .
 
-wdref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c
+chbref:f2655162068be4fce56fdd4e67a11aa4dc56ef3c
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/extendedmatrix/> .
+    chbpr:P6 <https://open-archaeo.info/post/extendedmatrix/> .

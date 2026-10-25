@@ -1,53 +1,54 @@
 # Q729: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q729
+chbdata:Q729.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Computes morphological indices of spatial entities (e.g. parcels, buildings)."@en ;
     dcterms:identifier "Q729" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q729 ;
+    dcterms:subject chb:Q729 ;
     dcterms:title "mafa"@en ;
-    schema:about wd:Q729 ;
-    dcat:distribution dist:Q729-html,
-        dist:Q729-json,
-        dist:Q729-ttl ;
+    schema:about chb:Q729 ;
+    dcat:distribution chbdist:Q729-html,
+        chbdist:Q729-json,
+        chbdist:Q729-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q729.html> .
 
-dist:Q729-html
+chbdist:Q729-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q729-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q729.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q729-json
+chbdist:Q729-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q729-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q729.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q729-ttl
+chbdist:Q729-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q729, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q729.ttl> ;
+    dcat:downloadURL chbdata:Q729.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q729
+chb:Q729
     a wikibase:Item ;
     schema:description "Computes morphological indices of spatial entities (e.g. parcels, buildings)."@en ;
     schema:name "mafa"@en ;
@@ -80,136 +81,136 @@ wd:Q729
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "mafa"@en ;
     skos:prefLabel "mafa"@en ;
-    p:P2 wds:Q729-14F88878-C6FD-5E40-9242-E624EF3E5019,
-        wds:Q729-33D02AD0-E0D0-515F-A70D-DE726D8A6127 ;
-    p:P106 wds:Q729-D03EFA11-0B19-589C-A5E7-669245C7F697 ;
-    p:P113 wds:Q729-44BF0A61-538E-561C-8AB6-3D59E108B8CA ;
-    p:P115 wds:Q729-9025DA6A-FC77-5C48-AA00-1063CF215726 ;
-    p:P116 wds:Q729-EA8ABFD9-DB61-5868-8914-2B16BCFCD8A4 ;
-    p:P117 wds:Q729-1A2D4D27-2ADC-59F4-99D9-6420F71EF08B ;
-    p:P118 wds:Q729-E0F554B7-0AB3-5D50-87ED-6BD0CAFE48F0 ;
-    p:P119 wds:Q729-F9DFFB91-58A5-54F8-A067-76FE1BCF4DB7 ;
-    p:P120 wds:Q729-E405D675-A464-586C-9BD0-984D72AF4F5A ;
-    p:P122 wds:Q729-8F7C3EBF-8D27-5665-96EA-D952C98693B2,
-        wds:Q729-5656BDAA-5340-53E7-83AC-BE4DEFEC5BDB ;
-    p:P123 wds:Q729-8040EE91-4CEF-5BB3-AFB1-77613C9ED53C ;
-    p:P125 wds:Q729-5FAE9E2E-DECA-5235-A580-D9BE18DEFCC1 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q242 ;
-    wdt:P115 <https://open-archaeo.info/post/mafa/> ;
-    wdt:P116 "mafa" ;
-    wdt:P117 wd:Q119 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "mafa"@en ;
-    wdt:P120 <https://jgravier.github.io/mafa/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/JGravier/mafa> .
+    chbp:P2 chbs:Q729-14F88878-C6FD-5E40-9242-E624EF3E5019,
+        chbs:Q729-33D02AD0-E0D0-515F-A70D-DE726D8A6127 ;
+    chbp:P106 chbs:Q729-D03EFA11-0B19-589C-A5E7-669245C7F697 ;
+    chbp:P113 chbs:Q729-44BF0A61-538E-561C-8AB6-3D59E108B8CA ;
+    chbp:P115 chbs:Q729-9025DA6A-FC77-5C48-AA00-1063CF215726 ;
+    chbp:P116 chbs:Q729-EA8ABFD9-DB61-5868-8914-2B16BCFCD8A4 ;
+    chbp:P117 chbs:Q729-1A2D4D27-2ADC-59F4-99D9-6420F71EF08B ;
+    chbp:P118 chbs:Q729-E0F554B7-0AB3-5D50-87ED-6BD0CAFE48F0 ;
+    chbp:P119 chbs:Q729-F9DFFB91-58A5-54F8-A067-76FE1BCF4DB7 ;
+    chbp:P120 chbs:Q729-E405D675-A464-586C-9BD0-984D72AF4F5A ;
+    chbp:P122 chbs:Q729-8F7C3EBF-8D27-5665-96EA-D952C98693B2,
+        chbs:Q729-5656BDAA-5340-53E7-83AC-BE4DEFEC5BDB ;
+    chbp:P123 chbs:Q729-8040EE91-4CEF-5BB3-AFB1-77613C9ED53C ;
+    chbp:P125 chbs:Q729-5FAE9E2E-DECA-5235-A580-D9BE18DEFCC1 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q242 ;
+    chbt:P115 <https://open-archaeo.info/post/mafa/> ;
+    chbt:P116 "mafa" ;
+    chbt:P117 chb:Q119 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "mafa"@en ;
+    chbt:P120 <https://jgravier.github.io/mafa/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/JGravier/mafa> .
 
-wds:Q729-1A2D4D27-2ADC-59F4-99D9-6420F71EF08B
+chbs:Q729-1A2D4D27-2ADC-59F4-99D9-6420F71EF08B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P117 chb:Q119 .
 
-wds:Q729-5FAE9E2E-DECA-5235-A580-D9BE18DEFCC1
+chbs:Q729-5FAE9E2E-DECA-5235-A580-D9BE18DEFCC1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/JGravier/mafa> .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/JGravier/mafa> .
 
-wds:Q729-8F7C3EBF-8D27-5665-96EA-D952C98693B2
+chbs:Q729-8F7C3EBF-8D27-5665-96EA-D952C98693B2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q729-14F88878-C6FD-5E40-9242-E624EF3E5019
+chbs:Q729-14F88878-C6FD-5E40-9242-E624EF3E5019
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q729-33D02AD0-E0D0-515F-A70D-DE726D8A6127
+chbs:Q729-33D02AD0-E0D0-515F-A70D-DE726D8A6127
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q729-44BF0A61-538E-561C-8AB6-3D59E108B8CA
+chbs:Q729-44BF0A61-538E-561C-8AB6-3D59E108B8CA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q242 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q242 .
 
-wds:Q729-5656BDAA-5340-53E7-83AC-BE4DEFEC5BDB
+chbs:Q729-5656BDAA-5340-53E7-83AC-BE4DEFEC5BDB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q729-8040EE91-4CEF-5BB3-AFB1-77613C9ED53C
+chbs:Q729-8040EE91-4CEF-5BB3-AFB1-77613C9ED53C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q729-9025DA6A-FC77-5C48-AA00-1063CF215726
+chbs:Q729-9025DA6A-FC77-5C48-AA00-1063CF215726
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P115 <https://open-archaeo.info/post/mafa/> .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P115 <https://open-archaeo.info/post/mafa/> .
 
-wds:Q729-D03EFA11-0B19-589C-A5E7-669245C7F697
+chbs:Q729-D03EFA11-0B19-589C-A5E7-669245C7F697
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q729-E0F554B7-0AB3-5D50-87ED-6BD0CAFE48F0
+chbs:Q729-E0F554B7-0AB3-5D50-87ED-6BD0CAFE48F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q729-E405D675-A464-586C-9BD0-984D72AF4F5A
+chbs:Q729-E405D675-A464-586C-9BD0-984D72AF4F5A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P120 <https://jgravier.github.io/mafa/> .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P120 <https://jgravier.github.io/mafa/> .
 
-wds:Q729-EA8ABFD9-DB61-5868-8914-2B16BCFCD8A4
+chbs:Q729-EA8ABFD9-DB61-5868-8914-2B16BCFCD8A4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "mafa" .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "mafa" .
 
-wds:Q729-F9DFFB91-58A5-54F8-A067-76FE1BCF4DB7
+chbs:Q729-F9DFFB91-58A5-54F8-A067-76FE1BCF4DB7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
-    ps:P119 "mafa"@en .
+    prov:wasDerivedFrom chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108 ;
+    chbps:P119 "mafa"@en .
 
-wdref:ef8a798234c180a13e4b9d3027d13ecc9396a108
+chbref:ef8a798234c180a13e4b9d3027d13ecc9396a108
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/mafa/> .
+    chbpr:P6 <https://open-archaeo.info/post/mafa/> .

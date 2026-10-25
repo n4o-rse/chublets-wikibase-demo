@@ -1,53 +1,54 @@
 # Q461: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q461
+chbdata:Q461.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Calculate the capacity of a ceramic vessel, like an amphora."@en ;
     dcterms:identifier "Q461" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q461 ;
+    dcterms:subject chb:Q461 ;
     dcterms:title "kotyle"@en ;
-    schema:about wd:Q461 ;
-    dcat:distribution dist:Q461-html,
-        dist:Q461-json,
-        dist:Q461-ttl ;
+    schema:about chb:Q461 ;
+    dcat:distribution chbdist:Q461-html,
+        chbdist:Q461-json,
+        chbdist:Q461-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q461.html> .
 
-dist:Q461-html
+chbdist:Q461-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q461-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q461.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q461-json
+chbdist:Q461-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q461-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q461.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q461-ttl
+chbdist:Q461-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q461, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q461.ttl> ;
+    dcat:downloadURL chbdata:Q461.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q461
+chb:Q461
     a wikibase:Item ;
     schema:description "Calculate the capacity of a ceramic vessel, like an amphora."@en ;
     schema:name "kotyle"@en ;
@@ -80,153 +81,153 @@ wd:Q461
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "kotyle"@en ;
     skos:prefLabel "kotyle"@en ;
-    p:P2 wds:Q461-57F95732-220D-515A-87A1-1A21C630291E,
-        wds:Q461-DA076C24-85A5-5B03-B831-162CE663F954 ;
-    p:P106 wds:Q461-C16AA221-B7D8-5CAB-8F3C-F24394AD5853 ;
-    p:P113 wds:Q461-EBD5DB79-21D3-5683-83A3-D77A99617C3E ;
-    p:P115 wds:Q461-0464C903-A899-5D04-980F-AC9E6F68C96F ;
-    p:P116 wds:Q461-C1340A39-E4A2-5D3D-8D37-36F26A8F3EC3 ;
-    p:P117 wds:Q461-05CE8B7E-D334-5A3E-990F-79A3EE36593F,
-        wds:Q461-22BACB6D-8226-5A62-8882-0FFB491A0491 ;
-    p:P118 wds:Q461-C29F7F94-5985-5B0D-9D44-90F23EFDB975 ;
-    p:P119 wds:Q461-BBDE6A94-6328-5790-BC63-CE061D63E3E3 ;
-    p:P120 wds:Q461-BA04A67E-7F8D-500A-BB71-C4A8A1DECD2A ;
-    p:P122 wds:Q461-ECDEC88F-E500-5CF5-AF77-1E6F271B4A96,
-        wds:Q461-F41DD2C8-E6D7-579B-A563-1C0B1F49ACE7 ;
-    p:P123 wds:Q461-CD077343-20F8-5A2B-AB44-61E95B152BDF ;
-    p:P125 wds:Q461-3798DFB5-2089-575B-B16D-376A11BE3905 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q183 ;
-    wdt:P115 <https://open-archaeo.info/post/kotyle/> ;
-    wdt:P116 "kotyle" ;
-    wdt:P117 wd:Q222,
-        wd:Q228 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "kotyle"@en ;
-    wdt:P120 <https://kotyle.readthedocs.io/en/latest/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://codeberg.org/steko/kotyle> .
+    chbp:P2 chbs:Q461-57F95732-220D-515A-87A1-1A21C630291E,
+        chbs:Q461-DA076C24-85A5-5B03-B831-162CE663F954 ;
+    chbp:P106 chbs:Q461-C16AA221-B7D8-5CAB-8F3C-F24394AD5853 ;
+    chbp:P113 chbs:Q461-EBD5DB79-21D3-5683-83A3-D77A99617C3E ;
+    chbp:P115 chbs:Q461-0464C903-A899-5D04-980F-AC9E6F68C96F ;
+    chbp:P116 chbs:Q461-C1340A39-E4A2-5D3D-8D37-36F26A8F3EC3 ;
+    chbp:P117 chbs:Q461-05CE8B7E-D334-5A3E-990F-79A3EE36593F,
+        chbs:Q461-22BACB6D-8226-5A62-8882-0FFB491A0491 ;
+    chbp:P118 chbs:Q461-C29F7F94-5985-5B0D-9D44-90F23EFDB975 ;
+    chbp:P119 chbs:Q461-BBDE6A94-6328-5790-BC63-CE061D63E3E3 ;
+    chbp:P120 chbs:Q461-BA04A67E-7F8D-500A-BB71-C4A8A1DECD2A ;
+    chbp:P122 chbs:Q461-ECDEC88F-E500-5CF5-AF77-1E6F271B4A96,
+        chbs:Q461-F41DD2C8-E6D7-579B-A563-1C0B1F49ACE7 ;
+    chbp:P123 chbs:Q461-CD077343-20F8-5A2B-AB44-61E95B152BDF ;
+    chbp:P125 chbs:Q461-3798DFB5-2089-575B-B16D-376A11BE3905 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q183 ;
+    chbt:P115 <https://open-archaeo.info/post/kotyle/> ;
+    chbt:P116 "kotyle" ;
+    chbt:P117 chb:Q222,
+        chb:Q228 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "kotyle"@en ;
+    chbt:P120 <https://kotyle.readthedocs.io/en/latest/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://codeberg.org/steko/kotyle> .
 
-wds:Q461-05CE8B7E-D334-5A3E-990F-79A3EE36593F
+chbs:Q461-05CE8B7E-D334-5A3E-990F-79A3EE36593F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P117 wd:Q222 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P117 chb:Q222 .
 
-wds:Q461-22BACB6D-8226-5A62-8882-0FFB491A0491
+chbs:Q461-22BACB6D-8226-5A62-8882-0FFB491A0491
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P117 wd:Q228 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P117 chb:Q228 .
 
-wds:Q461-57F95732-220D-515A-87A1-1A21C630291E
+chbs:Q461-57F95732-220D-515A-87A1-1A21C630291E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P2 chb:Q106 .
 
-wds:Q461-0464C903-A899-5D04-980F-AC9E6F68C96F
+chbs:Q461-0464C903-A899-5D04-980F-AC9E6F68C96F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P115 <https://open-archaeo.info/post/kotyle/> .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P115 <https://open-archaeo.info/post/kotyle/> .
 
-wds:Q461-3798DFB5-2089-575B-B16D-376A11BE3905
+chbs:Q461-3798DFB5-2089-575B-B16D-376A11BE3905
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    pq:P104 "2020-06-23T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/codeberg.org-steko-kotyle_-_2020-06-23_23-00-02> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:cf189f5ad1bb7a705a1c01b7b17090a2 ;
-    ps:P125 <https://codeberg.org/steko/kotyle> .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbpq:P104 "2020-06-23T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/codeberg.org-steko-kotyle_-_2020-06-23_23-00-02> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:cf189f5ad1bb7a705a1c01b7b17090a2 ;
+    chbps:P125 <https://codeberg.org/steko/kotyle> .
 
-wds:Q461-BA04A67E-7F8D-500A-BB71-C4A8A1DECD2A
+chbs:Q461-BA04A67E-7F8D-500A-BB71-C4A8A1DECD2A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P120 <https://kotyle.readthedocs.io/en/latest/> .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P120 <https://kotyle.readthedocs.io/en/latest/> .
 
-wds:Q461-BBDE6A94-6328-5790-BC63-CE061D63E3E3
+chbs:Q461-BBDE6A94-6328-5790-BC63-CE061D63E3E3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P119 "kotyle"@en .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P119 "kotyle"@en .
 
-wds:Q461-C16AA221-B7D8-5CAB-8F3C-F24394AD5853
+chbs:Q461-C16AA221-B7D8-5CAB-8F3C-F24394AD5853
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P106 chb:Q110 .
 
-wds:Q461-C29F7F94-5985-5B0D-9D44-90F23EFDB975
+chbs:Q461-C29F7F94-5985-5B0D-9D44-90F23EFDB975
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P118 chb:Q108 .
 
-wds:Q461-C1340A39-E4A2-5D3D-8D37-36F26A8F3EC3
+chbs:Q461-C1340A39-E4A2-5D3D-8D37-36F26A8F3EC3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "kotyle" .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "kotyle" .
 
-wds:Q461-CD077343-20F8-5A2B-AB44-61E95B152BDF
+chbs:Q461-CD077343-20F8-5A2B-AB44-61E95B152BDF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P123 chb:Q370 .
 
-wds:Q461-DA076C24-85A5-5B03-B831-162CE663F954
+chbs:Q461-DA076C24-85A5-5B03-B831-162CE663F954
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P2 chb:Q103 .
 
-wds:Q461-EBD5DB79-21D3-5683-83A3-D77A99617C3E
+chbs:Q461-EBD5DB79-21D3-5683-83A3-D77A99617C3E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q183 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q183 .
 
-wds:Q461-ECDEC88F-E500-5CF5-AF77-1E6F271B4A96
+chbs:Q461-ECDEC88F-E500-5CF5-AF77-1E6F271B4A96
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P122 chb:Q110 .
 
-wds:Q461-F41DD2C8-E6D7-579B-A563-1C0B1F49ACE7
+chbs:Q461-F41DD2C8-E6D7-579B-A563-1C0B1F49ACE7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d ;
+    chbps:P122 chb:Q109 .
 
-wdref:1b351bcc6d5e6af3a7f23aef50176a159205851d
+chbref:1b351bcc6d5e6af3a7f23aef50176a159205851d
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/kotyle/> .
+    chbpr:P6 <https://open-archaeo.info/post/kotyle/> .
 
-wdv:cf189f5ad1bb7a705a1c01b7b17090a2
+chbv:cf189f5ad1bb7a705a1c01b7b17090a2
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

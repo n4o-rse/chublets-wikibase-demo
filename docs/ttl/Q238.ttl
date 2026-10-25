@@ -1,53 +1,54 @@
 # Q238: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q238
+chbdata:Q238.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Provides a comprehensive suite of tools for processing, detecting, and analyzing pottery fragments from scanned documents."@en ;
     dcterms:identifier "Q238" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q238 ;
+    dcterms:subject chb:Q238 ;
     dcterms:title "PyPotteryLens"@en ;
-    schema:about wd:Q238 ;
-    dcat:distribution dist:Q238-html,
-        dist:Q238-json,
-        dist:Q238-ttl ;
+    schema:about chb:Q238 ;
+    dcat:distribution chbdist:Q238-html,
+        chbdist:Q238-json,
+        chbdist:Q238-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q238.html> .
 
-dist:Q238-html
+chbdist:Q238-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q238-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q238.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q238-json
+chbdist:Q238-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q238-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q238.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q238-ttl
+chbdist:Q238-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q238, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q238.ttl> ;
+    dcat:downloadURL chbdata:Q238.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q238
+chb:Q238
     a wikibase:Item ;
     schema:description "Provides a comprehensive suite of tools for processing, detecting, and analyzing pottery fragments from scanned documents."@en ;
     schema:name "PyPotteryLens"@en ;
@@ -80,145 +81,145 @@ wd:Q238
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "PyPotteryLens"@en ;
     skos:prefLabel "PyPotteryLens"@en ;
-    p:P2 wds:Q238-39BDBDB8-31B7-5A7F-8774-40EFC02A1E97,
-        wds:Q238-D4F98C12-EAFE-5EB1-B6DC-DC46E096D4B1 ;
-    p:P106 wds:Q238-7AAC908E-B568-58F1-BF78-22CDD7859AF0 ;
-    p:P113 wds:Q238-14B3357C-BFCD-5FE8-912F-1A4AE614BD9F ;
-    p:P115 wds:Q238-60539F3A-8A40-5411-86A4-E8C6B9082DBB ;
-    p:P116 wds:Q238-44916713-EB84-5ED0-AF2F-313E3241F17F ;
-    p:P117 wds:Q238-0C0095CB-C8D7-52B0-A065-5ABAF97F3FEB,
-        wds:Q238-91B251FD-23F8-5E97-97C0-81DEEA347F29,
-        wds:Q238-C3327263-0626-5B74-A520-FEFCE9C31BB2 ;
-    p:P118 wds:Q238-1F7CE40A-A6A9-506B-B25D-69C2F598751A ;
-    p:P119 wds:Q238-DF24A50C-88D3-5D7D-BEA5-80FFE36F203D ;
-    p:P122 wds:Q238-2CAAF072-7FE3-586E-93D3-E302D9C8FED2,
-        wds:Q238-6AA4A758-07DF-57B0-86BE-19A96DC990C1 ;
-    p:P123 wds:Q238-6B21B513-DD55-534A-9A54-D9F2D5BCD88F ;
-    p:P125 wds:Q238-05C790B7-ABC4-5233-BC74-19E97CD2A5E5 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q240 ;
-    wdt:P115 <https://open-archaeo.info/post/pypotterylens/> ;
-    wdt:P116 "pypotterylens" ;
-    wdt:P117 wd:Q181,
-        wd:Q228,
-        wd:Q239 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "PyPotteryLens"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/lrncrd/PyPotteryLens> .
+    chbp:P2 chbs:Q238-39BDBDB8-31B7-5A7F-8774-40EFC02A1E97,
+        chbs:Q238-D4F98C12-EAFE-5EB1-B6DC-DC46E096D4B1 ;
+    chbp:P106 chbs:Q238-7AAC908E-B568-58F1-BF78-22CDD7859AF0 ;
+    chbp:P113 chbs:Q238-14B3357C-BFCD-5FE8-912F-1A4AE614BD9F ;
+    chbp:P115 chbs:Q238-60539F3A-8A40-5411-86A4-E8C6B9082DBB ;
+    chbp:P116 chbs:Q238-44916713-EB84-5ED0-AF2F-313E3241F17F ;
+    chbp:P117 chbs:Q238-0C0095CB-C8D7-52B0-A065-5ABAF97F3FEB,
+        chbs:Q238-91B251FD-23F8-5E97-97C0-81DEEA347F29,
+        chbs:Q238-C3327263-0626-5B74-A520-FEFCE9C31BB2 ;
+    chbp:P118 chbs:Q238-1F7CE40A-A6A9-506B-B25D-69C2F598751A ;
+    chbp:P119 chbs:Q238-DF24A50C-88D3-5D7D-BEA5-80FFE36F203D ;
+    chbp:P122 chbs:Q238-2CAAF072-7FE3-586E-93D3-E302D9C8FED2,
+        chbs:Q238-6AA4A758-07DF-57B0-86BE-19A96DC990C1 ;
+    chbp:P123 chbs:Q238-6B21B513-DD55-534A-9A54-D9F2D5BCD88F ;
+    chbp:P125 chbs:Q238-05C790B7-ABC4-5233-BC74-19E97CD2A5E5 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q240 ;
+    chbt:P115 <https://open-archaeo.info/post/pypotterylens/> ;
+    chbt:P116 "pypotterylens" ;
+    chbt:P117 chb:Q181,
+        chb:Q228,
+        chb:Q239 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "PyPotteryLens"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/lrncrd/PyPotteryLens> .
 
-wds:Q238-0C0095CB-C8D7-52B0-A065-5ABAF97F3FEB
+chbs:Q238-0C0095CB-C8D7-52B0-A065-5ABAF97F3FEB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P117 wd:Q239 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P117 chb:Q239 .
 
-wds:Q238-1F7CE40A-A6A9-506B-B25D-69C2F598751A
+chbs:Q238-1F7CE40A-A6A9-506B-B25D-69C2F598751A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P118 chb:Q108 .
 
-wds:Q238-2CAAF072-7FE3-586E-93D3-E302D9C8FED2
+chbs:Q238-2CAAF072-7FE3-586E-93D3-E302D9C8FED2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P122 chb:Q109 .
 
-wds:Q238-05C790B7-ABC4-5233-BC74-19E97CD2A5E5
+chbs:Q238-05C790B7-ABC4-5233-BC74-19E97CD2A5E5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/lrncrd/PyPotteryLens> .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/lrncrd/PyPotteryLens> .
 
-wds:Q238-6AA4A758-07DF-57B0-86BE-19A96DC990C1
+chbs:Q238-6AA4A758-07DF-57B0-86BE-19A96DC990C1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P122 chb:Q110 .
 
-wds:Q238-6B21B513-DD55-534A-9A54-D9F2D5BCD88F
+chbs:Q238-6B21B513-DD55-534A-9A54-D9F2D5BCD88F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P123 chb:Q370 .
 
-wds:Q238-7AAC908E-B568-58F1-BF78-22CDD7859AF0
+chbs:Q238-7AAC908E-B568-58F1-BF78-22CDD7859AF0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P106 chb:Q110 .
 
-wds:Q238-14B3357C-BFCD-5FE8-912F-1A4AE614BD9F
+chbs:Q238-14B3357C-BFCD-5FE8-912F-1A4AE614BD9F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q240 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q240 .
 
-wds:Q238-39BDBDB8-31B7-5A7F-8774-40EFC02A1E97
+chbs:Q238-39BDBDB8-31B7-5A7F-8774-40EFC02A1E97
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P2 chb:Q102 .
 
-wds:Q238-91B251FD-23F8-5E97-97C0-81DEEA347F29
+chbs:Q238-91B251FD-23F8-5E97-97C0-81DEEA347F29
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P117 wd:Q181 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P117 chb:Q181 .
 
-wds:Q238-60539F3A-8A40-5411-86A4-E8C6B9082DBB
+chbs:Q238-60539F3A-8A40-5411-86A4-E8C6B9082DBB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P115 <https://open-archaeo.info/post/pypotterylens/> .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P115 <https://open-archaeo.info/post/pypotterylens/> .
 
-wds:Q238-44916713-EB84-5ED0-AF2F-313E3241F17F
+chbs:Q238-44916713-EB84-5ED0-AF2F-313E3241F17F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "pypotterylens" .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "pypotterylens" .
 
-wds:Q238-C3327263-0626-5B74-A520-FEFCE9C31BB2
+chbs:Q238-C3327263-0626-5B74-A520-FEFCE9C31BB2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P117 wd:Q228 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P117 chb:Q228 .
 
-wds:Q238-D4F98C12-EAFE-5EB1-B6DC-DC46E096D4B1
+chbs:Q238-D4F98C12-EAFE-5EB1-B6DC-DC46E096D4B1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P2 chb:Q106 .
 
-wds:Q238-DF24A50C-88D3-5D7D-BEA5-80FFE36F203D
+chbs:Q238-DF24A50C-88D3-5D7D-BEA5-80FFE36F203D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
-    ps:P119 "PyPotteryLens"@en .
+    prov:wasDerivedFrom chbref:929285318fdf72b6fbe32139bb54d7b01252d59d ;
+    chbps:P119 "PyPotteryLens"@en .
 
-wdref:929285318fdf72b6fbe32139bb54d7b01252d59d
+chbref:929285318fdf72b6fbe32139bb54d7b01252d59d
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/pypotterylens/> .
+    chbpr:P6 <https://open-archaeo.info/post/pypotterylens/> .

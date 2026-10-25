@@ -1,53 +1,54 @@
 # Q531: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q531
+chbdata:Q531.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Semi-automated 3D digital method to systematically quantify stone tool edge angle and design."@en ;
     dcterms:identifier "Q531" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q531 ;
+    dcterms:subject chb:Q531 ;
     dcterms:title "3D_EdgeAngle"@en ;
-    schema:about wd:Q531 ;
-    dcat:distribution dist:Q531-html,
-        dist:Q531-json,
-        dist:Q531-ttl ;
+    schema:about chb:Q531 ;
+    dcat:distribution chbdist:Q531-html,
+        chbdist:Q531-json,
+        chbdist:Q531-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q531.html> .
 
-dist:Q531-html
+chbdist:Q531-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q531-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q531.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q531-json
+chbdist:Q531-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q531-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q531.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q531-ttl
+chbdist:Q531-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q531, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q531.ttl> ;
+    dcat:downloadURL chbdata:Q531.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q531
+chb:Q531
     a wikibase:Item ;
     schema:description "Semi-automated 3D digital method to systematically quantify stone tool edge angle and design."@en ;
     schema:name "3D_EdgeAngle"@en ;
@@ -80,165 +81,165 @@ wd:Q531
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "3D_EdgeAngle"@en ;
     skos:prefLabel "3D_EdgeAngle"@en ;
-    p:P2 wds:Q531-508BA359-1FFD-5D51-98C4-53F54BD79065,
-        wds:Q531-9829549D-61F6-5BA2-919C-1A645D733B5B ;
-    p:P106 wds:Q531-2898C1C9-CE8F-5314-A18E-5BEA5D80EC7B ;
-    p:P113 wds:Q531-2F350AA4-B7F3-5B71-A8E4-03B420B4EC8B,
-        wds:Q531-92DB1786-0AE1-5004-B9A8-063DBE25C697,
-        wds:Q531-EABABE61-323D-5E40-B52F-4D77B1DF9BE8 ;
-    p:P114 wds:Q531-23A183C4-E0FC-59C9-A41C-580A5C209A98 ;
-    p:P115 wds:Q531-9AA63EA0-F9A5-5733-B654-3950F0020192 ;
-    p:P116 wds:Q531-85B16BE5-29B5-5F05-9A85-80FF4D7FA1EB ;
-    p:P117 wds:Q531-48495530-BAB1-5D13-960A-830E37F5DC30,
-        wds:Q531-EEF8BF81-B2D6-5C66-80F4-254615AC06ED ;
-    p:P118 wds:Q531-BAB40665-6003-5F9B-9C72-97B67F354FE7 ;
-    p:P119 wds:Q531-1AD56576-696A-54F5-9C93-B76779B2720E ;
-    p:P122 wds:Q531-13892CFD-2119-5EBB-9E28-E6A665D651B3,
-        wds:Q531-B908522E-40AD-5D2A-A599-86E2F39E3A4F ;
-    p:P123 wds:Q531-DD87F76C-EF67-5EA9-A2FB-1296AF037E27 ;
-    p:P125 wds:Q531-49619B4A-1A41-54D2-92EE-A3918FCC3258 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q532,
-        wd:Q533,
-        wd:Q534 ;
-    wdt:P114 "10.5281/zenodo.7956767" ;
-    wdt:P115 <https://open-archaeo.info/post/3d-edgeangle/> ;
-    wdt:P116 "3d-edgeangle" ;
-    wdt:P117 wd:Q204,
-        wd:Q228 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "3D_EdgeAngle"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/lschunk/3D_EdgeAngle> .
+    chbp:P2 chbs:Q531-508BA359-1FFD-5D51-98C4-53F54BD79065,
+        chbs:Q531-9829549D-61F6-5BA2-919C-1A645D733B5B ;
+    chbp:P106 chbs:Q531-2898C1C9-CE8F-5314-A18E-5BEA5D80EC7B ;
+    chbp:P113 chbs:Q531-2F350AA4-B7F3-5B71-A8E4-03B420B4EC8B,
+        chbs:Q531-92DB1786-0AE1-5004-B9A8-063DBE25C697,
+        chbs:Q531-EABABE61-323D-5E40-B52F-4D77B1DF9BE8 ;
+    chbp:P114 chbs:Q531-23A183C4-E0FC-59C9-A41C-580A5C209A98 ;
+    chbp:P115 chbs:Q531-9AA63EA0-F9A5-5733-B654-3950F0020192 ;
+    chbp:P116 chbs:Q531-85B16BE5-29B5-5F05-9A85-80FF4D7FA1EB ;
+    chbp:P117 chbs:Q531-48495530-BAB1-5D13-960A-830E37F5DC30,
+        chbs:Q531-EEF8BF81-B2D6-5C66-80F4-254615AC06ED ;
+    chbp:P118 chbs:Q531-BAB40665-6003-5F9B-9C72-97B67F354FE7 ;
+    chbp:P119 chbs:Q531-1AD56576-696A-54F5-9C93-B76779B2720E ;
+    chbp:P122 chbs:Q531-13892CFD-2119-5EBB-9E28-E6A665D651B3,
+        chbs:Q531-B908522E-40AD-5D2A-A599-86E2F39E3A4F ;
+    chbp:P123 chbs:Q531-DD87F76C-EF67-5EA9-A2FB-1296AF037E27 ;
+    chbp:P125 chbs:Q531-49619B4A-1A41-54D2-92EE-A3918FCC3258 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q532,
+        chb:Q533,
+        chb:Q534 ;
+    chbt:P114 "10.5281/zenodo.7956767" ;
+    chbt:P115 <https://open-archaeo.info/post/3d-edgeangle/> ;
+    chbt:P116 "3d-edgeangle" ;
+    chbt:P117 chb:Q204,
+        chb:Q228 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "3D_EdgeAngle"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/lschunk/3D_EdgeAngle> .
 
-wds:Q531-1AD56576-696A-54F5-9C93-B76779B2720E
+chbs:Q531-1AD56576-696A-54F5-9C93-B76779B2720E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P119 "3D_EdgeAngle"@en .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P119 "3D_EdgeAngle"@en .
 
-wds:Q531-2F350AA4-B7F3-5B71-A8E4-03B420B4EC8B
+chbs:Q531-2F350AA4-B7F3-5B71-A8E4-03B420B4EC8B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q533 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q533 .
 
-wds:Q531-9AA63EA0-F9A5-5733-B654-3950F0020192
+chbs:Q531-9AA63EA0-F9A5-5733-B654-3950F0020192
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P115 <https://open-archaeo.info/post/3d-edgeangle/> .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P115 <https://open-archaeo.info/post/3d-edgeangle/> .
 
-wds:Q531-23A183C4-E0FC-59C9-A41C-580A5C209A98
+chbs:Q531-23A183C4-E0FC-59C9-A41C-580A5C209A98
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P114 "10.5281/zenodo.7956767" .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P114 "10.5281/zenodo.7956767" .
 
-wds:Q531-85B16BE5-29B5-5F05-9A85-80FF4D7FA1EB
+chbs:Q531-85B16BE5-29B5-5F05-9A85-80FF4D7FA1EB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "3d-edgeangle" .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "3d-edgeangle" .
 
-wds:Q531-92DB1786-0AE1-5004-B9A8-063DBE25C697
+chbs:Q531-92DB1786-0AE1-5004-B9A8-063DBE25C697
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q532 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q532 .
 
-wds:Q531-508BA359-1FFD-5D51-98C4-53F54BD79065
+chbs:Q531-508BA359-1FFD-5D51-98C4-53F54BD79065
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q531-2898C1C9-CE8F-5314-A18E-5BEA5D80EC7B
+chbs:Q531-2898C1C9-CE8F-5314-A18E-5BEA5D80EC7B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q531-13892CFD-2119-5EBB-9E28-E6A665D651B3
+chbs:Q531-13892CFD-2119-5EBB-9E28-E6A665D651B3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q531-49619B4A-1A41-54D2-92EE-A3918FCC3258
+chbs:Q531-49619B4A-1A41-54D2-92EE-A3918FCC3258
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/lschunk/3D_EdgeAngle> .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/lschunk/3D_EdgeAngle> .
 
-wds:Q531-9829549D-61F6-5BA2-919C-1A645D733B5B
+chbs:Q531-9829549D-61F6-5BA2-919C-1A645D733B5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q531-48495530-BAB1-5D13-960A-830E37F5DC30
+chbs:Q531-48495530-BAB1-5D13-960A-830E37F5DC30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P117 wd:Q204 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P117 chb:Q204 .
 
-wds:Q531-B908522E-40AD-5D2A-A599-86E2F39E3A4F
+chbs:Q531-B908522E-40AD-5D2A-A599-86E2F39E3A4F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q531-BAB40665-6003-5F9B-9C72-97B67F354FE7
+chbs:Q531-BAB40665-6003-5F9B-9C72-97B67F354FE7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q531-DD87F76C-EF67-5EA9-A2FB-1296AF037E27
+chbs:Q531-DD87F76C-EF67-5EA9-A2FB-1296AF037E27
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q531-EABABE61-323D-5E40-B52F-4D77B1DF9BE8
+chbs:Q531-EABABE61-323D-5E40-B52F-4D77B1DF9BE8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q534 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q534 .
 
-wds:Q531-EEF8BF81-B2D6-5C66-80F4-254615AC06ED
+chbs:Q531-EEF8BF81-B2D6-5C66-80F4-254615AC06ED
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
-    ps:P117 wd:Q228 .
+    prov:wasDerivedFrom chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0 ;
+    chbps:P117 chb:Q228 .
 
-wdref:b213f9273e543ee41d55a29414d62bb30bc77aa0
+chbref:b213f9273e543ee41d55a29414d62bb30bc77aa0
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/3d-edgeangle/> .
+    chbpr:P6 <https://open-archaeo.info/post/3d-edgeangle/> .

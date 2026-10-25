@@ -1,55 +1,56 @@
 # Q358: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q358
+chbdata:Q358.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Eine Ontologie und Web-App zur Modellierung von Vagheit im Graphen mit integriertem Reasoning."@de,
         "ontology and webapp for modelling vagueness in graphs including reasoning"@en ;
     dcterms:identifier "Q358" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q358 ;
+    dcterms:subject chb:Q358 ;
     dcterms:title "Academic Meta Tool (AMT)"@de,
         "Academic Meta Tool (AMT)"@en ;
-    schema:about wd:Q358 ;
-    dcat:distribution dist:Q358-html,
-        dist:Q358-json,
-        dist:Q358-ttl ;
+    schema:about chb:Q358 ;
+    dcat:distribution chbdist:Q358-html,
+        chbdist:Q358-json,
+        chbdist:Q358-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q358.html> .
 
-dist:Q358-html
+chbdist:Q358-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -57,7 +58,7 @@ dist:Q358-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q358.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q358-json
+chbdist:Q358-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -66,15 +67,15 @@ dist:Q358-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q358.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q358-ttl
+chbdist:Q358-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q358, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q358.ttl> ;
+    dcat:downloadURL chbdata:Q358.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q358
+chb:Q358
     a wikibase:Item ;
     schema:description "Eine Ontologie und Web-App zur Modellierung von Vagheit im Graphen mit integriertem Reasoning."@de,
         "ontology and webapp for modelling vagueness in graphs including reasoning"@en ;
@@ -88,204 +89,204 @@ wd:Q358
         "AMT"@en ;
     skos:prefLabel "Academic Meta Tool (AMT)"@de,
         "Academic Meta Tool (AMT)"@en ;
-    p:P2 wds:Q358-9E5494C5-8463-510F-A849-9555FEC11E37,
-        wds:Q358-73E89E6A-9815-543E-9EEA-CA7060399673,
-        wds:Q358-C6944BFB-3E9A-5D4E-AE28-FE5B67458465,
-        wds:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1 ;
-    p:P4 wds:Q358-9D950A77-08CD-5A1D-9EB8-FD0582E2546F ;
-    p:P107 wds:Q358-8D12BB7A-2723-504E-934F-2A987F669E1F ;
-    p:P113 wds:Q358-2EF705B6-A5DF-5658-B758-A2784D801EFD,
-        wds:Q358-27BC3B11-2B2F-5AFF-A3E0-AC7DB74C3934,
-        wds:Q358-44AC366F-3755-599D-88ED-BE877CF57F49,
-        wds:Q358-6630B41F-9232-524C-A468-CDB70D0F140F ;
-    p:P120 wds:Q358-B61C5573-747E-5EA8-BDEE-D18D9B5CE81C ;
-    p:P123 wds:Q358-11FF88AC-E512-50E7-A062-279E9359C0CF,
-        wds:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B ;
-    p:P125 wds:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E,
-        wds:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80 ;
-    p:P137 wds:Q358-DE043553-5D3A-5759-B455-A08A8B49A0A1 ;
-    p:P204 wds:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72,
-        wds:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54 ;
-    wdt:P2 wd:Q100,
-        wd:Q105,
-        wd:Q106,
-        wd:Q372 ;
-    wdt:P4 "Q74003194" ;
-    wdt:P107 wd:Q369 ;
-    wdt:P113 wd:Q365,
-        wd:Q366,
-        wd:Q367,
-        wd:Q368 ;
-    wdt:P120 <http://academic-meta-tool.xyz> ;
-    wdt:P123 wd:Q370,
-        wd:Q371 ;
-    wdt:P125 <https://github.com/n4o-rse/amt-engine>,
+    chbp:P2 chbs:Q358-9E5494C5-8463-510F-A849-9555FEC11E37,
+        chbs:Q358-73E89E6A-9815-543E-9EEA-CA7060399673,
+        chbs:Q358-C6944BFB-3E9A-5D4E-AE28-FE5B67458465,
+        chbs:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1 ;
+    chbp:P4 chbs:Q358-9D950A77-08CD-5A1D-9EB8-FD0582E2546F ;
+    chbp:P107 chbs:Q358-8D12BB7A-2723-504E-934F-2A987F669E1F ;
+    chbp:P113 chbs:Q358-2EF705B6-A5DF-5658-B758-A2784D801EFD,
+        chbs:Q358-27BC3B11-2B2F-5AFF-A3E0-AC7DB74C3934,
+        chbs:Q358-44AC366F-3755-599D-88ED-BE877CF57F49,
+        chbs:Q358-6630B41F-9232-524C-A468-CDB70D0F140F ;
+    chbp:P120 chbs:Q358-B61C5573-747E-5EA8-BDEE-D18D9B5CE81C ;
+    chbp:P123 chbs:Q358-11FF88AC-E512-50E7-A062-279E9359C0CF,
+        chbs:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B ;
+    chbp:P125 chbs:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E,
+        chbs:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80 ;
+    chbp:P137 chbs:Q358-DE043553-5D3A-5759-B455-A08A8B49A0A1 ;
+    chbp:P204 chbs:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72,
+        chbs:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54 ;
+    chbt:P2 chb:Q100,
+        chb:Q105,
+        chb:Q106,
+        chb:Q372 ;
+    chbt:P4 "Q74003194" ;
+    chbt:P107 chb:Q369 ;
+    chbt:P113 chb:Q365,
+        chb:Q366,
+        chb:Q367,
+        chb:Q368 ;
+    chbt:P120 <http://academic-meta-tool.xyz> ;
+    chbt:P123 chb:Q370,
+        chb:Q371 ;
+    chbt:P125 <https://github.com/n4o-rse/amt-engine>,
         <https://github.com/n4o-rse/amt-runner> ;
-    wdt:P137 "2017-01-01T00:00:00Z"^^xsd:dateTime ;
-    wdt:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png>,
+    chbt:P137 "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+    chbt:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png>,
         <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20RoleChainAxiom.png> .
 
-wds:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E
+chbs:Q358-1FB56E11-D05B-5E60-A7F2-22FEA47D486E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    pq:P126 wd:Q114 ;
-    pq:P248 wd:Q363 ;
-    ps:P125 <https://github.com/n4o-rse/amt-runner> .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbpq:P126 chb:Q114 ;
+    chbpq:P248 chb:Q363 ;
+    chbps:P125 <https://github.com/n4o-rse/amt-runner> .
 
-wds:Q358-2EF705B6-A5DF-5658-B758-A2784D801EFD
+chbs:Q358-2EF705B6-A5DF-5658-B758-A2784D801EFD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P113 wd:Q366 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P113 chb:Q366 .
 
-wds:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72
+chbs:Q358-4C37A76B-5CD0-5C4B-89EC-5AD404470F72
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2514df4efe1c5d521d10dda3cae1cb387c21a23a,
-        wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png> .
+    prov:wasDerivedFrom chbref:2514df4efe1c5d521d10dda3cae1cb387c21a23a,
+        chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20Quadtruple.png> .
 
-wds:Q358-8D12BB7A-2723-504E-934F-2A987F669E1F
+chbs:Q358-8D12BB7A-2723-504E-934F-2A987F669E1F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P107 wd:Q369 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P107 chb:Q369 .
 
-wds:Q358-9D950A77-08CD-5A1D-9EB8-FD0582E2546F
+chbs:Q358-9D950A77-08CD-5A1D-9EB8-FD0582E2546F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:cb26a11a171aa20a2536363624882149d05fbd51 ;
-    ps:P4 "Q74003194" .
+    prov:wasDerivedFrom chbref:cb26a11a171aa20a2536363624882149d05fbd51 ;
+    chbps:P4 "Q74003194" .
 
-wds:Q358-9E5494C5-8463-510F-A849-9555FEC11E37
+chbs:Q358-9E5494C5-8463-510F-A849-9555FEC11E37
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P2 wd:Q105 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P2 chb:Q105 .
 
-wds:Q358-11FF88AC-E512-50E7-A062-279E9359C0CF
+chbs:Q358-11FF88AC-E512-50E7-A062-279E9359C0CF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P123 chb:Q370 .
 
-wds:Q358-27BC3B11-2B2F-5AFF-A3E0-AC7DB74C3934
+chbs:Q358-27BC3B11-2B2F-5AFF-A3E0-AC7DB74C3934
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P113 wd:Q367 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P113 chb:Q367 .
 
-wds:Q358-44AC366F-3755-599D-88ED-BE877CF57F49
+chbs:Q358-44AC366F-3755-599D-88ED-BE877CF57F49
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P113 wd:Q365 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P113 chb:Q365 .
 
-wds:Q358-73E89E6A-9815-543E-9EEA-CA7060399673
+chbs:Q358-73E89E6A-9815-543E-9EEA-CA7060399673
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P2 chb:Q106 .
 
-wds:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80
+chbs:Q358-367E95C9-E58F-5DFC-90EC-7CE1E9E1AF80
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    pq:P126 wd:Q114 ;
-    pq:P248 wd:Q363 ;
-    ps:P125 <https://github.com/n4o-rse/amt-engine> .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbpq:P126 chb:Q114 ;
+    chbpq:P248 chb:Q363 ;
+    chbps:P125 <https://github.com/n4o-rse/amt-engine> .
 
-wds:Q358-6630B41F-9232-524C-A468-CDB70D0F140F
+chbs:Q358-6630B41F-9232-524C-A468-CDB70D0F140F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P113 wd:Q368 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P113 chb:Q368 .
 
-wds:Q358-B61C5573-747E-5EA8-BDEE-D18D9B5CE81C
+chbs:Q358-B61C5573-747E-5EA8-BDEE-D18D9B5CE81C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    pq:P251 wd:Q373 ;
-    ps:P120 <http://academic-meta-tool.xyz> .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbpq:P251 chb:Q373 ;
+    chbps:P120 <http://academic-meta-tool.xyz> .
 
-wds:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54
+chbs:Q358-BC7FFFD8-C8F1-5701-B515-49F8CDF21B54
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2514df4efe1c5d521d10dda3cae1cb387c21a23a,
-        wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20RoleChainAxiom.png> .
+    prov:wasDerivedFrom chbref:2514df4efe1c5d521d10dda3cae1cb387c21a23a,
+        chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P204 <http://commons.wikimedia.org/wiki/Special:FilePath/AMT%20RoleChainAxiom.png> .
 
-wds:Q358-C6944BFB-3E9A-5D4E-AE28-FE5B67458465
+chbs:Q358-C6944BFB-3E9A-5D4E-AE28-FE5B67458465
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P2 wd:Q100 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P2 chb:Q100 .
 
-wds:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B
+chbs:Q358-D6D88CAC-8226-5A5E-98D1-249C98CFAA6B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P123 wd:Q371 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P123 chb:Q371 .
 
-wds:Q358-DE043553-5D3A-5759-B455-A08A8B49A0A1
+chbs:Q358-DE043553-5D3A-5759-B455-A08A8B49A0A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f69b3acffda211555205f1124711f87206e32f01 ;
-    ps:P137 "2017-01-01T00:00:00Z"^^xsd:dateTime ;
-    psv:P137 wdv:bfda54cd5d3dd53932e30c706bc3d03a .
+    prov:wasDerivedFrom chbref:f69b3acffda211555205f1124711f87206e32f01 ;
+    chbps:P137 "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+    chbpsv:P137 chbv:bfda54cd5d3dd53932e30c706bc3d03a .
 
-wds:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1
+chbs:Q358-FA7B5B3F-8FC3-5779-A843-F8487B97F2A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6536936bb024b24f990451bfed4a269c69a4a63f ;
-    ps:P2 wd:Q372 .
+    prov:wasDerivedFrom chbref:6536936bb024b24f990451bfed4a269c69a4a63f ;
+    chbps:P2 chb:Q372 .
 
-wdref:2514df4efe1c5d521d10dda3cae1cb387c21a23a
+chbref:2514df4efe1c5d521d10dda3cae1cb387c21a23a
     a wikibase:Reference ;
-    pr:P6 <http://academic-meta-tool.xyz/ontology/> .
+    chbpr:P6 <http://academic-meta-tool.xyz/ontology/> .
 
-wdref:6536936bb024b24f990451bfed4a269c69a4a63f
+chbref:6536936bb024b24f990451bfed4a269c69a4a63f
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q74003194> ;
-    pr:P7 "2026-08-18T00:00:00Z"^^xsd:dateTime ;
-    pr:P8 wd:Q364 ;
-    prv:P7 wdv:746f03b026878aca3ef0cccaef37ff82 .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q74003194> ;
+    chbpr:P7 "2026-08-18T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P8 chb:Q364 ;
+    chbprv:P7 chbv:746f03b026878aca3ef0cccaef37ff82 .
 
-wdref:cb26a11a171aa20a2536363624882149d05fbd51
+chbref:cb26a11a171aa20a2536363624882149d05fbd51
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q74003194> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q74003194> .
 
-wdref:f69b3acffda211555205f1124711f87206e32f01
+chbref:f69b3acffda211555205f1124711f87206e32f01
     a wikibase:Reference ;
-    pr:P6 <https://www.nfdi4objects.net/en/services/academic-meta-tool-amt/> .
+    chbpr:P6 <https://www.nfdi4objects.net/en/services/academic-meta-tool-amt/> .
 
-wdv:746f03b026878aca3ef0cccaef37ff82
+chbv:746f03b026878aca3ef0cccaef37ff82
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2026-08-18T00:00:00Z"^^xsd:dateTime .
 
-wdv:bfda54cd5d3dd53932e30c706bc3d03a
+chbv:bfda54cd5d3dd53932e30c706bc3d03a
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "9"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q493: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q493
+chbdata:Q493.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Converting date ranges into dating 'steps' eases the visualization of changes in e.g. pottery consumption, style and other variables over time. This package provides tools to process and prepare data for visualization."@en ;
     dcterms:identifier "Q493" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q493 ;
+    dcterms:subject chb:Q493 ;
     dcterms:title "datplot"@en ;
-    schema:about wd:Q493 ;
-    dcat:distribution dist:Q493-html,
-        dist:Q493-json,
-        dist:Q493-ttl ;
+    schema:about chb:Q493 ;
+    dcat:distribution chbdist:Q493-html,
+        chbdist:Q493-json,
+        chbdist:Q493-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q493.html> .
 
-dist:Q493-html
+chbdist:Q493-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q493-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q493.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q493-json
+chbdist:Q493-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q493-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q493.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q493-ttl
+chbdist:Q493-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q493, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q493.ttl> ;
+    dcat:downloadURL chbdata:Q493.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q493
+chb:Q493
     a wikibase:Item ;
     schema:description "Converting date ranges into dating 'steps' eases the visualization of changes in e.g. pottery consumption, style and other variables over time. This package provides tools to process and prepare data for visualization."@en ;
     schema:name "datplot"@en ;
@@ -80,145 +81,145 @@ wd:Q493
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "datplot"@en ;
     skos:prefLabel "datplot"@en ;
-    p:P2 wds:Q493-0F47CD3F-34BA-540C-A8EA-2E378D6F6AD5,
-        wds:Q493-2165DBF1-0694-51DC-A977-6CABA0BAFE23 ;
-    p:P106 wds:Q493-511720FE-4DBD-5FAE-9EB8-310E51380E23 ;
-    p:P113 wds:Q493-B9C6B60D-B2C3-56E5-B2D2-3EE50C04B584,
-        wds:Q493-D6D9A70C-BC51-5AD2-9E03-61CCAB6CAC8E ;
-    p:P115 wds:Q493-8A455660-1919-5DDB-A4C0-C0DCA8A27F61 ;
-    p:P116 wds:Q493-DAEC687F-4461-5176-A3BB-742972CA518C ;
-    p:P117 wds:Q493-D83772D4-0ADA-5AFA-9B80-DBE935F62DDA ;
-    p:P118 wds:Q493-C73E8D89-9195-509F-8866-2F3A24CE4010 ;
-    p:P119 wds:Q493-A00005D9-8CF4-5E93-BE4F-E67A6EADF732 ;
-    p:P122 wds:Q493-42AF3930-C05E-5299-A105-2FEEF0F1D39F,
-        wds:Q493-880A442B-558B-54A7-A0EA-76097DD37DAE ;
-    p:P123 wds:Q493-AFBED452-7E08-5280-8702-0C291CD1917A ;
-    p:P125 wds:Q493-506D6BDC-C961-516F-8128-E809CC96B4F3 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q494,
-        wd:Q495 ;
-    wdt:P115 <https://open-archaeo.info/post/datplot/> ;
-    wdt:P116 "datplot" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "datplot"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/lsteinmann/datplot> .
+    chbp:P2 chbs:Q493-0F47CD3F-34BA-540C-A8EA-2E378D6F6AD5,
+        chbs:Q493-2165DBF1-0694-51DC-A977-6CABA0BAFE23 ;
+    chbp:P106 chbs:Q493-511720FE-4DBD-5FAE-9EB8-310E51380E23 ;
+    chbp:P113 chbs:Q493-B9C6B60D-B2C3-56E5-B2D2-3EE50C04B584,
+        chbs:Q493-D6D9A70C-BC51-5AD2-9E03-61CCAB6CAC8E ;
+    chbp:P115 chbs:Q493-8A455660-1919-5DDB-A4C0-C0DCA8A27F61 ;
+    chbp:P116 chbs:Q493-DAEC687F-4461-5176-A3BB-742972CA518C ;
+    chbp:P117 chbs:Q493-D83772D4-0ADA-5AFA-9B80-DBE935F62DDA ;
+    chbp:P118 chbs:Q493-C73E8D89-9195-509F-8866-2F3A24CE4010 ;
+    chbp:P119 chbs:Q493-A00005D9-8CF4-5E93-BE4F-E67A6EADF732 ;
+    chbp:P122 chbs:Q493-42AF3930-C05E-5299-A105-2FEEF0F1D39F,
+        chbs:Q493-880A442B-558B-54A7-A0EA-76097DD37DAE ;
+    chbp:P123 chbs:Q493-AFBED452-7E08-5280-8702-0C291CD1917A ;
+    chbp:P125 chbs:Q493-506D6BDC-C961-516F-8128-E809CC96B4F3 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q494,
+        chb:Q495 ;
+    chbt:P115 <https://open-archaeo.info/post/datplot/> ;
+    chbt:P116 "datplot" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "datplot"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/lsteinmann/datplot> .
 
-wds:Q493-0F47CD3F-34BA-540C-A8EA-2E378D6F6AD5
+chbs:Q493-0F47CD3F-34BA-540C-A8EA-2E378D6F6AD5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q493-8A455660-1919-5DDB-A4C0-C0DCA8A27F61
+chbs:Q493-8A455660-1919-5DDB-A4C0-C0DCA8A27F61
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P115 <https://open-archaeo.info/post/datplot/> .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P115 <https://open-archaeo.info/post/datplot/> .
 
-wds:Q493-42AF3930-C05E-5299-A105-2FEEF0F1D39F
+chbs:Q493-42AF3930-C05E-5299-A105-2FEEF0F1D39F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q493-506D6BDC-C961-516F-8128-E809CC96B4F3
+chbs:Q493-506D6BDC-C961-516F-8128-E809CC96B4F3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    pq:P104 "2021-06-26T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-lsteinmann-datplot_-_2021-06-26_14-24-43> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:1d9088abc7574c0fb251f0649f7343af ;
-    ps:P125 <https://github.com/lsteinmann/datplot> .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbpq:P104 "2021-06-26T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-lsteinmann-datplot_-_2021-06-26_14-24-43> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:1d9088abc7574c0fb251f0649f7343af ;
+    chbps:P125 <https://github.com/lsteinmann/datplot> .
 
-wds:Q493-880A442B-558B-54A7-A0EA-76097DD37DAE
+chbs:Q493-880A442B-558B-54A7-A0EA-76097DD37DAE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q493-2165DBF1-0694-51DC-A977-6CABA0BAFE23
+chbs:Q493-2165DBF1-0694-51DC-A977-6CABA0BAFE23
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q493-511720FE-4DBD-5FAE-9EB8-310E51380E23
+chbs:Q493-511720FE-4DBD-5FAE-9EB8-310E51380E23
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q493-A00005D9-8CF4-5E93-BE4F-E67A6EADF732
+chbs:Q493-A00005D9-8CF4-5E93-BE4F-E67A6EADF732
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P119 "datplot"@en .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P119 "datplot"@en .
 
-wds:Q493-AFBED452-7E08-5280-8702-0C291CD1917A
+chbs:Q493-AFBED452-7E08-5280-8702-0C291CD1917A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q493-B9C6B60D-B2C3-56E5-B2D2-3EE50C04B584
+chbs:Q493-B9C6B60D-B2C3-56E5-B2D2-3EE50C04B584
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q495 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q495 .
 
-wds:Q493-C73E8D89-9195-509F-8866-2F3A24CE4010
+chbs:Q493-C73E8D89-9195-509F-8866-2F3A24CE4010
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q493-D6D9A70C-BC51-5AD2-9E03-61CCAB6CAC8E
+chbs:Q493-D6D9A70C-BC51-5AD2-9E03-61CCAB6CAC8E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q494 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q494 .
 
-wds:Q493-D83772D4-0ADA-5AFA-9B80-DBE935F62DDA
+chbs:Q493-D83772D4-0ADA-5AFA-9B80-DBE935F62DDA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q493-DAEC687F-4461-5176-A3BB-742972CA518C
+chbs:Q493-DAEC687F-4461-5176-A3BB-742972CA518C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "datplot" .
+    prov:wasDerivedFrom chbref:202e132382dd3bb385246f97f160a8fa13d150b4 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "datplot" .
 
-wdref:202e132382dd3bb385246f97f160a8fa13d150b4
+chbref:202e132382dd3bb385246f97f160a8fa13d150b4
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/datplot/> .
+    chbpr:P6 <https://open-archaeo.info/post/datplot/> .
 
-wdv:1d9088abc7574c0fb251f0649f7343af
+chbv:1d9088abc7574c0fb251f0649f7343af
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

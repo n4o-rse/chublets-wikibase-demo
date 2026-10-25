@@ -1,53 +1,54 @@
 # Q756: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q756
+chbdata:Q756.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A proof of concept for a potential bayesian sequential calibration software."@en ;
     dcterms:identifier "Q756" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q756 ;
+    dcterms:subject chb:Q756 ;
     dcterms:title "carbonara_poc"@en ;
-    schema:about wd:Q756 ;
-    dcat:distribution dist:Q756-html,
-        dist:Q756-json,
-        dist:Q756-ttl ;
+    schema:about chb:Q756 ;
+    dcat:distribution chbdist:Q756-html,
+        chbdist:Q756-json,
+        chbdist:Q756-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q756.html> .
 
-dist:Q756-html
+chbdist:Q756-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q756-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q756.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q756-json
+chbdist:Q756-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q756-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q756.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q756-ttl
+chbdist:Q756-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q756, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q756.ttl> ;
+    dcat:downloadURL chbdata:Q756.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q756
+chb:Q756
     a wikibase:Item ;
     schema:description "A proof of concept for a potential bayesian sequential calibration software."@en ;
     schema:name "carbonara_poc"@en ;
@@ -80,136 +81,136 @@ wd:Q756
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "carbonara_poc"@en ;
     skos:prefLabel "carbonara_poc"@en ;
-    p:P2 wds:Q756-1D9CBCD4-CD97-59B7-B9B8-2D2337676263,
-        wds:Q756-DFC7F348-E715-5F59-9C72-3679E0CD3957 ;
-    p:P106 wds:Q756-321148EC-C974-5287-922D-08590E59F598 ;
-    p:P113 wds:Q756-6D5A9AF2-FB9C-572D-AE36-C6C29363D74C ;
-    p:P115 wds:Q756-6BA6AA62-AA46-5A70-A9F3-647681F63FAA ;
-    p:P116 wds:Q756-92AAE7F1-0B48-52E3-A662-F3069D57A62B ;
-    p:P117 wds:Q756-1C28219A-929B-5C8F-9F01-08E3C40758AA,
-        wds:Q756-A6196C83-6DD5-5C49-B6E7-ED55A21CE6DD ;
-    p:P118 wds:Q756-A67A6E49-222A-53CE-BCA0-E84460C935DA ;
-    p:P119 wds:Q756-C9645320-6AF8-5406-BD72-8E3B764ACEA1 ;
-    p:P122 wds:Q756-01798E6E-F3D6-5661-A7E9-DB7D804720B9,
-        wds:Q756-1703663B-D955-5242-8E3F-EE5F7097A55E ;
-    p:P123 wds:Q756-DE859F2A-402C-5CA5-8F8D-9B018EE445B9 ;
-    p:P125 wds:Q756-B4A29A7A-5F78-59D3-80FA-44E7BB89BB76 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q220 ;
-    wdt:P115 <https://open-archaeo.info/post/carbonara-poc/> ;
-    wdt:P116 "carbonara-poc" ;
-    wdt:P117 wd:Q126,
-        wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "carbonara_poc"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/MartinHinz/carbonara_poc> .
+    chbp:P2 chbs:Q756-1D9CBCD4-CD97-59B7-B9B8-2D2337676263,
+        chbs:Q756-DFC7F348-E715-5F59-9C72-3679E0CD3957 ;
+    chbp:P106 chbs:Q756-321148EC-C974-5287-922D-08590E59F598 ;
+    chbp:P113 chbs:Q756-6D5A9AF2-FB9C-572D-AE36-C6C29363D74C ;
+    chbp:P115 chbs:Q756-6BA6AA62-AA46-5A70-A9F3-647681F63FAA ;
+    chbp:P116 chbs:Q756-92AAE7F1-0B48-52E3-A662-F3069D57A62B ;
+    chbp:P117 chbs:Q756-1C28219A-929B-5C8F-9F01-08E3C40758AA,
+        chbs:Q756-A6196C83-6DD5-5C49-B6E7-ED55A21CE6DD ;
+    chbp:P118 chbs:Q756-A67A6E49-222A-53CE-BCA0-E84460C935DA ;
+    chbp:P119 chbs:Q756-C9645320-6AF8-5406-BD72-8E3B764ACEA1 ;
+    chbp:P122 chbs:Q756-01798E6E-F3D6-5661-A7E9-DB7D804720B9,
+        chbs:Q756-1703663B-D955-5242-8E3F-EE5F7097A55E ;
+    chbp:P123 chbs:Q756-DE859F2A-402C-5CA5-8F8D-9B018EE445B9 ;
+    chbp:P125 chbs:Q756-B4A29A7A-5F78-59D3-80FA-44E7BB89BB76 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q220 ;
+    chbt:P115 <https://open-archaeo.info/post/carbonara-poc/> ;
+    chbt:P116 "carbonara-poc" ;
+    chbt:P117 chb:Q126,
+        chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "carbonara_poc"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/MartinHinz/carbonara_poc> .
 
-wds:Q756-1C28219A-929B-5C8F-9F01-08E3C40758AA
+chbs:Q756-1C28219A-929B-5C8F-9F01-08E3C40758AA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P117 chb:Q140 .
 
-wds:Q756-1D9CBCD4-CD97-59B7-B9B8-2D2337676263
+chbs:Q756-1D9CBCD4-CD97-59B7-B9B8-2D2337676263
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q756-6BA6AA62-AA46-5A70-A9F3-647681F63FAA
+chbs:Q756-6BA6AA62-AA46-5A70-A9F3-647681F63FAA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P115 <https://open-archaeo.info/post/carbonara-poc/> .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P115 <https://open-archaeo.info/post/carbonara-poc/> .
 
-wds:Q756-6D5A9AF2-FB9C-572D-AE36-C6C29363D74C
+chbs:Q756-6D5A9AF2-FB9C-572D-AE36-C6C29363D74C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q220 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q220 .
 
-wds:Q756-92AAE7F1-0B48-52E3-A662-F3069D57A62B
+chbs:Q756-92AAE7F1-0B48-52E3-A662-F3069D57A62B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "carbonara-poc" .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "carbonara-poc" .
 
-wds:Q756-01798E6E-F3D6-5661-A7E9-DB7D804720B9
+chbs:Q756-01798E6E-F3D6-5661-A7E9-DB7D804720B9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q756-321148EC-C974-5287-922D-08590E59F598
+chbs:Q756-321148EC-C974-5287-922D-08590E59F598
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q756-1703663B-D955-5242-8E3F-EE5F7097A55E
+chbs:Q756-1703663B-D955-5242-8E3F-EE5F7097A55E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q756-A67A6E49-222A-53CE-BCA0-E84460C935DA
+chbs:Q756-A67A6E49-222A-53CE-BCA0-E84460C935DA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q756-A6196C83-6DD5-5C49-B6E7-ED55A21CE6DD
+chbs:Q756-A6196C83-6DD5-5C49-B6E7-ED55A21CE6DD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q756-B4A29A7A-5F78-59D3-80FA-44E7BB89BB76
+chbs:Q756-B4A29A7A-5F78-59D3-80FA-44E7BB89BB76
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/MartinHinz/carbonara_poc> .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/MartinHinz/carbonara_poc> .
 
-wds:Q756-C9645320-6AF8-5406-BD72-8E3B764ACEA1
+chbs:Q756-C9645320-6AF8-5406-BD72-8E3B764ACEA1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P119 "carbonara_poc"@en .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P119 "carbonara_poc"@en .
 
-wds:Q756-DE859F2A-402C-5CA5-8F8D-9B018EE445B9
+chbs:Q756-DE859F2A-402C-5CA5-8F8D-9B018EE445B9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q756-DFC7F348-E715-5F59-9C72-3679E0CD3957
+chbs:Q756-DFC7F348-E715-5F59-9C72-3679E0CD3957
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5 ;
+    chbps:P2 chb:Q106 .
 
-wdref:c3553c524218d5c97c0c0ee53e265853d19c3db5
+chbref:c3553c524218d5c97c0c0ee53e265853d19c3db5
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/carbonara-poc/> .
+    chbpr:P6 <https://open-archaeo.info/post/carbonara-poc/> .

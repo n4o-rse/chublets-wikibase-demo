@@ -1,53 +1,54 @@
 # Q816: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q816
+chbdata:Q816.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Detect and Parse Historic Dates in R."@en ;
     dcterms:identifier "Q816" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q816 ;
+    dcterms:subject chb:Q816 ;
     dcterms:title "unstruwwel"@en ;
-    schema:about wd:Q816 ;
-    dcat:distribution dist:Q816-html,
-        dist:Q816-json,
-        dist:Q816-ttl ;
+    schema:about chb:Q816 ;
+    dcat:distribution chbdist:Q816-html,
+        chbdist:Q816-json,
+        chbdist:Q816-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q816.html> .
 
-dist:Q816-html
+chbdist:Q816-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q816-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q816.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q816-json
+chbdist:Q816-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q816-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q816.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q816-ttl
+chbdist:Q816-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q816, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q816.ttl> ;
+    dcat:downloadURL chbdata:Q816.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q816
+chb:Q816
     a wikibase:Item ;
     schema:description "Detect and Parse Historic Dates in R."@en ;
     schema:name "unstruwwel"@en ;
@@ -80,135 +81,135 @@ wd:Q816
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "unstruwwel"@en ;
     skos:prefLabel "unstruwwel"@en ;
-    p:P2 wds:Q816-C17A918D-9007-5D00-9799-FAC516885983,
-        wds:Q816-FB619DA6-AD74-57F1-B41F-2D6E487AF68F ;
-    p:P106 wds:Q816-A0192C95-581B-5758-A6F0-8008D54FE5BE ;
-    p:P113 wds:Q816-44D08228-6F4C-5497-85BC-7291DE5AB95E ;
-    p:P115 wds:Q816-3F03BC17-1174-59C0-8F9A-F96900ECF8C0 ;
-    p:P116 wds:Q816-331EDE36-2FDA-5DF1-83A1-C8F46258F245 ;
-    p:P117 wds:Q816-A698DD62-49C3-5E65-9988-E90F65DBD528 ;
-    p:P118 wds:Q816-3885D02D-99C1-5C43-AFE0-6C755E83F8C5 ;
-    p:P119 wds:Q816-968B4CD0-A28A-5760-BDCB-7D40F337BAF3 ;
-    p:P122 wds:Q816-0E1453E7-8508-53EB-A9E9-E0B9BEB34FF5,
-        wds:Q816-DEE20076-E161-5546-A8B7-2ADD1FD5F238 ;
-    p:P123 wds:Q816-CF45814A-7A19-5C9C-9EFD-330209CD8B06 ;
-    p:P125 wds:Q816-E3AE4EF2-D4D4-5B51-9A6D-FC992EBDADCC ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q639 ;
-    wdt:P115 <https://open-archaeo.info/post/unstruwwel/> ;
-    wdt:P116 "unstruwwel" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "unstruwwel"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/stefanieschneider/unstruwwel> .
+    chbp:P2 chbs:Q816-C17A918D-9007-5D00-9799-FAC516885983,
+        chbs:Q816-FB619DA6-AD74-57F1-B41F-2D6E487AF68F ;
+    chbp:P106 chbs:Q816-A0192C95-581B-5758-A6F0-8008D54FE5BE ;
+    chbp:P113 chbs:Q816-44D08228-6F4C-5497-85BC-7291DE5AB95E ;
+    chbp:P115 chbs:Q816-3F03BC17-1174-59C0-8F9A-F96900ECF8C0 ;
+    chbp:P116 chbs:Q816-331EDE36-2FDA-5DF1-83A1-C8F46258F245 ;
+    chbp:P117 chbs:Q816-A698DD62-49C3-5E65-9988-E90F65DBD528 ;
+    chbp:P118 chbs:Q816-3885D02D-99C1-5C43-AFE0-6C755E83F8C5 ;
+    chbp:P119 chbs:Q816-968B4CD0-A28A-5760-BDCB-7D40F337BAF3 ;
+    chbp:P122 chbs:Q816-0E1453E7-8508-53EB-A9E9-E0B9BEB34FF5,
+        chbs:Q816-DEE20076-E161-5546-A8B7-2ADD1FD5F238 ;
+    chbp:P123 chbs:Q816-CF45814A-7A19-5C9C-9EFD-330209CD8B06 ;
+    chbp:P125 chbs:Q816-E3AE4EF2-D4D4-5B51-9A6D-FC992EBDADCC ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q639 ;
+    chbt:P115 <https://open-archaeo.info/post/unstruwwel/> ;
+    chbt:P116 "unstruwwel" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "unstruwwel"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/stefanieschneider/unstruwwel> .
 
-wds:Q816-0E1453E7-8508-53EB-A9E9-E0B9BEB34FF5
+chbs:Q816-0E1453E7-8508-53EB-A9E9-E0B9BEB34FF5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P122 chb:Q109 .
 
-wds:Q816-3F03BC17-1174-59C0-8F9A-F96900ECF8C0
+chbs:Q816-3F03BC17-1174-59C0-8F9A-F96900ECF8C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P115 <https://open-archaeo.info/post/unstruwwel/> .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P115 <https://open-archaeo.info/post/unstruwwel/> .
 
-wds:Q816-44D08228-6F4C-5497-85BC-7291DE5AB95E
+chbs:Q816-44D08228-6F4C-5497-85BC-7291DE5AB95E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q639 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q639 .
 
-wds:Q816-331EDE36-2FDA-5DF1-83A1-C8F46258F245
+chbs:Q816-331EDE36-2FDA-5DF1-83A1-C8F46258F245
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "unstruwwel" .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "unstruwwel" .
 
-wds:Q816-968B4CD0-A28A-5760-BDCB-7D40F337BAF3
+chbs:Q816-968B4CD0-A28A-5760-BDCB-7D40F337BAF3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P119 "unstruwwel"@en .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P119 "unstruwwel"@en .
 
-wds:Q816-3885D02D-99C1-5C43-AFE0-6C755E83F8C5
+chbs:Q816-3885D02D-99C1-5C43-AFE0-6C755E83F8C5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P118 chb:Q108 .
 
-wds:Q816-A0192C95-581B-5758-A6F0-8008D54FE5BE
+chbs:Q816-A0192C95-581B-5758-A6F0-8008D54FE5BE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P106 chb:Q110 .
 
-wds:Q816-A698DD62-49C3-5E65-9988-E90F65DBD528
+chbs:Q816-A698DD62-49C3-5E65-9988-E90F65DBD528
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P117 chb:Q126 .
 
-wds:Q816-C17A918D-9007-5D00-9799-FAC516885983
+chbs:Q816-C17A918D-9007-5D00-9799-FAC516885983
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P2 chb:Q103 .
 
-wds:Q816-CF45814A-7A19-5C9C-9EFD-330209CD8B06
+chbs:Q816-CF45814A-7A19-5C9C-9EFD-330209CD8B06
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P123 chb:Q111 .
 
-wds:Q816-DEE20076-E161-5546-A8B7-2ADD1FD5F238
+chbs:Q816-DEE20076-E161-5546-A8B7-2ADD1FD5F238
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P122 chb:Q110 .
 
-wds:Q816-E3AE4EF2-D4D4-5B51-9A6D-FC992EBDADCC
+chbs:Q816-E3AE4EF2-D4D4-5B51-9A6D-FC992EBDADCC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    pq:P104 "2021-01-20T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-stefanieschneider-unstruwwel_-_2021-01-20_07-46-30> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:b308f09ceb12d312dba265686a372dcd ;
-    ps:P125 <https://github.com/stefanieschneider/unstruwwel> .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbpq:P104 "2021-01-20T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-stefanieschneider-unstruwwel_-_2021-01-20_07-46-30> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:b308f09ceb12d312dba265686a372dcd ;
+    chbps:P125 <https://github.com/stefanieschneider/unstruwwel> .
 
-wds:Q816-FB619DA6-AD74-57F1-B41F-2D6E487AF68F
+chbs:Q816-FB619DA6-AD74-57F1-B41F-2D6E487AF68F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc ;
+    chbps:P2 chb:Q106 .
 
-wdref:daf9eac45b3761e4f21c83b42c23f6942706b7bc
+chbref:daf9eac45b3761e4f21c83b42c23f6942706b7bc
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/unstruwwel/> .
+    chbpr:P6 <https://open-archaeo.info/post/unstruwwel/> .
 
-wdv:b308f09ceb12d312dba265686a372dcd
+chbv:b308f09ceb12d312dba265686a372dcd
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

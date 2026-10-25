@@ -1,53 +1,54 @@
 # Q617: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q617
+chbdata:Q617.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Chartool is a macro tool for quantifying charcoal particles for paleoecological research applications."@en ;
     dcterms:identifier "Q617" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q617 ;
+    dcterms:subject chb:Q617 ;
     dcterms:title "CharTool"@en ;
-    schema:about wd:Q617 ;
-    dcat:distribution dist:Q617-html,
-        dist:Q617-json,
-        dist:Q617-ttl ;
+    schema:about chb:Q617 ;
+    dcat:distribution chbdist:Q617-html,
+        chbdist:Q617-json,
+        chbdist:Q617-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q617.html> .
 
-dist:Q617-html
+chbdist:Q617-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q617-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q617.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q617-json
+chbdist:Q617-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q617-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q617.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q617-ttl
+chbdist:Q617-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q617, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q617.ttl> ;
+    dcat:downloadURL chbdata:Q617.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q617
+chb:Q617
     a wikibase:Item ;
     schema:description "Chartool is a macro tool for quantifying charcoal particles for paleoecological research applications."@en ;
     schema:name "CharTool"@en ;
@@ -80,126 +81,126 @@ wd:Q617
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "CharTool"@en ;
     skos:prefLabel "CharTool"@en ;
-    p:P2 wds:Q617-5B60FE33-CD98-51BA-A413-DCADA5FBD392,
-        wds:Q617-6E2E4610-F7D7-5B6A-B026-29151C7EA298 ;
-    p:P106 wds:Q617-BA25C38D-6C6F-57F4-9B5E-031C7C96258E ;
-    p:P113 wds:Q617-71122D42-C807-516E-AB51-230E9AC9F1F1 ;
-    p:P115 wds:Q617-565F4756-4D14-5A3C-8410-94DD488A4A54 ;
-    p:P116 wds:Q617-8002B176-39B6-52A7-8319-27582B0CCE6F ;
-    p:P117 wds:Q617-FA6BDEC4-7E49-5D22-922E-28CEBE440E3D ;
-    p:P118 wds:Q617-45C0C522-4DA7-520F-934D-8D97C29FCE64 ;
-    p:P119 wds:Q617-C1C64315-7025-5568-9330-EEC2EA391320 ;
-    p:P122 wds:Q617-6ADB6040-7859-502A-AEAA-68D514813AB6,
-        wds:Q617-A7FFAC46-2137-5C9B-B717-F9D82090260B ;
-    p:P125 wds:Q617-3D069D7E-69C5-53EE-9533-C13E52FC859F ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q618 ;
-    wdt:P115 <https://open-archaeo.info/post/chartool/> ;
-    wdt:P116 "chartool" ;
-    wdt:P117 wd:Q112 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "CharTool"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/gsnitker/CharTool> .
+    chbp:P2 chbs:Q617-5B60FE33-CD98-51BA-A413-DCADA5FBD392,
+        chbs:Q617-6E2E4610-F7D7-5B6A-B026-29151C7EA298 ;
+    chbp:P106 chbs:Q617-BA25C38D-6C6F-57F4-9B5E-031C7C96258E ;
+    chbp:P113 chbs:Q617-71122D42-C807-516E-AB51-230E9AC9F1F1 ;
+    chbp:P115 chbs:Q617-565F4756-4D14-5A3C-8410-94DD488A4A54 ;
+    chbp:P116 chbs:Q617-8002B176-39B6-52A7-8319-27582B0CCE6F ;
+    chbp:P117 chbs:Q617-FA6BDEC4-7E49-5D22-922E-28CEBE440E3D ;
+    chbp:P118 chbs:Q617-45C0C522-4DA7-520F-934D-8D97C29FCE64 ;
+    chbp:P119 chbs:Q617-C1C64315-7025-5568-9330-EEC2EA391320 ;
+    chbp:P122 chbs:Q617-6ADB6040-7859-502A-AEAA-68D514813AB6,
+        chbs:Q617-A7FFAC46-2137-5C9B-B717-F9D82090260B ;
+    chbp:P125 chbs:Q617-3D069D7E-69C5-53EE-9533-C13E52FC859F ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q618 ;
+    chbt:P115 <https://open-archaeo.info/post/chartool/> ;
+    chbt:P116 "chartool" ;
+    chbt:P117 chb:Q112 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "CharTool"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/gsnitker/CharTool> .
 
-wds:Q617-3D069D7E-69C5-53EE-9533-C13E52FC859F
+chbs:Q617-3D069D7E-69C5-53EE-9533-C13E52FC859F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    pq:P104 "2020-04-06T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-gsnitker-CharTool_-_2020-04-06_21-46-45> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:1aac353cc219259e405168fb539f2a6f ;
-    ps:P125 <https://github.com/gsnitker/CharTool> .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbpq:P104 "2020-04-06T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-gsnitker-CharTool_-_2020-04-06_21-46-45> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:1aac353cc219259e405168fb539f2a6f ;
+    chbps:P125 <https://github.com/gsnitker/CharTool> .
 
-wds:Q617-5B60FE33-CD98-51BA-A413-DCADA5FBD392
+chbs:Q617-5B60FE33-CD98-51BA-A413-DCADA5FBD392
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q617-6ADB6040-7859-502A-AEAA-68D514813AB6
+chbs:Q617-6ADB6040-7859-502A-AEAA-68D514813AB6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q617-6E2E4610-F7D7-5B6A-B026-29151C7EA298
+chbs:Q617-6E2E4610-F7D7-5B6A-B026-29151C7EA298
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q617-45C0C522-4DA7-520F-934D-8D97C29FCE64
+chbs:Q617-45C0C522-4DA7-520F-934D-8D97C29FCE64
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q617-565F4756-4D14-5A3C-8410-94DD488A4A54
+chbs:Q617-565F4756-4D14-5A3C-8410-94DD488A4A54
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P115 <https://open-archaeo.info/post/chartool/> .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P115 <https://open-archaeo.info/post/chartool/> .
 
-wds:Q617-8002B176-39B6-52A7-8319-27582B0CCE6F
+chbs:Q617-8002B176-39B6-52A7-8319-27582B0CCE6F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "chartool" .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "chartool" .
 
-wds:Q617-71122D42-C807-516E-AB51-230E9AC9F1F1
+chbs:Q617-71122D42-C807-516E-AB51-230E9AC9F1F1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q618 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q618 .
 
-wds:Q617-A7FFAC46-2137-5C9B-B717-F9D82090260B
+chbs:Q617-A7FFAC46-2137-5C9B-B717-F9D82090260B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q617-BA25C38D-6C6F-57F4-9B5E-031C7C96258E
+chbs:Q617-BA25C38D-6C6F-57F4-9B5E-031C7C96258E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q617-C1C64315-7025-5568-9330-EEC2EA391320
+chbs:Q617-C1C64315-7025-5568-9330-EEC2EA391320
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P119 "CharTool"@en .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P119 "CharTool"@en .
 
-wds:Q617-FA6BDEC4-7E49-5D22-922E-28CEBE440E3D
+chbs:Q617-FA6BDEC4-7E49-5D22-922E-28CEBE440E3D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
-    ps:P117 wd:Q112 .
+    prov:wasDerivedFrom chbref:039869b3beb21f9633ad2709c8d32d40ec258e36 ;
+    chbps:P117 chb:Q112 .
 
-wdref:039869b3beb21f9633ad2709c8d32d40ec258e36
+chbref:039869b3beb21f9633ad2709c8d32d40ec258e36
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/chartool/> .
+    chbpr:P6 <https://open-archaeo.info/post/chartool/> .
 
-wdv:1aac353cc219259e405168fb539f2a6f
+chbv:1aac353cc219259e405168fb539f2a6f
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

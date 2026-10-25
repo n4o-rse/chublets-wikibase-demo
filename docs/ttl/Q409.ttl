@@ -1,53 +1,54 @@
 # Q409: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q409
+chbdata:Q409.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Plugin for drawing trenches."@en ;
     dcterms:identifier "Q409" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q409 ;
+    dcterms:subject chb:Q409 ;
     dcterms:title "trenchdrawer"@en ;
-    schema:about wd:Q409 ;
-    dcat:distribution dist:Q409-html,
-        dist:Q409-json,
-        dist:Q409-ttl ;
+    schema:about chb:Q409 ;
+    dcat:distribution chbdist:Q409-html,
+        chbdist:Q409-json,
+        chbdist:Q409-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q409.html> .
 
-dist:Q409-html
+chbdist:Q409-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q409-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q409.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q409-json
+chbdist:Q409-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q409-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q409.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q409-ttl
+chbdist:Q409-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q409, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q409.ttl> ;
+    dcat:downloadURL chbdata:Q409.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q409
+chb:Q409
     a wikibase:Item ;
     schema:description "Plugin for drawing trenches."@en ;
     schema:name "trenchdrawer"@en ;
@@ -80,135 +81,135 @@ wd:Q409
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "trenchdrawer"@en ;
     skos:prefLabel "trenchdrawer"@en ;
-    p:P2 wds:Q409-AAEC83D8-93CA-5AC7-B02B-F49A98FBD022,
-        wds:Q409-D2F83977-E710-573C-9774-AF29B7EE6636 ;
-    p:P106 wds:Q409-F2D7B652-6500-5CB6-8BF7-5EE7746B297E ;
-    p:P109 wds:Q409-917417CA-1817-5A24-8E5A-8D66940DCE7D ;
-    p:P113 wds:Q409-8959E366-2E4A-53C3-BD23-7E03B5794404 ;
-    p:P115 wds:Q409-12F70F67-2F17-5621-8CE5-0AC92BCE456A ;
-    p:P116 wds:Q409-488AE938-48EB-5562-8360-ED18ABC096DC ;
-    p:P117 wds:Q409-D0EBF0C8-C732-5664-9A74-E57F361AEDB9 ;
-    p:P118 wds:Q409-B2EDD7FC-C824-53D8-9CC4-82962E9FDD53 ;
-    p:P119 wds:Q409-259F5553-F1EA-525A-ABD3-31013541FA43 ;
-    p:P122 wds:Q409-80A8A421-05D6-50E7-AD5C-7CB41815FE63,
-        wds:Q409-4750B6CC-F0C5-5F43-BD91-BB06D0301E69 ;
-    p:P125 wds:Q409-F3527936-6CFA-5AAC-B63A-5CED0605B8A8 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q410 ;
-    wdt:P115 <https://open-archaeo.info/post/trenchdrawer/> ;
-    wdt:P116 "trenchdrawer" ;
-    wdt:P117 wd:Q136 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "trenchdrawer"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/MikeJJohnson/trenchdrawer> .
+    chbp:P2 chbs:Q409-AAEC83D8-93CA-5AC7-B02B-F49A98FBD022,
+        chbs:Q409-D2F83977-E710-573C-9774-AF29B7EE6636 ;
+    chbp:P106 chbs:Q409-F2D7B652-6500-5CB6-8BF7-5EE7746B297E ;
+    chbp:P109 chbs:Q409-917417CA-1817-5A24-8E5A-8D66940DCE7D ;
+    chbp:P113 chbs:Q409-8959E366-2E4A-53C3-BD23-7E03B5794404 ;
+    chbp:P115 chbs:Q409-12F70F67-2F17-5621-8CE5-0AC92BCE456A ;
+    chbp:P116 chbs:Q409-488AE938-48EB-5562-8360-ED18ABC096DC ;
+    chbp:P117 chbs:Q409-D0EBF0C8-C732-5664-9A74-E57F361AEDB9 ;
+    chbp:P118 chbs:Q409-B2EDD7FC-C824-53D8-9CC4-82962E9FDD53 ;
+    chbp:P119 chbs:Q409-259F5553-F1EA-525A-ABD3-31013541FA43 ;
+    chbp:P122 chbs:Q409-80A8A421-05D6-50E7-AD5C-7CB41815FE63,
+        chbs:Q409-4750B6CC-F0C5-5F43-BD91-BB06D0301E69 ;
+    chbp:P125 chbs:Q409-F3527936-6CFA-5AAC-B63A-5CED0605B8A8 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q410 ;
+    chbt:P115 <https://open-archaeo.info/post/trenchdrawer/> ;
+    chbt:P116 "trenchdrawer" ;
+    chbt:P117 chb:Q136 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "trenchdrawer"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/MikeJJohnson/trenchdrawer> .
 
-wds:Q409-12F70F67-2F17-5621-8CE5-0AC92BCE456A
+chbs:Q409-12F70F67-2F17-5621-8CE5-0AC92BCE456A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P115 <https://open-archaeo.info/post/trenchdrawer/> .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P115 <https://open-archaeo.info/post/trenchdrawer/> .
 
-wds:Q409-80A8A421-05D6-50E7-AD5C-7CB41815FE63
+chbs:Q409-80A8A421-05D6-50E7-AD5C-7CB41815FE63
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q409-259F5553-F1EA-525A-ABD3-31013541FA43
+chbs:Q409-259F5553-F1EA-525A-ABD3-31013541FA43
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P119 "trenchdrawer"@en .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P119 "trenchdrawer"@en .
 
-wds:Q409-488AE938-48EB-5562-8360-ED18ABC096DC
+chbs:Q409-488AE938-48EB-5562-8360-ED18ABC096DC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "trenchdrawer" .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "trenchdrawer" .
 
-wds:Q409-4750B6CC-F0C5-5F43-BD91-BB06D0301E69
+chbs:Q409-4750B6CC-F0C5-5F43-BD91-BB06D0301E69
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q409-8959E366-2E4A-53C3-BD23-7E03B5794404
+chbs:Q409-8959E366-2E4A-53C3-BD23-7E03B5794404
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q410 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q410 .
 
-wds:Q409-917417CA-1817-5A24-8E5A-8D66940DCE7D
+chbs:Q409-917417CA-1817-5A24-8E5A-8D66940DCE7D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P109 chb:Q135 .
 
-wds:Q409-AAEC83D8-93CA-5AC7-B02B-F49A98FBD022
+chbs:Q409-AAEC83D8-93CA-5AC7-B02B-F49A98FBD022
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q409-B2EDD7FC-C824-53D8-9CC4-82962E9FDD53
+chbs:Q409-B2EDD7FC-C824-53D8-9CC4-82962E9FDD53
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q409-D0EBF0C8-C732-5664-9A74-E57F361AEDB9
+chbs:Q409-D0EBF0C8-C732-5664-9A74-E57F361AEDB9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q409-D2F83977-E710-573C-9774-AF29B7EE6636
+chbs:Q409-D2F83977-E710-573C-9774-AF29B7EE6636
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q409-F2D7B652-6500-5CB6-8BF7-5EE7746B297E
+chbs:Q409-F2D7B652-6500-5CB6-8BF7-5EE7746B297E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q409-F3527936-6CFA-5AAC-B63A-5CED0605B8A8
+chbs:Q409-F3527936-6CFA-5AAC-B63A-5CED0605B8A8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
-    pq:P104 "2016-05-10T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-MikeJJohnson-trenchdrawer_-_2016-05-10_08-42-06> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:cfe3e2616047ceb25fb1241dae66025e ;
-    ps:P125 <https://github.com/MikeJJohnson/trenchdrawer> .
+    prov:wasDerivedFrom chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0 ;
+    chbpq:P104 "2016-05-10T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-MikeJJohnson-trenchdrawer_-_2016-05-10_08-42-06> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:cfe3e2616047ceb25fb1241dae66025e ;
+    chbps:P125 <https://github.com/MikeJJohnson/trenchdrawer> .
 
-wdref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0
+chbref:3dfb6095eb7f99596b38ff8ee12258a15018e7d0
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/trenchdrawer/> .
+    chbpr:P6 <https://open-archaeo.info/post/trenchdrawer/> .
 
-wdv:cfe3e2616047ceb25fb1241dae66025e
+chbv:cfe3e2616047ceb25fb1241dae66025e
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

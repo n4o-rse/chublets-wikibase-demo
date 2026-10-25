@@ -1,53 +1,54 @@
 # Q576: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q576
+chbdata:Q576.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Software to annotate, train, using deep learning, and segment imagery data from UAVs or other platforms."@en ;
     dcterms:identifier "Q576" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q576 ;
+    dcterms:subject chb:Q576 ;
     dcterms:title "Mask_UAV"@en ;
-    schema:about wd:Q576 ;
-    dcat:distribution dist:Q576-html,
-        dist:Q576-json,
-        dist:Q576-ttl ;
+    schema:about chb:Q576 ;
+    dcat:distribution chbdist:Q576-html,
+        chbdist:Q576-json,
+        chbdist:Q576-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q576.html> .
 
-dist:Q576-html
+chbdist:Q576-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q576-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q576.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q576-json
+chbdist:Q576-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q576-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q576.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q576-ttl
+chbdist:Q576-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q576, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q576.ttl> ;
+    dcat:downloadURL chbdata:Q576.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q576
+chb:Q576
     a wikibase:Item ;
     schema:description "Software to annotate, train, using deep learning, and segment imagery data from UAVs or other platforms."@en ;
     schema:name "Mask_UAV"@en ;
@@ -80,145 +81,145 @@ wd:Q576
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "Mask_UAV"@en ;
     skos:prefLabel "Mask_UAV"@en ;
-    p:P2 wds:Q576-907DC855-5480-556D-A640-93736DA073F6,
-        wds:Q576-E70211AE-7447-5F83-8920-3B57D1D0CDCA ;
-    p:P106 wds:Q576-71BB887A-4CCB-53FA-9982-F7B3A7D52427 ;
-    p:P113 wds:Q576-C8A197FD-78AD-5644-826A-F3044A2870FC ;
-    p:P115 wds:Q576-88FB4710-0303-5943-9FD6-C378C41D7E99 ;
-    p:P116 wds:Q576-0BCF7FF2-8D93-556B-8533-4133466A1E9E ;
-    p:P117 wds:Q576-70CFBD40-800B-5111-AC3E-237491443B39,
-        wds:Q576-76BDFFD2-C015-538C-B977-9F979EA3927B,
-        wds:Q576-24943122-5C66-55FC-A21F-A35A29F190E7 ;
-    p:P118 wds:Q576-CF76586B-D783-5EC1-A10D-C1FC7AA17B33 ;
-    p:P119 wds:Q576-F9B9280C-2E59-513B-8552-820411579B5D ;
-    p:P122 wds:Q576-4FA838B4-0A1C-5D42-BAC1-5CD507009AF5,
-        wds:Q576-DAC55656-1E50-589E-8B8D-7627E5849C5C ;
-    p:P123 wds:Q576-B194DA44-CAC1-50BD-895F-D3C73F6EF6DF ;
-    p:P125 wds:Q576-2027298A-A529-5D85-9013-405F27018686 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q578 ;
-    wdt:P115 <https://open-archaeo.info/post/mask-uav/> ;
-    wdt:P116 "mask-uav" ;
-    wdt:P117 wd:Q136,
-        wd:Q356,
-        wd:Q577 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Mask_UAV"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/maltaweel/Mask_UAV> .
+    chbp:P2 chbs:Q576-907DC855-5480-556D-A640-93736DA073F6,
+        chbs:Q576-E70211AE-7447-5F83-8920-3B57D1D0CDCA ;
+    chbp:P106 chbs:Q576-71BB887A-4CCB-53FA-9982-F7B3A7D52427 ;
+    chbp:P113 chbs:Q576-C8A197FD-78AD-5644-826A-F3044A2870FC ;
+    chbp:P115 chbs:Q576-88FB4710-0303-5943-9FD6-C378C41D7E99 ;
+    chbp:P116 chbs:Q576-0BCF7FF2-8D93-556B-8533-4133466A1E9E ;
+    chbp:P117 chbs:Q576-70CFBD40-800B-5111-AC3E-237491443B39,
+        chbs:Q576-76BDFFD2-C015-538C-B977-9F979EA3927B,
+        chbs:Q576-24943122-5C66-55FC-A21F-A35A29F190E7 ;
+    chbp:P118 chbs:Q576-CF76586B-D783-5EC1-A10D-C1FC7AA17B33 ;
+    chbp:P119 chbs:Q576-F9B9280C-2E59-513B-8552-820411579B5D ;
+    chbp:P122 chbs:Q576-4FA838B4-0A1C-5D42-BAC1-5CD507009AF5,
+        chbs:Q576-DAC55656-1E50-589E-8B8D-7627E5849C5C ;
+    chbp:P123 chbs:Q576-B194DA44-CAC1-50BD-895F-D3C73F6EF6DF ;
+    chbp:P125 chbs:Q576-2027298A-A529-5D85-9013-405F27018686 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q578 ;
+    chbt:P115 <https://open-archaeo.info/post/mask-uav/> ;
+    chbt:P116 "mask-uav" ;
+    chbt:P117 chb:Q136,
+        chb:Q356,
+        chb:Q577 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Mask_UAV"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/maltaweel/Mask_UAV> .
 
-wds:Q576-0BCF7FF2-8D93-556B-8533-4133466A1E9E
+chbs:Q576-0BCF7FF2-8D93-556B-8533-4133466A1E9E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "mask-uav" .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "mask-uav" .
 
-wds:Q576-4FA838B4-0A1C-5D42-BAC1-5CD507009AF5
+chbs:Q576-4FA838B4-0A1C-5D42-BAC1-5CD507009AF5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q576-70CFBD40-800B-5111-AC3E-237491443B39
+chbs:Q576-70CFBD40-800B-5111-AC3E-237491443B39
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q576-71BB887A-4CCB-53FA-9982-F7B3A7D52427
+chbs:Q576-71BB887A-4CCB-53FA-9982-F7B3A7D52427
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q576-76BDFFD2-C015-538C-B977-9F979EA3927B
+chbs:Q576-76BDFFD2-C015-538C-B977-9F979EA3927B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P117 wd:Q577 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P117 chb:Q577 .
 
-wds:Q576-88FB4710-0303-5943-9FD6-C378C41D7E99
+chbs:Q576-88FB4710-0303-5943-9FD6-C378C41D7E99
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P115 <https://open-archaeo.info/post/mask-uav/> .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P115 <https://open-archaeo.info/post/mask-uav/> .
 
-wds:Q576-907DC855-5480-556D-A640-93736DA073F6
+chbs:Q576-907DC855-5480-556D-A640-93736DA073F6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q576-2027298A-A529-5D85-9013-405F27018686
+chbs:Q576-2027298A-A529-5D85-9013-405F27018686
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/maltaweel/Mask_UAV> .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/maltaweel/Mask_UAV> .
 
-wds:Q576-24943122-5C66-55FC-A21F-A35A29F190E7
+chbs:Q576-24943122-5C66-55FC-A21F-A35A29F190E7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P117 wd:Q356 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P117 chb:Q356 .
 
-wds:Q576-B194DA44-CAC1-50BD-895F-D3C73F6EF6DF
+chbs:Q576-B194DA44-CAC1-50BD-895F-D3C73F6EF6DF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q576-C8A197FD-78AD-5644-826A-F3044A2870FC
+chbs:Q576-C8A197FD-78AD-5644-826A-F3044A2870FC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q578 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q578 .
 
-wds:Q576-CF76586B-D783-5EC1-A10D-C1FC7AA17B33
+chbs:Q576-CF76586B-D783-5EC1-A10D-C1FC7AA17B33
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q576-DAC55656-1E50-589E-8B8D-7627E5849C5C
+chbs:Q576-DAC55656-1E50-589E-8B8D-7627E5849C5C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q576-E70211AE-7447-5F83-8920-3B57D1D0CDCA
+chbs:Q576-E70211AE-7447-5F83-8920-3B57D1D0CDCA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q576-F9B9280C-2E59-513B-8552-820411579B5D
+chbs:Q576-F9B9280C-2E59-513B-8552-820411579B5D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e257ff35a925accb29ff90431ce53aee52c09705 ;
-    ps:P119 "Mask_UAV"@en .
+    prov:wasDerivedFrom chbref:e257ff35a925accb29ff90431ce53aee52c09705 ;
+    chbps:P119 "Mask_UAV"@en .
 
-wdref:e257ff35a925accb29ff90431ce53aee52c09705
+chbref:e257ff35a925accb29ff90431ce53aee52c09705
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/mask-uav/> .
+    chbpr:P6 <https://open-archaeo.info/post/mask-uav/> .

@@ -1,53 +1,54 @@
 # Q512: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q512
+chbdata:Q512.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The goal of sitedefinition is to see how feature densities might be used for site definition."@en ;
     dcterms:identifier "Q512" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q512 ;
+    dcterms:subject chb:Q512 ;
     dcterms:title "sitedefinition"@en ;
-    schema:about wd:Q512 ;
-    dcat:distribution dist:Q512-html,
-        dist:Q512-json,
-        dist:Q512-ttl ;
+    schema:about chb:Q512 ;
+    dcat:distribution chbdist:Q512-html,
+        chbdist:Q512-json,
+        chbdist:Q512-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q512.html> .
 
-dist:Q512-html
+chbdist:Q512-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q512-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q512.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q512-json
+chbdist:Q512-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q512-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q512.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q512-ttl
+chbdist:Q512-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q512, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q512.ttl> ;
+    dcat:downloadURL chbdata:Q512.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q512
+chb:Q512
     a wikibase:Item ;
     schema:description "The goal of sitedefinition is to see how feature densities might be used for site definition."@en ;
     schema:name "sitedefinition"@en ;
@@ -80,135 +81,135 @@ wd:Q512
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "sitedefinition"@en ;
     skos:prefLabel "sitedefinition"@en ;
-    p:P2 wds:Q512-4931FD88-B83A-5D88-97DA-191E3E5B9132,
-        wds:Q512-30584AC9-6CC0-521C-933D-C25D6DCD529A ;
-    p:P106 wds:Q512-CE51B1E6-E8AF-55FA-A937-EBB705200E68 ;
-    p:P113 wds:Q512-F1710128-CD0D-545C-8827-4AE2D8985985 ;
-    p:P115 wds:Q512-A4D7952E-CF2C-58DE-96CB-5A1807F05BAF ;
-    p:P116 wds:Q512-6733EF0E-BDA9-5FE1-B2E9-EF015027FEC6 ;
-    p:P117 wds:Q512-C14564A7-8338-53D3-88B1-A69C369EE51A ;
-    p:P118 wds:Q512-8B1F4D51-5B74-5247-A0C6-4B2567379B39 ;
-    p:P119 wds:Q512-81F80E2F-A18C-5685-878D-09BA84210DCC ;
-    p:P122 wds:Q512-9EFE535A-6CEE-59FE-91F2-7BEC19BFB9C4,
-        wds:Q512-D0359256-B3E2-5336-B958-1B3431035A8E ;
-    p:P123 wds:Q512-B0759F87-C5B7-5C67-BC34-9E3ED021F951 ;
-    p:P125 wds:Q512-EB66AFBB-1969-5534-976E-63618A107C2F ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q513 ;
-    wdt:P115 <https://open-archaeo.info/post/sitedefinition/> ;
-    wdt:P116 "sitedefinition" ;
-    wdt:P117 wd:Q136 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "sitedefinition"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/SCSchmidt/sitedefinition> .
+    chbp:P2 chbs:Q512-4931FD88-B83A-5D88-97DA-191E3E5B9132,
+        chbs:Q512-30584AC9-6CC0-521C-933D-C25D6DCD529A ;
+    chbp:P106 chbs:Q512-CE51B1E6-E8AF-55FA-A937-EBB705200E68 ;
+    chbp:P113 chbs:Q512-F1710128-CD0D-545C-8827-4AE2D8985985 ;
+    chbp:P115 chbs:Q512-A4D7952E-CF2C-58DE-96CB-5A1807F05BAF ;
+    chbp:P116 chbs:Q512-6733EF0E-BDA9-5FE1-B2E9-EF015027FEC6 ;
+    chbp:P117 chbs:Q512-C14564A7-8338-53D3-88B1-A69C369EE51A ;
+    chbp:P118 chbs:Q512-8B1F4D51-5B74-5247-A0C6-4B2567379B39 ;
+    chbp:P119 chbs:Q512-81F80E2F-A18C-5685-878D-09BA84210DCC ;
+    chbp:P122 chbs:Q512-9EFE535A-6CEE-59FE-91F2-7BEC19BFB9C4,
+        chbs:Q512-D0359256-B3E2-5336-B958-1B3431035A8E ;
+    chbp:P123 chbs:Q512-B0759F87-C5B7-5C67-BC34-9E3ED021F951 ;
+    chbp:P125 chbs:Q512-EB66AFBB-1969-5534-976E-63618A107C2F ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q513 ;
+    chbt:P115 <https://open-archaeo.info/post/sitedefinition/> ;
+    chbt:P116 "sitedefinition" ;
+    chbt:P117 chb:Q136 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "sitedefinition"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/SCSchmidt/sitedefinition> .
 
-wds:Q512-8B1F4D51-5B74-5247-A0C6-4B2567379B39
+chbs:Q512-8B1F4D51-5B74-5247-A0C6-4B2567379B39
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q512-9EFE535A-6CEE-59FE-91F2-7BEC19BFB9C4
+chbs:Q512-9EFE535A-6CEE-59FE-91F2-7BEC19BFB9C4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q512-81F80E2F-A18C-5685-878D-09BA84210DCC
+chbs:Q512-81F80E2F-A18C-5685-878D-09BA84210DCC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P119 "sitedefinition"@en .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P119 "sitedefinition"@en .
 
-wds:Q512-4931FD88-B83A-5D88-97DA-191E3E5B9132
+chbs:Q512-4931FD88-B83A-5D88-97DA-191E3E5B9132
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q512-6733EF0E-BDA9-5FE1-B2E9-EF015027FEC6
+chbs:Q512-6733EF0E-BDA9-5FE1-B2E9-EF015027FEC6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "sitedefinition" .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "sitedefinition" .
 
-wds:Q512-30584AC9-6CC0-521C-933D-C25D6DCD529A
+chbs:Q512-30584AC9-6CC0-521C-933D-C25D6DCD529A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q512-A4D7952E-CF2C-58DE-96CB-5A1807F05BAF
+chbs:Q512-A4D7952E-CF2C-58DE-96CB-5A1807F05BAF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P115 <https://open-archaeo.info/post/sitedefinition/> .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P115 <https://open-archaeo.info/post/sitedefinition/> .
 
-wds:Q512-B0759F87-C5B7-5C67-BC34-9E3ED021F951
+chbs:Q512-B0759F87-C5B7-5C67-BC34-9E3ED021F951
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q512-C14564A7-8338-53D3-88B1-A69C369EE51A
+chbs:Q512-C14564A7-8338-53D3-88B1-A69C369EE51A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q512-CE51B1E6-E8AF-55FA-A937-EBB705200E68
+chbs:Q512-CE51B1E6-E8AF-55FA-A937-EBB705200E68
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q512-D0359256-B3E2-5336-B958-1B3431035A8E
+chbs:Q512-D0359256-B3E2-5336-B958-1B3431035A8E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q512-EB66AFBB-1969-5534-976E-63618A107C2F
+chbs:Q512-EB66AFBB-1969-5534-976E-63618A107C2F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    pq:P104 "2019-09-05T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-SCSchmidt-sitedefinition_-_2019-09-05_16-30-54> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:841f4f883e529209684612a4061b0b1a ;
-    ps:P125 <https://github.com/SCSchmidt/sitedefinition> .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbpq:P104 "2019-09-05T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-SCSchmidt-sitedefinition_-_2019-09-05_16-30-54> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:841f4f883e529209684612a4061b0b1a ;
+    chbps:P125 <https://github.com/SCSchmidt/sitedefinition> .
 
-wds:Q512-F1710128-CD0D-545C-8827-4AE2D8985985
+chbs:Q512-F1710128-CD0D-545C-8827-4AE2D8985985
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q513 .
+    prov:wasDerivedFrom chbref:564cb979daaa8368747b574720c4f5d28cf7c015 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q513 .
 
-wdref:564cb979daaa8368747b574720c4f5d28cf7c015
+chbref:564cb979daaa8368747b574720c4f5d28cf7c015
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/sitedefinition/> .
+    chbpr:P6 <https://open-archaeo.info/post/sitedefinition/> .
 
-wdv:841f4f883e529209684612a4061b0b1a
+chbv:841f4f883e529209684612a4061b0b1a
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

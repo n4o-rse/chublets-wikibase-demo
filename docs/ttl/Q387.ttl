@@ -1,53 +1,54 @@
 # Q387: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q387
+chbdata:Q387.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The ark v1.1.2 stable release. Ark (the archaeological recording kit) is a web-based 'toolkit' for the collection, storage and dissemination of archaeological data. It includes data-editing, data-creation, data-viewing and data-sharing tools, all of which are delivered using a web-based front-end."@en ;
     dcterms:identifier "Q387" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q387 ;
+    dcterms:subject chb:Q387 ;
     dcterms:title "ARK1"@en ;
-    schema:about wd:Q387 ;
-    dcat:distribution dist:Q387-html,
-        dist:Q387-json,
-        dist:Q387-ttl ;
+    schema:about chb:Q387 ;
+    dcat:distribution chbdist:Q387-html,
+        chbdist:Q387-json,
+        chbdist:Q387-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q387.html> .
 
-dist:Q387-html
+chbdist:Q387-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q387-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q387.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q387-json
+chbdist:Q387-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q387-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q387.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q387-ttl
+chbdist:Q387-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q387, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q387.ttl> ;
+    dcat:downloadURL chbdata:Q387.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q387
+chb:Q387
     a wikibase:Item ;
     schema:description "The ark v1.1.2 stable release. Ark (the archaeological recording kit) is a web-based 'toolkit' for the collection, storage and dissemination of archaeological data. It includes data-editing, data-creation, data-viewing and data-sharing tools, all of which are delivered using a web-based front-end."@en ;
     schema:name "ARK1"@en ;
@@ -80,126 +81,126 @@ wd:Q387
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "ARK1"@en ;
     skos:prefLabel "ARK1"@en ;
-    p:P2 wds:Q387-76A5CA85-FE0E-5915-9AB9-0D3118E37C61,
-        wds:Q387-E63D12B5-C0D0-5B6C-A7F6-5654FB7A6C31 ;
-    p:P106 wds:Q387-04BE262A-A7C1-50EA-A9D1-D4468F7EC544 ;
-    p:P113 wds:Q387-E8D1E242-EBB3-5215-9E19-486A865F8971 ;
-    p:P115 wds:Q387-1EBC4B6D-917F-538B-9E4C-EEA48BA3AF54 ;
-    p:P116 wds:Q387-AFEB7574-A83B-5470-ADA1-0C4204D8E543 ;
-    p:P117 wds:Q387-C8381EF0-B40B-5A83-9B7B-73F55D158A6C ;
-    p:P118 wds:Q387-2C4E481C-78DB-5613-BD67-0456DFE8452D ;
-    p:P119 wds:Q387-E1091925-CA28-533D-828F-16A2F6C01550 ;
-    p:P122 wds:Q387-BEA35273-08E8-5FAB-BB67-461692D98103,
-        wds:Q387-C859B08B-3853-5C56-AA27-A1038D7584B3 ;
-    p:P125 wds:Q387-6392A332-A54D-50DC-9E41-23F6F50EF6EA ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q137 ;
-    wdt:P115 <https://open-archaeo.info/post/ark1/> ;
-    wdt:P116 "ark1" ;
-    wdt:P117 wd:Q148 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ARK1"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/lparchaeology/ARK1> .
+    chbp:P2 chbs:Q387-76A5CA85-FE0E-5915-9AB9-0D3118E37C61,
+        chbs:Q387-E63D12B5-C0D0-5B6C-A7F6-5654FB7A6C31 ;
+    chbp:P106 chbs:Q387-04BE262A-A7C1-50EA-A9D1-D4468F7EC544 ;
+    chbp:P113 chbs:Q387-E8D1E242-EBB3-5215-9E19-486A865F8971 ;
+    chbp:P115 chbs:Q387-1EBC4B6D-917F-538B-9E4C-EEA48BA3AF54 ;
+    chbp:P116 chbs:Q387-AFEB7574-A83B-5470-ADA1-0C4204D8E543 ;
+    chbp:P117 chbs:Q387-C8381EF0-B40B-5A83-9B7B-73F55D158A6C ;
+    chbp:P118 chbs:Q387-2C4E481C-78DB-5613-BD67-0456DFE8452D ;
+    chbp:P119 chbs:Q387-E1091925-CA28-533D-828F-16A2F6C01550 ;
+    chbp:P122 chbs:Q387-BEA35273-08E8-5FAB-BB67-461692D98103,
+        chbs:Q387-C859B08B-3853-5C56-AA27-A1038D7584B3 ;
+    chbp:P125 chbs:Q387-6392A332-A54D-50DC-9E41-23F6F50EF6EA ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q137 ;
+    chbt:P115 <https://open-archaeo.info/post/ark1/> ;
+    chbt:P116 "ark1" ;
+    chbt:P117 chb:Q148 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ARK1"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/lparchaeology/ARK1> .
 
-wds:Q387-1EBC4B6D-917F-538B-9E4C-EEA48BA3AF54
+chbs:Q387-1EBC4B6D-917F-538B-9E4C-EEA48BA3AF54
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P115 <https://open-archaeo.info/post/ark1/> .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P115 <https://open-archaeo.info/post/ark1/> .
 
-wds:Q387-2C4E481C-78DB-5613-BD67-0456DFE8452D
+chbs:Q387-2C4E481C-78DB-5613-BD67-0456DFE8452D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P118 chb:Q108 .
 
-wds:Q387-04BE262A-A7C1-50EA-A9D1-D4468F7EC544
+chbs:Q387-04BE262A-A7C1-50EA-A9D1-D4468F7EC544
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P106 chb:Q110 .
 
-wds:Q387-76A5CA85-FE0E-5915-9AB9-0D3118E37C61
+chbs:Q387-76A5CA85-FE0E-5915-9AB9-0D3118E37C61
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P2 chb:Q106 .
 
-wds:Q387-6392A332-A54D-50DC-9E41-23F6F50EF6EA
+chbs:Q387-6392A332-A54D-50DC-9E41-23F6F50EF6EA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    pq:P104 "2017-11-27T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-lparchaeology-ARK1_-_2017-11-27_14-43-51> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:9361bada1697f4f61d5343f775dd49fb ;
-    ps:P125 <https://github.com/lparchaeology/ARK1> .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbpq:P104 "2017-11-27T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-lparchaeology-ARK1_-_2017-11-27_14-43-51> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:9361bada1697f4f61d5343f775dd49fb ;
+    chbps:P125 <https://github.com/lparchaeology/ARK1> .
 
-wds:Q387-AFEB7574-A83B-5470-ADA1-0C4204D8E543
+chbs:Q387-AFEB7574-A83B-5470-ADA1-0C4204D8E543
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "ark1" .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "ark1" .
 
-wds:Q387-BEA35273-08E8-5FAB-BB67-461692D98103
+chbs:Q387-BEA35273-08E8-5FAB-BB67-461692D98103
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P122 chb:Q109 .
 
-wds:Q387-C859B08B-3853-5C56-AA27-A1038D7584B3
+chbs:Q387-C859B08B-3853-5C56-AA27-A1038D7584B3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P122 chb:Q110 .
 
-wds:Q387-C8381EF0-B40B-5A83-9B7B-73F55D158A6C
+chbs:Q387-C8381EF0-B40B-5A83-9B7B-73F55D158A6C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P117 chb:Q148 .
 
-wds:Q387-E8D1E242-EBB3-5215-9E19-486A865F8971
+chbs:Q387-E8D1E242-EBB3-5215-9E19-486A865F8971
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q137 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q137 .
 
-wds:Q387-E63D12B5-C0D0-5B6C-A7F6-5654FB7A6C31
+chbs:Q387-E63D12B5-C0D0-5B6C-A7F6-5654FB7A6C31
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P2 chb:Q102 .
 
-wds:Q387-E1091925-CA28-533D-828F-16A2F6C01550
+chbs:Q387-E1091925-CA28-533D-828F-16A2F6C01550
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
-    ps:P119 "ARK1"@en .
+    prov:wasDerivedFrom chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a ;
+    chbps:P119 "ARK1"@en .
 
-wdref:c1d0dba18619a026d78be92071ffc88b5b47aa3a
+chbref:c1d0dba18619a026d78be92071ffc88b5b47aa3a
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/ark1/> .
+    chbpr:P6 <https://open-archaeo.info/post/ark1/> .
 
-wdv:9361bada1697f4f61d5343f775dd49fb
+chbv:9361bada1697f4f61d5343f775dd49fb
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

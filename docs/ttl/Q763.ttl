@@ -1,53 +1,54 @@
 # Q763: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q763
+chbdata:Q763.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Experimenting with the opencontext.org api using r"@en ;
     dcterms:identifier "Q763" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q763 ;
+    dcterms:subject chb:Q763 ;
     dcterms:title "benmarwickopencontext.r"@en ;
-    schema:about wd:Q763 ;
-    dcat:distribution dist:Q763-html,
-        dist:Q763-json,
-        dist:Q763-ttl ;
+    schema:about chb:Q763 ;
+    dcat:distribution chbdist:Q763-html,
+        chbdist:Q763-json,
+        chbdist:Q763-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q763.html> .
 
-dist:Q763-html
+chbdist:Q763-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q763-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q763.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q763-json
+chbdist:Q763-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q763-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q763.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q763-ttl
+chbdist:Q763-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q763, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q763.ttl> ;
+    dcat:downloadURL chbdata:Q763.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q763
+chb:Q763
     a wikibase:Item ;
     schema:description "Experimenting with the opencontext.org api using r"@en ;
     schema:name "benmarwickopencontext.r"@en ;
@@ -80,135 +81,135 @@ wd:Q763
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "benmarwickopencontext.r"@en ;
     skos:prefLabel "benmarwickopencontext.r"@en ;
-    p:P2 wds:Q763-31DBC93E-4E11-53AE-974B-3D326FF9A4C4,
-        wds:Q763-EB402BBE-299E-5DD8-A2D2-1DED45E18033 ;
-    p:P106 wds:Q763-5D656379-0989-5C06-8676-6CD1808DFFE5 ;
-    p:P113 wds:Q763-54DAA8DA-6AF1-56EE-9EFC-7C591752F992 ;
-    p:P115 wds:Q763-8D8A7895-C790-510C-B037-FE6824138D5E ;
-    p:P116 wds:Q763-BE70B8D1-F43C-51E1-8D8E-073A169D1FB0 ;
-    p:P117 wds:Q763-33B46AAC-4485-58C7-849A-E150C374AF24 ;
-    p:P118 wds:Q763-D5ADC5FD-9AC2-5A24-BFD1-BA226E64EB2E ;
-    p:P119 wds:Q763-DA98C553-6B8A-53EB-9F00-4A97DF2F360E ;
-    p:P122 wds:Q763-6A9ABB22-B60E-579F-9E39-9F7D1510FD83,
-        wds:Q763-9F04EF36-DA03-5BDA-A678-D9DFA5205A0B ;
-    p:P123 wds:Q763-EC6E42F1-FF97-535E-B5D6-C8843A6309A9 ;
-    p:P125 wds:Q763-D84DCDBE-B579-5F5C-A9A7-AB92134EA7BE ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q321 ;
-    wdt:P115 <https://open-archaeo.info/post/benmarwickopencontext/> ;
-    wdt:P116 "benmarwickopencontext" ;
-    wdt:P117 wd:Q157 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "benmarwickopencontext.r"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://gist.github.com/benmarwick/50aa4c39b7d955d0ec40> .
+    chbp:P2 chbs:Q763-31DBC93E-4E11-53AE-974B-3D326FF9A4C4,
+        chbs:Q763-EB402BBE-299E-5DD8-A2D2-1DED45E18033 ;
+    chbp:P106 chbs:Q763-5D656379-0989-5C06-8676-6CD1808DFFE5 ;
+    chbp:P113 chbs:Q763-54DAA8DA-6AF1-56EE-9EFC-7C591752F992 ;
+    chbp:P115 chbs:Q763-8D8A7895-C790-510C-B037-FE6824138D5E ;
+    chbp:P116 chbs:Q763-BE70B8D1-F43C-51E1-8D8E-073A169D1FB0 ;
+    chbp:P117 chbs:Q763-33B46AAC-4485-58C7-849A-E150C374AF24 ;
+    chbp:P118 chbs:Q763-D5ADC5FD-9AC2-5A24-BFD1-BA226E64EB2E ;
+    chbp:P119 chbs:Q763-DA98C553-6B8A-53EB-9F00-4A97DF2F360E ;
+    chbp:P122 chbs:Q763-6A9ABB22-B60E-579F-9E39-9F7D1510FD83,
+        chbs:Q763-9F04EF36-DA03-5BDA-A678-D9DFA5205A0B ;
+    chbp:P123 chbs:Q763-EC6E42F1-FF97-535E-B5D6-C8843A6309A9 ;
+    chbp:P125 chbs:Q763-D84DCDBE-B579-5F5C-A9A7-AB92134EA7BE ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q321 ;
+    chbt:P115 <https://open-archaeo.info/post/benmarwickopencontext/> ;
+    chbt:P116 "benmarwickopencontext" ;
+    chbt:P117 chb:Q157 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "benmarwickopencontext.r"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://gist.github.com/benmarwick/50aa4c39b7d955d0ec40> .
 
-wds:Q763-5D656379-0989-5C06-8676-6CD1808DFFE5
+chbs:Q763-5D656379-0989-5C06-8676-6CD1808DFFE5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P106 chb:Q110 .
 
-wds:Q763-6A9ABB22-B60E-579F-9E39-9F7D1510FD83
+chbs:Q763-6A9ABB22-B60E-579F-9E39-9F7D1510FD83
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P122 chb:Q110 .
 
-wds:Q763-8D8A7895-C790-510C-B037-FE6824138D5E
+chbs:Q763-8D8A7895-C790-510C-B037-FE6824138D5E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P115 <https://open-archaeo.info/post/benmarwickopencontext/> .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P115 <https://open-archaeo.info/post/benmarwickopencontext/> .
 
-wds:Q763-9F04EF36-DA03-5BDA-A678-D9DFA5205A0B
+chbs:Q763-9F04EF36-DA03-5BDA-A678-D9DFA5205A0B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P122 chb:Q109 .
 
-wds:Q763-31DBC93E-4E11-53AE-974B-3D326FF9A4C4
+chbs:Q763-31DBC93E-4E11-53AE-974B-3D326FF9A4C4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P2 chb:Q106 .
 
-wds:Q763-33B46AAC-4485-58C7-849A-E150C374AF24
+chbs:Q763-33B46AAC-4485-58C7-849A-E150C374AF24
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P117 wd:Q157 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P117 chb:Q157 .
 
-wds:Q763-54DAA8DA-6AF1-56EE-9EFC-7C591752F992
+chbs:Q763-54DAA8DA-6AF1-56EE-9EFC-7C591752F992
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q321 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q321 .
 
-wds:Q763-BE70B8D1-F43C-51E1-8D8E-073A169D1FB0
+chbs:Q763-BE70B8D1-F43C-51E1-8D8E-073A169D1FB0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "benmarwickopencontext" .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "benmarwickopencontext" .
 
-wds:Q763-D5ADC5FD-9AC2-5A24-BFD1-BA226E64EB2E
+chbs:Q763-D5ADC5FD-9AC2-5A24-BFD1-BA226E64EB2E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P118 chb:Q108 .
 
-wds:Q763-D84DCDBE-B579-5F5C-A9A7-AB92134EA7BE
+chbs:Q763-D84DCDBE-B579-5F5C-A9A7-AB92134EA7BE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    pq:P104 "2016-09-16T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/gist.github.com-50aa4c39b7d955d0ec40_-_2016-09-16_22-55-57> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:764232035a846b92f5e3b9a8f5e3b4bf ;
-    ps:P125 <https://gist.github.com/benmarwick/50aa4c39b7d955d0ec40> .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbpq:P104 "2016-09-16T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/gist.github.com-50aa4c39b7d955d0ec40_-_2016-09-16_22-55-57> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:764232035a846b92f5e3b9a8f5e3b4bf ;
+    chbps:P125 <https://gist.github.com/benmarwick/50aa4c39b7d955d0ec40> .
 
-wds:Q763-DA98C553-6B8A-53EB-9F00-4A97DF2F360E
+chbs:Q763-DA98C553-6B8A-53EB-9F00-4A97DF2F360E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P119 "benmarwickopencontext.r"@en .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P119 "benmarwickopencontext.r"@en .
 
-wds:Q763-EB402BBE-299E-5DD8-A2D2-1DED45E18033
+chbs:Q763-EB402BBE-299E-5DD8-A2D2-1DED45E18033
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P2 chb:Q104 .
 
-wds:Q763-EC6E42F1-FF97-535E-B5D6-C8843A6309A9
+chbs:Q763-EC6E42F1-FF97-535E-B5D6-C8843A6309A9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a ;
+    chbps:P123 chb:Q111 .
 
-wdref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a
+chbref:c7888b4a734d39ddfef41bc4abb41f054b7eb17a
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/benmarwickopencontext/> .
+    chbpr:P6 <https://open-archaeo.info/post/benmarwickopencontext/> .
 
-wdv:764232035a846b92f5e3b9a8f5e3b4bf
+chbv:764232035a846b92f5e3b9a8f5e3b4bf
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q572: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q572
+chbdata:Q572.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The soil texture wizard is a set of r functions designed to produce texture triangles (also called texture plots, texture diagrams, texture ternary plots), classify and transform soil textures data"@en ;
     dcterms:identifier "Q572" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q572 ;
+    dcterms:subject chb:Q572 ;
     dcterms:title "soiltexture"@en ;
-    schema:about wd:Q572 ;
-    dcat:distribution dist:Q572-html,
-        dist:Q572-json,
-        dist:Q572-ttl ;
+    schema:about chb:Q572 ;
+    dcat:distribution chbdist:Q572-html,
+        chbdist:Q572-json,
+        chbdist:Q572-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q572.html> .
 
-dist:Q572-html
+chbdist:Q572-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q572-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q572.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q572-json
+chbdist:Q572-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q572-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q572.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q572-ttl
+chbdist:Q572-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q572, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q572.ttl> ;
+    dcat:downloadURL chbdata:Q572.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q572
+chb:Q572
     a wikibase:Item ;
     schema:description "The soil texture wizard is a set of r functions designed to produce texture triangles (also called texture plots, texture diagrams, texture ternary plots), classify and transform soil textures data"@en ;
     schema:name "soiltexture"@en ;
@@ -80,144 +81,144 @@ wd:Q572
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "soiltexture"@en ;
     skos:prefLabel "soiltexture"@en ;
-    p:P2 wds:Q572-257B597B-4A7E-51E9-90A2-AA6D030FC748,
-        wds:Q572-E9BA64EA-4AAC-5EC8-87AB-44657D32B53F ;
-    p:P106 wds:Q572-6D0202DD-3B46-559F-A1CF-B22922E3E612 ;
-    p:P108 wds:Q572-FA598665-4C86-5084-9588-63765B01DA04 ;
-    p:P113 wds:Q572-F8A62993-AD8A-5B7A-8DDC-A82DBA6305CB ;
-    p:P115 wds:Q572-78EA3AB5-7AFE-5122-BE08-61C5CDAC597D ;
-    p:P116 wds:Q572-A87BBB99-D422-53D9-8E99-2BF8015FA371 ;
-    p:P117 wds:Q572-DFE5A212-179D-5A48-A2CA-8F96C9B91E98 ;
-    p:P118 wds:Q572-BCFBBDEE-71E4-59DD-927F-F540812566C3 ;
-    p:P119 wds:Q572-60994564-114E-5E49-ADD6-EA1016716901 ;
-    p:P122 wds:Q572-AC47F836-DB86-5E2A-8E4A-5025BF432215,
-        wds:Q572-F5001A43-3168-5CE0-A905-3ACDE5EC9EE1 ;
-    p:P123 wds:Q572-732EB456-B3FB-50DE-890F-883FE2C0D169 ;
-    p:P125 wds:Q572-D812460B-350C-519B-A72C-995D62AAFEFA ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "soiltexture" ;
-    wdt:P113 wd:Q573 ;
-    wdt:P115 <https://open-archaeo.info/post/soiltexture/> ;
-    wdt:P116 "soiltexture" ;
-    wdt:P117 wd:Q132 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "soiltexture"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/julienmoeys/soiltexture> .
+    chbp:P2 chbs:Q572-257B597B-4A7E-51E9-90A2-AA6D030FC748,
+        chbs:Q572-E9BA64EA-4AAC-5EC8-87AB-44657D32B53F ;
+    chbp:P106 chbs:Q572-6D0202DD-3B46-559F-A1CF-B22922E3E612 ;
+    chbp:P108 chbs:Q572-FA598665-4C86-5084-9588-63765B01DA04 ;
+    chbp:P113 chbs:Q572-F8A62993-AD8A-5B7A-8DDC-A82DBA6305CB ;
+    chbp:P115 chbs:Q572-78EA3AB5-7AFE-5122-BE08-61C5CDAC597D ;
+    chbp:P116 chbs:Q572-A87BBB99-D422-53D9-8E99-2BF8015FA371 ;
+    chbp:P117 chbs:Q572-DFE5A212-179D-5A48-A2CA-8F96C9B91E98 ;
+    chbp:P118 chbs:Q572-BCFBBDEE-71E4-59DD-927F-F540812566C3 ;
+    chbp:P119 chbs:Q572-60994564-114E-5E49-ADD6-EA1016716901 ;
+    chbp:P122 chbs:Q572-AC47F836-DB86-5E2A-8E4A-5025BF432215,
+        chbs:Q572-F5001A43-3168-5CE0-A905-3ACDE5EC9EE1 ;
+    chbp:P123 chbs:Q572-732EB456-B3FB-50DE-890F-883FE2C0D169 ;
+    chbp:P125 chbs:Q572-D812460B-350C-519B-A72C-995D62AAFEFA ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "soiltexture" ;
+    chbt:P113 chb:Q573 ;
+    chbt:P115 <https://open-archaeo.info/post/soiltexture/> ;
+    chbt:P116 "soiltexture" ;
+    chbt:P117 chb:Q132 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "soiltexture"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/julienmoeys/soiltexture> .
 
-wds:Q572-6D0202DD-3B46-559F-A1CF-B22922E3E612
+chbs:Q572-6D0202DD-3B46-559F-A1CF-B22922E3E612
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P106 chb:Q110 .
 
-wds:Q572-78EA3AB5-7AFE-5122-BE08-61C5CDAC597D
+chbs:Q572-78EA3AB5-7AFE-5122-BE08-61C5CDAC597D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P115 <https://open-archaeo.info/post/soiltexture/> .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P115 <https://open-archaeo.info/post/soiltexture/> .
 
-wds:Q572-257B597B-4A7E-51E9-90A2-AA6D030FC748
+chbs:Q572-257B597B-4A7E-51E9-90A2-AA6D030FC748
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P2 chb:Q103 .
 
-wds:Q572-732EB456-B3FB-50DE-890F-883FE2C0D169
+chbs:Q572-732EB456-B3FB-50DE-890F-883FE2C0D169
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P123 chb:Q111 .
 
-wds:Q572-60994564-114E-5E49-ADD6-EA1016716901
+chbs:Q572-60994564-114E-5E49-ADD6-EA1016716901
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P119 "soiltexture"@en .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P119 "soiltexture"@en .
 
-wds:Q572-A87BBB99-D422-53D9-8E99-2BF8015FA371
+chbs:Q572-A87BBB99-D422-53D9-8E99-2BF8015FA371
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "soiltexture" .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "soiltexture" .
 
-wds:Q572-AC47F836-DB86-5E2A-8E4A-5025BF432215
+chbs:Q572-AC47F836-DB86-5E2A-8E4A-5025BF432215
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P122 chb:Q110 .
 
-wds:Q572-BCFBBDEE-71E4-59DD-927F-F540812566C3
+chbs:Q572-BCFBBDEE-71E4-59DD-927F-F540812566C3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P118 chb:Q108 .
 
-wds:Q572-D812460B-350C-519B-A72C-995D62AAFEFA
+chbs:Q572-D812460B-350C-519B-A72C-995D62AAFEFA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    pq:P104 "2020-03-09T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-julienmoeys-soiltexture_-_2020-03-09_15-35-09> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:324d36f3f6fd0a8b53be30d7becb4034 ;
-    ps:P125 <https://github.com/julienmoeys/soiltexture> .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbpq:P104 "2020-03-09T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-julienmoeys-soiltexture_-_2020-03-09_15-35-09> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:324d36f3f6fd0a8b53be30d7becb4034 ;
+    chbps:P125 <https://github.com/julienmoeys/soiltexture> .
 
-wds:Q572-DFE5A212-179D-5A48-A2CA-8F96C9B91E98
+chbs:Q572-DFE5A212-179D-5A48-A2CA-8F96C9B91E98
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P117 wd:Q132 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P117 chb:Q132 .
 
-wds:Q572-E9BA64EA-4AAC-5EC8-87AB-44657D32B53F
+chbs:Q572-E9BA64EA-4AAC-5EC8-87AB-44657D32B53F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P2 chb:Q106 .
 
-wds:Q572-F8A62993-AD8A-5B7A-8DDC-A82DBA6305CB
+chbs:Q572-F8A62993-AD8A-5B7A-8DDC-A82DBA6305CB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q573 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q573 .
 
-wds:Q572-F5001A43-3168-5CE0-A905-3ACDE5EC9EE1
+chbs:Q572-F5001A43-3168-5CE0-A905-3ACDE5EC9EE1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P122 chb:Q109 .
 
-wds:Q572-FA598665-4C86-5084-9588-63765B01DA04
+chbs:Q572-FA598665-4C86-5084-9588-63765B01DA04
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
-    ps:P108 "soiltexture" .
+    prov:wasDerivedFrom chbref:2417ce338c7ef923e5749d6872523abb43b2aacc ;
+    chbps:P108 "soiltexture" .
 
-wdref:2417ce338c7ef923e5749d6872523abb43b2aacc
+chbref:2417ce338c7ef923e5749d6872523abb43b2aacc
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/soiltexture/> .
+    chbpr:P6 <https://open-archaeo.info/post/soiltexture/> .
 
-wdv:324d36f3f6fd0a8b53be30d7becb4034
+chbv:324d36f3f6fd0a8b53be30d7becb4034
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

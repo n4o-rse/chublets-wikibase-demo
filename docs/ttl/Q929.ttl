@@ -1,53 +1,54 @@
 # Q929: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q929
+chbdata:Q929.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Snapshot of the proof-of-concept pipeline from KIM Hongyeon's 2025 paper on LLM-based metadata extraction from archaeological excavation reports (PDF text/image extraction, caption mapping, LLM structuring, SQLite storage, glossary-augmented Q&A)."@en ;
     dcterms:identifier "Q929" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q929 ;
+    dcterms:subject chb:Q929 ;
     dcterms:title "archaeological-informatization-poc"@en ;
-    schema:about wd:Q929 ;
-    dcat:distribution dist:Q929-html,
-        dist:Q929-json,
-        dist:Q929-ttl ;
+    schema:about chb:Q929 ;
+    dcat:distribution chbdist:Q929-html,
+        chbdist:Q929-json,
+        chbdist:Q929-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q929.html> .
 
-dist:Q929-html
+chbdist:Q929-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q929-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q929.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q929-json
+chbdist:Q929-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q929-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q929.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q929-ttl
+chbdist:Q929-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q929, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q929.ttl> ;
+    dcat:downloadURL chbdata:Q929.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q929
+chb:Q929
     a wikibase:Item ;
     schema:description "Snapshot of the proof-of-concept pipeline from KIM Hongyeon's 2025 paper on LLM-based metadata extraction from archaeological excavation reports (PDF text/image extraction, caption mapping, LLM structuring, SQLite storage, glossary-augmented Q&A)."@en ;
     schema:name "archaeological-informatization-poc"@en ;
@@ -80,181 +81,181 @@ wd:Q929
     wikibase:statements "19"^^xsd:integer ;
     rdfs:label "archaeological-informatization-poc"@en ;
     skos:prefLabel "archaeological-informatization-poc"@en ;
-    p:P2 wds:Q929-7E8DC84B-DA1D-5583-BF96-E338A7476022,
-        wds:Q929-44D8FC87-CAF5-5930-ADB1-F32F62CE413E ;
-    p:P106 wds:Q929-DA2EABE1-D8E8-515C-94C7-2316802C0606 ;
-    p:P111 wds:Q929-F74045D0-1EF1-5DC5-8620-7E0645D3F912 ;
-    p:P113 wds:Q929-14FE4E90-39AF-5C5A-A69A-88B295FB693A ;
-    p:P114 wds:Q929-07FCDA3D-4069-50AB-A49C-2073849ACAFC ;
-    p:P115 wds:Q929-EEB349CF-4C1E-556A-986D-17A858E567C5 ;
-    p:P116 wds:Q929-4AEDB1DC-7D5C-5533-B536-8C77423A180C ;
-    p:P117 wds:Q929-99F0B19E-7C97-5F5D-99E9-29C89345564A,
-        wds:Q929-900ED75E-EC5E-541C-92C0-0616501F615A,
-        wds:Q929-F0DB89E3-C26F-5EBD-8098-B77789BF6017,
-        wds:Q929-FB262405-6845-5BC6-91D8-0694A6A88A86 ;
-    p:P118 wds:Q929-D5126B1A-AE0B-51BD-B1AC-7F4BD4816A91 ;
-    p:P119 wds:Q929-CA7D6BEF-84CE-50D2-B679-8C2CB0A88FB9 ;
-    p:P120 wds:Q929-F32F06A8-22ED-5D0F-98EE-6AE35C13CE9B ;
-    p:P122 wds:Q929-75731B68-B3F9-5C53-8140-CAFAA0CC23F2,
-        wds:Q929-D7D578AD-4AAA-5CF8-AFE0-7B759BABB173 ;
-    p:P123 wds:Q929-8001B553-4876-5AC3-9BB9-16E5430B079C ;
-    p:P125 wds:Q929-0DCF952A-5CEA-51B0-BCE6-E524EB6F2919 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P111 wd:Q931 ;
-    wdt:P113 wd:Q930 ;
-    wdt:P114 "10.22755/KJCHS.2025.58.3.34" ;
-    wdt:P115 <https://open-archaeo.info/post/archaeological-informatization-poc/> ;
-    wdt:P116 "archaeological-informatization-poc" ;
-    wdt:P117 wd:Q144,
-        wd:Q148,
-        wd:Q193,
-        wd:Q239 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "archaeological-informatization-poc"@en ;
-    wdt:P120 <https://poc.heripo.org> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q371 ;
-    wdt:P125 <https://github.com/heripo-lab/archaeological-informatization-poc> .
+    chbp:P2 chbs:Q929-7E8DC84B-DA1D-5583-BF96-E338A7476022,
+        chbs:Q929-44D8FC87-CAF5-5930-ADB1-F32F62CE413E ;
+    chbp:P106 chbs:Q929-DA2EABE1-D8E8-515C-94C7-2316802C0606 ;
+    chbp:P111 chbs:Q929-F74045D0-1EF1-5DC5-8620-7E0645D3F912 ;
+    chbp:P113 chbs:Q929-14FE4E90-39AF-5C5A-A69A-88B295FB693A ;
+    chbp:P114 chbs:Q929-07FCDA3D-4069-50AB-A49C-2073849ACAFC ;
+    chbp:P115 chbs:Q929-EEB349CF-4C1E-556A-986D-17A858E567C5 ;
+    chbp:P116 chbs:Q929-4AEDB1DC-7D5C-5533-B536-8C77423A180C ;
+    chbp:P117 chbs:Q929-99F0B19E-7C97-5F5D-99E9-29C89345564A,
+        chbs:Q929-900ED75E-EC5E-541C-92C0-0616501F615A,
+        chbs:Q929-F0DB89E3-C26F-5EBD-8098-B77789BF6017,
+        chbs:Q929-FB262405-6845-5BC6-91D8-0694A6A88A86 ;
+    chbp:P118 chbs:Q929-D5126B1A-AE0B-51BD-B1AC-7F4BD4816A91 ;
+    chbp:P119 chbs:Q929-CA7D6BEF-84CE-50D2-B679-8C2CB0A88FB9 ;
+    chbp:P120 chbs:Q929-F32F06A8-22ED-5D0F-98EE-6AE35C13CE9B ;
+    chbp:P122 chbs:Q929-75731B68-B3F9-5C53-8140-CAFAA0CC23F2,
+        chbs:Q929-D7D578AD-4AAA-5CF8-AFE0-7B759BABB173 ;
+    chbp:P123 chbs:Q929-8001B553-4876-5AC3-9BB9-16E5430B079C ;
+    chbp:P125 chbs:Q929-0DCF952A-5CEA-51B0-BCE6-E524EB6F2919 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P111 chb:Q931 ;
+    chbt:P113 chb:Q930 ;
+    chbt:P114 "10.22755/KJCHS.2025.58.3.34" ;
+    chbt:P115 <https://open-archaeo.info/post/archaeological-informatization-poc/> ;
+    chbt:P116 "archaeological-informatization-poc" ;
+    chbt:P117 chb:Q144,
+        chb:Q148,
+        chb:Q193,
+        chb:Q239 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "archaeological-informatization-poc"@en ;
+    chbt:P120 <https://poc.heripo.org> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q371 ;
+    chbt:P125 <https://github.com/heripo-lab/archaeological-informatization-poc> .
 
-wds:Q929-0DCF952A-5CEA-51B0-BCE6-E524EB6F2919
+chbs:Q929-0DCF952A-5CEA-51B0-BCE6-E524EB6F2919
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/heripo-lab/archaeological-informatization-poc> .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/heripo-lab/archaeological-informatization-poc> .
 
-wds:Q929-4AEDB1DC-7D5C-5533-B536-8C77423A180C
+chbs:Q929-4AEDB1DC-7D5C-5533-B536-8C77423A180C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "archaeological-informatization-poc" .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "archaeological-informatization-poc" .
 
-wds:Q929-7E8DC84B-DA1D-5583-BF96-E338A7476022
+chbs:Q929-7E8DC84B-DA1D-5583-BF96-E338A7476022
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q929-07FCDA3D-4069-50AB-A49C-2073849ACAFC
+chbs:Q929-07FCDA3D-4069-50AB-A49C-2073849ACAFC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P114 "10.22755/KJCHS.2025.58.3.34" .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P114 "10.22755/KJCHS.2025.58.3.34" .
 
-wds:Q929-14FE4E90-39AF-5C5A-A69A-88B295FB693A
+chbs:Q929-14FE4E90-39AF-5C5A-A69A-88B295FB693A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q930 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q930 .
 
-wds:Q929-44D8FC87-CAF5-5930-ADB1-F32F62CE413E
+chbs:Q929-44D8FC87-CAF5-5930-ADB1-F32F62CE413E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q929-99F0B19E-7C97-5F5D-99E9-29C89345564A
+chbs:Q929-99F0B19E-7C97-5F5D-99E9-29C89345564A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P117 wd:Q144 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P117 chb:Q144 .
 
-wds:Q929-900ED75E-EC5E-541C-92C0-0616501F615A
+chbs:Q929-900ED75E-EC5E-541C-92C0-0616501F615A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q929-8001B553-4876-5AC3-9BB9-16E5430B079C
+chbs:Q929-8001B553-4876-5AC3-9BB9-16E5430B079C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P123 wd:Q371 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P123 chb:Q371 .
 
-wds:Q929-75731B68-B3F9-5C53-8140-CAFAA0CC23F2
+chbs:Q929-75731B68-B3F9-5C53-8140-CAFAA0CC23F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q929-CA7D6BEF-84CE-50D2-B679-8C2CB0A88FB9
+chbs:Q929-CA7D6BEF-84CE-50D2-B679-8C2CB0A88FB9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P119 "archaeological-informatization-poc"@en .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P119 "archaeological-informatization-poc"@en .
 
-wds:Q929-D7D578AD-4AAA-5CF8-AFE0-7B759BABB173
+chbs:Q929-D7D578AD-4AAA-5CF8-AFE0-7B759BABB173
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q929-D5126B1A-AE0B-51BD-B1AC-7F4BD4816A91
+chbs:Q929-D5126B1A-AE0B-51BD-B1AC-7F4BD4816A91
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q929-DA2EABE1-D8E8-515C-94C7-2316802C0606
+chbs:Q929-DA2EABE1-D8E8-515C-94C7-2316802C0606
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q929-EEB349CF-4C1E-556A-986D-17A858E567C5
+chbs:Q929-EEB349CF-4C1E-556A-986D-17A858E567C5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P115 <https://open-archaeo.info/post/archaeological-informatization-poc/> .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P115 <https://open-archaeo.info/post/archaeological-informatization-poc/> .
 
-wds:Q929-F0DB89E3-C26F-5EBD-8098-B77789BF6017
+chbs:Q929-F0DB89E3-C26F-5EBD-8098-B77789BF6017
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P117 wd:Q239 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P117 chb:Q239 .
 
-wds:Q929-F32F06A8-22ED-5D0F-98EE-6AE35C13CE9B
+chbs:Q929-F32F06A8-22ED-5D0F-98EE-6AE35C13CE9B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P120 <https://poc.heripo.org> .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P120 <https://poc.heripo.org> .
 
-wds:Q929-F74045D0-1EF1-5DC5-8620-7E0645D3F912
+chbs:Q929-F74045D0-1EF1-5DC5-8620-7E0645D3F912
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P111 wd:Q931 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P111 chb:Q931 .
 
-wds:Q929-FB262405-6845-5BC6-91D8-0694A6A88A86
+chbs:Q929-FB262405-6845-5BC6-91D8-0694A6A88A86
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557 ;
+    chbps:P117 chb:Q193 .
 
-wdref:91cc72a9fadbade86d2d2f87cdd46104c4b64557
+chbref:91cc72a9fadbade86d2d2f87cdd46104c4b64557
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/archaeological-informatization-poc/> .
+    chbpr:P6 <https://open-archaeo.info/post/archaeological-informatization-poc/> .

@@ -1,53 +1,54 @@
 # Q827: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q827
+chbdata:Q827.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An R package to derive outline shapes from (multiple) artefacts on JPEG images."@en ;
     dcterms:identifier "Q827" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q827 ;
+    dcterms:subject chb:Q827 ;
     dcterms:title "outlineR"@en ;
-    schema:about wd:Q827 ;
-    dcat:distribution dist:Q827-html,
-        dist:Q827-json,
-        dist:Q827-ttl ;
+    schema:about chb:Q827 ;
+    dcat:distribution chbdist:Q827-html,
+        chbdist:Q827-json,
+        chbdist:Q827-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q827.html> .
 
-dist:Q827-html
+chbdist:Q827-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q827-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q827.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q827-json
+chbdist:Q827-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q827-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q827.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q827-ttl
+chbdist:Q827-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q827, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q827.ttl> ;
+    dcat:downloadURL chbdata:Q827.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q827
+chb:Q827
     a wikibase:Item ;
     schema:description "An R package to derive outline shapes from (multiple) artefacts on JPEG images."@en ;
     schema:name "outlineR"@en ;
@@ -80,144 +81,144 @@ wd:Q827
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "outlineR"@en ;
     skos:prefLabel "outlineR"@en ;
-    p:P2 wds:Q827-6AB9F3FB-C673-5CF9-A181-C6C0A47FDFF3,
-        wds:Q827-209016EA-895B-544D-9DAA-760F8E6B4883 ;
-    p:P106 wds:Q827-DFFDE73A-C0DF-560C-B942-2B68BDF4D503 ;
-    p:P113 wds:Q827-5248301F-36F4-57F4-91EE-F0F66F412A5F ;
-    p:P114 wds:Q827-8D1151B4-4A4C-5D58-A938-3628418D1E04 ;
-    p:P115 wds:Q827-B2519244-363B-53F8-9727-B8C5BEA3DDFE ;
-    p:P116 wds:Q827-8EA2057E-6E89-5B48-967A-8BAC9B3C3F3F ;
-    p:P117 wds:Q827-A7934C6F-3578-58DD-A664-DC078973AE2E ;
-    p:P118 wds:Q827-66B1D71B-6DC9-585A-B7C0-4D62BE4FF631 ;
-    p:P119 wds:Q827-31D1E154-1C61-57D1-8C75-8642327BFC1B ;
-    p:P122 wds:Q827-BD765DB8-3E7D-569B-BC3A-07771F9679C0,
-        wds:Q827-CF584F7C-6143-5DBB-894E-2D1F7FA1DCAD ;
-    p:P123 wds:Q827-031F2207-9525-506A-AA0E-6854057D48B5 ;
-    p:P125 wds:Q827-12BDB5BD-9CD8-52AD-A8C1-5944DC800B96 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q654 ;
-    wdt:P114 "10.5281/zenodo.4527470" ;
-    wdt:P115 <https://open-archaeo.info/post/outliner-yesdavid/> ;
-    wdt:P116 "outliner-yesdavid" ;
-    wdt:P117 wd:Q228 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "outlineR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/yesdavid/outlineR> .
+    chbp:P2 chbs:Q827-6AB9F3FB-C673-5CF9-A181-C6C0A47FDFF3,
+        chbs:Q827-209016EA-895B-544D-9DAA-760F8E6B4883 ;
+    chbp:P106 chbs:Q827-DFFDE73A-C0DF-560C-B942-2B68BDF4D503 ;
+    chbp:P113 chbs:Q827-5248301F-36F4-57F4-91EE-F0F66F412A5F ;
+    chbp:P114 chbs:Q827-8D1151B4-4A4C-5D58-A938-3628418D1E04 ;
+    chbp:P115 chbs:Q827-B2519244-363B-53F8-9727-B8C5BEA3DDFE ;
+    chbp:P116 chbs:Q827-8EA2057E-6E89-5B48-967A-8BAC9B3C3F3F ;
+    chbp:P117 chbs:Q827-A7934C6F-3578-58DD-A664-DC078973AE2E ;
+    chbp:P118 chbs:Q827-66B1D71B-6DC9-585A-B7C0-4D62BE4FF631 ;
+    chbp:P119 chbs:Q827-31D1E154-1C61-57D1-8C75-8642327BFC1B ;
+    chbp:P122 chbs:Q827-BD765DB8-3E7D-569B-BC3A-07771F9679C0,
+        chbs:Q827-CF584F7C-6143-5DBB-894E-2D1F7FA1DCAD ;
+    chbp:P123 chbs:Q827-031F2207-9525-506A-AA0E-6854057D48B5 ;
+    chbp:P125 chbs:Q827-12BDB5BD-9CD8-52AD-A8C1-5944DC800B96 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q654 ;
+    chbt:P114 "10.5281/zenodo.4527470" ;
+    chbt:P115 <https://open-archaeo.info/post/outliner-yesdavid/> ;
+    chbt:P116 "outliner-yesdavid" ;
+    chbt:P117 chb:Q228 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "outlineR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/yesdavid/outlineR> .
 
-wds:Q827-6AB9F3FB-C673-5CF9-A181-C6C0A47FDFF3
+chbs:Q827-6AB9F3FB-C673-5CF9-A181-C6C0A47FDFF3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P2 chb:Q103 .
 
-wds:Q827-8D1151B4-4A4C-5D58-A938-3628418D1E04
+chbs:Q827-8D1151B4-4A4C-5D58-A938-3628418D1E04
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P114 "10.5281/zenodo.4527470" .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P114 "10.5281/zenodo.4527470" .
 
-wds:Q827-8EA2057E-6E89-5B48-967A-8BAC9B3C3F3F
+chbs:Q827-8EA2057E-6E89-5B48-967A-8BAC9B3C3F3F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "outliner-yesdavid" .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "outliner-yesdavid" .
 
-wds:Q827-12BDB5BD-9CD8-52AD-A8C1-5944DC800B96
+chbs:Q827-12BDB5BD-9CD8-52AD-A8C1-5944DC800B96
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    pq:P104 "2021-06-18T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-yesdavid-outlineR_-_2021-06-18_18-20-24> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:3a72adb85190df0c10d68c328b9f96b6 ;
-    ps:P125 <https://github.com/yesdavid/outlineR> .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbpq:P104 "2021-06-18T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-yesdavid-outlineR_-_2021-06-18_18-20-24> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:3a72adb85190df0c10d68c328b9f96b6 ;
+    chbps:P125 <https://github.com/yesdavid/outlineR> .
 
-wds:Q827-31D1E154-1C61-57D1-8C75-8642327BFC1B
+chbs:Q827-31D1E154-1C61-57D1-8C75-8642327BFC1B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P119 "outlineR"@en .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P119 "outlineR"@en .
 
-wds:Q827-031F2207-9525-506A-AA0E-6854057D48B5
+chbs:Q827-031F2207-9525-506A-AA0E-6854057D48B5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P123 chb:Q111 .
 
-wds:Q827-66B1D71B-6DC9-585A-B7C0-4D62BE4FF631
+chbs:Q827-66B1D71B-6DC9-585A-B7C0-4D62BE4FF631
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P118 chb:Q108 .
 
-wds:Q827-209016EA-895B-544D-9DAA-760F8E6B4883
+chbs:Q827-209016EA-895B-544D-9DAA-760F8E6B4883
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P2 chb:Q106 .
 
-wds:Q827-5248301F-36F4-57F4-91EE-F0F66F412A5F
+chbs:Q827-5248301F-36F4-57F4-91EE-F0F66F412A5F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q654 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q654 .
 
-wds:Q827-A7934C6F-3578-58DD-A664-DC078973AE2E
+chbs:Q827-A7934C6F-3578-58DD-A664-DC078973AE2E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P117 wd:Q228 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P117 chb:Q228 .
 
-wds:Q827-B2519244-363B-53F8-9727-B8C5BEA3DDFE
+chbs:Q827-B2519244-363B-53F8-9727-B8C5BEA3DDFE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P115 <https://open-archaeo.info/post/outliner-yesdavid/> .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P115 <https://open-archaeo.info/post/outliner-yesdavid/> .
 
-wds:Q827-BD765DB8-3E7D-569B-BC3A-07771F9679C0
+chbs:Q827-BD765DB8-3E7D-569B-BC3A-07771F9679C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P122 chb:Q110 .
 
-wds:Q827-CF584F7C-6143-5DBB-894E-2D1F7FA1DCAD
+chbs:Q827-CF584F7C-6143-5DBB-894E-2D1F7FA1DCAD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P122 chb:Q109 .
 
-wds:Q827-DFFDE73A-C0DF-560C-B942-2B68BDF4D503
+chbs:Q827-DFFDE73A-C0DF-560C-B942-2B68BDF4D503
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa ;
+    chbps:P106 chb:Q110 .
 
-wdref:6906b3fe6b096e9d370e84970d46427f94bdd8aa
+chbref:6906b3fe6b096e9d370e84970d46427f94bdd8aa
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/outliner-yesdavid/> .
+    chbpr:P6 <https://open-archaeo.info/post/outliner-yesdavid/> .
 
-wdv:3a72adb85190df0c10d68c328b9f96b6
+chbv:3a72adb85190df0c10d68c328b9f96b6
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

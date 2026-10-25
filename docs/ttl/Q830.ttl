@@ -1,53 +1,54 @@
 # Q830: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q830
+chbdata:Q830.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Perform tree-ring analyses such as detrending, chronology building, and crossdating."@en ;
     dcterms:identifier "Q830" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q830 ;
+    dcterms:subject chb:Q830 ;
     dcterms:title "dplR"@en ;
-    schema:about wd:Q830 ;
-    dcat:distribution dist:Q830-html,
-        dist:Q830-json,
-        dist:Q830-ttl ;
+    schema:about chb:Q830 ;
+    dcat:distribution chbdist:Q830-html,
+        chbdist:Q830-json,
+        chbdist:Q830-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q830.html> .
 
-dist:Q830-html
+chbdist:Q830-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q830-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q830.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q830-json
+chbdist:Q830-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q830-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q830.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q830-ttl
+chbdist:Q830-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q830, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q830.ttl> ;
+    dcat:downloadURL chbdata:Q830.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q830
+chb:Q830
     a wikibase:Item ;
     schema:description "Perform tree-ring analyses such as detrending, chronology building, and crossdating."@en ;
     schema:name "dplR"@en ;
@@ -80,136 +81,136 @@ wd:Q830
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "dplR"@en ;
     skos:prefLabel "dplR"@en ;
-    p:P2 wds:Q830-249E2C2D-8725-51D9-A4DE-49FCE17C6191,
-        wds:Q830-3194E31D-D6F2-5211-8F9C-4AE24652F60F ;
-    p:P106 wds:Q830-794310A9-FCDB-5609-A422-A383875A5A9A ;
-    p:P113 wds:Q830-F4629AD8-EB25-5E79-9647-1B35AA042143 ;
-    p:P115 wds:Q830-25EC858D-D752-58B0-ADC2-7496726A9DA9 ;
-    p:P116 wds:Q830-79AD6D5B-1900-5CB9-A861-30C759B88842 ;
-    p:P117 wds:Q830-20854D2B-D34C-5B46-B3A6-3A9B75CFF988,
-        wds:Q830-F8B0C151-F494-5237-8DE3-E627F7D4621B ;
-    p:P118 wds:Q830-2307E0AF-7166-56FC-902C-F48759997C9B ;
-    p:P119 wds:Q830-F8135EE2-13A6-532F-82C1-9ED705BE72A4 ;
-    p:P122 wds:Q830-9AA2AA98-16B4-51F6-B2B3-2777A66799FB,
-        wds:Q830-B6FA750B-40B7-52E8-98F8-88F10CC634EE ;
-    p:P123 wds:Q830-00F69A64-4019-502A-BD99-91C4CDDE0BB3 ;
-    p:P125 wds:Q830-9A7A3F68-8A30-5E37-A6A7-12F72B3CF033 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q831 ;
-    wdt:P115 <https://open-archaeo.info/post/dplr/> ;
-    wdt:P116 "dplr" ;
-    wdt:P117 wd:Q126,
-        wd:Q178 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "dplR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/AndyBunn/dplR> .
+    chbp:P2 chbs:Q830-249E2C2D-8725-51D9-A4DE-49FCE17C6191,
+        chbs:Q830-3194E31D-D6F2-5211-8F9C-4AE24652F60F ;
+    chbp:P106 chbs:Q830-794310A9-FCDB-5609-A422-A383875A5A9A ;
+    chbp:P113 chbs:Q830-F4629AD8-EB25-5E79-9647-1B35AA042143 ;
+    chbp:P115 chbs:Q830-25EC858D-D752-58B0-ADC2-7496726A9DA9 ;
+    chbp:P116 chbs:Q830-79AD6D5B-1900-5CB9-A861-30C759B88842 ;
+    chbp:P117 chbs:Q830-20854D2B-D34C-5B46-B3A6-3A9B75CFF988,
+        chbs:Q830-F8B0C151-F494-5237-8DE3-E627F7D4621B ;
+    chbp:P118 chbs:Q830-2307E0AF-7166-56FC-902C-F48759997C9B ;
+    chbp:P119 chbs:Q830-F8135EE2-13A6-532F-82C1-9ED705BE72A4 ;
+    chbp:P122 chbs:Q830-9AA2AA98-16B4-51F6-B2B3-2777A66799FB,
+        chbs:Q830-B6FA750B-40B7-52E8-98F8-88F10CC634EE ;
+    chbp:P123 chbs:Q830-00F69A64-4019-502A-BD99-91C4CDDE0BB3 ;
+    chbp:P125 chbs:Q830-9A7A3F68-8A30-5E37-A6A7-12F72B3CF033 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q831 ;
+    chbt:P115 <https://open-archaeo.info/post/dplr/> ;
+    chbt:P116 "dplr" ;
+    chbt:P117 chb:Q126,
+        chb:Q178 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "dplR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/AndyBunn/dplR> .
 
-wds:Q830-00F69A64-4019-502A-BD99-91C4CDDE0BB3
+chbs:Q830-00F69A64-4019-502A-BD99-91C4CDDE0BB3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q830-9A7A3F68-8A30-5E37-A6A7-12F72B3CF033
+chbs:Q830-9A7A3F68-8A30-5E37-A6A7-12F72B3CF033
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/AndyBunn/dplR> .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/AndyBunn/dplR> .
 
-wds:Q830-9AA2AA98-16B4-51F6-B2B3-2777A66799FB
+chbs:Q830-9AA2AA98-16B4-51F6-B2B3-2777A66799FB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q830-25EC858D-D752-58B0-ADC2-7496726A9DA9
+chbs:Q830-25EC858D-D752-58B0-ADC2-7496726A9DA9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P115 <https://open-archaeo.info/post/dplr/> .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P115 <https://open-archaeo.info/post/dplr/> .
 
-wds:Q830-79AD6D5B-1900-5CB9-A861-30C759B88842
+chbs:Q830-79AD6D5B-1900-5CB9-A861-30C759B88842
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "dplr" .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "dplr" .
 
-wds:Q830-249E2C2D-8725-51D9-A4DE-49FCE17C6191
+chbs:Q830-249E2C2D-8725-51D9-A4DE-49FCE17C6191
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q830-2307E0AF-7166-56FC-902C-F48759997C9B
+chbs:Q830-2307E0AF-7166-56FC-902C-F48759997C9B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q830-3194E31D-D6F2-5211-8F9C-4AE24652F60F
+chbs:Q830-3194E31D-D6F2-5211-8F9C-4AE24652F60F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q830-20854D2B-D34C-5B46-B3A6-3A9B75CFF988
+chbs:Q830-20854D2B-D34C-5B46-B3A6-3A9B75CFF988
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q830-794310A9-FCDB-5609-A422-A383875A5A9A
+chbs:Q830-794310A9-FCDB-5609-A422-A383875A5A9A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q830-B6FA750B-40B7-52E8-98F8-88F10CC634EE
+chbs:Q830-B6FA750B-40B7-52E8-98F8-88F10CC634EE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q830-F8B0C151-F494-5237-8DE3-E627F7D4621B
+chbs:Q830-F8B0C151-F494-5237-8DE3-E627F7D4621B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P117 wd:Q178 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P117 chb:Q178 .
 
-wds:Q830-F4629AD8-EB25-5E79-9647-1B35AA042143
+chbs:Q830-F4629AD8-EB25-5E79-9647-1B35AA042143
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q831 .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q831 .
 
-wds:Q830-F8135EE2-13A6-532F-82C1-9ED705BE72A4
+chbs:Q830-F8135EE2-13A6-532F-82C1-9ED705BE72A4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
-    ps:P119 "dplR"@en .
+    prov:wasDerivedFrom chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50 ;
+    chbps:P119 "dplR"@en .
 
-wdref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50
+chbref:1e63d1c8005a2a92a50f33dd5b39cc8237051f50
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/dplr/> .
+    chbpr:P6 <https://open-archaeo.info/post/dplr/> .

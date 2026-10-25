@@ -1,53 +1,54 @@
 # Q863: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q863
+chbdata:Q863.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Utility for transcribing Old South Arabian texts."@en ;
     dcterms:identifier "Q863" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q863 ;
+    dcterms:subject chb:Q863 ;
     dcterms:title "OSA-Transcriber"@en ;
-    schema:about wd:Q863 ;
-    dcat:distribution dist:Q863-html,
-        dist:Q863-json,
-        dist:Q863-ttl ;
+    schema:about chb:Q863 ;
+    dcat:distribution chbdist:Q863-html,
+        chbdist:Q863-json,
+        chbdist:Q863-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q863.html> .
 
-dist:Q863-html
+chbdist:Q863-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q863-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q863.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q863-json
+chbdist:Q863-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q863-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q863.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q863-ttl
+chbdist:Q863-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q863, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q863.ttl> ;
+    dcat:downloadURL chbdata:Q863.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q863
+chb:Q863
     a wikibase:Item ;
     schema:description "Utility for transcribing Old South Arabian texts."@en ;
     schema:name "OSA-Transcriber"@en ;
@@ -80,127 +81,127 @@ wd:Q863
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "OSA-Transcriber"@en ;
     skos:prefLabel "OSA-Transcriber"@en ;
-    p:P2 wds:Q863-1C675F9C-EA0F-50D9-8444-CB2A50D9AAE0,
-        wds:Q863-E6321B7B-7886-5803-A10F-0DD270EC5DBE ;
-    p:P106 wds:Q863-25CBA6BB-76DE-5FFA-A328-7A2718C05ABF ;
-    p:P113 wds:Q863-B72D76A3-067C-5BA5-8FBD-CA72A2B5E58F ;
-    p:P115 wds:Q863-F7191A2E-2CCF-53CC-B0A4-381694DE25DA ;
-    p:P116 wds:Q863-81A040A8-F59A-54F2-A556-F66D009B6243 ;
-    p:P117 wds:Q863-5EBD95A1-1395-5064-A573-4CF47DF1F4F7 ;
-    p:P118 wds:Q863-26DC341E-10F4-5562-9E80-7A3F0FF487D8 ;
-    p:P119 wds:Q863-0795E441-F52C-5BE3-9881-D9F574B7078E ;
-    p:P122 wds:Q863-7803AB31-FCB7-5159-8DC9-9BADBB8DCB19,
-        wds:Q863-A9EB7420-176A-582D-8F0A-EE2D194D19C3 ;
-    p:P123 wds:Q863-F010D379-E2AC-5577-AE56-DCF8D7A42ADC ;
-    p:P125 wds:Q863-F3731607-4034-5A47-8E10-BA2B7DF6DD13 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q814 ;
-    wdt:P115 <https://open-archaeo.info/post/osa-transcriber/> ;
-    wdt:P116 "osa-transcriber" ;
-    wdt:P117 wd:Q448 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "OSA-Transcriber"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/Lugal-PCZ/OSA-Transcriber> .
+    chbp:P2 chbs:Q863-1C675F9C-EA0F-50D9-8444-CB2A50D9AAE0,
+        chbs:Q863-E6321B7B-7886-5803-A10F-0DD270EC5DBE ;
+    chbp:P106 chbs:Q863-25CBA6BB-76DE-5FFA-A328-7A2718C05ABF ;
+    chbp:P113 chbs:Q863-B72D76A3-067C-5BA5-8FBD-CA72A2B5E58F ;
+    chbp:P115 chbs:Q863-F7191A2E-2CCF-53CC-B0A4-381694DE25DA ;
+    chbp:P116 chbs:Q863-81A040A8-F59A-54F2-A556-F66D009B6243 ;
+    chbp:P117 chbs:Q863-5EBD95A1-1395-5064-A573-4CF47DF1F4F7 ;
+    chbp:P118 chbs:Q863-26DC341E-10F4-5562-9E80-7A3F0FF487D8 ;
+    chbp:P119 chbs:Q863-0795E441-F52C-5BE3-9881-D9F574B7078E ;
+    chbp:P122 chbs:Q863-7803AB31-FCB7-5159-8DC9-9BADBB8DCB19,
+        chbs:Q863-A9EB7420-176A-582D-8F0A-EE2D194D19C3 ;
+    chbp:P123 chbs:Q863-F010D379-E2AC-5577-AE56-DCF8D7A42ADC ;
+    chbp:P125 chbs:Q863-F3731607-4034-5A47-8E10-BA2B7DF6DD13 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q814 ;
+    chbt:P115 <https://open-archaeo.info/post/osa-transcriber/> ;
+    chbt:P116 "osa-transcriber" ;
+    chbt:P117 chb:Q448 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "OSA-Transcriber"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/Lugal-PCZ/OSA-Transcriber> .
 
-wds:Q863-1C675F9C-EA0F-50D9-8444-CB2A50D9AAE0
+chbs:Q863-1C675F9C-EA0F-50D9-8444-CB2A50D9AAE0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q863-5EBD95A1-1395-5064-A573-4CF47DF1F4F7
+chbs:Q863-5EBD95A1-1395-5064-A573-4CF47DF1F4F7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P117 wd:Q448 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P117 chb:Q448 .
 
-wds:Q863-25CBA6BB-76DE-5FFA-A328-7A2718C05ABF
+chbs:Q863-25CBA6BB-76DE-5FFA-A328-7A2718C05ABF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q863-26DC341E-10F4-5562-9E80-7A3F0FF487D8
+chbs:Q863-26DC341E-10F4-5562-9E80-7A3F0FF487D8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q863-81A040A8-F59A-54F2-A556-F66D009B6243
+chbs:Q863-81A040A8-F59A-54F2-A556-F66D009B6243
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "osa-transcriber" .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "osa-transcriber" .
 
-wds:Q863-0795E441-F52C-5BE3-9881-D9F574B7078E
+chbs:Q863-0795E441-F52C-5BE3-9881-D9F574B7078E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P119 "OSA-Transcriber"@en .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P119 "OSA-Transcriber"@en .
 
-wds:Q863-7803AB31-FCB7-5159-8DC9-9BADBB8DCB19
+chbs:Q863-7803AB31-FCB7-5159-8DC9-9BADBB8DCB19
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q863-A9EB7420-176A-582D-8F0A-EE2D194D19C3
+chbs:Q863-A9EB7420-176A-582D-8F0A-EE2D194D19C3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q863-B72D76A3-067C-5BA5-8FBD-CA72A2B5E58F
+chbs:Q863-B72D76A3-067C-5BA5-8FBD-CA72A2B5E58F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q814 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q814 .
 
-wds:Q863-E6321B7B-7886-5803-A10F-0DD270EC5DBE
+chbs:Q863-E6321B7B-7886-5803-A10F-0DD270EC5DBE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q863-F010D379-E2AC-5577-AE56-DCF8D7A42ADC
+chbs:Q863-F010D379-E2AC-5577-AE56-DCF8D7A42ADC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q863-F7191A2E-2CCF-53CC-B0A4-381694DE25DA
+chbs:Q863-F7191A2E-2CCF-53CC-B0A4-381694DE25DA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    ps:P115 <https://open-archaeo.info/post/osa-transcriber/> .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbps:P115 <https://open-archaeo.info/post/osa-transcriber/> .
 
-wds:Q863-F3731607-4034-5A47-8E10-BA2B7DF6DD13
+chbs:Q863-F3731607-4034-5A47-8E10-BA2B7DF6DD13
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/Lugal-PCZ/OSA-Transcriber> .
+    prov:wasDerivedFrom chbref:37fdebe31c004c522f94f6a0f277e14db166f931 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/Lugal-PCZ/OSA-Transcriber> .
 
-wdref:37fdebe31c004c522f94f6a0f277e14db166f931
+chbref:37fdebe31c004c522f94f6a0f277e14db166f931
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/osa-transcriber/> .
+    chbpr:P6 <https://open-archaeo.info/post/osa-transcriber/> .

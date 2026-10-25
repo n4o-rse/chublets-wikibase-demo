@@ -1,53 +1,54 @@
 # Q782: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q782
+chbdata:Q782.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "R package to analyse multiple radiocarbon determinations."@en ;
     dcterms:identifier "Q782" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q782 ;
+    dcterms:subject chb:Q782 ;
     dcterms:title "carbondate"@en ;
-    schema:about wd:Q782 ;
-    dcat:distribution dist:Q782-html,
-        dist:Q782-json,
-        dist:Q782-ttl ;
+    schema:about chb:Q782 ;
+    dcat:distribution chbdist:Q782-html,
+        chbdist:Q782-json,
+        chbdist:Q782-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q782.html> .
 
-dist:Q782-html
+chbdist:Q782-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q782-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q782.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q782-json
+chbdist:Q782-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q782-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q782.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q782-ttl
+chbdist:Q782-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q782, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q782.ttl> ;
+    dcat:downloadURL chbdata:Q782.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q782
+chb:Q782
     a wikibase:Item ;
     schema:description "R package to analyse multiple radiocarbon determinations."@en ;
     schema:name "carbondate"@en ;
@@ -80,164 +81,164 @@ wd:Q782
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "carbondate"@en ;
     skos:prefLabel "carbondate"@en ;
-    p:P2 wds:Q782-BD13BD5D-A1AA-53A8-B774-AEE74600464C,
-        wds:Q782-FFB8C705-EC47-5926-B3EA-6B2DCDDC5C32 ;
-    p:P106 wds:Q782-6C2CA217-E929-5DA2-A8A6-3FC7C534DFA7 ;
-    p:P108 wds:Q782-FC99063D-51B8-58CD-BF83-2DA2981002F0 ;
-    p:P111 wds:Q782-8570F57D-3133-5A75-B5CA-E67257CDA252 ;
-    p:P113 wds:Q782-31473B60-5AEC-5D04-90AB-677AE282CDCC,
-        wds:Q782-A0203C95-9BEF-5137-8792-D5219009015B ;
-    p:P115 wds:Q782-6AEA4194-4DD7-5374-B5C9-916E18508138 ;
-    p:P116 wds:Q782-7A242BB2-4ED1-5BB0-8177-C26264997CB9 ;
-    p:P117 wds:Q782-A5B2D46B-C8BF-5D54-9DBE-7537580A1126 ;
-    p:P118 wds:Q782-0D54F1E9-FDBF-5832-A8DF-BFFB5053C2BA ;
-    p:P119 wds:Q782-173511D0-91B1-55FE-B7F3-852116564435 ;
-    p:P120 wds:Q782-7ABC47F8-EABA-55CA-A81B-AA747F992A3C ;
-    p:P122 wds:Q782-371B2055-2D62-55BD-B9C2-0E3CE7F7C7ED,
-        wds:Q782-62167B30-178A-5662-A5FA-6F4438E1D0AC ;
-    p:P123 wds:Q782-88878D45-DB42-5548-B7BB-BD14C89F5FD9 ;
-    p:P125 wds:Q782-B3AC979A-AB04-5DB9-B8F0-B4F94FAD7E54 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "carbondate" ;
-    wdt:P111 wd:Q785 ;
-    wdt:P113 wd:Q783,
-        wd:Q784 ;
-    wdt:P115 <https://open-archaeo.info/post/carbondate/> ;
-    wdt:P116 "carbondate" ;
-    wdt:P117 wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "carbondate"@en ;
-    wdt:P120 <https://tjheaton.github.io/carbondate/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/TJHeaton/carbondate> .
+    chbp:P2 chbs:Q782-BD13BD5D-A1AA-53A8-B774-AEE74600464C,
+        chbs:Q782-FFB8C705-EC47-5926-B3EA-6B2DCDDC5C32 ;
+    chbp:P106 chbs:Q782-6C2CA217-E929-5DA2-A8A6-3FC7C534DFA7 ;
+    chbp:P108 chbs:Q782-FC99063D-51B8-58CD-BF83-2DA2981002F0 ;
+    chbp:P111 chbs:Q782-8570F57D-3133-5A75-B5CA-E67257CDA252 ;
+    chbp:P113 chbs:Q782-31473B60-5AEC-5D04-90AB-677AE282CDCC,
+        chbs:Q782-A0203C95-9BEF-5137-8792-D5219009015B ;
+    chbp:P115 chbs:Q782-6AEA4194-4DD7-5374-B5C9-916E18508138 ;
+    chbp:P116 chbs:Q782-7A242BB2-4ED1-5BB0-8177-C26264997CB9 ;
+    chbp:P117 chbs:Q782-A5B2D46B-C8BF-5D54-9DBE-7537580A1126 ;
+    chbp:P118 chbs:Q782-0D54F1E9-FDBF-5832-A8DF-BFFB5053C2BA ;
+    chbp:P119 chbs:Q782-173511D0-91B1-55FE-B7F3-852116564435 ;
+    chbp:P120 chbs:Q782-7ABC47F8-EABA-55CA-A81B-AA747F992A3C ;
+    chbp:P122 chbs:Q782-371B2055-2D62-55BD-B9C2-0E3CE7F7C7ED,
+        chbs:Q782-62167B30-178A-5662-A5FA-6F4438E1D0AC ;
+    chbp:P123 chbs:Q782-88878D45-DB42-5548-B7BB-BD14C89F5FD9 ;
+    chbp:P125 chbs:Q782-B3AC979A-AB04-5DB9-B8F0-B4F94FAD7E54 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "carbondate" ;
+    chbt:P111 chb:Q785 ;
+    chbt:P113 chb:Q783,
+        chb:Q784 ;
+    chbt:P115 <https://open-archaeo.info/post/carbondate/> ;
+    chbt:P116 "carbondate" ;
+    chbt:P117 chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "carbondate"@en ;
+    chbt:P120 <https://tjheaton.github.io/carbondate/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/TJHeaton/carbondate> .
 
-wds:Q782-0D54F1E9-FDBF-5832-A8DF-BFFB5053C2BA
+chbs:Q782-0D54F1E9-FDBF-5832-A8DF-BFFB5053C2BA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q782-6AEA4194-4DD7-5374-B5C9-916E18508138
+chbs:Q782-6AEA4194-4DD7-5374-B5C9-916E18508138
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P115 <https://open-archaeo.info/post/carbondate/> .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P115 <https://open-archaeo.info/post/carbondate/> .
 
-wds:Q782-6C2CA217-E929-5DA2-A8A6-3FC7C534DFA7
+chbs:Q782-6C2CA217-E929-5DA2-A8A6-3FC7C534DFA7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q782-7A242BB2-4ED1-5BB0-8177-C26264997CB9
+chbs:Q782-7A242BB2-4ED1-5BB0-8177-C26264997CB9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "carbondate" .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "carbondate" .
 
-wds:Q782-7ABC47F8-EABA-55CA-A81B-AA747F992A3C
+chbs:Q782-7ABC47F8-EABA-55CA-A81B-AA747F992A3C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P120 <https://tjheaton.github.io/carbondate/> .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P120 <https://tjheaton.github.io/carbondate/> .
 
-wds:Q782-371B2055-2D62-55BD-B9C2-0E3CE7F7C7ED
+chbs:Q782-371B2055-2D62-55BD-B9C2-0E3CE7F7C7ED
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q782-8570F57D-3133-5A75-B5CA-E67257CDA252
+chbs:Q782-8570F57D-3133-5A75-B5CA-E67257CDA252
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P111 wd:Q785 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P111 chb:Q785 .
 
-wds:Q782-31473B60-5AEC-5D04-90AB-677AE282CDCC
+chbs:Q782-31473B60-5AEC-5D04-90AB-677AE282CDCC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q784 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q784 .
 
-wds:Q782-62167B30-178A-5662-A5FA-6F4438E1D0AC
+chbs:Q782-62167B30-178A-5662-A5FA-6F4438E1D0AC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q782-88878D45-DB42-5548-B7BB-BD14C89F5FD9
+chbs:Q782-88878D45-DB42-5548-B7BB-BD14C89F5FD9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q782-173511D0-91B1-55FE-B7F3-852116564435
+chbs:Q782-173511D0-91B1-55FE-B7F3-852116564435
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P119 "carbondate"@en .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P119 "carbondate"@en .
 
-wds:Q782-A5B2D46B-C8BF-5D54-9DBE-7537580A1126
+chbs:Q782-A5B2D46B-C8BF-5D54-9DBE-7537580A1126
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P117 chb:Q140 .
 
-wds:Q782-A0203C95-9BEF-5137-8792-D5219009015B
+chbs:Q782-A0203C95-9BEF-5137-8792-D5219009015B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q783 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q783 .
 
-wds:Q782-B3AC979A-AB04-5DB9-B8F0-B4F94FAD7E54
+chbs:Q782-B3AC979A-AB04-5DB9-B8F0-B4F94FAD7E54
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/TJHeaton/carbondate> .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/TJHeaton/carbondate> .
 
-wds:Q782-BD13BD5D-A1AA-53A8-B774-AEE74600464C
+chbs:Q782-BD13BD5D-A1AA-53A8-B774-AEE74600464C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q782-FC99063D-51B8-58CD-BF83-2DA2981002F0
+chbs:Q782-FC99063D-51B8-58CD-BF83-2DA2981002F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P108 "carbondate" .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P108 "carbondate" .
 
-wds:Q782-FFB8C705-EC47-5926-B3EA-6B2DCDDC5C32
+chbs:Q782-FFB8C705-EC47-5926-B3EA-6B2DCDDC5C32
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37 ;
+    chbps:P2 chb:Q103 .
 
-wdref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37
+chbref:0325d7fff72704e0d3bd7fed9b5999c75fc80e37
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/carbondate/> .
+    chbpr:P6 <https://open-archaeo.info/post/carbondate/> .

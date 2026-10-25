@@ -1,53 +1,54 @@
 # Q322: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q322
+chbdata:Q322.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A set of analyses to control for variable taphonomic impacts on archaeological faunal datasets."@en ;
     dcterms:identifier "Q322" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q322 ;
+    dcterms:subject chb:Q322 ;
     dcterms:title "The Southwestern Taphonomic Protocol"@en ;
-    schema:about wd:Q322 ;
-    dcat:distribution dist:Q322-html,
-        dist:Q322-json,
-        dist:Q322-ttl ;
+    schema:about chb:Q322 ;
+    dcat:distribution chbdist:Q322-html,
+        chbdist:Q322-json,
+        chbdist:Q322-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q322.html> .
 
-dist:Q322-html
+chbdist:Q322-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q322-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q322.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q322-json
+chbdist:Q322-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q322-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q322.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q322-ttl
+chbdist:Q322-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q322, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q322.ttl> ;
+    dcat:downloadURL chbdata:Q322.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q322
+chb:Q322
     a wikibase:Item ;
     schema:description "A set of analyses to control for variable taphonomic impacts on archaeological faunal datasets."@en ;
     schema:name "The Southwestern Taphonomic Protocol"@en ;
@@ -80,153 +81,153 @@ wd:Q322
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "The Southwestern Taphonomic Protocol"@en ;
     skos:prefLabel "The Southwestern Taphonomic Protocol"@en ;
-    p:P2 wds:Q322-7CD33D2B-4DCB-58C1-AE14-6B6FF4B1D293,
-        wds:Q322-66C6DB4E-ACFA-5687-8243-1FCAD0396779 ;
-    p:P106 wds:Q322-FECB03F6-E216-5B91-AC23-E86C4FEEB014 ;
-    p:P113 wds:Q322-21B06511-4FC5-5895-80F8-67E21C6AA30C ;
-    p:P114 wds:Q322-971B3A8E-92A3-5214-99D0-9C0DD30CEC20 ;
-    p:P115 wds:Q322-6A760AE0-5956-58AC-8D39-9C06B619DFB2 ;
-    p:P116 wds:Q322-3F2CBF43-8A45-5285-AFC0-4ADF69AC8D68 ;
-    p:P117 wds:Q322-02A6B692-7C9D-5608-A5CF-E4FC3F0F4D80,
-        wds:Q322-A6DCE9E0-A53F-5289-A448-979254DE467B ;
-    p:P118 wds:Q322-0AB01C10-FFF2-546A-A2BB-8BF1523126B6 ;
-    p:P119 wds:Q322-A4A7F347-1963-516C-80D1-40F9805FAEFC ;
-    p:P122 wds:Q322-845CABC2-BA77-5728-9A5E-04FDD215935D,
-        wds:Q322-A5DCD98C-6695-56C7-B034-D55B71B1B405 ;
-    p:P123 wds:Q322-83A81B52-4C17-5F58-ADF7-C0B08F6EBE7A ;
-    p:P125 wds:Q322-016B981D-00DC-5DDB-917C-F1957CDD01B2 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q266 ;
-    wdt:P114 "10.5281/zenodo.4301001" ;
-    wdt:P115 <https://open-archaeo.info/post/the-southwestern-taphonomic-protocol/> ;
-    wdt:P116 "the-southwestern-taphonomic-protocol" ;
-    wdt:P117 wd:Q157,
-        wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "The Southwestern Taphonomic Protocol"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/bocinsky/swtp> .
+    chbp:P2 chbs:Q322-7CD33D2B-4DCB-58C1-AE14-6B6FF4B1D293,
+        chbs:Q322-66C6DB4E-ACFA-5687-8243-1FCAD0396779 ;
+    chbp:P106 chbs:Q322-FECB03F6-E216-5B91-AC23-E86C4FEEB014 ;
+    chbp:P113 chbs:Q322-21B06511-4FC5-5895-80F8-67E21C6AA30C ;
+    chbp:P114 chbs:Q322-971B3A8E-92A3-5214-99D0-9C0DD30CEC20 ;
+    chbp:P115 chbs:Q322-6A760AE0-5956-58AC-8D39-9C06B619DFB2 ;
+    chbp:P116 chbs:Q322-3F2CBF43-8A45-5285-AFC0-4ADF69AC8D68 ;
+    chbp:P117 chbs:Q322-02A6B692-7C9D-5608-A5CF-E4FC3F0F4D80,
+        chbs:Q322-A6DCE9E0-A53F-5289-A448-979254DE467B ;
+    chbp:P118 chbs:Q322-0AB01C10-FFF2-546A-A2BB-8BF1523126B6 ;
+    chbp:P119 chbs:Q322-A4A7F347-1963-516C-80D1-40F9805FAEFC ;
+    chbp:P122 chbs:Q322-845CABC2-BA77-5728-9A5E-04FDD215935D,
+        chbs:Q322-A5DCD98C-6695-56C7-B034-D55B71B1B405 ;
+    chbp:P123 chbs:Q322-83A81B52-4C17-5F58-ADF7-C0B08F6EBE7A ;
+    chbp:P125 chbs:Q322-016B981D-00DC-5DDB-917C-F1957CDD01B2 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q266 ;
+    chbt:P114 "10.5281/zenodo.4301001" ;
+    chbt:P115 <https://open-archaeo.info/post/the-southwestern-taphonomic-protocol/> ;
+    chbt:P116 "the-southwestern-taphonomic-protocol" ;
+    chbt:P117 chb:Q157,
+        chb:Q193 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "The Southwestern Taphonomic Protocol"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/bocinsky/swtp> .
 
-wds:Q322-0AB01C10-FFF2-546A-A2BB-8BF1523126B6
+chbs:Q322-0AB01C10-FFF2-546A-A2BB-8BF1523126B6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P118 chb:Q108 .
 
-wds:Q322-02A6B692-7C9D-5608-A5CF-E4FC3F0F4D80
+chbs:Q322-02A6B692-7C9D-5608-A5CF-E4FC3F0F4D80
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P117 chb:Q193 .
 
-wds:Q322-3F2CBF43-8A45-5285-AFC0-4ADF69AC8D68
+chbs:Q322-3F2CBF43-8A45-5285-AFC0-4ADF69AC8D68
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "the-southwestern-taphonomic-protocol" .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "the-southwestern-taphonomic-protocol" .
 
-wds:Q322-6A760AE0-5956-58AC-8D39-9C06B619DFB2
+chbs:Q322-6A760AE0-5956-58AC-8D39-9C06B619DFB2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P115 <https://open-archaeo.info/post/the-southwestern-taphonomic-protocol/> .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P115 <https://open-archaeo.info/post/the-southwestern-taphonomic-protocol/> .
 
-wds:Q322-7CD33D2B-4DCB-58C1-AE14-6B6FF4B1D293
+chbs:Q322-7CD33D2B-4DCB-58C1-AE14-6B6FF4B1D293
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P2 chb:Q103 .
 
-wds:Q322-016B981D-00DC-5DDB-917C-F1957CDD01B2
+chbs:Q322-016B981D-00DC-5DDB-917C-F1957CDD01B2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    pq:P104 "2020-12-11T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-bocinsky-swtp_-_2020-12-11_04-18-38> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:f58fbfa5fad88590fcc17bab0c9925a8 ;
-    ps:P125 <https://github.com/bocinsky/swtp> .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbpq:P104 "2020-12-11T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-bocinsky-swtp_-_2020-12-11_04-18-38> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:f58fbfa5fad88590fcc17bab0c9925a8 ;
+    chbps:P125 <https://github.com/bocinsky/swtp> .
 
-wds:Q322-21B06511-4FC5-5895-80F8-67E21C6AA30C
+chbs:Q322-21B06511-4FC5-5895-80F8-67E21C6AA30C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q266 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q266 .
 
-wds:Q322-66C6DB4E-ACFA-5687-8243-1FCAD0396779
+chbs:Q322-66C6DB4E-ACFA-5687-8243-1FCAD0396779
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P2 chb:Q106 .
 
-wds:Q322-83A81B52-4C17-5F58-ADF7-C0B08F6EBE7A
+chbs:Q322-83A81B52-4C17-5F58-ADF7-C0B08F6EBE7A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P123 chb:Q111 .
 
-wds:Q322-845CABC2-BA77-5728-9A5E-04FDD215935D
+chbs:Q322-845CABC2-BA77-5728-9A5E-04FDD215935D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P122 chb:Q110 .
 
-wds:Q322-971B3A8E-92A3-5214-99D0-9C0DD30CEC20
+chbs:Q322-971B3A8E-92A3-5214-99D0-9C0DD30CEC20
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P114 "10.5281/zenodo.4301001" .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P114 "10.5281/zenodo.4301001" .
 
-wds:Q322-A4A7F347-1963-516C-80D1-40F9805FAEFC
+chbs:Q322-A4A7F347-1963-516C-80D1-40F9805FAEFC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P119 "The Southwestern Taphonomic Protocol"@en .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P119 "The Southwestern Taphonomic Protocol"@en .
 
-wds:Q322-A5DCD98C-6695-56C7-B034-D55B71B1B405
+chbs:Q322-A5DCD98C-6695-56C7-B034-D55B71B1B405
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P122 chb:Q109 .
 
-wds:Q322-A6DCE9E0-A53F-5289-A448-979254DE467B
+chbs:Q322-A6DCE9E0-A53F-5289-A448-979254DE467B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P117 wd:Q157 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P117 chb:Q157 .
 
-wds:Q322-FECB03F6-E216-5B91-AC23-E86C4FEEB014
+chbs:Q322-FECB03F6-E216-5B91-AC23-E86C4FEEB014
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a22b8578575061f7121abd666096a0764fafbe7c ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:a22b8578575061f7121abd666096a0764fafbe7c ;
+    chbps:P106 chb:Q110 .
 
-wdref:a22b8578575061f7121abd666096a0764fafbe7c
+chbref:a22b8578575061f7121abd666096a0764fafbe7c
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/the-southwestern-taphonomic-protocol/> .
+    chbpr:P6 <https://open-archaeo.info/post/the-southwestern-taphonomic-protocol/> .
 
-wdv:f58fbfa5fad88590fcc17bab0c9925a8
+chbv:f58fbfa5fad88590fcc17bab0c9925a8
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

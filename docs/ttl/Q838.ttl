@@ -1,53 +1,54 @@
 # Q838: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q838
+chbdata:Q838.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A package for Bayesian age-depth modelling of sediment cores, constrained by prior information on sedimentation rates and their variability."@en ;
     dcterms:identifier "Q838" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q838 ;
+    dcterms:subject chb:Q838 ;
     dcterms:title "rbacon"@en ;
-    schema:about wd:Q838 ;
-    dcat:distribution dist:Q838-html,
-        dist:Q838-json,
-        dist:Q838-ttl ;
+    schema:about chb:Q838 ;
+    dcat:distribution chbdist:Q838-html,
+        chbdist:Q838-json,
+        chbdist:Q838-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q838.html> .
 
-dist:Q838-html
+chbdist:Q838-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q838-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q838.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q838-json
+chbdist:Q838-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q838-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q838.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q838-ttl
+chbdist:Q838-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q838, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q838.ttl> ;
+    dcat:downloadURL chbdata:Q838.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q838
+chb:Q838
     a wikibase:Item ;
     schema:description "A package for Bayesian age-depth modelling of sediment cores, constrained by prior information on sedimentation rates and their variability."@en ;
     schema:name "rbacon"@en ;
@@ -80,145 +81,145 @@ wd:Q838
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "rbacon"@en ;
     skos:prefLabel "rbacon"@en ;
-    p:P2 wds:Q838-3B89DB0C-BD28-50DC-8FA8-C8295DE48983,
-        wds:Q838-CBCB3D04-380E-5FE8-B157-3B016D0D274F ;
-    p:P106 wds:Q838-AB00B9B4-BC22-59F3-86C4-AF056F261FFC ;
-    p:P108 wds:Q838-529DB50B-FA71-5566-A770-EA364A993BAF ;
-    p:P113 wds:Q838-0305A404-B978-570F-B6D2-1E7AE14E4526 ;
-    p:P115 wds:Q838-1997576B-5BF1-5767-9A76-6DC3F9703C4E ;
-    p:P116 wds:Q838-1684AECF-B100-5B2C-8338-21104AABA09C ;
-    p:P117 wds:Q838-1B508C57-9382-5344-B40B-3D0E9E85EAA4,
-        wds:Q838-DB33D832-42E8-5145-BFB9-A88603E9A138 ;
-    p:P118 wds:Q838-80B25003-F4F9-5B90-ACEA-73DF111E675A ;
-    p:P119 wds:Q838-B55ECA6B-1527-50B0-AA8D-29D9AE3912E9 ;
-    p:P122 wds:Q838-157CE669-0C0D-52BA-A127-81BC646B1366,
-        wds:Q838-427AED93-8BD6-52AA-B748-930FF89F4802 ;
-    p:P123 wds:Q838-EFBC2469-0BAC-5B8E-AD0C-A166FB7FE7C6 ;
-    p:P125 wds:Q838-A1863531-EAAA-5F1E-B3A5-B2F071A1A032 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "rbacon" ;
-    wdt:P113 wd:Q162 ;
-    wdt:P115 <https://open-archaeo.info/post/rbacon/> ;
-    wdt:P116 "rbacon" ;
-    wdt:P117 wd:Q126,
-        wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "rbacon"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/Maarten14C/rbacon> .
+    chbp:P2 chbs:Q838-3B89DB0C-BD28-50DC-8FA8-C8295DE48983,
+        chbs:Q838-CBCB3D04-380E-5FE8-B157-3B016D0D274F ;
+    chbp:P106 chbs:Q838-AB00B9B4-BC22-59F3-86C4-AF056F261FFC ;
+    chbp:P108 chbs:Q838-529DB50B-FA71-5566-A770-EA364A993BAF ;
+    chbp:P113 chbs:Q838-0305A404-B978-570F-B6D2-1E7AE14E4526 ;
+    chbp:P115 chbs:Q838-1997576B-5BF1-5767-9A76-6DC3F9703C4E ;
+    chbp:P116 chbs:Q838-1684AECF-B100-5B2C-8338-21104AABA09C ;
+    chbp:P117 chbs:Q838-1B508C57-9382-5344-B40B-3D0E9E85EAA4,
+        chbs:Q838-DB33D832-42E8-5145-BFB9-A88603E9A138 ;
+    chbp:P118 chbs:Q838-80B25003-F4F9-5B90-ACEA-73DF111E675A ;
+    chbp:P119 chbs:Q838-B55ECA6B-1527-50B0-AA8D-29D9AE3912E9 ;
+    chbp:P122 chbs:Q838-157CE669-0C0D-52BA-A127-81BC646B1366,
+        chbs:Q838-427AED93-8BD6-52AA-B748-930FF89F4802 ;
+    chbp:P123 chbs:Q838-EFBC2469-0BAC-5B8E-AD0C-A166FB7FE7C6 ;
+    chbp:P125 chbs:Q838-A1863531-EAAA-5F1E-B3A5-B2F071A1A032 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "rbacon" ;
+    chbt:P113 chb:Q162 ;
+    chbt:P115 <https://open-archaeo.info/post/rbacon/> ;
+    chbt:P116 "rbacon" ;
+    chbt:P117 chb:Q126,
+        chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "rbacon"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/Maarten14C/rbacon> .
 
-wds:Q838-1B508C57-9382-5344-B40B-3D0E9E85EAA4
+chbs:Q838-1B508C57-9382-5344-B40B-3D0E9E85EAA4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P117 chb:Q140 .
 
-wds:Q838-3B89DB0C-BD28-50DC-8FA8-C8295DE48983
+chbs:Q838-3B89DB0C-BD28-50DC-8FA8-C8295DE48983
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q838-80B25003-F4F9-5B90-ACEA-73DF111E675A
+chbs:Q838-80B25003-F4F9-5B90-ACEA-73DF111E675A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q838-157CE669-0C0D-52BA-A127-81BC646B1366
+chbs:Q838-157CE669-0C0D-52BA-A127-81BC646B1366
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q838-0305A404-B978-570F-B6D2-1E7AE14E4526
+chbs:Q838-0305A404-B978-570F-B6D2-1E7AE14E4526
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q162 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q162 .
 
-wds:Q838-427AED93-8BD6-52AA-B748-930FF89F4802
+chbs:Q838-427AED93-8BD6-52AA-B748-930FF89F4802
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q838-529DB50B-FA71-5566-A770-EA364A993BAF
+chbs:Q838-529DB50B-FA71-5566-A770-EA364A993BAF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P108 "rbacon" .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P108 "rbacon" .
 
-wds:Q838-1684AECF-B100-5B2C-8338-21104AABA09C
+chbs:Q838-1684AECF-B100-5B2C-8338-21104AABA09C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "rbacon" .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "rbacon" .
 
-wds:Q838-1997576B-5BF1-5767-9A76-6DC3F9703C4E
+chbs:Q838-1997576B-5BF1-5767-9A76-6DC3F9703C4E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P115 <https://open-archaeo.info/post/rbacon/> .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P115 <https://open-archaeo.info/post/rbacon/> .
 
-wds:Q838-A1863531-EAAA-5F1E-B3A5-B2F071A1A032
+chbs:Q838-A1863531-EAAA-5F1E-B3A5-B2F071A1A032
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/Maarten14C/rbacon> .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/Maarten14C/rbacon> .
 
-wds:Q838-AB00B9B4-BC22-59F3-86C4-AF056F261FFC
+chbs:Q838-AB00B9B4-BC22-59F3-86C4-AF056F261FFC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q838-B55ECA6B-1527-50B0-AA8D-29D9AE3912E9
+chbs:Q838-B55ECA6B-1527-50B0-AA8D-29D9AE3912E9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P119 "rbacon"@en .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P119 "rbacon"@en .
 
-wds:Q838-CBCB3D04-380E-5FE8-B157-3B016D0D274F
+chbs:Q838-CBCB3D04-380E-5FE8-B157-3B016D0D274F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q838-DB33D832-42E8-5145-BFB9-A88603E9A138
+chbs:Q838-DB33D832-42E8-5145-BFB9-A88603E9A138
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q838-EFBC2469-0BAC-5B8E-AD0C-A166FB7FE7C6
+chbs:Q838-EFBC2469-0BAC-5B8E-AD0C-A166FB7FE7C6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:df6814bb74f08f8d457de4f7a0e65068420ad727 ;
+    chbps:P123 chb:Q111 .
 
-wdref:df6814bb74f08f8d457de4f7a0e65068420ad727
+chbref:df6814bb74f08f8d457de4f7a0e65068420ad727
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/rbacon/> .
+    chbpr:P6 <https://open-archaeo.info/post/rbacon/> .

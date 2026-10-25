@@ -1,53 +1,54 @@
 # Q839: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q839
+chbdata:Q839.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A package to analyze data used to determine whether samples from multiple sources can be separated, to predict the sources of samples from unknown sources, and to evaluation the validity of those predictions. Sample data can include both quantitative and qualitative data. The package includes functions for creating an analysis file from multiple files and exploratory data analysis, as well as multivariate statistical methods to determine source separation, predict sources of unknown samples, and evaluate the validity of the predictions (principal components, classification trees, and random forests)."@en ;
     dcterms:identifier "Q839" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q839 ;
+    dcterms:subject chb:Q839 ;
     dcterms:title "predictSource"@en ;
-    schema:about wd:Q839 ;
-    dcat:distribution dist:Q839-html,
-        dist:Q839-json,
-        dist:Q839-ttl ;
+    schema:about chb:Q839 ;
+    dcat:distribution chbdist:Q839-html,
+        chbdist:Q839-json,
+        chbdist:Q839-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q839.html> .
 
-dist:Q839-html
+chbdist:Q839-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q839-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q839.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q839-json
+chbdist:Q839-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q839-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q839.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q839-ttl
+chbdist:Q839-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q839, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q839.ttl> ;
+    dcat:downloadURL chbdata:Q839.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q839
+chb:Q839
     a wikibase:Item ;
     schema:description "A package to analyze data used to determine whether samples from multiple sources can be separated, to predict the sources of samples from unknown sources, and to evaluation the validity of those predictions. Sample data can include both quantitative and qualitative data. The package includes functions for creating an analysis file from multiple files and exploratory data analysis, as well as multivariate statistical methods to determine source separation, predict sources of unknown samples, and evaluate the validity of the predictions (principal components, classification trees, and random forests)."@en ;
     schema:name "predictSource"@en ;
@@ -80,135 +81,135 @@ wd:Q839
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "predictSource"@en ;
     skos:prefLabel "predictSource"@en ;
-    p:P2 wds:Q839-57FF1271-053D-5A11-8083-9984E0AE6DE6,
-        wds:Q839-A442E621-F5CB-5CAC-AF87-5A3EDF09586B ;
-    p:P106 wds:Q839-DD8D53C4-60B7-5FB9-8228-7A926A8A9799 ;
-    p:P113 wds:Q839-B549B077-1BEC-5881-91F6-B9BE9DE88287 ;
-    p:P115 wds:Q839-55039A55-ADD3-5889-91D3-EB2784063838 ;
-    p:P116 wds:Q839-936D3EA6-B47D-5A19-920E-2E155304265F ;
-    p:P117 wds:Q839-3A5453DD-294D-5B18-8DE6-75BECCCABE30 ;
-    p:P118 wds:Q839-ECBBD7D7-1FE1-59BD-B73E-C90C514007B4 ;
-    p:P119 wds:Q839-4E8E917B-7361-5A1C-8675-6F62A016DB12 ;
-    p:P122 wds:Q839-79AF1C4B-A448-5134-A6B2-A15801EA6A5B,
-        wds:Q839-0017689B-D5EA-51AB-BC02-02C6144D2DD0 ;
-    p:P123 wds:Q839-2CB1548D-B58B-561C-B895-D5F2414A5E70 ;
-    p:P125 wds:Q839-C0C50BAD-BC7A-5DE1-861C-ED999C42A5D4 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q321 ;
-    wdt:P115 <https://open-archaeo.info/post/predictsource/> ;
-    wdt:P116 "predictsource" ;
-    wdt:P117 wd:Q116 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "predictSource"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/benmarwick/predictSource> .
+    chbp:P2 chbs:Q839-57FF1271-053D-5A11-8083-9984E0AE6DE6,
+        chbs:Q839-A442E621-F5CB-5CAC-AF87-5A3EDF09586B ;
+    chbp:P106 chbs:Q839-DD8D53C4-60B7-5FB9-8228-7A926A8A9799 ;
+    chbp:P113 chbs:Q839-B549B077-1BEC-5881-91F6-B9BE9DE88287 ;
+    chbp:P115 chbs:Q839-55039A55-ADD3-5889-91D3-EB2784063838 ;
+    chbp:P116 chbs:Q839-936D3EA6-B47D-5A19-920E-2E155304265F ;
+    chbp:P117 chbs:Q839-3A5453DD-294D-5B18-8DE6-75BECCCABE30 ;
+    chbp:P118 chbs:Q839-ECBBD7D7-1FE1-59BD-B73E-C90C514007B4 ;
+    chbp:P119 chbs:Q839-4E8E917B-7361-5A1C-8675-6F62A016DB12 ;
+    chbp:P122 chbs:Q839-79AF1C4B-A448-5134-A6B2-A15801EA6A5B,
+        chbs:Q839-0017689B-D5EA-51AB-BC02-02C6144D2DD0 ;
+    chbp:P123 chbs:Q839-2CB1548D-B58B-561C-B895-D5F2414A5E70 ;
+    chbp:P125 chbs:Q839-C0C50BAD-BC7A-5DE1-861C-ED999C42A5D4 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q321 ;
+    chbt:P115 <https://open-archaeo.info/post/predictsource/> ;
+    chbt:P116 "predictsource" ;
+    chbt:P117 chb:Q116 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "predictSource"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/benmarwick/predictSource> .
 
-wds:Q839-2CB1548D-B58B-561C-B895-D5F2414A5E70
+chbs:Q839-2CB1548D-B58B-561C-B895-D5F2414A5E70
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P123 chb:Q111 .
 
-wds:Q839-3A5453DD-294D-5B18-8DE6-75BECCCABE30
+chbs:Q839-3A5453DD-294D-5B18-8DE6-75BECCCABE30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P117 chb:Q116 .
 
-wds:Q839-4E8E917B-7361-5A1C-8675-6F62A016DB12
+chbs:Q839-4E8E917B-7361-5A1C-8675-6F62A016DB12
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P119 "predictSource"@en .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P119 "predictSource"@en .
 
-wds:Q839-57FF1271-053D-5A11-8083-9984E0AE6DE6
+chbs:Q839-57FF1271-053D-5A11-8083-9984E0AE6DE6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P2 chb:Q103 .
 
-wds:Q839-79AF1C4B-A448-5134-A6B2-A15801EA6A5B
+chbs:Q839-79AF1C4B-A448-5134-A6B2-A15801EA6A5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P122 chb:Q110 .
 
-wds:Q839-936D3EA6-B47D-5A19-920E-2E155304265F
+chbs:Q839-936D3EA6-B47D-5A19-920E-2E155304265F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "predictsource" .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "predictsource" .
 
-wds:Q839-0017689B-D5EA-51AB-BC02-02C6144D2DD0
+chbs:Q839-0017689B-D5EA-51AB-BC02-02C6144D2DD0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P122 chb:Q109 .
 
-wds:Q839-55039A55-ADD3-5889-91D3-EB2784063838
+chbs:Q839-55039A55-ADD3-5889-91D3-EB2784063838
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P115 <https://open-archaeo.info/post/predictsource/> .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P115 <https://open-archaeo.info/post/predictsource/> .
 
-wds:Q839-A442E621-F5CB-5CAC-AF87-5A3EDF09586B
+chbs:Q839-A442E621-F5CB-5CAC-AF87-5A3EDF09586B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P2 chb:Q106 .
 
-wds:Q839-B549B077-1BEC-5881-91F6-B9BE9DE88287
+chbs:Q839-B549B077-1BEC-5881-91F6-B9BE9DE88287
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q321 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q321 .
 
-wds:Q839-C0C50BAD-BC7A-5DE1-861C-ED999C42A5D4
+chbs:Q839-C0C50BAD-BC7A-5DE1-861C-ED999C42A5D4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    pq:P104 "2020-06-23T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-benmarwick-predictSource_-_2020-06-23_20-14-59> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:cf189f5ad1bb7a705a1c01b7b17090a2 ;
-    ps:P125 <https://github.com/benmarwick/predictSource> .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbpq:P104 "2020-06-23T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-benmarwick-predictSource_-_2020-06-23_20-14-59> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:cf189f5ad1bb7a705a1c01b7b17090a2 ;
+    chbps:P125 <https://github.com/benmarwick/predictSource> .
 
-wds:Q839-DD8D53C4-60B7-5FB9-8228-7A926A8A9799
+chbs:Q839-DD8D53C4-60B7-5FB9-8228-7A926A8A9799
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P106 chb:Q110 .
 
-wds:Q839-ECBBD7D7-1FE1-59BD-B73E-C90C514007B4
+chbs:Q839-ECBBD7D7-1FE1-59BD-B73E-C90C514007B4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3ca808619042f8854526896797a0a816bcd5f6eb ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:3ca808619042f8854526896797a0a816bcd5f6eb ;
+    chbps:P118 chb:Q108 .
 
-wdref:3ca808619042f8854526896797a0a816bcd5f6eb
+chbref:3ca808619042f8854526896797a0a816bcd5f6eb
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/predictsource/> .
+    chbpr:P6 <https://open-archaeo.info/post/predictsource/> .
 
-wdv:cf189f5ad1bb7a705a1c01b7b17090a2
+chbv:cf189f5ad1bb7a705a1c01b7b17090a2
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

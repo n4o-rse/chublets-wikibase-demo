@@ -1,53 +1,54 @@
 # Q400: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q400
+chbdata:Q400.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Data organisation, classification and visualisation of archaeobotanical data to understand crop processing stage."@en ;
     dcterms:identifier "Q400" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q400 ;
+    dcterms:subject chb:Q400 ;
     dcterms:title "CropPro"@en ;
-    schema:about wd:Q400 ;
-    dcat:distribution dist:Q400-html,
-        dist:Q400-json,
-        dist:Q400-ttl ;
+    schema:about chb:Q400 ;
+    dcat:distribution chbdist:Q400-html,
+        chbdist:Q400-json,
+        chbdist:Q400-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q400.html> .
 
-dist:Q400-html
+chbdist:Q400-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q400-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q400.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q400-json
+chbdist:Q400-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q400-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q400.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q400-ttl
+chbdist:Q400-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q400, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q400.ttl> ;
+    dcat:downloadURL chbdata:Q400.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q400
+chb:Q400
     a wikibase:Item ;
     schema:description "Data organisation, classification and visualisation of archaeobotanical data to understand crop processing stage."@en ;
     schema:name "CropPro"@en ;
@@ -80,136 +81,136 @@ wd:Q400
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "CropPro"@en ;
     skos:prefLabel "CropPro"@en ;
-    p:P2 wds:Q400-73E30AC1-6CD3-5551-B693-4879E9D09C35,
-        wds:Q400-D2DA3F48-8ACF-557C-B726-B5494AACC8D1 ;
-    p:P106 wds:Q400-7A81C792-D178-538A-81C3-98EBBC0F7B11 ;
-    p:P113 wds:Q400-FCB4800B-26D0-5A69-9CB6-0F993699F486 ;
-    p:P115 wds:Q400-6BB89F8A-B634-5DDA-9DB4-F84158122F9F ;
-    p:P116 wds:Q400-6F92E90C-21AF-50C2-AE90-C4A296BE35E4 ;
-    p:P117 wds:Q400-3DE7D55C-98A2-5274-9994-C1BE0996794A,
-        wds:Q400-14E3199C-F717-5AA3-8619-7767878B12BD ;
-    p:P118 wds:Q400-B1B764CD-5D12-5127-B8DA-AC2C6504CE93 ;
-    p:P119 wds:Q400-DED8DB3C-88F5-58DC-8EE1-F710E619B557 ;
-    p:P122 wds:Q400-6EFD7F87-C35E-5C97-A233-D7C647595800,
-        wds:Q400-BD3C3979-E5C5-5830-8644-A660D03A008D ;
-    p:P123 wds:Q400-23DF0827-DDFE-506F-8B80-FEF1093FB6F3 ;
-    p:P125 wds:Q400-A9843845-9F7C-56D7-8B08-29334D1D3F27 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q401 ;
-    wdt:P115 <https://open-archaeo.info/post/croppro/> ;
-    wdt:P116 "croppro" ;
-    wdt:P117 wd:Q112,
-        wd:Q148 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "CropPro"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/CropPro-package/CropPro> .
+    chbp:P2 chbs:Q400-73E30AC1-6CD3-5551-B693-4879E9D09C35,
+        chbs:Q400-D2DA3F48-8ACF-557C-B726-B5494AACC8D1 ;
+    chbp:P106 chbs:Q400-7A81C792-D178-538A-81C3-98EBBC0F7B11 ;
+    chbp:P113 chbs:Q400-FCB4800B-26D0-5A69-9CB6-0F993699F486 ;
+    chbp:P115 chbs:Q400-6BB89F8A-B634-5DDA-9DB4-F84158122F9F ;
+    chbp:P116 chbs:Q400-6F92E90C-21AF-50C2-AE90-C4A296BE35E4 ;
+    chbp:P117 chbs:Q400-3DE7D55C-98A2-5274-9994-C1BE0996794A,
+        chbs:Q400-14E3199C-F717-5AA3-8619-7767878B12BD ;
+    chbp:P118 chbs:Q400-B1B764CD-5D12-5127-B8DA-AC2C6504CE93 ;
+    chbp:P119 chbs:Q400-DED8DB3C-88F5-58DC-8EE1-F710E619B557 ;
+    chbp:P122 chbs:Q400-6EFD7F87-C35E-5C97-A233-D7C647595800,
+        chbs:Q400-BD3C3979-E5C5-5830-8644-A660D03A008D ;
+    chbp:P123 chbs:Q400-23DF0827-DDFE-506F-8B80-FEF1093FB6F3 ;
+    chbp:P125 chbs:Q400-A9843845-9F7C-56D7-8B08-29334D1D3F27 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q401 ;
+    chbt:P115 <https://open-archaeo.info/post/croppro/> ;
+    chbt:P116 "croppro" ;
+    chbt:P117 chb:Q112,
+        chb:Q148 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "CropPro"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/CropPro-package/CropPro> .
 
-wds:Q400-3DE7D55C-98A2-5274-9994-C1BE0996794A
+chbs:Q400-3DE7D55C-98A2-5274-9994-C1BE0996794A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P117 wd:Q112 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P117 chb:Q112 .
 
-wds:Q400-6BB89F8A-B634-5DDA-9DB4-F84158122F9F
+chbs:Q400-6BB89F8A-B634-5DDA-9DB4-F84158122F9F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P115 <https://open-archaeo.info/post/croppro/> .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P115 <https://open-archaeo.info/post/croppro/> .
 
-wds:Q400-6EFD7F87-C35E-5C97-A233-D7C647595800
+chbs:Q400-6EFD7F87-C35E-5C97-A233-D7C647595800
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q400-6F92E90C-21AF-50C2-AE90-C4A296BE35E4
+chbs:Q400-6F92E90C-21AF-50C2-AE90-C4A296BE35E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "croppro" .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "croppro" .
 
-wds:Q400-7A81C792-D178-538A-81C3-98EBBC0F7B11
+chbs:Q400-7A81C792-D178-538A-81C3-98EBBC0F7B11
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q400-14E3199C-F717-5AA3-8619-7767878B12BD
+chbs:Q400-14E3199C-F717-5AA3-8619-7767878B12BD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q400-23DF0827-DDFE-506F-8B80-FEF1093FB6F3
+chbs:Q400-23DF0827-DDFE-506F-8B80-FEF1093FB6F3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q400-73E30AC1-6CD3-5551-B693-4879E9D09C35
+chbs:Q400-73E30AC1-6CD3-5551-B693-4879E9D09C35
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q400-A9843845-9F7C-56D7-8B08-29334D1D3F27
+chbs:Q400-A9843845-9F7C-56D7-8B08-29334D1D3F27
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/CropPro-package/CropPro> .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/CropPro-package/CropPro> .
 
-wds:Q400-B1B764CD-5D12-5127-B8DA-AC2C6504CE93
+chbs:Q400-B1B764CD-5D12-5127-B8DA-AC2C6504CE93
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q400-BD3C3979-E5C5-5830-8644-A660D03A008D
+chbs:Q400-BD3C3979-E5C5-5830-8644-A660D03A008D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q400-D2DA3F48-8ACF-557C-B726-B5494AACC8D1
+chbs:Q400-D2DA3F48-8ACF-557C-B726-B5494AACC8D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q400-DED8DB3C-88F5-58DC-8EE1-F710E619B557
+chbs:Q400-DED8DB3C-88F5-58DC-8EE1-F710E619B557
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    ps:P119 "CropPro"@en .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbps:P119 "CropPro"@en .
 
-wds:Q400-FCB4800B-26D0-5A69-9CB6-0F993699F486
+chbs:Q400-FCB4800B-26D0-5A69-9CB6-0F993699F486
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q401 .
+    prov:wasDerivedFrom chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q401 .
 
-wdref:2793df3a3bf8e7c951f24a28fe1641e1ef204339
+chbref:2793df3a3bf8e7c951f24a28fe1641e1ef204339
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/croppro/> .
+    chbpr:P6 <https://open-archaeo.info/post/croppro/> .

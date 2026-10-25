@@ -1,53 +1,54 @@
 # Q835: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q835
+chbdata:Q835.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Configurable data collection program for archaeological survey and excavation."@en ;
     dcterms:identifier "Q835" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q835 ;
+    dcterms:subject chb:Q835 ;
     dcterms:title "EDMWIN"@en ;
-    schema:about wd:Q835 ;
-    dcat:distribution dist:Q835-html,
-        dist:Q835-json,
-        dist:Q835-ttl ;
+    schema:about chb:Q835 ;
+    dcat:distribution chbdist:Q835-html,
+        chbdist:Q835-json,
+        chbdist:Q835-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q835.html> .
 
-dist:Q835-html
+chbdist:Q835-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q835-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q835.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q835-json
+chbdist:Q835-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q835-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q835.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q835-ttl
+chbdist:Q835-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q835, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q835.ttl> ;
+    dcat:downloadURL chbdata:Q835.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q835
+chb:Q835
     a wikibase:Item ;
     schema:description "Configurable data collection program for archaeological survey and excavation."@en ;
     schema:name "EDMWIN"@en ;
@@ -80,136 +81,136 @@ wd:Q835
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "EDMWIN"@en ;
     skos:prefLabel "EDMWIN"@en ;
-    p:P2 wds:Q835-AF670619-485F-5DF1-A34F-C3DFC0810AA5,
-        wds:Q835-C4A648FC-A2AE-52FA-A2B7-1F3B2062A0D4 ;
-    p:P106 wds:Q835-A8B98CF7-2B68-5429-B2A8-162A07E8A208 ;
-    p:P113 wds:Q835-0BBBAFA0-151B-5C11-86C2-5871ABDF99F2 ;
-    p:P115 wds:Q835-BC6C07C0-5490-55F0-9D28-BB0440D9047E ;
-    p:P116 wds:Q835-6B09149C-3789-516D-8437-7C3B6F4AA006 ;
-    p:P117 wds:Q835-6B4C702A-28B2-5D52-9419-7636EA701004,
-        wds:Q835-38071DF5-A76B-5BFA-9E0A-698DEDCB04DB ;
-    p:P118 wds:Q835-77623B71-0549-5156-A37F-47ACD2364162 ;
-    p:P119 wds:Q835-FB91A238-C135-5697-875D-2343301971CA ;
-    p:P122 wds:Q835-98D27FC6-A503-5D2D-BB7A-A7A388E96B3D,
-        wds:Q835-FBF79A2E-3C99-5488-AC87-D584A686BC3B ;
-    p:P123 wds:Q835-122174AF-1452-5AD3-A615-666C871D67B2 ;
-    p:P125 wds:Q835-3184181C-7F2E-5BC4-B50B-3C620FB94E0E ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q330 ;
-    wdt:P115 <https://open-archaeo.info/post/edmwin/> ;
-    wdt:P116 "edmwin" ;
-    wdt:P117 wd:Q148,
-        wd:Q329 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "EDMWIN"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/surf3s/EDMWIN> .
+    chbp:P2 chbs:Q835-AF670619-485F-5DF1-A34F-C3DFC0810AA5,
+        chbs:Q835-C4A648FC-A2AE-52FA-A2B7-1F3B2062A0D4 ;
+    chbp:P106 chbs:Q835-A8B98CF7-2B68-5429-B2A8-162A07E8A208 ;
+    chbp:P113 chbs:Q835-0BBBAFA0-151B-5C11-86C2-5871ABDF99F2 ;
+    chbp:P115 chbs:Q835-BC6C07C0-5490-55F0-9D28-BB0440D9047E ;
+    chbp:P116 chbs:Q835-6B09149C-3789-516D-8437-7C3B6F4AA006 ;
+    chbp:P117 chbs:Q835-6B4C702A-28B2-5D52-9419-7636EA701004,
+        chbs:Q835-38071DF5-A76B-5BFA-9E0A-698DEDCB04DB ;
+    chbp:P118 chbs:Q835-77623B71-0549-5156-A37F-47ACD2364162 ;
+    chbp:P119 chbs:Q835-FB91A238-C135-5697-875D-2343301971CA ;
+    chbp:P122 chbs:Q835-98D27FC6-A503-5D2D-BB7A-A7A388E96B3D,
+        chbs:Q835-FBF79A2E-3C99-5488-AC87-D584A686BC3B ;
+    chbp:P123 chbs:Q835-122174AF-1452-5AD3-A615-666C871D67B2 ;
+    chbp:P125 chbs:Q835-3184181C-7F2E-5BC4-B50B-3C620FB94E0E ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q330 ;
+    chbt:P115 <https://open-archaeo.info/post/edmwin/> ;
+    chbt:P116 "edmwin" ;
+    chbt:P117 chb:Q148,
+        chb:Q329 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "EDMWIN"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/surf3s/EDMWIN> .
 
-wds:Q835-0BBBAFA0-151B-5C11-86C2-5871ABDF99F2
+chbs:Q835-0BBBAFA0-151B-5C11-86C2-5871ABDF99F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q330 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q330 .
 
-wds:Q835-6B4C702A-28B2-5D52-9419-7636EA701004
+chbs:Q835-6B4C702A-28B2-5D52-9419-7636EA701004
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P117 wd:Q329 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P117 chb:Q329 .
 
-wds:Q835-6B09149C-3789-516D-8437-7C3B6F4AA006
+chbs:Q835-6B09149C-3789-516D-8437-7C3B6F4AA006
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "edmwin" .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "edmwin" .
 
-wds:Q835-98D27FC6-A503-5D2D-BB7A-A7A388E96B3D
+chbs:Q835-98D27FC6-A503-5D2D-BB7A-A7A388E96B3D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q835-38071DF5-A76B-5BFA-9E0A-698DEDCB04DB
+chbs:Q835-38071DF5-A76B-5BFA-9E0A-698DEDCB04DB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q835-77623B71-0549-5156-A37F-47ACD2364162
+chbs:Q835-77623B71-0549-5156-A37F-47ACD2364162
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q835-122174AF-1452-5AD3-A615-666C871D67B2
+chbs:Q835-122174AF-1452-5AD3-A615-666C871D67B2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q835-3184181C-7F2E-5BC4-B50B-3C620FB94E0E
+chbs:Q835-3184181C-7F2E-5BC4-B50B-3C620FB94E0E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/surf3s/EDMWIN> .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/surf3s/EDMWIN> .
 
-wds:Q835-A8B98CF7-2B68-5429-B2A8-162A07E8A208
+chbs:Q835-A8B98CF7-2B68-5429-B2A8-162A07E8A208
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q835-AF670619-485F-5DF1-A34F-C3DFC0810AA5
+chbs:Q835-AF670619-485F-5DF1-A34F-C3DFC0810AA5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q835-BC6C07C0-5490-55F0-9D28-BB0440D9047E
+chbs:Q835-BC6C07C0-5490-55F0-9D28-BB0440D9047E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P115 <https://open-archaeo.info/post/edmwin/> .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P115 <https://open-archaeo.info/post/edmwin/> .
 
-wds:Q835-C4A648FC-A2AE-52FA-A2B7-1F3B2062A0D4
+chbs:Q835-C4A648FC-A2AE-52FA-A2B7-1F3B2062A0D4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q835-FB91A238-C135-5697-875D-2343301971CA
+chbs:Q835-FB91A238-C135-5697-875D-2343301971CA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P119 "EDMWIN"@en .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P119 "EDMWIN"@en .
 
-wds:Q835-FBF79A2E-3C99-5488-AC87-D584A686BC3B
+chbs:Q835-FBF79A2E-3C99-5488-AC87-D584A686BC3B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1 ;
+    chbps:P122 chb:Q109 .
 
-wdref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1
+chbref:1c2b9e49e9c29e50f6af04a9e7658c486ecec4e1
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/edmwin/> .
+    chbpr:P6 <https://open-archaeo.info/post/edmwin/> .

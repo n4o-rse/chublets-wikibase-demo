@@ -1,53 +1,54 @@
 # Q734: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q734
+chbdata:Q734.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A scraper for bulk downloading biface artifact records and images from the Archaeology Data Service for research and analysis."@en ;
     dcterms:identifier "Q734" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q734 ;
+    dcterms:subject chb:Q734 ;
     dcterms:title "hand_axes_database_downloader"@en ;
-    schema:about wd:Q734 ;
-    dcat:distribution dist:Q734-html,
-        dist:Q734-json,
-        dist:Q734-ttl ;
+    schema:about chb:Q734 ;
+    dcat:distribution chbdist:Q734-html,
+        chbdist:Q734-json,
+        chbdist:Q734-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q734.html> .
 
-dist:Q734-html
+chbdist:Q734-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q734-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q734.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q734-json
+chbdist:Q734-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q734-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q734.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q734-ttl
+chbdist:Q734-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q734, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q734.ttl> ;
+    dcat:downloadURL chbdata:Q734.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q734
+chb:Q734
     a wikibase:Item ;
     schema:description "A scraper for bulk downloading biface artifact records and images from the Archaeology Data Service for research and analysis."@en ;
     schema:name "hand_axes_database_downloader"@en ;
@@ -80,145 +81,145 @@ wd:Q734
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "hand_axes_database_downloader"@en ;
     skos:prefLabel "hand_axes_database_downloader"@en ;
-    p:P2 wds:Q734-50DDE769-7332-5258-BC09-D9CA358F9BAA,
-        wds:Q734-D4A469A7-D934-5B2F-9725-7FB5685BDFB3 ;
-    p:P106 wds:Q734-86A294D8-EEBA-52CD-8A70-105640859E18 ;
-    p:P111 wds:Q734-DA6B5F17-50E7-5DF6-91A2-BA5DCD52CF97 ;
-    p:P113 wds:Q734-31A4BF9F-1614-5BDB-B18F-C9374A916943 ;
-    p:P115 wds:Q734-0BFC3D8D-1D7C-591B-9FF8-2431649206B6 ;
-    p:P116 wds:Q734-3C642910-A6BA-5F7A-B7F6-CDD678E608EE ;
-    p:P117 wds:Q734-B83EC8A4-3BF0-5111-A49C-3344D9471BC3,
-        wds:Q734-CE8AF8C1-B133-5D8A-B062-CE9196C068CA ;
-    p:P118 wds:Q734-D7913EDA-9761-500F-B149-B66D915E0408 ;
-    p:P119 wds:Q734-0EEA133C-0F52-5098-872F-7182E9F0D80B ;
-    p:P122 wds:Q734-9B5BBFC2-42FE-589C-8084-E0FDDBADD51B,
-        wds:Q734-01611E4F-095C-5B25-9173-D4358D1C596A ;
-    p:P123 wds:Q734-E3CEA9F8-B7E7-5890-A9A3-8FCD50F91CB5 ;
-    p:P125 wds:Q734-DF4B213A-E32E-5387-A9EF-AA38D3F271A8 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P111 wd:Q616 ;
-    wdt:P113 wd:Q457 ;
-    wdt:P115 <https://open-archaeo.info/post/hand-axes-database-downloader/> ;
-    wdt:P116 "hand-axes-database-downloader" ;
-    wdt:P117 wd:Q144,
-        wd:Q148 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "hand_axes_database_downloader"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/jfpalomeque/hand_axes_database_downloader> .
+    chbp:P2 chbs:Q734-50DDE769-7332-5258-BC09-D9CA358F9BAA,
+        chbs:Q734-D4A469A7-D934-5B2F-9725-7FB5685BDFB3 ;
+    chbp:P106 chbs:Q734-86A294D8-EEBA-52CD-8A70-105640859E18 ;
+    chbp:P111 chbs:Q734-DA6B5F17-50E7-5DF6-91A2-BA5DCD52CF97 ;
+    chbp:P113 chbs:Q734-31A4BF9F-1614-5BDB-B18F-C9374A916943 ;
+    chbp:P115 chbs:Q734-0BFC3D8D-1D7C-591B-9FF8-2431649206B6 ;
+    chbp:P116 chbs:Q734-3C642910-A6BA-5F7A-B7F6-CDD678E608EE ;
+    chbp:P117 chbs:Q734-B83EC8A4-3BF0-5111-A49C-3344D9471BC3,
+        chbs:Q734-CE8AF8C1-B133-5D8A-B062-CE9196C068CA ;
+    chbp:P118 chbs:Q734-D7913EDA-9761-500F-B149-B66D915E0408 ;
+    chbp:P119 chbs:Q734-0EEA133C-0F52-5098-872F-7182E9F0D80B ;
+    chbp:P122 chbs:Q734-9B5BBFC2-42FE-589C-8084-E0FDDBADD51B,
+        chbs:Q734-01611E4F-095C-5B25-9173-D4358D1C596A ;
+    chbp:P123 chbs:Q734-E3CEA9F8-B7E7-5890-A9A3-8FCD50F91CB5 ;
+    chbp:P125 chbs:Q734-DF4B213A-E32E-5387-A9EF-AA38D3F271A8 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P111 chb:Q616 ;
+    chbt:P113 chb:Q457 ;
+    chbt:P115 <https://open-archaeo.info/post/hand-axes-database-downloader/> ;
+    chbt:P116 "hand-axes-database-downloader" ;
+    chbt:P117 chb:Q144,
+        chb:Q148 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "hand_axes_database_downloader"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/jfpalomeque/hand_axes_database_downloader> .
 
-wds:Q734-0BFC3D8D-1D7C-591B-9FF8-2431649206B6
+chbs:Q734-0BFC3D8D-1D7C-591B-9FF8-2431649206B6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P115 <https://open-archaeo.info/post/hand-axes-database-downloader/> .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P115 <https://open-archaeo.info/post/hand-axes-database-downloader/> .
 
-wds:Q734-0EEA133C-0F52-5098-872F-7182E9F0D80B
+chbs:Q734-0EEA133C-0F52-5098-872F-7182E9F0D80B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P119 "hand_axes_database_downloader"@en .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P119 "hand_axes_database_downloader"@en .
 
-wds:Q734-3C642910-A6BA-5F7A-B7F6-CDD678E608EE
+chbs:Q734-3C642910-A6BA-5F7A-B7F6-CDD678E608EE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "hand-axes-database-downloader" .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "hand-axes-database-downloader" .
 
-wds:Q734-9B5BBFC2-42FE-589C-8084-E0FDDBADD51B
+chbs:Q734-9B5BBFC2-42FE-589C-8084-E0FDDBADD51B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P122 chb:Q109 .
 
-wds:Q734-31A4BF9F-1614-5BDB-B18F-C9374A916943
+chbs:Q734-31A4BF9F-1614-5BDB-B18F-C9374A916943
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q457 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q457 .
 
-wds:Q734-50DDE769-7332-5258-BC09-D9CA358F9BAA
+chbs:Q734-50DDE769-7332-5258-BC09-D9CA358F9BAA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P2 chb:Q106 .
 
-wds:Q734-86A294D8-EEBA-52CD-8A70-105640859E18
+chbs:Q734-86A294D8-EEBA-52CD-8A70-105640859E18
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P106 chb:Q110 .
 
-wds:Q734-01611E4F-095C-5B25-9173-D4358D1C596A
+chbs:Q734-01611E4F-095C-5B25-9173-D4358D1C596A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P122 chb:Q110 .
 
-wds:Q734-B83EC8A4-3BF0-5111-A49C-3344D9471BC3
+chbs:Q734-B83EC8A4-3BF0-5111-A49C-3344D9471BC3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P117 chb:Q148 .
 
-wds:Q734-CE8AF8C1-B133-5D8A-B062-CE9196C068CA
+chbs:Q734-CE8AF8C1-B133-5D8A-B062-CE9196C068CA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P117 wd:Q144 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P117 chb:Q144 .
 
-wds:Q734-D4A469A7-D934-5B2F-9725-7FB5685BDFB3
+chbs:Q734-D4A469A7-D934-5B2F-9725-7FB5685BDFB3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P2 chb:Q104 .
 
-wds:Q734-D7913EDA-9761-500F-B149-B66D915E0408
+chbs:Q734-D7913EDA-9761-500F-B149-B66D915E0408
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P118 chb:Q108 .
 
-wds:Q734-DA6B5F17-50E7-5DF6-91A2-BA5DCD52CF97
+chbs:Q734-DA6B5F17-50E7-5DF6-91A2-BA5DCD52CF97
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P111 wd:Q616 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P111 chb:Q616 .
 
-wds:Q734-DF4B213A-E32E-5387-A9EF-AA38D3F271A8
+chbs:Q734-DF4B213A-E32E-5387-A9EF-AA38D3F271A8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/jfpalomeque/hand_axes_database_downloader> .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/jfpalomeque/hand_axes_database_downloader> .
 
-wds:Q734-E3CEA9F8-B7E7-5890-A9A3-8FCD50F91CB5
+chbs:Q734-E3CEA9F8-B7E7-5890-A9A3-8FCD50F91CB5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:3dbb99e600255723f3007c2ab206954e87f39bdf ;
+    chbps:P123 chb:Q370 .
 
-wdref:3dbb99e600255723f3007c2ab206954e87f39bdf
+chbref:3dbb99e600255723f3007c2ab206954e87f39bdf
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/hand-axes-database-downloader/> .
+    chbpr:P6 <https://open-archaeo.info/post/hand-axes-database-downloader/> .

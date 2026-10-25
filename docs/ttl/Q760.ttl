@@ -1,53 +1,54 @@
 # Q760: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q760
+chbdata:Q760.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "QGIS plugin for documentation of archaeological features using Tachy2GIS."@en ;
     dcterms:identifier "Q760" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q760 ;
+    dcterms:subject chb:Q760 ;
     dcterms:title "Tachy2GIS_arch"@en ;
-    schema:about wd:Q760 ;
-    dcat:distribution dist:Q760-html,
-        dist:Q760-json,
-        dist:Q760-ttl ;
+    schema:about chb:Q760 ;
+    dcat:distribution chbdist:Q760-html,
+        chbdist:Q760-json,
+        chbdist:Q760-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q760.html> .
 
-dist:Q760-html
+chbdist:Q760-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q760-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q760.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q760-json
+chbdist:Q760-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q760-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q760.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q760-ttl
+chbdist:Q760-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q760, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q760.ttl> ;
+    dcat:downloadURL chbdata:Q760.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q760
+chb:Q760
     a wikibase:Item ;
     schema:description "QGIS plugin for documentation of archaeological features using Tachy2GIS."@en ;
     schema:name "Tachy2GIS_arch"@en ;
@@ -80,144 +81,144 @@ wd:Q760
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "Tachy2GIS_arch"@en ;
     skos:prefLabel "Tachy2GIS_arch"@en ;
-    p:P2 wds:Q760-970EED94-D8A7-5CE5-A7D6-5699C2531899,
-        wds:Q760-BC6EA4AD-BFAB-5D26-8937-F0DDC0B8E419 ;
-    p:P106 wds:Q760-42E77FCA-CE81-5C64-8B7A-A9F417A8D263 ;
-    p:P109 wds:Q760-850B4E85-F928-5DF5-AF83-A01B445803DF ;
-    p:P113 wds:Q760-CD7A3E41-3C29-55FD-A2F1-48B120014C27 ;
-    p:P115 wds:Q760-14F166D9-9428-5600-A71F-E9AC417D617E ;
-    p:P116 wds:Q760-4F7813F4-4D66-5E13-9DA8-664E573BD98E ;
-    p:P117 wds:Q760-2FEB10DE-BE35-5E32-92FD-BC8130461946,
-        wds:Q760-9A2066A0-41D9-5D3B-9B8E-B30F7A58B7B1 ;
-    p:P118 wds:Q760-9672FD10-746E-5F5F-8A34-B43199166A07 ;
-    p:P119 wds:Q760-46D7FF96-F51A-5339-A471-08A68DFF1E5D ;
-    p:P122 wds:Q760-8FBB8230-C183-50B9-A2A6-66DE5B901FA3,
-        wds:Q760-759D5EF1-E15E-5BA3-B2D8-D471CE19D771 ;
-    p:P125 wds:Q760-F5AFBC40-64A6-5EC8-B596-4EE6248EB305 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q761 ;
-    wdt:P115 <https://open-archaeo.info/post/tachy2gis-arch/> ;
-    wdt:P116 "tachy2gis-arch" ;
-    wdt:P117 wd:Q136,
-        wd:Q329 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Tachy2GIS_arch"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/Landesamt-fuer-Archaeologie-Sachsen/Tachy2GIS_arch> .
+    chbp:P2 chbs:Q760-970EED94-D8A7-5CE5-A7D6-5699C2531899,
+        chbs:Q760-BC6EA4AD-BFAB-5D26-8937-F0DDC0B8E419 ;
+    chbp:P106 chbs:Q760-42E77FCA-CE81-5C64-8B7A-A9F417A8D263 ;
+    chbp:P109 chbs:Q760-850B4E85-F928-5DF5-AF83-A01B445803DF ;
+    chbp:P113 chbs:Q760-CD7A3E41-3C29-55FD-A2F1-48B120014C27 ;
+    chbp:P115 chbs:Q760-14F166D9-9428-5600-A71F-E9AC417D617E ;
+    chbp:P116 chbs:Q760-4F7813F4-4D66-5E13-9DA8-664E573BD98E ;
+    chbp:P117 chbs:Q760-2FEB10DE-BE35-5E32-92FD-BC8130461946,
+        chbs:Q760-9A2066A0-41D9-5D3B-9B8E-B30F7A58B7B1 ;
+    chbp:P118 chbs:Q760-9672FD10-746E-5F5F-8A34-B43199166A07 ;
+    chbp:P119 chbs:Q760-46D7FF96-F51A-5339-A471-08A68DFF1E5D ;
+    chbp:P122 chbs:Q760-8FBB8230-C183-50B9-A2A6-66DE5B901FA3,
+        chbs:Q760-759D5EF1-E15E-5BA3-B2D8-D471CE19D771 ;
+    chbp:P125 chbs:Q760-F5AFBC40-64A6-5EC8-B596-4EE6248EB305 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q761 ;
+    chbt:P115 <https://open-archaeo.info/post/tachy2gis-arch/> ;
+    chbt:P116 "tachy2gis-arch" ;
+    chbt:P117 chb:Q136,
+        chb:Q329 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Tachy2GIS_arch"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/Landesamt-fuer-Archaeologie-Sachsen/Tachy2GIS_arch> .
 
-wds:Q760-2FEB10DE-BE35-5E32-92FD-BC8130461946
+chbs:Q760-2FEB10DE-BE35-5E32-92FD-BC8130461946
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P117 wd:Q329 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P117 chb:Q329 .
 
-wds:Q760-4F7813F4-4D66-5E13-9DA8-664E573BD98E
+chbs:Q760-4F7813F4-4D66-5E13-9DA8-664E573BD98E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "tachy2gis-arch" .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "tachy2gis-arch" .
 
-wds:Q760-8FBB8230-C183-50B9-A2A6-66DE5B901FA3
+chbs:Q760-8FBB8230-C183-50B9-A2A6-66DE5B901FA3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P122 chb:Q110 .
 
-wds:Q760-9A2066A0-41D9-5D3B-9B8E-B30F7A58B7B1
+chbs:Q760-9A2066A0-41D9-5D3B-9B8E-B30F7A58B7B1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P117 chb:Q136 .
 
-wds:Q760-14F166D9-9428-5600-A71F-E9AC417D617E
+chbs:Q760-14F166D9-9428-5600-A71F-E9AC417D617E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P115 <https://open-archaeo.info/post/tachy2gis-arch/> .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P115 <https://open-archaeo.info/post/tachy2gis-arch/> .
 
-wds:Q760-42E77FCA-CE81-5C64-8B7A-A9F417A8D263
+chbs:Q760-42E77FCA-CE81-5C64-8B7A-A9F417A8D263
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P106 chb:Q110 .
 
-wds:Q760-46D7FF96-F51A-5339-A471-08A68DFF1E5D
+chbs:Q760-46D7FF96-F51A-5339-A471-08A68DFF1E5D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P119 "Tachy2GIS_arch"@en .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P119 "Tachy2GIS_arch"@en .
 
-wds:Q760-759D5EF1-E15E-5BA3-B2D8-D471CE19D771
+chbs:Q760-759D5EF1-E15E-5BA3-B2D8-D471CE19D771
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P122 chb:Q109 .
 
-wds:Q760-850B4E85-F928-5DF5-AF83-A01B445803DF
+chbs:Q760-850B4E85-F928-5DF5-AF83-A01B445803DF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P109 chb:Q135 .
 
-wds:Q760-970EED94-D8A7-5CE5-A7D6-5699C2531899
+chbs:Q760-970EED94-D8A7-5CE5-A7D6-5699C2531899
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P2 chb:Q106 .
 
-wds:Q760-9672FD10-746E-5F5F-8A34-B43199166A07
+chbs:Q760-9672FD10-746E-5F5F-8A34-B43199166A07
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P118 chb:Q108 .
 
-wds:Q760-BC6EA4AD-BFAB-5D26-8937-F0DDC0B8E419
+chbs:Q760-BC6EA4AD-BFAB-5D26-8937-F0DDC0B8E419
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbps:P2 chb:Q103 .
 
-wds:Q760-CD7A3E41-3C29-55FD-A2F1-48B120014C27
+chbs:Q760-CD7A3E41-3C29-55FD-A2F1-48B120014C27
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q761 .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q761 .
 
-wds:Q760-F5AFBC40-64A6-5EC8-B596-4EE6248EB305
+chbs:Q760-F5AFBC40-64A6-5EC8-B596-4EE6248EB305
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
-    pq:P104 "2021-06-29T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-Landesamt-fuer-Archaeologie-Sachsen-Tachy2GIS_arch_-_2021-06-29_11-41-35> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:595e005486e65eaf065839e23bec7aa4 ;
-    ps:P125 <https://github.com/Landesamt-fuer-Archaeologie-Sachsen/Tachy2GIS_arch> .
+    prov:wasDerivedFrom chbref:021b32ae80daa02030ca8ed149438934b1d64e7a ;
+    chbpq:P104 "2021-06-29T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-Landesamt-fuer-Archaeologie-Sachsen-Tachy2GIS_arch_-_2021-06-29_11-41-35> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:595e005486e65eaf065839e23bec7aa4 ;
+    chbps:P125 <https://github.com/Landesamt-fuer-Archaeologie-Sachsen/Tachy2GIS_arch> .
 
-wdref:021b32ae80daa02030ca8ed149438934b1d64e7a
+chbref:021b32ae80daa02030ca8ed149438934b1d64e7a
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/tachy2gis-arch/> .
+    chbpr:P6 <https://open-archaeo.info/post/tachy2gis-arch/> .
 
-wdv:595e005486e65eaf065839e23bec7aa4
+chbv:595e005486e65eaf065839e23bec7aa4
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

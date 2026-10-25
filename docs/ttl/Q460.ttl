@@ -1,53 +1,54 @@
 # Q460: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q460
+chbdata:Q460.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Analyse geomagnetic data from archaeological context"@en ;
     dcterms:identifier "Q460" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q460 ;
+    dcterms:subject chb:Q460 ;
     dcterms:title "magAAR"@en ;
-    schema:about wd:Q460 ;
-    dcat:distribution dist:Q460-html,
-        dist:Q460-json,
-        dist:Q460-ttl ;
+    schema:about chb:Q460 ;
+    dcat:distribution chbdist:Q460-html,
+        chbdist:Q460-json,
+        chbdist:Q460-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q460.html> .
 
-dist:Q460-html
+chbdist:Q460-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q460-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q460.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q460-json
+chbdist:Q460-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q460-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q460.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q460-ttl
+chbdist:Q460-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q460, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q460.ttl> ;
+    dcat:downloadURL chbdata:Q460.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q460
+chb:Q460
     a wikibase:Item ;
     schema:description "Analyse geomagnetic data from archaeological context"@en ;
     schema:name "magAAR"@en ;
@@ -80,135 +81,135 @@ wd:Q460
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "magAAR"@en ;
     skos:prefLabel "magAAR"@en ;
-    p:P2 wds:Q460-89F32351-0A13-5A23-A709-2AE2BF7F0C4F,
-        wds:Q460-424759E4-D065-5689-A96F-8D81FDC11CE6 ;
-    p:P106 wds:Q460-2314E1B6-6A4A-5CE4-9423-A3AF66EB3C29 ;
-    p:P113 wds:Q460-8A674A27-FCAF-53B2-A70B-32DB96EA2749 ;
-    p:P115 wds:Q460-A70193CB-8F88-583B-BDB0-2DF1185AAF49 ;
-    p:P116 wds:Q460-1F2BA16D-4EA4-59CA-A79A-893B725D277E ;
-    p:P117 wds:Q460-B04922F0-8BAA-5715-BF74-5569A6C02F6E ;
-    p:P118 wds:Q460-6C60F83A-44A0-5EF3-ADE8-17FA45AAB7F6 ;
-    p:P119 wds:Q460-C9AAA06A-62B5-56D6-AD0B-278A19E376C0 ;
-    p:P122 wds:Q460-3A625283-A5AD-51D2-8A68-BF38392308F2,
-        wds:Q460-2801570A-FDEE-5112-88A1-4C14FB86D997 ;
-    p:P123 wds:Q460-994FFAEF-763F-54F2-8F23-3CDD5B949616 ;
-    p:P125 wds:Q460-C0A06B05-6AAA-57E6-A92F-4FFC3EAE269F ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q158 ;
-    wdt:P115 <https://open-archaeo.info/post/magaar/> ;
-    wdt:P116 "magaar" ;
-    wdt:P117 wd:Q161 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "magAAR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ISAAKiel/magAAR> .
+    chbp:P2 chbs:Q460-89F32351-0A13-5A23-A709-2AE2BF7F0C4F,
+        chbs:Q460-424759E4-D065-5689-A96F-8D81FDC11CE6 ;
+    chbp:P106 chbs:Q460-2314E1B6-6A4A-5CE4-9423-A3AF66EB3C29 ;
+    chbp:P113 chbs:Q460-8A674A27-FCAF-53B2-A70B-32DB96EA2749 ;
+    chbp:P115 chbs:Q460-A70193CB-8F88-583B-BDB0-2DF1185AAF49 ;
+    chbp:P116 chbs:Q460-1F2BA16D-4EA4-59CA-A79A-893B725D277E ;
+    chbp:P117 chbs:Q460-B04922F0-8BAA-5715-BF74-5569A6C02F6E ;
+    chbp:P118 chbs:Q460-6C60F83A-44A0-5EF3-ADE8-17FA45AAB7F6 ;
+    chbp:P119 chbs:Q460-C9AAA06A-62B5-56D6-AD0B-278A19E376C0 ;
+    chbp:P122 chbs:Q460-3A625283-A5AD-51D2-8A68-BF38392308F2,
+        chbs:Q460-2801570A-FDEE-5112-88A1-4C14FB86D997 ;
+    chbp:P123 chbs:Q460-994FFAEF-763F-54F2-8F23-3CDD5B949616 ;
+    chbp:P125 chbs:Q460-C0A06B05-6AAA-57E6-A92F-4FFC3EAE269F ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q158 ;
+    chbt:P115 <https://open-archaeo.info/post/magaar/> ;
+    chbt:P116 "magaar" ;
+    chbt:P117 chb:Q161 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "magAAR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ISAAKiel/magAAR> .
 
-wds:Q460-1F2BA16D-4EA4-59CA-A79A-893B725D277E
+chbs:Q460-1F2BA16D-4EA4-59CA-A79A-893B725D277E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "magaar" .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "magaar" .
 
-wds:Q460-3A625283-A5AD-51D2-8A68-BF38392308F2
+chbs:Q460-3A625283-A5AD-51D2-8A68-BF38392308F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q460-6C60F83A-44A0-5EF3-ADE8-17FA45AAB7F6
+chbs:Q460-6C60F83A-44A0-5EF3-ADE8-17FA45AAB7F6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q460-8A674A27-FCAF-53B2-A70B-32DB96EA2749
+chbs:Q460-8A674A27-FCAF-53B2-A70B-32DB96EA2749
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q158 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q158 .
 
-wds:Q460-89F32351-0A13-5A23-A709-2AE2BF7F0C4F
+chbs:Q460-89F32351-0A13-5A23-A709-2AE2BF7F0C4F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q460-994FFAEF-763F-54F2-8F23-3CDD5B949616
+chbs:Q460-994FFAEF-763F-54F2-8F23-3CDD5B949616
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q460-2314E1B6-6A4A-5CE4-9423-A3AF66EB3C29
+chbs:Q460-2314E1B6-6A4A-5CE4-9423-A3AF66EB3C29
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q460-424759E4-D065-5689-A96F-8D81FDC11CE6
+chbs:Q460-424759E4-D065-5689-A96F-8D81FDC11CE6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q460-2801570A-FDEE-5112-88A1-4C14FB86D997
+chbs:Q460-2801570A-FDEE-5112-88A1-4C14FB86D997
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q460-A70193CB-8F88-583B-BDB0-2DF1185AAF49
+chbs:Q460-A70193CB-8F88-583B-BDB0-2DF1185AAF49
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P115 <https://open-archaeo.info/post/magaar/> .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P115 <https://open-archaeo.info/post/magaar/> .
 
-wds:Q460-B04922F0-8BAA-5715-BF74-5569A6C02F6E
+chbs:Q460-B04922F0-8BAA-5715-BF74-5569A6C02F6E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P117 wd:Q161 .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P117 chb:Q161 .
 
-wds:Q460-C0A06B05-6AAA-57E6-A92F-4FFC3EAE269F
+chbs:Q460-C0A06B05-6AAA-57E6-A92F-4FFC3EAE269F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    pq:P104 "2017-06-10T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-magAAR_-_2017-06-10_14-34-21> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:c2d95bbaa02e0f4160b40f3095f676b3 ;
-    ps:P125 <https://github.com/ISAAKiel/magAAR> .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbpq:P104 "2017-06-10T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-magAAR_-_2017-06-10_14-34-21> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:c2d95bbaa02e0f4160b40f3095f676b3 ;
+    chbps:P125 <https://github.com/ISAAKiel/magAAR> .
 
-wds:Q460-C9AAA06A-62B5-56D6-AD0B-278A19E376C0
+chbs:Q460-C9AAA06A-62B5-56D6-AD0B-278A19E376C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
-    ps:P119 "magAAR"@en .
+    prov:wasDerivedFrom chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6 ;
+    chbps:P119 "magAAR"@en .
 
-wdref:7d5f9423a3dc3136601b0476254faeede0bbacc6
+chbref:7d5f9423a3dc3136601b0476254faeede0bbacc6
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/magaar/> .
+    chbpr:P6 <https://open-archaeo.info/post/magaar/> .
 
-wdv:c2d95bbaa02e0f4160b40f3095f676b3
+chbv:c2d95bbaa02e0f4160b40f3095f676b3
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

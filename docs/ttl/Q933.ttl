@@ -1,53 +1,54 @@
 # Q933: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q933
+chbdata:Q933.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Semantic Annotation for QGIS"@en ;
     dcterms:identifier "Q933" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q933 ;
+    dcterms:subject chb:Q933 ;
     dcterms:title "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
-    schema:about wd:Q933 ;
-    dcat:distribution dist:Q933-html,
-        dist:Q933-json,
-        dist:Q933-ttl ;
+    schema:about chb:Q933 ;
+    dcat:distribution chbdist:Q933-html,
+        chbdist:Q933-json,
+        chbdist:Q933-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q933.html> .
 
-dist:Q933-html
+chbdist:Q933-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q933-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q933.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q933-json
+chbdist:Q933-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q933-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q933.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q933-ttl
+chbdist:Q933-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q933, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q933.ttl> ;
+    dcat:downloadURL chbdata:Q933.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q933
+chb:Q933
     a wikibase:Item ;
     schema:description "Semantic Annotation for QGIS"@en ;
     schema:name "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
@@ -80,126 +81,126 @@ wd:Q933
     wikibase:statements "10"^^xsd:integer ;
     rdfs:label "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
     skos:prefLabel "QSKOS Plugin - Semantic Annotation for QGIS"@en ;
-    p:P2 wds:Q933-1BE0EB6A-1D03-5C84-B422-469B5E9EB9C4,
-        wds:Q933-039F0644-17FB-5F07-A4E8-4395CE789ED6,
-        wds:Q933-81D08E23-5409-5227-8F19-73A5B427FE8A,
-        wds:Q933-94EB026C-64F9-5876-8D7B-EEE52AADD703 ;
-    p:P4 wds:Q933-26276B86-C467-500D-A2E9-EB92994D3999 ;
-    p:P113 wds:Q933-455F0C37-FC43-5750-8DDA-3061B205825B ;
-    p:P123 wds:Q933-D018E770-64C5-5B75-8D30-9F37BBAC308E ;
-    p:P125 wds:Q933-93879D5D-9070-54FD-B924-F6F2EAA176EE ;
-    p:P148 wds:Q933-787E2C86-DE51-51EF-894E-742538048DCC ;
-    p:P247 wds:Q933-84DB5E3B-8F33-57AA-808A-453A7E57EF42 ;
-    wdt:P2 wd:Q100,
-        wd:Q105,
-        wd:Q106,
-        wd:Q378 ;
-    wdt:P4 "Q141818802" ;
-    wdt:P113 wd:Q935 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/leiza-rse/qskos> ;
-    wdt:P148 "0.1-alpha" ;
-    wdt:P247 "QSKOS Plugin - Semantic Annotation for QGIS"@en .
+    chbp:P2 chbs:Q933-1BE0EB6A-1D03-5C84-B422-469B5E9EB9C4,
+        chbs:Q933-039F0644-17FB-5F07-A4E8-4395CE789ED6,
+        chbs:Q933-81D08E23-5409-5227-8F19-73A5B427FE8A,
+        chbs:Q933-94EB026C-64F9-5876-8D7B-EEE52AADD703 ;
+    chbp:P4 chbs:Q933-26276B86-C467-500D-A2E9-EB92994D3999 ;
+    chbp:P113 chbs:Q933-455F0C37-FC43-5750-8DDA-3061B205825B ;
+    chbp:P123 chbs:Q933-D018E770-64C5-5B75-8D30-9F37BBAC308E ;
+    chbp:P125 chbs:Q933-93879D5D-9070-54FD-B924-F6F2EAA176EE ;
+    chbp:P148 chbs:Q933-787E2C86-DE51-51EF-894E-742538048DCC ;
+    chbp:P247 chbs:Q933-84DB5E3B-8F33-57AA-808A-453A7E57EF42 ;
+    chbt:P2 chb:Q100,
+        chb:Q105,
+        chb:Q106,
+        chb:Q378 ;
+    chbt:P4 "Q141818802" ;
+    chbt:P113 chb:Q935 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/leiza-rse/qskos> ;
+    chbt:P148 "0.1-alpha" ;
+    chbt:P247 "QSKOS Plugin - Semantic Annotation for QGIS"@en .
 
-wds:Q933-1BE0EB6A-1D03-5C84-B422-469B5E9EB9C4
+chbs:Q933-1BE0EB6A-1D03-5C84-B422-469B5E9EB9C4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P2 wd:Q105 .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P2 chb:Q105 .
 
-wds:Q933-039F0644-17FB-5F07-A4E8-4395CE789ED6
+chbs:Q933-039F0644-17FB-5F07-A4E8-4395CE789ED6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P2 wd:Q100 .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P2 chb:Q100 .
 
-wds:Q933-81D08E23-5409-5227-8F19-73A5B427FE8A
+chbs:Q933-81D08E23-5409-5227-8F19-73A5B427FE8A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P2 wd:Q378 .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P2 chb:Q378 .
 
-wds:Q933-84DB5E3B-8F33-57AA-808A-453A7E57EF42
+chbs:Q933-84DB5E3B-8F33-57AA-808A-453A7E57EF42
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P247 "QSKOS Plugin - Semantic Annotation for QGIS"@en .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P247 "QSKOS Plugin - Semantic Annotation for QGIS"@en .
 
-wds:Q933-94EB026C-64F9-5876-8D7B-EEE52AADD703
+chbs:Q933-94EB026C-64F9-5876-8D7B-EEE52AADD703
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q933-455F0C37-FC43-5750-8DDA-3061B205825B
+chbs:Q933-455F0C37-FC43-5750-8DDA-3061B205825B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P113 wd:Q935 .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P113 chb:Q935 .
 
-wds:Q933-787E2C86-DE51-51EF-894E-742538048DCC
+chbs:Q933-787E2C86-DE51-51EF-894E-742538048DCC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8,
-        wdref:b3e03fc575043e673c7bb462772700046709eb84 ;
-    pq:P144 "2025-11-05T00:00:00Z"^^xsd:dateTime ;
-    pqv:P144 wdv:10d3de10482a8f5e59b6226a2791ba5b ;
-    ps:P148 "0.1-alpha" .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8,
+        chbref:b3e03fc575043e673c7bb462772700046709eb84 ;
+    chbpq:P144 "2025-11-05T00:00:00Z"^^xsd:dateTime ;
+    chbpqv:P144 chbv:10d3de10482a8f5e59b6226a2791ba5b ;
+    chbps:P148 "0.1-alpha" .
 
-wds:Q933-26276B86-C467-500D-A2E9-EB92994D3999
+chbs:Q933-26276B86-C467-500D-A2E9-EB92994D3999
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89c676eff404e4da28daed4ef1b23a458c963062 ;
-    ps:P4 "Q141818802" .
+    prov:wasDerivedFrom chbref:89c676eff404e4da28daed4ef1b23a458c963062 ;
+    chbps:P4 "Q141818802" .
 
-wds:Q933-93879D5D-9070-54FD-B924-F6F2EAA176EE
+chbs:Q933-93879D5D-9070-54FD-B924-F6F2EAA176EE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    pq:P107 wd:Q934 ;
-    pq:P126 wd:Q114 ;
-    pq:P248 wd:Q363 ;
-    ps:P125 <https://github.com/leiza-rse/qskos> .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbpq:P107 chb:Q934 ;
+    chbpq:P126 chb:Q114 ;
+    chbpq:P248 chb:Q363 ;
+    chbps:P125 <https://github.com/leiza-rse/qskos> .
 
-wds:Q933-D018E770-64C5-5B75-8D30-9F37BBAC308E
+chbs:Q933-D018E770-64C5-5B75-8D30-9F37BBAC308E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:11b6c701e86355670f62f97795e7370b4f4e43d8 ;
+    chbps:P123 chb:Q370 .
 
-wdref:11b6c701e86355670f62f97795e7370b4f4e43d8
+chbref:11b6c701e86355670f62f97795e7370b4f4e43d8
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q141818802> ;
-    pr:P7 "2026-10-23T00:00:00Z"^^xsd:dateTime ;
-    pr:P8 wd:Q364 ;
-    prv:P7 wdv:6aa9463e68b08c293fee14849c276379 .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q141818802> ;
+    chbpr:P7 "2026-10-23T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P8 chb:Q364 ;
+    chbprv:P7 chbv:6aa9463e68b08c293fee14849c276379 .
 
-wdref:89c676eff404e4da28daed4ef1b23a458c963062
+chbref:89c676eff404e4da28daed4ef1b23a458c963062
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q141818802> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q141818802> .
 
-wdref:b3e03fc575043e673c7bb462772700046709eb84
+chbref:b3e03fc575043e673c7bb462772700046709eb84
     a wikibase:Reference ;
-    pr:P6 <https://github.com/leiza-rse/QSKOS/releases/tag/v0.1-alpha> .
+    chbpr:P6 <https://github.com/leiza-rse/QSKOS/releases/tag/v0.1-alpha> .
 
-wdv:6aa9463e68b08c293fee14849c276379
+chbv:6aa9463e68b08c293fee14849c276379
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2026-10-23T00:00:00Z"^^xsd:dateTime .
 
-wdv:10d3de10482a8f5e59b6226a2791ba5b
+chbv:10d3de10482a8f5e59b6226a2791ba5b
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

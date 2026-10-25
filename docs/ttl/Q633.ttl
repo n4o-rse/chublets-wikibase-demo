@@ -1,53 +1,54 @@
 # Q633: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q633
+chbdata:Q633.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An r package for chronological bayesian models integrated for optically stimulated osl, luminescence dating"@en ;
     dcterms:identifier "Q633" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q633 ;
+    dcterms:subject chb:Q633 ;
     dcterms:title "BayLum"@en ;
-    schema:about wd:Q633 ;
-    dcat:distribution dist:Q633-html,
-        dist:Q633-json,
-        dist:Q633-ttl ;
+    schema:about chb:Q633 ;
+    dcat:distribution chbdist:Q633-html,
+        chbdist:Q633-json,
+        chbdist:Q633-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q633.html> .
 
-dist:Q633-html
+chbdist:Q633-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q633-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q633.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q633-json
+chbdist:Q633-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q633-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q633.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q633-ttl
+chbdist:Q633-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q633, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q633.ttl> ;
+    dcat:downloadURL chbdata:Q633.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q633
+chb:Q633
     a wikibase:Item ;
     schema:description "An r package for chronological bayesian models integrated for optically stimulated osl, luminescence dating"@en ;
     schema:name "BayLum"@en ;
@@ -80,171 +81,171 @@ wd:Q633
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "BayLum"@en ;
     skos:prefLabel "BayLum"@en ;
-    p:P2 wds:Q633-0C12A02E-E734-53E8-A8FA-82DA2630DCA0,
-        wds:Q633-96090C94-1644-52F8-8579-864D06C556CB ;
-    p:P106 wds:Q633-8A864656-4775-594D-82BC-51F0B2838025 ;
-    p:P108 wds:Q633-CB49BD3D-5A32-5D72-B99B-BAE4E52DC5AF ;
-    p:P111 wds:Q633-2FDB26EE-748B-57F2-A5BF-5A8BC74B6AD7 ;
-    p:P113 wds:Q633-E19D4834-0609-5F76-90B0-237B7A4C0344 ;
-    p:P114 wds:Q633-DF7D042B-E44F-5239-9ED9-E11954B262FB ;
-    p:P115 wds:Q633-A8A6542A-7CE3-5EF8-97A4-86989E2C4491 ;
-    p:P116 wds:Q633-B1809C8B-D500-5171-A819-9DDF9B360EE9 ;
-    p:P117 wds:Q633-7D301C9E-8B84-5751-81B0-3C4468993A41 ;
-    p:P118 wds:Q633-362F7463-477F-5AD7-A5E3-973923FF0D4E ;
-    p:P119 wds:Q633-913C7277-BDCB-5233-BD9C-2637CF9DEA63 ;
-    p:P120 wds:Q633-FC4CA772-8D24-5A8F-A884-56EC8356DCDE ;
-    p:P122 wds:Q633-3A1E1828-84E1-53B7-8E00-B0B86BE41E2F,
-        wds:Q633-DEEE9A42-8936-51B6-B9CA-51EB643033E8 ;
-    p:P123 wds:Q633-DB77C163-2D09-50B2-86AE-36BDE3270966 ;
-    p:P125 wds:Q633-22C765CB-3881-5350-8A45-716DA8F20E5C ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "BayLum" ;
-    wdt:P111 wd:Q634 ;
-    wdt:P113 wd:Q336 ;
-    wdt:P114 "10.5281/zenodo.4311265" ;
-    wdt:P115 <https://open-archaeo.info/post/baylum/> ;
-    wdt:P116 "baylum" ;
-    wdt:P117 wd:Q253 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "BayLum"@en ;
-    wdt:P120 <https://crp2a.github.io/BayLum/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/crp2a/BayLum> .
+    chbp:P2 chbs:Q633-0C12A02E-E734-53E8-A8FA-82DA2630DCA0,
+        chbs:Q633-96090C94-1644-52F8-8579-864D06C556CB ;
+    chbp:P106 chbs:Q633-8A864656-4775-594D-82BC-51F0B2838025 ;
+    chbp:P108 chbs:Q633-CB49BD3D-5A32-5D72-B99B-BAE4E52DC5AF ;
+    chbp:P111 chbs:Q633-2FDB26EE-748B-57F2-A5BF-5A8BC74B6AD7 ;
+    chbp:P113 chbs:Q633-E19D4834-0609-5F76-90B0-237B7A4C0344 ;
+    chbp:P114 chbs:Q633-DF7D042B-E44F-5239-9ED9-E11954B262FB ;
+    chbp:P115 chbs:Q633-A8A6542A-7CE3-5EF8-97A4-86989E2C4491 ;
+    chbp:P116 chbs:Q633-B1809C8B-D500-5171-A819-9DDF9B360EE9 ;
+    chbp:P117 chbs:Q633-7D301C9E-8B84-5751-81B0-3C4468993A41 ;
+    chbp:P118 chbs:Q633-362F7463-477F-5AD7-A5E3-973923FF0D4E ;
+    chbp:P119 chbs:Q633-913C7277-BDCB-5233-BD9C-2637CF9DEA63 ;
+    chbp:P120 chbs:Q633-FC4CA772-8D24-5A8F-A884-56EC8356DCDE ;
+    chbp:P122 chbs:Q633-3A1E1828-84E1-53B7-8E00-B0B86BE41E2F,
+        chbs:Q633-DEEE9A42-8936-51B6-B9CA-51EB643033E8 ;
+    chbp:P123 chbs:Q633-DB77C163-2D09-50B2-86AE-36BDE3270966 ;
+    chbp:P125 chbs:Q633-22C765CB-3881-5350-8A45-716DA8F20E5C ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "BayLum" ;
+    chbt:P111 chb:Q634 ;
+    chbt:P113 chb:Q336 ;
+    chbt:P114 "10.5281/zenodo.4311265" ;
+    chbt:P115 <https://open-archaeo.info/post/baylum/> ;
+    chbt:P116 "baylum" ;
+    chbt:P117 chb:Q253 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "BayLum"@en ;
+    chbt:P120 <https://crp2a.github.io/BayLum/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/crp2a/BayLum> .
 
-wds:Q633-0C12A02E-E734-53E8-A8FA-82DA2630DCA0
+chbs:Q633-0C12A02E-E734-53E8-A8FA-82DA2630DCA0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q633-2FDB26EE-748B-57F2-A5BF-5A8BC74B6AD7
+chbs:Q633-2FDB26EE-748B-57F2-A5BF-5A8BC74B6AD7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P111 wd:Q634 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P111 chb:Q634 .
 
-wds:Q633-3A1E1828-84E1-53B7-8E00-B0B86BE41E2F
+chbs:Q633-3A1E1828-84E1-53B7-8E00-B0B86BE41E2F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q633-7D301C9E-8B84-5751-81B0-3C4468993A41
+chbs:Q633-7D301C9E-8B84-5751-81B0-3C4468993A41
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P117 wd:Q253 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P117 chb:Q253 .
 
-wds:Q633-8A864656-4775-594D-82BC-51F0B2838025
+chbs:Q633-8A864656-4775-594D-82BC-51F0B2838025
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q633-22C765CB-3881-5350-8A45-716DA8F20E5C
+chbs:Q633-22C765CB-3881-5350-8A45-716DA8F20E5C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    pq:P104 "2021-01-03T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-crp2a-BayLum_-_2021-01-03_12-01-54> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:0149edf5562a84428ca987d4b6260467 ;
-    ps:P125 <https://github.com/crp2a/BayLum> .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbpq:P104 "2021-01-03T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-crp2a-BayLum_-_2021-01-03_12-01-54> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:0149edf5562a84428ca987d4b6260467 ;
+    chbps:P125 <https://github.com/crp2a/BayLum> .
 
-wds:Q633-362F7463-477F-5AD7-A5E3-973923FF0D4E
+chbs:Q633-362F7463-477F-5AD7-A5E3-973923FF0D4E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q633-913C7277-BDCB-5233-BD9C-2637CF9DEA63
+chbs:Q633-913C7277-BDCB-5233-BD9C-2637CF9DEA63
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P119 "BayLum"@en .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P119 "BayLum"@en .
 
-wds:Q633-96090C94-1644-52F8-8579-864D06C556CB
+chbs:Q633-96090C94-1644-52F8-8579-864D06C556CB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q633-A8A6542A-7CE3-5EF8-97A4-86989E2C4491
+chbs:Q633-A8A6542A-7CE3-5EF8-97A4-86989E2C4491
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P115 <https://open-archaeo.info/post/baylum/> .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P115 <https://open-archaeo.info/post/baylum/> .
 
-wds:Q633-B1809C8B-D500-5171-A819-9DDF9B360EE9
+chbs:Q633-B1809C8B-D500-5171-A819-9DDF9B360EE9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "baylum" .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "baylum" .
 
-wds:Q633-CB49BD3D-5A32-5D72-B99B-BAE4E52DC5AF
+chbs:Q633-CB49BD3D-5A32-5D72-B99B-BAE4E52DC5AF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P108 "BayLum" .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P108 "BayLum" .
 
-wds:Q633-DB77C163-2D09-50B2-86AE-36BDE3270966
+chbs:Q633-DB77C163-2D09-50B2-86AE-36BDE3270966
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q633-DEEE9A42-8936-51B6-B9CA-51EB643033E8
+chbs:Q633-DEEE9A42-8936-51B6-B9CA-51EB643033E8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q633-DF7D042B-E44F-5239-9ED9-E11954B262FB
+chbs:Q633-DF7D042B-E44F-5239-9ED9-E11954B262FB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P114 "10.5281/zenodo.4311265" .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P114 "10.5281/zenodo.4311265" .
 
-wds:Q633-E19D4834-0609-5F76-90B0-237B7A4C0344
+chbs:Q633-E19D4834-0609-5F76-90B0-237B7A4C0344
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q336 .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q336 .
 
-wds:Q633-FC4CA772-8D24-5A8F-A884-56EC8356DCDE
+chbs:Q633-FC4CA772-8D24-5A8F-A884-56EC8356DCDE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
-    ps:P120 <https://crp2a.github.io/BayLum/> .
+    prov:wasDerivedFrom chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9 ;
+    chbps:P120 <https://crp2a.github.io/BayLum/> .
 
-wdref:379ea38c4ebdfa3af84cd440dc0759b0343268c9
+chbref:379ea38c4ebdfa3af84cd440dc0759b0343268c9
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/baylum/> .
+    chbpr:P6 <https://open-archaeo.info/post/baylum/> .
 
-wdv:0149edf5562a84428ca987d4b6260467
+chbv:0149edf5562a84428ca987d4b6260467
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q567: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q567
+chbdata:Q567.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Visualizing XRF and NAA geochemistry concentrations."@en ;
     dcterms:identifier "Q567" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q567 ;
+    dcterms:subject chb:Q567 ;
     dcterms:title "web_geochemistry"@en ;
-    schema:about wd:Q567 ;
-    dcat:distribution dist:Q567-html,
-        dist:Q567-json,
-        dist:Q567-ttl ;
+    schema:about chb:Q567 ;
+    dcat:distribution chbdist:Q567-html,
+        chbdist:Q567-json,
+        chbdist:Q567-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q567.html> .
 
-dist:Q567-html
+chbdist:Q567-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q567-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q567.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q567-json
+chbdist:Q567-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q567-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q567.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q567-ttl
+chbdist:Q567-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q567, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q567.ttl> ;
+    dcat:downloadURL chbdata:Q567.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q567
+chb:Q567
     a wikibase:Item ;
     schema:description "Visualizing XRF and NAA geochemistry concentrations."@en ;
     schema:name "web_geochemistry"@en ;
@@ -80,136 +81,136 @@ wd:Q567
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "web_geochemistry"@en ;
     skos:prefLabel "web_geochemistry"@en ;
-    p:P2 wds:Q567-1158F0B1-E75F-51AB-98BE-0D791AC70CD6,
-        wds:Q567-EFADFB52-7990-5E3C-9CD4-33446B4D58B8 ;
-    p:P106 wds:Q567-9BCE1B56-53EF-5204-92FF-E9D28FC8193C ;
-    p:P113 wds:Q567-22DDC6D5-60F1-5BBC-BE52-D56846539E4B ;
-    p:P115 wds:Q567-710CB579-4EDE-5C22-91FE-0CCDC3CCA4CE ;
-    p:P116 wds:Q567-5DB066ED-8B88-51D1-9DD7-C5EC3AB9CA4C ;
-    p:P117 wds:Q567-2FF626AD-DEA1-5EC7-82A3-7CB1C3E7A4A4,
-        wds:Q567-ED738BE4-05F4-53E4-BFFD-0744B6CA1CB1 ;
-    p:P118 wds:Q567-3F4C25BB-2F4C-56A8-B0FC-1E549062BE14 ;
-    p:P119 wds:Q567-8EC000F2-421C-5020-8894-714C75F4531A ;
-    p:P122 wds:Q567-72380F9B-F7C7-5FBF-BD09-FD5F6641F46C,
-        wds:Q567-C7714B28-E8E2-56F9-85CE-51C171945CF9 ;
-    p:P123 wds:Q567-BFF66A8E-33B6-507C-BE8D-0F6D549E206F ;
-    p:P125 wds:Q567-7A3F6785-1536-58B4-B2C4-A5B4F34D400D ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q569 ;
-    wdt:P115 <https://open-archaeo.info/post/web-geochemistry/> ;
-    wdt:P116 "web-geochemistry" ;
-    wdt:P117 wd:Q201,
-        wd:Q568 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "web_geochemistry"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/arf-berkeley/web_geochemistry> .
+    chbp:P2 chbs:Q567-1158F0B1-E75F-51AB-98BE-0D791AC70CD6,
+        chbs:Q567-EFADFB52-7990-5E3C-9CD4-33446B4D58B8 ;
+    chbp:P106 chbs:Q567-9BCE1B56-53EF-5204-92FF-E9D28FC8193C ;
+    chbp:P113 chbs:Q567-22DDC6D5-60F1-5BBC-BE52-D56846539E4B ;
+    chbp:P115 chbs:Q567-710CB579-4EDE-5C22-91FE-0CCDC3CCA4CE ;
+    chbp:P116 chbs:Q567-5DB066ED-8B88-51D1-9DD7-C5EC3AB9CA4C ;
+    chbp:P117 chbs:Q567-2FF626AD-DEA1-5EC7-82A3-7CB1C3E7A4A4,
+        chbs:Q567-ED738BE4-05F4-53E4-BFFD-0744B6CA1CB1 ;
+    chbp:P118 chbs:Q567-3F4C25BB-2F4C-56A8-B0FC-1E549062BE14 ;
+    chbp:P119 chbs:Q567-8EC000F2-421C-5020-8894-714C75F4531A ;
+    chbp:P122 chbs:Q567-72380F9B-F7C7-5FBF-BD09-FD5F6641F46C,
+        chbs:Q567-C7714B28-E8E2-56F9-85CE-51C171945CF9 ;
+    chbp:P123 chbs:Q567-BFF66A8E-33B6-507C-BE8D-0F6D549E206F ;
+    chbp:P125 chbs:Q567-7A3F6785-1536-58B4-B2C4-A5B4F34D400D ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q569 ;
+    chbt:P115 <https://open-archaeo.info/post/web-geochemistry/> ;
+    chbt:P116 "web-geochemistry" ;
+    chbt:P117 chb:Q201,
+        chb:Q568 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "web_geochemistry"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/arf-berkeley/web_geochemistry> .
 
-wds:Q567-2FF626AD-DEA1-5EC7-82A3-7CB1C3E7A4A4
+chbs:Q567-2FF626AD-DEA1-5EC7-82A3-7CB1C3E7A4A4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P117 wd:Q568 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P117 chb:Q568 .
 
-wds:Q567-3F4C25BB-2F4C-56A8-B0FC-1E549062BE14
+chbs:Q567-3F4C25BB-2F4C-56A8-B0FC-1E549062BE14
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P118 chb:Q108 .
 
-wds:Q567-5DB066ED-8B88-51D1-9DD7-C5EC3AB9CA4C
+chbs:Q567-5DB066ED-8B88-51D1-9DD7-C5EC3AB9CA4C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "web-geochemistry" .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "web-geochemistry" .
 
-wds:Q567-7A3F6785-1536-58B4-B2C4-A5B4F34D400D
+chbs:Q567-7A3F6785-1536-58B4-B2C4-A5B4F34D400D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/arf-berkeley/web_geochemistry> .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/arf-berkeley/web_geochemistry> .
 
-wds:Q567-8EC000F2-421C-5020-8894-714C75F4531A
+chbs:Q567-8EC000F2-421C-5020-8894-714C75F4531A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P119 "web_geochemistry"@en .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P119 "web_geochemistry"@en .
 
-wds:Q567-9BCE1B56-53EF-5204-92FF-E9D28FC8193C
+chbs:Q567-9BCE1B56-53EF-5204-92FF-E9D28FC8193C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P106 chb:Q110 .
 
-wds:Q567-22DDC6D5-60F1-5BBC-BE52-D56846539E4B
+chbs:Q567-22DDC6D5-60F1-5BBC-BE52-D56846539E4B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q569 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q569 .
 
-wds:Q567-710CB579-4EDE-5C22-91FE-0CCDC3CCA4CE
+chbs:Q567-710CB579-4EDE-5C22-91FE-0CCDC3CCA4CE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P115 <https://open-archaeo.info/post/web-geochemistry/> .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P115 <https://open-archaeo.info/post/web-geochemistry/> .
 
-wds:Q567-1158F0B1-E75F-51AB-98BE-0D791AC70CD6
+chbs:Q567-1158F0B1-E75F-51AB-98BE-0D791AC70CD6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P2 chb:Q106 .
 
-wds:Q567-72380F9B-F7C7-5FBF-BD09-FD5F6641F46C
+chbs:Q567-72380F9B-F7C7-5FBF-BD09-FD5F6641F46C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P122 chb:Q109 .
 
-wds:Q567-BFF66A8E-33B6-507C-BE8D-0F6D549E206F
+chbs:Q567-BFF66A8E-33B6-507C-BE8D-0F6D549E206F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P123 chb:Q111 .
 
-wds:Q567-C7714B28-E8E2-56F9-85CE-51C171945CF9
+chbs:Q567-C7714B28-E8E2-56F9-85CE-51C171945CF9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P122 chb:Q110 .
 
-wds:Q567-ED738BE4-05F4-53E4-BFFD-0744B6CA1CB1
+chbs:Q567-ED738BE4-05F4-53E4-BFFD-0744B6CA1CB1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P117 wd:Q201 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P117 chb:Q201 .
 
-wds:Q567-EFADFB52-7990-5E3C-9CD4-33446B4D58B8
+chbs:Q567-EFADFB52-7990-5E3C-9CD4-33446B4D58B8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:e74af16703f21c5e10912cbf8003921f7fd725fb ;
+    chbps:P2 chb:Q103 .
 
-wdref:e74af16703f21c5e10912cbf8003921f7fd725fb
+chbref:e74af16703f21c5e10912cbf8003921f7fd725fb
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/web-geochemistry/> .
+    chbpr:P6 <https://open-archaeo.info/post/web-geochemistry/> .

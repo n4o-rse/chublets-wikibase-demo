@@ -1,53 +1,54 @@
 # Q680: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q680
+chbdata:Q680.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Unconstrained clustering."@en ;
     dcterms:identifier "Q680" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q680 ;
+    dcterms:subject chb:Q680 ;
     dcterms:title "UnconstrainedClustering"@en ;
-    schema:about wd:Q680 ;
-    dcat:distribution dist:Q680-html,
-        dist:Q680-json,
-        dist:Q680-ttl ;
+    schema:about chb:Q680 ;
+    dcat:distribution chbdist:Q680-html,
+        chbdist:Q680-json,
+        chbdist:Q680-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q680.html> .
 
-dist:Q680-html
+chbdist:Q680-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q680-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q680.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q680-json
+chbdist:Q680-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q680-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q680.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q680-ttl
+chbdist:Q680-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q680, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q680.ttl> ;
+    dcat:downloadURL chbdata:Q680.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q680
+chb:Q680
     a wikibase:Item ;
     schema:description "Unconstrained clustering."@en ;
     schema:name "UnconstrainedClustering"@en ;
@@ -80,126 +81,126 @@ wd:Q680
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "UnconstrainedClustering"@en ;
     skos:prefLabel "UnconstrainedClustering"@en ;
-    p:P2 wds:Q680-8DBF0177-118B-52B8-9883-A9090D5AEEA1,
-        wds:Q680-D2161575-468C-51FF-A915-1DEF7B866E6E ;
-    p:P106 wds:Q680-0FE0C5FE-06F0-50CD-8022-810941E992F3 ;
-    p:P113 wds:Q680-E7899DB4-E05D-5F34-B6C8-2A0207A65166 ;
-    p:P115 wds:Q680-C33546BE-E714-5A38-8F31-D8B2464A2ABA ;
-    p:P116 wds:Q680-62498A0B-7D03-5371-9B9D-699193B3C9F9 ;
-    p:P117 wds:Q680-8E5BB65A-EA41-5004-9B24-EDA5C0FA1AFB ;
-    p:P118 wds:Q680-1628846D-8D80-5309-A4FC-1AB1486AB7FB ;
-    p:P119 wds:Q680-A1218D7A-A73E-55C8-BDE2-0C94D4A327AD ;
-    p:P120 wds:Q680-7A2669E5-D68E-574E-8F47-71B7797AE364 ;
-    p:P122 wds:Q680-11424B1D-0351-5E98-879B-5692EE82FA84,
-        wds:Q680-ABBDE574-9C93-56FB-9CD1-005349CB313F ;
-    p:P123 wds:Q680-BEE0173F-1A78-5659-980B-3C19EA4E81C2 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q167 ;
-    wdt:P115 <https://open-archaeo.info/post/unconstrainedclustering/> ;
-    wdt:P116 "unconstrainedclustering" ;
-    wdt:P117 wd:Q116 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "UnconstrainedClustering"@en ;
-    wdt:P120 <http://www.mattpeeples.net/modules/UnconstrainedClustering.html> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 .
+    chbp:P2 chbs:Q680-8DBF0177-118B-52B8-9883-A9090D5AEEA1,
+        chbs:Q680-D2161575-468C-51FF-A915-1DEF7B866E6E ;
+    chbp:P106 chbs:Q680-0FE0C5FE-06F0-50CD-8022-810941E992F3 ;
+    chbp:P113 chbs:Q680-E7899DB4-E05D-5F34-B6C8-2A0207A65166 ;
+    chbp:P115 chbs:Q680-C33546BE-E714-5A38-8F31-D8B2464A2ABA ;
+    chbp:P116 chbs:Q680-62498A0B-7D03-5371-9B9D-699193B3C9F9 ;
+    chbp:P117 chbs:Q680-8E5BB65A-EA41-5004-9B24-EDA5C0FA1AFB ;
+    chbp:P118 chbs:Q680-1628846D-8D80-5309-A4FC-1AB1486AB7FB ;
+    chbp:P119 chbs:Q680-A1218D7A-A73E-55C8-BDE2-0C94D4A327AD ;
+    chbp:P120 chbs:Q680-7A2669E5-D68E-574E-8F47-71B7797AE364 ;
+    chbp:P122 chbs:Q680-11424B1D-0351-5E98-879B-5692EE82FA84,
+        chbs:Q680-ABBDE574-9C93-56FB-9CD1-005349CB313F ;
+    chbp:P123 chbs:Q680-BEE0173F-1A78-5659-980B-3C19EA4E81C2 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q167 ;
+    chbt:P115 <https://open-archaeo.info/post/unconstrainedclustering/> ;
+    chbt:P116 "unconstrainedclustering" ;
+    chbt:P117 chb:Q116 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "UnconstrainedClustering"@en ;
+    chbt:P120 <http://www.mattpeeples.net/modules/UnconstrainedClustering.html> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 .
 
-wds:Q680-0FE0C5FE-06F0-50CD-8022-810941E992F3
+chbs:Q680-0FE0C5FE-06F0-50CD-8022-810941E992F3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q680-7A2669E5-D68E-574E-8F47-71B7797AE364
+chbs:Q680-7A2669E5-D68E-574E-8F47-71B7797AE364
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P120 <http://www.mattpeeples.net/modules/UnconstrainedClustering.html> .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P120 <http://www.mattpeeples.net/modules/UnconstrainedClustering.html> .
 
-wds:Q680-8DBF0177-118B-52B8-9883-A9090D5AEEA1
+chbs:Q680-8DBF0177-118B-52B8-9883-A9090D5AEEA1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q680-8E5BB65A-EA41-5004-9B24-EDA5C0FA1AFB
+chbs:Q680-8E5BB65A-EA41-5004-9B24-EDA5C0FA1AFB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P117 chb:Q116 .
 
-wds:Q680-11424B1D-0351-5E98-879B-5692EE82FA84
+chbs:Q680-11424B1D-0351-5E98-879B-5692EE82FA84
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q680-62498A0B-7D03-5371-9B9D-699193B3C9F9
+chbs:Q680-62498A0B-7D03-5371-9B9D-699193B3C9F9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "unconstrainedclustering" .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "unconstrainedclustering" .
 
-wds:Q680-1628846D-8D80-5309-A4FC-1AB1486AB7FB
+chbs:Q680-1628846D-8D80-5309-A4FC-1AB1486AB7FB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q680-A1218D7A-A73E-55C8-BDE2-0C94D4A327AD
+chbs:Q680-A1218D7A-A73E-55C8-BDE2-0C94D4A327AD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P119 "UnconstrainedClustering"@en .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P119 "UnconstrainedClustering"@en .
 
-wds:Q680-ABBDE574-9C93-56FB-9CD1-005349CB313F
+chbs:Q680-ABBDE574-9C93-56FB-9CD1-005349CB313F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q680-BEE0173F-1A78-5659-980B-3C19EA4E81C2
+chbs:Q680-BEE0173F-1A78-5659-980B-3C19EA4E81C2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q680-C33546BE-E714-5A38-8F31-D8B2464A2ABA
+chbs:Q680-C33546BE-E714-5A38-8F31-D8B2464A2ABA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P115 <https://open-archaeo.info/post/unconstrainedclustering/> .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P115 <https://open-archaeo.info/post/unconstrainedclustering/> .
 
-wds:Q680-D2161575-468C-51FF-A915-1DEF7B866E6E
+chbs:Q680-D2161575-468C-51FF-A915-1DEF7B866E6E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q680-E7899DB4-E05D-5F34-B6C8-2A0207A65166
+chbs:Q680-E7899DB4-E05D-5F34-B6C8-2A0207A65166
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q167 .
+    prov:wasDerivedFrom chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q167 .
 
-wdref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4
+chbref:3e0782603b466f3898aa4dcf4f89c0d7f8a52cc4
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/unconstrainedclustering/> .
+    chbpr:P6 <https://open-archaeo.info/post/unconstrainedclustering/> .

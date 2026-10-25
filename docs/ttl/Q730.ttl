@@ -1,53 +1,54 @@
 # Q730: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q730
+chbdata:Q730.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A lightweight web application for creating AI‑generated catalogue entries and conservation assessments of archaeological sites and artworks."@en ;
     dcterms:identifier "Q730" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q730 ;
+    dcterms:subject chb:Q730 ;
     dcterms:title "heritage-scribe"@en ;
-    schema:about wd:Q730 ;
-    dcat:distribution dist:Q730-html,
-        dist:Q730-json,
-        dist:Q730-ttl ;
+    schema:about chb:Q730 ;
+    dcat:distribution chbdist:Q730-html,
+        chbdist:Q730-json,
+        chbdist:Q730-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q730.html> .
 
-dist:Q730-html
+chbdist:Q730-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q730-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q730.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q730-json
+chbdist:Q730-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q730-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q730.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q730-ttl
+chbdist:Q730-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q730, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q730.ttl> ;
+    dcat:downloadURL chbdata:Q730.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q730
+chb:Q730
     a wikibase:Item ;
     schema:description "A lightweight web application for creating AI‑generated catalogue entries and conservation assessments of archaeological sites and artworks."@en ;
     schema:name "heritage-scribe"@en ;
@@ -80,136 +81,136 @@ wd:Q730
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "heritage-scribe"@en ;
     skos:prefLabel "heritage-scribe"@en ;
-    p:P2 wds:Q730-3CA27DDE-A874-5E46-BE54-3685B628A9F2,
-        wds:Q730-5607B647-9417-5B7B-B814-C88487F9494B ;
-    p:P106 wds:Q730-57D50EEE-CAAE-5139-A831-AA62220886FD ;
-    p:P113 wds:Q730-434E360D-7C3E-58D6-BAD8-49E3827926A8 ;
-    p:P115 wds:Q730-35597B93-B716-556B-9E3E-CD8F599C2EA0 ;
-    p:P116 wds:Q730-E2D56C25-FE1F-5A30-B801-C59D1635999F ;
-    p:P117 wds:Q730-5A8805FB-2536-5540-9722-C0926C5B7FE7,
-        wds:Q730-52FECFA0-C3BE-5B8F-8BF8-0506003E5DE0 ;
-    p:P118 wds:Q730-588F08B9-418C-5F61-B802-7BFDAA26C9AB ;
-    p:P119 wds:Q730-7FD25A21-821A-54BA-98B4-1CA138C032F0 ;
-    p:P122 wds:Q730-6C25848F-F1F7-5579-9FD3-0FE454D8E220,
-        wds:Q730-83554310-95B8-5334-9FFC-26549EF0D744 ;
-    p:P123 wds:Q730-60A42784-6906-5B32-A0D6-5ADC97F57E13 ;
-    p:P125 wds:Q730-265309CC-1B22-50DF-8E57-86B249B76D68 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q731 ;
-    wdt:P115 <https://open-archaeo.info/post/heritage-scribe/> ;
-    wdt:P116 "heritage-scribe" ;
-    wdt:P117 wd:Q239,
-        wd:Q638 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "heritage-scribe"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/sohinimallick16/heritage-scribe> .
+    chbp:P2 chbs:Q730-3CA27DDE-A874-5E46-BE54-3685B628A9F2,
+        chbs:Q730-5607B647-9417-5B7B-B814-C88487F9494B ;
+    chbp:P106 chbs:Q730-57D50EEE-CAAE-5139-A831-AA62220886FD ;
+    chbp:P113 chbs:Q730-434E360D-7C3E-58D6-BAD8-49E3827926A8 ;
+    chbp:P115 chbs:Q730-35597B93-B716-556B-9E3E-CD8F599C2EA0 ;
+    chbp:P116 chbs:Q730-E2D56C25-FE1F-5A30-B801-C59D1635999F ;
+    chbp:P117 chbs:Q730-5A8805FB-2536-5540-9722-C0926C5B7FE7,
+        chbs:Q730-52FECFA0-C3BE-5B8F-8BF8-0506003E5DE0 ;
+    chbp:P118 chbs:Q730-588F08B9-418C-5F61-B802-7BFDAA26C9AB ;
+    chbp:P119 chbs:Q730-7FD25A21-821A-54BA-98B4-1CA138C032F0 ;
+    chbp:P122 chbs:Q730-6C25848F-F1F7-5579-9FD3-0FE454D8E220,
+        chbs:Q730-83554310-95B8-5334-9FFC-26549EF0D744 ;
+    chbp:P123 chbs:Q730-60A42784-6906-5B32-A0D6-5ADC97F57E13 ;
+    chbp:P125 chbs:Q730-265309CC-1B22-50DF-8E57-86B249B76D68 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q731 ;
+    chbt:P115 <https://open-archaeo.info/post/heritage-scribe/> ;
+    chbt:P116 "heritage-scribe" ;
+    chbt:P117 chb:Q239,
+        chb:Q638 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "heritage-scribe"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/sohinimallick16/heritage-scribe> .
 
-wds:Q730-3CA27DDE-A874-5E46-BE54-3685B628A9F2
+chbs:Q730-3CA27DDE-A874-5E46-BE54-3685B628A9F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P2 chb:Q102 .
 
-wds:Q730-5A8805FB-2536-5540-9722-C0926C5B7FE7
+chbs:Q730-5A8805FB-2536-5540-9722-C0926C5B7FE7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P117 wd:Q239 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P117 chb:Q239 .
 
-wds:Q730-6C25848F-F1F7-5579-9FD3-0FE454D8E220
+chbs:Q730-6C25848F-F1F7-5579-9FD3-0FE454D8E220
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P122 chb:Q110 .
 
-wds:Q730-7FD25A21-821A-54BA-98B4-1CA138C032F0
+chbs:Q730-7FD25A21-821A-54BA-98B4-1CA138C032F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P119 "heritage-scribe"@en .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P119 "heritage-scribe"@en .
 
-wds:Q730-52FECFA0-C3BE-5B8F-8BF8-0506003E5DE0
+chbs:Q730-52FECFA0-C3BE-5B8F-8BF8-0506003E5DE0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P117 wd:Q638 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P117 chb:Q638 .
 
-wds:Q730-57D50EEE-CAAE-5139-A831-AA62220886FD
+chbs:Q730-57D50EEE-CAAE-5139-A831-AA62220886FD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P106 chb:Q110 .
 
-wds:Q730-60A42784-6906-5B32-A0D6-5ADC97F57E13
+chbs:Q730-60A42784-6906-5B32-A0D6-5ADC97F57E13
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P123 chb:Q370 .
 
-wds:Q730-434E360D-7C3E-58D6-BAD8-49E3827926A8
+chbs:Q730-434E360D-7C3E-58D6-BAD8-49E3827926A8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q731 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q731 .
 
-wds:Q730-588F08B9-418C-5F61-B802-7BFDAA26C9AB
+chbs:Q730-588F08B9-418C-5F61-B802-7BFDAA26C9AB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P118 chb:Q108 .
 
-wds:Q730-5607B647-9417-5B7B-B814-C88487F9494B
+chbs:Q730-5607B647-9417-5B7B-B814-C88487F9494B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P2 chb:Q106 .
 
-wds:Q730-35597B93-B716-556B-9E3E-CD8F599C2EA0
+chbs:Q730-35597B93-B716-556B-9E3E-CD8F599C2EA0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P115 <https://open-archaeo.info/post/heritage-scribe/> .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P115 <https://open-archaeo.info/post/heritage-scribe/> .
 
-wds:Q730-265309CC-1B22-50DF-8E57-86B249B76D68
+chbs:Q730-265309CC-1B22-50DF-8E57-86B249B76D68
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/sohinimallick16/heritage-scribe> .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/sohinimallick16/heritage-scribe> .
 
-wds:Q730-83554310-95B8-5334-9FFC-26549EF0D744
+chbs:Q730-83554310-95B8-5334-9FFC-26549EF0D744
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbps:P122 chb:Q109 .
 
-wds:Q730-E2D56C25-FE1F-5A30-B801-C59D1635999F
+chbs:Q730-E2D56C25-FE1F-5A30-B801-C59D1635999F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "heritage-scribe" .
+    prov:wasDerivedFrom chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "heritage-scribe" .
 
-wdref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b
+chbref:c1d079a390c9633dfda3228ecdd5681f7b3ba32b
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/heritage-scribe/> .
+    chbpr:P6 <https://open-archaeo.info/post/heritage-scribe/> .

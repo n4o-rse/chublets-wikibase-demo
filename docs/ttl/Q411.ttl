@@ -1,53 +1,54 @@
 # Q411: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q411
+chbdata:Q411.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "R package for year-based time scales"@en ;
     dcterms:identifier "Q411" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q411 ;
+    dcterms:subject chb:Q411 ;
     dcterms:title "era"@en ;
-    schema:about wd:Q411 ;
-    dcat:distribution dist:Q411-html,
-        dist:Q411-json,
-        dist:Q411-ttl ;
+    schema:about chb:Q411 ;
+    dcat:distribution chbdist:Q411-html,
+        chbdist:Q411-json,
+        chbdist:Q411-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q411.html> .
 
-dist:Q411-html
+chbdist:Q411-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q411-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q411.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q411-json
+chbdist:Q411-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q411-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q411.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q411-ttl
+chbdist:Q411-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q411, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q411.ttl> ;
+    dcat:downloadURL chbdata:Q411.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q411
+chb:Q411
     a wikibase:Item ;
     schema:description "R package for year-based time scales"@en ;
     schema:name "era"@en ;
@@ -80,153 +81,153 @@ wd:Q411
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "era"@en ;
     skos:prefLabel "era"@en ;
-    p:P2 wds:Q411-4827B26C-0533-5D89-AFEF-DF21B5D5DDEB,
-        wds:Q411-E805E2C9-B65F-5A8B-9E45-5E27D178ABAC ;
-    p:P106 wds:Q411-CC584D86-BEC8-57C2-A7A0-25817B7F4BCB ;
-    p:P108 wds:Q411-DC744B70-464F-5CB2-9A7D-551F54E0AF45 ;
-    p:P113 wds:Q411-D4BD5DE4-91B2-57CA-8903-6117297FB1E4 ;
-    p:P115 wds:Q411-D68C3F73-DE5A-5B0C-BB41-848A6EAA6FC1 ;
-    p:P116 wds:Q411-62F4F34D-32EF-54ED-874C-154259D199E0 ;
-    p:P117 wds:Q411-72E35812-8A13-5F52-A95B-69F6BAE44577 ;
-    p:P118 wds:Q411-E2E53866-805E-50C1-A527-273AF595ED2E ;
-    p:P119 wds:Q411-B9B6079B-A4BE-5C63-B99A-A6C4C2730982 ;
-    p:P120 wds:Q411-512ACD4F-7A89-590B-9FF1-D717614B6BF6 ;
-    p:P122 wds:Q411-23EFFDEE-7A8F-5D15-8F14-CED9578038F0,
-        wds:Q411-3409702F-9422-5F69-A288-F3181CC2F092 ;
-    p:P123 wds:Q411-7CFAD6DA-E894-555A-AB12-224E85177155 ;
-    p:P125 wds:Q411-C1F6B3EF-267D-5E31-AC58-6E2715B0BF72 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "era" ;
-    wdt:P113 wd:Q295 ;
-    wdt:P115 <https://open-archaeo.info/post/era/> ;
-    wdt:P116 "era" ;
-    wdt:P117 wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "era"@en ;
-    wdt:P120 <https://era.joeroe.io/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/joeroe/era> .
+    chbp:P2 chbs:Q411-4827B26C-0533-5D89-AFEF-DF21B5D5DDEB,
+        chbs:Q411-E805E2C9-B65F-5A8B-9E45-5E27D178ABAC ;
+    chbp:P106 chbs:Q411-CC584D86-BEC8-57C2-A7A0-25817B7F4BCB ;
+    chbp:P108 chbs:Q411-DC744B70-464F-5CB2-9A7D-551F54E0AF45 ;
+    chbp:P113 chbs:Q411-D4BD5DE4-91B2-57CA-8903-6117297FB1E4 ;
+    chbp:P115 chbs:Q411-D68C3F73-DE5A-5B0C-BB41-848A6EAA6FC1 ;
+    chbp:P116 chbs:Q411-62F4F34D-32EF-54ED-874C-154259D199E0 ;
+    chbp:P117 chbs:Q411-72E35812-8A13-5F52-A95B-69F6BAE44577 ;
+    chbp:P118 chbs:Q411-E2E53866-805E-50C1-A527-273AF595ED2E ;
+    chbp:P119 chbs:Q411-B9B6079B-A4BE-5C63-B99A-A6C4C2730982 ;
+    chbp:P120 chbs:Q411-512ACD4F-7A89-590B-9FF1-D717614B6BF6 ;
+    chbp:P122 chbs:Q411-23EFFDEE-7A8F-5D15-8F14-CED9578038F0,
+        chbs:Q411-3409702F-9422-5F69-A288-F3181CC2F092 ;
+    chbp:P123 chbs:Q411-7CFAD6DA-E894-555A-AB12-224E85177155 ;
+    chbp:P125 chbs:Q411-C1F6B3EF-267D-5E31-AC58-6E2715B0BF72 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "era" ;
+    chbt:P113 chb:Q295 ;
+    chbt:P115 <https://open-archaeo.info/post/era/> ;
+    chbt:P116 "era" ;
+    chbt:P117 chb:Q193 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "era"@en ;
+    chbt:P120 <https://era.joeroe.io/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/joeroe/era> .
 
-wds:Q411-7CFAD6DA-E894-555A-AB12-224E85177155
+chbs:Q411-7CFAD6DA-E894-555A-AB12-224E85177155
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P123 chb:Q111 .
 
-wds:Q411-23EFFDEE-7A8F-5D15-8F14-CED9578038F0
+chbs:Q411-23EFFDEE-7A8F-5D15-8F14-CED9578038F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P122 chb:Q109 .
 
-wds:Q411-62F4F34D-32EF-54ED-874C-154259D199E0
+chbs:Q411-62F4F34D-32EF-54ED-874C-154259D199E0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "era" .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "era" .
 
-wds:Q411-72E35812-8A13-5F52-A95B-69F6BAE44577
+chbs:Q411-72E35812-8A13-5F52-A95B-69F6BAE44577
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P117 chb:Q193 .
 
-wds:Q411-512ACD4F-7A89-590B-9FF1-D717614B6BF6
+chbs:Q411-512ACD4F-7A89-590B-9FF1-D717614B6BF6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P120 <https://era.joeroe.io/> .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P120 <https://era.joeroe.io/> .
 
-wds:Q411-4827B26C-0533-5D89-AFEF-DF21B5D5DDEB
+chbs:Q411-4827B26C-0533-5D89-AFEF-DF21B5D5DDEB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P2 chb:Q106 .
 
-wds:Q411-3409702F-9422-5F69-A288-F3181CC2F092
+chbs:Q411-3409702F-9422-5F69-A288-F3181CC2F092
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P122 chb:Q110 .
 
-wds:Q411-B9B6079B-A4BE-5C63-B99A-A6C4C2730982
+chbs:Q411-B9B6079B-A4BE-5C63-B99A-A6C4C2730982
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P119 "era"@en .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P119 "era"@en .
 
-wds:Q411-C1F6B3EF-267D-5E31-AC58-6E2715B0BF72
+chbs:Q411-C1F6B3EF-267D-5E31-AC58-6E2715B0BF72
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    pq:P104 "2021-02-02T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-joeroe-era_-_2021-02-02_13-48-22> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:2a0a37d90dd64599d823e3ecaa53d4a4 ;
-    ps:P125 <https://github.com/joeroe/era> .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbpq:P104 "2021-02-02T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-joeroe-era_-_2021-02-02_13-48-22> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:2a0a37d90dd64599d823e3ecaa53d4a4 ;
+    chbps:P125 <https://github.com/joeroe/era> .
 
-wds:Q411-CC584D86-BEC8-57C2-A7A0-25817B7F4BCB
+chbs:Q411-CC584D86-BEC8-57C2-A7A0-25817B7F4BCB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P106 chb:Q110 .
 
-wds:Q411-D4BD5DE4-91B2-57CA-8903-6117297FB1E4
+chbs:Q411-D4BD5DE4-91B2-57CA-8903-6117297FB1E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q295 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q295 .
 
-wds:Q411-D68C3F73-DE5A-5B0C-BB41-848A6EAA6FC1
+chbs:Q411-D68C3F73-DE5A-5B0C-BB41-848A6EAA6FC1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P115 <https://open-archaeo.info/post/era/> .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P115 <https://open-archaeo.info/post/era/> .
 
-wds:Q411-DC744B70-464F-5CB2-9A7D-551F54E0AF45
+chbs:Q411-DC744B70-464F-5CB2-9A7D-551F54E0AF45
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P108 "era" .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P108 "era" .
 
-wds:Q411-E2E53866-805E-50C1-A527-273AF595ED2E
+chbs:Q411-E2E53866-805E-50C1-A527-273AF595ED2E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P118 chb:Q108 .
 
-wds:Q411-E805E2C9-B65F-5A8B-9E45-5E27D178ABAC
+chbs:Q411-E805E2C9-B65F-5A8B-9E45-5E27D178ABAC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:30e8cabc1f02990cf4577a5f7176211fa697783f ;
+    chbps:P2 chb:Q103 .
 
-wdref:30e8cabc1f02990cf4577a5f7176211fa697783f
+chbref:30e8cabc1f02990cf4577a5f7176211fa697783f
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/era/> .
+    chbpr:P6 <https://open-archaeo.info/post/era/> .
 
-wdv:2a0a37d90dd64599d823e3ecaa53d4a4
+chbv:2a0a37d90dd64599d823e3ecaa53d4a4
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

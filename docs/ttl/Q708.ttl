@@ -1,53 +1,54 @@
 # Q708: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q708
+chbdata:Q708.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Python implementation of postAAR."@en ;
     dcterms:identifier "Q708" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q708 ;
+    dcterms:subject chb:Q708 ;
     dcterms:title "postAAR-python"@en ;
-    schema:about wd:Q708 ;
-    dcat:distribution dist:Q708-html,
-        dist:Q708-json,
-        dist:Q708-ttl ;
+    schema:about chb:Q708 ;
+    dcat:distribution chbdist:Q708-html,
+        chbdist:Q708-json,
+        chbdist:Q708-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q708.html> .
 
-dist:Q708-html
+chbdist:Q708-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q708-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q708.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q708-json
+chbdist:Q708-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q708-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q708.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q708-ttl
+chbdist:Q708-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q708, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q708.ttl> ;
+    dcat:downloadURL chbdata:Q708.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q708
+chb:Q708
     a wikibase:Item ;
     schema:description "Python implementation of postAAR."@en ;
     schema:name "postAAR-python"@en ;
@@ -80,145 +81,145 @@ wd:Q708
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "postAAR-python"@en ;
     skos:prefLabel "postAAR-python"@en ;
-    p:P2 wds:Q708-3E803562-9FB7-5DEA-90A4-2B4B981A126A,
-        wds:Q708-CBB70739-1540-5DAA-8C64-A63E14554918 ;
-    p:P106 wds:Q708-46E0005D-E524-5AFE-AA29-DC54E87F3F5B ;
-    p:P113 wds:Q708-7DAF7E19-EFED-5F5E-9FEC-2DDB99CEAA95,
-        wds:Q708-EB14BE73-ABD2-5341-912E-3A3C427F1E74 ;
-    p:P115 wds:Q708-8F7E3C86-E7B7-563C-9B15-ADDB0818E385 ;
-    p:P116 wds:Q708-0AEA3DA9-E581-54AD-8881-433069198267 ;
-    p:P117 wds:Q708-0A861B69-1BAA-5418-83B8-67ABF42680E9 ;
-    p:P118 wds:Q708-BE45ACB1-6D78-5F65-BB2F-E96478D0F098 ;
-    p:P119 wds:Q708-744A1E5F-B787-527B-A460-84C4B41125C0 ;
-    p:P122 wds:Q708-3C6A1DE0-35D2-5480-9DF8-5EA51C840F33,
-        wds:Q708-8A421E92-F916-5A2F-8621-97066B7A9558 ;
-    p:P123 wds:Q708-D933CAB4-01EB-520B-86D8-F64381D516D2 ;
-    p:P125 wds:Q708-3508EA23-B0C8-5CF7-A04D-34BFEF3689FD ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q584,
-        wd:Q709 ;
-    wdt:P115 <https://open-archaeo.info/post/postaar-python/> ;
-    wdt:P116 "postaar-python" ;
-    wdt:P117 wd:Q181 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "postAAR-python"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/ISAAKiel/postAAR-python> .
+    chbp:P2 chbs:Q708-3E803562-9FB7-5DEA-90A4-2B4B981A126A,
+        chbs:Q708-CBB70739-1540-5DAA-8C64-A63E14554918 ;
+    chbp:P106 chbs:Q708-46E0005D-E524-5AFE-AA29-DC54E87F3F5B ;
+    chbp:P113 chbs:Q708-7DAF7E19-EFED-5F5E-9FEC-2DDB99CEAA95,
+        chbs:Q708-EB14BE73-ABD2-5341-912E-3A3C427F1E74 ;
+    chbp:P115 chbs:Q708-8F7E3C86-E7B7-563C-9B15-ADDB0818E385 ;
+    chbp:P116 chbs:Q708-0AEA3DA9-E581-54AD-8881-433069198267 ;
+    chbp:P117 chbs:Q708-0A861B69-1BAA-5418-83B8-67ABF42680E9 ;
+    chbp:P118 chbs:Q708-BE45ACB1-6D78-5F65-BB2F-E96478D0F098 ;
+    chbp:P119 chbs:Q708-744A1E5F-B787-527B-A460-84C4B41125C0 ;
+    chbp:P122 chbs:Q708-3C6A1DE0-35D2-5480-9DF8-5EA51C840F33,
+        chbs:Q708-8A421E92-F916-5A2F-8621-97066B7A9558 ;
+    chbp:P123 chbs:Q708-D933CAB4-01EB-520B-86D8-F64381D516D2 ;
+    chbp:P125 chbs:Q708-3508EA23-B0C8-5CF7-A04D-34BFEF3689FD ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q584,
+        chb:Q709 ;
+    chbt:P115 <https://open-archaeo.info/post/postaar-python/> ;
+    chbt:P116 "postaar-python" ;
+    chbt:P117 chb:Q181 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "postAAR-python"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/ISAAKiel/postAAR-python> .
 
-wds:Q708-0A861B69-1BAA-5418-83B8-67ABF42680E9
+chbs:Q708-0A861B69-1BAA-5418-83B8-67ABF42680E9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P117 wd:Q181 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P117 chb:Q181 .
 
-wds:Q708-0AEA3DA9-E581-54AD-8881-433069198267
+chbs:Q708-0AEA3DA9-E581-54AD-8881-433069198267
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "postaar-python" .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "postaar-python" .
 
-wds:Q708-3C6A1DE0-35D2-5480-9DF8-5EA51C840F33
+chbs:Q708-3C6A1DE0-35D2-5480-9DF8-5EA51C840F33
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q708-3E803562-9FB7-5DEA-90A4-2B4B981A126A
+chbs:Q708-3E803562-9FB7-5DEA-90A4-2B4B981A126A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q708-7DAF7E19-EFED-5F5E-9FEC-2DDB99CEAA95
+chbs:Q708-7DAF7E19-EFED-5F5E-9FEC-2DDB99CEAA95
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q709 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q709 .
 
-wds:Q708-8A421E92-F916-5A2F-8621-97066B7A9558
+chbs:Q708-8A421E92-F916-5A2F-8621-97066B7A9558
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q708-8F7E3C86-E7B7-563C-9B15-ADDB0818E385
+chbs:Q708-8F7E3C86-E7B7-563C-9B15-ADDB0818E385
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P115 <https://open-archaeo.info/post/postaar-python/> .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P115 <https://open-archaeo.info/post/postaar-python/> .
 
-wds:Q708-46E0005D-E524-5AFE-AA29-DC54E87F3F5B
+chbs:Q708-46E0005D-E524-5AFE-AA29-DC54E87F3F5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q708-744A1E5F-B787-527B-A460-84C4B41125C0
+chbs:Q708-744A1E5F-B787-527B-A460-84C4B41125C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P119 "postAAR-python"@en .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P119 "postAAR-python"@en .
 
-wds:Q708-3508EA23-B0C8-5CF7-A04D-34BFEF3689FD
+chbs:Q708-3508EA23-B0C8-5CF7-A04D-34BFEF3689FD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    pq:P104 "2020-12-16T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-postAAR-python_-_2020-12-16_15-22-01> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:56c4cbf6cef32e4818ef4744cceaf8b8 ;
-    ps:P125 <https://github.com/ISAAKiel/postAAR-python> .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbpq:P104 "2020-12-16T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-postAAR-python_-_2020-12-16_15-22-01> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:56c4cbf6cef32e4818ef4744cceaf8b8 ;
+    chbps:P125 <https://github.com/ISAAKiel/postAAR-python> .
 
-wds:Q708-BE45ACB1-6D78-5F65-BB2F-E96478D0F098
+chbs:Q708-BE45ACB1-6D78-5F65-BB2F-E96478D0F098
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q708-CBB70739-1540-5DAA-8C64-A63E14554918
+chbs:Q708-CBB70739-1540-5DAA-8C64-A63E14554918
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q708-D933CAB4-01EB-520B-86D8-F64381D516D2
+chbs:Q708-D933CAB4-01EB-520B-86D8-F64381D516D2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q708-EB14BE73-ABD2-5341-912E-3A3C427F1E74
+chbs:Q708-EB14BE73-ABD2-5341-912E-3A3C427F1E74
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q584 .
+    prov:wasDerivedFrom chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q584 .
 
-wdref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4
+chbref:e52e38d3d71be402bed4f50ee51a14c6b6f95eb4
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/postaar-python/> .
+    chbpr:P6 <https://open-archaeo.info/post/postaar-python/> .
 
-wdv:56c4cbf6cef32e4818ef4744cceaf8b8
+chbv:56c4cbf6cef32e4818ef4744cceaf8b8
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

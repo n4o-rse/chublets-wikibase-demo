@@ -1,53 +1,54 @@
 # Q902: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q902
+chbdata:Q902.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Sourcing archaeological materials by chemical composition."@en ;
     dcterms:identifier "Q902" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q902 ;
+    dcterms:subject chb:Q902 ;
     dcterms:title "nexus"@en ;
-    schema:about wd:Q902 ;
-    dcat:distribution dist:Q902-html,
-        dist:Q902-json,
-        dist:Q902-ttl ;
+    schema:about chb:Q902 ;
+    dcat:distribution chbdist:Q902-html,
+        chbdist:Q902-json,
+        chbdist:Q902-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q902.html> .
 
-dist:Q902-html
+chbdist:Q902-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q902-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q902.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q902-json
+chbdist:Q902-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q902-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q902.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q902-ttl
+chbdist:Q902-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q902, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q902.ttl> ;
+    dcat:downloadURL chbdata:Q902.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q902
+chb:Q902
     a wikibase:Item ;
     schema:description "Sourcing archaeological materials by chemical composition."@en ;
     schema:name "nexus"@en ;
@@ -80,181 +81,181 @@ wd:Q902
     wikibase:statements "18"^^xsd:integer ;
     rdfs:label "nexus"@en ;
     skos:prefLabel "nexus"@en ;
-    p:P2 wds:Q902-C732F2F8-C035-59E7-B016-DF770D017D1E,
-        wds:Q902-D2FB208F-4FB9-5074-812A-2DE73AEB49D3 ;
-    p:P106 wds:Q902-ADAEEA0B-5906-5E81-A7FC-93798E488E55 ;
-    p:P108 wds:Q902-2E900669-921E-5EBA-A399-FD2EE980A8CF ;
-    p:P113 wds:Q902-C18ECA80-6375-5089-902E-726F379D40EA,
-        wds:Q902-D1C4F524-BD77-54F1-B23A-10E381BB2617 ;
-    p:P114 wds:Q902-E3351B12-7E4D-509E-8B8E-8D8BF8D1B935 ;
-    p:P115 wds:Q902-E29B4513-DB6F-5F49-983C-EA3EC820A9C7 ;
-    p:P116 wds:Q902-F39EF9E6-0DEC-5A90-A582-8BD765399851 ;
-    p:P117 wds:Q902-6A17492F-A0E7-5840-870D-F1EB750DD26F,
-        wds:Q902-50A91E7E-81CB-5CFA-8592-8B063E90F313 ;
-    p:P118 wds:Q902-80B60918-FD84-5D78-9E64-8CF07A612BE6 ;
-    p:P119 wds:Q902-2C070A38-2E1C-51E1-99F0-ADD5ED943AE5 ;
-    p:P120 wds:Q902-BA731C51-3C60-505B-A64D-2D1F877B9CCD ;
-    p:P122 wds:Q902-6D36CF7C-DEB8-55B4-BD28-EC31A324251C,
-        wds:Q902-ACD65DA5-C04A-5D19-A199-25F77112A2AA ;
-    p:P123 wds:Q902-6C614269-4BE5-5AB3-90DF-6268CE0753CF ;
-    p:P125 wds:Q902-772D9A80-1E3E-57FB-BCCB-FE16905D05CE ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "nexus" ;
-    wdt:P113 wd:Q231,
-        wd:Q423 ;
-    wdt:P114 "10.5281/zenodo.10225630" ;
-    wdt:P115 <https://open-archaeo.info/post/nexus/> ;
-    wdt:P116 "nexus" ;
-    wdt:P117 wd:Q201,
-        wd:Q568 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "nexus"@en ;
-    wdt:P120 <https://packages.tesselle.org/nexus/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://codeberg.org/tesselle/nexus> .
+    chbp:P2 chbs:Q902-C732F2F8-C035-59E7-B016-DF770D017D1E,
+        chbs:Q902-D2FB208F-4FB9-5074-812A-2DE73AEB49D3 ;
+    chbp:P106 chbs:Q902-ADAEEA0B-5906-5E81-A7FC-93798E488E55 ;
+    chbp:P108 chbs:Q902-2E900669-921E-5EBA-A399-FD2EE980A8CF ;
+    chbp:P113 chbs:Q902-C18ECA80-6375-5089-902E-726F379D40EA,
+        chbs:Q902-D1C4F524-BD77-54F1-B23A-10E381BB2617 ;
+    chbp:P114 chbs:Q902-E3351B12-7E4D-509E-8B8E-8D8BF8D1B935 ;
+    chbp:P115 chbs:Q902-E29B4513-DB6F-5F49-983C-EA3EC820A9C7 ;
+    chbp:P116 chbs:Q902-F39EF9E6-0DEC-5A90-A582-8BD765399851 ;
+    chbp:P117 chbs:Q902-6A17492F-A0E7-5840-870D-F1EB750DD26F,
+        chbs:Q902-50A91E7E-81CB-5CFA-8592-8B063E90F313 ;
+    chbp:P118 chbs:Q902-80B60918-FD84-5D78-9E64-8CF07A612BE6 ;
+    chbp:P119 chbs:Q902-2C070A38-2E1C-51E1-99F0-ADD5ED943AE5 ;
+    chbp:P120 chbs:Q902-BA731C51-3C60-505B-A64D-2D1F877B9CCD ;
+    chbp:P122 chbs:Q902-6D36CF7C-DEB8-55B4-BD28-EC31A324251C,
+        chbs:Q902-ACD65DA5-C04A-5D19-A199-25F77112A2AA ;
+    chbp:P123 chbs:Q902-6C614269-4BE5-5AB3-90DF-6268CE0753CF ;
+    chbp:P125 chbs:Q902-772D9A80-1E3E-57FB-BCCB-FE16905D05CE ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "nexus" ;
+    chbt:P113 chb:Q231,
+        chb:Q423 ;
+    chbt:P114 "10.5281/zenodo.10225630" ;
+    chbt:P115 <https://open-archaeo.info/post/nexus/> ;
+    chbt:P116 "nexus" ;
+    chbt:P117 chb:Q201,
+        chb:Q568 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "nexus"@en ;
+    chbt:P120 <https://packages.tesselle.org/nexus/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://codeberg.org/tesselle/nexus> .
 
-wds:Q902-2C070A38-2E1C-51E1-99F0-ADD5ED943AE5
+chbs:Q902-2C070A38-2E1C-51E1-99F0-ADD5ED943AE5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P119 "nexus"@en .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P119 "nexus"@en .
 
-wds:Q902-2E900669-921E-5EBA-A399-FD2EE980A8CF
+chbs:Q902-2E900669-921E-5EBA-A399-FD2EE980A8CF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P108 "nexus" .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P108 "nexus" .
 
-wds:Q902-6A17492F-A0E7-5840-870D-F1EB750DD26F
+chbs:Q902-6A17492F-A0E7-5840-870D-F1EB750DD26F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P117 wd:Q201 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P117 chb:Q201 .
 
-wds:Q902-6C614269-4BE5-5AB3-90DF-6268CE0753CF
+chbs:Q902-6C614269-4BE5-5AB3-90DF-6268CE0753CF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q902-6D36CF7C-DEB8-55B4-BD28-EC31A324251C
+chbs:Q902-6D36CF7C-DEB8-55B4-BD28-EC31A324251C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q902-50A91E7E-81CB-5CFA-8592-8B063E90F313
+chbs:Q902-50A91E7E-81CB-5CFA-8592-8B063E90F313
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P117 wd:Q568 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P117 chb:Q568 .
 
-wds:Q902-80B60918-FD84-5D78-9E64-8CF07A612BE6
+chbs:Q902-80B60918-FD84-5D78-9E64-8CF07A612BE6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q902-772D9A80-1E3E-57FB-BCCB-FE16905D05CE
+chbs:Q902-772D9A80-1E3E-57FB-BCCB-FE16905D05CE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    pq:P104 "2021-05-24T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-tesselle-nexus_-_2021-05-24_16-02-18> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:36aac1406ce23e410a523a121b7ebeaf ;
-    ps:P125 <https://codeberg.org/tesselle/nexus> .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbpq:P104 "2021-05-24T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-tesselle-nexus_-_2021-05-24_16-02-18> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:36aac1406ce23e410a523a121b7ebeaf ;
+    chbps:P125 <https://codeberg.org/tesselle/nexus> .
 
-wds:Q902-ACD65DA5-C04A-5D19-A199-25F77112A2AA
+chbs:Q902-ACD65DA5-C04A-5D19-A199-25F77112A2AA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q902-ADAEEA0B-5906-5E81-A7FC-93798E488E55
+chbs:Q902-ADAEEA0B-5906-5E81-A7FC-93798E488E55
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q902-BA731C51-3C60-505B-A64D-2D1F877B9CCD
+chbs:Q902-BA731C51-3C60-505B-A64D-2D1F877B9CCD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P120 <https://packages.tesselle.org/nexus/> .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P120 <https://packages.tesselle.org/nexus/> .
 
-wds:Q902-C18ECA80-6375-5089-902E-726F379D40EA
+chbs:Q902-C18ECA80-6375-5089-902E-726F379D40EA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q423 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q423 .
 
-wds:Q902-C732F2F8-C035-59E7-B016-DF770D017D1E
+chbs:Q902-C732F2F8-C035-59E7-B016-DF770D017D1E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q902-D1C4F524-BD77-54F1-B23A-10E381BB2617
+chbs:Q902-D1C4F524-BD77-54F1-B23A-10E381BB2617
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q231 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q231 .
 
-wds:Q902-D2FB208F-4FB9-5074-812A-2DE73AEB49D3
+chbs:Q902-D2FB208F-4FB9-5074-812A-2DE73AEB49D3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q902-E29B4513-DB6F-5F49-983C-EA3EC820A9C7
+chbs:Q902-E29B4513-DB6F-5F49-983C-EA3EC820A9C7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P115 <https://open-archaeo.info/post/nexus/> .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P115 <https://open-archaeo.info/post/nexus/> .
 
-wds:Q902-E3351B12-7E4D-509E-8B8E-8D8BF8D1B935
+chbs:Q902-E3351B12-7E4D-509E-8B8E-8D8BF8D1B935
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    ps:P114 "10.5281/zenodo.10225630" .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbps:P114 "10.5281/zenodo.10225630" .
 
-wds:Q902-F39EF9E6-0DEC-5A90-A582-8BD765399851
+chbs:Q902-F39EF9E6-0DEC-5A90-A582-8BD765399851
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "nexus" .
+    prov:wasDerivedFrom chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "nexus" .
 
-wdref:9b10155b582d968edd124c58faa7596c7b6b1ae4
+chbref:9b10155b582d968edd124c58faa7596c7b6b1ae4
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/nexus/> .
+    chbpr:P6 <https://open-archaeo.info/post/nexus/> .
 
-wdv:36aac1406ce23e410a523a121b7ebeaf
+chbv:36aac1406ce23e410a523a121b7ebeaf
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

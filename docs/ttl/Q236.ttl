@@ -1,53 +1,54 @@
 # Q236: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q236
+chbdata:Q236.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Computer-Assisted Drawing of Archaeological Pottery."@en ;
     dcterms:identifier "Q236" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q236 ;
+    dcterms:subject chb:Q236 ;
     dcterms:title "DACORD"@en ;
-    schema:about wd:Q236 ;
-    dcat:distribution dist:Q236-html,
-        dist:Q236-json,
-        dist:Q236-ttl ;
+    schema:about chb:Q236 ;
+    dcat:distribution chbdist:Q236-html,
+        chbdist:Q236-json,
+        chbdist:Q236-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q236.html> .
 
-dist:Q236-html
+chbdist:Q236-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q236-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q236.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q236-json
+chbdist:Q236-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q236-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q236.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q236-ttl
+chbdist:Q236-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q236, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q236.ttl> ;
+    dcat:downloadURL chbdata:Q236.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q236
+chb:Q236
     a wikibase:Item ;
     schema:description "Computer-Assisted Drawing of Archaeological Pottery."@en ;
     schema:name "DACORD"@en ;
@@ -80,145 +81,145 @@ wd:Q236
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "DACORD"@en ;
     skos:prefLabel "DACORD"@en ;
-    p:P2 wds:Q236-46568334-2417-5B75-92FA-39F4561E56F0,
-        wds:Q236-EFC086A2-D42A-5A56-8886-D8C1FDA7D633 ;
-    p:P106 wds:Q236-6848A17D-1729-5331-8F88-E77FA3E22705 ;
-    p:P113 wds:Q236-80327E92-3A68-5C0A-A905-2A54AFD9C6D9 ;
-    p:P115 wds:Q236-0C86B8E0-05F4-5711-A4FC-CFA8842B6FB4 ;
-    p:P116 wds:Q236-80AFE588-37C5-56D8-B41D-EB150F261393 ;
-    p:P117 wds:Q236-469A06DA-313E-5AB4-9ED6-BFC24FA353C9,
-        wds:Q236-A896202B-221D-5E11-B0DC-5636EEEEDFEB,
-        wds:Q236-D2BB4660-48A7-51D5-9624-40F975CBBB7B ;
-    p:P118 wds:Q236-D4896AC0-C352-5B42-88EB-1B81FFBE882D ;
-    p:P119 wds:Q236-A953E269-648B-5418-9463-7A3E810DF7B6 ;
-    p:P122 wds:Q236-D09B3481-2F7D-5C51-84AB-89CB3E2F3B5D,
-        wds:Q236-DC215D6F-9DA8-5AB3-B9A5-03230D704398 ;
-    p:P123 wds:Q236-8E0B4822-3E0C-5E4C-9384-FF6CE5EE5E69 ;
-    p:P125 wds:Q236-00B16F8E-337B-5587-9074-6ADB89DBCA31 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q237 ;
-    wdt:P115 <https://open-archaeo.info/post/dacord/> ;
-    wdt:P116 "dacord" ;
-    wdt:P117 wd:Q181,
-        wd:Q222,
-        wd:Q228 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "DACORD"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/jwilczek-dotcom/DACORD> .
+    chbp:P2 chbs:Q236-46568334-2417-5B75-92FA-39F4561E56F0,
+        chbs:Q236-EFC086A2-D42A-5A56-8886-D8C1FDA7D633 ;
+    chbp:P106 chbs:Q236-6848A17D-1729-5331-8F88-E77FA3E22705 ;
+    chbp:P113 chbs:Q236-80327E92-3A68-5C0A-A905-2A54AFD9C6D9 ;
+    chbp:P115 chbs:Q236-0C86B8E0-05F4-5711-A4FC-CFA8842B6FB4 ;
+    chbp:P116 chbs:Q236-80AFE588-37C5-56D8-B41D-EB150F261393 ;
+    chbp:P117 chbs:Q236-469A06DA-313E-5AB4-9ED6-BFC24FA353C9,
+        chbs:Q236-A896202B-221D-5E11-B0DC-5636EEEEDFEB,
+        chbs:Q236-D2BB4660-48A7-51D5-9624-40F975CBBB7B ;
+    chbp:P118 chbs:Q236-D4896AC0-C352-5B42-88EB-1B81FFBE882D ;
+    chbp:P119 chbs:Q236-A953E269-648B-5418-9463-7A3E810DF7B6 ;
+    chbp:P122 chbs:Q236-D09B3481-2F7D-5C51-84AB-89CB3E2F3B5D,
+        chbs:Q236-DC215D6F-9DA8-5AB3-B9A5-03230D704398 ;
+    chbp:P123 chbs:Q236-8E0B4822-3E0C-5E4C-9384-FF6CE5EE5E69 ;
+    chbp:P125 chbs:Q236-00B16F8E-337B-5587-9074-6ADB89DBCA31 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q237 ;
+    chbt:P115 <https://open-archaeo.info/post/dacord/> ;
+    chbt:P116 "dacord" ;
+    chbt:P117 chb:Q181,
+        chb:Q222,
+        chb:Q228 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "DACORD"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/jwilczek-dotcom/DACORD> .
 
-wds:Q236-00B16F8E-337B-5587-9074-6ADB89DBCA31
+chbs:Q236-00B16F8E-337B-5587-9074-6ADB89DBCA31
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/jwilczek-dotcom/DACORD> .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/jwilczek-dotcom/DACORD> .
 
-wds:Q236-0C86B8E0-05F4-5711-A4FC-CFA8842B6FB4
+chbs:Q236-0C86B8E0-05F4-5711-A4FC-CFA8842B6FB4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P115 <https://open-archaeo.info/post/dacord/> .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P115 <https://open-archaeo.info/post/dacord/> .
 
-wds:Q236-8E0B4822-3E0C-5E4C-9384-FF6CE5EE5E69
+chbs:Q236-8E0B4822-3E0C-5E4C-9384-FF6CE5EE5E69
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q236-80AFE588-37C5-56D8-B41D-EB150F261393
+chbs:Q236-80AFE588-37C5-56D8-B41D-EB150F261393
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "dacord" .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "dacord" .
 
-wds:Q236-469A06DA-313E-5AB4-9ED6-BFC24FA353C9
+chbs:Q236-469A06DA-313E-5AB4-9ED6-BFC24FA353C9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P117 wd:Q181 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P117 chb:Q181 .
 
-wds:Q236-6848A17D-1729-5331-8F88-E77FA3E22705
+chbs:Q236-6848A17D-1729-5331-8F88-E77FA3E22705
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q236-80327E92-3A68-5C0A-A905-2A54AFD9C6D9
+chbs:Q236-80327E92-3A68-5C0A-A905-2A54AFD9C6D9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q237 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q237 .
 
-wds:Q236-46568334-2417-5B75-92FA-39F4561E56F0
+chbs:Q236-46568334-2417-5B75-92FA-39F4561E56F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q236-A953E269-648B-5418-9463-7A3E810DF7B6
+chbs:Q236-A953E269-648B-5418-9463-7A3E810DF7B6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P119 "DACORD"@en .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P119 "DACORD"@en .
 
-wds:Q236-A896202B-221D-5E11-B0DC-5636EEEEDFEB
+chbs:Q236-A896202B-221D-5E11-B0DC-5636EEEEDFEB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P117 wd:Q222 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P117 chb:Q222 .
 
-wds:Q236-D2BB4660-48A7-51D5-9624-40F975CBBB7B
+chbs:Q236-D2BB4660-48A7-51D5-9624-40F975CBBB7B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P117 wd:Q228 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P117 chb:Q228 .
 
-wds:Q236-D09B3481-2F7D-5C51-84AB-89CB3E2F3B5D
+chbs:Q236-D09B3481-2F7D-5C51-84AB-89CB3E2F3B5D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q236-D4896AC0-C352-5B42-88EB-1B81FFBE882D
+chbs:Q236-D4896AC0-C352-5B42-88EB-1B81FFBE882D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q236-DC215D6F-9DA8-5AB3-B9A5-03230D704398
+chbs:Q236-DC215D6F-9DA8-5AB3-B9A5-03230D704398
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q236-EFC086A2-D42A-5A56-8886-D8C1FDA7D633
+chbs:Q236-EFC086A2-D42A-5A56-8886-D8C1FDA7D633
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913 ;
+    chbps:P2 chb:Q104 .
 
-wdref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913
+chbref:b2d325d9cf5e4cd45c10c874f9f2a1066faa1913
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/dacord/> .
+    chbpr:P6 <https://open-archaeo.info/post/dacord/> .

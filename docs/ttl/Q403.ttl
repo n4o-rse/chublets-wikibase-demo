@@ -1,53 +1,54 @@
 # Q403: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q403
+chbdata:Q403.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A simulation tool to estimate the rate of success that surveys possessing user-specific characteristics have in identifying archaeological sites (or any groups of clouds of objects), given specific parameters of survey area, survey methods, and site properties."@en ;
     dcterms:identifier "Q403" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q403 ;
+    dcterms:subject chb:Q403 ;
     dcterms:title "DIGSS"@en ;
-    schema:about wd:Q403 ;
-    dcat:distribution dist:Q403-html,
-        dist:Q403-json,
-        dist:Q403-ttl ;
+    schema:about chb:Q403 ;
+    dcat:distribution chbdist:Q403-html,
+        chbdist:Q403-json,
+        chbdist:Q403-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q403.html> .
 
-dist:Q403-html
+chbdist:Q403-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q403-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q403.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q403-json
+chbdist:Q403-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q403-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q403.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q403-ttl
+chbdist:Q403-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q403, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q403.ttl> ;
+    dcat:downloadURL chbdata:Q403.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q403
+chb:Q403
     a wikibase:Item ;
     schema:description "A simulation tool to estimate the rate of success that surveys possessing user-specific characteristics have in identifying archaeological sites (or any groups of clouds of objects), given specific parameters of survey area, survey methods, and site properties."@en ;
     schema:name "DIGSS"@en ;
@@ -80,145 +81,145 @@ wd:Q403
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "DIGSS"@en ;
     skos:prefLabel "DIGSS"@en ;
-    p:P2 wds:Q403-433594CC-43E9-5215-9D91-167826D36B12,
-        wds:Q403-E30AE65A-916D-5A67-84F7-BF29FE550B3F ;
-    p:P106 wds:Q403-1BAC3A9D-A5E0-5433-B5FB-9FE36CD52B0C ;
-    p:P108 wds:Q403-75A6C2A9-D959-5347-926A-62F919FE2871 ;
-    p:P113 wds:Q403-420212AE-B769-5656-B42C-F9DE013263BB ;
-    p:P115 wds:Q403-8F7AF3BC-AF18-5189-810C-438C44F5EBA9 ;
-    p:P116 wds:Q403-1541A923-D514-5A87-88DF-D6E675291B64 ;
-    p:P117 wds:Q403-13A66F95-0F7A-54FE-A571-D47F480CCB90,
-        wds:Q403-B8BDA084-A4AC-506F-8D2F-E69D11B71F2B ;
-    p:P118 wds:Q403-55F16962-79AD-5288-9240-854827B19734 ;
-    p:P119 wds:Q403-4248E983-EF97-59E6-A278-047F543E8B60 ;
-    p:P122 wds:Q403-0D674B6B-8F5C-595D-A0D4-689AF11BEABF,
-        wds:Q403-7FAFB594-EAF9-51B5-9230-FE3339DE48E6 ;
-    p:P123 wds:Q403-40C36F68-B085-54B5-B40B-1D5F87923513 ;
-    p:P125 wds:Q403-557E112F-66B5-52C0-90BB-8BD4AAE9947A ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "DIGSS" ;
-    wdt:P113 wd:Q404 ;
-    wdt:P115 <https://open-archaeo.info/post/digss/> ;
-    wdt:P116 "digss" ;
-    wdt:P117 wd:Q116,
-        wd:Q212 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "DIGSS"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/markhubbe/DIGSS> .
+    chbp:P2 chbs:Q403-433594CC-43E9-5215-9D91-167826D36B12,
+        chbs:Q403-E30AE65A-916D-5A67-84F7-BF29FE550B3F ;
+    chbp:P106 chbs:Q403-1BAC3A9D-A5E0-5433-B5FB-9FE36CD52B0C ;
+    chbp:P108 chbs:Q403-75A6C2A9-D959-5347-926A-62F919FE2871 ;
+    chbp:P113 chbs:Q403-420212AE-B769-5656-B42C-F9DE013263BB ;
+    chbp:P115 chbs:Q403-8F7AF3BC-AF18-5189-810C-438C44F5EBA9 ;
+    chbp:P116 chbs:Q403-1541A923-D514-5A87-88DF-D6E675291B64 ;
+    chbp:P117 chbs:Q403-13A66F95-0F7A-54FE-A571-D47F480CCB90,
+        chbs:Q403-B8BDA084-A4AC-506F-8D2F-E69D11B71F2B ;
+    chbp:P118 chbs:Q403-55F16962-79AD-5288-9240-854827B19734 ;
+    chbp:P119 chbs:Q403-4248E983-EF97-59E6-A278-047F543E8B60 ;
+    chbp:P122 chbs:Q403-0D674B6B-8F5C-595D-A0D4-689AF11BEABF,
+        chbs:Q403-7FAFB594-EAF9-51B5-9230-FE3339DE48E6 ;
+    chbp:P123 chbs:Q403-40C36F68-B085-54B5-B40B-1D5F87923513 ;
+    chbp:P125 chbs:Q403-557E112F-66B5-52C0-90BB-8BD4AAE9947A ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "DIGSS" ;
+    chbt:P113 chb:Q404 ;
+    chbt:P115 <https://open-archaeo.info/post/digss/> ;
+    chbt:P116 "digss" ;
+    chbt:P117 chb:Q116,
+        chb:Q212 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "DIGSS"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/markhubbe/DIGSS> .
 
-wds:Q403-0D674B6B-8F5C-595D-A0D4-689AF11BEABF
+chbs:Q403-0D674B6B-8F5C-595D-A0D4-689AF11BEABF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P122 chb:Q109 .
 
-wds:Q403-1BAC3A9D-A5E0-5433-B5FB-9FE36CD52B0C
+chbs:Q403-1BAC3A9D-A5E0-5433-B5FB-9FE36CD52B0C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P106 chb:Q110 .
 
-wds:Q403-7FAFB594-EAF9-51B5-9230-FE3339DE48E6
+chbs:Q403-7FAFB594-EAF9-51B5-9230-FE3339DE48E6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P122 chb:Q110 .
 
-wds:Q403-8F7AF3BC-AF18-5189-810C-438C44F5EBA9
+chbs:Q403-8F7AF3BC-AF18-5189-810C-438C44F5EBA9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P115 <https://open-archaeo.info/post/digss/> .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P115 <https://open-archaeo.info/post/digss/> .
 
-wds:Q403-13A66F95-0F7A-54FE-A571-D47F480CCB90
+chbs:Q403-13A66F95-0F7A-54FE-A571-D47F480CCB90
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P117 wd:Q212 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P117 chb:Q212 .
 
-wds:Q403-40C36F68-B085-54B5-B40B-1D5F87923513
+chbs:Q403-40C36F68-B085-54B5-B40B-1D5F87923513
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P123 chb:Q111 .
 
-wds:Q403-55F16962-79AD-5288-9240-854827B19734
+chbs:Q403-55F16962-79AD-5288-9240-854827B19734
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P118 chb:Q108 .
 
-wds:Q403-75A6C2A9-D959-5347-926A-62F919FE2871
+chbs:Q403-75A6C2A9-D959-5347-926A-62F919FE2871
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P108 "DIGSS" .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P108 "DIGSS" .
 
-wds:Q403-557E112F-66B5-52C0-90BB-8BD4AAE9947A
+chbs:Q403-557E112F-66B5-52C0-90BB-8BD4AAE9947A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/markhubbe/DIGSS> .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/markhubbe/DIGSS> .
 
-wds:Q403-1541A923-D514-5A87-88DF-D6E675291B64
+chbs:Q403-1541A923-D514-5A87-88DF-D6E675291B64
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "digss" .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "digss" .
 
-wds:Q403-4248E983-EF97-59E6-A278-047F543E8B60
+chbs:Q403-4248E983-EF97-59E6-A278-047F543E8B60
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P119 "DIGSS"@en .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P119 "DIGSS"@en .
 
-wds:Q403-420212AE-B769-5656-B42C-F9DE013263BB
+chbs:Q403-420212AE-B769-5656-B42C-F9DE013263BB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q404 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q404 .
 
-wds:Q403-433594CC-43E9-5215-9D91-167826D36B12
+chbs:Q403-433594CC-43E9-5215-9D91-167826D36B12
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P2 chb:Q103 .
 
-wds:Q403-B8BDA084-A4AC-506F-8D2F-E69D11B71F2B
+chbs:Q403-B8BDA084-A4AC-506F-8D2F-E69D11B71F2B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P117 chb:Q116 .
 
-wds:Q403-E30AE65A-916D-5A67-84F7-BF29FE550B3F
+chbs:Q403-E30AE65A-916D-5A67-84F7-BF29FE550B3F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:db2f10b41fa74462487f3d675cf348f4096677ac ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:db2f10b41fa74462487f3d675cf348f4096677ac ;
+    chbps:P2 chb:Q106 .
 
-wdref:db2f10b41fa74462487f3d675cf348f4096677ac
+chbref:db2f10b41fa74462487f3d675cf348f4096677ac
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/digss/> .
+    chbpr:P6 <https://open-archaeo.info/post/digss/> .

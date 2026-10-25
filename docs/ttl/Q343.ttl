@@ -1,53 +1,54 @@
 # Q343: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q343
+chbdata:Q343.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An r package that collects together data for the ancient world"@en ;
     dcterms:identifier "Q343" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q343 ;
+    dcterms:subject chb:Q343 ;
     dcterms:title "cawd"@en ;
-    schema:about wd:Q343 ;
-    dcat:distribution dist:Q343-html,
-        dist:Q343-json,
-        dist:Q343-ttl ;
+    schema:about chb:Q343 ;
+    dcat:distribution chbdist:Q343-html,
+        chbdist:Q343-json,
+        chbdist:Q343-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q343.html> .
 
-dist:Q343-html
+chbdist:Q343-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q343-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q343.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q343-json
+chbdist:Q343-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q343-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q343.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q343-ttl
+chbdist:Q343-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q343, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q343.ttl> ;
+    dcat:downloadURL chbdata:Q343.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q343
+chb:Q343
     a wikibase:Item ;
     schema:description "An r package that collects together data for the ancient world"@en ;
     schema:name "cawd"@en ;
@@ -80,135 +81,135 @@ wd:Q343
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "cawd"@en ;
     skos:prefLabel "cawd"@en ;
-    p:P2 wds:Q343-407BCB5D-03B2-5DDB-A806-BB39FC9C351E,
-        wds:Q343-DB9E6AD0-F6F9-52A2-ABF6-D142E11EF4EA ;
-    p:P106 wds:Q343-BA12FBF6-50CA-51E2-B031-FEFFD057858A ;
-    p:P113 wds:Q343-3E38A665-F4B1-55D1-83B0-D5AE3C753FFA ;
-    p:P115 wds:Q343-94A492D2-B7B0-5CC3-9250-F19D5532D15F ;
-    p:P116 wds:Q343-CEC9F828-CDE2-58EB-87D9-5FFA90C11704 ;
-    p:P117 wds:Q343-ADDBEF4F-1234-5D73-B43A-8610A1E93E25 ;
-    p:P118 wds:Q343-F83F47A7-CAC2-5F18-884B-99DF5A58C469 ;
-    p:P119 wds:Q343-A1B01CC2-EC98-53F6-AADA-FD3668CCE1DC ;
-    p:P122 wds:Q343-65507B0A-45F7-5B08-981F-7C80D02EB28A,
-        wds:Q343-D04DF925-BE0C-576E-A3B4-FF2FB6570706 ;
-    p:P123 wds:Q343-DAE8522F-86C8-595C-987B-B79F5CD57F41 ;
-    p:P125 wds:Q343-08D34AF2-F6A8-5815-A9E1-44871ADB1B84 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q344 ;
-    wdt:P115 <https://open-archaeo.info/post/cawd/> ;
-    wdt:P116 "cawd" ;
-    wdt:P117 wd:Q157 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "cawd"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/sfsheath/cawd> .
+    chbp:P2 chbs:Q343-407BCB5D-03B2-5DDB-A806-BB39FC9C351E,
+        chbs:Q343-DB9E6AD0-F6F9-52A2-ABF6-D142E11EF4EA ;
+    chbp:P106 chbs:Q343-BA12FBF6-50CA-51E2-B031-FEFFD057858A ;
+    chbp:P113 chbs:Q343-3E38A665-F4B1-55D1-83B0-D5AE3C753FFA ;
+    chbp:P115 chbs:Q343-94A492D2-B7B0-5CC3-9250-F19D5532D15F ;
+    chbp:P116 chbs:Q343-CEC9F828-CDE2-58EB-87D9-5FFA90C11704 ;
+    chbp:P117 chbs:Q343-ADDBEF4F-1234-5D73-B43A-8610A1E93E25 ;
+    chbp:P118 chbs:Q343-F83F47A7-CAC2-5F18-884B-99DF5A58C469 ;
+    chbp:P119 chbs:Q343-A1B01CC2-EC98-53F6-AADA-FD3668CCE1DC ;
+    chbp:P122 chbs:Q343-65507B0A-45F7-5B08-981F-7C80D02EB28A,
+        chbs:Q343-D04DF925-BE0C-576E-A3B4-FF2FB6570706 ;
+    chbp:P123 chbs:Q343-DAE8522F-86C8-595C-987B-B79F5CD57F41 ;
+    chbp:P125 chbs:Q343-08D34AF2-F6A8-5815-A9E1-44871ADB1B84 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q344 ;
+    chbt:P115 <https://open-archaeo.info/post/cawd/> ;
+    chbt:P116 "cawd" ;
+    chbt:P117 chb:Q157 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "cawd"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/sfsheath/cawd> .
 
-wds:Q343-3E38A665-F4B1-55D1-83B0-D5AE3C753FFA
+chbs:Q343-3E38A665-F4B1-55D1-83B0-D5AE3C753FFA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q344 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q344 .
 
-wds:Q343-08D34AF2-F6A8-5815-A9E1-44871ADB1B84
+chbs:Q343-08D34AF2-F6A8-5815-A9E1-44871ADB1B84
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    pq:P104 "2017-12-21T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-sfsheath-cawd_-_2017-12-21_20-32-33> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:f623e04497a8651a9d7bb6522c894d78 ;
-    ps:P125 <https://github.com/sfsheath/cawd> .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbpq:P104 "2017-12-21T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-sfsheath-cawd_-_2017-12-21_20-32-33> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:f623e04497a8651a9d7bb6522c894d78 ;
+    chbps:P125 <https://github.com/sfsheath/cawd> .
 
-wds:Q343-94A492D2-B7B0-5CC3-9250-F19D5532D15F
+chbs:Q343-94A492D2-B7B0-5CC3-9250-F19D5532D15F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P115 <https://open-archaeo.info/post/cawd/> .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P115 <https://open-archaeo.info/post/cawd/> .
 
-wds:Q343-407BCB5D-03B2-5DDB-A806-BB39FC9C351E
+chbs:Q343-407BCB5D-03B2-5DDB-A806-BB39FC9C351E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q343-65507B0A-45F7-5B08-981F-7C80D02EB28A
+chbs:Q343-65507B0A-45F7-5B08-981F-7C80D02EB28A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q343-A1B01CC2-EC98-53F6-AADA-FD3668CCE1DC
+chbs:Q343-A1B01CC2-EC98-53F6-AADA-FD3668CCE1DC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P119 "cawd"@en .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P119 "cawd"@en .
 
-wds:Q343-ADDBEF4F-1234-5D73-B43A-8610A1E93E25
+chbs:Q343-ADDBEF4F-1234-5D73-B43A-8610A1E93E25
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P117 wd:Q157 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P117 chb:Q157 .
 
-wds:Q343-BA12FBF6-50CA-51E2-B031-FEFFD057858A
+chbs:Q343-BA12FBF6-50CA-51E2-B031-FEFFD057858A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q343-CEC9F828-CDE2-58EB-87D9-5FFA90C11704
+chbs:Q343-CEC9F828-CDE2-58EB-87D9-5FFA90C11704
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "cawd" .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "cawd" .
 
-wds:Q343-D04DF925-BE0C-576E-A3B4-FF2FB6570706
+chbs:Q343-D04DF925-BE0C-576E-A3B4-FF2FB6570706
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q343-DAE8522F-86C8-595C-987B-B79F5CD57F41
+chbs:Q343-DAE8522F-86C8-595C-987B-B79F5CD57F41
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q343-DB9E6AD0-F6F9-52A2-ABF6-D142E11EF4EA
+chbs:Q343-DB9E6AD0-F6F9-52A2-ABF6-D142E11EF4EA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q343-F83F47A7-CAC2-5F18-884B-99DF5A58C469
+chbs:Q343-F83F47A7-CAC2-5F18-884B-99DF5A58C469
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7 ;
+    chbps:P118 chb:Q108 .
 
-wdref:8dc5e4a77201c7ec337bbe43f47563d7708893c7
+chbref:8dc5e4a77201c7ec337bbe43f47563d7708893c7
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/cawd/> .
+    chbpr:P6 <https://open-archaeo.info/post/cawd/> .
 
-wdv:f623e04497a8651a9d7bb6522c894d78
+chbv:f623e04497a8651a9d7bb6522c894d78
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,55 +1,56 @@
 # P9: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P9
+chbdata:P9.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Class the subject of a property's statements should belong to."@en,
         "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de ;
     dcterms:identifier "P9" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P9 ;
+    dcterms:subject chb:P9 ;
     dcterms:title "Definitionsbereich"@de,
         "domain"@en ;
-    schema:about wd:P9 ;
-    dcat:distribution dist:P9-html,
-        dist:P9-json,
-        dist:P9-ttl ;
+    schema:about chb:P9 ;
+    dcat:distribution chbdist:P9-html,
+        chbdist:P9-json,
+        chbdist:P9-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P9.html> .
 
-dist:P9-html
+chbdist:P9-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -57,7 +58,7 @@ dist:P9-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P9.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P9-json
+chbdist:P9-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -66,90 +67,90 @@ dist:P9-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P9.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P9-ttl
+chbdist:P9-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P9, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P9.ttl> ;
+    dcat:downloadURL chbdata:P9.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P9
+chb:P9
     a wikibase:Property ;
     schema:description "Class the subject of a property's statements should belong to."@en,
         "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de ;
     schema:name "Definitionsbereich"@de,
         "domain"@en ;
-    wikibase:claim p:P9 ;
-    wikibase:directClaim wdt:P9 ;
+    wikibase:claim chbp:P9 ;
+    wikibase:directClaim chbt:P9 ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:novalue wdno:P9 ;
+    wikibase:novalue chbno:P9 ;
     wikibase:propertyType wikibase:WikibaseItem ;
-    wikibase:qualifier pq:P9 ;
-    wikibase:qualifierValue pqv:P9 ;
-    wikibase:reference pr:P9 ;
-    wikibase:referenceValue prv:P9 ;
-    wikibase:statementProperty ps:P9 ;
-    wikibase:statementValue psv:P9 ;
+    wikibase:qualifier chbpq:P9 ;
+    wikibase:qualifierValue chbpqv:P9 ;
+    wikibase:reference chbpr:P9 ;
+    wikibase:referenceValue chbprv:P9 ;
+    wikibase:statementProperty chbps:P9 ;
+    wikibase:statementValue chbpsv:P9 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Definitionsbereich"@de,
         "domain"@en ;
     skos:prefLabel "Definitionsbereich"@de,
         "domain"@en ;
-    p:P2 wds:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4 ;
-    p:P9 wds:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48 ;
-    p:P10 wds:P9-D88CD03F-C43C-563B-8004-9809D908B44C ;
-    wdt:P2 wd:Q2 ;
-    wdt:P9 wd:Q2 ;
-    wdt:P10 wd:Q1 .
+    chbp:P2 chbs:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4 ;
+    chbp:P9 chbs:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48 ;
+    chbp:P10 chbs:P9-D88CD03F-C43C-563B-8004-9809D908B44C ;
+    chbt:P2 chb:Q2 ;
+    chbt:P9 chb:Q2 ;
+    chbt:P10 chb:Q1 .
 
-wds:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48
+chbs:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q2 .
+    chbps:P9 chb:Q2 .
 
-wds:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4
+chbs:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-wds:P9-D88CD03F-C43C-563B-8004-9809D908B44C
+chbs:P9-D88CD03F-C43C-563B-8004-9809D908B44C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P10 wd:Q1 .
+    chbps:P10 chb:Q1 .
 
-p:P9
+chbp:P9
     a owl:ObjectProperty .
 
-wdt:P9
+chbt:P9
     a owl:ObjectProperty .
 
-pq:P9
+chbpq:P9
     a owl:ObjectProperty .
 
-pqv:P9
+chbpqv:P9
     a owl:ObjectProperty .
 
-pr:P9
+chbpr:P9
     a owl:ObjectProperty .
 
-prv:P9
+chbprv:P9
     a owl:ObjectProperty .
 
-ps:P9
+chbps:P9
     a owl:ObjectProperty .
 
-psv:P9
+chbpsv:P9
     a owl:ObjectProperty .
 
-wdno:P9
+chbno:P9
     a owl:Class ;
     owl:complementOf _:ac6edeec42c4ba850cf33dd213171f81 .
 
 _:ac6edeec42c4ba850cf33dd213171f81
     a owl:Restriction ;
-    owl:onProperty wdt:P9 ;
+    owl:onProperty chbt:P9 ;
     owl:someValuesFrom owl:Thing .

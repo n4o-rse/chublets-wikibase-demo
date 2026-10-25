@@ -1,53 +1,54 @@
 # Q438: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q438
+chbdata:Q438.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "This r function creates a simple ford diagram for archaeological seriation with error bars determined based on sample size were count data are given"@en ;
     dcterms:identifier "Q438" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q438 ;
+    dcterms:subject chb:Q438 ;
     dcterms:title "Ford-Diagram"@en ;
-    schema:about wd:Q438 ;
-    dcat:distribution dist:Q438-html,
-        dist:Q438-json,
-        dist:Q438-ttl ;
+    schema:about chb:Q438 ;
+    dcat:distribution chbdist:Q438-html,
+        chbdist:Q438-json,
+        chbdist:Q438-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q438.html> .
 
-dist:Q438-html
+chbdist:Q438-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q438-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q438.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q438-json
+chbdist:Q438-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q438-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q438.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q438-ttl
+chbdist:Q438-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q438, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q438.ttl> ;
+    dcat:downloadURL chbdata:Q438.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q438
+chb:Q438
     a wikibase:Item ;
     schema:description "This r function creates a simple ford diagram for archaeological seriation with error bars determined based on sample size were count data are given"@en ;
     schema:name "Ford-Diagram"@en ;
@@ -80,144 +81,144 @@ wd:Q438
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "Ford-Diagram"@en ;
     skos:prefLabel "Ford-Diagram"@en ;
-    p:P2 wds:Q438-7E3261FC-0391-5F5D-AAB9-A5FD3CA9B43B,
-        wds:Q438-BBB7ADE4-9A9F-5BF9-8F21-02A4278AFF4C ;
-    p:P106 wds:Q438-FE6D357A-62C8-5054-9C3C-84D8C3478F94 ;
-    p:P113 wds:Q438-CC11B6D2-92F6-5B7D-9CFD-E6893BB4427E ;
-    p:P115 wds:Q438-9DF3FFDD-9D41-5130-A67F-2A5D15D38A68 ;
-    p:P116 wds:Q438-358D9A8D-183C-5C6F-AD63-4A89C5011D6E ;
-    p:P117 wds:Q438-8DE45174-6BA0-5E57-9E0B-018B749B1558,
-        wds:Q438-57763876-0251-582F-88A3-053B7E6946AC ;
-    p:P118 wds:Q438-CB1C8C17-36D8-5CB7-88C2-8FD7C84EC30F ;
-    p:P119 wds:Q438-8F8B4402-D388-58D5-ADF0-FB44A9EC36AA ;
-    p:P122 wds:Q438-287EDE28-2636-5DCE-B770-313D2824798D,
-        wds:Q438-DE95CE4D-153C-5233-8420-87580812F766 ;
-    p:P123 wds:Q438-CEB38DEE-4472-5552-9011-9970299BDDC8 ;
-    p:P125 wds:Q438-54D72171-9D99-5145-A549-D0DBCB96B6DD ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q167 ;
-    wdt:P115 <https://open-archaeo.info/post/ford-diagram/> ;
-    wdt:P116 "ford-diagram" ;
-    wdt:P117 wd:Q154,
-        wd:Q190 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Ford-Diagram"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/mpeeples2008/Ford-Diagram> .
+    chbp:P2 chbs:Q438-7E3261FC-0391-5F5D-AAB9-A5FD3CA9B43B,
+        chbs:Q438-BBB7ADE4-9A9F-5BF9-8F21-02A4278AFF4C ;
+    chbp:P106 chbs:Q438-FE6D357A-62C8-5054-9C3C-84D8C3478F94 ;
+    chbp:P113 chbs:Q438-CC11B6D2-92F6-5B7D-9CFD-E6893BB4427E ;
+    chbp:P115 chbs:Q438-9DF3FFDD-9D41-5130-A67F-2A5D15D38A68 ;
+    chbp:P116 chbs:Q438-358D9A8D-183C-5C6F-AD63-4A89C5011D6E ;
+    chbp:P117 chbs:Q438-8DE45174-6BA0-5E57-9E0B-018B749B1558,
+        chbs:Q438-57763876-0251-582F-88A3-053B7E6946AC ;
+    chbp:P118 chbs:Q438-CB1C8C17-36D8-5CB7-88C2-8FD7C84EC30F ;
+    chbp:P119 chbs:Q438-8F8B4402-D388-58D5-ADF0-FB44A9EC36AA ;
+    chbp:P122 chbs:Q438-287EDE28-2636-5DCE-B770-313D2824798D,
+        chbs:Q438-DE95CE4D-153C-5233-8420-87580812F766 ;
+    chbp:P123 chbs:Q438-CEB38DEE-4472-5552-9011-9970299BDDC8 ;
+    chbp:P125 chbs:Q438-54D72171-9D99-5145-A549-D0DBCB96B6DD ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q167 ;
+    chbt:P115 <https://open-archaeo.info/post/ford-diagram/> ;
+    chbt:P116 "ford-diagram" ;
+    chbt:P117 chb:Q154,
+        chb:Q190 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Ford-Diagram"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/mpeeples2008/Ford-Diagram> .
 
-wds:Q438-7E3261FC-0391-5F5D-AAB9-A5FD3CA9B43B
+chbs:Q438-7E3261FC-0391-5F5D-AAB9-A5FD3CA9B43B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q438-8DE45174-6BA0-5E57-9E0B-018B749B1558
+chbs:Q438-8DE45174-6BA0-5E57-9E0B-018B749B1558
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P117 wd:Q190 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P117 chb:Q190 .
 
-wds:Q438-8F8B4402-D388-58D5-ADF0-FB44A9EC36AA
+chbs:Q438-8F8B4402-D388-58D5-ADF0-FB44A9EC36AA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P119 "Ford-Diagram"@en .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P119 "Ford-Diagram"@en .
 
-wds:Q438-9DF3FFDD-9D41-5130-A67F-2A5D15D38A68
+chbs:Q438-9DF3FFDD-9D41-5130-A67F-2A5D15D38A68
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P115 <https://open-archaeo.info/post/ford-diagram/> .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P115 <https://open-archaeo.info/post/ford-diagram/> .
 
-wds:Q438-54D72171-9D99-5145-A549-D0DBCB96B6DD
+chbs:Q438-54D72171-9D99-5145-A549-D0DBCB96B6DD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    pq:P104 "2019-01-14T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-mpeeples2008-Ford-Diagram_-_2019-01-14_18-46-58> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ea352afc91819c8c6738c157a2ff3b36 ;
-    ps:P125 <https://github.com/mpeeples2008/Ford-Diagram> .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbpq:P104 "2019-01-14T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-mpeeples2008-Ford-Diagram_-_2019-01-14_18-46-58> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:ea352afc91819c8c6738c157a2ff3b36 ;
+    chbps:P125 <https://github.com/mpeeples2008/Ford-Diagram> .
 
-wds:Q438-287EDE28-2636-5DCE-B770-313D2824798D
+chbs:Q438-287EDE28-2636-5DCE-B770-313D2824798D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q438-358D9A8D-183C-5C6F-AD63-4A89C5011D6E
+chbs:Q438-358D9A8D-183C-5C6F-AD63-4A89C5011D6E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "ford-diagram" .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "ford-diagram" .
 
-wds:Q438-57763876-0251-582F-88A3-053B7E6946AC
+chbs:Q438-57763876-0251-582F-88A3-053B7E6946AC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P117 wd:Q154 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P117 chb:Q154 .
 
-wds:Q438-BBB7ADE4-9A9F-5BF9-8F21-02A4278AFF4C
+chbs:Q438-BBB7ADE4-9A9F-5BF9-8F21-02A4278AFF4C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q438-CB1C8C17-36D8-5CB7-88C2-8FD7C84EC30F
+chbs:Q438-CB1C8C17-36D8-5CB7-88C2-8FD7C84EC30F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q438-CC11B6D2-92F6-5B7D-9CFD-E6893BB4427E
+chbs:Q438-CC11B6D2-92F6-5B7D-9CFD-E6893BB4427E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q167 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q167 .
 
-wds:Q438-CEB38DEE-4472-5552-9011-9970299BDDC8
+chbs:Q438-CEB38DEE-4472-5552-9011-9970299BDDC8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q438-DE95CE4D-153C-5233-8420-87580812F766
+chbs:Q438-DE95CE4D-153C-5233-8420-87580812F766
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q438-FE6D357A-62C8-5054-9C3C-84D8C3478F94
+chbs:Q438-FE6D357A-62C8-5054-9C3C-84D8C3478F94
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:7ab52df034f3ee93cf28baaecf13774fb1101365 ;
+    chbps:P106 chb:Q110 .
 
-wdref:7ab52df034f3ee93cf28baaecf13774fb1101365
+chbref:7ab52df034f3ee93cf28baaecf13774fb1101365
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/ford-diagram/> .
+    chbpr:P6 <https://open-archaeo.info/post/ford-diagram/> .
 
-wdv:ea352afc91819c8c6738c157a2ff3b36
+chbv:ea352afc91819c8c6738c157a2ff3b36
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

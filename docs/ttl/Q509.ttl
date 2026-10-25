@@ -1,53 +1,54 @@
 # Q509: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q509
+chbdata:Q509.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Simple Principal Components Analysis (PCA) and Correspondence Analysis (CA) based on the Singular Value Decomposition (SVD). This package provides S4 classes and methods to compute, extract, summarize and visualize results of multivariate data analysis. It also includes methods for partial bootstrap validation."@en ;
     dcterms:identifier "Q509" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q509 ;
+    dcterms:subject chb:Q509 ;
     dcterms:title "dimensio"@en ;
-    schema:about wd:Q509 ;
-    dcat:distribution dist:Q509-html,
-        dist:Q509-json,
-        dist:Q509-ttl ;
+    schema:about chb:Q509 ;
+    dcat:distribution chbdist:Q509-html,
+        chbdist:Q509-json,
+        chbdist:Q509-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q509.html> .
 
-dist:Q509-html
+chbdist:Q509-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q509-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q509.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q509-json
+chbdist:Q509-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q509-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q509.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q509-ttl
+chbdist:Q509-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q509, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q509.ttl> ;
+    dcat:downloadURL chbdata:Q509.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q509
+chb:Q509
     a wikibase:Item ;
     schema:description "Simple Principal Components Analysis (PCA) and Correspondence Analysis (CA) based on the Singular Value Decomposition (SVD). This package provides S4 classes and methods to compute, extract, summarize and visualize results of multivariate data analysis. It also includes methods for partial bootstrap validation."@en ;
     schema:name "dimensio"@en ;
@@ -80,153 +81,153 @@ wd:Q509
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "dimensio"@en ;
     skos:prefLabel "dimensio"@en ;
-    p:P2 wds:Q509-0BE16798-ED64-59E8-AED0-C6C5FB1A36C1,
-        wds:Q509-40F47D71-5133-5001-8C53-98C9A3392FDF ;
-    p:P106 wds:Q509-261CBFA2-EE9E-525B-BD96-3F637C470884 ;
-    p:P113 wds:Q509-7B0CDA17-D24D-58C0-984D-C57825D1FA18 ;
-    p:P114 wds:Q509-27CD70EA-9010-5ED2-BD07-C3877E878C4B ;
-    p:P115 wds:Q509-2CEEEEC5-6B15-58F0-875B-BA8A188956BC ;
-    p:P116 wds:Q509-A0026568-4A88-53FE-8488-E2F02834FFD9 ;
-    p:P117 wds:Q509-858B8EE9-0FBE-5B13-879D-182F8B65B41F ;
-    p:P118 wds:Q509-A6D07ACC-3AC9-576E-BDC9-A3C55310C0AF ;
-    p:P119 wds:Q509-A0A53286-A4D7-56E6-B0E9-FCEB2E1E9A62 ;
-    p:P120 wds:Q509-52377663-1813-5F9A-ADB0-D854801967E2 ;
-    p:P122 wds:Q509-10927308-6EA5-5E52-8FF2-33CBB4343FA8,
-        wds:Q509-C4EAB9F3-2265-51F2-9736-676C0FDC9B37 ;
-    p:P123 wds:Q509-222C6B81-0AD5-5F86-AE2E-0021F7BCBE91 ;
-    p:P125 wds:Q509-C0F5F34A-1587-51DB-97F4-78DF751B5B40 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q231 ;
-    wdt:P114 "10.5281/zenodo.4478530" ;
-    wdt:P115 <https://open-archaeo.info/post/dimensio/> ;
-    wdt:P116 "dimensio" ;
-    wdt:P117 wd:Q116 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "dimensio"@en ;
-    wdt:P120 <https://packages.tesselle.org/dimensio/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://codeberg.org/tesselle/dimensio> .
+    chbp:P2 chbs:Q509-0BE16798-ED64-59E8-AED0-C6C5FB1A36C1,
+        chbs:Q509-40F47D71-5133-5001-8C53-98C9A3392FDF ;
+    chbp:P106 chbs:Q509-261CBFA2-EE9E-525B-BD96-3F637C470884 ;
+    chbp:P113 chbs:Q509-7B0CDA17-D24D-58C0-984D-C57825D1FA18 ;
+    chbp:P114 chbs:Q509-27CD70EA-9010-5ED2-BD07-C3877E878C4B ;
+    chbp:P115 chbs:Q509-2CEEEEC5-6B15-58F0-875B-BA8A188956BC ;
+    chbp:P116 chbs:Q509-A0026568-4A88-53FE-8488-E2F02834FFD9 ;
+    chbp:P117 chbs:Q509-858B8EE9-0FBE-5B13-879D-182F8B65B41F ;
+    chbp:P118 chbs:Q509-A6D07ACC-3AC9-576E-BDC9-A3C55310C0AF ;
+    chbp:P119 chbs:Q509-A0A53286-A4D7-56E6-B0E9-FCEB2E1E9A62 ;
+    chbp:P120 chbs:Q509-52377663-1813-5F9A-ADB0-D854801967E2 ;
+    chbp:P122 chbs:Q509-10927308-6EA5-5E52-8FF2-33CBB4343FA8,
+        chbs:Q509-C4EAB9F3-2265-51F2-9736-676C0FDC9B37 ;
+    chbp:P123 chbs:Q509-222C6B81-0AD5-5F86-AE2E-0021F7BCBE91 ;
+    chbp:P125 chbs:Q509-C0F5F34A-1587-51DB-97F4-78DF751B5B40 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q231 ;
+    chbt:P114 "10.5281/zenodo.4478530" ;
+    chbt:P115 <https://open-archaeo.info/post/dimensio/> ;
+    chbt:P116 "dimensio" ;
+    chbt:P117 chb:Q116 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "dimensio"@en ;
+    chbt:P120 <https://packages.tesselle.org/dimensio/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://codeberg.org/tesselle/dimensio> .
 
-wds:Q509-0BE16798-ED64-59E8-AED0-C6C5FB1A36C1
+chbs:Q509-0BE16798-ED64-59E8-AED0-C6C5FB1A36C1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q509-2CEEEEC5-6B15-58F0-875B-BA8A188956BC
+chbs:Q509-2CEEEEC5-6B15-58F0-875B-BA8A188956BC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P115 <https://open-archaeo.info/post/dimensio/> .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P115 <https://open-archaeo.info/post/dimensio/> .
 
-wds:Q509-7B0CDA17-D24D-58C0-984D-C57825D1FA18
+chbs:Q509-7B0CDA17-D24D-58C0-984D-C57825D1FA18
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q231 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q231 .
 
-wds:Q509-27CD70EA-9010-5ED2-BD07-C3877E878C4B
+chbs:Q509-27CD70EA-9010-5ED2-BD07-C3877E878C4B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P114 "10.5281/zenodo.4478530" .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P114 "10.5281/zenodo.4478530" .
 
-wds:Q509-40F47D71-5133-5001-8C53-98C9A3392FDF
+chbs:Q509-40F47D71-5133-5001-8C53-98C9A3392FDF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q509-222C6B81-0AD5-5F86-AE2E-0021F7BCBE91
+chbs:Q509-222C6B81-0AD5-5F86-AE2E-0021F7BCBE91
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q509-261CBFA2-EE9E-525B-BD96-3F637C470884
+chbs:Q509-261CBFA2-EE9E-525B-BD96-3F637C470884
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q509-858B8EE9-0FBE-5B13-879D-182F8B65B41F
+chbs:Q509-858B8EE9-0FBE-5B13-879D-182F8B65B41F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P117 chb:Q116 .
 
-wds:Q509-10927308-6EA5-5E52-8FF2-33CBB4343FA8
+chbs:Q509-10927308-6EA5-5E52-8FF2-33CBB4343FA8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q509-52377663-1813-5F9A-ADB0-D854801967E2
+chbs:Q509-52377663-1813-5F9A-ADB0-D854801967E2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P120 <https://packages.tesselle.org/dimensio/> .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P120 <https://packages.tesselle.org/dimensio/> .
 
-wds:Q509-A0A53286-A4D7-56E6-B0E9-FCEB2E1E9A62
+chbs:Q509-A0A53286-A4D7-56E6-B0E9-FCEB2E1E9A62
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P119 "dimensio"@en .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P119 "dimensio"@en .
 
-wds:Q509-A6D07ACC-3AC9-576E-BDC9-A3C55310C0AF
+chbs:Q509-A6D07ACC-3AC9-576E-BDC9-A3C55310C0AF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q509-A0026568-4A88-53FE-8488-E2F02834FFD9
+chbs:Q509-A0026568-4A88-53FE-8488-E2F02834FFD9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "dimensio" .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "dimensio" .
 
-wds:Q509-C0F5F34A-1587-51DB-97F4-78DF751B5B40
+chbs:Q509-C0F5F34A-1587-51DB-97F4-78DF751B5B40
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    pq:P104 "2021-05-24T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-tesselle-dimensio_-_2021-05-24_16-00-49> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:36aac1406ce23e410a523a121b7ebeaf ;
-    ps:P125 <https://codeberg.org/tesselle/dimensio> .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbpq:P104 "2021-05-24T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-tesselle-dimensio_-_2021-05-24_16-00-49> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:36aac1406ce23e410a523a121b7ebeaf ;
+    chbps:P125 <https://codeberg.org/tesselle/dimensio> .
 
-wds:Q509-C4EAB9F3-2265-51F2-9736-676C0FDC9B37
+chbs:Q509-C4EAB9F3-2265-51F2-9736-676C0FDC9B37
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:306a365eb407aade6db4b707260bd196c45126e6 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:306a365eb407aade6db4b707260bd196c45126e6 ;
+    chbps:P122 chb:Q109 .
 
-wdref:306a365eb407aade6db4b707260bd196c45126e6
+chbref:306a365eb407aade6db4b707260bd196c45126e6
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/dimensio/> .
+    chbpr:P6 <https://open-archaeo.info/post/dimensio/> .
 
-wdv:36aac1406ce23e410a523a121b7ebeaf
+chbv:36aac1406ce23e410a523a121b7ebeaf
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

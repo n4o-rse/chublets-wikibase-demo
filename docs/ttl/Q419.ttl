@@ -1,53 +1,54 @@
 # Q419: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q419
+chbdata:Q419.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Apps and functions for use in Bioarchaeology"@en ;
     dcterms:identifier "Q419" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q419 ;
+    dcterms:subject chb:Q419 ;
     dcterms:title "BioArch_R"@en ;
-    schema:about wd:Q419 ;
-    dcat:distribution dist:Q419-html,
-        dist:Q419-json,
-        dist:Q419-ttl ;
+    schema:about chb:Q419 ;
+    dcat:distribution chbdist:Q419-html,
+        chbdist:Q419-json,
+        chbdist:Q419-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q419.html> .
 
-dist:Q419-html
+chbdist:Q419-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q419-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q419.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q419-json
+chbdist:Q419-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q419-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q419.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q419-ttl
+chbdist:Q419-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q419, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q419.ttl> ;
+    dcat:downloadURL chbdata:Q419.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q419
+chb:Q419
     a wikibase:Item ;
     schema:description "Apps and functions for use in Bioarchaeology"@en ;
     schema:name "BioArch_R"@en ;
@@ -80,127 +81,127 @@ wd:Q419
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "BioArch_R"@en ;
     skos:prefLabel "BioArch_R"@en ;
-    p:P2 wds:Q419-137D9FA0-48B0-5D55-A511-18DAB7968E40,
-        wds:Q419-494DFC18-BA42-5BA9-85E4-78FEA1329638 ;
-    p:P106 wds:Q419-28818304-05E8-520E-8EAC-96549007992B ;
-    p:P113 wds:Q419-0DFF2F63-B266-51B0-B7C3-CD801FAD812A ;
-    p:P115 wds:Q419-1CBA5B96-56EA-5675-8D44-2BD19337AEEE ;
-    p:P116 wds:Q419-5DE3A7CA-C54D-5BBB-BF8F-C936511E1BD4 ;
-    p:P117 wds:Q419-B27983AF-00D7-5935-A95E-1D6B50B36517 ;
-    p:P118 wds:Q419-2BEB8A88-14E3-540F-B7CE-B9138A1A25A2 ;
-    p:P119 wds:Q419-FDE8D4EC-0011-5340-9304-0F3BF099556A ;
-    p:P122 wds:Q419-70DF8CBD-2DE0-5E89-ADB4-BA5111AD1F0A,
-        wds:Q419-51961FEB-B2D3-560D-804C-E0E3B0721FDB ;
-    p:P123 wds:Q419-A1057928-7B6C-56B5-8B90-C046201EB3C1 ;
-    p:P125 wds:Q419-04298C8E-1E39-5AA2-BDE1-899D5E6F1B2A ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q420 ;
-    wdt:P115 <https://open-archaeo.info/post/bioarch-r/> ;
-    wdt:P116 "bioarch-r" ;
-    wdt:P117 wd:Q272 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "BioArch_R"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/AlisJay/BioArch_R> .
+    chbp:P2 chbs:Q419-137D9FA0-48B0-5D55-A511-18DAB7968E40,
+        chbs:Q419-494DFC18-BA42-5BA9-85E4-78FEA1329638 ;
+    chbp:P106 chbs:Q419-28818304-05E8-520E-8EAC-96549007992B ;
+    chbp:P113 chbs:Q419-0DFF2F63-B266-51B0-B7C3-CD801FAD812A ;
+    chbp:P115 chbs:Q419-1CBA5B96-56EA-5675-8D44-2BD19337AEEE ;
+    chbp:P116 chbs:Q419-5DE3A7CA-C54D-5BBB-BF8F-C936511E1BD4 ;
+    chbp:P117 chbs:Q419-B27983AF-00D7-5935-A95E-1D6B50B36517 ;
+    chbp:P118 chbs:Q419-2BEB8A88-14E3-540F-B7CE-B9138A1A25A2 ;
+    chbp:P119 chbs:Q419-FDE8D4EC-0011-5340-9304-0F3BF099556A ;
+    chbp:P122 chbs:Q419-70DF8CBD-2DE0-5E89-ADB4-BA5111AD1F0A,
+        chbs:Q419-51961FEB-B2D3-560D-804C-E0E3B0721FDB ;
+    chbp:P123 chbs:Q419-A1057928-7B6C-56B5-8B90-C046201EB3C1 ;
+    chbp:P125 chbs:Q419-04298C8E-1E39-5AA2-BDE1-899D5E6F1B2A ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q420 ;
+    chbt:P115 <https://open-archaeo.info/post/bioarch-r/> ;
+    chbt:P116 "bioarch-r" ;
+    chbt:P117 chb:Q272 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "BioArch_R"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/AlisJay/BioArch_R> .
 
-wds:Q419-0DFF2F63-B266-51B0-B7C3-CD801FAD812A
+chbs:Q419-0DFF2F63-B266-51B0-B7C3-CD801FAD812A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q420 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q420 .
 
-wds:Q419-1CBA5B96-56EA-5675-8D44-2BD19337AEEE
+chbs:Q419-1CBA5B96-56EA-5675-8D44-2BD19337AEEE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P115 <https://open-archaeo.info/post/bioarch-r/> .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P115 <https://open-archaeo.info/post/bioarch-r/> .
 
-wds:Q419-2BEB8A88-14E3-540F-B7CE-B9138A1A25A2
+chbs:Q419-2BEB8A88-14E3-540F-B7CE-B9138A1A25A2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q419-5DE3A7CA-C54D-5BBB-BF8F-C936511E1BD4
+chbs:Q419-5DE3A7CA-C54D-5BBB-BF8F-C936511E1BD4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "bioarch-r" .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "bioarch-r" .
 
-wds:Q419-70DF8CBD-2DE0-5E89-ADB4-BA5111AD1F0A
+chbs:Q419-70DF8CBD-2DE0-5E89-ADB4-BA5111AD1F0A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q419-137D9FA0-48B0-5D55-A511-18DAB7968E40
+chbs:Q419-137D9FA0-48B0-5D55-A511-18DAB7968E40
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q419-494DFC18-BA42-5BA9-85E4-78FEA1329638
+chbs:Q419-494DFC18-BA42-5BA9-85E4-78FEA1329638
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q419-04298C8E-1E39-5AA2-BDE1-899D5E6F1B2A
+chbs:Q419-04298C8E-1E39-5AA2-BDE1-899D5E6F1B2A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/AlisJay/BioArch_R> .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/AlisJay/BioArch_R> .
 
-wds:Q419-51961FEB-B2D3-560D-804C-E0E3B0721FDB
+chbs:Q419-51961FEB-B2D3-560D-804C-E0E3B0721FDB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q419-28818304-05E8-520E-8EAC-96549007992B
+chbs:Q419-28818304-05E8-520E-8EAC-96549007992B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q419-A1057928-7B6C-56B5-8B90-C046201EB3C1
+chbs:Q419-A1057928-7B6C-56B5-8B90-C046201EB3C1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q419-B27983AF-00D7-5935-A95E-1D6B50B36517
+chbs:Q419-B27983AF-00D7-5935-A95E-1D6B50B36517
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P117 wd:Q272 .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P117 chb:Q272 .
 
-wds:Q419-FDE8D4EC-0011-5340-9304-0F3BF099556A
+chbs:Q419-FDE8D4EC-0011-5340-9304-0F3BF099556A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
-    ps:P119 "BioArch_R"@en .
+    prov:wasDerivedFrom chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6 ;
+    chbps:P119 "BioArch_R"@en .
 
-wdref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6
+chbref:c7cf9c09f3f1903a467a89b2152a0ffc9784b2e6
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/bioarch-r/> .
+    chbpr:P6 <https://open-archaeo.info/post/bioarch-r/> .

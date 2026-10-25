@@ -1,53 +1,54 @@
 # Q555: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q555
+chbdata:Q555.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Analysis of archaeological mortality data."@en ;
     dcterms:identifier "Q555" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q555 ;
+    dcterms:subject chb:Q555 ;
     dcterms:title "mortAAR"@en ;
-    schema:about wd:Q555 ;
-    dcat:distribution dist:Q555-html,
-        dist:Q555-json,
-        dist:Q555-ttl ;
+    schema:about chb:Q555 ;
+    dcat:distribution chbdist:Q555-html,
+        chbdist:Q555-json,
+        chbdist:Q555-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q555.html> .
 
-dist:Q555-html
+chbdist:Q555-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q555-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q555.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q555-json
+chbdist:Q555-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q555-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q555.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q555-ttl
+chbdist:Q555-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q555, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q555.ttl> ;
+    dcat:downloadURL chbdata:Q555.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q555
+chb:Q555
     a wikibase:Item ;
     schema:description "Analysis of archaeological mortality data."@en ;
     schema:name "mortAAR"@en ;
@@ -80,135 +81,135 @@ wd:Q555
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "mortAAR"@en ;
     skos:prefLabel "mortAAR"@en ;
-    p:P2 wds:Q555-9CB35B8E-FB4A-58C4-ABA7-C60C447EA061,
-        wds:Q555-BAFDF49A-028E-59AC-AB84-C6E00BA522B8 ;
-    p:P106 wds:Q555-6D6C8BBB-C092-53F4-8D24-EEEC86F6FAF4 ;
-    p:P113 wds:Q555-FEE903A1-57F4-5B2A-A8AA-A8E9ACCBE8E4 ;
-    p:P115 wds:Q555-CD05F729-CE3D-58B1-A539-AA7FEC43D6DF ;
-    p:P116 wds:Q555-B56D7CA9-0321-572C-A1E3-CB14E9D7F649 ;
-    p:P117 wds:Q555-7CF8BF12-0D83-57F1-8948-94F34239BDF2 ;
-    p:P118 wds:Q555-774C29EA-8D40-5D7C-BB61-47F56FFEA18C ;
-    p:P119 wds:Q555-BE2DF11E-DCB7-58D5-89F4-6E6D461C07C0 ;
-    p:P122 wds:Q555-A197E8D1-31C3-5DD7-8908-0251B179E68B,
-        wds:Q555-AFE52A69-004D-58B1-B03E-0F7CA94ED368 ;
-    p:P123 wds:Q555-55F979C2-8FBE-5448-BCDE-39413536E97B ;
-    p:P125 wds:Q555-4109DD6D-D8F9-563A-A00A-E64D3E593334 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q158 ;
-    wdt:P115 <https://open-archaeo.info/post/mortaar/> ;
-    wdt:P116 "mortaar" ;
-    wdt:P117 wd:Q175 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "mortAAR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ISAAKiel/mortAAR> .
+    chbp:P2 chbs:Q555-9CB35B8E-FB4A-58C4-ABA7-C60C447EA061,
+        chbs:Q555-BAFDF49A-028E-59AC-AB84-C6E00BA522B8 ;
+    chbp:P106 chbs:Q555-6D6C8BBB-C092-53F4-8D24-EEEC86F6FAF4 ;
+    chbp:P113 chbs:Q555-FEE903A1-57F4-5B2A-A8AA-A8E9ACCBE8E4 ;
+    chbp:P115 chbs:Q555-CD05F729-CE3D-58B1-A539-AA7FEC43D6DF ;
+    chbp:P116 chbs:Q555-B56D7CA9-0321-572C-A1E3-CB14E9D7F649 ;
+    chbp:P117 chbs:Q555-7CF8BF12-0D83-57F1-8948-94F34239BDF2 ;
+    chbp:P118 chbs:Q555-774C29EA-8D40-5D7C-BB61-47F56FFEA18C ;
+    chbp:P119 chbs:Q555-BE2DF11E-DCB7-58D5-89F4-6E6D461C07C0 ;
+    chbp:P122 chbs:Q555-A197E8D1-31C3-5DD7-8908-0251B179E68B,
+        chbs:Q555-AFE52A69-004D-58B1-B03E-0F7CA94ED368 ;
+    chbp:P123 chbs:Q555-55F979C2-8FBE-5448-BCDE-39413536E97B ;
+    chbp:P125 chbs:Q555-4109DD6D-D8F9-563A-A00A-E64D3E593334 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q158 ;
+    chbt:P115 <https://open-archaeo.info/post/mortaar/> ;
+    chbt:P116 "mortaar" ;
+    chbt:P117 chb:Q175 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "mortAAR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ISAAKiel/mortAAR> .
 
-wds:Q555-6D6C8BBB-C092-53F4-8D24-EEEC86F6FAF4
+chbs:Q555-6D6C8BBB-C092-53F4-8D24-EEEC86F6FAF4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q555-7CF8BF12-0D83-57F1-8948-94F34239BDF2
+chbs:Q555-7CF8BF12-0D83-57F1-8948-94F34239BDF2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P117 wd:Q175 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P117 chb:Q175 .
 
-wds:Q555-9CB35B8E-FB4A-58C4-ABA7-C60C447EA061
+chbs:Q555-9CB35B8E-FB4A-58C4-ABA7-C60C447EA061
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q555-55F979C2-8FBE-5448-BCDE-39413536E97B
+chbs:Q555-55F979C2-8FBE-5448-BCDE-39413536E97B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q555-774C29EA-8D40-5D7C-BB61-47F56FFEA18C
+chbs:Q555-774C29EA-8D40-5D7C-BB61-47F56FFEA18C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q555-4109DD6D-D8F9-563A-A00A-E64D3E593334
+chbs:Q555-4109DD6D-D8F9-563A-A00A-E64D3E593334
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    pq:P104 "2021-01-06T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-mortAAR_-_2021-01-06_22-00-39> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:31a5052b097f8ace3e587ddcdaebe9e3 ;
-    ps:P125 <https://github.com/ISAAKiel/mortAAR> .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbpq:P104 "2021-01-06T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-mortAAR_-_2021-01-06_22-00-39> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:31a5052b097f8ace3e587ddcdaebe9e3 ;
+    chbps:P125 <https://github.com/ISAAKiel/mortAAR> .
 
-wds:Q555-A197E8D1-31C3-5DD7-8908-0251B179E68B
+chbs:Q555-A197E8D1-31C3-5DD7-8908-0251B179E68B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q555-AFE52A69-004D-58B1-B03E-0F7CA94ED368
+chbs:Q555-AFE52A69-004D-58B1-B03E-0F7CA94ED368
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q555-B56D7CA9-0321-572C-A1E3-CB14E9D7F649
+chbs:Q555-B56D7CA9-0321-572C-A1E3-CB14E9D7F649
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "mortaar" .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "mortaar" .
 
-wds:Q555-BAFDF49A-028E-59AC-AB84-C6E00BA522B8
+chbs:Q555-BAFDF49A-028E-59AC-AB84-C6E00BA522B8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q555-BE2DF11E-DCB7-58D5-89F4-6E6D461C07C0
+chbs:Q555-BE2DF11E-DCB7-58D5-89F4-6E6D461C07C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P119 "mortAAR"@en .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P119 "mortAAR"@en .
 
-wds:Q555-CD05F729-CE3D-58B1-A539-AA7FEC43D6DF
+chbs:Q555-CD05F729-CE3D-58B1-A539-AA7FEC43D6DF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    ps:P115 <https://open-archaeo.info/post/mortaar/> .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbps:P115 <https://open-archaeo.info/post/mortaar/> .
 
-wds:Q555-FEE903A1-57F4-5B2A-A8AA-A8E9ACCBE8E4
+chbs:Q555-FEE903A1-57F4-5B2A-A8AA-A8E9ACCBE8E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q158 .
+    prov:wasDerivedFrom chbref:bf81067227c63e8553dfb6026a14f7da74474df0 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q158 .
 
-wdref:bf81067227c63e8553dfb6026a14f7da74474df0
+chbref:bf81067227c63e8553dfb6026a14f7da74474df0
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/mortaar/> .
+    chbpr:P6 <https://open-archaeo.info/post/mortaar/> .
 
-wdv:31a5052b097f8ace3e587ddcdaebe9e3
+chbv:31a5052b097f8ace3e587ddcdaebe9e3
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

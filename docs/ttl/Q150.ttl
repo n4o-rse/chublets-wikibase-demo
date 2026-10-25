@@ -1,53 +1,54 @@
 # Q150: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q150
+chbdata:Q150.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An R implementation of the Fast Marching Method (FMM), first developed by Sethian (1996), with the modifications of Silva and Steele (2012, 2014). Also included is a spatial wrapper function that makes it easier to model dispersal scenarios in geospatial domains, as originally envisaged for the study and simulation of prehistoric dispersals"@en ;
     dcterms:identifier "Q150" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q150 ;
+    dcterms:subject chb:Q150 ;
     dcterms:title "fastmaRching"@en ;
-    schema:about wd:Q150 ;
-    dcat:distribution dist:Q150-html,
-        dist:Q150-json,
-        dist:Q150-ttl ;
+    schema:about chb:Q150 ;
+    dcat:distribution chbdist:Q150-html,
+        chbdist:Q150-json,
+        chbdist:Q150-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q150.html> .
 
-dist:Q150-html
+chbdist:Q150-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q150-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q150.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q150-json
+chbdist:Q150-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q150-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q150.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q150-ttl
+chbdist:Q150-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q150, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q150.ttl> ;
+    dcat:downloadURL chbdata:Q150.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q150
+chb:Q150
     a wikibase:Item ;
     schema:description "An R implementation of the Fast Marching Method (FMM), first developed by Sethian (1996), with the modifications of Silva and Steele (2012, 2014). Also included is a spatial wrapper function that makes it easier to model dispersal scenarios in geospatial domains, as originally envisaged for the study and simulation of prehistoric dispersals"@en ;
     schema:name "fastmaRching"@en ;
@@ -80,162 +81,162 @@ wd:Q150
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "fastmaRching"@en ;
     skos:prefLabel "fastmaRching"@en ;
-    p:P2 wds:Q150-A07512C7-A466-576F-9579-D943B3E2A787,
-        wds:Q150-B082C1D2-F511-529D-8D0F-9AED2E38B03D ;
-    p:P106 wds:Q150-6EE7B208-BB28-522C-82D7-BB81B8A90AB2 ;
-    p:P108 wds:Q150-36C42F7B-72DF-5942-98B9-6031AC099CDE ;
-    p:P111 wds:Q150-BD98E40F-502D-5764-9F7B-DE76C10AEFD2 ;
-    p:P113 wds:Q150-25AE5DF7-B60F-585E-B59A-C6A7AA43E7D1 ;
-    p:P114 wds:Q150-506C6C53-7160-5F02-83A3-185FBBA3C3D1 ;
-    p:P115 wds:Q150-FF81213E-18FF-520A-8F9B-D5F9701929AB ;
-    p:P116 wds:Q150-3DA934A5-0E7D-5D85-AB4D-1FA04E008A12 ;
-    p:P117 wds:Q150-69D4591B-DB04-54F0-BA90-EC8D3F119492 ;
-    p:P118 wds:Q150-789C616F-6E26-5F23-B277-530B87E77435 ;
-    p:P119 wds:Q150-1D1671F2-E8B5-5FA8-AEB9-C9786DCE983D ;
-    p:P122 wds:Q150-604686F5-89F3-5300-9C6D-969824D0D792,
-        wds:Q150-A8E92031-432C-5EDD-9F26-0FE920A63516 ;
-    p:P123 wds:Q150-F8CF5C26-A2F6-513A-A8B1-7B9173523544 ;
-    p:P125 wds:Q150-44FA2B38-AFE6-5BCA-B441-DE394F24D41E ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "fastmaRching" ;
-    wdt:P111 wd:Q152 ;
-    wdt:P113 wd:Q151 ;
-    wdt:P114 "10.5281/zenodo.1204397" ;
-    wdt:P115 <https://open-archaeo.info/post/fastmarching/> ;
-    wdt:P116 "fastmarching" ;
-    wdt:P117 wd:Q119 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "fastmaRching"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/f-silva-archaeo/fastmaRching> .
+    chbp:P2 chbs:Q150-A07512C7-A466-576F-9579-D943B3E2A787,
+        chbs:Q150-B082C1D2-F511-529D-8D0F-9AED2E38B03D ;
+    chbp:P106 chbs:Q150-6EE7B208-BB28-522C-82D7-BB81B8A90AB2 ;
+    chbp:P108 chbs:Q150-36C42F7B-72DF-5942-98B9-6031AC099CDE ;
+    chbp:P111 chbs:Q150-BD98E40F-502D-5764-9F7B-DE76C10AEFD2 ;
+    chbp:P113 chbs:Q150-25AE5DF7-B60F-585E-B59A-C6A7AA43E7D1 ;
+    chbp:P114 chbs:Q150-506C6C53-7160-5F02-83A3-185FBBA3C3D1 ;
+    chbp:P115 chbs:Q150-FF81213E-18FF-520A-8F9B-D5F9701929AB ;
+    chbp:P116 chbs:Q150-3DA934A5-0E7D-5D85-AB4D-1FA04E008A12 ;
+    chbp:P117 chbs:Q150-69D4591B-DB04-54F0-BA90-EC8D3F119492 ;
+    chbp:P118 chbs:Q150-789C616F-6E26-5F23-B277-530B87E77435 ;
+    chbp:P119 chbs:Q150-1D1671F2-E8B5-5FA8-AEB9-C9786DCE983D ;
+    chbp:P122 chbs:Q150-604686F5-89F3-5300-9C6D-969824D0D792,
+        chbs:Q150-A8E92031-432C-5EDD-9F26-0FE920A63516 ;
+    chbp:P123 chbs:Q150-F8CF5C26-A2F6-513A-A8B1-7B9173523544 ;
+    chbp:P125 chbs:Q150-44FA2B38-AFE6-5BCA-B441-DE394F24D41E ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "fastmaRching" ;
+    chbt:P111 chb:Q152 ;
+    chbt:P113 chb:Q151 ;
+    chbt:P114 "10.5281/zenodo.1204397" ;
+    chbt:P115 <https://open-archaeo.info/post/fastmarching/> ;
+    chbt:P116 "fastmarching" ;
+    chbt:P117 chb:Q119 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "fastmaRching"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/f-silva-archaeo/fastmaRching> .
 
-wds:Q150-1D1671F2-E8B5-5FA8-AEB9-C9786DCE983D
+chbs:Q150-1D1671F2-E8B5-5FA8-AEB9-C9786DCE983D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P119 "fastmaRching"@en .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P119 "fastmaRching"@en .
 
-wds:Q150-3DA934A5-0E7D-5D85-AB4D-1FA04E008A12
+chbs:Q150-3DA934A5-0E7D-5D85-AB4D-1FA04E008A12
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "fastmarching" .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "fastmarching" .
 
-wds:Q150-6EE7B208-BB28-522C-82D7-BB81B8A90AB2
+chbs:Q150-6EE7B208-BB28-522C-82D7-BB81B8A90AB2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q150-25AE5DF7-B60F-585E-B59A-C6A7AA43E7D1
+chbs:Q150-25AE5DF7-B60F-585E-B59A-C6A7AA43E7D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q151 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q151 .
 
-wds:Q150-36C42F7B-72DF-5942-98B9-6031AC099CDE
+chbs:Q150-36C42F7B-72DF-5942-98B9-6031AC099CDE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P108 "fastmaRching" .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P108 "fastmaRching" .
 
-wds:Q150-44FA2B38-AFE6-5BCA-B441-DE394F24D41E
+chbs:Q150-44FA2B38-AFE6-5BCA-B441-DE394F24D41E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    pq:P104 "2019-09-05T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-f-silva-archaeo-fastmaRching_-_2019-09-05_11-20-15> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:841f4f883e529209684612a4061b0b1a ;
-    ps:P125 <https://github.com/f-silva-archaeo/fastmaRching> .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbpq:P104 "2019-09-05T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-f-silva-archaeo-fastmaRching_-_2019-09-05_11-20-15> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:841f4f883e529209684612a4061b0b1a ;
+    chbps:P125 <https://github.com/f-silva-archaeo/fastmaRching> .
 
-wds:Q150-69D4591B-DB04-54F0-BA90-EC8D3F119492
+chbs:Q150-69D4591B-DB04-54F0-BA90-EC8D3F119492
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P117 chb:Q119 .
 
-wds:Q150-506C6C53-7160-5F02-83A3-185FBBA3C3D1
+chbs:Q150-506C6C53-7160-5F02-83A3-185FBBA3C3D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P114 "10.5281/zenodo.1204397" .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P114 "10.5281/zenodo.1204397" .
 
-wds:Q150-789C616F-6E26-5F23-B277-530B87E77435
+chbs:Q150-789C616F-6E26-5F23-B277-530B87E77435
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q150-604686F5-89F3-5300-9C6D-969824D0D792
+chbs:Q150-604686F5-89F3-5300-9C6D-969824D0D792
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q150-A8E92031-432C-5EDD-9F26-0FE920A63516
+chbs:Q150-A8E92031-432C-5EDD-9F26-0FE920A63516
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q150-A07512C7-A466-576F-9579-D943B3E2A787
+chbs:Q150-A07512C7-A466-576F-9579-D943B3E2A787
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q150-B082C1D2-F511-529D-8D0F-9AED2E38B03D
+chbs:Q150-B082C1D2-F511-529D-8D0F-9AED2E38B03D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q150-BD98E40F-502D-5764-9F7B-DE76C10AEFD2
+chbs:Q150-BD98E40F-502D-5764-9F7B-DE76C10AEFD2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P111 wd:Q152 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P111 chb:Q152 .
 
-wds:Q150-F8CF5C26-A2F6-513A-A8B1-7B9173523544
+chbs:Q150-F8CF5C26-A2F6-513A-A8B1-7B9173523544
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q150-FF81213E-18FF-520A-8F9B-D5F9701929AB
+chbs:Q150-FF81213E-18FF-520A-8F9B-D5F9701929AB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
-    ps:P115 <https://open-archaeo.info/post/fastmarching/> .
+    prov:wasDerivedFrom chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15 ;
+    chbps:P115 <https://open-archaeo.info/post/fastmarching/> .
 
-wdref:ac65fdbf6b5312aba04adf3771c05f3b50841e15
+chbref:ac65fdbf6b5312aba04adf3771c05f3b50841e15
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/fastmarching/> .
+    chbpr:P6 <https://open-archaeo.info/post/fastmarching/> .
 
-wdv:841f4f883e529209684612a4061b0b1a
+chbv:841f4f883e529209684612a4061b0b1a
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

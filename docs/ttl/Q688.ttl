@@ -1,53 +1,54 @@
 # Q688: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q688
+chbdata:Q688.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A qgis plugin for local site grids."@en ;
     dcterms:identifier "Q688" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q688 ;
+    dcterms:subject chb:Q688 ;
     dcterms:title "ArkGrid"@en ;
-    schema:about wd:Q688 ;
-    dcat:distribution dist:Q688-html,
-        dist:Q688-json,
-        dist:Q688-ttl ;
+    schema:about chb:Q688 ;
+    dcat:distribution chbdist:Q688-html,
+        chbdist:Q688-json,
+        chbdist:Q688-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q688.html> .
 
-dist:Q688-html
+chbdist:Q688-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q688-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q688.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q688-json
+chbdist:Q688-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q688-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q688.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q688-ttl
+chbdist:Q688-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q688, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q688.ttl> ;
+    dcat:downloadURL chbdata:Q688.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q688
+chb:Q688
     a wikibase:Item ;
     schema:description "A qgis plugin for local site grids."@en ;
     schema:name "ArkGrid"@en ;
@@ -80,135 +81,135 @@ wd:Q688
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "ArkGrid"@en ;
     skos:prefLabel "ArkGrid"@en ;
-    p:P2 wds:Q688-19AAC222-16B1-56D3-BFC3-C20B731915EB,
-        wds:Q688-AE6BBE39-C48C-5C4E-9E40-474112C2787A ;
-    p:P106 wds:Q688-55F60DB5-51C7-5C91-8407-6C8AD516EFB8 ;
-    p:P109 wds:Q688-9CBDCBC3-425D-52C4-8381-E83BE5FC7490 ;
-    p:P113 wds:Q688-2B6E1495-7444-5AD6-9678-23E6835F6FAF ;
-    p:P115 wds:Q688-D0AF1E5C-1FF7-53E6-A33C-0C2382446674 ;
-    p:P116 wds:Q688-46CE0212-4AFC-5214-B04B-8BC38A3A16A2 ;
-    p:P117 wds:Q688-B0580B9E-8E33-5D20-8F3D-E4D38F0478A1 ;
-    p:P118 wds:Q688-CC835F20-C2B7-5347-B72A-D51F5C97C60D ;
-    p:P119 wds:Q688-D1E2117E-377C-5B92-855F-771F1FD25DB2 ;
-    p:P122 wds:Q688-2A7F6F1A-D850-58AA-B99E-370C675BE6E1,
-        wds:Q688-805B71EC-C1B0-59EE-BCAF-77A796C0FF33 ;
-    p:P125 wds:Q688-383EF81B-6CBA-5F0F-9E25-106417F0F120 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q137 ;
-    wdt:P115 <https://open-archaeo.info/post/arkgrid/> ;
-    wdt:P116 "arkgrid" ;
-    wdt:P117 wd:Q136 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ArkGrid"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/lparchaeology/ArkGrid> .
+    chbp:P2 chbs:Q688-19AAC222-16B1-56D3-BFC3-C20B731915EB,
+        chbs:Q688-AE6BBE39-C48C-5C4E-9E40-474112C2787A ;
+    chbp:P106 chbs:Q688-55F60DB5-51C7-5C91-8407-6C8AD516EFB8 ;
+    chbp:P109 chbs:Q688-9CBDCBC3-425D-52C4-8381-E83BE5FC7490 ;
+    chbp:P113 chbs:Q688-2B6E1495-7444-5AD6-9678-23E6835F6FAF ;
+    chbp:P115 chbs:Q688-D0AF1E5C-1FF7-53E6-A33C-0C2382446674 ;
+    chbp:P116 chbs:Q688-46CE0212-4AFC-5214-B04B-8BC38A3A16A2 ;
+    chbp:P117 chbs:Q688-B0580B9E-8E33-5D20-8F3D-E4D38F0478A1 ;
+    chbp:P118 chbs:Q688-CC835F20-C2B7-5347-B72A-D51F5C97C60D ;
+    chbp:P119 chbs:Q688-D1E2117E-377C-5B92-855F-771F1FD25DB2 ;
+    chbp:P122 chbs:Q688-2A7F6F1A-D850-58AA-B99E-370C675BE6E1,
+        chbs:Q688-805B71EC-C1B0-59EE-BCAF-77A796C0FF33 ;
+    chbp:P125 chbs:Q688-383EF81B-6CBA-5F0F-9E25-106417F0F120 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q137 ;
+    chbt:P115 <https://open-archaeo.info/post/arkgrid/> ;
+    chbt:P116 "arkgrid" ;
+    chbt:P117 chb:Q136 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ArkGrid"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/lparchaeology/ArkGrid> .
 
-wds:Q688-2A7F6F1A-D850-58AA-B99E-370C675BE6E1
+chbs:Q688-2A7F6F1A-D850-58AA-B99E-370C675BE6E1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q688-2B6E1495-7444-5AD6-9678-23E6835F6FAF
+chbs:Q688-2B6E1495-7444-5AD6-9678-23E6835F6FAF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q137 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q137 .
 
-wds:Q688-9CBDCBC3-425D-52C4-8381-E83BE5FC7490
+chbs:Q688-9CBDCBC3-425D-52C4-8381-E83BE5FC7490
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P109 chb:Q135 .
 
-wds:Q688-19AAC222-16B1-56D3-BFC3-C20B731915EB
+chbs:Q688-19AAC222-16B1-56D3-BFC3-C20B731915EB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q688-46CE0212-4AFC-5214-B04B-8BC38A3A16A2
+chbs:Q688-46CE0212-4AFC-5214-B04B-8BC38A3A16A2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "arkgrid" .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "arkgrid" .
 
-wds:Q688-55F60DB5-51C7-5C91-8407-6C8AD516EFB8
+chbs:Q688-55F60DB5-51C7-5C91-8407-6C8AD516EFB8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q688-383EF81B-6CBA-5F0F-9E25-106417F0F120
+chbs:Q688-383EF81B-6CBA-5F0F-9E25-106417F0F120
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    pq:P104 "2016-09-02T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-lparchaeology-ArkGrid_-_2016-09-02_16-36-40> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:70b9bc63661872e9e86e1d2102037800 ;
-    ps:P125 <https://github.com/lparchaeology/ArkGrid> .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbpq:P104 "2016-09-02T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-lparchaeology-ArkGrid_-_2016-09-02_16-36-40> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:70b9bc63661872e9e86e1d2102037800 ;
+    chbps:P125 <https://github.com/lparchaeology/ArkGrid> .
 
-wds:Q688-805B71EC-C1B0-59EE-BCAF-77A796C0FF33
+chbs:Q688-805B71EC-C1B0-59EE-BCAF-77A796C0FF33
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q688-AE6BBE39-C48C-5C4E-9E40-474112C2787A
+chbs:Q688-AE6BBE39-C48C-5C4E-9E40-474112C2787A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q688-B0580B9E-8E33-5D20-8F3D-E4D38F0478A1
+chbs:Q688-B0580B9E-8E33-5D20-8F3D-E4D38F0478A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q688-CC835F20-C2B7-5347-B72A-D51F5C97C60D
+chbs:Q688-CC835F20-C2B7-5347-B72A-D51F5C97C60D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q688-D0AF1E5C-1FF7-53E6-A33C-0C2382446674
+chbs:Q688-D0AF1E5C-1FF7-53E6-A33C-0C2382446674
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P115 <https://open-archaeo.info/post/arkgrid/> .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P115 <https://open-archaeo.info/post/arkgrid/> .
 
-wds:Q688-D1E2117E-377C-5B92-855F-771F1FD25DB2
+chbs:Q688-D1E2117E-377C-5B92-855F-771F1FD25DB2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
-    ps:P119 "ArkGrid"@en .
+    prov:wasDerivedFrom chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343 ;
+    chbps:P119 "ArkGrid"@en .
 
-wdref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343
+chbref:ca57d2326d2b9a4f36ce3674dd0f6b79c9fa3343
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/arkgrid/> .
+    chbpr:P6 <https://open-archaeo.info/post/arkgrid/> .
 
-wdv:70b9bc63661872e9e86e1d2102037800
+chbv:70b9bc63661872e9e86e1d2102037800
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

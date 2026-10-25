@@ -1,53 +1,54 @@
 # Q454: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q454
+chbdata:Q454.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "R package for interacting with the paleocore api"@en ;
     dcterms:identifier "Q454" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q454 ;
+    dcterms:subject chb:Q454 ;
     dcterms:title "paleocoreR"@en ;
-    schema:about wd:Q454 ;
-    dcat:distribution dist:Q454-html,
-        dist:Q454-json,
-        dist:Q454-ttl ;
+    schema:about chb:Q454 ;
+    dcat:distribution chbdist:Q454-html,
+        chbdist:Q454-json,
+        chbdist:Q454-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q454.html> .
 
-dist:Q454-html
+chbdist:Q454-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q454-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q454.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q454-json
+chbdist:Q454-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q454-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q454.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q454-ttl
+chbdist:Q454-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q454, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q454.ttl> ;
+    dcat:downloadURL chbdata:Q454.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q454
+chb:Q454
     a wikibase:Item ;
     schema:description "R package for interacting with the paleocore api"@en ;
     schema:name "paleocoreR"@en ;
@@ -80,144 +81,144 @@ wd:Q454
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "paleocoreR"@en ;
     skos:prefLabel "paleocoreR"@en ;
-    p:P2 wds:Q454-1C71C1AC-5FAE-5B33-AFCA-EACEE897A24B,
-        wds:Q454-7CADFEA9-D8F4-555A-9348-60FF7D8FCBA5 ;
-    p:P106 wds:Q454-5B3B33E0-C570-57DD-A6AD-126D665DF9B5 ;
-    p:P113 wds:Q454-0BFE1863-D44E-56B7-9237-F46CEDE49B49 ;
-    p:P115 wds:Q454-145C4BBE-DC87-5B3D-8EFB-54BE462599D1 ;
-    p:P116 wds:Q454-846BA3AB-9A2F-546D-A878-A5BADC2C2C61 ;
-    p:P117 wds:Q454-78AF59B5-878B-5B51-8F5E-3A823D449A24 ;
-    p:P118 wds:Q454-2D6EBA45-F8B9-5A41-B5F8-0D1AC76956CB ;
-    p:P119 wds:Q454-EE3180AD-A27B-54C2-AB23-6204A471B253 ;
-    p:P120 wds:Q454-1DA96997-DE2E-50FC-A338-7AF048B83340 ;
-    p:P122 wds:Q454-A81D652C-77F9-5CCE-A3C6-650EF798D973,
-        wds:Q454-C025211F-3C76-53EC-98BB-A91628B6DDF0 ;
-    p:P123 wds:Q454-ED54D672-0C1A-5AA6-A398-64071A6B652D ;
-    p:P125 wds:Q454-2BE1FD41-5F96-538B-9353-2E1C1CDC97F2 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q455 ;
-    wdt:P115 <https://open-archaeo.info/post/paleocorer/> ;
-    wdt:P116 "paleocorer" ;
-    wdt:P117 wd:Q157 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "paleocoreR"@en ;
-    wdt:P120 <http://paleocore.github.io/paleocoreR/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/paleocore/paleocoreR> .
+    chbp:P2 chbs:Q454-1C71C1AC-5FAE-5B33-AFCA-EACEE897A24B,
+        chbs:Q454-7CADFEA9-D8F4-555A-9348-60FF7D8FCBA5 ;
+    chbp:P106 chbs:Q454-5B3B33E0-C570-57DD-A6AD-126D665DF9B5 ;
+    chbp:P113 chbs:Q454-0BFE1863-D44E-56B7-9237-F46CEDE49B49 ;
+    chbp:P115 chbs:Q454-145C4BBE-DC87-5B3D-8EFB-54BE462599D1 ;
+    chbp:P116 chbs:Q454-846BA3AB-9A2F-546D-A878-A5BADC2C2C61 ;
+    chbp:P117 chbs:Q454-78AF59B5-878B-5B51-8F5E-3A823D449A24 ;
+    chbp:P118 chbs:Q454-2D6EBA45-F8B9-5A41-B5F8-0D1AC76956CB ;
+    chbp:P119 chbs:Q454-EE3180AD-A27B-54C2-AB23-6204A471B253 ;
+    chbp:P120 chbs:Q454-1DA96997-DE2E-50FC-A338-7AF048B83340 ;
+    chbp:P122 chbs:Q454-A81D652C-77F9-5CCE-A3C6-650EF798D973,
+        chbs:Q454-C025211F-3C76-53EC-98BB-A91628B6DDF0 ;
+    chbp:P123 chbs:Q454-ED54D672-0C1A-5AA6-A398-64071A6B652D ;
+    chbp:P125 chbs:Q454-2BE1FD41-5F96-538B-9353-2E1C1CDC97F2 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q455 ;
+    chbt:P115 <https://open-archaeo.info/post/paleocorer/> ;
+    chbt:P116 "paleocorer" ;
+    chbt:P117 chb:Q157 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "paleocoreR"@en ;
+    chbt:P120 <http://paleocore.github.io/paleocoreR/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/paleocore/paleocoreR> .
 
-wds:Q454-0BFE1863-D44E-56B7-9237-F46CEDE49B49
+chbs:Q454-0BFE1863-D44E-56B7-9237-F46CEDE49B49
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q455 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q455 .
 
-wds:Q454-1C71C1AC-5FAE-5B33-AFCA-EACEE897A24B
+chbs:Q454-1C71C1AC-5FAE-5B33-AFCA-EACEE897A24B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q454-1DA96997-DE2E-50FC-A338-7AF048B83340
+chbs:Q454-1DA96997-DE2E-50FC-A338-7AF048B83340
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P120 <http://paleocore.github.io/paleocoreR/> .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P120 <http://paleocore.github.io/paleocoreR/> .
 
-wds:Q454-2BE1FD41-5F96-538B-9353-2E1C1CDC97F2
+chbs:Q454-2BE1FD41-5F96-538B-9353-2E1C1CDC97F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    pq:P104 "2014-07-18T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-paleocore-paleocoreR_-_2014-07-18_20-59-37> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:0a104559f93be20d851b8ed0d198b0a9 ;
-    ps:P125 <https://github.com/paleocore/paleocoreR> .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbpq:P104 "2014-07-18T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-paleocore-paleocoreR_-_2014-07-18_20-59-37> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:0a104559f93be20d851b8ed0d198b0a9 ;
+    chbps:P125 <https://github.com/paleocore/paleocoreR> .
 
-wds:Q454-2D6EBA45-F8B9-5A41-B5F8-0D1AC76956CB
+chbs:Q454-2D6EBA45-F8B9-5A41-B5F8-0D1AC76956CB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q454-5B3B33E0-C570-57DD-A6AD-126D665DF9B5
+chbs:Q454-5B3B33E0-C570-57DD-A6AD-126D665DF9B5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q454-7CADFEA9-D8F4-555A-9348-60FF7D8FCBA5
+chbs:Q454-7CADFEA9-D8F4-555A-9348-60FF7D8FCBA5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q454-78AF59B5-878B-5B51-8F5E-3A823D449A24
+chbs:Q454-78AF59B5-878B-5B51-8F5E-3A823D449A24
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P117 wd:Q157 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P117 chb:Q157 .
 
-wds:Q454-145C4BBE-DC87-5B3D-8EFB-54BE462599D1
+chbs:Q454-145C4BBE-DC87-5B3D-8EFB-54BE462599D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P115 <https://open-archaeo.info/post/paleocorer/> .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P115 <https://open-archaeo.info/post/paleocorer/> .
 
-wds:Q454-846BA3AB-9A2F-546D-A878-A5BADC2C2C61
+chbs:Q454-846BA3AB-9A2F-546D-A878-A5BADC2C2C61
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "paleocorer" .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "paleocorer" .
 
-wds:Q454-A81D652C-77F9-5CCE-A3C6-650EF798D973
+chbs:Q454-A81D652C-77F9-5CCE-A3C6-650EF798D973
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q454-C025211F-3C76-53EC-98BB-A91628B6DDF0
+chbs:Q454-C025211F-3C76-53EC-98BB-A91628B6DDF0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q454-ED54D672-0C1A-5AA6-A398-64071A6B652D
+chbs:Q454-ED54D672-0C1A-5AA6-A398-64071A6B652D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q454-EE3180AD-A27B-54C2-AB23-6204A471B253
+chbs:Q454-EE3180AD-A27B-54C2-AB23-6204A471B253
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
-    ps:P119 "paleocoreR"@en .
+    prov:wasDerivedFrom chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0 ;
+    chbps:P119 "paleocoreR"@en .
 
-wdref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0
+chbref:a379efc30c237e95d39cb35ad99ac14ec44e5ec0
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/paleocorer/> .
+    chbpr:P6 <https://open-archaeo.info/post/paleocorer/> .
 
-wdv:0a104559f93be20d851b8ed0d198b0a9
+chbv:0a104559f93be20d851b8ed0d198b0a9
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

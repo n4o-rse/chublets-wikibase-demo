@@ -1,52 +1,53 @@
 # P116: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P116
+chbdata:P116.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P116" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P116 ;
+    dcterms:subject chb:P116 ;
     dcterms:title "inventory number"@en ;
-    schema:about wd:P116 ;
-    dcat:distribution dist:P116-html,
-        dist:P116-json,
-        dist:P116-ttl ;
+    schema:about chb:P116 ;
+    dcat:distribution chbdist:P116-html,
+        chbdist:P116-json,
+        chbdist:P116-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P116.html> .
 
-dist:P116-html
+chbdist:P116-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P116-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P116.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P116-json
+chbdist:P116-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,90 +64,90 @@ dist:P116-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P116.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P116-ttl
+chbdist:P116-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P116, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P116.ttl> ;
+    dcat:downloadURL chbdata:P116.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P116
+chb:P116
     a wikibase:Property ;
     schema:name "inventory number"@en ;
-    wikibase:claim p:P116 ;
-    wikibase:directClaim wdt:P116 ;
+    wikibase:claim chbp:P116 ;
+    wikibase:directClaim chbt:P116 ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:novalue wdno:P116 ;
+    wikibase:novalue chbno:P116 ;
     wikibase:propertyType wikibase:String ;
-    wikibase:qualifier pq:P116 ;
-    wikibase:qualifierValue pqv:P116 ;
-    wikibase:reference pr:P116 ;
-    wikibase:referenceValue prv:P116 ;
-    wikibase:statementProperty ps:P116 ;
-    wikibase:statementValue psv:P116 ;
+    wikibase:qualifier chbpq:P116 ;
+    wikibase:qualifierValue chbpqv:P116 ;
+    wikibase:reference chbpr:P116 ;
+    wikibase:referenceValue chbprv:P116 ;
+    wikibase:statementProperty chbps:P116 ;
+    wikibase:statementValue chbpsv:P116 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "inventory number"@en ;
     skos:prefLabel "inventory number"@en ;
-    p:P2 wds:P116-AFBC6883-66BF-575B-BF7B-C40577931B50 ;
-    p:P4 wds:P116-C377DC40-F342-5A6C-8BB0-0367EE40539A ;
-    p:P9 wds:P116-7DDF55DB-94CD-5E96-8506-CFF0ECD6AFDB ;
-    wdt:P2 wd:Q2 ;
-    wdt:P4 "P217" ;
-    wdt:P9 wd:Q100 .
+    chbp:P2 chbs:P116-AFBC6883-66BF-575B-BF7B-C40577931B50 ;
+    chbp:P4 chbs:P116-C377DC40-F342-5A6C-8BB0-0367EE40539A ;
+    chbp:P9 chbs:P116-7DDF55DB-94CD-5E96-8506-CFF0ECD6AFDB ;
+    chbt:P2 chb:Q2 ;
+    chbt:P4 "P217" ;
+    chbt:P9 chb:Q100 .
 
-wds:P116-7DDF55DB-94CD-5E96-8506-CFF0ECD6AFDB
+chbs:P116-7DDF55DB-94CD-5E96-8506-CFF0ECD6AFDB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-wds:P116-AFBC6883-66BF-575B-BF7B-C40577931B50
+chbs:P116-AFBC6883-66BF-575B-BF7B-C40577931B50
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-wds:P116-C377DC40-F342-5A6C-8BB0-0367EE40539A
+chbs:P116-C377DC40-F342-5A6C-8BB0-0367EE40539A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:c586860114b1896e84f8321dd383dbd0ee3c125f ;
-    ps:P4 "P217" .
+    prov:wasDerivedFrom chbref:c586860114b1896e84f8321dd383dbd0ee3c125f ;
+    chbps:P4 "P217" .
 
-wdref:c586860114b1896e84f8321dd383dbd0ee3c125f
+chbref:c586860114b1896e84f8321dd383dbd0ee3c125f
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Property:P217> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Property:P217> .
 
-p:P116
+chbp:P116
     a owl:ObjectProperty .
 
-wdt:P116
+chbt:P116
     a owl:DatatypeProperty .
 
-pq:P116
+chbpq:P116
     a owl:DatatypeProperty .
 
-pqv:P116
+chbpqv:P116
     a owl:ObjectProperty .
 
-pr:P116
+chbpr:P116
     a owl:DatatypeProperty .
 
-prv:P116
+chbprv:P116
     a owl:ObjectProperty .
 
-ps:P116
+chbps:P116
     a owl:DatatypeProperty .
 
-psv:P116
+chbpsv:P116
     a owl:ObjectProperty .
 
-wdno:P116
+chbno:P116
     a owl:Class ;
     owl:complementOf _:6b14bb19474e7161040b37715d59070d .
 
 _:6b14bb19474e7161040b37715d59070d
     a owl:Restriction ;
-    owl:onProperty wdt:P116 ;
+    owl:onProperty chbt:P116 ;
     owl:someValuesFrom owl:Thing .

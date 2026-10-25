@@ -1,52 +1,53 @@
 # Q114: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q114
+chbdata:Q114.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "Q114" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q114 ;
+    dcterms:subject chb:Q114 ;
     dcterms:title "Git"@en ;
-    schema:about wd:Q114 ;
-    dcat:distribution dist:Q114-html,
-        dist:Q114-json,
-        dist:Q114-ttl ;
+    schema:about chb:Q114 ;
+    dcat:distribution chbdist:Q114-html,
+        chbdist:Q114-json,
+        chbdist:Q114-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q114.html> .
 
-dist:Q114-html
+chbdist:Q114-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:Q114-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q114.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q114-json
+chbdist:Q114-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,48 +64,48 @@ dist:Q114-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q114.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q114-ttl
+chbdist:Q114-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q114, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q114.ttl> ;
+    dcat:downloadURL chbdata:Q114.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q114
+chb:Q114
     a wikibase:Item ;
     schema:name "Git"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Git"@en ;
     skos:prefLabel "Git"@en ;
-    p:P2 wds:Q114-1A16782A-B9B7-566D-9009-7119C581750E,
-        wds:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF ;
-    p:P4 wds:Q114-FD70BBEC-2C2E-5C78-AFE9-33C9C6C369CC ;
-    wdt:P2 wd:Q3,
-        wd:Q106 ;
-    wdt:P4 "Q186055" .
+    chbp:P2 chbs:Q114-1A16782A-B9B7-566D-9009-7119C581750E,
+        chbs:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF ;
+    chbp:P4 chbs:Q114-FD70BBEC-2C2E-5C78-AFE9-33C9C6C369CC ;
+    chbt:P2 chb:Q3,
+        chb:Q106 ;
+    chbt:P4 "Q186055" .
 
-wds:Q114-1A16782A-B9B7-566D-9009-7119C581750E
+chbs:Q114-1A16782A-B9B7-566D-9009-7119C581750E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q106 .
+    chbps:P2 chb:Q106 .
 
-wds:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF
+chbs:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85c7a369e841e02f3b62533e889f5353015aab20 ;
-    ps:P2 wd:Q3 .
+    prov:wasDerivedFrom chbref:85c7a369e841e02f3b62533e889f5353015aab20 ;
+    chbps:P2 chb:Q3 .
 
-wds:Q114-FD70BBEC-2C2E-5C78-AFE9-33C9C6C369CC
+chbs:Q114-FD70BBEC-2C2E-5C78-AFE9-33C9C6C369CC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85c7a369e841e02f3b62533e889f5353015aab20 ;
-    ps:P4 "Q186055" .
+    prov:wasDerivedFrom chbref:85c7a369e841e02f3b62533e889f5353015aab20 ;
+    chbps:P4 "Q186055" .
 
-wdref:85c7a369e841e02f3b62533e889f5353015aab20
+chbref:85c7a369e841e02f3b62533e889f5353015aab20
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/weedeco/> .
+    chbpr:P6 <https://open-archaeo.info/post/weedeco/> .

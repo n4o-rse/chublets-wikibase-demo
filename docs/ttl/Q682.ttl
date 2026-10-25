@@ -1,53 +1,54 @@
 # Q682: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q682
+chbdata:Q682.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Produce mixture models of zooarchaeological measurement data to estimate the proportion of immature, adult-sized female, and adult-sized male specimens in an assemblage."@en ;
     dcterms:identifier "Q682" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q682 ;
+    dcterms:subject chb:Q682 ;
     dcterms:title "ZooarchMixMod"@en ;
-    schema:about wd:Q682 ;
-    dcat:distribution dist:Q682-html,
-        dist:Q682-json,
-        dist:Q682-ttl ;
+    schema:about chb:Q682 ;
+    dcat:distribution chbdist:Q682-html,
+        chbdist:Q682-json,
+        chbdist:Q682-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q682.html> .
 
-dist:Q682-html
+chbdist:Q682-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q682-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q682.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q682-json
+chbdist:Q682-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q682-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q682.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q682-ttl
+chbdist:Q682-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q682, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q682.ttl> ;
+    dcat:downloadURL chbdata:Q682.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q682
+chb:Q682
     a wikibase:Item ;
     schema:description "Produce mixture models of zooarchaeological measurement data to estimate the proportion of immature, adult-sized female, and adult-sized male specimens in an assemblage."@en ;
     schema:name "ZooarchMixMod"@en ;
@@ -80,136 +81,136 @@ wd:Q682
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "ZooarchMixMod"@en ;
     skos:prefLabel "ZooarchMixMod"@en ;
-    p:P2 wds:Q682-C78C438F-18C1-5322-98BB-2C0A38ABD8CE,
-        wds:Q682-F80E3164-AD92-5CB5-AD6E-3CF0AFDCF44A ;
-    p:P106 wds:Q682-9E94E9E7-9B09-5A4F-A3F7-698CA53B9D32 ;
-    p:P113 wds:Q682-09395B6D-34E5-5E15-9260-449FEDE9E85B ;
-    p:P114 wds:Q682-575F6B26-0A97-5924-A916-00D2C55843F4 ;
-    p:P115 wds:Q682-A15C4952-B1CF-57B1-A668-DEFECDE46FC4 ;
-    p:P116 wds:Q682-8DD1CC87-774C-525F-BAD7-78FADB21F9D0 ;
-    p:P117 wds:Q682-44F54BF9-0D33-5890-A628-5880FB2475A6 ;
-    p:P118 wds:Q682-13ABD5C8-D3ED-527D-B2EF-4FC854C28F3B ;
-    p:P119 wds:Q682-A71942DF-1262-58B1-9E61-9B5277C85E9C ;
-    p:P122 wds:Q682-4E50D63E-B823-5C95-999E-E727EE32BDA4,
-        wds:Q682-E9222A8C-EE22-509E-B3FE-EECC43DBB194 ;
-    p:P123 wds:Q682-35363F49-053B-523C-9A5E-F2E235218242 ;
-    p:P125 wds:Q682-9596FB71-E3A6-5D16-995A-0070C1AC02E1 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q683 ;
-    wdt:P114 "10.1007/s10816-023-09611-y" ;
-    wdt:P115 <https://open-archaeo.info/post/zooarchmixmod/> ;
-    wdt:P116 "zooarchmixmod" ;
-    wdt:P117 wd:Q175 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ZooarchMixMod"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/wolfhagenj/ZooarchMixMod> .
+    chbp:P2 chbs:Q682-C78C438F-18C1-5322-98BB-2C0A38ABD8CE,
+        chbs:Q682-F80E3164-AD92-5CB5-AD6E-3CF0AFDCF44A ;
+    chbp:P106 chbs:Q682-9E94E9E7-9B09-5A4F-A3F7-698CA53B9D32 ;
+    chbp:P113 chbs:Q682-09395B6D-34E5-5E15-9260-449FEDE9E85B ;
+    chbp:P114 chbs:Q682-575F6B26-0A97-5924-A916-00D2C55843F4 ;
+    chbp:P115 chbs:Q682-A15C4952-B1CF-57B1-A668-DEFECDE46FC4 ;
+    chbp:P116 chbs:Q682-8DD1CC87-774C-525F-BAD7-78FADB21F9D0 ;
+    chbp:P117 chbs:Q682-44F54BF9-0D33-5890-A628-5880FB2475A6 ;
+    chbp:P118 chbs:Q682-13ABD5C8-D3ED-527D-B2EF-4FC854C28F3B ;
+    chbp:P119 chbs:Q682-A71942DF-1262-58B1-9E61-9B5277C85E9C ;
+    chbp:P122 chbs:Q682-4E50D63E-B823-5C95-999E-E727EE32BDA4,
+        chbs:Q682-E9222A8C-EE22-509E-B3FE-EECC43DBB194 ;
+    chbp:P123 chbs:Q682-35363F49-053B-523C-9A5E-F2E235218242 ;
+    chbp:P125 chbs:Q682-9596FB71-E3A6-5D16-995A-0070C1AC02E1 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q683 ;
+    chbt:P114 "10.1007/s10816-023-09611-y" ;
+    chbt:P115 <https://open-archaeo.info/post/zooarchmixmod/> ;
+    chbt:P116 "zooarchmixmod" ;
+    chbt:P117 chb:Q175 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ZooarchMixMod"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/wolfhagenj/ZooarchMixMod> .
 
-wds:Q682-4E50D63E-B823-5C95-999E-E727EE32BDA4
+chbs:Q682-4E50D63E-B823-5C95-999E-E727EE32BDA4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q682-8DD1CC87-774C-525F-BAD7-78FADB21F9D0
+chbs:Q682-8DD1CC87-774C-525F-BAD7-78FADB21F9D0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "zooarchmixmod" .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "zooarchmixmod" .
 
-wds:Q682-9E94E9E7-9B09-5A4F-A3F7-698CA53B9D32
+chbs:Q682-9E94E9E7-9B09-5A4F-A3F7-698CA53B9D32
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q682-13ABD5C8-D3ED-527D-B2EF-4FC854C28F3B
+chbs:Q682-13ABD5C8-D3ED-527D-B2EF-4FC854C28F3B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q682-44F54BF9-0D33-5890-A628-5880FB2475A6
+chbs:Q682-44F54BF9-0D33-5890-A628-5880FB2475A6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P117 wd:Q175 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P117 chb:Q175 .
 
-wds:Q682-575F6B26-0A97-5924-A916-00D2C55843F4
+chbs:Q682-575F6B26-0A97-5924-A916-00D2C55843F4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P114 "10.1007/s10816-023-09611-y" .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P114 "10.1007/s10816-023-09611-y" .
 
-wds:Q682-09395B6D-34E5-5E15-9260-449FEDE9E85B
+chbs:Q682-09395B6D-34E5-5E15-9260-449FEDE9E85B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q683 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q683 .
 
-wds:Q682-9596FB71-E3A6-5D16-995A-0070C1AC02E1
+chbs:Q682-9596FB71-E3A6-5D16-995A-0070C1AC02E1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/wolfhagenj/ZooarchMixMod> .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/wolfhagenj/ZooarchMixMod> .
 
-wds:Q682-35363F49-053B-523C-9A5E-F2E235218242
+chbs:Q682-35363F49-053B-523C-9A5E-F2E235218242
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q682-A15C4952-B1CF-57B1-A668-DEFECDE46FC4
+chbs:Q682-A15C4952-B1CF-57B1-A668-DEFECDE46FC4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P115 <https://open-archaeo.info/post/zooarchmixmod/> .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P115 <https://open-archaeo.info/post/zooarchmixmod/> .
 
-wds:Q682-A71942DF-1262-58B1-9E61-9B5277C85E9C
+chbs:Q682-A71942DF-1262-58B1-9E61-9B5277C85E9C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P119 "ZooarchMixMod"@en .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P119 "ZooarchMixMod"@en .
 
-wds:Q682-C78C438F-18C1-5322-98BB-2C0A38ABD8CE
+chbs:Q682-C78C438F-18C1-5322-98BB-2C0A38ABD8CE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q682-E9222A8C-EE22-509E-B3FE-EECC43DBB194
+chbs:Q682-E9222A8C-EE22-509E-B3FE-EECC43DBB194
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q682-F80E3164-AD92-5CB5-AD6E-3CF0AFDCF44A
+chbs:Q682-F80E3164-AD92-5CB5-AD6E-3CF0AFDCF44A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7 ;
+    chbps:P2 chb:Q106 .
 
-wdref:65e1b792edf1d07e0f392e0a0ac41743a80268e7
+chbref:65e1b792edf1d07e0f392e0a0ac41743a80268e7
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/zooarchmixmod/> .
+    chbpr:P6 <https://open-archaeo.info/post/zooarchmixmod/> .

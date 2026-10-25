@@ -3,10 +3,13 @@ title: chublets.software Wikibase (model demo)
 description: The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and about 100 software entries imported from open-archaeo.
 # Where docs/ is published; the RDF export needs it for the download URLs of its DCAT distributions.
 pages_url: https://n4o-rse.github.io/chublets-wikibase-demo/
-# Base of the entity URIs in the RDF export (wd:, wdt:, ...). This demo has its own numbers from 100 on, which the real
+# Base of the entity URIs in the RDF export. This demo has its own numbers from 100 on, which the real
 # Wikibase (https://chublets-wikibase.de) will not repeat, so it does not borrow that address. A w3id prefix is open
 # (PRIMER.md, A6).
 rdf_base: https://n4o-rse.github.io/chublets-wikibase-demo
+# The prefix names of the export: chb:, chbt:, chbp:, ... and not wd:, wdt:, p:, ..., which are those of Wikidata and would make
+# chb:Q933 look like an item there (wikibase-static 0.18.0, PRIMER.md A4 "RDF, Präfixe").
+rdf_prefix: chb
 edit_url: https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv
 languages:
   default: en

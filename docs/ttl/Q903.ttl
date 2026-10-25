@@ -1,53 +1,54 @@
 # Q903: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q903
+chbdata:Q903.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "JSDNE is an age estimation methods with 3D reconstructed auricular surface."@en ;
     dcterms:identifier "Q903" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q903 ;
+    dcterms:subject chb:Q903 ;
     dcterms:title "cran-JSDNE"@en ;
-    schema:about wd:Q903 ;
-    dcat:distribution dist:Q903-html,
-        dist:Q903-json,
-        dist:Q903-ttl ;
+    schema:about chb:Q903 ;
+    dcat:distribution chbdist:Q903-html,
+        chbdist:Q903-json,
+        chbdist:Q903-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q903.html> .
 
-dist:Q903-html
+chbdist:Q903-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q903-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q903.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q903-json
+chbdist:Q903-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q903-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q903.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q903-ttl
+chbdist:Q903-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q903, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q903.ttl> ;
+    dcat:downloadURL chbdata:Q903.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q903
+chb:Q903
     a wikibase:Item ;
     schema:description "JSDNE is an age estimation methods with 3D reconstructed auricular surface."@en ;
     schema:name "cran-JSDNE"@en ;
@@ -80,145 +81,145 @@ wd:Q903
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "cran-JSDNE"@en ;
     skos:prefLabel "cran-JSDNE"@en ;
-    p:P2 wds:Q903-42998E20-B3CE-5239-B659-231F75DE8054,
-        wds:Q903-E1D319CA-E8E7-5F37-A008-D08B02C97D8D ;
-    p:P106 wds:Q903-388607D4-CD0F-5488-AE01-319353DDFE77 ;
-    p:P108 wds:Q903-61069E20-71C1-5557-ADD1-7DF9FF1C5DE9 ;
-    p:P111 wds:Q903-2BF50352-C700-589C-B5C7-CEC64FA5CF0A ;
-    p:P113 wds:Q903-76B72B0D-1D81-524F-8EA1-01A8CBC2C680 ;
-    p:P115 wds:Q903-E3A816B1-2868-5BC6-B0F0-AA92A4663E4A ;
-    p:P116 wds:Q903-B4C6620D-0938-5240-BB91-85FA873B13AE ;
-    p:P117 wds:Q903-BCC26063-1B7A-5C12-AAD0-A35821AD40D8 ;
-    p:P118 wds:Q903-CE2EEC87-0BFB-5988-904A-AF82E5CB34AF ;
-    p:P119 wds:Q903-484196FA-17B3-547E-9334-92671E4A924A ;
-    p:P122 wds:Q903-5AE5EC3F-CEB3-5632-9FCC-E06D91D348B6,
-        wds:Q903-58709C32-0812-5D07-BFAD-87619E503D4B ;
-    p:P123 wds:Q903-7328670F-9BD5-50CF-8F01-E564DF064809 ;
-    p:P125 wds:Q903-C698AFE8-16A3-50F7-99E7-33EDD5E1A99D ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "JSDNE" ;
-    wdt:P111 wd:Q905 ;
-    wdt:P113 wd:Q904 ;
-    wdt:P115 <https://open-archaeo.info/post/cran-jsdne/> ;
-    wdt:P116 "cran-jsdne" ;
-    wdt:P117 wd:Q228 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "cran-JSDNE"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/jisunjang19/cran-JSDNE> .
+    chbp:P2 chbs:Q903-42998E20-B3CE-5239-B659-231F75DE8054,
+        chbs:Q903-E1D319CA-E8E7-5F37-A008-D08B02C97D8D ;
+    chbp:P106 chbs:Q903-388607D4-CD0F-5488-AE01-319353DDFE77 ;
+    chbp:P108 chbs:Q903-61069E20-71C1-5557-ADD1-7DF9FF1C5DE9 ;
+    chbp:P111 chbs:Q903-2BF50352-C700-589C-B5C7-CEC64FA5CF0A ;
+    chbp:P113 chbs:Q903-76B72B0D-1D81-524F-8EA1-01A8CBC2C680 ;
+    chbp:P115 chbs:Q903-E3A816B1-2868-5BC6-B0F0-AA92A4663E4A ;
+    chbp:P116 chbs:Q903-B4C6620D-0938-5240-BB91-85FA873B13AE ;
+    chbp:P117 chbs:Q903-BCC26063-1B7A-5C12-AAD0-A35821AD40D8 ;
+    chbp:P118 chbs:Q903-CE2EEC87-0BFB-5988-904A-AF82E5CB34AF ;
+    chbp:P119 chbs:Q903-484196FA-17B3-547E-9334-92671E4A924A ;
+    chbp:P122 chbs:Q903-5AE5EC3F-CEB3-5632-9FCC-E06D91D348B6,
+        chbs:Q903-58709C32-0812-5D07-BFAD-87619E503D4B ;
+    chbp:P123 chbs:Q903-7328670F-9BD5-50CF-8F01-E564DF064809 ;
+    chbp:P125 chbs:Q903-C698AFE8-16A3-50F7-99E7-33EDD5E1A99D ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "JSDNE" ;
+    chbt:P111 chb:Q905 ;
+    chbt:P113 chb:Q904 ;
+    chbt:P115 <https://open-archaeo.info/post/cran-jsdne/> ;
+    chbt:P116 "cran-jsdne" ;
+    chbt:P117 chb:Q228 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "cran-JSDNE"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/jisunjang19/cran-JSDNE> .
 
-wds:Q903-2BF50352-C700-589C-B5C7-CEC64FA5CF0A
+chbs:Q903-2BF50352-C700-589C-B5C7-CEC64FA5CF0A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P111 wd:Q905 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P111 chb:Q905 .
 
-wds:Q903-5AE5EC3F-CEB3-5632-9FCC-E06D91D348B6
+chbs:Q903-5AE5EC3F-CEB3-5632-9FCC-E06D91D348B6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P122 chb:Q110 .
 
-wds:Q903-76B72B0D-1D81-524F-8EA1-01A8CBC2C680
+chbs:Q903-76B72B0D-1D81-524F-8EA1-01A8CBC2C680
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q904 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q904 .
 
-wds:Q903-42998E20-B3CE-5239-B659-231F75DE8054
+chbs:Q903-42998E20-B3CE-5239-B659-231F75DE8054
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P2 chb:Q106 .
 
-wds:Q903-58709C32-0812-5D07-BFAD-87619E503D4B
+chbs:Q903-58709C32-0812-5D07-BFAD-87619E503D4B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P122 chb:Q109 .
 
-wds:Q903-61069E20-71C1-5557-ADD1-7DF9FF1C5DE9
+chbs:Q903-61069E20-71C1-5557-ADD1-7DF9FF1C5DE9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P108 "JSDNE" .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P108 "JSDNE" .
 
-wds:Q903-388607D4-CD0F-5488-AE01-319353DDFE77
+chbs:Q903-388607D4-CD0F-5488-AE01-319353DDFE77
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P106 chb:Q110 .
 
-wds:Q903-484196FA-17B3-547E-9334-92671E4A924A
+chbs:Q903-484196FA-17B3-547E-9334-92671E4A924A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P119 "cran-JSDNE"@en .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P119 "cran-JSDNE"@en .
 
-wds:Q903-7328670F-9BD5-50CF-8F01-E564DF064809
+chbs:Q903-7328670F-9BD5-50CF-8F01-E564DF064809
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P123 chb:Q111 .
 
-wds:Q903-B4C6620D-0938-5240-BB91-85FA873B13AE
+chbs:Q903-B4C6620D-0938-5240-BB91-85FA873B13AE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "cran-jsdne" .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "cran-jsdne" .
 
-wds:Q903-BCC26063-1B7A-5C12-AAD0-A35821AD40D8
+chbs:Q903-BCC26063-1B7A-5C12-AAD0-A35821AD40D8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P117 wd:Q228 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P117 chb:Q228 .
 
-wds:Q903-C698AFE8-16A3-50F7-99E7-33EDD5E1A99D
+chbs:Q903-C698AFE8-16A3-50F7-99E7-33EDD5E1A99D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/jisunjang19/cran-JSDNE> .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/jisunjang19/cran-JSDNE> .
 
-wds:Q903-CE2EEC87-0BFB-5988-904A-AF82E5CB34AF
+chbs:Q903-CE2EEC87-0BFB-5988-904A-AF82E5CB34AF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P118 chb:Q108 .
 
-wds:Q903-E1D319CA-E8E7-5F37-A008-D08B02C97D8D
+chbs:Q903-E1D319CA-E8E7-5F37-A008-D08B02C97D8D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P2 chb:Q103 .
 
-wds:Q903-E3A816B1-2868-5BC6-B0F0-AA92A4663E4A
+chbs:Q903-E3A816B1-2868-5BC6-B0F0-AA92A4663E4A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
-    ps:P115 <https://open-archaeo.info/post/cran-jsdne/> .
+    prov:wasDerivedFrom chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c ;
+    chbps:P115 <https://open-archaeo.info/post/cran-jsdne/> .
 
-wdref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c
+chbref:f9e2e8e4d4a80dfff868f5168f1428ba53ffe84c
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/cran-jsdne/> .
+    chbpr:P6 <https://open-archaeo.info/post/cran-jsdne/> .

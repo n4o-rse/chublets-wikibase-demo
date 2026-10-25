@@ -1,53 +1,54 @@
 # Q853: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q853
+chbdata:Q853.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Ternary plots made simple."@en ;
     dcterms:identifier "Q853" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q853 ;
+    dcterms:subject chb:Q853 ;
     dcterms:title "isopleuros"@en ;
-    schema:about wd:Q853 ;
-    dcat:distribution dist:Q853-html,
-        dist:Q853-json,
-        dist:Q853-ttl ;
+    schema:about chb:Q853 ;
+    dcat:distribution chbdist:Q853-html,
+        chbdist:Q853-json,
+        chbdist:Q853-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q853.html> .
 
-dist:Q853-html
+chbdist:Q853-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q853-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q853.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q853-json
+chbdist:Q853-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q853-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q853.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q853-ttl
+chbdist:Q853-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q853, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q853.ttl> ;
+    dcat:downloadURL chbdata:Q853.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q853
+chb:Q853
     a wikibase:Item ;
     schema:description "Ternary plots made simple."@en ;
     schema:name "isopleuros"@en ;
@@ -80,154 +81,154 @@ wd:Q853
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "isopleuros"@en ;
     skos:prefLabel "isopleuros"@en ;
-    p:P2 wds:Q853-3ACAB258-85D2-58FE-8C3E-A0F4B81D4A15,
-        wds:Q853-829D5FC8-B82E-549A-B0F1-4F49169F6B0C ;
-    p:P106 wds:Q853-AFB5D008-FB33-5396-ADEA-387979BFF378 ;
-    p:P108 wds:Q853-03BEAD9B-E5C9-517C-9579-A51F3647955B ;
-    p:P113 wds:Q853-1C9841D0-6A4F-52A6-97F3-C8BC61F537E6 ;
-    p:P114 wds:Q853-B620B983-6699-5367-9069-08D7C5F39325 ;
-    p:P115 wds:Q853-9B70C39C-997E-540F-93EF-F2AB054539DA ;
-    p:P116 wds:Q853-848663FD-6F88-5D65-9269-BF9D1B7CD8BB ;
-    p:P117 wds:Q853-8787B060-392A-57D8-8562-CE586E9DDBC5 ;
-    p:P118 wds:Q853-6AFE1DC5-2FFD-53C6-9599-D778ED9750B7 ;
-    p:P119 wds:Q853-6C6AE92B-2FC4-58CA-921B-A4F452FF1D21 ;
-    p:P120 wds:Q853-A98893ED-7716-57A3-9774-CBAB1618E434 ;
-    p:P122 wds:Q853-1B7724B9-69B3-521C-9A21-057F10386C2F,
-        wds:Q853-5CF028E5-3B96-5EA7-95BF-DA5CFC85FAAB ;
-    p:P123 wds:Q853-CA9D4E03-F5BB-5AAB-8471-12D61365AB74 ;
-    p:P125 wds:Q853-A044C073-8FDE-5718-B2C2-75000A93ADFD ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "isopleuros" ;
-    wdt:P113 wd:Q231 ;
-    wdt:P114 "10.5281/zenodo.7940389" ;
-    wdt:P115 <https://open-archaeo.info/post/isopleuros/> ;
-    wdt:P116 "isopleuros" ;
-    wdt:P117 wd:Q154 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "isopleuros"@en ;
-    wdt:P120 <https://packages.tesselle.org/isopleuros/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://codeberg.org/tesselle/isopleuros> .
+    chbp:P2 chbs:Q853-3ACAB258-85D2-58FE-8C3E-A0F4B81D4A15,
+        chbs:Q853-829D5FC8-B82E-549A-B0F1-4F49169F6B0C ;
+    chbp:P106 chbs:Q853-AFB5D008-FB33-5396-ADEA-387979BFF378 ;
+    chbp:P108 chbs:Q853-03BEAD9B-E5C9-517C-9579-A51F3647955B ;
+    chbp:P113 chbs:Q853-1C9841D0-6A4F-52A6-97F3-C8BC61F537E6 ;
+    chbp:P114 chbs:Q853-B620B983-6699-5367-9069-08D7C5F39325 ;
+    chbp:P115 chbs:Q853-9B70C39C-997E-540F-93EF-F2AB054539DA ;
+    chbp:P116 chbs:Q853-848663FD-6F88-5D65-9269-BF9D1B7CD8BB ;
+    chbp:P117 chbs:Q853-8787B060-392A-57D8-8562-CE586E9DDBC5 ;
+    chbp:P118 chbs:Q853-6AFE1DC5-2FFD-53C6-9599-D778ED9750B7 ;
+    chbp:P119 chbs:Q853-6C6AE92B-2FC4-58CA-921B-A4F452FF1D21 ;
+    chbp:P120 chbs:Q853-A98893ED-7716-57A3-9774-CBAB1618E434 ;
+    chbp:P122 chbs:Q853-1B7724B9-69B3-521C-9A21-057F10386C2F,
+        chbs:Q853-5CF028E5-3B96-5EA7-95BF-DA5CFC85FAAB ;
+    chbp:P123 chbs:Q853-CA9D4E03-F5BB-5AAB-8471-12D61365AB74 ;
+    chbp:P125 chbs:Q853-A044C073-8FDE-5718-B2C2-75000A93ADFD ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "isopleuros" ;
+    chbt:P113 chb:Q231 ;
+    chbt:P114 "10.5281/zenodo.7940389" ;
+    chbt:P115 <https://open-archaeo.info/post/isopleuros/> ;
+    chbt:P116 "isopleuros" ;
+    chbt:P117 chb:Q154 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "isopleuros"@en ;
+    chbt:P120 <https://packages.tesselle.org/isopleuros/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://codeberg.org/tesselle/isopleuros> .
 
-wds:Q853-1B7724B9-69B3-521C-9A21-057F10386C2F
+chbs:Q853-1B7724B9-69B3-521C-9A21-057F10386C2F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P122 chb:Q109 .
 
-wds:Q853-1C9841D0-6A4F-52A6-97F3-C8BC61F537E6
+chbs:Q853-1C9841D0-6A4F-52A6-97F3-C8BC61F537E6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q231 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q231 .
 
-wds:Q853-3ACAB258-85D2-58FE-8C3E-A0F4B81D4A15
+chbs:Q853-3ACAB258-85D2-58FE-8C3E-A0F4B81D4A15
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P2 chb:Q103 .
 
-wds:Q853-03BEAD9B-E5C9-517C-9579-A51F3647955B
+chbs:Q853-03BEAD9B-E5C9-517C-9579-A51F3647955B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P108 "isopleuros" .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P108 "isopleuros" .
 
-wds:Q853-5CF028E5-3B96-5EA7-95BF-DA5CFC85FAAB
+chbs:Q853-5CF028E5-3B96-5EA7-95BF-DA5CFC85FAAB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P122 chb:Q110 .
 
-wds:Q853-6AFE1DC5-2FFD-53C6-9599-D778ED9750B7
+chbs:Q853-6AFE1DC5-2FFD-53C6-9599-D778ED9750B7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P118 chb:Q108 .
 
-wds:Q853-6C6AE92B-2FC4-58CA-921B-A4F452FF1D21
+chbs:Q853-6C6AE92B-2FC4-58CA-921B-A4F452FF1D21
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P119 "isopleuros"@en .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P119 "isopleuros"@en .
 
-wds:Q853-9B70C39C-997E-540F-93EF-F2AB054539DA
+chbs:Q853-9B70C39C-997E-540F-93EF-F2AB054539DA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P115 <https://open-archaeo.info/post/isopleuros/> .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P115 <https://open-archaeo.info/post/isopleuros/> .
 
-wds:Q853-829D5FC8-B82E-549A-B0F1-4F49169F6B0C
+chbs:Q853-829D5FC8-B82E-549A-B0F1-4F49169F6B0C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P2 chb:Q106 .
 
-wds:Q853-8787B060-392A-57D8-8562-CE586E9DDBC5
+chbs:Q853-8787B060-392A-57D8-8562-CE586E9DDBC5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P117 wd:Q154 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P117 chb:Q154 .
 
-wds:Q853-848663FD-6F88-5D65-9269-BF9D1B7CD8BB
+chbs:Q853-848663FD-6F88-5D65-9269-BF9D1B7CD8BB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "isopleuros" .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "isopleuros" .
 
-wds:Q853-A044C073-8FDE-5718-B2C2-75000A93ADFD
+chbs:Q853-A044C073-8FDE-5718-B2C2-75000A93ADFD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://codeberg.org/tesselle/isopleuros> .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://codeberg.org/tesselle/isopleuros> .
 
-wds:Q853-A98893ED-7716-57A3-9774-CBAB1618E434
+chbs:Q853-A98893ED-7716-57A3-9774-CBAB1618E434
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P120 <https://packages.tesselle.org/isopleuros/> .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P120 <https://packages.tesselle.org/isopleuros/> .
 
-wds:Q853-AFB5D008-FB33-5396-ADEA-387979BFF378
+chbs:Q853-AFB5D008-FB33-5396-ADEA-387979BFF378
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P106 chb:Q110 .
 
-wds:Q853-B620B983-6699-5367-9069-08D7C5F39325
+chbs:Q853-B620B983-6699-5367-9069-08D7C5F39325
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P114 "10.5281/zenodo.7940389" .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P114 "10.5281/zenodo.7940389" .
 
-wds:Q853-CA9D4E03-F5BB-5AAB-8471-12D61365AB74
+chbs:Q853-CA9D4E03-F5BB-5AAB-8471-12D61365AB74
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e ;
+    chbps:P123 chb:Q111 .
 
-wdref:a542c52020cfa3cd8c0950c8764b66d72b05f21e
+chbref:a542c52020cfa3cd8c0950c8764b66d72b05f21e
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/isopleuros/> .
+    chbpr:P6 <https://open-archaeo.info/post/isopleuros/> .

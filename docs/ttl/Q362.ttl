@@ -1,53 +1,54 @@
 # Q362: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q362
+chbdata:Q362.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "text mining tools to search archaeological reports"@en ;
     dcterms:identifier "Q362" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q362 ;
+    dcterms:subject chb:Q362 ;
     dcterms:title "Text mining minion"@en ;
-    schema:about wd:Q362 ;
-    dcat:distribution dist:Q362-html,
-        dist:Q362-json,
-        dist:Q362-ttl ;
+    schema:about chb:Q362 ;
+    dcat:distribution chbdist:Q362-html,
+        chbdist:Q362-json,
+        chbdist:Q362-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q362.html> .
 
-dist:Q362-html
+chbdist:Q362-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q362-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q362.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q362-json
+chbdist:Q362-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q362-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q362.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q362-ttl
+chbdist:Q362-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q362, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q362.ttl> ;
+    dcat:downloadURL chbdata:Q362.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q362
+chb:Q362
     a wikibase:Item ;
     schema:description "text mining tools to search archaeological reports"@en ;
     schema:name "Text mining minion"@en ;
@@ -80,109 +81,109 @@ wd:Q362
     wikibase:statements "7"^^xsd:integer ;
     rdfs:label "Text mining minion"@en ;
     skos:prefLabel "Text mining minion"@en ;
-    p:P2 wds:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC,
-        wds:Q362-88508FDC-DD87-547F-9A89-8CD5D1CBCFAE,
-        wds:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B ;
-    p:P4 wds:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E ;
-    p:P125 wds:Q362-B81B637D-4146-519A-A207-2725C56D4039 ;
-    p:P148 wds:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37 ;
-    p:P171 wds:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB ;
-    wdt:P2 wd:Q100,
-        wd:Q105,
-        wd:Q106 ;
-    wdt:P4 "Q74824570" ;
-    wdt:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> ;
-    wdt:P148 "1.0" ;
-    wdt:P171 wd:Q380 .
+    chbp:P2 chbs:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC,
+        chbs:Q362-88508FDC-DD87-547F-9A89-8CD5D1CBCFAE,
+        chbs:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B ;
+    chbp:P4 chbs:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E ;
+    chbp:P125 chbs:Q362-B81B637D-4146-519A-A207-2725C56D4039 ;
+    chbp:P148 chbs:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37 ;
+    chbp:P171 chbs:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB ;
+    chbt:P2 chb:Q100,
+        chb:Q105,
+        chb:Q106 ;
+    chbt:P4 "Q74824570" ;
+    chbt:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> ;
+    chbt:P148 "1.0" ;
+    chbt:P171 chb:Q380 .
 
-wds:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E
+chbs:Q362-5369D4B3-27D5-5EBC-B29D-A115F07CBB0E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:43e5506c3377bce7424b765fb5c89d60ace51787 ;
-    ps:P4 "Q74824570" .
+    prov:wasDerivedFrom chbref:43e5506c3377bce7424b765fb5c89d60ace51787 ;
+    chbps:P4 "Q74824570" .
 
-wds:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC
+chbs:Q362-40969BC5-D30A-5743-BDDD-B3EB5C1111FC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
-    ps:P2 wd:Q100 .
+    prov:wasDerivedFrom chbref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    chbps:P2 chb:Q100 .
 
-wds:Q362-88508FDC-DD87-547F-9A89-8CD5D1CBCFAE
+chbs:Q362-88508FDC-DD87-547F-9A89-8CD5D1CBCFAE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q106 .
+    chbps:P2 chb:Q106 .
 
-wds:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B
+chbs:Q362-AC240B18-A5F1-5D33-BE1F-5CB7B7251D8B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
-    ps:P2 wd:Q105 .
+    prov:wasDerivedFrom chbref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    chbps:P2 chb:Q105 .
 
-wds:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB
+chbs:Q362-AEB3C969-4F21-5150-B504-59B31BD666AB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
-    ps:P171 wd:Q380 .
+    prov:wasDerivedFrom chbref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    chbps:P171 chb:Q380 .
 
-wds:Q362-B81B637D-4146-519A-A207-2725C56D4039
+chbs:Q362-B81B637D-4146-519A-A207-2725C56D4039
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
-    pq:P126 wd:Q114 ;
-    pq:P248 wd:Q363 ;
-    ps:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> .
+    prov:wasDerivedFrom chbref:46a492107246cf6a8c796783f58c8d659ef1f854 ;
+    chbpq:P126 chb:Q114 ;
+    chbpq:P248 chb:Q363 ;
+    chbps:P125 <https://github.com/RonaldVisser/Mining_Archaeological_Reports> .
 
-wds:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37
+chbs:Q362-E6CC20D0-8CEB-55BC-957B-7C5E0A4E8E37
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:PreferredRank ;
-    prov:wasDerivedFrom wdref:46a492107246cf6a8c796783f58c8d659ef1f854,
-        wdref:d12d7ac994d818a41de46548a1a7f2407cf030be ;
-    pq:P144 "2022-10-07T00:00:00Z"^^xsd:dateTime ;
-    pqv:P144 wdv:c04837e4f3f9cf76d9d7e6fb1293eb95 ;
-    ps:P148 "1.0" .
+    prov:wasDerivedFrom chbref:46a492107246cf6a8c796783f58c8d659ef1f854,
+        chbref:d12d7ac994d818a41de46548a1a7f2407cf030be ;
+    chbpq:P144 "2022-10-07T00:00:00Z"^^xsd:dateTime ;
+    chbpqv:P144 chbv:c04837e4f3f9cf76d9d7e6fb1293eb95 ;
+    chbps:P148 "1.0" .
 
-wdref:43e5506c3377bce7424b765fb5c89d60ace51787
+chbref:43e5506c3377bce7424b765fb5c89d60ace51787
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q74824570> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q74824570> .
 
-wdref:46a492107246cf6a8c796783f58c8d659ef1f854
+chbref:46a492107246cf6a8c796783f58c8d659ef1f854
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q74824570> ;
-    pr:P7 "2024-11-30T00:00:00Z"^^xsd:dateTime ;
-    pr:P8 wd:Q364 ;
-    prv:P7 wdv:c28a6b123bb7449aa4bf17d56643e781 .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q74824570> ;
+    chbpr:P7 "2024-11-30T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P8 chb:Q364 ;
+    chbprv:P7 chbv:c28a6b123bb7449aa4bf17d56643e781 .
 
-wdref:d12d7ac994d818a41de46548a1a7f2407cf030be
+chbref:d12d7ac994d818a41de46548a1a7f2407cf030be
     a wikibase:Reference ;
-    pr:P6 <https://github.com/RonaldVisser/Mining_Archaeological_Reports/releases/tag/V1.0> ;
-    pr:P7 "2022-10-24T00:00:00Z"^^xsd:dateTime ;
-    pr:P144 "2022-10-07T00:00:00Z"^^xsd:dateTime ;
-    pr:P247 "Release 1.0"@en ;
-    prv:P7 wdv:37ff8b7ddeb5fcbacde9dd670ba47410 ;
-    prv:P144 wdv:c04837e4f3f9cf76d9d7e6fb1293eb95 .
+    chbpr:P6 <https://github.com/RonaldVisser/Mining_Archaeological_Reports/releases/tag/V1.0> ;
+    chbpr:P7 "2022-10-24T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P144 "2022-10-07T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P247 "Release 1.0"@en ;
+    chbprv:P7 chbv:37ff8b7ddeb5fcbacde9dd670ba47410 ;
+    chbprv:P144 chbv:c04837e4f3f9cf76d9d7e6fb1293eb95 .
 
-wdv:37ff8b7ddeb5fcbacde9dd670ba47410
+chbv:37ff8b7ddeb5fcbacde9dd670ba47410
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2022-10-24T00:00:00Z"^^xsd:dateTime .
 
-wdv:c28a6b123bb7449aa4bf17d56643e781
+chbv:c28a6b123bb7449aa4bf17d56643e781
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2024-11-30T00:00:00Z"^^xsd:dateTime .
 
-wdv:c04837e4f3f9cf76d9d7e6fb1293eb95
+chbv:c04837e4f3f9cf76d9d7e6fb1293eb95
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

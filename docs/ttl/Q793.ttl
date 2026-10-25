@@ -1,53 +1,54 @@
 # Q793: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q793
+chbdata:Q793.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An R package that provides functions for 3D tessellation with Voro++ and subsequent horizontal cutting of the resulting polygons for 2D plotting. It was developed for archaeological spatiotemporal data, but may as well be used for other three dimensional contexts."@en ;
     dcterms:identifier "Q793" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q793 ;
+    dcterms:subject chb:Q793 ;
     dcterms:title "bleiglas"@en ;
-    schema:about wd:Q793 ;
-    dcat:distribution dist:Q793-html,
-        dist:Q793-json,
-        dist:Q793-ttl ;
+    schema:about chb:Q793 ;
+    dcat:distribution chbdist:Q793-html,
+        chbdist:Q793-json,
+        chbdist:Q793-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q793.html> .
 
-dist:Q793-html
+chbdist:Q793-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q793-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q793.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q793-json
+chbdist:Q793-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q793-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q793.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q793-ttl
+chbdist:Q793-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q793, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q793.ttl> ;
+    dcat:downloadURL chbdata:Q793.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q793
+chb:Q793
     a wikibase:Item ;
     schema:description "An R package that provides functions for 3D tessellation with Voro++ and subsequent horizontal cutting of the resulting polygons for 2D plotting. It was developed for archaeological spatiotemporal data, but may as well be used for other three dimensional contexts."@en ;
     schema:name "bleiglas"@en ;
@@ -80,163 +81,163 @@ wd:Q793
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "bleiglas"@en ;
     skos:prefLabel "bleiglas"@en ;
-    p:P2 wds:Q793-318BAD14-A5D3-52A2-80A4-D8B5A6A36DF7,
-        wds:Q793-B19ABD69-47E6-5C4F-B929-D3865408359C ;
-    p:P106 wds:Q793-2875C7C6-F11C-5723-9A93-8F89B02F5E32 ;
-    p:P111 wds:Q793-87D4F2EC-8895-51C3-A132-64850F7862DF ;
-    p:P113 wds:Q793-D10BC968-30EB-5FAB-A0F7-5DF5EC038A7A,
-        wds:Q793-E4AC3E73-CB0C-5EA4-9901-B5CC22E73577 ;
-    p:P115 wds:Q793-0123FCE3-8825-59A1-9987-2787EE9A2FFB ;
-    p:P116 wds:Q793-10C5B4AD-4A98-51C6-BC42-EB7BDEDC9F7F ;
-    p:P117 wds:Q793-3F20D176-B2FA-585F-99CA-DE5FEBA9777A,
-        wds:Q793-3050B195-E286-508D-8DDA-8AD34C1DAF76 ;
-    p:P118 wds:Q793-B586556E-B598-5FBF-9AC3-4154A4384AFE ;
-    p:P119 wds:Q793-69EBF5B6-7D62-5AF4-8EA2-868E63F78C6A ;
-    p:P122 wds:Q793-3490E9EB-1A75-5D5F-B494-1CA3517CAB11,
-        wds:Q793-CB4192E8-EF15-546E-9E4D-BE4FDD361FEB ;
-    p:P123 wds:Q793-ABAE0CA6-AE99-5CC3-ABC4-EDCEFD23C068 ;
-    p:P125 wds:Q793-FDAE3553-04D6-574F-BDC2-4D042ED410AD ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P111 wd:Q795 ;
-    wdt:P113 wd:Q311,
-        wd:Q794 ;
-    wdt:P115 <https://open-archaeo.info/post/bleiglas/> ;
-    wdt:P116 "bleiglas" ;
-    wdt:P117 wd:Q119,
-        wd:Q204 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "bleiglas"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/nevrome/bleiglas> .
+    chbp:P2 chbs:Q793-318BAD14-A5D3-52A2-80A4-D8B5A6A36DF7,
+        chbs:Q793-B19ABD69-47E6-5C4F-B929-D3865408359C ;
+    chbp:P106 chbs:Q793-2875C7C6-F11C-5723-9A93-8F89B02F5E32 ;
+    chbp:P111 chbs:Q793-87D4F2EC-8895-51C3-A132-64850F7862DF ;
+    chbp:P113 chbs:Q793-D10BC968-30EB-5FAB-A0F7-5DF5EC038A7A,
+        chbs:Q793-E4AC3E73-CB0C-5EA4-9901-B5CC22E73577 ;
+    chbp:P115 chbs:Q793-0123FCE3-8825-59A1-9987-2787EE9A2FFB ;
+    chbp:P116 chbs:Q793-10C5B4AD-4A98-51C6-BC42-EB7BDEDC9F7F ;
+    chbp:P117 chbs:Q793-3F20D176-B2FA-585F-99CA-DE5FEBA9777A,
+        chbs:Q793-3050B195-E286-508D-8DDA-8AD34C1DAF76 ;
+    chbp:P118 chbs:Q793-B586556E-B598-5FBF-9AC3-4154A4384AFE ;
+    chbp:P119 chbs:Q793-69EBF5B6-7D62-5AF4-8EA2-868E63F78C6A ;
+    chbp:P122 chbs:Q793-3490E9EB-1A75-5D5F-B494-1CA3517CAB11,
+        chbs:Q793-CB4192E8-EF15-546E-9E4D-BE4FDD361FEB ;
+    chbp:P123 chbs:Q793-ABAE0CA6-AE99-5CC3-ABC4-EDCEFD23C068 ;
+    chbp:P125 chbs:Q793-FDAE3553-04D6-574F-BDC2-4D042ED410AD ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P111 chb:Q795 ;
+    chbt:P113 chb:Q311,
+        chb:Q794 ;
+    chbt:P115 <https://open-archaeo.info/post/bleiglas/> ;
+    chbt:P116 "bleiglas" ;
+    chbt:P117 chb:Q119,
+        chb:Q204 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "bleiglas"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/nevrome/bleiglas> .
 
-wds:Q793-3F20D176-B2FA-585F-99CA-DE5FEBA9777A
+chbs:Q793-3F20D176-B2FA-585F-99CA-DE5FEBA9777A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P117 wd:Q204 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P117 chb:Q204 .
 
-wds:Q793-10C5B4AD-4A98-51C6-BC42-EB7BDEDC9F7F
+chbs:Q793-10C5B4AD-4A98-51C6-BC42-EB7BDEDC9F7F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "bleiglas" .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "bleiglas" .
 
-wds:Q793-69EBF5B6-7D62-5AF4-8EA2-868E63F78C6A
+chbs:Q793-69EBF5B6-7D62-5AF4-8EA2-868E63F78C6A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P119 "bleiglas"@en .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P119 "bleiglas"@en .
 
-wds:Q793-87D4F2EC-8895-51C3-A132-64850F7862DF
+chbs:Q793-87D4F2EC-8895-51C3-A132-64850F7862DF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P111 wd:Q795 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P111 chb:Q795 .
 
-wds:Q793-0123FCE3-8825-59A1-9987-2787EE9A2FFB
+chbs:Q793-0123FCE3-8825-59A1-9987-2787EE9A2FFB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P115 <https://open-archaeo.info/post/bleiglas/> .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P115 <https://open-archaeo.info/post/bleiglas/> .
 
-wds:Q793-318BAD14-A5D3-52A2-80A4-D8B5A6A36DF7
+chbs:Q793-318BAD14-A5D3-52A2-80A4-D8B5A6A36DF7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P2 chb:Q103 .
 
-wds:Q793-2875C7C6-F11C-5723-9A93-8F89B02F5E32
+chbs:Q793-2875C7C6-F11C-5723-9A93-8F89B02F5E32
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P106 chb:Q110 .
 
-wds:Q793-3050B195-E286-508D-8DDA-8AD34C1DAF76
+chbs:Q793-3050B195-E286-508D-8DDA-8AD34C1DAF76
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P117 chb:Q119 .
 
-wds:Q793-3490E9EB-1A75-5D5F-B494-1CA3517CAB11
+chbs:Q793-3490E9EB-1A75-5D5F-B494-1CA3517CAB11
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P122 chb:Q109 .
 
-wds:Q793-ABAE0CA6-AE99-5CC3-ABC4-EDCEFD23C068
+chbs:Q793-ABAE0CA6-AE99-5CC3-ABC4-EDCEFD23C068
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P123 chb:Q111 .
 
-wds:Q793-B19ABD69-47E6-5C4F-B929-D3865408359C
+chbs:Q793-B19ABD69-47E6-5C4F-B929-D3865408359C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P2 chb:Q106 .
 
-wds:Q793-B586556E-B598-5FBF-9AC3-4154A4384AFE
+chbs:Q793-B586556E-B598-5FBF-9AC3-4154A4384AFE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P118 chb:Q108 .
 
-wds:Q793-CB4192E8-EF15-546E-9E4D-BE4FDD361FEB
+chbs:Q793-CB4192E8-EF15-546E-9E4D-BE4FDD361FEB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbps:P122 chb:Q110 .
 
-wds:Q793-D10BC968-30EB-5FAB-A0F7-5DF5EC038A7A
+chbs:Q793-D10BC968-30EB-5FAB-A0F7-5DF5EC038A7A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q794 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q794 .
 
-wds:Q793-E4AC3E73-CB0C-5EA4-9901-B5CC22E73577
+chbs:Q793-E4AC3E73-CB0C-5EA4-9901-B5CC22E73577
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q311 .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q311 .
 
-wds:Q793-FDAE3553-04D6-574F-BDC2-4D042ED410AD
+chbs:Q793-FDAE3553-04D6-574F-BDC2-4D042ED410AD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
-    pq:P104 "2021-04-10T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-nevrome-bleiglas_-_2021-04-10_13-49-19> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:96a95dc1e2ff481fa5f5e152d240fab3 ;
-    ps:P125 <https://github.com/nevrome/bleiglas> .
+    prov:wasDerivedFrom chbref:dbc875acb1aff574051edcb8e1a64032351aa03c ;
+    chbpq:P104 "2021-04-10T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-nevrome-bleiglas_-_2021-04-10_13-49-19> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:96a95dc1e2ff481fa5f5e152d240fab3 ;
+    chbps:P125 <https://github.com/nevrome/bleiglas> .
 
-wdref:dbc875acb1aff574051edcb8e1a64032351aa03c
+chbref:dbc875acb1aff574051edcb8e1a64032351aa03c
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/bleiglas/> .
+    chbpr:P6 <https://open-archaeo.info/post/bleiglas/> .
 
-wdv:96a95dc1e2ff481fa5f5e152d240fab3
+chbv:96a95dc1e2ff481fa5f5e152d240fab3
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

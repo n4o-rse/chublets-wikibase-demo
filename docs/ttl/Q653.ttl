@@ -1,53 +1,54 @@
 # Q653: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q653
+chbdata:Q653.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Tool for calculating the largest empty circles and estimation of archaeological sites theoretically to be expected in region of interest, an implementation of the method published by Andreas Zimmermann and Karl Peter Wendt (2003)."@en ;
     dcterms:identifier "Q653" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q653 ;
+    dcterms:subject chb:Q653 ;
     dcterms:title "lecAAR"@en ;
-    schema:about wd:Q653 ;
-    dcat:distribution dist:Q653-html,
-        dist:Q653-json,
-        dist:Q653-ttl ;
+    schema:about chb:Q653 ;
+    dcat:distribution chbdist:Q653-html,
+        chbdist:Q653-json,
+        chbdist:Q653-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q653.html> .
 
-dist:Q653-html
+chbdist:Q653-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q653-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q653.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q653-json
+chbdist:Q653-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q653-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q653.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q653-ttl
+chbdist:Q653-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q653, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q653.ttl> ;
+    dcat:downloadURL chbdata:Q653.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q653
+chb:Q653
     a wikibase:Item ;
     schema:description "Tool for calculating the largest empty circles and estimation of archaeological sites theoretically to be expected in region of interest, an implementation of the method published by Andreas Zimmermann and Karl Peter Wendt (2003)."@en ;
     schema:name "lecAAR"@en ;
@@ -80,184 +81,184 @@ wd:Q653
     wikibase:statements "18"^^xsd:integer ;
     rdfs:label "lecAAR"@en ;
     skos:prefLabel "lecAAR"@en ;
-    p:P2 wds:Q653-30F0A60F-81DB-50F2-8565-9330FC6134A2,
-        wds:Q653-BF70BEF6-B4ED-5756-BA47-51E9B98A615A ;
-    p:P106 wds:Q653-CE5196B0-A601-5628-B8F5-5F0017C5B50B ;
-    p:P113 wds:Q653-01E4B68A-167E-5931-A491-F7BAAAABB1E5,
-        wds:Q653-1E4277D7-F1D8-56BD-A0E3-9E97FDC28436,
-        wds:Q653-12D786CB-C2FF-53E2-B7BF-8DC69F2C0C48,
-        wds:Q653-6736B404-4A8F-586A-8119-09A78197C7F9,
-        wds:Q653-B63EFD30-93B6-58F2-A644-CE98105AD0CB ;
-    p:P115 wds:Q653-7D896B0B-3886-58E7-8700-BC4B70D26C7E ;
-    p:P116 wds:Q653-5C9261C4-AA97-5F56-9ABD-2140ABFB11A7 ;
-    p:P117 wds:Q653-4D611E9A-E6D0-517D-9853-69EAF96B1FDE,
-        wds:Q653-FC96205D-FB17-5EDB-8AEB-6DEDA31167DC ;
-    p:P118 wds:Q653-1ADEF783-EB9F-58FE-B540-A0251AEDF5EC ;
-    p:P119 wds:Q653-32C5689C-A491-5B92-B777-9CC47FEC6E2B ;
-    p:P122 wds:Q653-B7490748-6134-5902-98C2-B5E1E05FCB62,
-        wds:Q653-CABD21AE-4140-5C97-A6F2-D395F6BAA4A2 ;
-    p:P123 wds:Q653-23C141AB-2583-5770-973C-2418128FBAE6 ;
-    p:P125 wds:Q653-63D49BC6-4797-59AB-B2C7-E57525007021 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q311,
-        wd:Q654,
-        wd:Q655,
-        wd:Q656,
-        wd:Q657 ;
-    wdt:P115 <https://open-archaeo.info/post/lecaar/> ;
-    wdt:P116 "lecaar" ;
-    wdt:P117 wd:Q116,
-        wd:Q119 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "lecAAR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ISAAKiel/lecAAR> .
+    chbp:P2 chbs:Q653-30F0A60F-81DB-50F2-8565-9330FC6134A2,
+        chbs:Q653-BF70BEF6-B4ED-5756-BA47-51E9B98A615A ;
+    chbp:P106 chbs:Q653-CE5196B0-A601-5628-B8F5-5F0017C5B50B ;
+    chbp:P113 chbs:Q653-01E4B68A-167E-5931-A491-F7BAAAABB1E5,
+        chbs:Q653-1E4277D7-F1D8-56BD-A0E3-9E97FDC28436,
+        chbs:Q653-12D786CB-C2FF-53E2-B7BF-8DC69F2C0C48,
+        chbs:Q653-6736B404-4A8F-586A-8119-09A78197C7F9,
+        chbs:Q653-B63EFD30-93B6-58F2-A644-CE98105AD0CB ;
+    chbp:P115 chbs:Q653-7D896B0B-3886-58E7-8700-BC4B70D26C7E ;
+    chbp:P116 chbs:Q653-5C9261C4-AA97-5F56-9ABD-2140ABFB11A7 ;
+    chbp:P117 chbs:Q653-4D611E9A-E6D0-517D-9853-69EAF96B1FDE,
+        chbs:Q653-FC96205D-FB17-5EDB-8AEB-6DEDA31167DC ;
+    chbp:P118 chbs:Q653-1ADEF783-EB9F-58FE-B540-A0251AEDF5EC ;
+    chbp:P119 chbs:Q653-32C5689C-A491-5B92-B777-9CC47FEC6E2B ;
+    chbp:P122 chbs:Q653-B7490748-6134-5902-98C2-B5E1E05FCB62,
+        chbs:Q653-CABD21AE-4140-5C97-A6F2-D395F6BAA4A2 ;
+    chbp:P123 chbs:Q653-23C141AB-2583-5770-973C-2418128FBAE6 ;
+    chbp:P125 chbs:Q653-63D49BC6-4797-59AB-B2C7-E57525007021 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q311,
+        chb:Q654,
+        chb:Q655,
+        chb:Q656,
+        chb:Q657 ;
+    chbt:P115 <https://open-archaeo.info/post/lecaar/> ;
+    chbt:P116 "lecaar" ;
+    chbt:P117 chb:Q116,
+        chb:Q119 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "lecAAR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ISAAKiel/lecAAR> .
 
-wds:Q653-1ADEF783-EB9F-58FE-B540-A0251AEDF5EC
+chbs:Q653-1ADEF783-EB9F-58FE-B540-A0251AEDF5EC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q653-01E4B68A-167E-5931-A491-F7BAAAABB1E5
+chbs:Q653-01E4B68A-167E-5931-A491-F7BAAAABB1E5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q655 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q655 .
 
-wds:Q653-1E4277D7-F1D8-56BD-A0E3-9E97FDC28436
+chbs:Q653-1E4277D7-F1D8-56BD-A0E3-9E97FDC28436
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q654 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q654 .
 
-wds:Q653-4D611E9A-E6D0-517D-9853-69EAF96B1FDE
+chbs:Q653-4D611E9A-E6D0-517D-9853-69EAF96B1FDE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P117 chb:Q119 .
 
-wds:Q653-5C9261C4-AA97-5F56-9ABD-2140ABFB11A7
+chbs:Q653-5C9261C4-AA97-5F56-9ABD-2140ABFB11A7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "lecaar" .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "lecaar" .
 
-wds:Q653-7D896B0B-3886-58E7-8700-BC4B70D26C7E
+chbs:Q653-7D896B0B-3886-58E7-8700-BC4B70D26C7E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P115 <https://open-archaeo.info/post/lecaar/> .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P115 <https://open-archaeo.info/post/lecaar/> .
 
-wds:Q653-12D786CB-C2FF-53E2-B7BF-8DC69F2C0C48
+chbs:Q653-12D786CB-C2FF-53E2-B7BF-8DC69F2C0C48
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P146 "4" ;
-    ps:P113 wd:Q656 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P146 "4" ;
+    chbps:P113 chb:Q656 .
 
-wds:Q653-23C141AB-2583-5770-973C-2418128FBAE6
+chbs:Q653-23C141AB-2583-5770-973C-2418128FBAE6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q653-30F0A60F-81DB-50F2-8565-9330FC6134A2
+chbs:Q653-30F0A60F-81DB-50F2-8565-9330FC6134A2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q653-32C5689C-A491-5B92-B777-9CC47FEC6E2B
+chbs:Q653-32C5689C-A491-5B92-B777-9CC47FEC6E2B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P119 "lecAAR"@en .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P119 "lecAAR"@en .
 
-wds:Q653-63D49BC6-4797-59AB-B2C7-E57525007021
+chbs:Q653-63D49BC6-4797-59AB-B2C7-E57525007021
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P104 "2019-07-29T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-lecAAR_-_2019-07-29_12-28-26> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:fd208482ae931c2688de1a4715843a80 ;
-    ps:P125 <https://github.com/ISAAKiel/lecAAR> .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P104 "2019-07-29T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-lecAAR_-_2019-07-29_12-28-26> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:fd208482ae931c2688de1a4715843a80 ;
+    chbps:P125 <https://github.com/ISAAKiel/lecAAR> .
 
-wds:Q653-6736B404-4A8F-586A-8119-09A78197C7F9
+chbs:Q653-6736B404-4A8F-586A-8119-09A78197C7F9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q311 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q311 .
 
-wds:Q653-B63EFD30-93B6-58F2-A644-CE98105AD0CB
+chbs:Q653-B63EFD30-93B6-58F2-A644-CE98105AD0CB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    pq:P146 "5" ;
-    ps:P113 wd:Q657 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbpq:P146 "5" ;
+    chbps:P113 chb:Q657 .
 
-wds:Q653-B7490748-6134-5902-98C2-B5E1E05FCB62
+chbs:Q653-B7490748-6134-5902-98C2-B5E1E05FCB62
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q653-BF70BEF6-B4ED-5756-BA47-51E9B98A615A
+chbs:Q653-BF70BEF6-B4ED-5756-BA47-51E9B98A615A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q653-CABD21AE-4140-5C97-A6F2-D395F6BAA4A2
+chbs:Q653-CABD21AE-4140-5C97-A6F2-D395F6BAA4A2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q653-CE5196B0-A601-5628-B8F5-5F0017C5B50B
+chbs:Q653-CE5196B0-A601-5628-B8F5-5F0017C5B50B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q653-FC96205D-FB17-5EDB-8AEB-6DEDA31167DC
+chbs:Q653-FC96205D-FB17-5EDB-8AEB-6DEDA31167DC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:2f7a88b7773ade313c0d7e3229547378b3189803 ;
+    chbps:P117 chb:Q116 .
 
-wdref:2f7a88b7773ade313c0d7e3229547378b3189803
+chbref:2f7a88b7773ade313c0d7e3229547378b3189803
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/lecaar/> .
+    chbpr:P6 <https://open-archaeo.info/post/lecaar/> .
 
-wdv:fd208482ae931c2688de1a4715843a80
+chbv:fd208482ae931c2688de1a4715843a80
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

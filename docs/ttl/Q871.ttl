@@ -1,53 +1,54 @@
 # Q871: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q871
+chbdata:Q871.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Shiny app for interactive crossdating of tree-ring data."@en ;
     dcterms:identifier "Q871" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q871 ;
+    dcterms:subject chb:Q871 ;
     dcterms:title "xDateR"@en ;
-    schema:about wd:Q871 ;
-    dcat:distribution dist:Q871-html,
-        dist:Q871-json,
-        dist:Q871-ttl ;
+    schema:about chb:Q871 ;
+    dcat:distribution chbdist:Q871-html,
+        chbdist:Q871-json,
+        chbdist:Q871-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q871.html> .
 
-dist:Q871-html
+chbdist:Q871-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q871-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q871.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q871-json
+chbdist:Q871-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q871-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q871.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q871-ttl
+chbdist:Q871-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q871, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q871.ttl> ;
+    dcat:downloadURL chbdata:Q871.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q871
+chb:Q871
     a wikibase:Item ;
     schema:description "Shiny app for interactive crossdating of tree-ring data."@en ;
     schema:name "xDateR"@en ;
@@ -80,136 +81,136 @@ wd:Q871
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "xDateR"@en ;
     skos:prefLabel "xDateR"@en ;
-    p:P2 wds:Q871-0BE1EF0E-3914-53E3-9E4C-14BEFB805695,
-        wds:Q871-4FB88511-0465-5D3C-8C62-F2246DDD705F ;
-    p:P106 wds:Q871-C767A1FF-B051-5400-A232-48DB373D7F85 ;
-    p:P113 wds:Q871-670E6038-DF0B-50C9-AE17-DA4DCA42F61D ;
-    p:P115 wds:Q871-4E3F6F2C-6F6D-51CD-9FA2-3FA0F84B4873 ;
-    p:P116 wds:Q871-C47F214B-F3DA-5356-B2DE-8A47A2700C73 ;
-    p:P117 wds:Q871-0AC6DC46-6E85-5F30-A280-E2F6FF173685,
-        wds:Q871-AE636001-55BB-5217-A3C4-33636E3D1F36 ;
-    p:P118 wds:Q871-A94C9AFC-403A-5ABF-AAD2-DF4497DB8A1F ;
-    p:P119 wds:Q871-4EEABBEA-EC71-5F56-8B84-A4388B90F715 ;
-    p:P122 wds:Q871-0B32BCA5-3BB8-57F6-AC80-55584FC686DA,
-        wds:Q871-1402B563-B994-505E-B934-88F1F15481C7 ;
-    p:P123 wds:Q871-D5836375-C058-5627-BE2C-C2E1DB368F08 ;
-    p:P125 wds:Q871-F4CE7CBF-1C54-5CBD-BE8F-5E3E9DCF278F ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q831 ;
-    wdt:P115 <https://open-archaeo.info/post/xdater/> ;
-    wdt:P116 "xdater" ;
-    wdt:P117 wd:Q126,
-        wd:Q178 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "xDateR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/AndyBunn/xDateR> .
+    chbp:P2 chbs:Q871-0BE1EF0E-3914-53E3-9E4C-14BEFB805695,
+        chbs:Q871-4FB88511-0465-5D3C-8C62-F2246DDD705F ;
+    chbp:P106 chbs:Q871-C767A1FF-B051-5400-A232-48DB373D7F85 ;
+    chbp:P113 chbs:Q871-670E6038-DF0B-50C9-AE17-DA4DCA42F61D ;
+    chbp:P115 chbs:Q871-4E3F6F2C-6F6D-51CD-9FA2-3FA0F84B4873 ;
+    chbp:P116 chbs:Q871-C47F214B-F3DA-5356-B2DE-8A47A2700C73 ;
+    chbp:P117 chbs:Q871-0AC6DC46-6E85-5F30-A280-E2F6FF173685,
+        chbs:Q871-AE636001-55BB-5217-A3C4-33636E3D1F36 ;
+    chbp:P118 chbs:Q871-A94C9AFC-403A-5ABF-AAD2-DF4497DB8A1F ;
+    chbp:P119 chbs:Q871-4EEABBEA-EC71-5F56-8B84-A4388B90F715 ;
+    chbp:P122 chbs:Q871-0B32BCA5-3BB8-57F6-AC80-55584FC686DA,
+        chbs:Q871-1402B563-B994-505E-B934-88F1F15481C7 ;
+    chbp:P123 chbs:Q871-D5836375-C058-5627-BE2C-C2E1DB368F08 ;
+    chbp:P125 chbs:Q871-F4CE7CBF-1C54-5CBD-BE8F-5E3E9DCF278F ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q831 ;
+    chbt:P115 <https://open-archaeo.info/post/xdater/> ;
+    chbt:P116 "xdater" ;
+    chbt:P117 chb:Q126,
+        chb:Q178 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "xDateR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/AndyBunn/xDateR> .
 
-wds:Q871-0AC6DC46-6E85-5F30-A280-E2F6FF173685
+chbs:Q871-0AC6DC46-6E85-5F30-A280-E2F6FF173685
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q871-0B32BCA5-3BB8-57F6-AC80-55584FC686DA
+chbs:Q871-0B32BCA5-3BB8-57F6-AC80-55584FC686DA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q871-0BE1EF0E-3914-53E3-9E4C-14BEFB805695
+chbs:Q871-0BE1EF0E-3914-53E3-9E4C-14BEFB805695
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q871-4E3F6F2C-6F6D-51CD-9FA2-3FA0F84B4873
+chbs:Q871-4E3F6F2C-6F6D-51CD-9FA2-3FA0F84B4873
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P115 <https://open-archaeo.info/post/xdater/> .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P115 <https://open-archaeo.info/post/xdater/> .
 
-wds:Q871-4EEABBEA-EC71-5F56-8B84-A4388B90F715
+chbs:Q871-4EEABBEA-EC71-5F56-8B84-A4388B90F715
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P119 "xDateR"@en .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P119 "xDateR"@en .
 
-wds:Q871-4FB88511-0465-5D3C-8C62-F2246DDD705F
+chbs:Q871-4FB88511-0465-5D3C-8C62-F2246DDD705F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q871-670E6038-DF0B-50C9-AE17-DA4DCA42F61D
+chbs:Q871-670E6038-DF0B-50C9-AE17-DA4DCA42F61D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q831 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q831 .
 
-wds:Q871-1402B563-B994-505E-B934-88F1F15481C7
+chbs:Q871-1402B563-B994-505E-B934-88F1F15481C7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q871-A94C9AFC-403A-5ABF-AAD2-DF4497DB8A1F
+chbs:Q871-A94C9AFC-403A-5ABF-AAD2-DF4497DB8A1F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q871-AE636001-55BB-5217-A3C4-33636E3D1F36
+chbs:Q871-AE636001-55BB-5217-A3C4-33636E3D1F36
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P117 wd:Q178 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P117 chb:Q178 .
 
-wds:Q871-C47F214B-F3DA-5356-B2DE-8A47A2700C73
+chbs:Q871-C47F214B-F3DA-5356-B2DE-8A47A2700C73
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "xdater" .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "xdater" .
 
-wds:Q871-C767A1FF-B051-5400-A232-48DB373D7F85
+chbs:Q871-C767A1FF-B051-5400-A232-48DB373D7F85
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q871-D5836375-C058-5627-BE2C-C2E1DB368F08
+chbs:Q871-D5836375-C058-5627-BE2C-C2E1DB368F08
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q871-F4CE7CBF-1C54-5CBD-BE8F-5E3E9DCF278F
+chbs:Q871-F4CE7CBF-1C54-5CBD-BE8F-5E3E9DCF278F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/AndyBunn/xDateR> .
+    prov:wasDerivedFrom chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/AndyBunn/xDateR> .
 
-wdref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637
+chbref:2405cd70ae0c0cdcaf086cef9513f00eb1d20637
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/xdater/> .
+    chbpr:P6 <https://open-archaeo.info/post/xdater/> .

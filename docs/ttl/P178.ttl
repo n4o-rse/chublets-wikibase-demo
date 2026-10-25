@@ -1,52 +1,53 @@
 # P178: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P178
+chbdata:P178.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P178" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P178 ;
+    dcterms:subject chb:P178 ;
     dcterms:title "Fedora package"@en ;
-    schema:about wd:P178 ;
-    dcat:distribution dist:P178-html,
-        dist:P178-json,
-        dist:P178-ttl ;
+    schema:about chb:P178 ;
+    dcat:distribution chbdist:P178-html,
+        chbdist:P178-json,
+        chbdist:P178-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P178.html> .
 
-dist:P178-html
+chbdist:P178-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P178-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P178.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P178-json
+chbdist:P178-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,90 +64,90 @@ dist:P178-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P178.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P178-ttl
+chbdist:P178-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P178, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P178.ttl> ;
+    dcat:downloadURL chbdata:P178.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P178
+chb:P178
     a wikibase:Property ;
     schema:name "Fedora package"@en ;
-    wikibase:claim p:P178 ;
-    wikibase:directClaim wdt:P178 ;
+    wikibase:claim chbp:P178 ;
+    wikibase:directClaim chbt:P178 ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:novalue wdno:P178 ;
+    wikibase:novalue chbno:P178 ;
     wikibase:propertyType wikibase:ExternalId ;
-    wikibase:qualifier pq:P178 ;
-    wikibase:qualifierValue pqv:P178 ;
-    wikibase:reference pr:P178 ;
-    wikibase:referenceValue prv:P178 ;
-    wikibase:statementProperty ps:P178 ;
-    wikibase:statementValue psv:P178 ;
+    wikibase:qualifier chbpq:P178 ;
+    wikibase:qualifierValue chbpqv:P178 ;
+    wikibase:reference chbpr:P178 ;
+    wikibase:referenceValue chbprv:P178 ;
+    wikibase:statementProperty chbps:P178 ;
+    wikibase:statementValue chbpsv:P178 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Fedora package"@en ;
     skos:prefLabel "Fedora package"@en ;
-    p:P2 wds:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2 ;
-    p:P4 wds:P178-F52B3389-120E-5462-9074-F71912FF42CA ;
-    p:P9 wds:P178-29080A9F-8684-5D52-9CFA-FFA139A9E26F ;
-    wdt:P2 wd:Q2 ;
-    wdt:P4 "P3463" ;
-    wdt:P9 wd:Q100 .
+    chbp:P2 chbs:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2 ;
+    chbp:P4 chbs:P178-F52B3389-120E-5462-9074-F71912FF42CA ;
+    chbp:P9 chbs:P178-29080A9F-8684-5D52-9CFA-FFA139A9E26F ;
+    chbt:P2 chb:Q2 ;
+    chbt:P4 "P3463" ;
+    chbt:P9 chb:Q100 .
 
-wds:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2
+chbs:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-wds:P178-29080A9F-8684-5D52-9CFA-FFA139A9E26F
+chbs:P178-29080A9F-8684-5D52-9CFA-FFA139A9E26F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-wds:P178-F52B3389-120E-5462-9074-F71912FF42CA
+chbs:P178-F52B3389-120E-5462-9074-F71912FF42CA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:703d78ef8ce35252e91fc6cac35ba4f697d74f3c ;
-    ps:P4 "P3463" .
+    prov:wasDerivedFrom chbref:703d78ef8ce35252e91fc6cac35ba4f697d74f3c ;
+    chbps:P4 "P3463" .
 
-wdref:703d78ef8ce35252e91fc6cac35ba4f697d74f3c
+chbref:703d78ef8ce35252e91fc6cac35ba4f697d74f3c
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Property:P3463> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Property:P3463> .
 
-p:P178
+chbp:P178
     a owl:ObjectProperty .
 
-wdt:P178
+chbt:P178
     a owl:DatatypeProperty .
 
-pq:P178
+chbpq:P178
     a owl:DatatypeProperty .
 
-pqv:P178
+chbpqv:P178
     a owl:ObjectProperty .
 
-pr:P178
+chbpr:P178
     a owl:DatatypeProperty .
 
-prv:P178
+chbprv:P178
     a owl:ObjectProperty .
 
-ps:P178
+chbps:P178
     a owl:DatatypeProperty .
 
-psv:P178
+chbpsv:P178
     a owl:ObjectProperty .
 
-wdno:P178
+chbno:P178
     a owl:Class ;
     owl:complementOf _:155d492e1690e2417035ac8ad9d2232e .
 
 _:155d492e1690e2417035ac8ad9d2232e
     a owl:Restriction ;
-    owl:onProperty wdt:P178 ;
+    owl:onProperty chbt:P178 ;
     owl:someValuesFrom owl:Thing .

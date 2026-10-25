@@ -1,53 +1,54 @@
 # Q637: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q637
+chbdata:Q637.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An online tool for the comparative analysis of museum databases."@en ;
     dcterms:identifier "Q637" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q637 ;
+    dcterms:subject chb:Q637 ;
     dcterms:title "MAX"@en ;
-    schema:about wd:Q637 ;
-    dcat:distribution dist:Q637-html,
-        dist:Q637-json,
-        dist:Q637-ttl ;
+    schema:about chb:Q637 ;
+    dcat:distribution chbdist:Q637-html,
+        chbdist:Q637-json,
+        chbdist:Q637-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q637.html> .
 
-dist:Q637-html
+chbdist:Q637-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q637-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q637.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q637-json
+chbdist:Q637-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q637-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q637.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q637-ttl
+chbdist:Q637-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q637, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q637.ttl> ;
+    dcat:downloadURL chbdata:Q637.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q637
+chb:Q637
     a wikibase:Item ;
     schema:description "An online tool for the comparative analysis of museum databases."@en ;
     schema:name "MAX"@en ;
@@ -80,165 +81,165 @@ wd:Q637
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "MAX"@en ;
     skos:prefLabel "MAX"@en ;
-    p:P2 wds:Q637-5EE74E51-A30A-5668-A99E-5278F7D0C55D,
-        wds:Q637-82DD4EB2-0DCB-5D51-A56E-FCD3B0109D4A ;
-    p:P106 wds:Q637-0C295CC8-A8D9-5ACC-98CD-4A4167B869BF ;
-    p:P113 wds:Q637-9DE02CB9-68A5-5147-8231-6F15D0BB8385,
-        wds:Q637-6525DE7B-3E70-579E-9A3B-726519E6C438,
-        wds:Q637-ABC110CD-97AC-5C46-8F8B-0E2191DB0E86,
-        wds:Q637-E1E4ACED-F6CB-5B33-B258-08F4D0A0A211 ;
-    p:P115 wds:Q637-89D70E13-60EA-5EBC-AA8B-C8ADD5A4EE0D ;
-    p:P116 wds:Q637-13BAEABA-EFCA-5B8B-8E46-1E17FC713FEC ;
-    p:P117 wds:Q637-1FE03AC7-47C0-5892-9DCE-3EE308A10CF5 ;
-    p:P118 wds:Q637-2020189F-C4D9-57FA-9A94-F265295EA1FF ;
-    p:P119 wds:Q637-FBD0E0E6-D38E-5752-B69F-57FEF7680DC7 ;
-    p:P120 wds:Q637-BFB3962B-B63A-5E3B-834F-6FCC281B2A7C ;
-    p:P122 wds:Q637-B941113F-BB85-5F97-B6BA-B3D484799F5B,
-        wds:Q637-BE097619-3901-58E5-8110-C85B969E5EA0 ;
-    p:P125 wds:Q637-3273FC4A-FB1E-5F41-878C-80B58766DBFF ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q639,
-        wd:Q640,
-        wd:Q641,
-        wd:Q642 ;
-    wdt:P115 <https://open-archaeo.info/post/max/> ;
-    wdt:P116 "max" ;
-    wdt:P117 wd:Q638 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "MAX"@en ;
-    wdt:P120 <https://www.max.gwi.uni-muenchen.de/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/stefanieschneider/MAX> .
+    chbp:P2 chbs:Q637-5EE74E51-A30A-5668-A99E-5278F7D0C55D,
+        chbs:Q637-82DD4EB2-0DCB-5D51-A56E-FCD3B0109D4A ;
+    chbp:P106 chbs:Q637-0C295CC8-A8D9-5ACC-98CD-4A4167B869BF ;
+    chbp:P113 chbs:Q637-9DE02CB9-68A5-5147-8231-6F15D0BB8385,
+        chbs:Q637-6525DE7B-3E70-579E-9A3B-726519E6C438,
+        chbs:Q637-ABC110CD-97AC-5C46-8F8B-0E2191DB0E86,
+        chbs:Q637-E1E4ACED-F6CB-5B33-B258-08F4D0A0A211 ;
+    chbp:P115 chbs:Q637-89D70E13-60EA-5EBC-AA8B-C8ADD5A4EE0D ;
+    chbp:P116 chbs:Q637-13BAEABA-EFCA-5B8B-8E46-1E17FC713FEC ;
+    chbp:P117 chbs:Q637-1FE03AC7-47C0-5892-9DCE-3EE308A10CF5 ;
+    chbp:P118 chbs:Q637-2020189F-C4D9-57FA-9A94-F265295EA1FF ;
+    chbp:P119 chbs:Q637-FBD0E0E6-D38E-5752-B69F-57FEF7680DC7 ;
+    chbp:P120 chbs:Q637-BFB3962B-B63A-5E3B-834F-6FCC281B2A7C ;
+    chbp:P122 chbs:Q637-B941113F-BB85-5F97-B6BA-B3D484799F5B,
+        chbs:Q637-BE097619-3901-58E5-8110-C85B969E5EA0 ;
+    chbp:P125 chbs:Q637-3273FC4A-FB1E-5F41-878C-80B58766DBFF ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q639,
+        chb:Q640,
+        chb:Q641,
+        chb:Q642 ;
+    chbt:P115 <https://open-archaeo.info/post/max/> ;
+    chbt:P116 "max" ;
+    chbt:P117 chb:Q638 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "MAX"@en ;
+    chbt:P120 <https://www.max.gwi.uni-muenchen.de/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/stefanieschneider/MAX> .
 
-wds:Q637-0C295CC8-A8D9-5ACC-98CD-4A4167B869BF
+chbs:Q637-0C295CC8-A8D9-5ACC-98CD-4A4167B869BF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q637-1FE03AC7-47C0-5892-9DCE-3EE308A10CF5
+chbs:Q637-1FE03AC7-47C0-5892-9DCE-3EE308A10CF5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P117 wd:Q638 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P117 chb:Q638 .
 
-wds:Q637-5EE74E51-A30A-5668-A99E-5278F7D0C55D
+chbs:Q637-5EE74E51-A30A-5668-A99E-5278F7D0C55D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q637-9DE02CB9-68A5-5147-8231-6F15D0BB8385
+chbs:Q637-9DE02CB9-68A5-5147-8231-6F15D0BB8385
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q639 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q639 .
 
-wds:Q637-13BAEABA-EFCA-5B8B-8E46-1E17FC713FEC
+chbs:Q637-13BAEABA-EFCA-5B8B-8E46-1E17FC713FEC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "max" .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "max" .
 
-wds:Q637-82DD4EB2-0DCB-5D51-A56E-FCD3B0109D4A
+chbs:Q637-82DD4EB2-0DCB-5D51-A56E-FCD3B0109D4A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q637-89D70E13-60EA-5EBC-AA8B-C8ADD5A4EE0D
+chbs:Q637-89D70E13-60EA-5EBC-AA8B-C8ADD5A4EE0D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P115 <https://open-archaeo.info/post/max/> .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P115 <https://open-archaeo.info/post/max/> .
 
-wds:Q637-3273FC4A-FB1E-5F41-878C-80B58766DBFF
+chbs:Q637-3273FC4A-FB1E-5F41-878C-80B58766DBFF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    pq:P104 "2020-10-20T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-stefanieschneider-MAX_-_2020-10-20_11-38-03> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:42aade9c2b4dfe18cfdeea95d55500a7 ;
-    ps:P125 <https://github.com/stefanieschneider/MAX> .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbpq:P104 "2020-10-20T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-stefanieschneider-MAX_-_2020-10-20_11-38-03> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:42aade9c2b4dfe18cfdeea95d55500a7 ;
+    chbps:P125 <https://github.com/stefanieschneider/MAX> .
 
-wds:Q637-6525DE7B-3E70-579E-9A3B-726519E6C438
+chbs:Q637-6525DE7B-3E70-579E-9A3B-726519E6C438
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q641 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q641 .
 
-wds:Q637-2020189F-C4D9-57FA-9A94-F265295EA1FF
+chbs:Q637-2020189F-C4D9-57FA-9A94-F265295EA1FF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q637-ABC110CD-97AC-5C46-8F8B-0E2191DB0E86
+chbs:Q637-ABC110CD-97AC-5C46-8F8B-0E2191DB0E86
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    pq:P146 "4" ;
-    ps:P113 wd:Q642 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbpq:P146 "4" ;
+    chbps:P113 chb:Q642 .
 
-wds:Q637-B941113F-BB85-5F97-B6BA-B3D484799F5B
+chbs:Q637-B941113F-BB85-5F97-B6BA-B3D484799F5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q637-BE097619-3901-58E5-8110-C85B969E5EA0
+chbs:Q637-BE097619-3901-58E5-8110-C85B969E5EA0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q637-BFB3962B-B63A-5E3B-834F-6FCC281B2A7C
+chbs:Q637-BFB3962B-B63A-5E3B-834F-6FCC281B2A7C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P120 <https://www.max.gwi.uni-muenchen.de/> .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P120 <https://www.max.gwi.uni-muenchen.de/> .
 
-wds:Q637-E1E4ACED-F6CB-5B33-B258-08F4D0A0A211
+chbs:Q637-E1E4ACED-F6CB-5B33-B258-08F4D0A0A211
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q640 .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q640 .
 
-wds:Q637-FBD0E0E6-D38E-5752-B69F-57FEF7680DC7
+chbs:Q637-FBD0E0E6-D38E-5752-B69F-57FEF7680DC7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
-    ps:P119 "MAX"@en .
+    prov:wasDerivedFrom chbref:8625af0651bf64e191de9bd0f11d3978286961e8 ;
+    chbps:P119 "MAX"@en .
 
-wdref:8625af0651bf64e191de9bd0f11d3978286961e8
+chbref:8625af0651bf64e191de9bd0f11d3978286961e8
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/max/> .
+    chbpr:P6 <https://open-archaeo.info/post/max/> .
 
-wdv:42aade9c2b4dfe18cfdeea95d55500a7
+chbv:42aade9c2b4dfe18cfdeea95d55500a7
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

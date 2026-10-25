@@ -1,53 +1,54 @@
 # Q496: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q496
+chbdata:Q496.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Calculates visible surface from a given observer point over a digital elevation model. The plugin is intended for more complex modelling, such as the depth below the visible horizon or generation of intervisibilty networks between groups of points. It is particularly performant for multiple viewshed calculations form a set of fixed points."@en ;
     dcterms:identifier "Q496" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q496 ;
+    dcterms:subject chb:Q496 ;
     dcterms:title "QGIS-visibility-analysis"@en ;
-    schema:about wd:Q496 ;
-    dcat:distribution dist:Q496-html,
-        dist:Q496-json,
-        dist:Q496-ttl ;
+    schema:about chb:Q496 ;
+    dcat:distribution chbdist:Q496-html,
+        chbdist:Q496-json,
+        chbdist:Q496-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q496.html> .
 
-dist:Q496-html
+chbdist:Q496-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q496-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q496.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q496-json
+chbdist:Q496-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q496-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q496.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q496-ttl
+chbdist:Q496-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q496, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q496.ttl> ;
+    dcat:downloadURL chbdata:Q496.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q496
+chb:Q496
     a wikibase:Item ;
     schema:description "Calculates visible surface from a given observer point over a digital elevation model. The plugin is intended for more complex modelling, such as the depth below the visible horizon or generation of intervisibilty networks between groups of points. It is particularly performant for multiple viewshed calculations form a set of fixed points."@en ;
     schema:name "QGIS-visibility-analysis"@en ;
@@ -80,153 +81,153 @@ wd:Q496
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "QGIS-visibility-analysis"@en ;
     skos:prefLabel "QGIS-visibility-analysis"@en ;
-    p:P2 wds:Q496-9687FFAE-07B8-5FF4-81A9-F32496016D85,
-        wds:Q496-E78CFD53-122B-5647-AC16-5F80B2C80A6C ;
-    p:P106 wds:Q496-4CD6A73A-06CF-5D86-A5E3-78B27B442591 ;
-    p:P109 wds:Q496-B64A5280-FF13-52AC-B642-67456190E8F3 ;
-    p:P113 wds:Q496-92D8F02D-80EF-5F02-B8D9-AC26ABD11226 ;
-    p:P115 wds:Q496-48324E25-BB47-5CC8-9D0E-C1F8A4F1418C ;
-    p:P116 wds:Q496-E99E07E8-927E-5327-892B-8E37CFB7FC00 ;
-    p:P117 wds:Q496-2DA8CFDE-91CD-5CE4-A449-95DE0BD77A3B,
-        wds:Q496-36E0B152-02F9-510B-B66B-C16831E21519 ;
-    p:P118 wds:Q496-55D8C7EF-A522-58A6-AE34-124651CBAC73 ;
-    p:P119 wds:Q496-609E4592-CBCA-5724-83D1-1E61D15084A2 ;
-    p:P120 wds:Q496-1A255C82-1A11-52E0-AE99-80CB3E443AD7 ;
-    p:P122 wds:Q496-712F8236-5577-5AA4-BD80-672FA2D397E4,
-        wds:Q496-D24D5DE0-8A46-5CAA-8B81-B56E668AE0A4 ;
-    p:P125 wds:Q496-6E3E85B7-D2A9-5862-AE41-F8A14E38CCB4 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q199 ;
-    wdt:P115 <https://open-archaeo.info/post/qgis-visibility-analysis/> ;
-    wdt:P116 "qgis-visibility-analysis" ;
-    wdt:P117 wd:Q119,
-        wd:Q123 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "QGIS-visibility-analysis"@en ;
-    wdt:P120 <http://www.zoran-cuckovic.from.hr/QGIS-visibility-analysis/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/zoran-cuckovic/QGIS-visibility-analysis> .
+    chbp:P2 chbs:Q496-9687FFAE-07B8-5FF4-81A9-F32496016D85,
+        chbs:Q496-E78CFD53-122B-5647-AC16-5F80B2C80A6C ;
+    chbp:P106 chbs:Q496-4CD6A73A-06CF-5D86-A5E3-78B27B442591 ;
+    chbp:P109 chbs:Q496-B64A5280-FF13-52AC-B642-67456190E8F3 ;
+    chbp:P113 chbs:Q496-92D8F02D-80EF-5F02-B8D9-AC26ABD11226 ;
+    chbp:P115 chbs:Q496-48324E25-BB47-5CC8-9D0E-C1F8A4F1418C ;
+    chbp:P116 chbs:Q496-E99E07E8-927E-5327-892B-8E37CFB7FC00 ;
+    chbp:P117 chbs:Q496-2DA8CFDE-91CD-5CE4-A449-95DE0BD77A3B,
+        chbs:Q496-36E0B152-02F9-510B-B66B-C16831E21519 ;
+    chbp:P118 chbs:Q496-55D8C7EF-A522-58A6-AE34-124651CBAC73 ;
+    chbp:P119 chbs:Q496-609E4592-CBCA-5724-83D1-1E61D15084A2 ;
+    chbp:P120 chbs:Q496-1A255C82-1A11-52E0-AE99-80CB3E443AD7 ;
+    chbp:P122 chbs:Q496-712F8236-5577-5AA4-BD80-672FA2D397E4,
+        chbs:Q496-D24D5DE0-8A46-5CAA-8B81-B56E668AE0A4 ;
+    chbp:P125 chbs:Q496-6E3E85B7-D2A9-5862-AE41-F8A14E38CCB4 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q199 ;
+    chbt:P115 <https://open-archaeo.info/post/qgis-visibility-analysis/> ;
+    chbt:P116 "qgis-visibility-analysis" ;
+    chbt:P117 chb:Q119,
+        chb:Q123 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "QGIS-visibility-analysis"@en ;
+    chbt:P120 <http://www.zoran-cuckovic.from.hr/QGIS-visibility-analysis/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/zoran-cuckovic/QGIS-visibility-analysis> .
 
-wds:Q496-1A255C82-1A11-52E0-AE99-80CB3E443AD7
+chbs:Q496-1A255C82-1A11-52E0-AE99-80CB3E443AD7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P120 <http://www.zoran-cuckovic.from.hr/QGIS-visibility-analysis/> .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P120 <http://www.zoran-cuckovic.from.hr/QGIS-visibility-analysis/> .
 
-wds:Q496-2DA8CFDE-91CD-5CE4-A449-95DE0BD77A3B
+chbs:Q496-2DA8CFDE-91CD-5CE4-A449-95DE0BD77A3B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P117 wd:Q123 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P117 chb:Q123 .
 
-wds:Q496-4CD6A73A-06CF-5D86-A5E3-78B27B442591
+chbs:Q496-4CD6A73A-06CF-5D86-A5E3-78B27B442591
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P106 chb:Q110 .
 
-wds:Q496-6E3E85B7-D2A9-5862-AE41-F8A14E38CCB4
+chbs:Q496-6E3E85B7-D2A9-5862-AE41-F8A14E38CCB4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    pq:P104 "2021-01-14T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-zoran-cuckovic-QGIS-visibility-analysis_-_2021-01-14_19-11-48> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:bb7c011e9f5759b1d68b211540447632 ;
-    ps:P125 <https://github.com/zoran-cuckovic/QGIS-visibility-analysis> .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbpq:P104 "2021-01-14T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-zoran-cuckovic-QGIS-visibility-analysis_-_2021-01-14_19-11-48> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:bb7c011e9f5759b1d68b211540447632 ;
+    chbps:P125 <https://github.com/zoran-cuckovic/QGIS-visibility-analysis> .
 
-wds:Q496-36E0B152-02F9-510B-B66B-C16831E21519
+chbs:Q496-36E0B152-02F9-510B-B66B-C16831E21519
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P117 chb:Q119 .
 
-wds:Q496-55D8C7EF-A522-58A6-AE34-124651CBAC73
+chbs:Q496-55D8C7EF-A522-58A6-AE34-124651CBAC73
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P118 chb:Q108 .
 
-wds:Q496-92D8F02D-80EF-5F02-B8D9-AC26ABD11226
+chbs:Q496-92D8F02D-80EF-5F02-B8D9-AC26ABD11226
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q199 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q199 .
 
-wds:Q496-609E4592-CBCA-5724-83D1-1E61D15084A2
+chbs:Q496-609E4592-CBCA-5724-83D1-1E61D15084A2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P119 "QGIS-visibility-analysis"@en .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P119 "QGIS-visibility-analysis"@en .
 
-wds:Q496-712F8236-5577-5AA4-BD80-672FA2D397E4
+chbs:Q496-712F8236-5577-5AA4-BD80-672FA2D397E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P122 chb:Q110 .
 
-wds:Q496-9687FFAE-07B8-5FF4-81A9-F32496016D85
+chbs:Q496-9687FFAE-07B8-5FF4-81A9-F32496016D85
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P2 chb:Q106 .
 
-wds:Q496-48324E25-BB47-5CC8-9D0E-C1F8A4F1418C
+chbs:Q496-48324E25-BB47-5CC8-9D0E-C1F8A4F1418C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P115 <https://open-archaeo.info/post/qgis-visibility-analysis/> .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P115 <https://open-archaeo.info/post/qgis-visibility-analysis/> .
 
-wds:Q496-B64A5280-FF13-52AC-B642-67456190E8F3
+chbs:Q496-B64A5280-FF13-52AC-B642-67456190E8F3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P109 chb:Q135 .
 
-wds:Q496-D24D5DE0-8A46-5CAA-8B81-B56E668AE0A4
+chbs:Q496-D24D5DE0-8A46-5CAA-8B81-B56E668AE0A4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P122 chb:Q109 .
 
-wds:Q496-E78CFD53-122B-5647-AC16-5F80B2C80A6C
+chbs:Q496-E78CFD53-122B-5647-AC16-5F80B2C80A6C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbps:P2 chb:Q103 .
 
-wds:Q496-E99E07E8-927E-5327-892B-8E37CFB7FC00
+chbs:Q496-E99E07E8-927E-5327-892B-8E37CFB7FC00
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "qgis-visibility-analysis" .
+    prov:wasDerivedFrom chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "qgis-visibility-analysis" .
 
-wdref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb
+chbref:7ce96e805d5032a7e351b3f4beddf2419b43b9eb
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/qgis-visibility-analysis/> .
+    chbpr:P6 <https://open-archaeo.info/post/qgis-visibility-analysis/> .
 
-wdv:bb7c011e9f5759b1d68b211540447632
+chbv:bb7c011e9f5759b1d68b211540447632
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

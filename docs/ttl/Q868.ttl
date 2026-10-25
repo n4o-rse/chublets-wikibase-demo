@@ -1,53 +1,54 @@
 # Q868: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q868
+chbdata:Q868.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A simple script that outputs the number of transects, direction of each transect, and locations of the first sensor, centerline, and last sensor along the baseline of a rectangular survey unit."@en ;
     dcterms:identifier "Q868" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q868 ;
+    dcterms:subject chb:Q868 ;
     dcterms:title "Transect-Calculator"@en ;
-    schema:about wd:Q868 ;
-    dcat:distribution dist:Q868-html,
-        dist:Q868-json,
-        dist:Q868-ttl ;
+    schema:about chb:Q868 ;
+    dcat:distribution chbdist:Q868-html,
+        chbdist:Q868-json,
+        chbdist:Q868-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q868.html> .
 
-dist:Q868-html
+chbdist:Q868-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q868-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q868.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q868-json
+chbdist:Q868-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q868-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q868.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q868-ttl
+chbdist:Q868-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q868, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q868.ttl> ;
+    dcat:downloadURL chbdata:Q868.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q868
+chb:Q868
     a wikibase:Item ;
     schema:description "A simple script that outputs the number of transects, direction of each transect, and locations of the first sensor, centerline, and last sensor along the baseline of a rectangular survey unit."@en ;
     schema:name "Transect-Calculator"@en ;
@@ -80,145 +81,145 @@ wd:Q868
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "Transect-Calculator"@en ;
     skos:prefLabel "Transect-Calculator"@en ;
-    p:P2 wds:Q868-1C566DD7-AEA6-50A6-A12F-4B5BDAAF834F,
-        wds:Q868-158584BC-F962-53F1-972D-7EF40E134A2C ;
-    p:P106 wds:Q868-25100382-1681-5DD7-98C5-D66092D73DEE ;
-    p:P113 wds:Q868-FA5FCC4E-A3F9-5792-9A30-146DBEF9DD4A ;
-    p:P115 wds:Q868-0A4974EC-4AD2-5CB2-8FAE-116C93C4DE94 ;
-    p:P116 wds:Q868-A9956AE5-A406-50FF-8CA7-82D34979B1CA ;
-    p:P117 wds:Q868-4BCAB345-A511-544D-8E38-25ED640FF854,
-        wds:Q868-4869CC97-6029-5251-8A0F-294CE83BFAFD,
-        wds:Q868-BEA84B8D-994C-554A-B654-E89B78B639FF ;
-    p:P118 wds:Q868-448D3AB7-BA48-5159-A4B3-5F23481D9924 ;
-    p:P119 wds:Q868-1129C699-7DF6-5A03-9E96-DCA3F1422DE3 ;
-    p:P122 wds:Q868-2F8CFBD0-48F6-5299-8C7A-50054F145A88,
-        wds:Q868-57455A34-A2A5-50AF-A27D-F2B0859ED20A ;
-    p:P123 wds:Q868-D911953F-2327-5582-B777-3DB1F4C9DDB4 ;
-    p:P125 wds:Q868-F360655B-40DE-5F44-A603-EDB799454F0E ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q814 ;
-    wdt:P115 <https://open-archaeo.info/post/transect-calculator/> ;
-    wdt:P116 "transect-calculator" ;
-    wdt:P117 wd:Q132,
-        wd:Q136,
-        wd:Q161 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Transect-Calculator"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/Lugal-PCZ/Transect-Calculator> .
+    chbp:P2 chbs:Q868-1C566DD7-AEA6-50A6-A12F-4B5BDAAF834F,
+        chbs:Q868-158584BC-F962-53F1-972D-7EF40E134A2C ;
+    chbp:P106 chbs:Q868-25100382-1681-5DD7-98C5-D66092D73DEE ;
+    chbp:P113 chbs:Q868-FA5FCC4E-A3F9-5792-9A30-146DBEF9DD4A ;
+    chbp:P115 chbs:Q868-0A4974EC-4AD2-5CB2-8FAE-116C93C4DE94 ;
+    chbp:P116 chbs:Q868-A9956AE5-A406-50FF-8CA7-82D34979B1CA ;
+    chbp:P117 chbs:Q868-4BCAB345-A511-544D-8E38-25ED640FF854,
+        chbs:Q868-4869CC97-6029-5251-8A0F-294CE83BFAFD,
+        chbs:Q868-BEA84B8D-994C-554A-B654-E89B78B639FF ;
+    chbp:P118 chbs:Q868-448D3AB7-BA48-5159-A4B3-5F23481D9924 ;
+    chbp:P119 chbs:Q868-1129C699-7DF6-5A03-9E96-DCA3F1422DE3 ;
+    chbp:P122 chbs:Q868-2F8CFBD0-48F6-5299-8C7A-50054F145A88,
+        chbs:Q868-57455A34-A2A5-50AF-A27D-F2B0859ED20A ;
+    chbp:P123 chbs:Q868-D911953F-2327-5582-B777-3DB1F4C9DDB4 ;
+    chbp:P125 chbs:Q868-F360655B-40DE-5F44-A603-EDB799454F0E ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q814 ;
+    chbt:P115 <https://open-archaeo.info/post/transect-calculator/> ;
+    chbt:P116 "transect-calculator" ;
+    chbt:P117 chb:Q132,
+        chb:Q136,
+        chb:Q161 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Transect-Calculator"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/Lugal-PCZ/Transect-Calculator> .
 
-wds:Q868-0A4974EC-4AD2-5CB2-8FAE-116C93C4DE94
+chbs:Q868-0A4974EC-4AD2-5CB2-8FAE-116C93C4DE94
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P115 <https://open-archaeo.info/post/transect-calculator/> .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P115 <https://open-archaeo.info/post/transect-calculator/> .
 
-wds:Q868-1C566DD7-AEA6-50A6-A12F-4B5BDAAF834F
+chbs:Q868-1C566DD7-AEA6-50A6-A12F-4B5BDAAF834F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q868-2F8CFBD0-48F6-5299-8C7A-50054F145A88
+chbs:Q868-2F8CFBD0-48F6-5299-8C7A-50054F145A88
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q868-4BCAB345-A511-544D-8E38-25ED640FF854
+chbs:Q868-4BCAB345-A511-544D-8E38-25ED640FF854
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P117 wd:Q132 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P117 chb:Q132 .
 
-wds:Q868-448D3AB7-BA48-5159-A4B3-5F23481D9924
+chbs:Q868-448D3AB7-BA48-5159-A4B3-5F23481D9924
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q868-1129C699-7DF6-5A03-9E96-DCA3F1422DE3
+chbs:Q868-1129C699-7DF6-5A03-9E96-DCA3F1422DE3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P119 "Transect-Calculator"@en .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P119 "Transect-Calculator"@en .
 
-wds:Q868-4869CC97-6029-5251-8A0F-294CE83BFAFD
+chbs:Q868-4869CC97-6029-5251-8A0F-294CE83BFAFD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P117 wd:Q161 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P117 chb:Q161 .
 
-wds:Q868-57455A34-A2A5-50AF-A27D-F2B0859ED20A
+chbs:Q868-57455A34-A2A5-50AF-A27D-F2B0859ED20A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q868-158584BC-F962-53F1-972D-7EF40E134A2C
+chbs:Q868-158584BC-F962-53F1-972D-7EF40E134A2C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q868-25100382-1681-5DD7-98C5-D66092D73DEE
+chbs:Q868-25100382-1681-5DD7-98C5-D66092D73DEE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q868-A9956AE5-A406-50FF-8CA7-82D34979B1CA
+chbs:Q868-A9956AE5-A406-50FF-8CA7-82D34979B1CA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "transect-calculator" .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "transect-calculator" .
 
-wds:Q868-BEA84B8D-994C-554A-B654-E89B78B639FF
+chbs:Q868-BEA84B8D-994C-554A-B654-E89B78B639FF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q868-D911953F-2327-5582-B777-3DB1F4C9DDB4
+chbs:Q868-D911953F-2327-5582-B777-3DB1F4C9DDB4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q868-F360655B-40DE-5F44-A603-EDB799454F0E
+chbs:Q868-F360655B-40DE-5F44-A603-EDB799454F0E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/Lugal-PCZ/Transect-Calculator> .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/Lugal-PCZ/Transect-Calculator> .
 
-wds:Q868-FA5FCC4E-A3F9-5792-9A30-146DBEF9DD4A
+chbs:Q868-FA5FCC4E-A3F9-5792-9A30-146DBEF9DD4A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q814 .
+    prov:wasDerivedFrom chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q814 .
 
-wdref:ea2ca4333f869fe7db244afdb06883d203b5f9d2
+chbref:ea2ca4333f869fe7db244afdb06883d203b5f9d2
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/transect-calculator/> .
+    chbpr:P6 <https://open-archaeo.info/post/transect-calculator/> .

@@ -1,53 +1,54 @@
 # Q535: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q535
+chbdata:Q535.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A worldwide database of chronological information from archaeological contexts, including radiocarbon and dendrochronological data."@en ;
     dcterms:identifier "Q535" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q535 ;
+    dcterms:subject chb:Q535 ;
     dcterms:title "xronos.R"@en ;
-    schema:about wd:Q535 ;
-    dcat:distribution dist:Q535-html,
-        dist:Q535-json,
-        dist:Q535-ttl ;
+    schema:about chb:Q535 ;
+    dcat:distribution chbdist:Q535-html,
+        chbdist:Q535-json,
+        chbdist:Q535-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q535.html> .
 
-dist:Q535-html
+chbdist:Q535-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q535-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q535.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q535-json
+chbdist:Q535-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q535-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q535.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q535-ttl
+chbdist:Q535-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q535, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q535.ttl> ;
+    dcat:downloadURL chbdata:Q535.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q535
+chb:Q535
     a wikibase:Item ;
     schema:description "A worldwide database of chronological information from archaeological contexts, including radiocarbon and dendrochronological data."@en ;
     schema:name "xronos.R"@en ;
@@ -80,145 +81,145 @@ wd:Q535
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "xronos.R"@en ;
     skos:prefLabel "xronos.R"@en ;
-    p:P2 wds:Q535-8D7236A8-1C41-5346-8114-776033A8BAFD,
-        wds:Q535-10A8F88F-2C56-55D5-9F5A-88020D73EF23 ;
-    p:P106 wds:Q535-6C7D3062-5C87-56C9-8FF7-431189B52FF6 ;
-    p:P113 wds:Q535-3A6741E5-2C89-55AB-B916-F5D7347A1E0D ;
-    p:P115 wds:Q535-B470A950-6B57-506F-A962-17CDDA9CBAF4 ;
-    p:P116 wds:Q535-B254C910-3875-5EFE-9AD8-30E8CA254ADF ;
-    p:P117 wds:Q535-288A6EC8-EC71-51FF-9361-8D890C2CB4A9,
-        wds:Q535-372D7CAB-CE66-5011-AD1C-51AF3E538785 ;
-    p:P118 wds:Q535-B2D3127A-F267-5264-8720-65C97B4AAC34 ;
-    p:P119 wds:Q535-202D554F-E639-5E81-81C2-B99B2338B15A ;
-    p:P120 wds:Q535-28D46492-E40E-5BBB-BDC1-67DC402E77DE ;
-    p:P122 wds:Q535-9FC4F7FA-687C-5FCA-AC75-171DCB0D39FC,
-        wds:Q535-53B42AF3-F916-50B4-A90C-C3CB9E6097FF ;
-    p:P123 wds:Q535-0AA4A84F-DE75-5C97-AA98-AA52C937E7E0 ;
-    p:P125 wds:Q535-73EB5B87-8009-5D49-BF50-ABE3FC87B1B0 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q536 ;
-    wdt:P115 <https://open-archaeo.info/post/xronos/> ;
-    wdt:P116 "xronos" ;
-    wdt:P117 wd:Q140,
-        wd:Q207 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "xronos.R"@en ;
-    wdt:P120 <https://xronos.ch> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/xronos-ch/xronos.R> .
+    chbp:P2 chbs:Q535-8D7236A8-1C41-5346-8114-776033A8BAFD,
+        chbs:Q535-10A8F88F-2C56-55D5-9F5A-88020D73EF23 ;
+    chbp:P106 chbs:Q535-6C7D3062-5C87-56C9-8FF7-431189B52FF6 ;
+    chbp:P113 chbs:Q535-3A6741E5-2C89-55AB-B916-F5D7347A1E0D ;
+    chbp:P115 chbs:Q535-B470A950-6B57-506F-A962-17CDDA9CBAF4 ;
+    chbp:P116 chbs:Q535-B254C910-3875-5EFE-9AD8-30E8CA254ADF ;
+    chbp:P117 chbs:Q535-288A6EC8-EC71-51FF-9361-8D890C2CB4A9,
+        chbs:Q535-372D7CAB-CE66-5011-AD1C-51AF3E538785 ;
+    chbp:P118 chbs:Q535-B2D3127A-F267-5264-8720-65C97B4AAC34 ;
+    chbp:P119 chbs:Q535-202D554F-E639-5E81-81C2-B99B2338B15A ;
+    chbp:P120 chbs:Q535-28D46492-E40E-5BBB-BDC1-67DC402E77DE ;
+    chbp:P122 chbs:Q535-9FC4F7FA-687C-5FCA-AC75-171DCB0D39FC,
+        chbs:Q535-53B42AF3-F916-50B4-A90C-C3CB9E6097FF ;
+    chbp:P123 chbs:Q535-0AA4A84F-DE75-5C97-AA98-AA52C937E7E0 ;
+    chbp:P125 chbs:Q535-73EB5B87-8009-5D49-BF50-ABE3FC87B1B0 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q536 ;
+    chbt:P115 <https://open-archaeo.info/post/xronos/> ;
+    chbt:P116 "xronos" ;
+    chbt:P117 chb:Q140,
+        chb:Q207 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "xronos.R"@en ;
+    chbt:P120 <https://xronos.ch> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/xronos-ch/xronos.R> .
 
-wds:Q535-0AA4A84F-DE75-5C97-AA98-AA52C937E7E0
+chbs:Q535-0AA4A84F-DE75-5C97-AA98-AA52C937E7E0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q535-3A6741E5-2C89-55AB-B916-F5D7347A1E0D
+chbs:Q535-3A6741E5-2C89-55AB-B916-F5D7347A1E0D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q536 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q536 .
 
-wds:Q535-6C7D3062-5C87-56C9-8FF7-431189B52FF6
+chbs:Q535-6C7D3062-5C87-56C9-8FF7-431189B52FF6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q535-8D7236A8-1C41-5346-8114-776033A8BAFD
+chbs:Q535-8D7236A8-1C41-5346-8114-776033A8BAFD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q535-9FC4F7FA-687C-5FCA-AC75-171DCB0D39FC
+chbs:Q535-9FC4F7FA-687C-5FCA-AC75-171DCB0D39FC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q535-10A8F88F-2C56-55D5-9F5A-88020D73EF23
+chbs:Q535-10A8F88F-2C56-55D5-9F5A-88020D73EF23
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q535-28D46492-E40E-5BBB-BDC1-67DC402E77DE
+chbs:Q535-28D46492-E40E-5BBB-BDC1-67DC402E77DE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P120 <https://xronos.ch> .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P120 <https://xronos.ch> .
 
-wds:Q535-53B42AF3-F916-50B4-A90C-C3CB9E6097FF
+chbs:Q535-53B42AF3-F916-50B4-A90C-C3CB9E6097FF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q535-73EB5B87-8009-5D49-BF50-ABE3FC87B1B0
+chbs:Q535-73EB5B87-8009-5D49-BF50-ABE3FC87B1B0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/xronos-ch/xronos.R> .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/xronos-ch/xronos.R> .
 
-wds:Q535-202D554F-E639-5E81-81C2-B99B2338B15A
+chbs:Q535-202D554F-E639-5E81-81C2-B99B2338B15A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P119 "xronos.R"@en .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P119 "xronos.R"@en .
 
-wds:Q535-288A6EC8-EC71-51FF-9361-8D890C2CB4A9
+chbs:Q535-288A6EC8-EC71-51FF-9361-8D890C2CB4A9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P117 chb:Q140 .
 
-wds:Q535-372D7CAB-CE66-5011-AD1C-51AF3E538785
+chbs:Q535-372D7CAB-CE66-5011-AD1C-51AF3E538785
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P117 wd:Q207 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P117 chb:Q207 .
 
-wds:Q535-B2D3127A-F267-5264-8720-65C97B4AAC34
+chbs:Q535-B2D3127A-F267-5264-8720-65C97B4AAC34
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q535-B254C910-3875-5EFE-9AD8-30E8CA254ADF
+chbs:Q535-B254C910-3875-5EFE-9AD8-30E8CA254ADF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "xronos" .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "xronos" .
 
-wds:Q535-B470A950-6B57-506F-A962-17CDDA9CBAF4
+chbs:Q535-B470A950-6B57-506F-A962-17CDDA9CBAF4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
-    ps:P115 <https://open-archaeo.info/post/xronos/> .
+    prov:wasDerivedFrom chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569 ;
+    chbps:P115 <https://open-archaeo.info/post/xronos/> .
 
-wdref:b5fa1b8786cd5c9973b55afc92d1216c06c29569
+chbref:b5fa1b8786cd5c9973b55afc92d1216c06c29569
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/xronos/> .
+    chbpr:P6 <https://open-archaeo.info/post/xronos/> .

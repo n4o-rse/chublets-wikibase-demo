@@ -1,53 +1,54 @@
 # Q516: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q516
+chbdata:Q516.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Iosacal is an open source tool for radiocarbon calibration"@en ;
     dcterms:identifier "Q516" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q516 ;
+    dcterms:subject chb:Q516 ;
     dcterms:title "IOSACal"@en ;
-    schema:about wd:Q516 ;
-    dcat:distribution dist:Q516-html,
-        dist:Q516-json,
-        dist:Q516-ttl ;
+    schema:about chb:Q516 ;
+    dcat:distribution chbdist:Q516-html,
+        chbdist:Q516-json,
+        chbdist:Q516-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q516.html> .
 
-dist:Q516-html
+chbdist:Q516-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q516-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q516.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q516-json
+chbdist:Q516-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q516-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q516.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q516-ttl
+chbdist:Q516-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q516, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q516.ttl> ;
+    dcat:downloadURL chbdata:Q516.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q516
+chb:Q516
     a wikibase:Item ;
     schema:description "Iosacal is an open source tool for radiocarbon calibration"@en ;
     schema:name "IOSACal"@en ;
@@ -80,153 +81,153 @@ wd:Q516
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "IOSACal"@en ;
     skos:prefLabel "IOSACal"@en ;
-    p:P2 wds:Q516-21C7A98B-8EA4-5CA5-A21C-BD0E0E07E311,
-        wds:Q516-1266C99C-9878-570D-94D7-CF6CB1DA0DBE ;
-    p:P106 wds:Q516-81A484CA-04C4-595B-A07C-653CA5F5B131 ;
-    p:P113 wds:Q516-536789CB-0CF2-5193-92D8-D0EADE70292A ;
-    p:P114 wds:Q516-615818E5-5D8A-5093-AFDB-4EEAC9C00168 ;
-    p:P115 wds:Q516-40320C3D-7EFF-5FE5-9ED8-AF66AFCF19D0 ;
-    p:P116 wds:Q516-CE88A3BD-D526-5F20-A872-5FF57DC8DB94 ;
-    p:P117 wds:Q516-52DBA242-10DE-55F2-B1E8-BA5F7819A550 ;
-    p:P118 wds:Q516-FFD23B19-D8F7-55AB-863D-9EDD2B640238 ;
-    p:P119 wds:Q516-9879AC33-FC82-50A9-8267-E8B97D2C1F85 ;
-    p:P120 wds:Q516-7347A885-8B43-554D-A657-2EE29BD45C74 ;
-    p:P122 wds:Q516-9CEA9F10-3635-5466-BA1C-6CEC7AACD5CE,
-        wds:Q516-672EF46E-B4A0-59F8-86ED-C591A4EFEAD8 ;
-    p:P124 wds:Q516-C72A682E-78D2-53EC-BCF9-41C1C2EC716A ;
-    p:P125 wds:Q516-E716B4EE-B56D-5B5B-A3A1-76D88348F267 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q183 ;
-    wdt:P114 "10.5281/zenodo.630455" ;
-    wdt:P115 <https://open-archaeo.info/post/iosacal/> ;
-    wdt:P116 "iosacal" ;
-    wdt:P117 wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "IOSACal"@en ;
-    wdt:P120 <https://iosacal.readthedocs.io/en/latest/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P124 "iosacal" ;
-    wdt:P125 <https://codeberg.org/steko/iosacal> .
+    chbp:P2 chbs:Q516-21C7A98B-8EA4-5CA5-A21C-BD0E0E07E311,
+        chbs:Q516-1266C99C-9878-570D-94D7-CF6CB1DA0DBE ;
+    chbp:P106 chbs:Q516-81A484CA-04C4-595B-A07C-653CA5F5B131 ;
+    chbp:P113 chbs:Q516-536789CB-0CF2-5193-92D8-D0EADE70292A ;
+    chbp:P114 chbs:Q516-615818E5-5D8A-5093-AFDB-4EEAC9C00168 ;
+    chbp:P115 chbs:Q516-40320C3D-7EFF-5FE5-9ED8-AF66AFCF19D0 ;
+    chbp:P116 chbs:Q516-CE88A3BD-D526-5F20-A872-5FF57DC8DB94 ;
+    chbp:P117 chbs:Q516-52DBA242-10DE-55F2-B1E8-BA5F7819A550 ;
+    chbp:P118 chbs:Q516-FFD23B19-D8F7-55AB-863D-9EDD2B640238 ;
+    chbp:P119 chbs:Q516-9879AC33-FC82-50A9-8267-E8B97D2C1F85 ;
+    chbp:P120 chbs:Q516-7347A885-8B43-554D-A657-2EE29BD45C74 ;
+    chbp:P122 chbs:Q516-9CEA9F10-3635-5466-BA1C-6CEC7AACD5CE,
+        chbs:Q516-672EF46E-B4A0-59F8-86ED-C591A4EFEAD8 ;
+    chbp:P124 chbs:Q516-C72A682E-78D2-53EC-BCF9-41C1C2EC716A ;
+    chbp:P125 chbs:Q516-E716B4EE-B56D-5B5B-A3A1-76D88348F267 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q183 ;
+    chbt:P114 "10.5281/zenodo.630455" ;
+    chbt:P115 <https://open-archaeo.info/post/iosacal/> ;
+    chbt:P116 "iosacal" ;
+    chbt:P117 chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "IOSACal"@en ;
+    chbt:P120 <https://iosacal.readthedocs.io/en/latest/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P124 "iosacal" ;
+    chbt:P125 <https://codeberg.org/steko/iosacal> .
 
-wds:Q516-9CEA9F10-3635-5466-BA1C-6CEC7AACD5CE
+chbs:Q516-9CEA9F10-3635-5466-BA1C-6CEC7AACD5CE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P122 chb:Q110 .
 
-wds:Q516-21C7A98B-8EA4-5CA5-A21C-BD0E0E07E311
+chbs:Q516-21C7A98B-8EA4-5CA5-A21C-BD0E0E07E311
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P2 chb:Q102 .
 
-wds:Q516-52DBA242-10DE-55F2-B1E8-BA5F7819A550
+chbs:Q516-52DBA242-10DE-55F2-B1E8-BA5F7819A550
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P117 chb:Q140 .
 
-wds:Q516-81A484CA-04C4-595B-A07C-653CA5F5B131
+chbs:Q516-81A484CA-04C4-595B-A07C-653CA5F5B131
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P106 chb:Q110 .
 
-wds:Q516-672EF46E-B4A0-59F8-86ED-C591A4EFEAD8
+chbs:Q516-672EF46E-B4A0-59F8-86ED-C591A4EFEAD8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P122 chb:Q109 .
 
-wds:Q516-1266C99C-9878-570D-94D7-CF6CB1DA0DBE
+chbs:Q516-1266C99C-9878-570D-94D7-CF6CB1DA0DBE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P2 chb:Q106 .
 
-wds:Q516-7347A885-8B43-554D-A657-2EE29BD45C74
+chbs:Q516-7347A885-8B43-554D-A657-2EE29BD45C74
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P120 <https://iosacal.readthedocs.io/en/latest/> .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P120 <https://iosacal.readthedocs.io/en/latest/> .
 
-wds:Q516-9879AC33-FC82-50A9-8267-E8B97D2C1F85
+chbs:Q516-9879AC33-FC82-50A9-8267-E8B97D2C1F85
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P119 "IOSACal"@en .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P119 "IOSACal"@en .
 
-wds:Q516-40320C3D-7EFF-5FE5-9ED8-AF66AFCF19D0
+chbs:Q516-40320C3D-7EFF-5FE5-9ED8-AF66AFCF19D0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P115 <https://open-archaeo.info/post/iosacal/> .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P115 <https://open-archaeo.info/post/iosacal/> .
 
-wds:Q516-536789CB-0CF2-5193-92D8-D0EADE70292A
+chbs:Q516-536789CB-0CF2-5193-92D8-D0EADE70292A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q183 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q183 .
 
-wds:Q516-615818E5-5D8A-5093-AFDB-4EEAC9C00168
+chbs:Q516-615818E5-5D8A-5093-AFDB-4EEAC9C00168
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P114 "10.5281/zenodo.630455" .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P114 "10.5281/zenodo.630455" .
 
-wds:Q516-C72A682E-78D2-53EC-BCF9-41C1C2EC716A
+chbs:Q516-C72A682E-78D2-53EC-BCF9-41C1C2EC716A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P124 "iosacal" .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P124 "iosacal" .
 
-wds:Q516-CE88A3BD-D526-5F20-A872-5FF57DC8DB94
+chbs:Q516-CE88A3BD-D526-5F20-A872-5FF57DC8DB94
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "iosacal" .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "iosacal" .
 
-wds:Q516-E716B4EE-B56D-5B5B-A3A1-76D88348F267
+chbs:Q516-E716B4EE-B56D-5B5B-A3A1-76D88348F267
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    pq:P104 "2021-01-28T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/codeberg.org-steko-iosacal_-_2021-01-28_00-04-29> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:14dc0cf9d4dbbe176da3a0f291c42b84 ;
-    ps:P125 <https://codeberg.org/steko/iosacal> .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbpq:P104 "2021-01-28T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/codeberg.org-steko-iosacal_-_2021-01-28_00-04-29> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:14dc0cf9d4dbbe176da3a0f291c42b84 ;
+    chbps:P125 <https://codeberg.org/steko/iosacal> .
 
-wds:Q516-FFD23B19-D8F7-55AB-863D-9EDD2B640238
+chbs:Q516-FFD23B19-D8F7-55AB-863D-9EDD2B640238
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab ;
+    chbps:P118 chb:Q108 .
 
-wdref:daf2de814f5c223ecb540eafc1ccb402c194c8ab
+chbref:daf2de814f5c223ecb540eafc1ccb402c194c8ab
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/iosacal/> .
+    chbpr:P6 <https://open-archaeo.info/post/iosacal/> .
 
-wdv:14dc0cf9d4dbbe176da3a0f291c42b84
+chbv:14dc0cf9d4dbbe176da3a0f291c42b84
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

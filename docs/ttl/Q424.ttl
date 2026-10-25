@@ -1,53 +1,54 @@
 # Q424: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q424
+chbdata:Q424.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Methods to easily extract and manipulate palaeoclimate reconstructions for ecological and anthropological analyses."@en ;
     dcterms:identifier "Q424" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q424 ;
+    dcterms:subject chb:Q424 ;
     dcterms:title "pastclim"@en ;
-    schema:about wd:Q424 ;
-    dcat:distribution dist:Q424-html,
-        dist:Q424-json,
-        dist:Q424-ttl ;
+    schema:about chb:Q424 ;
+    dcat:distribution chbdist:Q424-html,
+        chbdist:Q424-json,
+        chbdist:Q424-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q424.html> .
 
-dist:Q424-html
+chbdist:Q424-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q424-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q424.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q424-json
+chbdist:Q424-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q424-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q424.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q424-ttl
+chbdist:Q424-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q424, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q424.ttl> ;
+    dcat:downloadURL chbdata:Q424.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q424
+chb:Q424
     a wikibase:Item ;
     schema:description "Methods to easily extract and manipulate palaeoclimate reconstructions for ecological and anthropological analyses."@en ;
     schema:name "pastclim"@en ;
@@ -80,204 +81,204 @@ wd:Q424
     wikibase:statements "21"^^xsd:integer ;
     rdfs:label "pastclim"@en ;
     skos:prefLabel "pastclim"@en ;
-    p:P2 wds:Q424-DF8215BF-CBD0-5400-B3AB-13FE1A9EEACE,
-        wds:Q424-E4380CE1-66F7-5AFC-A245-8448EDF9DF41 ;
-    p:P106 wds:Q424-255E2174-2843-57D8-A29D-8B48885A817E ;
-    p:P108 wds:Q424-F53C3D5C-8890-5869-B4ED-DBDDB6A7EED7 ;
-    p:P113 wds:Q424-7F97719F-D0BE-568A-ADA6-42CE18DEB5AB,
-        wds:Q424-2580F209-17F7-5984-975D-355914D4A9D9,
-        wds:Q424-026150F4-C400-5431-BBF6-209104C5F229,
-        wds:Q424-81657B37-F9EF-508D-B798-ED4936037313,
-        wds:Q424-710763CA-681B-587F-A79F-CE3B4D7F4F1B,
-        wds:Q424-98672740-B452-5D3F-90B0-247876BA0816 ;
-    p:P115 wds:Q424-44E83925-E7DF-597F-B8DA-71C7AE181AF7 ;
-    p:P116 wds:Q424-EB17EC53-3279-5E0C-9E29-9091EBBCE77F ;
-    p:P117 wds:Q424-0AC9FDFA-5A98-5346-8407-98F3CD31657E,
-        wds:Q424-DBFB80C8-A4FD-5A22-BA36-09B87C7D1CEE ;
-    p:P118 wds:Q424-27433268-A3EA-5014-8159-8B31EE881747 ;
-    p:P119 wds:Q424-0D511422-56DA-5F59-9D6E-918F680C61B5 ;
-    p:P120 wds:Q424-297D0403-82EA-5E54-84A1-E5FBF3910096 ;
-    p:P122 wds:Q424-2D8796AA-A065-517F-8810-08BE55DD0642,
-        wds:Q424-10DAEBA1-993C-5DCA-B45B-030DBD595A82 ;
-    p:P123 wds:Q424-52EACEC6-FBA5-5631-AAAF-D64F4D3A5618 ;
-    p:P125 wds:Q424-B5CD5CD3-C3AB-528B-AC02-F1728835719D ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "pastclim" ;
-    wdt:P113 wd:Q426,
-        wd:Q427,
-        wd:Q428,
-        wd:Q429,
-        wd:Q430,
-        wd:Q431 ;
-    wdt:P115 <https://open-archaeo.info/post/pastclim/> ;
-    wdt:P116 "pastclim" ;
-    wdt:P117 wd:Q212,
-        wd:Q425 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "pastclim"@en ;
-    wdt:P120 <https://evolecolgroup.github.io/pastclim/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/EvolEcolGroup/pastclim/> .
+    chbp:P2 chbs:Q424-DF8215BF-CBD0-5400-B3AB-13FE1A9EEACE,
+        chbs:Q424-E4380CE1-66F7-5AFC-A245-8448EDF9DF41 ;
+    chbp:P106 chbs:Q424-255E2174-2843-57D8-A29D-8B48885A817E ;
+    chbp:P108 chbs:Q424-F53C3D5C-8890-5869-B4ED-DBDDB6A7EED7 ;
+    chbp:P113 chbs:Q424-7F97719F-D0BE-568A-ADA6-42CE18DEB5AB,
+        chbs:Q424-2580F209-17F7-5984-975D-355914D4A9D9,
+        chbs:Q424-026150F4-C400-5431-BBF6-209104C5F229,
+        chbs:Q424-81657B37-F9EF-508D-B798-ED4936037313,
+        chbs:Q424-710763CA-681B-587F-A79F-CE3B4D7F4F1B,
+        chbs:Q424-98672740-B452-5D3F-90B0-247876BA0816 ;
+    chbp:P115 chbs:Q424-44E83925-E7DF-597F-B8DA-71C7AE181AF7 ;
+    chbp:P116 chbs:Q424-EB17EC53-3279-5E0C-9E29-9091EBBCE77F ;
+    chbp:P117 chbs:Q424-0AC9FDFA-5A98-5346-8407-98F3CD31657E,
+        chbs:Q424-DBFB80C8-A4FD-5A22-BA36-09B87C7D1CEE ;
+    chbp:P118 chbs:Q424-27433268-A3EA-5014-8159-8B31EE881747 ;
+    chbp:P119 chbs:Q424-0D511422-56DA-5F59-9D6E-918F680C61B5 ;
+    chbp:P120 chbs:Q424-297D0403-82EA-5E54-84A1-E5FBF3910096 ;
+    chbp:P122 chbs:Q424-2D8796AA-A065-517F-8810-08BE55DD0642,
+        chbs:Q424-10DAEBA1-993C-5DCA-B45B-030DBD595A82 ;
+    chbp:P123 chbs:Q424-52EACEC6-FBA5-5631-AAAF-D64F4D3A5618 ;
+    chbp:P125 chbs:Q424-B5CD5CD3-C3AB-528B-AC02-F1728835719D ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "pastclim" ;
+    chbt:P113 chb:Q426,
+        chb:Q427,
+        chb:Q428,
+        chb:Q429,
+        chb:Q430,
+        chb:Q431 ;
+    chbt:P115 <https://open-archaeo.info/post/pastclim/> ;
+    chbt:P116 "pastclim" ;
+    chbt:P117 chb:Q212,
+        chb:Q425 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "pastclim"@en ;
+    chbt:P120 <https://evolecolgroup.github.io/pastclim/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/EvolEcolGroup/pastclim/> .
 
-wds:Q424-0AC9FDFA-5A98-5346-8407-98F3CD31657E
+chbs:Q424-0AC9FDFA-5A98-5346-8407-98F3CD31657E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P117 wd:Q212 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P117 chb:Q212 .
 
-wds:Q424-0D511422-56DA-5F59-9D6E-918F680C61B5
+chbs:Q424-0D511422-56DA-5F59-9D6E-918F680C61B5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P119 "pastclim"@en .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P119 "pastclim"@en .
 
-wds:Q424-2D8796AA-A065-517F-8810-08BE55DD0642
+chbs:Q424-2D8796AA-A065-517F-8810-08BE55DD0642
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q424-7F97719F-D0BE-568A-ADA6-42CE18DEB5AB
+chbs:Q424-7F97719F-D0BE-568A-ADA6-42CE18DEB5AB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P146 "6" ;
-    ps:P113 wd:Q431 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P146 "6" ;
+    chbps:P113 chb:Q431 .
 
-wds:Q424-10DAEBA1-993C-5DCA-B45B-030DBD595A82
+chbs:Q424-10DAEBA1-993C-5DCA-B45B-030DBD595A82
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q424-44E83925-E7DF-597F-B8DA-71C7AE181AF7
+chbs:Q424-44E83925-E7DF-597F-B8DA-71C7AE181AF7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P115 <https://open-archaeo.info/post/pastclim/> .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P115 <https://open-archaeo.info/post/pastclim/> .
 
-wds:Q424-52EACEC6-FBA5-5631-AAAF-D64F4D3A5618
+chbs:Q424-52EACEC6-FBA5-5631-AAAF-D64F4D3A5618
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q424-255E2174-2843-57D8-A29D-8B48885A817E
+chbs:Q424-255E2174-2843-57D8-A29D-8B48885A817E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q424-297D0403-82EA-5E54-84A1-E5FBF3910096
+chbs:Q424-297D0403-82EA-5E54-84A1-E5FBF3910096
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P120 <https://evolecolgroup.github.io/pastclim/> .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P120 <https://evolecolgroup.github.io/pastclim/> .
 
-wds:Q424-2580F209-17F7-5984-975D-355914D4A9D9
+chbs:Q424-2580F209-17F7-5984-975D-355914D4A9D9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P146 "5" ;
-    ps:P113 wd:Q430 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P146 "5" ;
+    chbps:P113 chb:Q430 .
 
-wds:Q424-026150F4-C400-5431-BBF6-209104C5F229
+chbs:Q424-026150F4-C400-5431-BBF6-209104C5F229
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q428 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q428 .
 
-wds:Q424-81657B37-F9EF-508D-B798-ED4936037313
+chbs:Q424-81657B37-F9EF-508D-B798-ED4936037313
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P146 "4" ;
-    ps:P113 wd:Q429 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P146 "4" ;
+    chbps:P113 chb:Q429 .
 
-wds:Q424-710763CA-681B-587F-A79F-CE3B4D7F4F1B
+chbs:Q424-710763CA-681B-587F-A79F-CE3B4D7F4F1B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q427 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q427 .
 
-wds:Q424-27433268-A3EA-5014-8159-8B31EE881747
+chbs:Q424-27433268-A3EA-5014-8159-8B31EE881747
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q424-98672740-B452-5D3F-90B0-247876BA0816
+chbs:Q424-98672740-B452-5D3F-90B0-247876BA0816
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q426 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q426 .
 
-wds:Q424-B5CD5CD3-C3AB-528B-AC02-F1728835719D
+chbs:Q424-B5CD5CD3-C3AB-528B-AC02-F1728835719D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/EvolEcolGroup/pastclim/> .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/EvolEcolGroup/pastclim/> .
 
-wds:Q424-DBFB80C8-A4FD-5A22-BA36-09B87C7D1CEE
+chbs:Q424-DBFB80C8-A4FD-5A22-BA36-09B87C7D1CEE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P117 wd:Q425 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P117 chb:Q425 .
 
-wds:Q424-DF8215BF-CBD0-5400-B3AB-13FE1A9EEACE
+chbs:Q424-DF8215BF-CBD0-5400-B3AB-13FE1A9EEACE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q424-E4380CE1-66F7-5AFC-A245-8448EDF9DF41
+chbs:Q424-E4380CE1-66F7-5AFC-A245-8448EDF9DF41
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q424-EB17EC53-3279-5E0C-9E29-9091EBBCE77F
+chbs:Q424-EB17EC53-3279-5E0C-9E29-9091EBBCE77F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "pastclim" .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "pastclim" .
 
-wds:Q424-F53C3D5C-8890-5869-B4ED-DBDDB6A7EED7
+chbs:Q424-F53C3D5C-8890-5869-B4ED-DBDDB6A7EED7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b327375874776214c545343e2e738f1a54e169c5 ;
-    ps:P108 "pastclim" .
+    prov:wasDerivedFrom chbref:b327375874776214c545343e2e738f1a54e169c5 ;
+    chbps:P108 "pastclim" .
 
-wdref:b327375874776214c545343e2e738f1a54e169c5
+chbref:b327375874776214c545343e2e738f1a54e169c5
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/pastclim/> .
+    chbpr:P6 <https://open-archaeo.info/post/pastclim/> .

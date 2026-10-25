@@ -1,53 +1,54 @@
 # Q163: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q163
+chbdata:Q163.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Routines to read and analyze la-icp-ms data from the field museum's elemental analysis facility"@en ;
     dcterms:identifier "Q163" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q163 ;
+    dcterms:subject chb:Q163 ;
     dcterms:title "LA_ICP_MS-Routines_FMNH"@en ;
-    schema:about wd:Q163 ;
-    dcat:distribution dist:Q163-html,
-        dist:Q163-json,
-        dist:Q163-ttl ;
+    schema:about chb:Q163 ;
+    dcat:distribution chbdist:Q163-html,
+        chbdist:Q163-json,
+        chbdist:Q163-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q163.html> .
 
-dist:Q163-html
+chbdist:Q163-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q163-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q163.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q163-json
+chbdist:Q163-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q163-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q163.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q163-ttl
+chbdist:Q163-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q163, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q163.ttl> ;
+    dcat:downloadURL chbdata:Q163.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q163
+chb:Q163
     a wikibase:Item ;
     schema:description "Routines to read and analyze la-icp-ms data from the field museum's elemental analysis facility"@en ;
     schema:name "LA_ICP_MS-Routines_FMNH"@en ;
@@ -80,135 +81,135 @@ wd:Q163
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "LA_ICP_MS-Routines_FMNH"@en ;
     skos:prefLabel "LA_ICP_MS-Routines_FMNH"@en ;
-    p:P2 wds:Q163-DBC5C60B-FA35-57F2-8C5C-2E2A25E77774,
-        wds:Q163-FA757F74-3E3B-5C8C-909C-64FD003ACDC4 ;
-    p:P106 wds:Q163-408403C3-6F67-5991-9F23-785CF9904B39 ;
-    p:P113 wds:Q163-2212F563-B243-5D79-974F-C6A41D90FD22 ;
-    p:P115 wds:Q163-D29C3316-50AD-55FD-BD16-17F6B1628140 ;
-    p:P116 wds:Q163-520605AE-CF96-5F7D-A628-C9480B9B73DC ;
-    p:P117 wds:Q163-D25F4C28-3EDE-5A31-B8F3-6BD1161A4607 ;
-    p:P118 wds:Q163-E64AB493-EDE4-5BAE-9A8A-C8834FFBB28A ;
-    p:P119 wds:Q163-D181585B-ED48-5643-8BF8-88E2CF1443A4 ;
-    p:P122 wds:Q163-57D651D2-7965-55C0-A8A5-3DBD78169790,
-        wds:Q163-91BB4F65-57F2-55A3-B4F8-447265C0BEA7 ;
-    p:P123 wds:Q163-83FE9F88-F5C3-5EA8-A2FB-77B86FEE2230 ;
-    p:P125 wds:Q163-7857C680-15BE-56C8-B977-80A79901E773 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q165 ;
-    wdt:P115 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> ;
-    wdt:P116 "la-icp-ms-routines-fmnh" ;
-    wdt:P117 wd:Q164 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "LA_ICP_MS-Routines_FMNH"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ajupton/LA_ICP_MS-Routines_FMNH> .
+    chbp:P2 chbs:Q163-DBC5C60B-FA35-57F2-8C5C-2E2A25E77774,
+        chbs:Q163-FA757F74-3E3B-5C8C-909C-64FD003ACDC4 ;
+    chbp:P106 chbs:Q163-408403C3-6F67-5991-9F23-785CF9904B39 ;
+    chbp:P113 chbs:Q163-2212F563-B243-5D79-974F-C6A41D90FD22 ;
+    chbp:P115 chbs:Q163-D29C3316-50AD-55FD-BD16-17F6B1628140 ;
+    chbp:P116 chbs:Q163-520605AE-CF96-5F7D-A628-C9480B9B73DC ;
+    chbp:P117 chbs:Q163-D25F4C28-3EDE-5A31-B8F3-6BD1161A4607 ;
+    chbp:P118 chbs:Q163-E64AB493-EDE4-5BAE-9A8A-C8834FFBB28A ;
+    chbp:P119 chbs:Q163-D181585B-ED48-5643-8BF8-88E2CF1443A4 ;
+    chbp:P122 chbs:Q163-57D651D2-7965-55C0-A8A5-3DBD78169790,
+        chbs:Q163-91BB4F65-57F2-55A3-B4F8-447265C0BEA7 ;
+    chbp:P123 chbs:Q163-83FE9F88-F5C3-5EA8-A2FB-77B86FEE2230 ;
+    chbp:P125 chbs:Q163-7857C680-15BE-56C8-B977-80A79901E773 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q165 ;
+    chbt:P115 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> ;
+    chbt:P116 "la-icp-ms-routines-fmnh" ;
+    chbt:P117 chb:Q164 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "LA_ICP_MS-Routines_FMNH"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ajupton/LA_ICP_MS-Routines_FMNH> .
 
-wds:Q163-57D651D2-7965-55C0-A8A5-3DBD78169790
+chbs:Q163-57D651D2-7965-55C0-A8A5-3DBD78169790
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P122 chb:Q109 .
 
-wds:Q163-83FE9F88-F5C3-5EA8-A2FB-77B86FEE2230
+chbs:Q163-83FE9F88-F5C3-5EA8-A2FB-77B86FEE2230
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P123 chb:Q111 .
 
-wds:Q163-91BB4F65-57F2-55A3-B4F8-447265C0BEA7
+chbs:Q163-91BB4F65-57F2-55A3-B4F8-447265C0BEA7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P122 chb:Q110 .
 
-wds:Q163-2212F563-B243-5D79-974F-C6A41D90FD22
+chbs:Q163-2212F563-B243-5D79-974F-C6A41D90FD22
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q165 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q165 .
 
-wds:Q163-7857C680-15BE-56C8-B977-80A79901E773
+chbs:Q163-7857C680-15BE-56C8-B977-80A79901E773
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    pq:P104 "2018-10-20T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ajupton-LA_ICP_MS-Routines_FMNH_-_2018-10-20_19-02-22> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:2137334a7c335c8c6637a710fc75c173 ;
-    ps:P125 <https://github.com/ajupton/LA_ICP_MS-Routines_FMNH> .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbpq:P104 "2018-10-20T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ajupton-LA_ICP_MS-Routines_FMNH_-_2018-10-20_19-02-22> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:2137334a7c335c8c6637a710fc75c173 ;
+    chbps:P125 <https://github.com/ajupton/LA_ICP_MS-Routines_FMNH> .
 
-wds:Q163-408403C3-6F67-5991-9F23-785CF9904B39
+chbs:Q163-408403C3-6F67-5991-9F23-785CF9904B39
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P106 chb:Q110 .
 
-wds:Q163-520605AE-CF96-5F7D-A628-C9480B9B73DC
+chbs:Q163-520605AE-CF96-5F7D-A628-C9480B9B73DC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "la-icp-ms-routines-fmnh" .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "la-icp-ms-routines-fmnh" .
 
-wds:Q163-D25F4C28-3EDE-5A31-B8F3-6BD1161A4607
+chbs:Q163-D25F4C28-3EDE-5A31-B8F3-6BD1161A4607
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P117 wd:Q164 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P117 chb:Q164 .
 
-wds:Q163-D29C3316-50AD-55FD-BD16-17F6B1628140
+chbs:Q163-D29C3316-50AD-55FD-BD16-17F6B1628140
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P115 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P115 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> .
 
-wds:Q163-D181585B-ED48-5643-8BF8-88E2CF1443A4
+chbs:Q163-D181585B-ED48-5643-8BF8-88E2CF1443A4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P119 "LA_ICP_MS-Routines_FMNH"@en .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P119 "LA_ICP_MS-Routines_FMNH"@en .
 
-wds:Q163-DBC5C60B-FA35-57F2-8C5C-2E2A25E77774
+chbs:Q163-DBC5C60B-FA35-57F2-8C5C-2E2A25E77774
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P2 chb:Q106 .
 
-wds:Q163-E64AB493-EDE4-5BAE-9A8A-C8834FFBB28A
+chbs:Q163-E64AB493-EDE4-5BAE-9A8A-C8834FFBB28A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P118 chb:Q108 .
 
-wds:Q163-FA757F74-3E3B-5C8C-909C-64FD003ACDC4
+chbs:Q163-FA757F74-3E3B-5C8C-909C-64FD003ACDC4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec ;
+    chbps:P2 chb:Q104 .
 
-wdref:b30d356a0e31a4feae67c47f89b4591cc932a5ec
+chbref:b30d356a0e31a4feae67c47f89b4591cc932a5ec
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> .
+    chbpr:P6 <https://open-archaeo.info/post/la-icp-ms-routines-fmnh/> .
 
-wdv:2137334a7c335c8c6637a710fc75c173
+chbv:2137334a7c335c8c6637a710fc75c173
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

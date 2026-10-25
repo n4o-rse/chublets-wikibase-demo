@@ -1,53 +1,54 @@
 # Q105: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q105
+chbdata:Q105.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "Q105" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q105 ;
+    dcterms:subject chb:Q105 ;
     dcterms:title "Little Minion"@en ;
-    schema:about wd:Q105 ;
-    dcat:distribution dist:Q105-html,
-        dist:Q105-json,
-        dist:Q105-ttl ;
+    schema:about chb:Q105 ;
+    dcat:distribution chbdist:Q105-html,
+        chbdist:Q105-json,
+        chbdist:Q105-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q105.html> .
 
-dist:Q105-html
+chbdist:Q105-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q105-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q105.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q105-json
+chbdist:Q105-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,53 +65,53 @@ dist:Q105-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q105.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q105-ttl
+chbdist:Q105-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q105, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q105.ttl> ;
+    dcat:downloadURL chbdata:Q105.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q105
+chb:Q105
     a wikibase:Item ;
     schema:name "Little Minion"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Little Minion"@en ;
     skos:prefLabel "Little Minion"@en ;
-    p:P1 wds:Q105-78A2BB6D-9F9C-513B-B394-F8EA39926F78 ;
-    p:P2 wds:Q105-85DC50DA-56F4-5515-A022-A5DDBDDAAD5B ;
-    p:P4 wds:Q105-3186562A-3301-5FD5-9E53-4DE46874E9F6 ;
-    wdt:P1 wd:Q3 ;
-    wdt:P2 wd:Q1 ;
-    wdt:P4 "Q73899440" .
+    chbp:P1 chbs:Q105-78A2BB6D-9F9C-513B-B394-F8EA39926F78 ;
+    chbp:P2 chbs:Q105-85DC50DA-56F4-5515-A022-A5DDBDDAAD5B ;
+    chbp:P4 chbs:Q105-3186562A-3301-5FD5-9E53-4DE46874E9F6 ;
+    chbt:P1 chb:Q3 ;
+    chbt:P2 chb:Q1 ;
+    chbt:P4 "Q73899440" .
 
-wds:Q105-78A2BB6D-9F9C-513B-B394-F8EA39926F78
+chbs:Q105-78A2BB6D-9F9C-513B-B394-F8EA39926F78
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P1 wd:Q3 .
+    chbps:P1 chb:Q3 .
 
-wds:Q105-85DC50DA-56F4-5515-A022-A5DDBDDAAD5B
+chbs:Q105-85DC50DA-56F4-5515-A022-A5DDBDDAAD5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q1 .
+    chbps:P2 chb:Q1 .
 
-wds:Q105-3186562A-3301-5FD5-9E53-4DE46874E9F6
+chbs:Q105-3186562A-3301-5FD5-9E53-4DE46874E9F6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a5b3a9ce943ee42bd35b27cc7257d10ee75f4374 ;
-    ps:P4 "Q73899440" .
+    prov:wasDerivedFrom chbref:a5b3a9ce943ee42bd35b27cc7257d10ee75f4374 ;
+    chbps:P4 "Q73899440" .
 
-wdref:a5b3a9ce943ee42bd35b27cc7257d10ee75f4374
+chbref:a5b3a9ce943ee42bd35b27cc7257d10ee75f4374
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q73899440> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q73899440> .
 
 # CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv) and the DCAT classes of this file (data/dcat-crm.csv),
 # with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
 
-wd:Q105
+chb:Q105
     rdfs:subClassOf crmdig:D14_Software .

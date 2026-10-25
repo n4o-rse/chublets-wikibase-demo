@@ -1,53 +1,54 @@
 # Q693: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q693
+chbdata:Q693.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Tools to directly model underlying population dynamics using chronological datasets (radiocarbon and other) with a variety of models, including Continuous Piecewise Linear (CPL) model framework, and model comparison framework using BIC. Package also calibrates 14C samples, and generates Summed Probability Distributions (SPD). CPL modelling directly estimates the most likely population trajectory given a dataset, using SPD simulation analysis to generate a Goodness-of-fit test for the best selected model."@en ;
     dcterms:identifier "Q693" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q693 ;
+    dcterms:subject chb:Q693 ;
     dcterms:title "ADMUR"@en ;
-    schema:about wd:Q693 ;
-    dcat:distribution dist:Q693-html,
-        dist:Q693-json,
-        dist:Q693-ttl ;
+    schema:about chb:Q693 ;
+    dcat:distribution chbdist:Q693-html,
+        chbdist:Q693-json,
+        chbdist:Q693-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q693.html> .
 
-dist:Q693-html
+chbdist:Q693-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q693-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q693.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q693-json
+chbdist:Q693-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q693-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q693.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q693-ttl
+chbdist:Q693-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q693, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q693.ttl> ;
+    dcat:downloadURL chbdata:Q693.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q693
+chb:Q693
     a wikibase:Item ;
     schema:description "Tools to directly model underlying population dynamics using chronological datasets (radiocarbon and other) with a variety of models, including Continuous Piecewise Linear (CPL) model framework, and model comparison framework using BIC. Package also calibrates 14C samples, and generates Summed Probability Distributions (SPD). CPL modelling directly estimates the most likely population trajectory given a dataset, using SPD simulation analysis to generate a Goodness-of-fit test for the best selected model."@en ;
     schema:name "ADMUR"@en ;
@@ -80,193 +81,193 @@ wd:Q693
     wikibase:statements "19"^^xsd:integer ;
     rdfs:label "ADMUR"@en ;
     skos:prefLabel "ADMUR"@en ;
-    p:P2 wds:Q693-3D41E150-2C22-5A7B-8CBC-844154AD977E,
-        wds:Q693-0169AC81-00DC-5ADC-A503-F6ECE9EFB9CB ;
-    p:P106 wds:Q693-65B2C05A-3112-5F05-9205-FDE42C451D30 ;
-    p:P111 wds:Q693-73E755D6-97A4-5E07-874E-2B8B3490A562 ;
-    p:P113 wds:Q693-2D56A7C2-9BE6-5E4F-A62D-A3675A4C8AED,
-        wds:Q693-2E63CFC4-80DC-5616-8737-FD000175A183,
-        wds:Q693-35757FDD-C6F3-5EA5-892F-9AF6B4695D52,
-        wds:Q693-C6E63AF5-562F-5C9E-A3C5-98AD702D53C2,
-        wds:Q693-E13120BC-69CD-5969-AC3A-D4DBFB9E2CB5 ;
-    p:P114 wds:Q693-C75BC8ED-4968-5477-B45B-E7520F1AB94F ;
-    p:P115 wds:Q693-8D3301FF-0D1C-5FD0-BE40-7C6D9BEA1767 ;
-    p:P116 wds:Q693-7D173336-B4EB-566C-B4C6-1F540893053A ;
-    p:P117 wds:Q693-0AA05262-183E-5A34-B8C7-9F5585B9AF81 ;
-    p:P118 wds:Q693-796F79B0-BB96-541D-8BDD-138225B79DC5 ;
-    p:P119 wds:Q693-B814C9E5-B099-5366-8160-9326D190BD8F ;
-    p:P122 wds:Q693-489C1438-77C1-5EC5-A1CF-FBEB3E5CB1C9,
-        wds:Q693-C6AEC013-1BDF-5E82-B8AF-786D4027CB21 ;
-    p:P123 wds:Q693-A8CFB170-2535-5F3A-BAC3-0569880C6FF4 ;
-    p:P125 wds:Q693-2E5AB36A-F3EC-5571-B8BF-2BE89EC110F4 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P111 wd:Q699 ;
-    wdt:P113 wd:Q694,
-        wd:Q695,
-        wd:Q696,
-        wd:Q697,
-        wd:Q698 ;
-    wdt:P114 "10.1098/rstb.2019.0723" ;
-    wdt:P115 <https://open-archaeo.info/post/admur/> ;
-    wdt:P116 "admur" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ADMUR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/UCL/ADMUR> .
+    chbp:P2 chbs:Q693-3D41E150-2C22-5A7B-8CBC-844154AD977E,
+        chbs:Q693-0169AC81-00DC-5ADC-A503-F6ECE9EFB9CB ;
+    chbp:P106 chbs:Q693-65B2C05A-3112-5F05-9205-FDE42C451D30 ;
+    chbp:P111 chbs:Q693-73E755D6-97A4-5E07-874E-2B8B3490A562 ;
+    chbp:P113 chbs:Q693-2D56A7C2-9BE6-5E4F-A62D-A3675A4C8AED,
+        chbs:Q693-2E63CFC4-80DC-5616-8737-FD000175A183,
+        chbs:Q693-35757FDD-C6F3-5EA5-892F-9AF6B4695D52,
+        chbs:Q693-C6E63AF5-562F-5C9E-A3C5-98AD702D53C2,
+        chbs:Q693-E13120BC-69CD-5969-AC3A-D4DBFB9E2CB5 ;
+    chbp:P114 chbs:Q693-C75BC8ED-4968-5477-B45B-E7520F1AB94F ;
+    chbp:P115 chbs:Q693-8D3301FF-0D1C-5FD0-BE40-7C6D9BEA1767 ;
+    chbp:P116 chbs:Q693-7D173336-B4EB-566C-B4C6-1F540893053A ;
+    chbp:P117 chbs:Q693-0AA05262-183E-5A34-B8C7-9F5585B9AF81 ;
+    chbp:P118 chbs:Q693-796F79B0-BB96-541D-8BDD-138225B79DC5 ;
+    chbp:P119 chbs:Q693-B814C9E5-B099-5366-8160-9326D190BD8F ;
+    chbp:P122 chbs:Q693-489C1438-77C1-5EC5-A1CF-FBEB3E5CB1C9,
+        chbs:Q693-C6AEC013-1BDF-5E82-B8AF-786D4027CB21 ;
+    chbp:P123 chbs:Q693-A8CFB170-2535-5F3A-BAC3-0569880C6FF4 ;
+    chbp:P125 chbs:Q693-2E5AB36A-F3EC-5571-B8BF-2BE89EC110F4 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P111 chb:Q699 ;
+    chbt:P113 chb:Q694,
+        chb:Q695,
+        chb:Q696,
+        chb:Q697,
+        chb:Q698 ;
+    chbt:P114 "10.1098/rstb.2019.0723" ;
+    chbt:P115 <https://open-archaeo.info/post/admur/> ;
+    chbt:P116 "admur" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ADMUR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/UCL/ADMUR> .
 
-wds:Q693-0AA05262-183E-5A34-B8C7-9F5585B9AF81
+chbs:Q693-0AA05262-183E-5A34-B8C7-9F5585B9AF81
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q693-2D56A7C2-9BE6-5E4F-A62D-A3675A4C8AED
+chbs:Q693-2D56A7C2-9BE6-5E4F-A62D-A3675A4C8AED
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q695 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q695 .
 
-wds:Q693-2E5AB36A-F3EC-5571-B8BF-2BE89EC110F4
+chbs:Q693-2E5AB36A-F3EC-5571-B8BF-2BE89EC110F4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P104 "2021-01-27T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-UCL-ADMUR_-_2021-01-27_11-48-18> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:f55ed4ec76500dd78901d0957f880c16 ;
-    ps:P125 <https://github.com/UCL/ADMUR> .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P104 "2021-01-27T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-UCL-ADMUR_-_2021-01-27_11-48-18> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:f55ed4ec76500dd78901d0957f880c16 ;
+    chbps:P125 <https://github.com/UCL/ADMUR> .
 
-wds:Q693-2E63CFC4-80DC-5616-8737-FD000175A183
+chbs:Q693-2E63CFC4-80DC-5616-8737-FD000175A183
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q694 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q694 .
 
-wds:Q693-3D41E150-2C22-5A7B-8CBC-844154AD977E
+chbs:Q693-3D41E150-2C22-5A7B-8CBC-844154AD977E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q693-7D173336-B4EB-566C-B4C6-1F540893053A
+chbs:Q693-7D173336-B4EB-566C-B4C6-1F540893053A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "admur" .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "admur" .
 
-wds:Q693-8D3301FF-0D1C-5FD0-BE40-7C6D9BEA1767
+chbs:Q693-8D3301FF-0D1C-5FD0-BE40-7C6D9BEA1767
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P115 <https://open-archaeo.info/post/admur/> .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P115 <https://open-archaeo.info/post/admur/> .
 
-wds:Q693-65B2C05A-3112-5F05-9205-FDE42C451D30
+chbs:Q693-65B2C05A-3112-5F05-9205-FDE42C451D30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q693-73E755D6-97A4-5E07-874E-2B8B3490A562
+chbs:Q693-73E755D6-97A4-5E07-874E-2B8B3490A562
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P111 wd:Q699 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P111 chb:Q699 .
 
-wds:Q693-0169AC81-00DC-5ADC-A503-F6ECE9EFB9CB
+chbs:Q693-0169AC81-00DC-5ADC-A503-F6ECE9EFB9CB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q693-489C1438-77C1-5EC5-A1CF-FBEB3E5CB1C9
+chbs:Q693-489C1438-77C1-5EC5-A1CF-FBEB3E5CB1C9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q693-796F79B0-BB96-541D-8BDD-138225B79DC5
+chbs:Q693-796F79B0-BB96-541D-8BDD-138225B79DC5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q693-35757FDD-C6F3-5EA5-892F-9AF6B4695D52
+chbs:Q693-35757FDD-C6F3-5EA5-892F-9AF6B4695D52
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P146 "4" ;
-    ps:P113 wd:Q697 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P146 "4" ;
+    chbps:P113 chb:Q697 .
 
-wds:Q693-A8CFB170-2535-5F3A-BAC3-0569880C6FF4
+chbs:Q693-A8CFB170-2535-5F3A-BAC3-0569880C6FF4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q693-B814C9E5-B099-5366-8160-9326D190BD8F
+chbs:Q693-B814C9E5-B099-5366-8160-9326D190BD8F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P119 "ADMUR"@en .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P119 "ADMUR"@en .
 
-wds:Q693-C6AEC013-1BDF-5E82-B8AF-786D4027CB21
+chbs:Q693-C6AEC013-1BDF-5E82-B8AF-786D4027CB21
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q693-C6E63AF5-562F-5C9E-A3C5-98AD702D53C2
+chbs:Q693-C6E63AF5-562F-5C9E-A3C5-98AD702D53C2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P146 "5" ;
-    ps:P113 wd:Q698 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P146 "5" ;
+    chbps:P113 chb:Q698 .
 
-wds:Q693-C75BC8ED-4968-5477-B45B-E7520F1AB94F
+chbs:Q693-C75BC8ED-4968-5477-B45B-E7520F1AB94F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    ps:P114 "10.1098/rstb.2019.0723" .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbps:P114 "10.1098/rstb.2019.0723" .
 
-wds:Q693-E13120BC-69CD-5969-AC3A-D4DBFB9E2CB5
+chbs:Q693-E13120BC-69CD-5969-AC3A-D4DBFB9E2CB5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q696 .
+    prov:wasDerivedFrom chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67 ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q696 .
 
-wdref:d7a873ab4fae3229f6e20dc93519226e9f290c67
+chbref:d7a873ab4fae3229f6e20dc93519226e9f290c67
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/admur/> .
+    chbpr:P6 <https://open-archaeo.info/post/admur/> .
 
-wdv:f55ed4ec76500dd78901d0957f880c16
+chbv:f55ed4ec76500dd78901d0957f880c16
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

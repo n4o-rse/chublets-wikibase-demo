@@ -1,53 +1,54 @@
 # Q505: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q505
+chbdata:Q505.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Showcases examples of how Python can be applied in the field of archaeology, demonstrating the versatility and power of Python for archaeological research and data analysis."@en ;
     dcterms:identifier "Q505" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q505 ;
+    dcterms:subject chb:Q505 ;
     dcterms:title "Digging-with-Python"@en ;
-    schema:about wd:Q505 ;
-    dcat:distribution dist:Q505-html,
-        dist:Q505-json,
-        dist:Q505-ttl ;
+    schema:about chb:Q505 ;
+    dcat:distribution chbdist:Q505-html,
+        chbdist:Q505-json,
+        chbdist:Q505-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q505.html> .
 
-dist:Q505-html
+chbdist:Q505-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q505-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q505.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q505-json
+chbdist:Q505-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q505-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q505.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q505-ttl
+chbdist:Q505-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q505, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q505.ttl> ;
+    dcat:downloadURL chbdata:Q505.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q505
+chb:Q505
     a wikibase:Item ;
     schema:description "Showcases examples of how Python can be applied in the field of archaeology, demonstrating the versatility and power of Python for archaeological research and data analysis."@en ;
     schema:name "Digging-with-Python"@en ;
@@ -80,127 +81,127 @@ wd:Q505
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "Digging-with-Python"@en ;
     skos:prefLabel "Digging-with-Python"@en ;
-    p:P2 wds:Q505-752A21C5-BF3B-5F9D-9616-E36F25E9D26E,
-        wds:Q505-C6E228F1-5BDD-5B76-A0C1-7B179BB76A61 ;
-    p:P106 wds:Q505-38806218-1140-5482-B580-65AB934082FF ;
-    p:P113 wds:Q505-5A7E95B4-E3AB-51A0-B2A6-4E89DFDD6059 ;
-    p:P115 wds:Q505-0BD983BE-CBB5-5242-95C8-9E38C8EF750F ;
-    p:P116 wds:Q505-D35D813A-A14A-56BE-A45C-9AB3D821DF5B ;
-    p:P117 wds:Q505-F39F3BE1-FFC5-5EA9-B758-82FC4B21A0F7 ;
-    p:P118 wds:Q505-13BD9AE0-1522-5661-AAF7-314270ACBD33 ;
-    p:P119 wds:Q505-430C7651-F687-5A3F-BF2F-8C1A2A460979 ;
-    p:P122 wds:Q505-1AC36984-AE3F-570C-AD66-746CCB5D9FA7,
-        wds:Q505-525B5740-1264-55B6-95B4-3E582A499E93 ;
-    p:P123 wds:Q505-41038E7C-FFA9-5CAA-A74E-41D0A42FF37D ;
-    p:P125 wds:Q505-DC2EB81D-749E-5A4D-908F-5E6C1101BE08 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q457 ;
-    wdt:P115 <https://open-archaeo.info/post/digging-with-python/> ;
-    wdt:P116 "digging-with-python" ;
-    wdt:P117 wd:Q164 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Digging-with-Python"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/jfpalomeque/Digging-with-Python> .
+    chbp:P2 chbs:Q505-752A21C5-BF3B-5F9D-9616-E36F25E9D26E,
+        chbs:Q505-C6E228F1-5BDD-5B76-A0C1-7B179BB76A61 ;
+    chbp:P106 chbs:Q505-38806218-1140-5482-B580-65AB934082FF ;
+    chbp:P113 chbs:Q505-5A7E95B4-E3AB-51A0-B2A6-4E89DFDD6059 ;
+    chbp:P115 chbs:Q505-0BD983BE-CBB5-5242-95C8-9E38C8EF750F ;
+    chbp:P116 chbs:Q505-D35D813A-A14A-56BE-A45C-9AB3D821DF5B ;
+    chbp:P117 chbs:Q505-F39F3BE1-FFC5-5EA9-B758-82FC4B21A0F7 ;
+    chbp:P118 chbs:Q505-13BD9AE0-1522-5661-AAF7-314270ACBD33 ;
+    chbp:P119 chbs:Q505-430C7651-F687-5A3F-BF2F-8C1A2A460979 ;
+    chbp:P122 chbs:Q505-1AC36984-AE3F-570C-AD66-746CCB5D9FA7,
+        chbs:Q505-525B5740-1264-55B6-95B4-3E582A499E93 ;
+    chbp:P123 chbs:Q505-41038E7C-FFA9-5CAA-A74E-41D0A42FF37D ;
+    chbp:P125 chbs:Q505-DC2EB81D-749E-5A4D-908F-5E6C1101BE08 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q457 ;
+    chbt:P115 <https://open-archaeo.info/post/digging-with-python/> ;
+    chbt:P116 "digging-with-python" ;
+    chbt:P117 chb:Q164 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Digging-with-Python"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/jfpalomeque/Digging-with-Python> .
 
-wds:Q505-0BD983BE-CBB5-5242-95C8-9E38C8EF750F
+chbs:Q505-0BD983BE-CBB5-5242-95C8-9E38C8EF750F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P115 <https://open-archaeo.info/post/digging-with-python/> .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P115 <https://open-archaeo.info/post/digging-with-python/> .
 
-wds:Q505-1AC36984-AE3F-570C-AD66-746CCB5D9FA7
+chbs:Q505-1AC36984-AE3F-570C-AD66-746CCB5D9FA7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q505-5A7E95B4-E3AB-51A0-B2A6-4E89DFDD6059
+chbs:Q505-5A7E95B4-E3AB-51A0-B2A6-4E89DFDD6059
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q457 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q457 .
 
-wds:Q505-13BD9AE0-1522-5661-AAF7-314270ACBD33
+chbs:Q505-13BD9AE0-1522-5661-AAF7-314270ACBD33
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q505-430C7651-F687-5A3F-BF2F-8C1A2A460979
+chbs:Q505-430C7651-F687-5A3F-BF2F-8C1A2A460979
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P119 "Digging-with-Python"@en .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P119 "Digging-with-Python"@en .
 
-wds:Q505-525B5740-1264-55B6-95B4-3E582A499E93
+chbs:Q505-525B5740-1264-55B6-95B4-3E582A499E93
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q505-752A21C5-BF3B-5F9D-9616-E36F25E9D26E
+chbs:Q505-752A21C5-BF3B-5F9D-9616-E36F25E9D26E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q505-41038E7C-FFA9-5CAA-A74E-41D0A42FF37D
+chbs:Q505-41038E7C-FFA9-5CAA-A74E-41D0A42FF37D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q505-38806218-1140-5482-B580-65AB934082FF
+chbs:Q505-38806218-1140-5482-B580-65AB934082FF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q505-C6E228F1-5BDD-5B76-A0C1-7B179BB76A61
+chbs:Q505-C6E228F1-5BDD-5B76-A0C1-7B179BB76A61
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q505-D35D813A-A14A-56BE-A45C-9AB3D821DF5B
+chbs:Q505-D35D813A-A14A-56BE-A45C-9AB3D821DF5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "digging-with-python" .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "digging-with-python" .
 
-wds:Q505-DC2EB81D-749E-5A4D-908F-5E6C1101BE08
+chbs:Q505-DC2EB81D-749E-5A4D-908F-5E6C1101BE08
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/jfpalomeque/Digging-with-Python> .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/jfpalomeque/Digging-with-Python> .
 
-wds:Q505-F39F3BE1-FFC5-5EA9-B758-82FC4B21A0F7
+chbs:Q505-F39F3BE1-FFC5-5EA9-B758-82FC4B21A0F7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
-    ps:P117 wd:Q164 .
+    prov:wasDerivedFrom chbref:52506528fcde94e55da2f4cb7240a71636852fb3 ;
+    chbps:P117 chb:Q164 .
 
-wdref:52506528fcde94e55da2f4cb7240a71636852fb3
+chbref:52506528fcde94e55da2f4cb7240a71636852fb3
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/digging-with-python/> .
+    chbpr:P6 <https://open-archaeo.info/post/digging-with-python/> .

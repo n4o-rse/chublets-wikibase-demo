@@ -1,53 +1,54 @@
 # Q523: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q523
+chbdata:Q523.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Analysis and archiving of archaeological dating evidence."@en ;
     dcterms:identifier "Q523" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q523 ;
+    dcterms:subject chb:Q523 ;
     dcterms:title "PolyChron"@en ;
-    schema:about wd:Q523 ;
-    dcat:distribution dist:Q523-html,
-        dist:Q523-json,
-        dist:Q523-ttl ;
+    schema:about chb:Q523 ;
+    dcat:distribution chbdist:Q523-html,
+        chbdist:Q523-json,
+        chbdist:Q523-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q523.html> .
 
-dist:Q523-html
+chbdist:Q523-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q523-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q523.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q523-json
+chbdist:Q523-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q523-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q523.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q523-ttl
+chbdist:Q523-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q523, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q523.ttl> ;
+    dcat:downloadURL chbdata:Q523.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q523
+chb:Q523
     a wikibase:Item ;
     schema:description "Analysis and archiving of archaeological dating evidence."@en ;
     schema:name "PolyChron"@en ;
@@ -80,145 +81,145 @@ wd:Q523
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "PolyChron"@en ;
     skos:prefLabel "PolyChron"@en ;
-    p:P2 wds:Q523-55CDFA20-04B2-56E2-8F17-504A857203F7,
-        wds:Q523-C067F6A3-7CCA-52D2-9743-6539BA6AE876 ;
-    p:P106 wds:Q523-41DA6487-7BFD-5BB0-9BE1-E9FE2FD7E782 ;
-    p:P113 wds:Q523-3C106EB9-09F0-52F3-883D-2F27E9ED2024 ;
-    p:P115 wds:Q523-70E19BF9-A464-5A68-9094-13E247BDF28D ;
-    p:P116 wds:Q523-942929EF-9318-5607-A3C1-5B5F7D29CF25 ;
-    p:P117 wds:Q523-744327D1-A4FD-5C1E-B247-6E45D4F3F452,
-        wds:Q523-C84829DC-79B2-5A02-9667-030852EBE74E ;
-    p:P118 wds:Q523-2F0D8F7E-6D6B-5B68-B836-1945D7D4B80D ;
-    p:P119 wds:Q523-2DE4956F-DD56-528B-B614-E83B1A2176DD ;
-    p:P120 wds:Q523-7B7E07D8-1597-5048-A569-F8577B7934E5 ;
-    p:P122 wds:Q523-317C26C2-2EEF-5962-A11B-D3A5EA0F1D14,
-        wds:Q523-4584620E-2193-5750-B1C7-DECFD1C000A9 ;
-    p:P123 wds:Q523-74CACBF4-3AE5-5165-87DE-F8870147E280 ;
-    p:P125 wds:Q523-AE28B3E9-A1BD-56D8-B33D-A7B8D359781A ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q524 ;
-    wdt:P115 <https://open-archaeo.info/post/polychron/> ;
-    wdt:P116 "polychron" ;
-    wdt:P117 wd:Q126,
-        wd:Q185 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "PolyChron"@en ;
-    wdt:P120 <https://bryonymoody.github.io/PolyChron/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/bryonymoody/PolyChron> .
+    chbp:P2 chbs:Q523-55CDFA20-04B2-56E2-8F17-504A857203F7,
+        chbs:Q523-C067F6A3-7CCA-52D2-9743-6539BA6AE876 ;
+    chbp:P106 chbs:Q523-41DA6487-7BFD-5BB0-9BE1-E9FE2FD7E782 ;
+    chbp:P113 chbs:Q523-3C106EB9-09F0-52F3-883D-2F27E9ED2024 ;
+    chbp:P115 chbs:Q523-70E19BF9-A464-5A68-9094-13E247BDF28D ;
+    chbp:P116 chbs:Q523-942929EF-9318-5607-A3C1-5B5F7D29CF25 ;
+    chbp:P117 chbs:Q523-744327D1-A4FD-5C1E-B247-6E45D4F3F452,
+        chbs:Q523-C84829DC-79B2-5A02-9667-030852EBE74E ;
+    chbp:P118 chbs:Q523-2F0D8F7E-6D6B-5B68-B836-1945D7D4B80D ;
+    chbp:P119 chbs:Q523-2DE4956F-DD56-528B-B614-E83B1A2176DD ;
+    chbp:P120 chbs:Q523-7B7E07D8-1597-5048-A569-F8577B7934E5 ;
+    chbp:P122 chbs:Q523-317C26C2-2EEF-5962-A11B-D3A5EA0F1D14,
+        chbs:Q523-4584620E-2193-5750-B1C7-DECFD1C000A9 ;
+    chbp:P123 chbs:Q523-74CACBF4-3AE5-5165-87DE-F8870147E280 ;
+    chbp:P125 chbs:Q523-AE28B3E9-A1BD-56D8-B33D-A7B8D359781A ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q524 ;
+    chbt:P115 <https://open-archaeo.info/post/polychron/> ;
+    chbt:P116 "polychron" ;
+    chbt:P117 chb:Q126,
+        chb:Q185 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "PolyChron"@en ;
+    chbt:P120 <https://bryonymoody.github.io/PolyChron/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/bryonymoody/PolyChron> .
 
-wds:Q523-2DE4956F-DD56-528B-B614-E83B1A2176DD
+chbs:Q523-2DE4956F-DD56-528B-B614-E83B1A2176DD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P119 "PolyChron"@en .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P119 "PolyChron"@en .
 
-wds:Q523-2F0D8F7E-6D6B-5B68-B836-1945D7D4B80D
+chbs:Q523-2F0D8F7E-6D6B-5B68-B836-1945D7D4B80D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q523-3C106EB9-09F0-52F3-883D-2F27E9ED2024
+chbs:Q523-3C106EB9-09F0-52F3-883D-2F27E9ED2024
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q524 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q524 .
 
-wds:Q523-7B7E07D8-1597-5048-A569-F8577B7934E5
+chbs:Q523-7B7E07D8-1597-5048-A569-F8577B7934E5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P120 <https://bryonymoody.github.io/PolyChron/> .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P120 <https://bryonymoody.github.io/PolyChron/> .
 
-wds:Q523-41DA6487-7BFD-5BB0-9BE1-E9FE2FD7E782
+chbs:Q523-41DA6487-7BFD-5BB0-9BE1-E9FE2FD7E782
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q523-55CDFA20-04B2-56E2-8F17-504A857203F7
+chbs:Q523-55CDFA20-04B2-56E2-8F17-504A857203F7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q523-70E19BF9-A464-5A68-9094-13E247BDF28D
+chbs:Q523-70E19BF9-A464-5A68-9094-13E247BDF28D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P115 <https://open-archaeo.info/post/polychron/> .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P115 <https://open-archaeo.info/post/polychron/> .
 
-wds:Q523-74CACBF4-3AE5-5165-87DE-F8870147E280
+chbs:Q523-74CACBF4-3AE5-5165-87DE-F8870147E280
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q523-317C26C2-2EEF-5962-A11B-D3A5EA0F1D14
+chbs:Q523-317C26C2-2EEF-5962-A11B-D3A5EA0F1D14
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q523-744327D1-A4FD-5C1E-B247-6E45D4F3F452
+chbs:Q523-744327D1-A4FD-5C1E-B247-6E45D4F3F452
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P117 wd:Q185 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P117 chb:Q185 .
 
-wds:Q523-942929EF-9318-5607-A3C1-5B5F7D29CF25
+chbs:Q523-942929EF-9318-5607-A3C1-5B5F7D29CF25
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "polychron" .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "polychron" .
 
-wds:Q523-4584620E-2193-5750-B1C7-DECFD1C000A9
+chbs:Q523-4584620E-2193-5750-B1C7-DECFD1C000A9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q523-AE28B3E9-A1BD-56D8-B33D-A7B8D359781A
+chbs:Q523-AE28B3E9-A1BD-56D8-B33D-A7B8D359781A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/bryonymoody/PolyChron> .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/bryonymoody/PolyChron> .
 
-wds:Q523-C067F6A3-7CCA-52D2-9743-6539BA6AE876
+chbs:Q523-C067F6A3-7CCA-52D2-9743-6539BA6AE876
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q523-C84829DC-79B2-5A02-9667-030852EBE74E
+chbs:Q523-C84829DC-79B2-5A02-9667-030852EBE74E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:deccbbfad42586b226eba7e67d547099aba4c041 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:deccbbfad42586b226eba7e67d547099aba4c041 ;
+    chbps:P117 chb:Q126 .
 
-wdref:deccbbfad42586b226eba7e67d547099aba4c041
+chbref:deccbbfad42586b226eba7e67d547099aba4c041
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/polychron/> .
+    chbpr:P6 <https://open-archaeo.info/post/polychron/> .

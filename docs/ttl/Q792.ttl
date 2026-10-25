@@ -1,53 +1,54 @@
 # Q792: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q792
+chbdata:Q792.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "R code for converting b&w jpgs of artefact silhouettes to matrices and computing basic elliptical fourier statistics, including pca and manova."@en ;
     dcterms:identifier "Q792" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q792 ;
+    dcterms:subject chb:Q792 ;
     dcterms:title "artefact-morpho.R"@en ;
-    schema:about wd:Q792 ;
-    dcat:distribution dist:Q792-html,
-        dist:Q792-json,
-        dist:Q792-ttl ;
+    schema:about chb:Q792 ;
+    dcat:distribution chbdist:Q792-html,
+        chbdist:Q792-json,
+        chbdist:Q792-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q792.html> .
 
-dist:Q792-html
+chbdist:Q792-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q792-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q792.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q792-json
+chbdist:Q792-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q792-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q792.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q792-ttl
+chbdist:Q792-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q792, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q792.ttl> ;
+    dcat:downloadURL chbdata:Q792.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q792
+chb:Q792
     a wikibase:Item ;
     schema:description "R code for converting b&w jpgs of artefact silhouettes to matrices and computing basic elliptical fourier statistics, including pca and manova."@en ;
     schema:name "artefact-morpho.R"@en ;
@@ -80,135 +81,135 @@ wd:Q792
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "artefact-morpho.R"@en ;
     skos:prefLabel "artefact-morpho.R"@en ;
-    p:P2 wds:Q792-BCCE0ACD-A44D-5F23-B910-2FA3D8D4226B,
-        wds:Q792-F96D05B2-195C-5AC6-8942-7CAAFBB49B71 ;
-    p:P106 wds:Q792-F9204F3B-6BBF-5EE8-B341-9733A4D824A9 ;
-    p:P113 wds:Q792-35AF9BCD-C6A9-5F95-A0F8-C62EA1002C01 ;
-    p:P115 wds:Q792-45A02E11-1DA3-5501-BD95-89EEC424772B ;
-    p:P116 wds:Q792-326F395E-19AC-5277-970C-122FAD073E3A ;
-    p:P117 wds:Q792-FEB571F6-8267-5DA0-80C4-F56ADC08AB7F ;
-    p:P118 wds:Q792-182CCF23-EBEB-52A1-85B8-7C23C65ACBA7 ;
-    p:P119 wds:Q792-64B97122-88D4-531F-86B7-EA4FEA4C2753 ;
-    p:P122 wds:Q792-18D02A34-E93C-532C-908E-7BF5F19C2055,
-        wds:Q792-D20936E7-6ABB-5B27-B14F-1617B712B5BF ;
-    p:P123 wds:Q792-02C61023-09A7-5801-BF6A-038636F1FA05 ;
-    p:P125 wds:Q792-5EB73F90-A9D3-51F7-AA23-57CF8E9453AC ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q321 ;
-    wdt:P115 <https://open-archaeo.info/post/artefact-morpho/> ;
-    wdt:P116 "artefact-morpho" ;
-    wdt:P117 wd:Q181 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "artefact-morpho.R"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://gist.github.com/benmarwick/6260541> .
+    chbp:P2 chbs:Q792-BCCE0ACD-A44D-5F23-B910-2FA3D8D4226B,
+        chbs:Q792-F96D05B2-195C-5AC6-8942-7CAAFBB49B71 ;
+    chbp:P106 chbs:Q792-F9204F3B-6BBF-5EE8-B341-9733A4D824A9 ;
+    chbp:P113 chbs:Q792-35AF9BCD-C6A9-5F95-A0F8-C62EA1002C01 ;
+    chbp:P115 chbs:Q792-45A02E11-1DA3-5501-BD95-89EEC424772B ;
+    chbp:P116 chbs:Q792-326F395E-19AC-5277-970C-122FAD073E3A ;
+    chbp:P117 chbs:Q792-FEB571F6-8267-5DA0-80C4-F56ADC08AB7F ;
+    chbp:P118 chbs:Q792-182CCF23-EBEB-52A1-85B8-7C23C65ACBA7 ;
+    chbp:P119 chbs:Q792-64B97122-88D4-531F-86B7-EA4FEA4C2753 ;
+    chbp:P122 chbs:Q792-18D02A34-E93C-532C-908E-7BF5F19C2055,
+        chbs:Q792-D20936E7-6ABB-5B27-B14F-1617B712B5BF ;
+    chbp:P123 chbs:Q792-02C61023-09A7-5801-BF6A-038636F1FA05 ;
+    chbp:P125 chbs:Q792-5EB73F90-A9D3-51F7-AA23-57CF8E9453AC ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q321 ;
+    chbt:P115 <https://open-archaeo.info/post/artefact-morpho/> ;
+    chbt:P116 "artefact-morpho" ;
+    chbt:P117 chb:Q181 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "artefact-morpho.R"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://gist.github.com/benmarwick/6260541> .
 
-wds:Q792-02C61023-09A7-5801-BF6A-038636F1FA05
+chbs:Q792-02C61023-09A7-5801-BF6A-038636F1FA05
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P123 chb:Q111 .
 
-wds:Q792-5EB73F90-A9D3-51F7-AA23-57CF8E9453AC
+chbs:Q792-5EB73F90-A9D3-51F7-AA23-57CF8E9453AC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    pq:P104 "2015-12-21T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/gist.github.com-6260541_-_2015-12-21_05-58-59> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:50a42a880ee631894e684b88cd455d98 ;
-    ps:P125 <https://gist.github.com/benmarwick/6260541> .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbpq:P104 "2015-12-21T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/gist.github.com-6260541_-_2015-12-21_05-58-59> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:50a42a880ee631894e684b88cd455d98 ;
+    chbps:P125 <https://gist.github.com/benmarwick/6260541> .
 
-wds:Q792-18D02A34-E93C-532C-908E-7BF5F19C2055
+chbs:Q792-18D02A34-E93C-532C-908E-7BF5F19C2055
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P122 chb:Q109 .
 
-wds:Q792-35AF9BCD-C6A9-5F95-A0F8-C62EA1002C01
+chbs:Q792-35AF9BCD-C6A9-5F95-A0F8-C62EA1002C01
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q321 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q321 .
 
-wds:Q792-45A02E11-1DA3-5501-BD95-89EEC424772B
+chbs:Q792-45A02E11-1DA3-5501-BD95-89EEC424772B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P115 <https://open-archaeo.info/post/artefact-morpho/> .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P115 <https://open-archaeo.info/post/artefact-morpho/> .
 
-wds:Q792-64B97122-88D4-531F-86B7-EA4FEA4C2753
+chbs:Q792-64B97122-88D4-531F-86B7-EA4FEA4C2753
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P119 "artefact-morpho.R"@en .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P119 "artefact-morpho.R"@en .
 
-wds:Q792-182CCF23-EBEB-52A1-85B8-7C23C65ACBA7
+chbs:Q792-182CCF23-EBEB-52A1-85B8-7C23C65ACBA7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P118 chb:Q108 .
 
-wds:Q792-326F395E-19AC-5277-970C-122FAD073E3A
+chbs:Q792-326F395E-19AC-5277-970C-122FAD073E3A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "artefact-morpho" .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "artefact-morpho" .
 
-wds:Q792-BCCE0ACD-A44D-5F23-B910-2FA3D8D4226B
+chbs:Q792-BCCE0ACD-A44D-5F23-B910-2FA3D8D4226B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P2 chb:Q104 .
 
-wds:Q792-D20936E7-6ABB-5B27-B14F-1617B712B5BF
+chbs:Q792-D20936E7-6ABB-5B27-B14F-1617B712B5BF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P122 chb:Q110 .
 
-wds:Q792-F96D05B2-195C-5AC6-8942-7CAAFBB49B71
+chbs:Q792-F96D05B2-195C-5AC6-8942-7CAAFBB49B71
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P2 chb:Q106 .
 
-wds:Q792-F9204F3B-6BBF-5EE8-B341-9733A4D824A9
+chbs:Q792-F9204F3B-6BBF-5EE8-B341-9733A4D824A9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P106 chb:Q110 .
 
-wds:Q792-FEB571F6-8267-5DA0-80C4-F56ADC08AB7F
+chbs:Q792-FEB571F6-8267-5DA0-80C4-F56ADC08AB7F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
-    ps:P117 wd:Q181 .
+    prov:wasDerivedFrom chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a ;
+    chbps:P117 chb:Q181 .
 
-wdref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a
+chbref:ec86d0d0d78bf3c5a1dc0a431ba40c011f59d39a
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/artefact-morpho/> .
+    chbpr:P6 <https://open-archaeo.info/post/artefact-morpho/> .
 
-wdv:50a42a880ee631894e684b88cd455d98
+chbv:50a42a880ee631894e684b88cd455d98
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q772: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q772
+chbdata:Q772.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Provides easy access to, and manipulation of, the munsell colours"@en ;
     dcterms:identifier "Q772" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q772 ;
+    dcterms:subject chb:Q772 ;
     dcterms:title "munsell"@en ;
-    schema:about wd:Q772 ;
-    dcat:distribution dist:Q772-html,
-        dist:Q772-json,
-        dist:Q772-ttl ;
+    schema:about chb:Q772 ;
+    dcat:distribution chbdist:Q772-html,
+        chbdist:Q772-json,
+        chbdist:Q772-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q772.html> .
 
-dist:Q772-html
+chbdist:Q772-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q772-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q772.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q772-json
+chbdist:Q772-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q772-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q772.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q772-ttl
+chbdist:Q772-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q772, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q772.ttl> ;
+    dcat:downloadURL chbdata:Q772.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q772
+chb:Q772
     a wikibase:Item ;
     schema:description "Provides easy access to, and manipulation of, the munsell colours"@en ;
     schema:name "munsell"@en ;
@@ -80,144 +81,144 @@ wd:Q772
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "munsell"@en ;
     skos:prefLabel "munsell"@en ;
-    p:P2 wds:Q772-63AC821A-F4C6-5931-AD5A-41ADDE7300C3,
-        wds:Q772-8842FA2A-1AE7-515B-B593-BD0679C949DC ;
-    p:P106 wds:Q772-65158700-F721-5392-8A29-FE0AA5E93B7F ;
-    p:P108 wds:Q772-D63CD463-2825-5ED7-9B2A-41BEAB4B50B4 ;
-    p:P113 wds:Q772-9F159DC8-8CD9-55BF-8BFF-1FE2DB575050 ;
-    p:P115 wds:Q772-F349032F-00A5-5031-8076-34E0DEC40897 ;
-    p:P116 wds:Q772-E54FA59A-5FB3-5EED-8191-1E3BB4AA8CDF ;
-    p:P117 wds:Q772-1A86AB56-5978-5A58-8A08-407AFCA302ED ;
-    p:P118 wds:Q772-B67C8C75-EBF1-5F0D-ACA8-E6E62C457EA4 ;
-    p:P119 wds:Q772-EB0455B7-8169-573E-948E-33BDDE63C8EA ;
-    p:P122 wds:Q772-1729285F-2ABB-5147-8D60-A861E51069EC,
-        wds:Q772-C3A9F821-67CC-52B9-AE15-D0BD6E9A1625 ;
-    p:P123 wds:Q772-D55FEC7F-3475-54A9-B962-2AF2A69C392A ;
-    p:P125 wds:Q772-4B72FD84-46E1-56B4-8BBD-273E44968C19 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "munsell" ;
-    wdt:P113 wd:Q773 ;
-    wdt:P115 <https://open-archaeo.info/post/munsell/> ;
-    wdt:P116 "munsell" ;
-    wdt:P117 wd:Q154 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "munsell"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/cwickham/munsell/> .
+    chbp:P2 chbs:Q772-63AC821A-F4C6-5931-AD5A-41ADDE7300C3,
+        chbs:Q772-8842FA2A-1AE7-515B-B593-BD0679C949DC ;
+    chbp:P106 chbs:Q772-65158700-F721-5392-8A29-FE0AA5E93B7F ;
+    chbp:P108 chbs:Q772-D63CD463-2825-5ED7-9B2A-41BEAB4B50B4 ;
+    chbp:P113 chbs:Q772-9F159DC8-8CD9-55BF-8BFF-1FE2DB575050 ;
+    chbp:P115 chbs:Q772-F349032F-00A5-5031-8076-34E0DEC40897 ;
+    chbp:P116 chbs:Q772-E54FA59A-5FB3-5EED-8191-1E3BB4AA8CDF ;
+    chbp:P117 chbs:Q772-1A86AB56-5978-5A58-8A08-407AFCA302ED ;
+    chbp:P118 chbs:Q772-B67C8C75-EBF1-5F0D-ACA8-E6E62C457EA4 ;
+    chbp:P119 chbs:Q772-EB0455B7-8169-573E-948E-33BDDE63C8EA ;
+    chbp:P122 chbs:Q772-1729285F-2ABB-5147-8D60-A861E51069EC,
+        chbs:Q772-C3A9F821-67CC-52B9-AE15-D0BD6E9A1625 ;
+    chbp:P123 chbs:Q772-D55FEC7F-3475-54A9-B962-2AF2A69C392A ;
+    chbp:P125 chbs:Q772-4B72FD84-46E1-56B4-8BBD-273E44968C19 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "munsell" ;
+    chbt:P113 chb:Q773 ;
+    chbt:P115 <https://open-archaeo.info/post/munsell/> ;
+    chbt:P116 "munsell" ;
+    chbt:P117 chb:Q154 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "munsell"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/cwickham/munsell/> .
 
-wds:Q772-1A86AB56-5978-5A58-8A08-407AFCA302ED
+chbs:Q772-1A86AB56-5978-5A58-8A08-407AFCA302ED
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P117 wd:Q154 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P117 chb:Q154 .
 
-wds:Q772-4B72FD84-46E1-56B4-8BBD-273E44968C19
+chbs:Q772-4B72FD84-46E1-56B4-8BBD-273E44968C19
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    pq:P104 "2019-09-24T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-cwickham-munsell_-_2019-09-24_04-56-16> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:1e866610b217ff0f59fea95319a03c46 ;
-    ps:P125 <https://github.com/cwickham/munsell/> .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbpq:P104 "2019-09-24T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-cwickham-munsell_-_2019-09-24_04-56-16> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:1e866610b217ff0f59fea95319a03c46 ;
+    chbps:P125 <https://github.com/cwickham/munsell/> .
 
-wds:Q772-9F159DC8-8CD9-55BF-8BFF-1FE2DB575050
+chbs:Q772-9F159DC8-8CD9-55BF-8BFF-1FE2DB575050
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q773 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q773 .
 
-wds:Q772-63AC821A-F4C6-5931-AD5A-41ADDE7300C3
+chbs:Q772-63AC821A-F4C6-5931-AD5A-41ADDE7300C3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q772-8842FA2A-1AE7-515B-B593-BD0679C949DC
+chbs:Q772-8842FA2A-1AE7-515B-B593-BD0679C949DC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q772-1729285F-2ABB-5147-8D60-A861E51069EC
+chbs:Q772-1729285F-2ABB-5147-8D60-A861E51069EC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q772-65158700-F721-5392-8A29-FE0AA5E93B7F
+chbs:Q772-65158700-F721-5392-8A29-FE0AA5E93B7F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q772-B67C8C75-EBF1-5F0D-ACA8-E6E62C457EA4
+chbs:Q772-B67C8C75-EBF1-5F0D-ACA8-E6E62C457EA4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q772-C3A9F821-67CC-52B9-AE15-D0BD6E9A1625
+chbs:Q772-C3A9F821-67CC-52B9-AE15-D0BD6E9A1625
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q772-D55FEC7F-3475-54A9-B962-2AF2A69C392A
+chbs:Q772-D55FEC7F-3475-54A9-B962-2AF2A69C392A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q772-D63CD463-2825-5ED7-9B2A-41BEAB4B50B4
+chbs:Q772-D63CD463-2825-5ED7-9B2A-41BEAB4B50B4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P108 "munsell" .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P108 "munsell" .
 
-wds:Q772-E54FA59A-5FB3-5EED-8191-1E3BB4AA8CDF
+chbs:Q772-E54FA59A-5FB3-5EED-8191-1E3BB4AA8CDF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "munsell" .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "munsell" .
 
-wds:Q772-EB0455B7-8169-573E-948E-33BDDE63C8EA
+chbs:Q772-EB0455B7-8169-573E-948E-33BDDE63C8EA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P119 "munsell"@en .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P119 "munsell"@en .
 
-wds:Q772-F349032F-00A5-5031-8076-34E0DEC40897
+chbs:Q772-F349032F-00A5-5031-8076-34E0DEC40897
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
-    ps:P115 <https://open-archaeo.info/post/munsell/> .
+    prov:wasDerivedFrom chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3 ;
+    chbps:P115 <https://open-archaeo.info/post/munsell/> .
 
-wdref:a349cb7123902d7754859f4a4275d9291c0f1fa3
+chbref:a349cb7123902d7754859f4a4275d9291c0f1fa3
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/munsell/> .
+    chbpr:P6 <https://open-archaeo.info/post/munsell/> .
 
-wdv:1e866610b217ff0f59fea95319a03c46
+chbv:1e866610b217ff0f59fea95319a03c46
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

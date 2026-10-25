@@ -1,53 +1,54 @@
 # Q489: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q489
+chbdata:Q489.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An interactive catalogue of open source datasets for the archaeology in the Pacific and Southeast Asia."@en ;
     dcterms:identifier "Q489" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q489 ;
+    dcterms:subject chb:Q489 ;
     dcterms:title "open-archeocsean"@en ;
-    schema:about wd:Q489 ;
-    dcat:distribution dist:Q489-html,
-        dist:Q489-json,
-        dist:Q489-ttl ;
+    schema:about chb:Q489 ;
+    dcat:distribution chbdist:Q489-html,
+        chbdist:Q489-json,
+        chbdist:Q489-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q489.html> .
 
-dist:Q489-html
+chbdist:Q489-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q489-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q489.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q489-json
+chbdist:Q489-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q489-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q489.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q489-ttl
+chbdist:Q489-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q489, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q489.ttl> ;
+    dcat:downloadURL chbdata:Q489.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q489
+chb:Q489
     a wikibase:Item ;
     schema:description "An interactive catalogue of open source datasets for the archaeology in the Pacific and Southeast Asia."@en ;
     schema:name "open-archeocsean"@en ;
@@ -80,154 +81,154 @@ wd:Q489
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "open-archeocsean"@en ;
     skos:prefLabel "open-archeocsean"@en ;
-    p:P2 wds:Q489-070645D1-DA18-5CCE-A905-5F9606269EC5,
-        wds:Q489-F7CB995E-1D87-5DEF-9EA6-8F340C073FBD ;
-    p:P106 wds:Q489-C8776319-B301-5ED5-BD9B-ECCDA14C6D38 ;
-    p:P113 wds:Q489-41E46015-EB05-54E0-945A-ED06A723BAC5 ;
-    p:P115 wds:Q489-A3776FEA-6484-5E33-B5CA-B30A1C035FC8 ;
-    p:P116 wds:Q489-B7C94481-5799-5D8F-B836-73AD6AD75590 ;
-    p:P117 wds:Q489-59AE8352-51FA-56AE-90B8-38EC600D02F7,
-        wds:Q489-93D6D591-9E90-5F1E-98CE-20A70FE5212A,
-        wds:Q489-C0E600B4-C76E-5157-B457-C9AE9FA920FA ;
-    p:P118 wds:Q489-77065151-DC46-5CEB-8C90-32A86137C5C8 ;
-    p:P119 wds:Q489-15B14C12-E601-5C74-9227-48C762074231 ;
-    p:P120 wds:Q489-D164CD91-DBB7-57F5-95A4-37FCA7CC3D26 ;
-    p:P122 wds:Q489-55C3188A-8A7B-5A5F-8894-EA97680AE029,
-        wds:Q489-B9D418B0-7BEA-50D8-BCC6-F31E502BA69B ;
-    p:P123 wds:Q489-D39620E6-6191-5825-9F50-92DA654E12F6 ;
-    p:P125 wds:Q489-91B2C4FD-19E2-51C6-A243-292C49EC659D ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q490 ;
-    wdt:P115 <https://open-archaeo.info/post/open-archeocsean/> ;
-    wdt:P116 "open-archeocsean" ;
-    wdt:P117 wd:Q207,
-        wd:Q208,
-        wd:Q209 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "open-archeocsean"@en ;
-    wdt:P120 <https://analytics.huma-num.fr/Sebastien.Plutniak/open-archeocsean/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/sebastien-plutniak/open-archeocsean> .
+    chbp:P2 chbs:Q489-070645D1-DA18-5CCE-A905-5F9606269EC5,
+        chbs:Q489-F7CB995E-1D87-5DEF-9EA6-8F340C073FBD ;
+    chbp:P106 chbs:Q489-C8776319-B301-5ED5-BD9B-ECCDA14C6D38 ;
+    chbp:P113 chbs:Q489-41E46015-EB05-54E0-945A-ED06A723BAC5 ;
+    chbp:P115 chbs:Q489-A3776FEA-6484-5E33-B5CA-B30A1C035FC8 ;
+    chbp:P116 chbs:Q489-B7C94481-5799-5D8F-B836-73AD6AD75590 ;
+    chbp:P117 chbs:Q489-59AE8352-51FA-56AE-90B8-38EC600D02F7,
+        chbs:Q489-93D6D591-9E90-5F1E-98CE-20A70FE5212A,
+        chbs:Q489-C0E600B4-C76E-5157-B457-C9AE9FA920FA ;
+    chbp:P118 chbs:Q489-77065151-DC46-5CEB-8C90-32A86137C5C8 ;
+    chbp:P119 chbs:Q489-15B14C12-E601-5C74-9227-48C762074231 ;
+    chbp:P120 chbs:Q489-D164CD91-DBB7-57F5-95A4-37FCA7CC3D26 ;
+    chbp:P122 chbs:Q489-55C3188A-8A7B-5A5F-8894-EA97680AE029,
+        chbs:Q489-B9D418B0-7BEA-50D8-BCC6-F31E502BA69B ;
+    chbp:P123 chbs:Q489-D39620E6-6191-5825-9F50-92DA654E12F6 ;
+    chbp:P125 chbs:Q489-91B2C4FD-19E2-51C6-A243-292C49EC659D ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q490 ;
+    chbt:P115 <https://open-archaeo.info/post/open-archeocsean/> ;
+    chbt:P116 "open-archeocsean" ;
+    chbt:P117 chb:Q207,
+        chb:Q208,
+        chb:Q209 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "open-archeocsean"@en ;
+    chbt:P120 <https://analytics.huma-num.fr/Sebastien.Plutniak/open-archeocsean/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/sebastien-plutniak/open-archeocsean> .
 
-wds:Q489-15B14C12-E601-5C74-9227-48C762074231
+chbs:Q489-15B14C12-E601-5C74-9227-48C762074231
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P119 "open-archeocsean"@en .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P119 "open-archeocsean"@en .
 
-wds:Q489-41E46015-EB05-54E0-945A-ED06A723BAC5
+chbs:Q489-41E46015-EB05-54E0-945A-ED06A723BAC5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q490 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q490 .
 
-wds:Q489-55C3188A-8A7B-5A5F-8894-EA97680AE029
+chbs:Q489-55C3188A-8A7B-5A5F-8894-EA97680AE029
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P122 chb:Q110 .
 
-wds:Q489-59AE8352-51FA-56AE-90B8-38EC600D02F7
+chbs:Q489-59AE8352-51FA-56AE-90B8-38EC600D02F7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P117 wd:Q208 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P117 chb:Q208 .
 
-wds:Q489-91B2C4FD-19E2-51C6-A243-292C49EC659D
+chbs:Q489-91B2C4FD-19E2-51C6-A243-292C49EC659D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/sebastien-plutniak/open-archeocsean> .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/sebastien-plutniak/open-archeocsean> .
 
-wds:Q489-93D6D591-9E90-5F1E-98CE-20A70FE5212A
+chbs:Q489-93D6D591-9E90-5F1E-98CE-20A70FE5212A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P117 wd:Q207 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P117 chb:Q207 .
 
-wds:Q489-070645D1-DA18-5CCE-A905-5F9606269EC5
+chbs:Q489-070645D1-DA18-5CCE-A905-5F9606269EC5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P2 chb:Q106 .
 
-wds:Q489-77065151-DC46-5CEB-8C90-32A86137C5C8
+chbs:Q489-77065151-DC46-5CEB-8C90-32A86137C5C8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P118 chb:Q108 .
 
-wds:Q489-A3776FEA-6484-5E33-B5CA-B30A1C035FC8
+chbs:Q489-A3776FEA-6484-5E33-B5CA-B30A1C035FC8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P115 <https://open-archaeo.info/post/open-archeocsean/> .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P115 <https://open-archaeo.info/post/open-archeocsean/> .
 
-wds:Q489-B7C94481-5799-5D8F-B836-73AD6AD75590
+chbs:Q489-B7C94481-5799-5D8F-B836-73AD6AD75590
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "open-archeocsean" .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "open-archeocsean" .
 
-wds:Q489-B9D418B0-7BEA-50D8-BCC6-F31E502BA69B
+chbs:Q489-B9D418B0-7BEA-50D8-BCC6-F31E502BA69B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P122 chb:Q109 .
 
-wds:Q489-C0E600B4-C76E-5157-B457-C9AE9FA920FA
+chbs:Q489-C0E600B4-C76E-5157-B457-C9AE9FA920FA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P117 wd:Q209 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P117 chb:Q209 .
 
-wds:Q489-C8776319-B301-5ED5-BD9B-ECCDA14C6D38
+chbs:Q489-C8776319-B301-5ED5-BD9B-ECCDA14C6D38
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P106 chb:Q110 .
 
-wds:Q489-D164CD91-DBB7-57F5-95A4-37FCA7CC3D26
+chbs:Q489-D164CD91-DBB7-57F5-95A4-37FCA7CC3D26
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P120 <https://analytics.huma-num.fr/Sebastien.Plutniak/open-archeocsean/> .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P120 <https://analytics.huma-num.fr/Sebastien.Plutniak/open-archeocsean/> .
 
-wds:Q489-D39620E6-6191-5825-9F50-92DA654E12F6
+chbs:Q489-D39620E6-6191-5825-9F50-92DA654E12F6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P123 chb:Q111 .
 
-wds:Q489-F7CB995E-1D87-5DEF-9EA6-8F340C073FBD
+chbs:Q489-F7CB995E-1D87-5DEF-9EA6-8F340C073FBD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e ;
+    chbps:P2 chb:Q102 .
 
-wdref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e
+chbref:7055bbb14224659b8fcca1a7e1b19bf480a7b82e
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/open-archeocsean/> .
+    chbpr:P6 <https://open-archaeo.info/post/open-archeocsean/> .

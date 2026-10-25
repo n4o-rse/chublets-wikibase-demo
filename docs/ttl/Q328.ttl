@@ -1,53 +1,54 @@
 # Q328: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q328
+chbdata:Q328.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Configurable data collection program for archaeological survey and excavation."@en ;
     dcterms:identifier "Q328" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q328 ;
+    dcterms:subject chb:Q328 ;
     dcterms:title "EDM"@en ;
-    schema:about wd:Q328 ;
-    dcat:distribution dist:Q328-html,
-        dist:Q328-json,
-        dist:Q328-ttl ;
+    schema:about chb:Q328 ;
+    dcat:distribution chbdist:Q328-html,
+        chbdist:Q328-json,
+        chbdist:Q328-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q328.html> .
 
-dist:Q328-html
+chbdist:Q328-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q328-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q328.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q328-json
+chbdist:Q328-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q328-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q328.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q328-ttl
+chbdist:Q328-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q328, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q328.ttl> ;
+    dcat:downloadURL chbdata:Q328.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q328
+chb:Q328
     a wikibase:Item ;
     schema:description "Configurable data collection program for archaeological survey and excavation."@en ;
     schema:name "EDM"@en ;
@@ -80,136 +81,136 @@ wd:Q328
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "EDM"@en ;
     skos:prefLabel "EDM"@en ;
-    p:P2 wds:Q328-745B887D-24C1-5CB8-A93C-396FB4CBAA69,
-        wds:Q328-D98055B2-5690-583B-86D1-2B963B675EE4 ;
-    p:P106 wds:Q328-113484F8-1C42-593D-9AF0-5FEF7D6DC312 ;
-    p:P113 wds:Q328-C2A45948-9F91-54A7-B344-EABEC578A5A1 ;
-    p:P115 wds:Q328-930E77EE-3C22-5E39-B6F7-4716C3FE8E3B ;
-    p:P116 wds:Q328-F9F49CEF-34CB-5C5C-950A-9093FA5AD1B3 ;
-    p:P117 wds:Q328-2F10EC67-B928-526B-9EDF-33CA6C125968,
-        wds:Q328-4DF7DACB-C8B6-5231-9E10-3F09AABD2E62 ;
-    p:P118 wds:Q328-B6C75157-35FD-5EAB-894D-DFAD2388ACAC ;
-    p:P119 wds:Q328-A2BE46DC-3BCD-54F6-BA48-AC4AB45E1BDC ;
-    p:P122 wds:Q328-79EB6FB8-4E94-54E7-A387-C2FB4820B178,
-        wds:Q328-DBFFAF45-111F-5AF1-A4FD-EE828C146F43 ;
-    p:P123 wds:Q328-A775454C-7AD2-5C43-80A8-683C978B6491 ;
-    p:P125 wds:Q328-6916ECD2-2CA6-521E-8A48-7BA6F55F3F70 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q330 ;
-    wdt:P115 <https://open-archaeo.info/post/edm/> ;
-    wdt:P116 "edm" ;
-    wdt:P117 wd:Q148,
-        wd:Q329 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "EDM"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/surf3s/EDM> .
+    chbp:P2 chbs:Q328-745B887D-24C1-5CB8-A93C-396FB4CBAA69,
+        chbs:Q328-D98055B2-5690-583B-86D1-2B963B675EE4 ;
+    chbp:P106 chbs:Q328-113484F8-1C42-593D-9AF0-5FEF7D6DC312 ;
+    chbp:P113 chbs:Q328-C2A45948-9F91-54A7-B344-EABEC578A5A1 ;
+    chbp:P115 chbs:Q328-930E77EE-3C22-5E39-B6F7-4716C3FE8E3B ;
+    chbp:P116 chbs:Q328-F9F49CEF-34CB-5C5C-950A-9093FA5AD1B3 ;
+    chbp:P117 chbs:Q328-2F10EC67-B928-526B-9EDF-33CA6C125968,
+        chbs:Q328-4DF7DACB-C8B6-5231-9E10-3F09AABD2E62 ;
+    chbp:P118 chbs:Q328-B6C75157-35FD-5EAB-894D-DFAD2388ACAC ;
+    chbp:P119 chbs:Q328-A2BE46DC-3BCD-54F6-BA48-AC4AB45E1BDC ;
+    chbp:P122 chbs:Q328-79EB6FB8-4E94-54E7-A387-C2FB4820B178,
+        chbs:Q328-DBFFAF45-111F-5AF1-A4FD-EE828C146F43 ;
+    chbp:P123 chbs:Q328-A775454C-7AD2-5C43-80A8-683C978B6491 ;
+    chbp:P125 chbs:Q328-6916ECD2-2CA6-521E-8A48-7BA6F55F3F70 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q330 ;
+    chbt:P115 <https://open-archaeo.info/post/edm/> ;
+    chbt:P116 "edm" ;
+    chbt:P117 chb:Q148,
+        chb:Q329 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "EDM"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/surf3s/EDM> .
 
-wds:Q328-2F10EC67-B928-526B-9EDF-33CA6C125968
+chbs:Q328-2F10EC67-B928-526B-9EDF-33CA6C125968
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q328-4DF7DACB-C8B6-5231-9E10-3F09AABD2E62
+chbs:Q328-4DF7DACB-C8B6-5231-9E10-3F09AABD2E62
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P117 wd:Q329 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P117 chb:Q329 .
 
-wds:Q328-79EB6FB8-4E94-54E7-A387-C2FB4820B178
+chbs:Q328-79EB6FB8-4E94-54E7-A387-C2FB4820B178
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q328-745B887D-24C1-5CB8-A93C-396FB4CBAA69
+chbs:Q328-745B887D-24C1-5CB8-A93C-396FB4CBAA69
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q328-930E77EE-3C22-5E39-B6F7-4716C3FE8E3B
+chbs:Q328-930E77EE-3C22-5E39-B6F7-4716C3FE8E3B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P115 <https://open-archaeo.info/post/edm/> .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P115 <https://open-archaeo.info/post/edm/> .
 
-wds:Q328-6916ECD2-2CA6-521E-8A48-7BA6F55F3F70
+chbs:Q328-6916ECD2-2CA6-521E-8A48-7BA6F55F3F70
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/surf3s/EDM> .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/surf3s/EDM> .
 
-wds:Q328-113484F8-1C42-593D-9AF0-5FEF7D6DC312
+chbs:Q328-113484F8-1C42-593D-9AF0-5FEF7D6DC312
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q328-A2BE46DC-3BCD-54F6-BA48-AC4AB45E1BDC
+chbs:Q328-A2BE46DC-3BCD-54F6-BA48-AC4AB45E1BDC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P119 "EDM"@en .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P119 "EDM"@en .
 
-wds:Q328-A775454C-7AD2-5C43-80A8-683C978B6491
+chbs:Q328-A775454C-7AD2-5C43-80A8-683C978B6491
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q328-B6C75157-35FD-5EAB-894D-DFAD2388ACAC
+chbs:Q328-B6C75157-35FD-5EAB-894D-DFAD2388ACAC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q328-C2A45948-9F91-54A7-B344-EABEC578A5A1
+chbs:Q328-C2A45948-9F91-54A7-B344-EABEC578A5A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q330 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q330 .
 
-wds:Q328-D98055B2-5690-583B-86D1-2B963B675EE4
+chbs:Q328-D98055B2-5690-583B-86D1-2B963B675EE4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q328-DBFFAF45-111F-5AF1-A4FD-EE828C146F43
+chbs:Q328-DBFFAF45-111F-5AF1-A4FD-EE828C146F43
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q328-F9F49CEF-34CB-5C5C-950A-9093FA5AD1B3
+chbs:Q328-F9F49CEF-34CB-5C5C-950A-9093FA5AD1B3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "edm" .
+    prov:wasDerivedFrom chbref:e8cb3e726d4267beeb288ab4a97dff514e434040 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "edm" .
 
-wdref:e8cb3e726d4267beeb288ab4a97dff514e434040
+chbref:e8cb3e726d4267beeb288ab4a97dff514e434040
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/edm/> .
+    chbpr:P6 <https://open-archaeo.info/post/edm/> .

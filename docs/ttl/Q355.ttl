@@ -1,53 +1,54 @@
 # Q355: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q355
+chbdata:Q355.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Plotting remote sensing data, especially how to go from xyz data on an irregular grid to an interpolated raster"@en ;
     dcterms:identifier "Q355" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q355 ;
+    dcterms:subject chb:Q355 ;
     dcterms:title "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en ;
-    schema:about wd:Q355 ;
-    dcat:distribution dist:Q355-html,
-        dist:Q355-json,
-        dist:Q355-ttl ;
+    schema:about chb:Q355 ;
+    dcat:distribution chbdist:Q355-html,
+        chbdist:Q355-json,
+        chbdist:Q355-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q355.html> .
 
-dist:Q355-html
+chbdist:Q355-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q355-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q355.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q355-json
+chbdist:Q355-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q355-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q355.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q355-ttl
+chbdist:Q355-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q355, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q355.ttl> ;
+    dcat:downloadURL chbdata:Q355.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q355
+chb:Q355
     a wikibase:Item ;
     schema:description "Plotting remote sensing data, especially how to go from xyz data on an irregular grid to an interpolated raster"@en ;
     schema:name "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en ;
@@ -80,135 +81,135 @@ wd:Q355
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en ;
     skos:prefLabel "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en ;
-    p:P2 wds:Q355-CFBCB79E-E88E-5A31-B0EB-D26ECBF64BAB,
-        wds:Q355-D3197DE6-42B7-5E56-BE80-74DE2A311F25 ;
-    p:P106 wds:Q355-40B0387C-7191-52F8-A368-65613F1710C6 ;
-    p:P113 wds:Q355-5E9C7820-0586-513A-B6B4-179A651B70F1 ;
-    p:P115 wds:Q355-27578727-A601-5176-A7B0-7864DD3A8119 ;
-    p:P116 wds:Q355-C30A54B7-067F-549B-9404-1475C8B8B509 ;
-    p:P117 wds:Q355-BBB6CB02-8731-5287-AF46-B85CD8482983 ;
-    p:P118 wds:Q355-AB77834D-61DF-5CEF-9FFE-F6427F1AB595 ;
-    p:P119 wds:Q355-153FE948-FE56-5531-9531-88D8EEA9B0B3 ;
-    p:P122 wds:Q355-1F84B186-EE90-5280-BC86-3C02E72EBE6F,
-        wds:Q355-D8F9E3B1-FE5B-5433-A639-93680FDE8E1A ;
-    p:P123 wds:Q355-1A27CE56-5AFE-5A2A-94FE-2E82A8573267 ;
-    p:P125 wds:Q355-EA6647D1-08BE-58D4-8F20-2DFBF1FA6AA3 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q321 ;
-    wdt:P115 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> ;
-    wdt:P116 "benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster" ;
-    wdt:P117 wd:Q356 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://gist.github.com/benmarwick/7331879> .
+    chbp:P2 chbs:Q355-CFBCB79E-E88E-5A31-B0EB-D26ECBF64BAB,
+        chbs:Q355-D3197DE6-42B7-5E56-BE80-74DE2A311F25 ;
+    chbp:P106 chbs:Q355-40B0387C-7191-52F8-A368-65613F1710C6 ;
+    chbp:P113 chbs:Q355-5E9C7820-0586-513A-B6B4-179A651B70F1 ;
+    chbp:P115 chbs:Q355-27578727-A601-5176-A7B0-7864DD3A8119 ;
+    chbp:P116 chbs:Q355-C30A54B7-067F-549B-9404-1475C8B8B509 ;
+    chbp:P117 chbs:Q355-BBB6CB02-8731-5287-AF46-B85CD8482983 ;
+    chbp:P118 chbs:Q355-AB77834D-61DF-5CEF-9FFE-F6427F1AB595 ;
+    chbp:P119 chbs:Q355-153FE948-FE56-5531-9531-88D8EEA9B0B3 ;
+    chbp:P122 chbs:Q355-1F84B186-EE90-5280-BC86-3C02E72EBE6F,
+        chbs:Q355-D8F9E3B1-FE5B-5433-A639-93680FDE8E1A ;
+    chbp:P123 chbs:Q355-1A27CE56-5AFE-5A2A-94FE-2E82A8573267 ;
+    chbp:P125 chbs:Q355-EA6647D1-08BE-58D4-8F20-2DFBF1FA6AA3 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q321 ;
+    chbt:P115 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> ;
+    chbt:P116 "benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster" ;
+    chbt:P117 chb:Q356 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://gist.github.com/benmarwick/7331879> .
 
-wds:Q355-1A27CE56-5AFE-5A2A-94FE-2E82A8573267
+chbs:Q355-1A27CE56-5AFE-5A2A-94FE-2E82A8573267
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q355-1F84B186-EE90-5280-BC86-3C02E72EBE6F
+chbs:Q355-1F84B186-EE90-5280-BC86-3C02E72EBE6F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q355-5E9C7820-0586-513A-B6B4-179A651B70F1
+chbs:Q355-5E9C7820-0586-513A-B6B4-179A651B70F1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q321 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q321 .
 
-wds:Q355-40B0387C-7191-52F8-A368-65613F1710C6
+chbs:Q355-40B0387C-7191-52F8-A368-65613F1710C6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q355-153FE948-FE56-5531-9531-88D8EEA9B0B3
+chbs:Q355-153FE948-FE56-5531-9531-88D8EEA9B0B3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P119 "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P119 "benmarwickDY-XYZ-data-on-an-irregular-grid-to-an-interpolated-raster.r"@en .
 
-wds:Q355-27578727-A601-5176-A7B0-7864DD3A8119
+chbs:Q355-27578727-A601-5176-A7B0-7864DD3A8119
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P115 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P115 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> .
 
-wds:Q355-AB77834D-61DF-5CEF-9FFE-F6427F1AB595
+chbs:Q355-AB77834D-61DF-5CEF-9FFE-F6427F1AB595
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q355-BBB6CB02-8731-5287-AF46-B85CD8482983
+chbs:Q355-BBB6CB02-8731-5287-AF46-B85CD8482983
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P117 wd:Q356 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P117 chb:Q356 .
 
-wds:Q355-C30A54B7-067F-549B-9404-1475C8B8B509
+chbs:Q355-C30A54B7-067F-549B-9404-1475C8B8B509
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster" .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster" .
 
-wds:Q355-CFBCB79E-E88E-5A31-B0EB-D26ECBF64BAB
+chbs:Q355-CFBCB79E-E88E-5A31-B0EB-D26ECBF64BAB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q355-D8F9E3B1-FE5B-5433-A639-93680FDE8E1A
+chbs:Q355-D8F9E3B1-FE5B-5433-A639-93680FDE8E1A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q355-D3197DE6-42B7-5E56-BE80-74DE2A311F25
+chbs:Q355-D3197DE6-42B7-5E56-BE80-74DE2A311F25
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q355-EA6647D1-08BE-58D4-8F20-2DFBF1FA6AA3
+chbs:Q355-EA6647D1-08BE-58D4-8F20-2DFBF1FA6AA3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
-    pq:P104 "2015-12-27T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/gist.github.com-7331879_-_2015-12-27_20-29-23> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:bd91224ff7d9469c901c44d2c9581cee ;
-    ps:P125 <https://gist.github.com/benmarwick/7331879> .
+    prov:wasDerivedFrom chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6 ;
+    chbpq:P104 "2015-12-27T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/gist.github.com-7331879_-_2015-12-27_20-29-23> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:bd91224ff7d9469c901c44d2c9581cee ;
+    chbps:P125 <https://gist.github.com/benmarwick/7331879> .
 
-wdref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6
+chbref:8240eb2b40ac343ce92aadf3c98b57a164cf00e6
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> .
+    chbpr:P6 <https://open-archaeo.info/post/benmarwickdy-xyz-data-on-an-irregular-grid-to-an-interpolated-raster/> .
 
-wdv:bd91224ff7d9469c901c44d2c9581cee
+chbv:bd91224ff7d9469c901c44d2c9581cee
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

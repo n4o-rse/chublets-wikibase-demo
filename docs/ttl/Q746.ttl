@@ -1,53 +1,54 @@
 # Q746: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q746
+chbdata:Q746.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "R package to reconstruct paths using archaeological monuments, model parameters of infrastructure and evaluate those parameters, model parameters of infrastructure and evaluate those parameters."@en ;
     dcterms:identifier "Q746" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q746 ;
+    dcterms:subject chb:Q746 ;
     dcterms:title "pathAAR"@en ;
-    schema:about wd:Q746 ;
-    dcat:distribution dist:Q746-html,
-        dist:Q746-json,
-        dist:Q746-ttl ;
+    schema:about chb:Q746 ;
+    dcat:distribution chbdist:Q746-html,
+        chbdist:Q746-json,
+        chbdist:Q746-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q746.html> .
 
-dist:Q746-html
+chbdist:Q746-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q746-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q746.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q746-json
+chbdist:Q746-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q746-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q746.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q746-ttl
+chbdist:Q746-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q746, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q746.ttl> ;
+    dcat:downloadURL chbdata:Q746.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q746
+chb:Q746
     a wikibase:Item ;
     schema:description "R package to reconstruct paths using archaeological monuments, model parameters of infrastructure and evaluate those parameters, model parameters of infrastructure and evaluate those parameters."@en ;
     schema:name "pathAAR"@en ;
@@ -80,135 +81,135 @@ wd:Q746
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "pathAAR"@en ;
     skos:prefLabel "pathAAR"@en ;
-    p:P2 wds:Q746-0F02E1AB-A259-5393-B3C5-3ACE2CE9CBDB,
-        wds:Q746-6E3F2FDE-780C-576F-8700-F39BB65361EE ;
-    p:P106 wds:Q746-3910A924-EE15-5DB3-B83B-D4381A2C907D ;
-    p:P113 wds:Q746-31CFFB45-ACBE-5D19-910B-F2EE92FD3F9D ;
-    p:P115 wds:Q746-359CF876-C810-559B-8B9C-E8E59B24A848 ;
-    p:P116 wds:Q746-9961662F-FF22-503A-98AB-28156D2F2CFB ;
-    p:P117 wds:Q746-B8933611-EAC4-54FE-9A8E-598A8B1BEE09 ;
-    p:P118 wds:Q746-409ABE1D-E1BB-53C7-9AD5-00031866B52B ;
-    p:P119 wds:Q746-B44AB0C8-7A15-5D04-B51D-B89A77DC70F0 ;
-    p:P122 wds:Q746-BF272D87-138F-54EC-A839-29CAB0FE4D01,
-        wds:Q746-EDCE8994-E714-5E16-84D2-57D7F01ACA1E ;
-    p:P123 wds:Q746-E22EDEB6-855D-5C6E-B05B-CE65FA0004E6 ;
-    p:P125 wds:Q746-F679A16E-8D22-557F-80F4-5A715EDCC6C5 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q158 ;
-    wdt:P115 <https://open-archaeo.info/post/pathaar/> ;
-    wdt:P116 "pathaar" ;
-    wdt:P117 wd:Q119 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "pathAAR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ISAAKiel/pathAAR> .
+    chbp:P2 chbs:Q746-0F02E1AB-A259-5393-B3C5-3ACE2CE9CBDB,
+        chbs:Q746-6E3F2FDE-780C-576F-8700-F39BB65361EE ;
+    chbp:P106 chbs:Q746-3910A924-EE15-5DB3-B83B-D4381A2C907D ;
+    chbp:P113 chbs:Q746-31CFFB45-ACBE-5D19-910B-F2EE92FD3F9D ;
+    chbp:P115 chbs:Q746-359CF876-C810-559B-8B9C-E8E59B24A848 ;
+    chbp:P116 chbs:Q746-9961662F-FF22-503A-98AB-28156D2F2CFB ;
+    chbp:P117 chbs:Q746-B8933611-EAC4-54FE-9A8E-598A8B1BEE09 ;
+    chbp:P118 chbs:Q746-409ABE1D-E1BB-53C7-9AD5-00031866B52B ;
+    chbp:P119 chbs:Q746-B44AB0C8-7A15-5D04-B51D-B89A77DC70F0 ;
+    chbp:P122 chbs:Q746-BF272D87-138F-54EC-A839-29CAB0FE4D01,
+        chbs:Q746-EDCE8994-E714-5E16-84D2-57D7F01ACA1E ;
+    chbp:P123 chbs:Q746-E22EDEB6-855D-5C6E-B05B-CE65FA0004E6 ;
+    chbp:P125 chbs:Q746-F679A16E-8D22-557F-80F4-5A715EDCC6C5 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q158 ;
+    chbt:P115 <https://open-archaeo.info/post/pathaar/> ;
+    chbt:P116 "pathaar" ;
+    chbt:P117 chb:Q119 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "pathAAR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ISAAKiel/pathAAR> .
 
-wds:Q746-0F02E1AB-A259-5393-B3C5-3ACE2CE9CBDB
+chbs:Q746-0F02E1AB-A259-5393-B3C5-3ACE2CE9CBDB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P2 chb:Q103 .
 
-wds:Q746-6E3F2FDE-780C-576F-8700-F39BB65361EE
+chbs:Q746-6E3F2FDE-780C-576F-8700-F39BB65361EE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P2 chb:Q106 .
 
-wds:Q746-31CFFB45-ACBE-5D19-910B-F2EE92FD3F9D
+chbs:Q746-31CFFB45-ACBE-5D19-910B-F2EE92FD3F9D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q158 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q158 .
 
-wds:Q746-359CF876-C810-559B-8B9C-E8E59B24A848
+chbs:Q746-359CF876-C810-559B-8B9C-E8E59B24A848
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P115 <https://open-archaeo.info/post/pathaar/> .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P115 <https://open-archaeo.info/post/pathaar/> .
 
-wds:Q746-409ABE1D-E1BB-53C7-9AD5-00031866B52B
+chbs:Q746-409ABE1D-E1BB-53C7-9AD5-00031866B52B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P118 chb:Q108 .
 
-wds:Q746-3910A924-EE15-5DB3-B83B-D4381A2C907D
+chbs:Q746-3910A924-EE15-5DB3-B83B-D4381A2C907D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P106 chb:Q110 .
 
-wds:Q746-9961662F-FF22-503A-98AB-28156D2F2CFB
+chbs:Q746-9961662F-FF22-503A-98AB-28156D2F2CFB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "pathaar" .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "pathaar" .
 
-wds:Q746-B44AB0C8-7A15-5D04-B51D-B89A77DC70F0
+chbs:Q746-B44AB0C8-7A15-5D04-B51D-B89A77DC70F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P119 "pathAAR"@en .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P119 "pathAAR"@en .
 
-wds:Q746-B8933611-EAC4-54FE-9A8E-598A8B1BEE09
+chbs:Q746-B8933611-EAC4-54FE-9A8E-598A8B1BEE09
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P117 chb:Q119 .
 
-wds:Q746-BF272D87-138F-54EC-A839-29CAB0FE4D01
+chbs:Q746-BF272D87-138F-54EC-A839-29CAB0FE4D01
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P122 chb:Q110 .
 
-wds:Q746-E22EDEB6-855D-5C6E-B05B-CE65FA0004E6
+chbs:Q746-E22EDEB6-855D-5C6E-B05B-CE65FA0004E6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P123 chb:Q111 .
 
-wds:Q746-EDCE8994-E714-5E16-84D2-57D7F01ACA1E
+chbs:Q746-EDCE8994-E714-5E16-84D2-57D7F01ACA1E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbps:P122 chb:Q109 .
 
-wds:Q746-F679A16E-8D22-557F-80F4-5A715EDCC6C5
+chbs:Q746-F679A16E-8D22-557F-80F4-5A715EDCC6C5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
-    pq:P104 "2020-11-02T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-pathAAR_-_2020-11-02_14-32-45> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ae080307e5867317f65ce8362cb526f1 ;
-    ps:P125 <https://github.com/ISAAKiel/pathAAR> .
+    prov:wasDerivedFrom chbref:4b1b934ec4f09351e112430417ae3f786d9934fa ;
+    chbpq:P104 "2020-11-02T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-pathAAR_-_2020-11-02_14-32-45> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:ae080307e5867317f65ce8362cb526f1 ;
+    chbps:P125 <https://github.com/ISAAKiel/pathAAR> .
 
-wdref:4b1b934ec4f09351e112430417ae3f786d9934fa
+chbref:4b1b934ec4f09351e112430417ae3f786d9934fa
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/pathaar/> .
+    chbpr:P6 <https://open-archaeo.info/post/pathaar/> .
 
-wdv:ae080307e5867317f65ce8362cb526f1
+chbv:ae080307e5867317f65ce8362cb526f1
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

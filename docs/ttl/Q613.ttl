@@ -1,53 +1,54 @@
 # Q613: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q613
+chbdata:Q613.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Provides a formal representation of intervals between two points in time (periods) and the potential logical relations between them."@en ;
     dcterms:identifier "Q613" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q613 ;
+    dcterms:subject chb:Q613 ;
     dcterms:title "tempo"@en ;
-    schema:about wd:Q613 ;
-    dcat:distribution dist:Q613-html,
-        dist:Q613-json,
-        dist:Q613-ttl ;
+    schema:about chb:Q613 ;
+    dcat:distribution chbdist:Q613-html,
+        chbdist:Q613-json,
+        chbdist:Q613-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q613.html> .
 
-dist:Q613-html
+chbdist:Q613-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q613-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q613.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q613-json
+chbdist:Q613-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q613-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q613.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q613-ttl
+chbdist:Q613-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q613, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q613.ttl> ;
+    dcat:downloadURL chbdata:Q613.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q613
+chb:Q613
     a wikibase:Item ;
     schema:description "Provides a formal representation of intervals between two points in time (periods) and the potential logical relations between them."@en ;
     schema:name "tempo"@en ;
@@ -80,127 +81,127 @@ wd:Q613
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "tempo"@en ;
     skos:prefLabel "tempo"@en ;
-    p:P2 wds:Q613-2E491BD5-B297-52BD-A43F-026504C106BF,
-        wds:Q613-59B5FD77-25CC-5436-9149-EE7503502311 ;
-    p:P106 wds:Q613-27497DA6-6500-5924-B98C-080079D3C861 ;
-    p:P113 wds:Q613-5B1A85A2-9D16-591F-A66D-21509F58A278 ;
-    p:P115 wds:Q613-F652DAEB-C858-5C10-B39E-D75D00BE7CFB ;
-    p:P116 wds:Q613-AF457316-521F-5078-8ACF-FB02B5E324D5 ;
-    p:P117 wds:Q613-2E510B37-E55D-53A7-9F6A-8884FEA3A670 ;
-    p:P118 wds:Q613-641F363E-C23D-5A37-B357-1219D9FF9059 ;
-    p:P119 wds:Q613-1E5E6E93-C8AF-59ED-811C-39F6F28D9156 ;
-    p:P122 wds:Q613-B063D936-486B-532E-B047-092BA889E76B,
-        wds:Q613-FEBF8672-22FA-54F2-BAB6-C06F85DF078B ;
-    p:P123 wds:Q613-EB04EA44-E623-5296-9FC0-53DED6A882C8 ;
-    p:P125 wds:Q613-CC02FE5E-5A19-5ED9-B183-11279555B39C ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q295 ;
-    wdt:P115 <https://open-archaeo.info/post/tempo/> ;
-    wdt:P116 "tempo" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "tempo"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/joeroe/tempo> .
+    chbp:P2 chbs:Q613-2E491BD5-B297-52BD-A43F-026504C106BF,
+        chbs:Q613-59B5FD77-25CC-5436-9149-EE7503502311 ;
+    chbp:P106 chbs:Q613-27497DA6-6500-5924-B98C-080079D3C861 ;
+    chbp:P113 chbs:Q613-5B1A85A2-9D16-591F-A66D-21509F58A278 ;
+    chbp:P115 chbs:Q613-F652DAEB-C858-5C10-B39E-D75D00BE7CFB ;
+    chbp:P116 chbs:Q613-AF457316-521F-5078-8ACF-FB02B5E324D5 ;
+    chbp:P117 chbs:Q613-2E510B37-E55D-53A7-9F6A-8884FEA3A670 ;
+    chbp:P118 chbs:Q613-641F363E-C23D-5A37-B357-1219D9FF9059 ;
+    chbp:P119 chbs:Q613-1E5E6E93-C8AF-59ED-811C-39F6F28D9156 ;
+    chbp:P122 chbs:Q613-B063D936-486B-532E-B047-092BA889E76B,
+        chbs:Q613-FEBF8672-22FA-54F2-BAB6-C06F85DF078B ;
+    chbp:P123 chbs:Q613-EB04EA44-E623-5296-9FC0-53DED6A882C8 ;
+    chbp:P125 chbs:Q613-CC02FE5E-5A19-5ED9-B183-11279555B39C ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q295 ;
+    chbt:P115 <https://open-archaeo.info/post/tempo/> ;
+    chbt:P116 "tempo" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "tempo"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/joeroe/tempo> .
 
-wds:Q613-1E5E6E93-C8AF-59ED-811C-39F6F28D9156
+chbs:Q613-1E5E6E93-C8AF-59ED-811C-39F6F28D9156
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P119 "tempo"@en .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P119 "tempo"@en .
 
-wds:Q613-2E491BD5-B297-52BD-A43F-026504C106BF
+chbs:Q613-2E491BD5-B297-52BD-A43F-026504C106BF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P2 chb:Q106 .
 
-wds:Q613-2E510B37-E55D-53A7-9F6A-8884FEA3A670
+chbs:Q613-2E510B37-E55D-53A7-9F6A-8884FEA3A670
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P117 chb:Q126 .
 
-wds:Q613-5B1A85A2-9D16-591F-A66D-21509F58A278
+chbs:Q613-5B1A85A2-9D16-591F-A66D-21509F58A278
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q295 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q295 .
 
-wds:Q613-59B5FD77-25CC-5436-9149-EE7503502311
+chbs:Q613-59B5FD77-25CC-5436-9149-EE7503502311
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P2 chb:Q103 .
 
-wds:Q613-641F363E-C23D-5A37-B357-1219D9FF9059
+chbs:Q613-641F363E-C23D-5A37-B357-1219D9FF9059
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P118 chb:Q108 .
 
-wds:Q613-27497DA6-6500-5924-B98C-080079D3C861
+chbs:Q613-27497DA6-6500-5924-B98C-080079D3C861
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P106 chb:Q110 .
 
-wds:Q613-AF457316-521F-5078-8ACF-FB02B5E324D5
+chbs:Q613-AF457316-521F-5078-8ACF-FB02B5E324D5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "tempo" .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "tempo" .
 
-wds:Q613-B063D936-486B-532E-B047-092BA889E76B
+chbs:Q613-B063D936-486B-532E-B047-092BA889E76B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P122 chb:Q109 .
 
-wds:Q613-CC02FE5E-5A19-5ED9-B183-11279555B39C
+chbs:Q613-CC02FE5E-5A19-5ED9-B183-11279555B39C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/joeroe/tempo> .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/joeroe/tempo> .
 
-wds:Q613-EB04EA44-E623-5296-9FC0-53DED6A882C8
+chbs:Q613-EB04EA44-E623-5296-9FC0-53DED6A882C8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P123 chb:Q111 .
 
-wds:Q613-F652DAEB-C858-5C10-B39E-D75D00BE7CFB
+chbs:Q613-F652DAEB-C858-5C10-B39E-D75D00BE7CFB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P115 <https://open-archaeo.info/post/tempo/> .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P115 <https://open-archaeo.info/post/tempo/> .
 
-wds:Q613-FEBF8672-22FA-54F2-BAB6-C06F85DF078B
+chbs:Q613-FEBF8672-22FA-54F2-BAB6-C06F85DF078B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:15c13958589407b9e32c21cf3f6b003e89794a8b ;
+    chbps:P122 chb:Q110 .
 
-wdref:15c13958589407b9e32c21cf3f6b003e89794a8b
+chbref:15c13958589407b9e32c21cf3f6b003e89794a8b
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/tempo/> .
+    chbpr:P6 <https://open-archaeo.info/post/tempo/> .

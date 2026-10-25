@@ -1,53 +1,54 @@
 # Q160: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q160
+chbdata:Q160.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A package for classical age-depth modelling of cores from deposits."@en ;
     dcterms:identifier "Q160" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q160 ;
+    dcterms:subject chb:Q160 ;
     dcterms:title "clam"@en ;
-    schema:about wd:Q160 ;
-    dcat:distribution dist:Q160-html,
-        dist:Q160-json,
-        dist:Q160-ttl ;
+    schema:about chb:Q160 ;
+    dcat:distribution chbdist:Q160-html,
+        chbdist:Q160-json,
+        chbdist:Q160-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q160.html> .
 
-dist:Q160-html
+chbdist:Q160-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q160-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q160.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q160-json
+chbdist:Q160-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q160-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q160.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q160-ttl
+chbdist:Q160-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q160, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q160.ttl> ;
+    dcat:downloadURL chbdata:Q160.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q160
+chb:Q160
     a wikibase:Item ;
     schema:description "A package for classical age-depth modelling of cores from deposits."@en ;
     schema:name "clam"@en ;
@@ -80,136 +81,136 @@ wd:Q160
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "clam"@en ;
     skos:prefLabel "clam"@en ;
-    p:P2 wds:Q160-15FF5617-6257-5259-81AF-3E34ED9808BF,
-        wds:Q160-728160B5-724F-5A00-A098-AF712C7FFD1F ;
-    p:P106 wds:Q160-18BFBD39-F746-56E3-905D-E6588D18D9C0 ;
-    p:P113 wds:Q160-C168BCB8-8B4B-56A5-B924-130273487704 ;
-    p:P115 wds:Q160-B25388BB-B629-5796-83D4-2A31A8CEAE8E ;
-    p:P116 wds:Q160-95ED53E8-991E-5515-A4F2-7FDAC96F85A2 ;
-    p:P117 wds:Q160-370AFE90-4E6E-55E6-A682-F7D9DFB60BDE,
-        wds:Q160-937BC0F7-0074-5FD2-A541-F097DA53B9C2 ;
-    p:P118 wds:Q160-48603E47-034A-5654-A6DB-A247ABF0548B ;
-    p:P119 wds:Q160-EE724D70-4297-55EF-9923-B41AA1879ED8 ;
-    p:P122 wds:Q160-C019DC7F-04D3-50F0-941B-D5BF3DD16BE4,
-        wds:Q160-D60F3902-406F-58A2-9D87-15AB03A70345 ;
-    p:P123 wds:Q160-D254EE71-2F68-5A5D-88B8-8FAD5B7CC912 ;
-    p:P125 wds:Q160-60C13F32-AA62-52BE-89B0-EA1FDB3596D1 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q162 ;
-    wdt:P115 <https://open-archaeo.info/post/clam/> ;
-    wdt:P116 "clam" ;
-    wdt:P117 wd:Q126,
-        wd:Q161 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "clam"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/Maarten14C/clam> .
+    chbp:P2 chbs:Q160-15FF5617-6257-5259-81AF-3E34ED9808BF,
+        chbs:Q160-728160B5-724F-5A00-A098-AF712C7FFD1F ;
+    chbp:P106 chbs:Q160-18BFBD39-F746-56E3-905D-E6588D18D9C0 ;
+    chbp:P113 chbs:Q160-C168BCB8-8B4B-56A5-B924-130273487704 ;
+    chbp:P115 chbs:Q160-B25388BB-B629-5796-83D4-2A31A8CEAE8E ;
+    chbp:P116 chbs:Q160-95ED53E8-991E-5515-A4F2-7FDAC96F85A2 ;
+    chbp:P117 chbs:Q160-370AFE90-4E6E-55E6-A682-F7D9DFB60BDE,
+        chbs:Q160-937BC0F7-0074-5FD2-A541-F097DA53B9C2 ;
+    chbp:P118 chbs:Q160-48603E47-034A-5654-A6DB-A247ABF0548B ;
+    chbp:P119 chbs:Q160-EE724D70-4297-55EF-9923-B41AA1879ED8 ;
+    chbp:P122 chbs:Q160-C019DC7F-04D3-50F0-941B-D5BF3DD16BE4,
+        chbs:Q160-D60F3902-406F-58A2-9D87-15AB03A70345 ;
+    chbp:P123 chbs:Q160-D254EE71-2F68-5A5D-88B8-8FAD5B7CC912 ;
+    chbp:P125 chbs:Q160-60C13F32-AA62-52BE-89B0-EA1FDB3596D1 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q162 ;
+    chbt:P115 <https://open-archaeo.info/post/clam/> ;
+    chbt:P116 "clam" ;
+    chbt:P117 chb:Q126,
+        chb:Q161 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "clam"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/Maarten14C/clam> .
 
-wds:Q160-15FF5617-6257-5259-81AF-3E34ED9808BF
+chbs:Q160-15FF5617-6257-5259-81AF-3E34ED9808BF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q160-18BFBD39-F746-56E3-905D-E6588D18D9C0
+chbs:Q160-18BFBD39-F746-56E3-905D-E6588D18D9C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q160-60C13F32-AA62-52BE-89B0-EA1FDB3596D1
+chbs:Q160-60C13F32-AA62-52BE-89B0-EA1FDB3596D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/Maarten14C/clam> .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/Maarten14C/clam> .
 
-wds:Q160-95ED53E8-991E-5515-A4F2-7FDAC96F85A2
+chbs:Q160-95ED53E8-991E-5515-A4F2-7FDAC96F85A2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "clam" .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "clam" .
 
-wds:Q160-370AFE90-4E6E-55E6-A682-F7D9DFB60BDE
+chbs:Q160-370AFE90-4E6E-55E6-A682-F7D9DFB60BDE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P117 wd:Q161 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P117 chb:Q161 .
 
-wds:Q160-937BC0F7-0074-5FD2-A541-F097DA53B9C2
+chbs:Q160-937BC0F7-0074-5FD2-A541-F097DA53B9C2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q160-48603E47-034A-5654-A6DB-A247ABF0548B
+chbs:Q160-48603E47-034A-5654-A6DB-A247ABF0548B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q160-728160B5-724F-5A00-A098-AF712C7FFD1F
+chbs:Q160-728160B5-724F-5A00-A098-AF712C7FFD1F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q160-B25388BB-B629-5796-83D4-2A31A8CEAE8E
+chbs:Q160-B25388BB-B629-5796-83D4-2A31A8CEAE8E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P115 <https://open-archaeo.info/post/clam/> .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P115 <https://open-archaeo.info/post/clam/> .
 
-wds:Q160-C019DC7F-04D3-50F0-941B-D5BF3DD16BE4
+chbs:Q160-C019DC7F-04D3-50F0-941B-D5BF3DD16BE4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q160-C168BCB8-8B4B-56A5-B924-130273487704
+chbs:Q160-C168BCB8-8B4B-56A5-B924-130273487704
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q162 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q162 .
 
-wds:Q160-D60F3902-406F-58A2-9D87-15AB03A70345
+chbs:Q160-D60F3902-406F-58A2-9D87-15AB03A70345
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q160-D254EE71-2F68-5A5D-88B8-8FAD5B7CC912
+chbs:Q160-D254EE71-2F68-5A5D-88B8-8FAD5B7CC912
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q160-EE724D70-4297-55EF-9923-B41AA1879ED8
+chbs:Q160-EE724D70-4297-55EF-9923-B41AA1879ED8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
-    ps:P119 "clam"@en .
+    prov:wasDerivedFrom chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1 ;
+    chbps:P119 "clam"@en .
 
-wdref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1
+chbref:bfbd723b63b20d158c2e40ba1ce1d9dc08b317c1
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/clam/> .
+    chbpr:P6 <https://open-archaeo.info/post/clam/> .

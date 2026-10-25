@@ -1,53 +1,54 @@
 # Q710: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q710
+chbdata:Q710.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "For handling archaeological chronological data."@en ;
     dcterms:identifier "Q710" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q710 ;
+    dcterms:subject chb:Q710 ;
     dcterms:title "archchron"@en ;
-    schema:about wd:Q710 ;
-    dcat:distribution dist:Q710-html,
-        dist:Q710-json,
-        dist:Q710-ttl ;
+    schema:about chb:Q710 ;
+    dcat:distribution chbdist:Q710-html,
+        chbdist:Q710-json,
+        chbdist:Q710-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q710.html> .
 
-dist:Q710-html
+chbdist:Q710-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q710-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q710.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q710-json
+chbdist:Q710-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q710-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q710.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q710-ttl
+chbdist:Q710-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q710, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q710.ttl> ;
+    dcat:downloadURL chbdata:Q710.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q710
+chb:Q710
     a wikibase:Item ;
     schema:description "For handling archaeological chronological data."@en ;
     schema:name "archchron"@en ;
@@ -80,127 +81,127 @@ wd:Q710
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "archchron"@en ;
     skos:prefLabel "archchron"@en ;
-    p:P2 wds:Q710-7EB57D85-B15E-5590-BBE4-B785A3DC142F,
-        wds:Q710-AFCD4FEC-0E8B-5003-A007-AEDDA01A3665 ;
-    p:P106 wds:Q710-016E65BF-8DE8-5B75-B5A2-3BC3743A106B ;
-    p:P113 wds:Q710-B31C35A6-7A29-569F-BCAE-C9F527273389 ;
-    p:P115 wds:Q710-F6BC7666-3A9D-548F-A719-CDA3ABDBD13F ;
-    p:P116 wds:Q710-B83247FF-9963-50E5-B24E-406421D152D1 ;
-    p:P117 wds:Q710-64D4771C-9165-5920-8FDF-8F58E4C98693 ;
-    p:P118 wds:Q710-39D73CB5-6407-5EE2-BC0C-5C195688944A ;
-    p:P119 wds:Q710-9D6CCA73-8ECF-5C35-A214-0248E9135912 ;
-    p:P122 wds:Q710-8B1B919A-BAE9-59EB-9420-3455A7A08FC0,
-        wds:Q710-037AABFB-2D65-5634-83BD-CC2CE9C9F157 ;
-    p:P123 wds:Q710-494CA297-110A-522E-9BC1-97729DCE6CF9 ;
-    p:P125 wds:Q710-47B308F3-22ED-5FBB-8D7C-AD83077063FF ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q711 ;
-    wdt:P115 <https://open-archaeo.info/post/archchron/> ;
-    wdt:P116 "archchron" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "archchron"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://gitlab.com/oliver.nakoinz/archchron> .
+    chbp:P2 chbs:Q710-7EB57D85-B15E-5590-BBE4-B785A3DC142F,
+        chbs:Q710-AFCD4FEC-0E8B-5003-A007-AEDDA01A3665 ;
+    chbp:P106 chbs:Q710-016E65BF-8DE8-5B75-B5A2-3BC3743A106B ;
+    chbp:P113 chbs:Q710-B31C35A6-7A29-569F-BCAE-C9F527273389 ;
+    chbp:P115 chbs:Q710-F6BC7666-3A9D-548F-A719-CDA3ABDBD13F ;
+    chbp:P116 chbs:Q710-B83247FF-9963-50E5-B24E-406421D152D1 ;
+    chbp:P117 chbs:Q710-64D4771C-9165-5920-8FDF-8F58E4C98693 ;
+    chbp:P118 chbs:Q710-39D73CB5-6407-5EE2-BC0C-5C195688944A ;
+    chbp:P119 chbs:Q710-9D6CCA73-8ECF-5C35-A214-0248E9135912 ;
+    chbp:P122 chbs:Q710-8B1B919A-BAE9-59EB-9420-3455A7A08FC0,
+        chbs:Q710-037AABFB-2D65-5634-83BD-CC2CE9C9F157 ;
+    chbp:P123 chbs:Q710-494CA297-110A-522E-9BC1-97729DCE6CF9 ;
+    chbp:P125 chbs:Q710-47B308F3-22ED-5FBB-8D7C-AD83077063FF ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q711 ;
+    chbt:P115 <https://open-archaeo.info/post/archchron/> ;
+    chbt:P116 "archchron" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "archchron"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://gitlab.com/oliver.nakoinz/archchron> .
 
-wds:Q710-7EB57D85-B15E-5590-BBE4-B785A3DC142F
+chbs:Q710-7EB57D85-B15E-5590-BBE4-B785A3DC142F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q710-8B1B919A-BAE9-59EB-9420-3455A7A08FC0
+chbs:Q710-8B1B919A-BAE9-59EB-9420-3455A7A08FC0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q710-9D6CCA73-8ECF-5C35-A214-0248E9135912
+chbs:Q710-9D6CCA73-8ECF-5C35-A214-0248E9135912
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P119 "archchron"@en .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P119 "archchron"@en .
 
-wds:Q710-016E65BF-8DE8-5B75-B5A2-3BC3743A106B
+chbs:Q710-016E65BF-8DE8-5B75-B5A2-3BC3743A106B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q710-037AABFB-2D65-5634-83BD-CC2CE9C9F157
+chbs:Q710-037AABFB-2D65-5634-83BD-CC2CE9C9F157
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q710-39D73CB5-6407-5EE2-BC0C-5C195688944A
+chbs:Q710-39D73CB5-6407-5EE2-BC0C-5C195688944A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q710-47B308F3-22ED-5FBB-8D7C-AD83077063FF
+chbs:Q710-47B308F3-22ED-5FBB-8D7C-AD83077063FF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://gitlab.com/oliver.nakoinz/archchron> .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://gitlab.com/oliver.nakoinz/archchron> .
 
-wds:Q710-64D4771C-9165-5920-8FDF-8F58E4C98693
+chbs:Q710-64D4771C-9165-5920-8FDF-8F58E4C98693
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q710-494CA297-110A-522E-9BC1-97729DCE6CF9
+chbs:Q710-494CA297-110A-522E-9BC1-97729DCE6CF9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q710-AFCD4FEC-0E8B-5003-A007-AEDDA01A3665
+chbs:Q710-AFCD4FEC-0E8B-5003-A007-AEDDA01A3665
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q710-B31C35A6-7A29-569F-BCAE-C9F527273389
+chbs:Q710-B31C35A6-7A29-569F-BCAE-C9F527273389
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q711 .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q711 .
 
-wds:Q710-B83247FF-9963-50E5-B24E-406421D152D1
+chbs:Q710-B83247FF-9963-50E5-B24E-406421D152D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "archchron" .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "archchron" .
 
-wds:Q710-F6BC7666-3A9D-548F-A719-CDA3ABDBD13F
+chbs:Q710-F6BC7666-3A9D-548F-A719-CDA3ABDBD13F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
-    ps:P115 <https://open-archaeo.info/post/archchron/> .
+    prov:wasDerivedFrom chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633 ;
+    chbps:P115 <https://open-archaeo.info/post/archchron/> .
 
-wdref:12daefe3dd81077e1bd6ecdbf1393f666829a633
+chbref:12daefe3dd81077e1bd6ecdbf1393f666829a633
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/archchron/> .
+    chbpr:P6 <https://open-archaeo.info/post/archchron/> .

@@ -1,53 +1,54 @@
 # Q323: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q323
+chbdata:Q323.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The eppm serograph is a graphical tool for chronological serialization of archaeological furniture counting tables."@en ;
     dcterms:identifier "Q323" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q323 ;
+    dcterms:subject chb:Q323 ;
     dcterms:title "Seriographe EPPM"@en ;
-    schema:about wd:Q323 ;
-    dcat:distribution dist:Q323-html,
-        dist:Q323-json,
-        dist:Q323-ttl ;
+    schema:about chb:Q323 ;
+    dcat:distribution chbdist:Q323-html,
+        chbdist:Q323-json,
+        chbdist:Q323-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q323.html> .
 
-dist:Q323-html
+chbdist:Q323-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q323-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q323.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q323-json
+chbdist:Q323-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q323-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q323.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q323-ttl
+chbdist:Q323-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q323, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q323.ttl> ;
+    dcat:downloadURL chbdata:Q323.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q323
+chb:Q323
     a wikibase:Item ;
     schema:description "The eppm serograph is a graphical tool for chronological serialization of archaeological furniture counting tables."@en ;
     schema:name "Seriographe EPPM"@en ;
@@ -80,126 +81,126 @@ wd:Q323
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "Seriographe EPPM"@en ;
     skos:prefLabel "Seriographe EPPM"@en ;
-    p:P2 wds:Q323-B07F743A-CE7A-5CCA-8122-B51A5F52C68A,
-        wds:Q323-B5065FF6-C606-56B9-913D-0734F283E85C ;
-    p:P106 wds:Q323-AA77F9C6-D479-5B84-BF74-526EA573C594 ;
-    p:P109 wds:Q323-9CF69CC5-7B55-5049-BD3C-8EEECCF4F868 ;
-    p:P113 wds:Q323-80F1CAC9-FE7D-514B-9362-D0BDD73FCEE8 ;
-    p:P115 wds:Q323-6B3514E3-F4C6-5A45-B5F7-842C4A6EC569 ;
-    p:P116 wds:Q323-241CB75D-48DF-505D-BB38-1DDCEB5BE621 ;
-    p:P117 wds:Q323-563D75C2-81A0-5943-B1CD-8331AB5ED061 ;
-    p:P118 wds:Q323-6E3030A5-8772-59FA-901F-B5A1AD707B14 ;
-    p:P119 wds:Q323-955451DC-BFD3-58DB-BC6C-F44B7ECE20B3 ;
-    p:P120 wds:Q323-205F210E-C5AC-523E-988A-86D742ADDF18 ;
-    p:P122 wds:Q323-3820EDAD-EA5B-52FB-8203-CA97A67C9F37,
-        wds:Q323-68985F5D-E1EC-5FDD-B070-263BAD80BC12 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q324 ;
-    wdt:P113 wd:Q262 ;
-    wdt:P115 <https://open-archaeo.info/post/seriographe-eppm/> ;
-    wdt:P116 "seriographe-eppm" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Seriographe EPPM"@en ;
-    wdt:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/outils-danalyse-graphique-des-donnees> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 .
+    chbp:P2 chbs:Q323-B07F743A-CE7A-5CCA-8122-B51A5F52C68A,
+        chbs:Q323-B5065FF6-C606-56B9-913D-0734F283E85C ;
+    chbp:P106 chbs:Q323-AA77F9C6-D479-5B84-BF74-526EA573C594 ;
+    chbp:P109 chbs:Q323-9CF69CC5-7B55-5049-BD3C-8EEECCF4F868 ;
+    chbp:P113 chbs:Q323-80F1CAC9-FE7D-514B-9362-D0BDD73FCEE8 ;
+    chbp:P115 chbs:Q323-6B3514E3-F4C6-5A45-B5F7-842C4A6EC569 ;
+    chbp:P116 chbs:Q323-241CB75D-48DF-505D-BB38-1DDCEB5BE621 ;
+    chbp:P117 chbs:Q323-563D75C2-81A0-5943-B1CD-8331AB5ED061 ;
+    chbp:P118 chbs:Q323-6E3030A5-8772-59FA-901F-B5A1AD707B14 ;
+    chbp:P119 chbs:Q323-955451DC-BFD3-58DB-BC6C-F44B7ECE20B3 ;
+    chbp:P120 chbs:Q323-205F210E-C5AC-523E-988A-86D742ADDF18 ;
+    chbp:P122 chbs:Q323-3820EDAD-EA5B-52FB-8203-CA97A67C9F37,
+        chbs:Q323-68985F5D-E1EC-5FDD-B070-263BAD80BC12 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q324 ;
+    chbt:P113 chb:Q262 ;
+    chbt:P115 <https://open-archaeo.info/post/seriographe-eppm/> ;
+    chbt:P116 "seriographe-eppm" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Seriographe EPPM"@en ;
+    chbt:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/outils-danalyse-graphique-des-donnees> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 .
 
-wds:Q323-6B3514E3-F4C6-5A45-B5F7-842C4A6EC569
+chbs:Q323-6B3514E3-F4C6-5A45-B5F7-842C4A6EC569
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P115 <https://open-archaeo.info/post/seriographe-eppm/> .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P115 <https://open-archaeo.info/post/seriographe-eppm/> .
 
-wds:Q323-6E3030A5-8772-59FA-901F-B5A1AD707B14
+chbs:Q323-6E3030A5-8772-59FA-901F-B5A1AD707B14
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P118 chb:Q108 .
 
-wds:Q323-9CF69CC5-7B55-5049-BD3C-8EEECCF4F868
+chbs:Q323-9CF69CC5-7B55-5049-BD3C-8EEECCF4F868
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P109 wd:Q324 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P109 chb:Q324 .
 
-wds:Q323-80F1CAC9-FE7D-514B-9362-D0BDD73FCEE8
+chbs:Q323-80F1CAC9-FE7D-514B-9362-D0BDD73FCEE8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q262 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q262 .
 
-wds:Q323-205F210E-C5AC-523E-988A-86D742ADDF18
+chbs:Q323-205F210E-C5AC-523E-988A-86D742ADDF18
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/outils-danalyse-graphique-des-donnees> .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P120 <https://abp.hypotheses.org/le-programme-bassin-parisien/les-projets/les-projets-associes-au-programme/outils-danalyse-graphique-des-donnees> .
 
-wds:Q323-241CB75D-48DF-505D-BB38-1DDCEB5BE621
+chbs:Q323-241CB75D-48DF-505D-BB38-1DDCEB5BE621
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "seriographe-eppm" .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "seriographe-eppm" .
 
-wds:Q323-563D75C2-81A0-5943-B1CD-8331AB5ED061
+chbs:Q323-563D75C2-81A0-5943-B1CD-8331AB5ED061
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P117 chb:Q126 .
 
-wds:Q323-3820EDAD-EA5B-52FB-8203-CA97A67C9F37
+chbs:Q323-3820EDAD-EA5B-52FB-8203-CA97A67C9F37
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P122 chb:Q110 .
 
-wds:Q323-68985F5D-E1EC-5FDD-B070-263BAD80BC12
+chbs:Q323-68985F5D-E1EC-5FDD-B070-263BAD80BC12
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P122 chb:Q109 .
 
-wds:Q323-955451DC-BFD3-58DB-BC6C-F44B7ECE20B3
+chbs:Q323-955451DC-BFD3-58DB-BC6C-F44B7ECE20B3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P119 "Seriographe EPPM"@en .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P119 "Seriographe EPPM"@en .
 
-wds:Q323-AA77F9C6-D479-5B84-BF74-526EA573C594
+chbs:Q323-AA77F9C6-D479-5B84-BF74-526EA573C594
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P106 chb:Q110 .
 
-wds:Q323-B07F743A-CE7A-5CCA-8122-B51A5F52C68A
+chbs:Q323-B07F743A-CE7A-5CCA-8122-B51A5F52C68A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P2 chb:Q106 .
 
-wds:Q323-B5065FF6-C606-56B9-913D-0734F283E85C
+chbs:Q323-B5065FF6-C606-56B9-913D-0734F283E85C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
+    chbps:P2 chb:Q103 .
 
-wdref:58e70c932dcd0764b8e4a3b2569c472efece935e
+chbref:58e70c932dcd0764b8e4a3b2569c472efece935e
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/seriographe-eppm/> .
+    chbpr:P6 <https://open-archaeo.info/post/seriographe-eppm/> .

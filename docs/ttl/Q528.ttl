@@ -1,53 +1,54 @@
 # Q528: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q528
+chbdata:Q528.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "CombiTab is a specialized software application designed for archaeologists to create, edit, and analyze seriation diagrams, commonly known as combination tables or Kombinationstabellen."@en ;
     dcterms:identifier "Q528" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q528 ;
+    dcterms:subject chb:Q528 ;
     dcterms:title "CombiTab"@en ;
-    schema:about wd:Q528 ;
-    dcat:distribution dist:Q528-html,
-        dist:Q528-json,
-        dist:Q528-ttl ;
+    schema:about chb:Q528 ;
+    dcat:distribution chbdist:Q528-html,
+        chbdist:Q528-json,
+        chbdist:Q528-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q528.html> .
 
-dist:Q528-html
+chbdist:Q528-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q528-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q528.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q528-json
+chbdist:Q528-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q528-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q528.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q528-ttl
+chbdist:Q528-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q528, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q528.ttl> ;
+    dcat:downloadURL chbdata:Q528.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q528
+chb:Q528
     a wikibase:Item ;
     schema:description "CombiTab is a specialized software application designed for archaeologists to create, edit, and analyze seriation diagrams, commonly known as combination tables or Kombinationstabellen."@en ;
     schema:name "CombiTab"@en ;
@@ -80,137 +81,137 @@ wd:Q528
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "CombiTab"@en ;
     skos:prefLabel "CombiTab"@en ;
-    p:P2 wds:Q528-67489655-FA9B-514F-838F-9254948F0055,
-        wds:Q528-C98A49B1-07EC-54CB-A998-B6CEF8B78A5B ;
-    p:P106 wds:Q528-D03F088A-D627-5EE0-A99B-E08A342B0F32 ;
-    p:P113 wds:Q528-80C4DB5A-2299-5B34-BFF3-331C7E5FE395,
-        wds:Q528-68176DE1-DD8D-506E-8EE2-E5E89BBF0D6F ;
-    p:P115 wds:Q528-D6525CFD-A623-5D59-ACBB-098FC53E2D2E ;
-    p:P116 wds:Q528-6DD52845-5C61-5A6F-960B-D39527DD8665 ;
-    p:P117 wds:Q528-0309674C-BA5D-511D-93DA-98E51DCA827A ;
-    p:P118 wds:Q528-8DB448D8-14C9-5BF4-AB84-0A19E3429A33 ;
-    p:P119 wds:Q528-EF7EC1FA-2880-59C3-96F0-D7F04FFB2110 ;
-    p:P122 wds:Q528-8FF7B4BD-864A-5724-8DFD-01F4C7C22CBE,
-        wds:Q528-CC5F85DE-A52D-5AE6-82F0-21D4D33055C4 ;
-    p:P123 wds:Q528-951FBD54-C108-5DA1-83F7-D22374D965C6 ;
-    p:P125 wds:Q528-F398C7CC-840F-5EF7-A92F-885CA48AC379 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q172,
-        wd:Q173 ;
-    wdt:P115 <https://open-archaeo.info/post/combitab/> ;
-    wdt:P116 "combitab" ;
-    wdt:P117 wd:Q190 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "CombiTab"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/oeai-dac/CombiTab> .
+    chbp:P2 chbs:Q528-67489655-FA9B-514F-838F-9254948F0055,
+        chbs:Q528-C98A49B1-07EC-54CB-A998-B6CEF8B78A5B ;
+    chbp:P106 chbs:Q528-D03F088A-D627-5EE0-A99B-E08A342B0F32 ;
+    chbp:P113 chbs:Q528-80C4DB5A-2299-5B34-BFF3-331C7E5FE395,
+        chbs:Q528-68176DE1-DD8D-506E-8EE2-E5E89BBF0D6F ;
+    chbp:P115 chbs:Q528-D6525CFD-A623-5D59-ACBB-098FC53E2D2E ;
+    chbp:P116 chbs:Q528-6DD52845-5C61-5A6F-960B-D39527DD8665 ;
+    chbp:P117 chbs:Q528-0309674C-BA5D-511D-93DA-98E51DCA827A ;
+    chbp:P118 chbs:Q528-8DB448D8-14C9-5BF4-AB84-0A19E3429A33 ;
+    chbp:P119 chbs:Q528-EF7EC1FA-2880-59C3-96F0-D7F04FFB2110 ;
+    chbp:P122 chbs:Q528-8FF7B4BD-864A-5724-8DFD-01F4C7C22CBE,
+        chbs:Q528-CC5F85DE-A52D-5AE6-82F0-21D4D33055C4 ;
+    chbp:P123 chbs:Q528-951FBD54-C108-5DA1-83F7-D22374D965C6 ;
+    chbp:P125 chbs:Q528-F398C7CC-840F-5EF7-A92F-885CA48AC379 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q172,
+        chb:Q173 ;
+    chbt:P115 <https://open-archaeo.info/post/combitab/> ;
+    chbt:P116 "combitab" ;
+    chbt:P117 chb:Q190 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "CombiTab"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/oeai-dac/CombiTab> .
 
-wds:Q528-6DD52845-5C61-5A6F-960B-D39527DD8665
+chbs:Q528-6DD52845-5C61-5A6F-960B-D39527DD8665
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "combitab" .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "combitab" .
 
-wds:Q528-8DB448D8-14C9-5BF4-AB84-0A19E3429A33
+chbs:Q528-8DB448D8-14C9-5BF4-AB84-0A19E3429A33
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P118 chb:Q108 .
 
-wds:Q528-8FF7B4BD-864A-5724-8DFD-01F4C7C22CBE
+chbs:Q528-8FF7B4BD-864A-5724-8DFD-01F4C7C22CBE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P122 chb:Q110 .
 
-wds:Q528-80C4DB5A-2299-5B34-BFF3-331C7E5FE395
+chbs:Q528-80C4DB5A-2299-5B34-BFF3-331C7E5FE395
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q173 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q173 .
 
-wds:Q528-951FBD54-C108-5DA1-83F7-D22374D965C6
+chbs:Q528-951FBD54-C108-5DA1-83F7-D22374D965C6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P123 chb:Q370 .
 
-wds:Q528-68176DE1-DD8D-506E-8EE2-E5E89BBF0D6F
+chbs:Q528-68176DE1-DD8D-506E-8EE2-E5E89BBF0D6F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q172 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q172 .
 
-wds:Q528-0309674C-BA5D-511D-93DA-98E51DCA827A
+chbs:Q528-0309674C-BA5D-511D-93DA-98E51DCA827A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P117 wd:Q190 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P117 chb:Q190 .
 
-wds:Q528-67489655-FA9B-514F-838F-9254948F0055
+chbs:Q528-67489655-FA9B-514F-838F-9254948F0055
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P2 chb:Q106 .
 
-wds:Q528-C98A49B1-07EC-54CB-A998-B6CEF8B78A5B
+chbs:Q528-C98A49B1-07EC-54CB-A998-B6CEF8B78A5B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P2 chb:Q102 .
 
-wds:Q528-CC5F85DE-A52D-5AE6-82F0-21D4D33055C4
+chbs:Q528-CC5F85DE-A52D-5AE6-82F0-21D4D33055C4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P122 chb:Q109 .
 
-wds:Q528-D03F088A-D627-5EE0-A99B-E08A342B0F32
+chbs:Q528-D03F088A-D627-5EE0-A99B-E08A342B0F32
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P106 chb:Q110 .
 
-wds:Q528-D6525CFD-A623-5D59-ACBB-098FC53E2D2E
+chbs:Q528-D6525CFD-A623-5D59-ACBB-098FC53E2D2E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P115 <https://open-archaeo.info/post/combitab/> .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P115 <https://open-archaeo.info/post/combitab/> .
 
-wds:Q528-EF7EC1FA-2880-59C3-96F0-D7F04FFB2110
+chbs:Q528-EF7EC1FA-2880-59C3-96F0-D7F04FFB2110
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    ps:P119 "CombiTab"@en .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbps:P119 "CombiTab"@en .
 
-wds:Q528-F398C7CC-840F-5EF7-A92F-885CA48AC379
+chbs:Q528-F398C7CC-840F-5EF7-A92F-885CA48AC379
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:86758f2081917a2226f8f47392f582cd8af3a27d ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/oeai-dac/CombiTab> .
+    prov:wasDerivedFrom chbref:86758f2081917a2226f8f47392f582cd8af3a27d ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/oeai-dac/CombiTab> .
 
-wdref:86758f2081917a2226f8f47392f582cd8af3a27d
+chbref:86758f2081917a2226f8f47392f582cd8af3a27d
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/combitab/> .
+    chbpr:P6 <https://open-archaeo.info/post/combitab/> .

@@ -1,53 +1,54 @@
 # Q803: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q803
+chbdata:Q803.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Moran's i and getis-ord g* analysis."@en ;
     dcterms:identifier "Q803" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q803 ;
+    dcterms:subject chb:Q803 ;
     dcterms:title "LISA"@en ;
-    schema:about wd:Q803 ;
-    dcat:distribution dist:Q803-html,
-        dist:Q803-json,
-        dist:Q803-ttl ;
+    schema:about chb:Q803 ;
+    dcat:distribution chbdist:Q803-html,
+        chbdist:Q803-json,
+        chbdist:Q803-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q803.html> .
 
-dist:Q803-html
+chbdist:Q803-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q803-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q803.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q803-json
+chbdist:Q803-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q803-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q803.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q803-ttl
+chbdist:Q803-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q803, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q803.ttl> ;
+    dcat:downloadURL chbdata:Q803.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q803
+chb:Q803
     a wikibase:Item ;
     schema:description "Moran's i and getis-ord g* analysis."@en ;
     schema:name "LISA"@en ;
@@ -80,126 +81,126 @@ wd:Q803
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "LISA"@en ;
     skos:prefLabel "LISA"@en ;
-    p:P2 wds:Q803-6F6E415D-F709-5A99-998F-6C8B505A5D1F,
-        wds:Q803-A6780448-85CB-51D4-A595-0B761C867B70 ;
-    p:P106 wds:Q803-61FD438A-9FA0-504E-8768-5712C975FA7A ;
-    p:P113 wds:Q803-672B509F-A682-5495-A537-2411821E73B5 ;
-    p:P115 wds:Q803-4BC6523E-7351-5472-92FC-A699424B1FDD ;
-    p:P116 wds:Q803-46F4EE23-EC30-5934-9101-CF5540EAF265 ;
-    p:P117 wds:Q803-E8757213-6E5A-5AD3-81B7-7C36D5D0FFE3 ;
-    p:P118 wds:Q803-1F1E6BA3-CE3F-59D2-B3D1-10687E3F9F74 ;
-    p:P119 wds:Q803-CBFF19BD-073E-5C76-99EA-5553FAC0AAEC ;
-    p:P120 wds:Q803-C4EE1A4F-9E55-57A0-9B38-919C3C8EC760 ;
-    p:P122 wds:Q803-7E0A2246-5B01-579D-B715-5FA2F0CAE425,
-        wds:Q803-F219546A-A2C3-5AE8-8AD0-20D780ED867E ;
-    p:P123 wds:Q803-C83CE451-1F43-55AC-AD54-AA35876B9BDC ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q167 ;
-    wdt:P115 <https://open-archaeo.info/post/lisa/> ;
-    wdt:P116 "lisa" ;
-    wdt:P117 wd:Q116 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "LISA"@en ;
-    wdt:P120 <http://www.mattpeeples.net/modules/LISA.html> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 .
+    chbp:P2 chbs:Q803-6F6E415D-F709-5A99-998F-6C8B505A5D1F,
+        chbs:Q803-A6780448-85CB-51D4-A595-0B761C867B70 ;
+    chbp:P106 chbs:Q803-61FD438A-9FA0-504E-8768-5712C975FA7A ;
+    chbp:P113 chbs:Q803-672B509F-A682-5495-A537-2411821E73B5 ;
+    chbp:P115 chbs:Q803-4BC6523E-7351-5472-92FC-A699424B1FDD ;
+    chbp:P116 chbs:Q803-46F4EE23-EC30-5934-9101-CF5540EAF265 ;
+    chbp:P117 chbs:Q803-E8757213-6E5A-5AD3-81B7-7C36D5D0FFE3 ;
+    chbp:P118 chbs:Q803-1F1E6BA3-CE3F-59D2-B3D1-10687E3F9F74 ;
+    chbp:P119 chbs:Q803-CBFF19BD-073E-5C76-99EA-5553FAC0AAEC ;
+    chbp:P120 chbs:Q803-C4EE1A4F-9E55-57A0-9B38-919C3C8EC760 ;
+    chbp:P122 chbs:Q803-7E0A2246-5B01-579D-B715-5FA2F0CAE425,
+        chbs:Q803-F219546A-A2C3-5AE8-8AD0-20D780ED867E ;
+    chbp:P123 chbs:Q803-C83CE451-1F43-55AC-AD54-AA35876B9BDC ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q167 ;
+    chbt:P115 <https://open-archaeo.info/post/lisa/> ;
+    chbt:P116 "lisa" ;
+    chbt:P117 chb:Q116 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "LISA"@en ;
+    chbt:P120 <http://www.mattpeeples.net/modules/LISA.html> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 .
 
-wds:Q803-1F1E6BA3-CE3F-59D2-B3D1-10687E3F9F74
+chbs:Q803-1F1E6BA3-CE3F-59D2-B3D1-10687E3F9F74
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q803-4BC6523E-7351-5472-92FC-A699424B1FDD
+chbs:Q803-4BC6523E-7351-5472-92FC-A699424B1FDD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P115 <https://open-archaeo.info/post/lisa/> .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P115 <https://open-archaeo.info/post/lisa/> .
 
-wds:Q803-6F6E415D-F709-5A99-998F-6C8B505A5D1F
+chbs:Q803-6F6E415D-F709-5A99-998F-6C8B505A5D1F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q803-7E0A2246-5B01-579D-B715-5FA2F0CAE425
+chbs:Q803-7E0A2246-5B01-579D-B715-5FA2F0CAE425
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q803-46F4EE23-EC30-5934-9101-CF5540EAF265
+chbs:Q803-46F4EE23-EC30-5934-9101-CF5540EAF265
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "lisa" .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "lisa" .
 
-wds:Q803-61FD438A-9FA0-504E-8768-5712C975FA7A
+chbs:Q803-61FD438A-9FA0-504E-8768-5712C975FA7A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q803-672B509F-A682-5495-A537-2411821E73B5
+chbs:Q803-672B509F-A682-5495-A537-2411821E73B5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q167 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q167 .
 
-wds:Q803-A6780448-85CB-51D4-A595-0B761C867B70
+chbs:Q803-A6780448-85CB-51D4-A595-0B761C867B70
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q803-C4EE1A4F-9E55-57A0-9B38-919C3C8EC760
+chbs:Q803-C4EE1A4F-9E55-57A0-9B38-919C3C8EC760
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P120 <http://www.mattpeeples.net/modules/LISA.html> .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P120 <http://www.mattpeeples.net/modules/LISA.html> .
 
-wds:Q803-C83CE451-1F43-55AC-AD54-AA35876B9BDC
+chbs:Q803-C83CE451-1F43-55AC-AD54-AA35876B9BDC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q803-CBFF19BD-073E-5C76-99EA-5553FAC0AAEC
+chbs:Q803-CBFF19BD-073E-5C76-99EA-5553FAC0AAEC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P119 "LISA"@en .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P119 "LISA"@en .
 
-wds:Q803-E8757213-6E5A-5AD3-81B7-7C36D5D0FFE3
+chbs:Q803-E8757213-6E5A-5AD3-81B7-7C36D5D0FFE3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P117 chb:Q116 .
 
-wds:Q803-F219546A-A2C3-5AE8-8AD0-20D780ED867E
+chbs:Q803-F219546A-A2C3-5AE8-8AD0-20D780ED867E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8 ;
+    chbps:P122 chb:Q109 .
 
-wdref:a37dc5181bc970edc35b55bab03f0bfda186c4f8
+chbref:a37dc5181bc970edc35b55bab03f0bfda186c4f8
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/lisa/> .
+    chbpr:P6 <https://open-archaeo.info/post/lisa/> .

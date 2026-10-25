@@ -1,53 +1,54 @@
 # Q898: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q898
+chbdata:Q898.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "This project represents the current evolution of open context. It's intended to be an easier to maintain code-base, and to make the data published by open context easier to maintain."@en ;
     dcterms:identifier "Q898" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q898 ;
+    dcterms:subject chb:Q898 ;
     dcterms:title "open-context-py"@en ;
-    schema:about wd:Q898 ;
-    dcat:distribution dist:Q898-html,
-        dist:Q898-json,
-        dist:Q898-ttl ;
+    schema:about chb:Q898 ;
+    dcat:distribution chbdist:Q898-html,
+        chbdist:Q898-json,
+        chbdist:Q898-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q898.html> .
 
-dist:Q898-html
+chbdist:Q898-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q898-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q898.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q898-json
+chbdist:Q898-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q898-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q898.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q898-ttl
+chbdist:Q898-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q898, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q898.ttl> ;
+    dcat:downloadURL chbdata:Q898.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q898
+chb:Q898
     a wikibase:Item ;
     schema:description "This project represents the current evolution of open context. It's intended to be an easier to maintain code-base, and to make the data published by open context easier to maintain."@en ;
     schema:name "open-context-py"@en ;
@@ -80,126 +81,126 @@ wd:Q898
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "open-context-py"@en ;
     skos:prefLabel "open-context-py"@en ;
-    p:P2 wds:Q898-59C1F31C-E07D-5A88-850A-1C2E34CBFC72,
-        wds:Q898-C702EBA4-B96F-56A4-8D2B-B741B18D72A6 ;
-    p:P106 wds:Q898-AC8CEBD7-A957-55D8-B998-0151856D6818 ;
-    p:P113 wds:Q898-77DAD01E-2DC6-5F81-B9FD-CDAA0F5F0EF3 ;
-    p:P115 wds:Q898-ACBCD834-23D1-5E0C-A57A-211CBB1C4A86 ;
-    p:P116 wds:Q898-499D1288-E4BA-5A65-9EA5-EE190ADF7D5A ;
-    p:P117 wds:Q898-7F820517-6AE7-5A3B-BF59-FC7297A4C3DD ;
-    p:P118 wds:Q898-5DDBC3B2-6F37-58DC-BD49-4132C18B5894 ;
-    p:P119 wds:Q898-667FD13B-6A35-5AE3-A4C8-90B0C1C3F5B4 ;
-    p:P122 wds:Q898-1F1A19CD-B8DA-552C-A805-8C10A3953C96,
-        wds:Q898-C3B2EA2B-B2F0-5997-AF8D-FCA78F558965 ;
-    p:P125 wds:Q898-E992E6EA-8102-5A69-B7E8-3EAC1884CBB3 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q899 ;
-    wdt:P115 <https://open-archaeo.info/post/open-context-py/> ;
-    wdt:P116 "open-context-py" ;
-    wdt:P117 wd:Q209 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "open-context-py"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/ekansa/open-context-py> .
+    chbp:P2 chbs:Q898-59C1F31C-E07D-5A88-850A-1C2E34CBFC72,
+        chbs:Q898-C702EBA4-B96F-56A4-8D2B-B741B18D72A6 ;
+    chbp:P106 chbs:Q898-AC8CEBD7-A957-55D8-B998-0151856D6818 ;
+    chbp:P113 chbs:Q898-77DAD01E-2DC6-5F81-B9FD-CDAA0F5F0EF3 ;
+    chbp:P115 chbs:Q898-ACBCD834-23D1-5E0C-A57A-211CBB1C4A86 ;
+    chbp:P116 chbs:Q898-499D1288-E4BA-5A65-9EA5-EE190ADF7D5A ;
+    chbp:P117 chbs:Q898-7F820517-6AE7-5A3B-BF59-FC7297A4C3DD ;
+    chbp:P118 chbs:Q898-5DDBC3B2-6F37-58DC-BD49-4132C18B5894 ;
+    chbp:P119 chbs:Q898-667FD13B-6A35-5AE3-A4C8-90B0C1C3F5B4 ;
+    chbp:P122 chbs:Q898-1F1A19CD-B8DA-552C-A805-8C10A3953C96,
+        chbs:Q898-C3B2EA2B-B2F0-5997-AF8D-FCA78F558965 ;
+    chbp:P125 chbs:Q898-E992E6EA-8102-5A69-B7E8-3EAC1884CBB3 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q899 ;
+    chbt:P115 <https://open-archaeo.info/post/open-context-py/> ;
+    chbt:P116 "open-context-py" ;
+    chbt:P117 chb:Q209 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "open-context-py"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/ekansa/open-context-py> .
 
-wds:Q898-1F1A19CD-B8DA-552C-A805-8C10A3953C96
+chbs:Q898-1F1A19CD-B8DA-552C-A805-8C10A3953C96
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P122 chb:Q109 .
 
-wds:Q898-5DDBC3B2-6F37-58DC-BD49-4132C18B5894
+chbs:Q898-5DDBC3B2-6F37-58DC-BD49-4132C18B5894
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P118 chb:Q108 .
 
-wds:Q898-7F820517-6AE7-5A3B-BF59-FC7297A4C3DD
+chbs:Q898-7F820517-6AE7-5A3B-BF59-FC7297A4C3DD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P117 wd:Q209 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P117 chb:Q209 .
 
-wds:Q898-59C1F31C-E07D-5A88-850A-1C2E34CBFC72
+chbs:Q898-59C1F31C-E07D-5A88-850A-1C2E34CBFC72
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P2 chb:Q106 .
 
-wds:Q898-77DAD01E-2DC6-5F81-B9FD-CDAA0F5F0EF3
+chbs:Q898-77DAD01E-2DC6-5F81-B9FD-CDAA0F5F0EF3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q899 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q899 .
 
-wds:Q898-499D1288-E4BA-5A65-9EA5-EE190ADF7D5A
+chbs:Q898-499D1288-E4BA-5A65-9EA5-EE190ADF7D5A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "open-context-py" .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "open-context-py" .
 
-wds:Q898-667FD13B-6A35-5AE3-A4C8-90B0C1C3F5B4
+chbs:Q898-667FD13B-6A35-5AE3-A4C8-90B0C1C3F5B4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P119 "open-context-py"@en .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P119 "open-context-py"@en .
 
-wds:Q898-AC8CEBD7-A957-55D8-B998-0151856D6818
+chbs:Q898-AC8CEBD7-A957-55D8-B998-0151856D6818
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P106 chb:Q110 .
 
-wds:Q898-ACBCD834-23D1-5E0C-A57A-211CBB1C4A86
+chbs:Q898-ACBCD834-23D1-5E0C-A57A-211CBB1C4A86
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P115 <https://open-archaeo.info/post/open-context-py/> .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P115 <https://open-archaeo.info/post/open-context-py/> .
 
-wds:Q898-C3B2EA2B-B2F0-5997-AF8D-FCA78F558965
+chbs:Q898-C3B2EA2B-B2F0-5997-AF8D-FCA78F558965
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P122 chb:Q110 .
 
-wds:Q898-C702EBA4-B96F-56A4-8D2B-B741B18D72A6
+chbs:Q898-C702EBA4-B96F-56A4-8D2B-B741B18D72A6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbps:P2 chb:Q102 .
 
-wds:Q898-E992E6EA-8102-5A69-B7E8-3EAC1884CBB3
+chbs:Q898-E992E6EA-8102-5A69-B7E8-3EAC1884CBB3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
-    pq:P104 "2021-02-01T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ekansa-open-context-py_-_2021-02-01_02-54-37> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:d4eb8a356bde4238f20e2158dc4e2728 ;
-    ps:P125 <https://github.com/ekansa/open-context-py> .
+    prov:wasDerivedFrom chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed ;
+    chbpq:P104 "2021-02-01T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ekansa-open-context-py_-_2021-02-01_02-54-37> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:d4eb8a356bde4238f20e2158dc4e2728 ;
+    chbps:P125 <https://github.com/ekansa/open-context-py> .
 
-wdref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed
+chbref:85e1dcfa5f70387748f9dd904c09e4c28904d2ed
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/open-context-py/> .
+    chbpr:P6 <https://open-archaeo.info/post/open-context-py/> .
 
-wdv:d4eb8a356bde4238f20e2158dc4e2728
+chbv:d4eb8a356bde4238f20e2158dc4e2728
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

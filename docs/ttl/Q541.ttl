@@ -1,53 +1,54 @@
 # Q541: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q541
+chbdata:Q541.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Analysis of chronological patterns from archaeological count data."@en ;
     dcterms:identifier "Q541" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q541 ;
+    dcterms:subject chb:Q541 ;
     dcterms:title "kairos"@en ;
-    schema:about wd:Q541 ;
-    dcat:distribution dist:Q541-html,
-        dist:Q541-json,
-        dist:Q541-ttl ;
+    schema:about chb:Q541 ;
+    dcat:distribution chbdist:Q541-html,
+        chbdist:Q541-json,
+        chbdist:Q541-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q541.html> .
 
-dist:Q541-html
+chbdist:Q541-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q541-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q541.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q541-json
+chbdist:Q541-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q541-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q541.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q541-ttl
+chbdist:Q541-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q541, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q541.ttl> ;
+    dcat:downloadURL chbdata:Q541.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q541
+chb:Q541
     a wikibase:Item ;
     schema:description "Analysis of chronological patterns from archaeological count data."@en ;
     schema:name "kairos"@en ;
@@ -80,162 +81,162 @@ wd:Q541
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "kairos"@en ;
     skos:prefLabel "kairos"@en ;
-    p:P2 wds:Q541-77016E71-91E5-5626-9E03-9125375DFB78,
-        wds:Q541-C9E3A86E-70D3-5C5F-A213-3205C46C9E70 ;
-    p:P106 wds:Q541-8D4CA1BD-C2D8-5F59-861D-EFC06D7DF39E ;
-    p:P108 wds:Q541-0CCDB850-EBC4-5021-92D1-8DE308D8FD5A ;
-    p:P113 wds:Q541-BC62CFDE-50C3-5546-93D2-E2293A1862B9 ;
-    p:P114 wds:Q541-C1EAB73D-E12A-5E02-B510-59439EA77FD0 ;
-    p:P115 wds:Q541-C2813131-C37B-5DEC-BD8C-964955817B02 ;
-    p:P116 wds:Q541-36365D2E-C37B-5B58-9A4C-888D600C257B ;
-    p:P117 wds:Q541-4EFF7E2B-A125-5B6F-9162-D288CCE18414 ;
-    p:P118 wds:Q541-D51C4035-CEC7-5E6E-8363-7F63468F878C ;
-    p:P119 wds:Q541-E3C288CE-AD8D-513E-9A37-B1F9504F040D ;
-    p:P120 wds:Q541-352ABFAC-7698-579E-A2CE-89DAD3D8E73F ;
-    p:P122 wds:Q541-B4B904BD-5EA4-54BE-B465-87EDA817C9A1,
-        wds:Q541-CBE571E5-CB36-514E-A4B7-9B2C6F55C4F0 ;
-    p:P123 wds:Q541-F6AEC07D-C2BE-5743-B27B-7356E8AEFBA9 ;
-    p:P125 wds:Q541-D3285D7F-FB3D-5BC1-BD1D-A77C762F1EB6 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "kairos" ;
-    wdt:P113 wd:Q231 ;
-    wdt:P114 "10.5281/zenodo.5653896" ;
-    wdt:P115 <https://open-archaeo.info/post/kairos/> ;
-    wdt:P116 "kairos" ;
-    wdt:P117 wd:Q126 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "kairos"@en ;
-    wdt:P120 <https://packages.tesselle.org/kairos/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://codeberg.org/tesselle/kairos> .
+    chbp:P2 chbs:Q541-77016E71-91E5-5626-9E03-9125375DFB78,
+        chbs:Q541-C9E3A86E-70D3-5C5F-A213-3205C46C9E70 ;
+    chbp:P106 chbs:Q541-8D4CA1BD-C2D8-5F59-861D-EFC06D7DF39E ;
+    chbp:P108 chbs:Q541-0CCDB850-EBC4-5021-92D1-8DE308D8FD5A ;
+    chbp:P113 chbs:Q541-BC62CFDE-50C3-5546-93D2-E2293A1862B9 ;
+    chbp:P114 chbs:Q541-C1EAB73D-E12A-5E02-B510-59439EA77FD0 ;
+    chbp:P115 chbs:Q541-C2813131-C37B-5DEC-BD8C-964955817B02 ;
+    chbp:P116 chbs:Q541-36365D2E-C37B-5B58-9A4C-888D600C257B ;
+    chbp:P117 chbs:Q541-4EFF7E2B-A125-5B6F-9162-D288CCE18414 ;
+    chbp:P118 chbs:Q541-D51C4035-CEC7-5E6E-8363-7F63468F878C ;
+    chbp:P119 chbs:Q541-E3C288CE-AD8D-513E-9A37-B1F9504F040D ;
+    chbp:P120 chbs:Q541-352ABFAC-7698-579E-A2CE-89DAD3D8E73F ;
+    chbp:P122 chbs:Q541-B4B904BD-5EA4-54BE-B465-87EDA817C9A1,
+        chbs:Q541-CBE571E5-CB36-514E-A4B7-9B2C6F55C4F0 ;
+    chbp:P123 chbs:Q541-F6AEC07D-C2BE-5743-B27B-7356E8AEFBA9 ;
+    chbp:P125 chbs:Q541-D3285D7F-FB3D-5BC1-BD1D-A77C762F1EB6 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "kairos" ;
+    chbt:P113 chb:Q231 ;
+    chbt:P114 "10.5281/zenodo.5653896" ;
+    chbt:P115 <https://open-archaeo.info/post/kairos/> ;
+    chbt:P116 "kairos" ;
+    chbt:P117 chb:Q126 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "kairos"@en ;
+    chbt:P120 <https://packages.tesselle.org/kairos/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://codeberg.org/tesselle/kairos> .
 
-wds:Q541-0CCDB850-EBC4-5021-92D1-8DE308D8FD5A
+chbs:Q541-0CCDB850-EBC4-5021-92D1-8DE308D8FD5A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P108 "kairos" .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P108 "kairos" .
 
-wds:Q541-4EFF7E2B-A125-5B6F-9162-D288CCE18414
+chbs:Q541-4EFF7E2B-A125-5B6F-9162-D288CCE18414
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P117 wd:Q126 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P117 chb:Q126 .
 
-wds:Q541-8D4CA1BD-C2D8-5F59-861D-EFC06D7DF39E
+chbs:Q541-8D4CA1BD-C2D8-5F59-861D-EFC06D7DF39E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q541-352ABFAC-7698-579E-A2CE-89DAD3D8E73F
+chbs:Q541-352ABFAC-7698-579E-A2CE-89DAD3D8E73F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P120 <https://packages.tesselle.org/kairos/> .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P120 <https://packages.tesselle.org/kairos/> .
 
-wds:Q541-36365D2E-C37B-5B58-9A4C-888D600C257B
+chbs:Q541-36365D2E-C37B-5B58-9A4C-888D600C257B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "kairos" .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "kairos" .
 
-wds:Q541-77016E71-91E5-5626-9E03-9125375DFB78
+chbs:Q541-77016E71-91E5-5626-9E03-9125375DFB78
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q541-B4B904BD-5EA4-54BE-B465-87EDA817C9A1
+chbs:Q541-B4B904BD-5EA4-54BE-B465-87EDA817C9A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q541-BC62CFDE-50C3-5546-93D2-E2293A1862B9
+chbs:Q541-BC62CFDE-50C3-5546-93D2-E2293A1862B9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q231 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q231 .
 
-wds:Q541-C1EAB73D-E12A-5E02-B510-59439EA77FD0
+chbs:Q541-C1EAB73D-E12A-5E02-B510-59439EA77FD0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P114 "10.5281/zenodo.5653896" .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P114 "10.5281/zenodo.5653896" .
 
-wds:Q541-C9E3A86E-70D3-5C5F-A213-3205C46C9E70
+chbs:Q541-C9E3A86E-70D3-5C5F-A213-3205C46C9E70
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q541-C2813131-C37B-5DEC-BD8C-964955817B02
+chbs:Q541-C2813131-C37B-5DEC-BD8C-964955817B02
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P115 <https://open-archaeo.info/post/kairos/> .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P115 <https://open-archaeo.info/post/kairos/> .
 
-wds:Q541-CBE571E5-CB36-514E-A4B7-9B2C6F55C4F0
+chbs:Q541-CBE571E5-CB36-514E-A4B7-9B2C6F55C4F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q541-D51C4035-CEC7-5E6E-8363-7F63468F878C
+chbs:Q541-D51C4035-CEC7-5E6E-8363-7F63468F878C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q541-D3285D7F-FB3D-5BC1-BD1D-A77C762F1EB6
+chbs:Q541-D3285D7F-FB3D-5BC1-BD1D-A77C762F1EB6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    pq:P104 "2021-06-24T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-tesselle-kairos_-_2021-06-24_12-52-49> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:72df1fc86c1c5ea925af9e2f9af565a7 ;
-    ps:P125 <https://codeberg.org/tesselle/kairos> .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbpq:P104 "2021-06-24T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-tesselle-kairos_-_2021-06-24_12-52-49> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:72df1fc86c1c5ea925af9e2f9af565a7 ;
+    chbps:P125 <https://codeberg.org/tesselle/kairos> .
 
-wds:Q541-E3C288CE-AD8D-513E-9A37-B1F9504F040D
+chbs:Q541-E3C288CE-AD8D-513E-9A37-B1F9504F040D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P119 "kairos"@en .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P119 "kairos"@en .
 
-wds:Q541-F6AEC07D-C2BE-5743-B27B-7356E8AEFBA9
+chbs:Q541-F6AEC07D-C2BE-5743-B27B-7356E8AEFBA9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34 ;
+    chbps:P123 chb:Q111 .
 
-wdref:778d0c3860c0ccc69873b9f07d6e394709f7ed34
+chbref:778d0c3860c0ccc69873b9f07d6e394709f7ed34
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/kairos/> .
+    chbpr:P6 <https://open-archaeo.info/post/kairos/> .
 
-wdv:72df1fc86c1c5ea925af9e2f9af565a7
+chbv:72df1fc86c1c5ea925af9e2f9af565a7
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

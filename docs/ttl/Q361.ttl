@@ -1,53 +1,54 @@
 # Q361: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q361
+chbdata:Q361.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The plugin profileAAR transforms profile control points for fotogrammetric rectification of section images of archaeological excavations."@en ;
     dcterms:identifier "Q361" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q361 ;
+    dcterms:subject chb:Q361 ;
     dcterms:title "profileAAR"@en ;
-    schema:about wd:Q361 ;
-    dcat:distribution dist:Q361-html,
-        dist:Q361-json,
-        dist:Q361-ttl ;
+    schema:about chb:Q361 ;
+    dcat:distribution chbdist:Q361-html,
+        chbdist:Q361-json,
+        chbdist:Q361-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q361.html> .
 
-dist:Q361-html
+chbdist:Q361-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q361-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q361.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q361-json
+chbdist:Q361-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q361-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q361.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q361-ttl
+chbdist:Q361-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q361, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q361.ttl> ;
+    dcat:downloadURL chbdata:Q361.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q361
+chb:Q361
     a wikibase:Item ;
     schema:description "The plugin profileAAR transforms profile control points for fotogrammetric rectification of section images of archaeological excavations."@en ;
     schema:name "profileAAR"@en ;
@@ -80,342 +81,342 @@ wd:Q361
     wikibase:statements "24"^^xsd:integer ;
     rdfs:label "profileAAR"@en ;
     skos:prefLabel "profileAAR"@en ;
-    p:P2 wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491,
-        wds:Q361-3DE64AC4-F7F9-5F29-952C-DA5F5AD36656,
-        wds:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5,
-        wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291,
-        wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA,
-        wds:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1 ;
-    p:P4 wds:Q361-54B1C044-5014-5CD0-88F3-069D4319815F ;
-    p:P106 wds:Q361-2F67BD24-5907-5D2E-88EB-20B68EE55C7D ;
-    p:P109 wds:Q361-12538C6A-6E3E-5D6D-9882-629223C1D806 ;
-    p:P113 wds:Q361-D7034C63-7482-55D7-B98F-99DD1FF5EFA9 ;
-    p:P115 wds:Q361-3D7123F2-6BD0-5CFA-BA10-E09DBA1B364B ;
-    p:P116 wds:Q361-791E6265-9918-523B-A6D1-0686B301CBF3 ;
-    p:P117 wds:Q361-00BB5069-B824-5E33-828D-B1613339867E ;
-    p:P118 wds:Q361-BAA335DD-B728-529A-A474-500841D9164D ;
-    p:P119 wds:Q361-D747D6C0-10D0-5615-88E9-4996F29CE688 ;
-    p:P120 wds:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F ;
-    p:P122 wds:Q361-8303D396-5E6C-574D-9219-DC52BA22346D,
-        wds:Q361-574534CF-37D1-502E-876E-587E6F4C0972 ;
-    p:P125 wds:Q361-7EAB35DE-AEBB-53BB-BE52-F6D6BD7223A8,
-        wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822 ;
-    p:P148 wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5,
-        wds:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE,
-        wds:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A,
-        wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1 ;
-    wdt:P2 wd:Q100,
-        wd:Q103,
-        wd:Q105,
-        wd:Q106,
-        wd:Q372,
-        wd:Q379 ;
-    wdt:P4 "Q74823867" ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q158 ;
-    wdt:P115 <https://open-archaeo.info/post/profileaar/> ;
-    wdt:P116 "profileaar" ;
-    wdt:P117 wd:Q148 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "profileAAR"@en ;
-    wdt:P120 <http://plugins.qgis.org/plugins/profileAAR/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/ISAAKiel/profileAAR> ;
-    wdt:P148 "3.0" .
+    chbp:P2 chbs:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491,
+        chbs:Q361-3DE64AC4-F7F9-5F29-952C-DA5F5AD36656,
+        chbs:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5,
+        chbs:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291,
+        chbs:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA,
+        chbs:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1 ;
+    chbp:P4 chbs:Q361-54B1C044-5014-5CD0-88F3-069D4319815F ;
+    chbp:P106 chbs:Q361-2F67BD24-5907-5D2E-88EB-20B68EE55C7D ;
+    chbp:P109 chbs:Q361-12538C6A-6E3E-5D6D-9882-629223C1D806 ;
+    chbp:P113 chbs:Q361-D7034C63-7482-55D7-B98F-99DD1FF5EFA9 ;
+    chbp:P115 chbs:Q361-3D7123F2-6BD0-5CFA-BA10-E09DBA1B364B ;
+    chbp:P116 chbs:Q361-791E6265-9918-523B-A6D1-0686B301CBF3 ;
+    chbp:P117 chbs:Q361-00BB5069-B824-5E33-828D-B1613339867E ;
+    chbp:P118 chbs:Q361-BAA335DD-B728-529A-A474-500841D9164D ;
+    chbp:P119 chbs:Q361-D747D6C0-10D0-5615-88E9-4996F29CE688 ;
+    chbp:P120 chbs:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F ;
+    chbp:P122 chbs:Q361-8303D396-5E6C-574D-9219-DC52BA22346D,
+        chbs:Q361-574534CF-37D1-502E-876E-587E6F4C0972 ;
+    chbp:P125 chbs:Q361-7EAB35DE-AEBB-53BB-BE52-F6D6BD7223A8,
+        chbs:Q361-6610526E-1BEE-5436-99E8-FAC856161822 ;
+    chbp:P148 chbs:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5,
+        chbs:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE,
+        chbs:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A,
+        chbs:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1 ;
+    chbt:P2 chb:Q100,
+        chb:Q103,
+        chb:Q105,
+        chb:Q106,
+        chb:Q372,
+        chb:Q379 ;
+    chbt:P4 "Q74823867" ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q158 ;
+    chbt:P115 <https://open-archaeo.info/post/profileaar/> ;
+    chbt:P116 "profileaar" ;
+    chbt:P117 chb:Q148 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "profileAAR"@en ;
+    chbt:P120 <http://plugins.qgis.org/plugins/profileAAR/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/ISAAKiel/profileAAR> ;
+    chbt:P148 "3.0" .
 
-wd:Q846
-    owl:sameAs wd:Q361 .
+chb:Q846
+    owl:sameAs chb:Q361 .
 
-wds:Q361-00BB5069-B824-5E33-828D-B1613339867E
+chbs:Q361-00BB5069-B824-5E33-828D-B1613339867E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q361-2F67BD24-5907-5D2E-88EB-20B68EE55C7D
+chbs:Q361-2F67BD24-5907-5D2E-88EB-20B68EE55C7D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491
+chbs:Q361-3D126B46-62F1-571E-B3DB-F9F629F9D491
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
-    ps:P2 wd:Q105 .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    chbps:P2 chb:Q105 .
 
-wds:Q361-3D7123F2-6BD0-5CFA-BA10-E09DBA1B364B
+chbs:Q361-3D7123F2-6BD0-5CFA-BA10-E09DBA1B364B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P115 <https://open-archaeo.info/post/profileaar/> .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P115 <https://open-archaeo.info/post/profileaar/> .
 
-wds:Q361-3DE64AC4-F7F9-5F29-952C-DA5F5AD36656
+chbs:Q361-3DE64AC4-F7F9-5F29-952C-DA5F5AD36656
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5
+chbs:Q361-6CF405DF-88E2-5EA8-9A29-0415EB4B35A5
     a wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
-        wdref:645d725f4444ec9511cd6dadd22235d929928cb1 ;
-    pq:P144 "2023-08-09T00:00:00Z"^^xsd:dateTime ;
-    pq:P153 wd:Q375 ;
-    pqv:P144 wdv:3c33c427e8a3a1a021169f9eec5fb712 ;
-    ps:P148 "2.0.3" .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        chbref:645d725f4444ec9511cd6dadd22235d929928cb1 ;
+    chbpq:P144 "2023-08-09T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P153 chb:Q375 ;
+    chbpqv:P144 chbv:3c33c427e8a3a1a021169f9eec5fb712 ;
+    chbps:P148 "2.0.3" .
 
-wds:Q361-7EAB35DE-AEBB-53BB-BE52-F6D6BD7223A8
+chbs:Q361-7EAB35DE-AEBB-53BB-BE52-F6D6BD7223A8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    pq:P104 "2019-07-04T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-profileAAR_-_2019-07-04_11-47-50> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ce1de142f43fa692c07e79939508e839 ;
-    ps:P125 <https://github.com/ISAAKiel/profileAAR> .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbpq:P104 "2019-07-04T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-profileAAR_-_2019-07-04_11-47-50> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:ce1de142f43fa692c07e79939508e839 ;
+    chbps:P125 <https://github.com/ISAAKiel/profileAAR> .
 
-wds:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5
+chbs:Q361-29C58D16-8D81-5445-AF24-1FCFECE27DD5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291
+chbs:Q361-33A73FB6-364C-56EF-8D12-78F7DA37B291
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
-    ps:P2 wd:Q100 .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    chbps:P2 chb:Q100 .
 
-wds:Q361-54B1C044-5014-5CD0-88F3-069D4319815F
+chbs:Q361-54B1C044-5014-5CD0-88F3-069D4319815F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecfe75204b3821706c79b48b9566f1e7c6d2d855 ;
-    ps:P4 "Q74823867" .
+    prov:wasDerivedFrom chbref:ecfe75204b3821706c79b48b9566f1e7c6d2d855 ;
+    chbps:P4 "Q74823867" .
 
-wds:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE
+chbs:Q361-88CABE47-7300-5B09-9FB0-8356C78495AE
     a wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
-        wdref:5e2e6d4b22fc6bd17def8fc5d647569a8862dcba ;
-    pq:P144 "2019-03-21T00:00:00Z"^^xsd:dateTime ;
-    pqv:P144 wdv:c507d2c9bf02d67f5ce8b10c7fc3c315 ;
-    ps:P148 "1.0" .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        chbref:5e2e6d4b22fc6bd17def8fc5d647569a8862dcba ;
+    chbpq:P144 "2019-03-21T00:00:00Z"^^xsd:dateTime ;
+    chbpqv:P144 chbv:c507d2c9bf02d67f5ce8b10c7fc3c315 ;
+    chbps:P148 "1.0" .
 
-wds:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA
+chbs:Q361-608AB75E-45C7-5529-9EE9-7DD29838B7BA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
-    ps:P2 wd:Q379 .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    chbps:P2 chb:Q379 .
 
-wds:Q361-791E6265-9918-523B-A6D1-0686B301CBF3
+chbs:Q361-791E6265-9918-523B-A6D1-0686B301CBF3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "profileaar" .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "profileaar" .
 
-wds:Q361-8303D396-5E6C-574D-9219-DC52BA22346D
+chbs:Q361-8303D396-5E6C-574D-9219-DC52BA22346D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q361-12538C6A-6E3E-5D6D-9882-629223C1D806
+chbs:Q361-12538C6A-6E3E-5D6D-9882-629223C1D806
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P109 chb:Q135 .
 
-wds:Q361-574534CF-37D1-502E-876E-587E6F4C0972
+chbs:Q361-574534CF-37D1-502E-876E-587E6F4C0972
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A
+chbs:Q361-3141393C-6BE3-5FEA-9B40-D851510E7F9A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:PreferredRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
-        wdref:26fc0a9df290a1c9df7021e6f5295f53783164b5 ;
-    pq:P144 "2026-06-24T00:00:00Z"^^xsd:dateTime ;
-    pq:P153 wd:Q375 ;
-    pqv:P144 wdv:44257e6a09cec8cf732caa4130ca43fe ;
-    ps:P148 "3.0" .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        chbref:26fc0a9df290a1c9df7021e6f5295f53783164b5 ;
+    chbpq:P144 "2026-06-24T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P153 chb:Q375 ;
+    chbpqv:P144 chbv:44257e6a09cec8cf732caa4130ca43fe ;
+    chbps:P148 "3.0" .
 
-wds:Q361-6610526E-1BEE-5436-99E8-FAC856161822
+chbs:Q361-6610526E-1BEE-5436-99E8-FAC856161822
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
-    pq:P126 wd:Q114 ;
-    pq:P248 wd:Q363 ;
-    ps:P125 <https://github.com/ISAAKiel/profileAAR> .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    chbpq:P126 chb:Q114 ;
+    chbpq:P248 chb:Q363 ;
+    chbps:P125 <https://github.com/ISAAKiel/profileAAR> .
 
-wds:Q361-BAA335DD-B728-529A-A474-500841D9164D
+chbs:Q361-BAA335DD-B728-529A-A474-500841D9164D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1
+chbs:Q361-CE118D3E-3905-5E5D-AEF5-946EFBD77FC1
     a wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
-        wdref:cfe369f3fee86976b187322b783129f371614b0a ;
-    pq:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
-    pqv:P144 wdv:733674f41790c6c1009a3375da675660 ;
-    ps:P148 "2.0.1" .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0,
+        chbref:cfe369f3fee86976b187322b783129f371614b0a ;
+    chbpq:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
+    chbpqv:P144 chbv:733674f41790c6c1009a3375da675660 ;
+    chbps:P148 "2.0.1" .
 
-wds:Q361-D747D6C0-10D0-5615-88E9-4996F29CE688
+chbs:Q361-D747D6C0-10D0-5615-88E9-4996F29CE688
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    ps:P119 "profileAAR"@en .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbps:P119 "profileAAR"@en .
 
-wds:Q361-D7034C63-7482-55D7-B98F-99DD1FF5EFA9
+chbs:Q361-D7034C63-7482-55D7-B98F-99DD1FF5EFA9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q158 .
+    prov:wasDerivedFrom chbref:5923cfa5b827aac62042f54419bd6a820cf42e41 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q158 .
 
-wds:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F
+chbs:Q361-DD44A722-5E69-5695-AD16-6AB46B70767F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
-    ps:P120 <http://plugins.qgis.org/plugins/profileAAR/> .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    chbps:P120 <http://plugins.qgis.org/plugins/profileAAR/> .
 
-wds:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1
+chbs:Q361-FE5427EC-5365-5F5E-BF47-D6F5F89727B1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
-    ps:P2 wd:Q372 .
+    prov:wasDerivedFrom chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0 ;
+    chbps:P2 chb:Q372 .
 
-wdref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0
+chbref:3a043f44bd8895ebb36f832de0bd4e04fc00acd0
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q74823867> ;
-    pr:P7 "2026-06-25T00:00:00Z"^^xsd:dateTime ;
-    pr:P8 wd:Q364 ;
-    prv:P7 wdv:64f94e569085af5cb37810e668ad5627 .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q74823867> ;
+    chbpr:P7 "2026-06-25T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P8 chb:Q364 ;
+    chbprv:P7 chbv:64f94e569085af5cb37810e668ad5627 .
 
-wdref:5e2e6d4b22fc6bd17def8fc5d647569a8862dcba
+chbref:5e2e6d4b22fc6bd17def8fc5d647569a8862dcba
     a wikibase:Reference ;
-    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/v1.0> ;
-    pr:P7 "2019-11-15T00:00:00Z"^^xsd:dateTime ;
-    pr:P144 "2019-03-21T00:00:00Z"^^xsd:dateTime ;
-    pr:P247 "Release 1.0"@en ;
-    prv:P7 wdv:5e97dc0acd0b5130d8dca39a8a4cd491 ;
-    prv:P144 wdv:c507d2c9bf02d67f5ce8b10c7fc3c315 .
+    chbpr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/v1.0> ;
+    chbpr:P7 "2019-11-15T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P144 "2019-03-21T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P247 "Release 1.0"@en ;
+    chbprv:P7 chbv:5e97dc0acd0b5130d8dca39a8a4cd491 ;
+    chbprv:P144 chbv:c507d2c9bf02d67f5ce8b10c7fc3c315 .
 
-wdref:26fc0a9df290a1c9df7021e6f5295f53783164b5
+chbref:26fc0a9df290a1c9df7021e6f5295f53783164b5
     a wikibase:Reference ;
-    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/v3.0> ;
-    pr:P7 "2026-06-25T00:00:00Z"^^xsd:dateTime ;
-    pr:P144 "2026-06-24T00:00:00Z"^^xsd:dateTime ;
-    pr:P247 "Release 3.0"@en ;
-    prv:P7 wdv:64f94e569085af5cb37810e668ad5627 ;
-    prv:P144 wdv:44257e6a09cec8cf732caa4130ca43fe .
+    chbpr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/v3.0> ;
+    chbpr:P7 "2026-06-25T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P144 "2026-06-24T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P247 "Release 3.0"@en ;
+    chbprv:P7 chbv:64f94e569085af5cb37810e668ad5627 ;
+    chbprv:P144 chbv:44257e6a09cec8cf732caa4130ca43fe .
 
-wdref:645d725f4444ec9511cd6dadd22235d929928cb1
+chbref:645d725f4444ec9511cd6dadd22235d929928cb1
     a wikibase:Reference ;
-    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/2.0.3> ;
-    pr:P7 "2023-09-19T00:00:00Z"^^xsd:dateTime ;
-    pr:P144 "2023-08-09T00:00:00Z"^^xsd:dateTime ;
-    pr:P247 "Release 2.0.3"@en ;
-    prv:P7 wdv:ebea60f9eaa4d334a8a4f305e8b4ee6d ;
-    prv:P144 wdv:3c33c427e8a3a1a021169f9eec5fb712 .
+    chbpr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/2.0.3> ;
+    chbpr:P7 "2023-09-19T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P144 "2023-08-09T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P247 "Release 2.0.3"@en ;
+    chbprv:P7 chbv:ebea60f9eaa4d334a8a4f305e8b4ee6d ;
+    chbprv:P144 chbv:3c33c427e8a3a1a021169f9eec5fb712 .
 
-wdref:5923cfa5b827aac62042f54419bd6a820cf42e41
+chbref:5923cfa5b827aac62042f54419bd6a820cf42e41
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/profileaar/> .
+    chbpr:P6 <https://open-archaeo.info/post/profileaar/> .
 
-wdref:cfe369f3fee86976b187322b783129f371614b0a
+chbref:cfe369f3fee86976b187322b783129f371614b0a
     a wikibase:Reference ;
-    pr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/2.0.1> ;
-    pr:P7 "2019-11-15T00:00:00Z"^^xsd:dateTime ;
-    pr:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
-    pr:P247 "Release 2.0.1"@en ;
-    prv:P7 wdv:5e97dc0acd0b5130d8dca39a8a4cd491 ;
-    prv:P144 wdv:733674f41790c6c1009a3375da675660 .
+    chbpr:P6 <https://github.com/ISAAKiel/profileAAR/releases/tag/2.0.1> ;
+    chbpr:P7 "2019-11-15T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P144 "2019-05-29T00:00:00Z"^^xsd:dateTime ;
+    chbpr:P247 "Release 2.0.1"@en ;
+    chbprv:P7 chbv:5e97dc0acd0b5130d8dca39a8a4cd491 ;
+    chbprv:P144 chbv:733674f41790c6c1009a3375da675660 .
 
-wdref:ecfe75204b3821706c79b48b9566f1e7c6d2d855
+chbref:ecfe75204b3821706c79b48b9566f1e7c6d2d855
     a wikibase:Reference ;
-    pr:P6 <https://www.wikidata.org/wiki/Q74823867> .
+    chbpr:P6 <https://www.wikidata.org/wiki/Q74823867> .
 
-wdv:3c33c427e8a3a1a021169f9eec5fb712
+chbv:3c33c427e8a3a1a021169f9eec5fb712
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2023-08-09T00:00:00Z"^^xsd:dateTime .
 
-wdv:5e97dc0acd0b5130d8dca39a8a4cd491
+chbv:5e97dc0acd0b5130d8dca39a8a4cd491
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-11-15T00:00:00Z"^^xsd:dateTime .
 
-wdv:64f94e569085af5cb37810e668ad5627
+chbv:64f94e569085af5cb37810e668ad5627
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2026-06-25T00:00:00Z"^^xsd:dateTime .
 
-wdv:44257e6a09cec8cf732caa4130ca43fe
+chbv:44257e6a09cec8cf732caa4130ca43fe
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2026-06-24T00:00:00Z"^^xsd:dateTime .
 
-wdv:733674f41790c6c1009a3375da675660
+chbv:733674f41790c6c1009a3375da675660
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-05-29T00:00:00Z"^^xsd:dateTime .
 
-wdv:c507d2c9bf02d67f5ce8b10c7fc3c315
+chbv:c507d2c9bf02d67f5ce8b10c7fc3c315
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-03-21T00:00:00Z"^^xsd:dateTime .
 
-wdv:ce1de142f43fa692c07e79939508e839
+chbv:ce1de142f43fa692c07e79939508e839
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;
     wikibase:timeTimezone "0"^^xsd:integer ;
     wikibase:timeValue "2019-07-04T00:00:00Z"^^xsd:dateTime .
 
-wdv:ebea60f9eaa4d334a8a4f305e8b4ee6d
+chbv:ebea60f9eaa4d334a8a4f305e8b4ee6d
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

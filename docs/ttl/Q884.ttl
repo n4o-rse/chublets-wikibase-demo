@@ -1,53 +1,54 @@
 # Q884: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q884
+chbdata:Q884.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "An Approximate Bayesian Computation Framework for inferring patterns of cultural transmission from frequency data."@en ;
     dcterms:identifier "Q884" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q884 ;
+    dcterms:subject chb:Q884 ;
     dcterms:title "cTransmission"@en ;
-    schema:about wd:Q884 ;
-    dcat:distribution dist:Q884-html,
-        dist:Q884-json,
-        dist:Q884-ttl ;
+    schema:about chb:Q884 ;
+    dcat:distribution chbdist:Q884-html,
+        chbdist:Q884-json,
+        chbdist:Q884-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q884.html> .
 
-dist:Q884-html
+chbdist:Q884-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q884-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q884.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q884-json
+chbdist:Q884-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q884-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q884.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q884-ttl
+chbdist:Q884-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q884, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q884.ttl> ;
+    dcat:downloadURL chbdata:Q884.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q884
+chb:Q884
     a wikibase:Item ;
     schema:description "An Approximate Bayesian Computation Framework for inferring patterns of cultural transmission from frequency data."@en ;
     schema:name "cTransmission"@en ;
@@ -80,154 +81,154 @@ wd:Q884
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "cTransmission"@en ;
     skos:prefLabel "cTransmission"@en ;
-    p:P2 wds:Q884-1ACA2794-0FD8-5333-B35D-5088F233EEA5,
-        wds:Q884-BF1BC558-0F39-5FD4-9955-125D50236CC4 ;
-    p:P106 wds:Q884-258948A8-106D-5E6E-B236-62B42360D2A8 ;
-    p:P113 wds:Q884-09CCCEE4-A46F-5EB2-9907-007FD886ED07,
-        wds:Q884-71F39C9C-6457-5A22-BE4B-D3A30C082975 ;
-    p:P115 wds:Q884-CF6A249F-FABC-533E-931D-803EAC21E840 ;
-    p:P116 wds:Q884-B79A8A7D-BDFB-5BAB-9DE3-D58E9BF03530 ;
-    p:P117 wds:Q884-1CB37F02-B959-577F-B4C3-24B918CEEC8A,
-        wds:Q884-2218D559-3E0E-524B-957B-C8B043DF8607 ;
-    p:P118 wds:Q884-50CEC8DD-F96E-5CBE-9577-5FA2F675BFBB ;
-    p:P119 wds:Q884-F5373629-5C55-53F0-BF34-779AB328A895 ;
-    p:P122 wds:Q884-28D56DA0-FE86-5E10-9963-6A8ED02C521E,
-        wds:Q884-31DCFB15-AD4B-56FD-A68A-8DB31441380B ;
-    p:P123 wds:Q884-5534547A-CBAF-579D-B86E-AFF1697311A8 ;
-    p:P125 wds:Q884-AF5F5250-A24E-50C6-A9E0-4DBDCC857C99 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q511,
-        wd:Q885 ;
-    wdt:P115 <https://open-archaeo.info/post/ctransmission/> ;
-    wdt:P116 "ctransmission" ;
-    wdt:P117 wd:Q116,
-        wd:Q213 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "cTransmission"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ercrema/cTransmission> .
+    chbp:P2 chbs:Q884-1ACA2794-0FD8-5333-B35D-5088F233EEA5,
+        chbs:Q884-BF1BC558-0F39-5FD4-9955-125D50236CC4 ;
+    chbp:P106 chbs:Q884-258948A8-106D-5E6E-B236-62B42360D2A8 ;
+    chbp:P113 chbs:Q884-09CCCEE4-A46F-5EB2-9907-007FD886ED07,
+        chbs:Q884-71F39C9C-6457-5A22-BE4B-D3A30C082975 ;
+    chbp:P115 chbs:Q884-CF6A249F-FABC-533E-931D-803EAC21E840 ;
+    chbp:P116 chbs:Q884-B79A8A7D-BDFB-5BAB-9DE3-D58E9BF03530 ;
+    chbp:P117 chbs:Q884-1CB37F02-B959-577F-B4C3-24B918CEEC8A,
+        chbs:Q884-2218D559-3E0E-524B-957B-C8B043DF8607 ;
+    chbp:P118 chbs:Q884-50CEC8DD-F96E-5CBE-9577-5FA2F675BFBB ;
+    chbp:P119 chbs:Q884-F5373629-5C55-53F0-BF34-779AB328A895 ;
+    chbp:P122 chbs:Q884-28D56DA0-FE86-5E10-9963-6A8ED02C521E,
+        chbs:Q884-31DCFB15-AD4B-56FD-A68A-8DB31441380B ;
+    chbp:P123 chbs:Q884-5534547A-CBAF-579D-B86E-AFF1697311A8 ;
+    chbp:P125 chbs:Q884-AF5F5250-A24E-50C6-A9E0-4DBDCC857C99 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q511,
+        chb:Q885 ;
+    chbt:P115 <https://open-archaeo.info/post/ctransmission/> ;
+    chbt:P116 "ctransmission" ;
+    chbt:P117 chb:Q116,
+        chb:Q213 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "cTransmission"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ercrema/cTransmission> .
 
-wds:Q884-1ACA2794-0FD8-5333-B35D-5088F233EEA5
+chbs:Q884-1ACA2794-0FD8-5333-B35D-5088F233EEA5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q884-1CB37F02-B959-577F-B4C3-24B918CEEC8A
+chbs:Q884-1CB37F02-B959-577F-B4C3-24B918CEEC8A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P117 chb:Q116 .
 
-wds:Q884-09CCCEE4-A46F-5EB2-9907-007FD886ED07
+chbs:Q884-09CCCEE4-A46F-5EB2-9907-007FD886ED07
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q885 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q885 .
 
-wds:Q884-28D56DA0-FE86-5E10-9963-6A8ED02C521E
+chbs:Q884-28D56DA0-FE86-5E10-9963-6A8ED02C521E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q884-31DCFB15-AD4B-56FD-A68A-8DB31441380B
+chbs:Q884-31DCFB15-AD4B-56FD-A68A-8DB31441380B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q884-50CEC8DD-F96E-5CBE-9577-5FA2F675BFBB
+chbs:Q884-50CEC8DD-F96E-5CBE-9577-5FA2F675BFBB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q884-71F39C9C-6457-5A22-BE4B-D3A30C082975
+chbs:Q884-71F39C9C-6457-5A22-BE4B-D3A30C082975
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q511 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q511 .
 
-wds:Q884-2218D559-3E0E-524B-957B-C8B043DF8607
+chbs:Q884-2218D559-3E0E-524B-957B-C8B043DF8607
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P117 wd:Q213 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P117 chb:Q213 .
 
-wds:Q884-258948A8-106D-5E6E-B236-62B42360D2A8
+chbs:Q884-258948A8-106D-5E6E-B236-62B42360D2A8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q884-5534547A-CBAF-579D-B86E-AFF1697311A8
+chbs:Q884-5534547A-CBAF-579D-B86E-AFF1697311A8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q884-AF5F5250-A24E-50C6-A9E0-4DBDCC857C99
+chbs:Q884-AF5F5250-A24E-50C6-A9E0-4DBDCC857C99
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    pq:P104 "2020-05-14T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ercrema-cTransmission_-_2020-05-14_17-43-37> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:093be654eff69c0dc8e2d49a3aab160c ;
-    ps:P125 <https://github.com/ercrema/cTransmission> .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbpq:P104 "2020-05-14T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ercrema-cTransmission_-_2020-05-14_17-43-37> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:093be654eff69c0dc8e2d49a3aab160c ;
+    chbps:P125 <https://github.com/ercrema/cTransmission> .
 
-wds:Q884-B79A8A7D-BDFB-5BAB-9DE3-D58E9BF03530
+chbs:Q884-B79A8A7D-BDFB-5BAB-9DE3-D58E9BF03530
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "ctransmission" .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "ctransmission" .
 
-wds:Q884-BF1BC558-0F39-5FD4-9955-125D50236CC4
+chbs:Q884-BF1BC558-0F39-5FD4-9955-125D50236CC4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q884-CF6A249F-FABC-533E-931D-803EAC21E840
+chbs:Q884-CF6A249F-FABC-533E-931D-803EAC21E840
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P115 <https://open-archaeo.info/post/ctransmission/> .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P115 <https://open-archaeo.info/post/ctransmission/> .
 
-wds:Q884-F5373629-5C55-53F0-BF34-779AB328A895
+chbs:Q884-F5373629-5C55-53F0-BF34-779AB328A895
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:4954ae29e375c86f761babc487ae35379e4e2138 ;
-    ps:P119 "cTransmission"@en .
+    prov:wasDerivedFrom chbref:4954ae29e375c86f761babc487ae35379e4e2138 ;
+    chbps:P119 "cTransmission"@en .
 
-wdref:4954ae29e375c86f761babc487ae35379e4e2138
+chbref:4954ae29e375c86f761babc487ae35379e4e2138
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/ctransmission/> .
+    chbpr:P6 <https://open-archaeo.info/post/ctransmission/> .
 
-wdv:093be654eff69c0dc8e2d49a3aab160c
+chbv:093be654eff69c0dc8e2d49a3aab160c
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

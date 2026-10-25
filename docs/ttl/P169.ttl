@@ -1,52 +1,53 @@
 # P169: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P169
+chbdata:P169.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P169" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P169 ;
+    dcterms:subject chb:P169 ;
     dcterms:title "countries not supported"@en ;
-    schema:about wd:P169 ;
-    dcat:distribution dist:P169-html,
-        dist:P169-json,
-        dist:P169-ttl ;
+    schema:about chb:P169 ;
+    dcat:distribution chbdist:P169-html,
+        chbdist:P169-json,
+        chbdist:P169-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P169.html> .
 
-dist:P169-html
+chbdist:P169-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P169-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P169.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P169-json
+chbdist:P169-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,93 +64,93 @@ dist:P169-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P169.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P169-ttl
+chbdist:P169-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P169, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P169.ttl> ;
+    dcat:downloadURL chbdata:P169.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P169
+chb:P169
     a wikibase:Property ;
     schema:name "countries not supported"@en ;
-    wikibase:claim p:P169 ;
-    wikibase:directClaim wdt:P169 ;
+    wikibase:claim chbp:P169 ;
+    wikibase:directClaim chbt:P169 ;
     wikibase:identifiers "2"^^xsd:integer ;
-    wikibase:novalue wdno:P169 ;
+    wikibase:novalue chbno:P169 ;
     wikibase:propertyType wikibase:String ;
-    wikibase:qualifier pq:P169 ;
-    wikibase:qualifierValue pqv:P169 ;
-    wikibase:reference pr:P169 ;
-    wikibase:referenceValue prv:P169 ;
-    wikibase:statementProperty ps:P169 ;
-    wikibase:statementValue psv:P169 ;
+    wikibase:qualifier chbpq:P169 ;
+    wikibase:qualifierValue chbpqv:P169 ;
+    wikibase:reference chbpr:P169 ;
+    wikibase:referenceValue chbprv:P169 ;
+    wikibase:statementProperty chbps:P169 ;
+    wikibase:statementValue chbpsv:P169 ;
     wikibase:statements "4"^^xsd:integer ;
     rdfs:label "countries not supported"@en ;
     skos:prefLabel "countries not supported"@en ;
-    p:P2 wds:P169-A3E2E283-DA78-5E6C-93B7-EE04DE265136 ;
-    p:P9 wds:P169-530F81DC-0710-5DEC-B517-9166F9139792 ;
-    p:P101 wds:P169-A1F1AF0F-7B78-59EB-9814-B0C8F9336E0D ;
-    p:P102 wds:P169-49C955A2-E130-541D-A69D-10E7CB666482 ;
-    wdt:P2 wd:Q2 ;
-    wdt:P9 wd:Q100 ;
-    wdt:P101 "countriesNotSupported" ;
-    wdt:P102 "countriesNotSupported" .
+    chbp:P2 chbs:P169-A3E2E283-DA78-5E6C-93B7-EE04DE265136 ;
+    chbp:P9 chbs:P169-530F81DC-0710-5DEC-B517-9166F9139792 ;
+    chbp:P101 chbs:P169-A1F1AF0F-7B78-59EB-9814-B0C8F9336E0D ;
+    chbp:P102 chbs:P169-49C955A2-E130-541D-A69D-10E7CB666482 ;
+    chbt:P2 chb:Q2 ;
+    chbt:P9 chb:Q100 ;
+    chbt:P101 "countriesNotSupported" ;
+    chbt:P102 "countriesNotSupported" .
 
-wds:P169-49C955A2-E130-541D-A69D-10E7CB666482
+chbs:P169-49C955A2-E130-541D-A69D-10E7CB666482
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P102 "countriesNotSupported" .
+    chbps:P102 "countriesNotSupported" .
 
-wds:P169-530F81DC-0710-5DEC-B517-9166F9139792
+chbs:P169-530F81DC-0710-5DEC-B517-9166F9139792
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-wds:P169-A1F1AF0F-7B78-59EB-9814-B0C8F9336E0D
+chbs:P169-A1F1AF0F-7B78-59EB-9814-B0C8F9336E0D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P101 "countriesNotSupported" .
+    chbps:P101 "countriesNotSupported" .
 
-wds:P169-A3E2E283-DA78-5E6C-93B7-EE04DE265136
+chbs:P169-A3E2E283-DA78-5E6C-93B7-EE04DE265136
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-p:P169
+chbp:P169
     a owl:ObjectProperty .
 
-wdt:P169
+chbt:P169
     a owl:DatatypeProperty .
 
-pq:P169
+chbpq:P169
     a owl:DatatypeProperty .
 
-pqv:P169
+chbpqv:P169
     a owl:ObjectProperty .
 
-pr:P169
+chbpr:P169
     a owl:DatatypeProperty .
 
-prv:P169
+chbprv:P169
     a owl:ObjectProperty .
 
-ps:P169
+chbps:P169
     a owl:DatatypeProperty .
 
-psv:P169
+chbpsv:P169
     a owl:ObjectProperty .
 
-wdno:P169
+chbno:P169
     a owl:Class ;
     owl:complementOf _:e37e89424e00c55521a7a072e2c686fb .
 
 _:e37e89424e00c55521a7a072e2c686fb
     a owl:Restriction ;
-    owl:onProperty wdt:P169 ;
+    owl:onProperty chbt:P169 ;
     owl:someValuesFrom owl:Thing .

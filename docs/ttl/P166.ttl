@@ -1,52 +1,53 @@
 # P166: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:P166
+chbdata:P166.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:identifier "P166" ;
-    dcterms:isPartOf cat:properties ;
+    dcterms:isPartOf chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:P166 ;
+    dcterms:subject chb:P166 ;
     dcterms:title "continuous integration"@en ;
-    schema:about wd:P166 ;
-    dcat:distribution dist:P166-html,
-        dist:P166-json,
-        dist:P166-ttl ;
+    schema:about chb:P166 ;
+    dcat:distribution chbdist:P166-html,
+        chbdist:P166-json,
+        chbdist:P166-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/P166.html> .
 
-dist:P166-html
+chbdist:P166-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -54,7 +55,7 @@ dist:P166-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/P166.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:P166-json
+chbdist:P166-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -63,85 +64,85 @@ dist:P166-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/P166.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:P166-ttl
+chbdist:P166-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "P166, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/P166.ttl> ;
+    dcat:downloadURL chbdata:P166.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:P166
+chb:P166
     a wikibase:Property ;
     schema:name "continuous integration"@en ;
-    wikibase:claim p:P166 ;
-    wikibase:directClaim wdt:P166 ;
+    wikibase:claim chbp:P166 ;
+    wikibase:directClaim chbt:P166 ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:novalue wdno:P166 ;
+    wikibase:novalue chbno:P166 ;
     wikibase:propertyType wikibase:Url ;
-    wikibase:qualifier pq:P166 ;
-    wikibase:qualifierValue pqv:P166 ;
-    wikibase:reference pr:P166 ;
-    wikibase:referenceValue prv:P166 ;
-    wikibase:statementProperty ps:P166 ;
-    wikibase:statementValue psv:P166 ;
+    wikibase:qualifier chbpq:P166 ;
+    wikibase:qualifierValue chbpqv:P166 ;
+    wikibase:reference chbpr:P166 ;
+    wikibase:referenceValue chbprv:P166 ;
+    wikibase:statementProperty chbps:P166 ;
+    wikibase:statementValue chbpsv:P166 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "continuous integration"@en ;
     skos:prefLabel "continuous integration"@en ;
-    p:P2 wds:P166-E4CAC6B5-23DE-5685-ADF4-9E723A39D41D ;
-    p:P9 wds:P166-26F8132F-D8DC-5A22-B04A-AB8B773A92B6 ;
-    p:P101 wds:P166-ED98B1D4-1E2A-5F4B-888B-DCC4DF170CFF ;
-    wdt:P2 wd:Q2 ;
-    wdt:P9 wd:Q100 ;
-    wdt:P101 "continuousIntegration" .
+    chbp:P2 chbs:P166-E4CAC6B5-23DE-5685-ADF4-9E723A39D41D ;
+    chbp:P9 chbs:P166-26F8132F-D8DC-5A22-B04A-AB8B773A92B6 ;
+    chbp:P101 chbs:P166-ED98B1D4-1E2A-5F4B-888B-DCC4DF170CFF ;
+    chbt:P2 chb:Q2 ;
+    chbt:P9 chb:Q100 ;
+    chbt:P101 "continuousIntegration" .
 
-wds:P166-26F8132F-D8DC-5A22-B04A-AB8B773A92B6
+chbs:P166-26F8132F-D8DC-5A22-B04A-AB8B773A92B6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P9 wd:Q100 .
+    chbps:P9 chb:Q100 .
 
-wds:P166-E4CAC6B5-23DE-5685-ADF4-9E723A39D41D
+chbs:P166-E4CAC6B5-23DE-5685-ADF4-9E723A39D41D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P2 wd:Q2 .
+    chbps:P2 chb:Q2 .
 
-wds:P166-ED98B1D4-1E2A-5F4B-888B-DCC4DF170CFF
+chbs:P166-ED98B1D4-1E2A-5F4B-888B-DCC4DF170CFF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    ps:P101 "continuousIntegration" .
+    chbps:P101 "continuousIntegration" .
 
-p:P166
+chbp:P166
     a owl:ObjectProperty .
 
-wdt:P166
+chbt:P166
     a owl:ObjectProperty .
 
-pq:P166
+chbpq:P166
     a owl:ObjectProperty .
 
-pqv:P166
+chbpqv:P166
     a owl:ObjectProperty .
 
-pr:P166
+chbpr:P166
     a owl:ObjectProperty .
 
-prv:P166
+chbprv:P166
     a owl:ObjectProperty .
 
-ps:P166
+chbps:P166
     a owl:ObjectProperty .
 
-psv:P166
+chbpsv:P166
     a owl:ObjectProperty .
 
-wdno:P166
+chbno:P166
     a owl:Class ;
     owl:complementOf _:6eb168253fedf0668b52591730aedff9 .
 
 _:6eb168253fedf0668b52591730aedff9
     a owl:Restriction ;
-    owl:onProperty wdt:P166 ;
+    owl:onProperty chbt:P166 ;
     owl:someValuesFrom owl:Thing .

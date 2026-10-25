@@ -1,53 +1,54 @@
 # Q556: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q556
+chbdata:Q556.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Tool for assisted geocoding of historical datasets (something between a manual table editing and automated geocoding script)"@en ;
     dcterms:identifier "Q556" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q556 ;
+    dcterms:subject chb:Q556 ;
     dcterms:title "historical-geocoding-assistant"@en ;
-    schema:about wd:Q556 ;
-    dcat:distribution dist:Q556-html,
-        dist:Q556-json,
-        dist:Q556-ttl ;
+    schema:about chb:Q556 ;
+    dcat:distribution chbdist:Q556-html,
+        chbdist:Q556-json,
+        chbdist:Q556-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q556.html> .
 
-dist:Q556-html
+chbdist:Q556-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q556-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q556.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q556-json
+chbdist:Q556-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q556-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q556.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q556-ttl
+chbdist:Q556-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q556, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q556.ttl> ;
+    dcat:downloadURL chbdata:Q556.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q556
+chb:Q556
     a wikibase:Item ;
     schema:description "Tool for assisted geocoding of historical datasets (something between a manual table editing and automated geocoding script)"@en ;
     schema:name "historical-geocoding-assistant"@en ;
@@ -80,126 +81,126 @@ wd:Q556
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "historical-geocoding-assistant"@en ;
     skos:prefLabel "historical-geocoding-assistant"@en ;
-    p:P2 wds:Q556-D05E6B46-C33F-5350-A48E-1BA12682D351,
-        wds:Q556-F8AF5F8C-21C2-59FD-AC64-1C4CB77A4005 ;
-    p:P106 wds:Q556-54F986DD-D087-591B-AD49-0BEF6C69F539 ;
-    p:P113 wds:Q556-848B0CF6-FE8F-5478-B3D3-A1882E61A5D8 ;
-    p:P115 wds:Q556-09A716A4-6A58-5914-B701-5210B8245203 ;
-    p:P116 wds:Q556-EEE3B353-F20B-5860-BE32-163C3425B934 ;
-    p:P117 wds:Q556-9FFEE1A2-8FA6-56CC-9664-D0CA898755AC ;
-    p:P118 wds:Q556-89416925-05E5-5596-8F72-EFCC3609CDC1 ;
-    p:P119 wds:Q556-7DD27B95-790E-5BB5-A44D-C658E8E2B9C7 ;
-    p:P122 wds:Q556-57EC369F-095A-5461-BEC2-28322E01BA1C,
-        wds:Q556-F2DD6358-A099-5873-BB22-DF7D0FEB1E9A ;
-    p:P125 wds:Q556-AAAC2170-5B8C-50A7-8C71-EEA003C60381 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q557 ;
-    wdt:P115 <https://open-archaeo.info/post/historical-geocoding-assistant/> ;
-    wdt:P116 "historical-geocoding-assistant" ;
-    wdt:P117 wd:Q148 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "historical-geocoding-assistant"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/adammertel/historical-geocoding-assistant> .
+    chbp:P2 chbs:Q556-D05E6B46-C33F-5350-A48E-1BA12682D351,
+        chbs:Q556-F8AF5F8C-21C2-59FD-AC64-1C4CB77A4005 ;
+    chbp:P106 chbs:Q556-54F986DD-D087-591B-AD49-0BEF6C69F539 ;
+    chbp:P113 chbs:Q556-848B0CF6-FE8F-5478-B3D3-A1882E61A5D8 ;
+    chbp:P115 chbs:Q556-09A716A4-6A58-5914-B701-5210B8245203 ;
+    chbp:P116 chbs:Q556-EEE3B353-F20B-5860-BE32-163C3425B934 ;
+    chbp:P117 chbs:Q556-9FFEE1A2-8FA6-56CC-9664-D0CA898755AC ;
+    chbp:P118 chbs:Q556-89416925-05E5-5596-8F72-EFCC3609CDC1 ;
+    chbp:P119 chbs:Q556-7DD27B95-790E-5BB5-A44D-C658E8E2B9C7 ;
+    chbp:P122 chbs:Q556-57EC369F-095A-5461-BEC2-28322E01BA1C,
+        chbs:Q556-F2DD6358-A099-5873-BB22-DF7D0FEB1E9A ;
+    chbp:P125 chbs:Q556-AAAC2170-5B8C-50A7-8C71-EEA003C60381 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q557 ;
+    chbt:P115 <https://open-archaeo.info/post/historical-geocoding-assistant/> ;
+    chbt:P116 "historical-geocoding-assistant" ;
+    chbt:P117 chb:Q148 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "historical-geocoding-assistant"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/adammertel/historical-geocoding-assistant> .
 
-wds:Q556-7DD27B95-790E-5BB5-A44D-C658E8E2B9C7
+chbs:Q556-7DD27B95-790E-5BB5-A44D-C658E8E2B9C7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P119 "historical-geocoding-assistant"@en .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P119 "historical-geocoding-assistant"@en .
 
-wds:Q556-09A716A4-6A58-5914-B701-5210B8245203
+chbs:Q556-09A716A4-6A58-5914-B701-5210B8245203
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P115 <https://open-archaeo.info/post/historical-geocoding-assistant/> .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P115 <https://open-archaeo.info/post/historical-geocoding-assistant/> .
 
-wds:Q556-9FFEE1A2-8FA6-56CC-9664-D0CA898755AC
+chbs:Q556-9FFEE1A2-8FA6-56CC-9664-D0CA898755AC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P117 wd:Q148 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P117 chb:Q148 .
 
-wds:Q556-54F986DD-D087-591B-AD49-0BEF6C69F539
+chbs:Q556-54F986DD-D087-591B-AD49-0BEF6C69F539
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q556-57EC369F-095A-5461-BEC2-28322E01BA1C
+chbs:Q556-57EC369F-095A-5461-BEC2-28322E01BA1C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q556-848B0CF6-FE8F-5478-B3D3-A1882E61A5D8
+chbs:Q556-848B0CF6-FE8F-5478-B3D3-A1882E61A5D8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q557 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q557 .
 
-wds:Q556-89416925-05E5-5596-8F72-EFCC3609CDC1
+chbs:Q556-89416925-05E5-5596-8F72-EFCC3609CDC1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q556-AAAC2170-5B8C-50A7-8C71-EEA003C60381
+chbs:Q556-AAAC2170-5B8C-50A7-8C71-EEA003C60381
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    pq:P104 "2021-02-04T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-adammertel-historical-geocoding-assistant_-_2021-02-04_13-33-32> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:012e9a24ff658950d72faff27d693835 ;
-    ps:P125 <https://github.com/adammertel/historical-geocoding-assistant> .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbpq:P104 "2021-02-04T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-adammertel-historical-geocoding-assistant_-_2021-02-04_13-33-32> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:012e9a24ff658950d72faff27d693835 ;
+    chbps:P125 <https://github.com/adammertel/historical-geocoding-assistant> .
 
-wds:Q556-D05E6B46-C33F-5350-A48E-1BA12682D351
+chbs:Q556-D05E6B46-C33F-5350-A48E-1BA12682D351
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q556-EEE3B353-F20B-5860-BE32-163C3425B934
+chbs:Q556-EEE3B353-F20B-5860-BE32-163C3425B934
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "historical-geocoding-assistant" .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "historical-geocoding-assistant" .
 
-wds:Q556-F2DD6358-A099-5873-BB22-DF7D0FEB1E9A
+chbs:Q556-F2DD6358-A099-5873-BB22-DF7D0FEB1E9A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q556-F8AF5F8C-21C2-59FD-AC64-1C4CB77A4005
+chbs:Q556-F8AF5F8C-21C2-59FD-AC64-1C4CB77A4005
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1 ;
+    chbps:P2 chb:Q102 .
 
-wdref:f3ef42e395edc9b30de70308cf82fe88144ca6d1
+chbref:f3ef42e395edc9b30de70308cf82fe88144ca6d1
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/historical-geocoding-assistant/> .
+    chbpr:P6 <https://open-archaeo.info/post/historical-geocoding-assistant/> .
 
-wdv:012e9a24ff658950d72faff27d693835
+chbv:012e9a24ff658950d72faff27d693835
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

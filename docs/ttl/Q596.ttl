@@ -1,53 +1,54 @@
 # Q596: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q596
+chbdata:Q596.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Radiocarbon dating, age-depth modelling, relative sea level rate estimation, and non-parametric phase modelling"@en ;
     dcterms:identifier "Q596" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q596 ;
+    dcterms:subject chb:Q596 ;
     dcterms:title "Bchron"@en ;
-    schema:about wd:Q596 ;
-    dcat:distribution dist:Q596-html,
-        dist:Q596-json,
-        dist:Q596-ttl ;
+    schema:about chb:Q596 ;
+    dcat:distribution chbdist:Q596-html,
+        chbdist:Q596-json,
+        chbdist:Q596-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q596.html> .
 
-dist:Q596-html
+chbdist:Q596-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q596-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q596.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q596-json
+chbdist:Q596-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q596-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q596.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q596-ttl
+chbdist:Q596-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q596, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q596.ttl> ;
+    dcat:downloadURL chbdata:Q596.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q596
+chb:Q596
     a wikibase:Item ;
     schema:description "Radiocarbon dating, age-depth modelling, relative sea level rate estimation, and non-parametric phase modelling"@en ;
     schema:name "Bchron"@en ;
@@ -80,144 +81,144 @@ wd:Q596
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "Bchron"@en ;
     skos:prefLabel "Bchron"@en ;
-    p:P2 wds:Q596-72A3A5AB-ECC7-5252-94AC-B893CEB20EC1,
-        wds:Q596-12464D8A-5818-500E-BBB8-E347EFFA6967 ;
-    p:P106 wds:Q596-65FEDD2A-4118-582E-BC1F-21D0576BDA12 ;
-    p:P108 wds:Q596-C09742C7-68B2-5816-8EAD-13A84236E660 ;
-    p:P113 wds:Q596-98436344-22A9-5672-88E7-EDCF33174DC5 ;
-    p:P115 wds:Q596-78072597-1464-548E-A056-A2CC9F4A39CB ;
-    p:P116 wds:Q596-91058D72-A4C3-59D4-8453-88DEEA047B9F ;
-    p:P117 wds:Q596-7BF0F4D8-0EED-55F6-B756-F44C990F9F09 ;
-    p:P118 wds:Q596-FADEFB73-1D77-52A0-8083-509B01A5043B ;
-    p:P119 wds:Q596-D6E86195-D55A-5A94-B9C2-DD3721A90A4C ;
-    p:P122 wds:Q596-9D94AEBF-C362-58E6-AB76-B26C9E3B5D98,
-        wds:Q596-C10B8125-C251-58B1-A1E0-20BCD5CAAD2D ;
-    p:P123 wds:Q596-33A3422C-D521-590F-86CD-DB3477E5FC30 ;
-    p:P125 wds:Q596-66B4D16B-651F-5ACE-A854-2BFF4082DEB0 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "Bchron" ;
-    wdt:P113 wd:Q597 ;
-    wdt:P115 <https://open-archaeo.info/post/bchron/> ;
-    wdt:P116 "bchron" ;
-    wdt:P117 wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Bchron"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/andrewcparnell/Bchron> .
+    chbp:P2 chbs:Q596-72A3A5AB-ECC7-5252-94AC-B893CEB20EC1,
+        chbs:Q596-12464D8A-5818-500E-BBB8-E347EFFA6967 ;
+    chbp:P106 chbs:Q596-65FEDD2A-4118-582E-BC1F-21D0576BDA12 ;
+    chbp:P108 chbs:Q596-C09742C7-68B2-5816-8EAD-13A84236E660 ;
+    chbp:P113 chbs:Q596-98436344-22A9-5672-88E7-EDCF33174DC5 ;
+    chbp:P115 chbs:Q596-78072597-1464-548E-A056-A2CC9F4A39CB ;
+    chbp:P116 chbs:Q596-91058D72-A4C3-59D4-8453-88DEEA047B9F ;
+    chbp:P117 chbs:Q596-7BF0F4D8-0EED-55F6-B756-F44C990F9F09 ;
+    chbp:P118 chbs:Q596-FADEFB73-1D77-52A0-8083-509B01A5043B ;
+    chbp:P119 chbs:Q596-D6E86195-D55A-5A94-B9C2-DD3721A90A4C ;
+    chbp:P122 chbs:Q596-9D94AEBF-C362-58E6-AB76-B26C9E3B5D98,
+        chbs:Q596-C10B8125-C251-58B1-A1E0-20BCD5CAAD2D ;
+    chbp:P123 chbs:Q596-33A3422C-D521-590F-86CD-DB3477E5FC30 ;
+    chbp:P125 chbs:Q596-66B4D16B-651F-5ACE-A854-2BFF4082DEB0 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "Bchron" ;
+    chbt:P113 chb:Q597 ;
+    chbt:P115 <https://open-archaeo.info/post/bchron/> ;
+    chbt:P116 "bchron" ;
+    chbt:P117 chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Bchron"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/andrewcparnell/Bchron> .
 
-wds:Q596-7BF0F4D8-0EED-55F6-B756-F44C990F9F09
+chbs:Q596-7BF0F4D8-0EED-55F6-B756-F44C990F9F09
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P117 chb:Q140 .
 
-wds:Q596-9D94AEBF-C362-58E6-AB76-B26C9E3B5D98
+chbs:Q596-9D94AEBF-C362-58E6-AB76-B26C9E3B5D98
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q596-33A3422C-D521-590F-86CD-DB3477E5FC30
+chbs:Q596-33A3422C-D521-590F-86CD-DB3477E5FC30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q596-65FEDD2A-4118-582E-BC1F-21D0576BDA12
+chbs:Q596-65FEDD2A-4118-582E-BC1F-21D0576BDA12
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q596-66B4D16B-651F-5ACE-A854-2BFF4082DEB0
+chbs:Q596-66B4D16B-651F-5ACE-A854-2BFF4082DEB0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    pq:P104 "2021-02-01T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-andrewcparnell-Bchron_-_2021-02-01_13-37-47> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:d4eb8a356bde4238f20e2158dc4e2728 ;
-    ps:P125 <https://github.com/andrewcparnell/Bchron> .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbpq:P104 "2021-02-01T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-andrewcparnell-Bchron_-_2021-02-01_13-37-47> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:d4eb8a356bde4238f20e2158dc4e2728 ;
+    chbps:P125 <https://github.com/andrewcparnell/Bchron> .
 
-wds:Q596-72A3A5AB-ECC7-5252-94AC-B893CEB20EC1
+chbs:Q596-72A3A5AB-ECC7-5252-94AC-B893CEB20EC1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q596-12464D8A-5818-500E-BBB8-E347EFFA6967
+chbs:Q596-12464D8A-5818-500E-BBB8-E347EFFA6967
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q596-91058D72-A4C3-59D4-8453-88DEEA047B9F
+chbs:Q596-91058D72-A4C3-59D4-8453-88DEEA047B9F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "bchron" .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "bchron" .
 
-wds:Q596-78072597-1464-548E-A056-A2CC9F4A39CB
+chbs:Q596-78072597-1464-548E-A056-A2CC9F4A39CB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P115 <https://open-archaeo.info/post/bchron/> .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P115 <https://open-archaeo.info/post/bchron/> .
 
-wds:Q596-98436344-22A9-5672-88E7-EDCF33174DC5
+chbs:Q596-98436344-22A9-5672-88E7-EDCF33174DC5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q597 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q597 .
 
-wds:Q596-C10B8125-C251-58B1-A1E0-20BCD5CAAD2D
+chbs:Q596-C10B8125-C251-58B1-A1E0-20BCD5CAAD2D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q596-C09742C7-68B2-5816-8EAD-13A84236E660
+chbs:Q596-C09742C7-68B2-5816-8EAD-13A84236E660
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P108 "Bchron" .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P108 "Bchron" .
 
-wds:Q596-D6E86195-D55A-5A94-B9C2-DD3721A90A4C
+chbs:Q596-D6E86195-D55A-5A94-B9C2-DD3721A90A4C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P119 "Bchron"@en .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P119 "Bchron"@en .
 
-wds:Q596-FADEFB73-1D77-52A0-8083-509B01A5043B
+chbs:Q596-FADEFB73-1D77-52A0-8083-509B01A5043B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44 ;
+    chbps:P118 chb:Q108 .
 
-wdref:df061127c88e9632792d168e4e1d17f4bc3e3a44
+chbref:df061127c88e9632792d168e4e1d17f4bc3e3a44
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/bchron/> .
+    chbpr:P6 <https://open-archaeo.info/post/bchron/> .
 
-wdv:d4eb8a356bde4238f20e2158dc4e2728
+chbv:d4eb8a356bde4238f20e2158dc4e2728
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q867: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q867
+chbdata:Q867.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Pure locational clustering."@en ;
     dcterms:identifier "Q867" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q867 ;
+    dcterms:subject chb:Q867 ;
     dcterms:title "PLC"@en ;
-    schema:about wd:Q867 ;
-    dcat:distribution dist:Q867-html,
-        dist:Q867-json,
-        dist:Q867-ttl ;
+    schema:about chb:Q867 ;
+    dcat:distribution chbdist:Q867-html,
+        chbdist:Q867-json,
+        chbdist:Q867-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q867.html> .
 
-dist:Q867-html
+chbdist:Q867-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q867-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q867.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q867-json
+chbdist:Q867-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q867-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q867.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q867-ttl
+chbdist:Q867-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q867, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q867.ttl> ;
+    dcat:downloadURL chbdata:Q867.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q867
+chb:Q867
     a wikibase:Item ;
     schema:description "Pure locational clustering."@en ;
     schema:name "PLC"@en ;
@@ -80,126 +81,126 @@ wd:Q867
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "PLC"@en ;
     skos:prefLabel "PLC"@en ;
-    p:P2 wds:Q867-5FE0DB42-6903-5F71-B7ED-7C1DFC93AC1D,
-        wds:Q867-573CC37D-42E3-5F40-AFE3-4FE03F40BE7F ;
-    p:P106 wds:Q867-D0E44BEE-61E7-5CB1-ADEA-FFA7F2567708 ;
-    p:P113 wds:Q867-E3EE2D8B-83C3-50D6-B318-38D71795E279 ;
-    p:P115 wds:Q867-450B9E2A-B93A-5DAD-BE99-D53AEEB51CCD ;
-    p:P116 wds:Q867-D9D1BBB7-1679-5E89-A825-A4559A490ECF ;
-    p:P117 wds:Q867-A2F50EF5-8E06-5234-B67B-68EE35A89C69 ;
-    p:P118 wds:Q867-F13EB0EC-AF3A-53DF-9D80-BC776A3AA800 ;
-    p:P119 wds:Q867-BC65CBAD-8427-59E4-A8A6-341161DAF119 ;
-    p:P120 wds:Q867-3975ACFE-76DF-5447-BF6E-30327A39392A ;
-    p:P122 wds:Q867-577D5032-39D9-5F22-8603-5B2654867AF9,
-        wds:Q867-3407E217-E265-53C6-BD2B-FB863155371A ;
-    p:P123 wds:Q867-75F3E803-0D37-536C-AFE7-3455ADE2B100 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q167 ;
-    wdt:P115 <https://open-archaeo.info/post/plc/> ;
-    wdt:P116 "plc" ;
-    wdt:P117 wd:Q116 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "PLC"@en ;
-    wdt:P120 <http://www.mattpeeples.net/modules/PLC.html> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 .
+    chbp:P2 chbs:Q867-5FE0DB42-6903-5F71-B7ED-7C1DFC93AC1D,
+        chbs:Q867-573CC37D-42E3-5F40-AFE3-4FE03F40BE7F ;
+    chbp:P106 chbs:Q867-D0E44BEE-61E7-5CB1-ADEA-FFA7F2567708 ;
+    chbp:P113 chbs:Q867-E3EE2D8B-83C3-50D6-B318-38D71795E279 ;
+    chbp:P115 chbs:Q867-450B9E2A-B93A-5DAD-BE99-D53AEEB51CCD ;
+    chbp:P116 chbs:Q867-D9D1BBB7-1679-5E89-A825-A4559A490ECF ;
+    chbp:P117 chbs:Q867-A2F50EF5-8E06-5234-B67B-68EE35A89C69 ;
+    chbp:P118 chbs:Q867-F13EB0EC-AF3A-53DF-9D80-BC776A3AA800 ;
+    chbp:P119 chbs:Q867-BC65CBAD-8427-59E4-A8A6-341161DAF119 ;
+    chbp:P120 chbs:Q867-3975ACFE-76DF-5447-BF6E-30327A39392A ;
+    chbp:P122 chbs:Q867-577D5032-39D9-5F22-8603-5B2654867AF9,
+        chbs:Q867-3407E217-E265-53C6-BD2B-FB863155371A ;
+    chbp:P123 chbs:Q867-75F3E803-0D37-536C-AFE7-3455ADE2B100 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q167 ;
+    chbt:P115 <https://open-archaeo.info/post/plc/> ;
+    chbt:P116 "plc" ;
+    chbt:P117 chb:Q116 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "PLC"@en ;
+    chbt:P120 <http://www.mattpeeples.net/modules/PLC.html> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 .
 
-wds:Q867-5FE0DB42-6903-5F71-B7ED-7C1DFC93AC1D
+chbs:Q867-5FE0DB42-6903-5F71-B7ED-7C1DFC93AC1D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q867-75F3E803-0D37-536C-AFE7-3455ADE2B100
+chbs:Q867-75F3E803-0D37-536C-AFE7-3455ADE2B100
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q867-450B9E2A-B93A-5DAD-BE99-D53AEEB51CCD
+chbs:Q867-450B9E2A-B93A-5DAD-BE99-D53AEEB51CCD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P115 <https://open-archaeo.info/post/plc/> .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P115 <https://open-archaeo.info/post/plc/> .
 
-wds:Q867-573CC37D-42E3-5F40-AFE3-4FE03F40BE7F
+chbs:Q867-573CC37D-42E3-5F40-AFE3-4FE03F40BE7F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P2 chb:Q104 .
 
-wds:Q867-577D5032-39D9-5F22-8603-5B2654867AF9
+chbs:Q867-577D5032-39D9-5F22-8603-5B2654867AF9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q867-3407E217-E265-53C6-BD2B-FB863155371A
+chbs:Q867-3407E217-E265-53C6-BD2B-FB863155371A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q867-3975ACFE-76DF-5447-BF6E-30327A39392A
+chbs:Q867-3975ACFE-76DF-5447-BF6E-30327A39392A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P120 <http://www.mattpeeples.net/modules/PLC.html> .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P120 <http://www.mattpeeples.net/modules/PLC.html> .
 
-wds:Q867-A2F50EF5-8E06-5234-B67B-68EE35A89C69
+chbs:Q867-A2F50EF5-8E06-5234-B67B-68EE35A89C69
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P117 chb:Q116 .
 
-wds:Q867-BC65CBAD-8427-59E4-A8A6-341161DAF119
+chbs:Q867-BC65CBAD-8427-59E4-A8A6-341161DAF119
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P119 "PLC"@en .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P119 "PLC"@en .
 
-wds:Q867-D0E44BEE-61E7-5CB1-ADEA-FFA7F2567708
+chbs:Q867-D0E44BEE-61E7-5CB1-ADEA-FFA7F2567708
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q867-D9D1BBB7-1679-5E89-A825-A4559A490ECF
+chbs:Q867-D9D1BBB7-1679-5E89-A825-A4559A490ECF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "plc" .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "plc" .
 
-wds:Q867-E3EE2D8B-83C3-50D6-B318-38D71795E279
+chbs:Q867-E3EE2D8B-83C3-50D6-B318-38D71795E279
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q167 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q167 .
 
-wds:Q867-F13EB0EC-AF3A-53DF-9D80-BC776A3AA800
+chbs:Q867-F13EB0EC-AF3A-53DF-9D80-BC776A3AA800
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f0157084b0cf3273cb962339a092c81af481a313 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:f0157084b0cf3273cb962339a092c81af481a313 ;
+    chbps:P118 chb:Q108 .
 
-wdref:f0157084b0cf3273cb962339a092c81af481a313
+chbref:f0157084b0cf3273cb962339a092c81af481a313
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/plc/> .
+    chbpr:P6 <https://open-archaeo.info/post/plc/> .

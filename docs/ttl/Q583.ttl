@@ -1,53 +1,54 @@
 # Q583: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q583
+chbdata:Q583.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Estimation of human stature from long bone measurements according to several well established estimation formula."@en ;
     dcterms:identifier "Q583" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q583 ;
+    dcterms:subject chb:Q583 ;
     dcterms:title "statuAAR"@en ;
-    schema:about wd:Q583 ;
-    dcat:distribution dist:Q583-html,
-        dist:Q583-json,
-        dist:Q583-ttl ;
+    schema:about chb:Q583 ;
+    dcat:distribution chbdist:Q583-html,
+        chbdist:Q583-json,
+        chbdist:Q583-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q583.html> .
 
-dist:Q583-html
+chbdist:Q583-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q583-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q583.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q583-json
+chbdist:Q583-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q583-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q583.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q583-ttl
+chbdist:Q583-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q583, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q583.ttl> ;
+    dcat:downloadURL chbdata:Q583.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q583
+chb:Q583
     a wikibase:Item ;
     schema:description "Estimation of human stature from long bone measurements according to several well established estimation formula."@en ;
     schema:name "statuAAR"@en ;
@@ -80,165 +81,165 @@ wd:Q583
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "statuAAR"@en ;
     skos:prefLabel "statuAAR"@en ;
-    p:P2 wds:Q583-24814AFB-23B0-564B-81F9-4731404C8F57,
-        wds:Q583-BAEF019B-DFA4-5901-9167-D3E6D0656481 ;
-    p:P106 wds:Q583-E518C536-632B-5FC2-9F68-F16D0ED02FE3 ;
-    p:P113 wds:Q583-4E85CA67-99DA-5BEB-824C-24C1925F45B8,
-        wds:Q583-907BDA75-0543-5577-8AD3-EED07690926F,
-        wds:Q583-E29D27DF-2CE1-5499-AEFC-296D89774AFF,
-        wds:Q583-F92A761E-49EE-5447-96B0-F88BA06EC38E ;
-    p:P115 wds:Q583-E0852F1C-B278-54EE-ADD2-BBCC0FC318FB ;
-    p:P116 wds:Q583-79404671-FA9D-5735-9D6E-43DDAF5924DD ;
-    p:P117 wds:Q583-EE39C9B7-F3F4-5A8F-9F4A-64DCB358D823 ;
-    p:P118 wds:Q583-B1B12359-934F-59B3-BD9A-E9BED6CAD165 ;
-    p:P119 wds:Q583-1D14F1FB-E94C-5B60-88A0-9A2518D5773C ;
-    p:P122 wds:Q583-7F3A68CE-2BF5-5398-9BB2-7598A82CD952,
-        wds:Q583-8691E2F8-815D-5A3B-82F5-7406A756B81C ;
-    p:P123 wds:Q583-5DC84592-DEE4-5479-90C6-AEC1203A621F ;
-    p:P125 wds:Q583-345BA218-6340-52BB-9BE0-1A27813B7D1F ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q584,
-        wd:Q585,
-        wd:Q586,
-        wd:Q587 ;
-    wdt:P115 <https://open-archaeo.info/post/statuaar/> ;
-    wdt:P116 "statuaar" ;
-    wdt:P117 wd:Q247 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "statuAAR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ISAAKiel/statuAAR> .
+    chbp:P2 chbs:Q583-24814AFB-23B0-564B-81F9-4731404C8F57,
+        chbs:Q583-BAEF019B-DFA4-5901-9167-D3E6D0656481 ;
+    chbp:P106 chbs:Q583-E518C536-632B-5FC2-9F68-F16D0ED02FE3 ;
+    chbp:P113 chbs:Q583-4E85CA67-99DA-5BEB-824C-24C1925F45B8,
+        chbs:Q583-907BDA75-0543-5577-8AD3-EED07690926F,
+        chbs:Q583-E29D27DF-2CE1-5499-AEFC-296D89774AFF,
+        chbs:Q583-F92A761E-49EE-5447-96B0-F88BA06EC38E ;
+    chbp:P115 chbs:Q583-E0852F1C-B278-54EE-ADD2-BBCC0FC318FB ;
+    chbp:P116 chbs:Q583-79404671-FA9D-5735-9D6E-43DDAF5924DD ;
+    chbp:P117 chbs:Q583-EE39C9B7-F3F4-5A8F-9F4A-64DCB358D823 ;
+    chbp:P118 chbs:Q583-B1B12359-934F-59B3-BD9A-E9BED6CAD165 ;
+    chbp:P119 chbs:Q583-1D14F1FB-E94C-5B60-88A0-9A2518D5773C ;
+    chbp:P122 chbs:Q583-7F3A68CE-2BF5-5398-9BB2-7598A82CD952,
+        chbs:Q583-8691E2F8-815D-5A3B-82F5-7406A756B81C ;
+    chbp:P123 chbs:Q583-5DC84592-DEE4-5479-90C6-AEC1203A621F ;
+    chbp:P125 chbs:Q583-345BA218-6340-52BB-9BE0-1A27813B7D1F ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q584,
+        chb:Q585,
+        chb:Q586,
+        chb:Q587 ;
+    chbt:P115 <https://open-archaeo.info/post/statuaar/> ;
+    chbt:P116 "statuaar" ;
+    chbt:P117 chb:Q247 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "statuAAR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ISAAKiel/statuAAR> .
 
-wds:Q583-1D14F1FB-E94C-5B60-88A0-9A2518D5773C
+chbs:Q583-1D14F1FB-E94C-5B60-88A0-9A2518D5773C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P119 "statuAAR"@en .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P119 "statuAAR"@en .
 
-wds:Q583-4E85CA67-99DA-5BEB-824C-24C1925F45B8
+chbs:Q583-4E85CA67-99DA-5BEB-824C-24C1925F45B8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q586 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q586 .
 
-wds:Q583-5DC84592-DEE4-5479-90C6-AEC1203A621F
+chbs:Q583-5DC84592-DEE4-5479-90C6-AEC1203A621F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q583-7F3A68CE-2BF5-5398-9BB2-7598A82CD952
+chbs:Q583-7F3A68CE-2BF5-5398-9BB2-7598A82CD952
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q583-345BA218-6340-52BB-9BE0-1A27813B7D1F
+chbs:Q583-345BA218-6340-52BB-9BE0-1A27813B7D1F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    pq:P104 "2021-06-23T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ISAAKiel-statuAAR_-_2021-06-23_15-36-26> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:200c1fab329872030485109c534839c4 ;
-    ps:P125 <https://github.com/ISAAKiel/statuAAR> .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbpq:P104 "2021-06-23T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ISAAKiel-statuAAR_-_2021-06-23_15-36-26> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:200c1fab329872030485109c534839c4 ;
+    chbps:P125 <https://github.com/ISAAKiel/statuAAR> .
 
-wds:Q583-907BDA75-0543-5577-8AD3-EED07690926F
+chbs:Q583-907BDA75-0543-5577-8AD3-EED07690926F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q585 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q585 .
 
-wds:Q583-8691E2F8-815D-5A3B-82F5-7406A756B81C
+chbs:Q583-8691E2F8-815D-5A3B-82F5-7406A756B81C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q583-24814AFB-23B0-564B-81F9-4731404C8F57
+chbs:Q583-24814AFB-23B0-564B-81F9-4731404C8F57
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q583-79404671-FA9D-5735-9D6E-43DDAF5924DD
+chbs:Q583-79404671-FA9D-5735-9D6E-43DDAF5924DD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "statuaar" .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "statuaar" .
 
-wds:Q583-B1B12359-934F-59B3-BD9A-E9BED6CAD165
+chbs:Q583-B1B12359-934F-59B3-BD9A-E9BED6CAD165
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q583-BAEF019B-DFA4-5901-9167-D3E6D0656481
+chbs:Q583-BAEF019B-DFA4-5901-9167-D3E6D0656481
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q583-E29D27DF-2CE1-5499-AEFC-296D89774AFF
+chbs:Q583-E29D27DF-2CE1-5499-AEFC-296D89774AFF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q584 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q584 .
 
-wds:Q583-E518C536-632B-5FC2-9F68-F16D0ED02FE3
+chbs:Q583-E518C536-632B-5FC2-9F68-F16D0ED02FE3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q583-E0852F1C-B278-54EE-ADD2-BBCC0FC318FB
+chbs:Q583-E0852F1C-B278-54EE-ADD2-BBCC0FC318FB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P115 <https://open-archaeo.info/post/statuaar/> .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P115 <https://open-archaeo.info/post/statuaar/> .
 
-wds:Q583-EE39C9B7-F3F4-5A8F-9F4A-64DCB358D823
+chbs:Q583-EE39C9B7-F3F4-5A8F-9F4A-64DCB358D823
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    ps:P117 wd:Q247 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbps:P117 chb:Q247 .
 
-wds:Q583-F92A761E-49EE-5447-96B0-F88BA06EC38E
+chbs:Q583-F92A761E-49EE-5447-96B0-F88BA06EC38E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
-    pq:P146 "4" ;
-    ps:P113 wd:Q587 .
+    prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
+    chbpq:P146 "4" ;
+    chbps:P113 chb:Q587 .
 
-wdref:f40273ddc45a9ca7c77add513de47f7401087b68
+chbref:f40273ddc45a9ca7c77add513de47f7401087b68
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/statuaar/> .
+    chbpr:P6 <https://open-archaeo.info/post/statuaar/> .
 
-wdv:200c1fab329872030485109c534839c4
+chbv:200c1fab329872030485109c534839c4
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

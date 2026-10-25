@@ -1,53 +1,54 @@
 # Q198: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q198
+chbdata:Q198.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Some scripts that could be useful for qgis users."@en ;
     dcterms:identifier "Q198" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q198 ;
+    dcterms:subject chb:Q198 ;
     dcterms:title "QGIS-scripts"@en ;
-    schema:about wd:Q198 ;
-    dcat:distribution dist:Q198-html,
-        dist:Q198-json,
-        dist:Q198-ttl ;
+    schema:about chb:Q198 ;
+    dcat:distribution chbdist:Q198-html,
+        chbdist:Q198-json,
+        chbdist:Q198-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q198.html> .
 
-dist:Q198-html
+chbdist:Q198-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q198-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q198.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q198-json
+chbdist:Q198-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q198-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q198.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q198-ttl
+chbdist:Q198-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q198, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q198.ttl> ;
+    dcat:downloadURL chbdata:Q198.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q198
+chb:Q198
     a wikibase:Item ;
     schema:description "Some scripts that could be useful for qgis users."@en ;
     schema:name "QGIS-scripts"@en ;
@@ -80,135 +81,135 @@ wd:Q198
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "QGIS-scripts"@en ;
     skos:prefLabel "QGIS-scripts"@en ;
-    p:P2 wds:Q198-4D8BF477-BF9B-5B19-A42F-C09E6B990934,
-        wds:Q198-CB20E92B-BF24-52A0-AE71-D061194D6D07 ;
-    p:P106 wds:Q198-25205E0D-4621-5D55-83BB-0B9267F398EF ;
-    p:P109 wds:Q198-3AE78EDC-B869-5F24-8726-9C9B16AC8720 ;
-    p:P113 wds:Q198-BD87D103-EF3C-5FC0-8B46-9E95C6ADC883 ;
-    p:P115 wds:Q198-CC4272A5-5068-5D5D-9213-D2620F86122A ;
-    p:P116 wds:Q198-58C239E3-F609-5692-806A-F2ED704F4C5C ;
-    p:P117 wds:Q198-09145CF3-C018-5272-9FCD-01074F4FC866 ;
-    p:P118 wds:Q198-7F2F0444-C673-5CC4-9658-737FE53130BA ;
-    p:P119 wds:Q198-A8ACC7EC-001C-5C28-8A0A-04159FD834D1 ;
-    p:P122 wds:Q198-1247D781-C118-558B-9B35-0965C423A9B5,
-        wds:Q198-38952F8F-7C72-5E66-8631-AF4A5D78FD64 ;
-    p:P125 wds:Q198-875FC965-378D-546B-9B8E-BAC173F18EB0 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q135 ;
-    wdt:P113 wd:Q199 ;
-    wdt:P115 <https://open-archaeo.info/post/qgis-scripts/> ;
-    wdt:P116 "qgis-scripts" ;
-    wdt:P117 wd:Q132 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "QGIS-scripts"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/zoran-cuckovic/QGIS-scripts> .
+    chbp:P2 chbs:Q198-4D8BF477-BF9B-5B19-A42F-C09E6B990934,
+        chbs:Q198-CB20E92B-BF24-52A0-AE71-D061194D6D07 ;
+    chbp:P106 chbs:Q198-25205E0D-4621-5D55-83BB-0B9267F398EF ;
+    chbp:P109 chbs:Q198-3AE78EDC-B869-5F24-8726-9C9B16AC8720 ;
+    chbp:P113 chbs:Q198-BD87D103-EF3C-5FC0-8B46-9E95C6ADC883 ;
+    chbp:P115 chbs:Q198-CC4272A5-5068-5D5D-9213-D2620F86122A ;
+    chbp:P116 chbs:Q198-58C239E3-F609-5692-806A-F2ED704F4C5C ;
+    chbp:P117 chbs:Q198-09145CF3-C018-5272-9FCD-01074F4FC866 ;
+    chbp:P118 chbs:Q198-7F2F0444-C673-5CC4-9658-737FE53130BA ;
+    chbp:P119 chbs:Q198-A8ACC7EC-001C-5C28-8A0A-04159FD834D1 ;
+    chbp:P122 chbs:Q198-1247D781-C118-558B-9B35-0965C423A9B5,
+        chbs:Q198-38952F8F-7C72-5E66-8631-AF4A5D78FD64 ;
+    chbp:P125 chbs:Q198-875FC965-378D-546B-9B8E-BAC173F18EB0 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q135 ;
+    chbt:P113 chb:Q199 ;
+    chbt:P115 <https://open-archaeo.info/post/qgis-scripts/> ;
+    chbt:P116 "qgis-scripts" ;
+    chbt:P117 chb:Q132 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "QGIS-scripts"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/zoran-cuckovic/QGIS-scripts> .
 
-wds:Q198-3AE78EDC-B869-5F24-8726-9C9B16AC8720
+chbs:Q198-3AE78EDC-B869-5F24-8726-9C9B16AC8720
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P109 wd:Q135 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P109 chb:Q135 .
 
-wds:Q198-4D8BF477-BF9B-5B19-A42F-C09E6B990934
+chbs:Q198-4D8BF477-BF9B-5B19-A42F-C09E6B990934
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q198-7F2F0444-C673-5CC4-9658-737FE53130BA
+chbs:Q198-7F2F0444-C673-5CC4-9658-737FE53130BA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q198-58C239E3-F609-5692-806A-F2ED704F4C5C
+chbs:Q198-58C239E3-F609-5692-806A-F2ED704F4C5C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "qgis-scripts" .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "qgis-scripts" .
 
-wds:Q198-875FC965-378D-546B-9B8E-BAC173F18EB0
+chbs:Q198-875FC965-378D-546B-9B8E-BAC173F18EB0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    pq:P104 "2018-07-21T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-zoran-cuckovic-QGIS-scripts_-_2018-07-21_22-11-13> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ffc1d79a003c462b1d0595cb71aeb4d1 ;
-    ps:P125 <https://github.com/zoran-cuckovic/QGIS-scripts> .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbpq:P104 "2018-07-21T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-zoran-cuckovic-QGIS-scripts_-_2018-07-21_22-11-13> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:ffc1d79a003c462b1d0595cb71aeb4d1 ;
+    chbps:P125 <https://github.com/zoran-cuckovic/QGIS-scripts> .
 
-wds:Q198-1247D781-C118-558B-9B35-0965C423A9B5
+chbs:Q198-1247D781-C118-558B-9B35-0965C423A9B5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q198-09145CF3-C018-5272-9FCD-01074F4FC866
+chbs:Q198-09145CF3-C018-5272-9FCD-01074F4FC866
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P117 wd:Q132 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P117 chb:Q132 .
 
-wds:Q198-25205E0D-4621-5D55-83BB-0B9267F398EF
+chbs:Q198-25205E0D-4621-5D55-83BB-0B9267F398EF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q198-38952F8F-7C72-5E66-8631-AF4A5D78FD64
+chbs:Q198-38952F8F-7C72-5E66-8631-AF4A5D78FD64
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q198-A8ACC7EC-001C-5C28-8A0A-04159FD834D1
+chbs:Q198-A8ACC7EC-001C-5C28-8A0A-04159FD834D1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P119 "QGIS-scripts"@en .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P119 "QGIS-scripts"@en .
 
-wds:Q198-BD87D103-EF3C-5FC0-8B46-9E95C6ADC883
+chbs:Q198-BD87D103-EF3C-5FC0-8B46-9E95C6ADC883
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q199 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q199 .
 
-wds:Q198-CB20E92B-BF24-52A0-AE71-D061194D6D07
+chbs:Q198-CB20E92B-BF24-52A0-AE71-D061194D6D07
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q198-CC4272A5-5068-5D5D-9213-D2620F86122A
+chbs:Q198-CC4272A5-5068-5D5D-9213-D2620F86122A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
-    ps:P115 <https://open-archaeo.info/post/qgis-scripts/> .
+    prov:wasDerivedFrom chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47 ;
+    chbps:P115 <https://open-archaeo.info/post/qgis-scripts/> .
 
-wdref:6b20dc44cfad0961c05a999d3110eddeff0d1e47
+chbref:6b20dc44cfad0961c05a999d3110eddeff0d1e47
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/qgis-scripts/> .
+    chbpr:P6 <https://open-archaeo.info/post/qgis-scripts/> .
 
-wdv:ffc1d79a003c462b1d0595cb71aeb4d1
+chbv:ffc1d79a003c462b1d0595cb71aeb4d1
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q672: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q672
+chbdata:Q672.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The goal of idaifieldR is to flexibly get data from the idaifield database into R."@en ;
     dcterms:identifier "Q672" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q672 ;
+    dcterms:subject chb:Q672 ;
     dcterms:title "idaifieldR"@en ;
-    schema:about wd:Q672 ;
-    dcat:distribution dist:Q672-html,
-        dist:Q672-json,
-        dist:Q672-ttl ;
+    schema:about chb:Q672 ;
+    dcat:distribution chbdist:Q672-html,
+        chbdist:Q672-json,
+        chbdist:Q672-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q672.html> .
 
-dist:Q672-html
+chbdist:Q672-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q672-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q672.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q672-json
+chbdist:Q672-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q672-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q672.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q672-ttl
+chbdist:Q672-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q672, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q672.ttl> ;
+    dcat:downloadURL chbdata:Q672.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q672
+chb:Q672
     a wikibase:Item ;
     schema:description "The goal of idaifieldR is to flexibly get data from the idaifield database into R."@en ;
     schema:name "idaifieldR"@en ;
@@ -80,135 +81,135 @@ wd:Q672
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "idaifieldR"@en ;
     skos:prefLabel "idaifieldR"@en ;
-    p:P2 wds:Q672-3F85A97F-D17D-5BFA-974E-3F2E58EA4C6C,
-        wds:Q672-49CD8082-3AC6-545E-9339-C376D3356C95 ;
-    p:P106 wds:Q672-AE9BFBDD-1DB1-52FD-996A-2CAEDA57086D ;
-    p:P113 wds:Q672-0A4DFA56-F07E-543B-8C40-B860C6E91839 ;
-    p:P115 wds:Q672-73EBAFFF-48B7-5AFF-9EAA-6B6519E7A917 ;
-    p:P116 wds:Q672-762721C6-DB94-5DD8-AA98-DD25D9A00DDA ;
-    p:P117 wds:Q672-0D02460A-3898-5B05-B9CE-5969B03535F0 ;
-    p:P118 wds:Q672-2D3966B8-5D40-5C5A-AFCD-5F7759788FA3 ;
-    p:P119 wds:Q672-FCF75111-18D8-5817-A2E1-A336DD8CB806 ;
-    p:P122 wds:Q672-4FF3E99D-68BB-548C-997F-FC34EDC1CD4B,
-        wds:Q672-4405563D-9B9B-520C-BF55-F20BA02C754D ;
-    p:P123 wds:Q672-209F1BD9-4AD8-51D6-A70F-3EDBF6105B4D ;
-    p:P125 wds:Q672-BB72F145-6E64-5536-884F-6EBBE7C0D98C ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q494 ;
-    wdt:P115 <https://open-archaeo.info/post/idaifieldr/> ;
-    wdt:P116 "idaifieldr" ;
-    wdt:P117 wd:Q157 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "idaifieldR"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/lsteinmann/idaifieldR> .
+    chbp:P2 chbs:Q672-3F85A97F-D17D-5BFA-974E-3F2E58EA4C6C,
+        chbs:Q672-49CD8082-3AC6-545E-9339-C376D3356C95 ;
+    chbp:P106 chbs:Q672-AE9BFBDD-1DB1-52FD-996A-2CAEDA57086D ;
+    chbp:P113 chbs:Q672-0A4DFA56-F07E-543B-8C40-B860C6E91839 ;
+    chbp:P115 chbs:Q672-73EBAFFF-48B7-5AFF-9EAA-6B6519E7A917 ;
+    chbp:P116 chbs:Q672-762721C6-DB94-5DD8-AA98-DD25D9A00DDA ;
+    chbp:P117 chbs:Q672-0D02460A-3898-5B05-B9CE-5969B03535F0 ;
+    chbp:P118 chbs:Q672-2D3966B8-5D40-5C5A-AFCD-5F7759788FA3 ;
+    chbp:P119 chbs:Q672-FCF75111-18D8-5817-A2E1-A336DD8CB806 ;
+    chbp:P122 chbs:Q672-4FF3E99D-68BB-548C-997F-FC34EDC1CD4B,
+        chbs:Q672-4405563D-9B9B-520C-BF55-F20BA02C754D ;
+    chbp:P123 chbs:Q672-209F1BD9-4AD8-51D6-A70F-3EDBF6105B4D ;
+    chbp:P125 chbs:Q672-BB72F145-6E64-5536-884F-6EBBE7C0D98C ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q494 ;
+    chbt:P115 <https://open-archaeo.info/post/idaifieldr/> ;
+    chbt:P116 "idaifieldr" ;
+    chbt:P117 chb:Q157 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "idaifieldR"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/lsteinmann/idaifieldR> .
 
-wds:Q672-0A4DFA56-F07E-543B-8C40-B860C6E91839
+chbs:Q672-0A4DFA56-F07E-543B-8C40-B860C6E91839
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q494 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q494 .
 
-wds:Q672-0D02460A-3898-5B05-B9CE-5969B03535F0
+chbs:Q672-0D02460A-3898-5B05-B9CE-5969B03535F0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P117 wd:Q157 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P117 chb:Q157 .
 
-wds:Q672-2D3966B8-5D40-5C5A-AFCD-5F7759788FA3
+chbs:Q672-2D3966B8-5D40-5C5A-AFCD-5F7759788FA3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q672-3F85A97F-D17D-5BFA-974E-3F2E58EA4C6C
+chbs:Q672-3F85A97F-D17D-5BFA-974E-3F2E58EA4C6C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q672-4FF3E99D-68BB-548C-997F-FC34EDC1CD4B
+chbs:Q672-4FF3E99D-68BB-548C-997F-FC34EDC1CD4B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q672-49CD8082-3AC6-545E-9339-C376D3356C95
+chbs:Q672-49CD8082-3AC6-545E-9339-C376D3356C95
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q672-73EBAFFF-48B7-5AFF-9EAA-6B6519E7A917
+chbs:Q672-73EBAFFF-48B7-5AFF-9EAA-6B6519E7A917
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P115 <https://open-archaeo.info/post/idaifieldr/> .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P115 <https://open-archaeo.info/post/idaifieldr/> .
 
-wds:Q672-209F1BD9-4AD8-51D6-A70F-3EDBF6105B4D
+chbs:Q672-209F1BD9-4AD8-51D6-A70F-3EDBF6105B4D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q672-762721C6-DB94-5DD8-AA98-DD25D9A00DDA
+chbs:Q672-762721C6-DB94-5DD8-AA98-DD25D9A00DDA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "idaifieldr" .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "idaifieldr" .
 
-wds:Q672-4405563D-9B9B-520C-BF55-F20BA02C754D
+chbs:Q672-4405563D-9B9B-520C-BF55-F20BA02C754D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q672-AE9BFBDD-1DB1-52FD-996A-2CAEDA57086D
+chbs:Q672-AE9BFBDD-1DB1-52FD-996A-2CAEDA57086D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q672-BB72F145-6E64-5536-884F-6EBBE7C0D98C
+chbs:Q672-BB72F145-6E64-5536-884F-6EBBE7C0D98C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    pq:P104 "2021-04-13T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-lsteinmann-idaifieldR_-_2021-04-13_16-34-48> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:1421d117c413da569dadcedbf716ebd8 ;
-    ps:P125 <https://github.com/lsteinmann/idaifieldR> .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbpq:P104 "2021-04-13T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-lsteinmann-idaifieldR_-_2021-04-13_16-34-48> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:1421d117c413da569dadcedbf716ebd8 ;
+    chbps:P125 <https://github.com/lsteinmann/idaifieldR> .
 
-wds:Q672-FCF75111-18D8-5817-A2E1-A336DD8CB806
+chbs:Q672-FCF75111-18D8-5817-A2E1-A336DD8CB806
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
-    ps:P119 "idaifieldR"@en .
+    prov:wasDerivedFrom chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462 ;
+    chbps:P119 "idaifieldR"@en .
 
-wdref:9f059e4cc5d1cf30cd1f9974f43d23046b567462
+chbref:9f059e4cc5d1cf30cd1f9974f43d23046b567462
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/idaifieldr/> .
+    chbpr:P6 <https://open-archaeo.info/post/idaifieldr/> .
 
-wdv:1421d117c413da569dadcedbf716ebd8
+chbv:1421d117c413da569dadcedbf716ebd8
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

@@ -1,53 +1,54 @@
 # Q799: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q799
+chbdata:Q799.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The archaeolines plugin displays any combination of declination arcs most relevant to archaeo- or ethnoastronomical studies."@en ;
     dcterms:identifier "Q799" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q799 ;
+    dcterms:subject chb:Q799 ;
     dcterms:title "ArchaeoLines"@en ;
-    schema:about wd:Q799 ;
-    dcat:distribution dist:Q799-html,
-        dist:Q799-json,
-        dist:Q799-ttl ;
+    schema:about chb:Q799 ;
+    dcat:distribution chbdist:Q799-html,
+        chbdist:Q799-json,
+        chbdist:Q799-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q799.html> .
 
-dist:Q799-html
+chbdist:Q799-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q799-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q799.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q799-json
+chbdist:Q799-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q799-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q799.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q799-ttl
+chbdist:Q799-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q799, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q799.ttl> ;
+    dcat:downloadURL chbdata:Q799.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q799
+chb:Q799
     a wikibase:Item ;
     schema:description "The archaeolines plugin displays any combination of declination arcs most relevant to archaeo- or ethnoastronomical studies."@en ;
     schema:name "ArchaeoLines"@en ;
@@ -80,154 +81,154 @@ wd:Q799
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "ArchaeoLines"@en ;
     skos:prefLabel "ArchaeoLines"@en ;
-    p:P2 wds:Q799-EBC5E3DF-B908-590B-961D-58E904295DE1,
-        wds:Q799-EE242208-195C-5F05-BFBB-245B85497517 ;
-    p:P106 wds:Q799-3D77645A-490B-545A-AED1-1AFC7A32DAE3 ;
-    p:P109 wds:Q799-F735B0EE-6B05-575F-AD6C-75D7959B7AA6 ;
-    p:P113 wds:Q799-FFBD8C8F-1E74-5F73-9BDD-5E0E26FBEC88 ;
-    p:P115 wds:Q799-553F5E99-73AE-5834-AF1D-9037175FAE32 ;
-    p:P116 wds:Q799-BD9BF1D6-959C-5746-9DD8-6DAE324A9CF0 ;
-    p:P117 wds:Q799-8A9C91EE-1B6F-5247-B7E2-678F83A60EA9,
-        wds:Q799-1705585F-394F-5DB4-89EC-5F7CA6D1DFC7,
-        wds:Q799-9100744A-A2AE-5DDA-85DA-9CDBBD1C2B01 ;
-    p:P118 wds:Q799-9701CCE0-9D86-52F3-B539-24CC47499EAF ;
-    p:P119 wds:Q799-08FCAB15-7F7D-55B6-9EE3-0C18193D4FE4 ;
-    p:P120 wds:Q799-716ADC81-DD8F-5821-9B97-7D0ADD6CCCF1 ;
-    p:P122 wds:Q799-7D53F3FB-B9E4-55EB-B2AA-6F1DE283BF3B,
-        wds:Q799-00569143-331F-559A-86B0-9ECFB6032C70 ;
-    p:P125 wds:Q799-A95D4C0C-3AEF-54F0-B01E-FDA4BE095BF4 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P109 wd:Q800 ;
-    wdt:P113 wd:Q801 ;
-    wdt:P115 <https://open-archaeo.info/post/archaeolines/> ;
-    wdt:P116 "archaeolines" ;
-    wdt:P117 wd:Q119,
-        wd:Q123,
-        wd:Q259 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ArchaeoLines"@en ;
-    wdt:P120 <http://stellarium.sourceforge.net/wiki/index.php/ArchaeoLines_plugin> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/Stellarium/stellarium/tree/master/plugins/ArchaeoLines> .
+    chbp:P2 chbs:Q799-EBC5E3DF-B908-590B-961D-58E904295DE1,
+        chbs:Q799-EE242208-195C-5F05-BFBB-245B85497517 ;
+    chbp:P106 chbs:Q799-3D77645A-490B-545A-AED1-1AFC7A32DAE3 ;
+    chbp:P109 chbs:Q799-F735B0EE-6B05-575F-AD6C-75D7959B7AA6 ;
+    chbp:P113 chbs:Q799-FFBD8C8F-1E74-5F73-9BDD-5E0E26FBEC88 ;
+    chbp:P115 chbs:Q799-553F5E99-73AE-5834-AF1D-9037175FAE32 ;
+    chbp:P116 chbs:Q799-BD9BF1D6-959C-5746-9DD8-6DAE324A9CF0 ;
+    chbp:P117 chbs:Q799-8A9C91EE-1B6F-5247-B7E2-678F83A60EA9,
+        chbs:Q799-1705585F-394F-5DB4-89EC-5F7CA6D1DFC7,
+        chbs:Q799-9100744A-A2AE-5DDA-85DA-9CDBBD1C2B01 ;
+    chbp:P118 chbs:Q799-9701CCE0-9D86-52F3-B539-24CC47499EAF ;
+    chbp:P119 chbs:Q799-08FCAB15-7F7D-55B6-9EE3-0C18193D4FE4 ;
+    chbp:P120 chbs:Q799-716ADC81-DD8F-5821-9B97-7D0ADD6CCCF1 ;
+    chbp:P122 chbs:Q799-7D53F3FB-B9E4-55EB-B2AA-6F1DE283BF3B,
+        chbs:Q799-00569143-331F-559A-86B0-9ECFB6032C70 ;
+    chbp:P125 chbs:Q799-A95D4C0C-3AEF-54F0-B01E-FDA4BE095BF4 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P109 chb:Q800 ;
+    chbt:P113 chb:Q801 ;
+    chbt:P115 <https://open-archaeo.info/post/archaeolines/> ;
+    chbt:P116 "archaeolines" ;
+    chbt:P117 chb:Q119,
+        chb:Q123,
+        chb:Q259 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ArchaeoLines"@en ;
+    chbt:P120 <http://stellarium.sourceforge.net/wiki/index.php/ArchaeoLines_plugin> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/Stellarium/stellarium/tree/master/plugins/ArchaeoLines> .
 
-wds:Q799-3D77645A-490B-545A-AED1-1AFC7A32DAE3
+chbs:Q799-3D77645A-490B-545A-AED1-1AFC7A32DAE3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q799-7D53F3FB-B9E4-55EB-B2AA-6F1DE283BF3B
+chbs:Q799-7D53F3FB-B9E4-55EB-B2AA-6F1DE283BF3B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q799-8A9C91EE-1B6F-5247-B7E2-678F83A60EA9
+chbs:Q799-8A9C91EE-1B6F-5247-B7E2-678F83A60EA9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P117 chb:Q119 .
 
-wds:Q799-08FCAB15-7F7D-55B6-9EE3-0C18193D4FE4
+chbs:Q799-08FCAB15-7F7D-55B6-9EE3-0C18193D4FE4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P119 "ArchaeoLines"@en .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P119 "ArchaeoLines"@en .
 
-wds:Q799-553F5E99-73AE-5834-AF1D-9037175FAE32
+chbs:Q799-553F5E99-73AE-5834-AF1D-9037175FAE32
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P115 <https://open-archaeo.info/post/archaeolines/> .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P115 <https://open-archaeo.info/post/archaeolines/> .
 
-wds:Q799-716ADC81-DD8F-5821-9B97-7D0ADD6CCCF1
+chbs:Q799-716ADC81-DD8F-5821-9B97-7D0ADD6CCCF1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P120 <http://stellarium.sourceforge.net/wiki/index.php/ArchaeoLines_plugin> .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P120 <http://stellarium.sourceforge.net/wiki/index.php/ArchaeoLines_plugin> .
 
-wds:Q799-9701CCE0-9D86-52F3-B539-24CC47499EAF
+chbs:Q799-9701CCE0-9D86-52F3-B539-24CC47499EAF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q799-00569143-331F-559A-86B0-9ECFB6032C70
+chbs:Q799-00569143-331F-559A-86B0-9ECFB6032C70
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q799-1705585F-394F-5DB4-89EC-5F7CA6D1DFC7
+chbs:Q799-1705585F-394F-5DB4-89EC-5F7CA6D1DFC7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P117 wd:Q123 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P117 chb:Q123 .
 
-wds:Q799-9100744A-A2AE-5DDA-85DA-9CDBBD1C2B01
+chbs:Q799-9100744A-A2AE-5DDA-85DA-9CDBBD1C2B01
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P117 wd:Q259 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P117 chb:Q259 .
 
-wds:Q799-A95D4C0C-3AEF-54F0-B01E-FDA4BE095BF4
+chbs:Q799-A95D4C0C-3AEF-54F0-B01E-FDA4BE095BF4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/Stellarium/stellarium/tree/master/plugins/ArchaeoLines> .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/Stellarium/stellarium/tree/master/plugins/ArchaeoLines> .
 
-wds:Q799-BD9BF1D6-959C-5746-9DD8-6DAE324A9CF0
+chbs:Q799-BD9BF1D6-959C-5746-9DD8-6DAE324A9CF0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "archaeolines" .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "archaeolines" .
 
-wds:Q799-EBC5E3DF-B908-590B-961D-58E904295DE1
+chbs:Q799-EBC5E3DF-B908-590B-961D-58E904295DE1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q799-EE242208-195C-5F05-BFBB-245B85497517
+chbs:Q799-EE242208-195C-5F05-BFBB-245B85497517
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q799-F735B0EE-6B05-575F-AD6C-75D7959B7AA6
+chbs:Q799-F735B0EE-6B05-575F-AD6C-75D7959B7AA6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    ps:P109 wd:Q800 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbps:P109 chb:Q800 .
 
-wds:Q799-FFBD8C8F-1E74-5F73-9BDD-5E0E26FBEC88
+chbs:Q799-FFBD8C8F-1E74-5F73-9BDD-5E0E26FBEC88
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q801 .
+    prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q801 .
 
-wdref:ba6b9d3a3edc71dacada18f6516980777f5a4723
+chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/archaeolines/> .
+    chbpr:P6 <https://open-archaeo.info/post/archaeolines/> .

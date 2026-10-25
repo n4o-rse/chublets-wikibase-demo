@@ -1,53 +1,54 @@
 # Q432: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q432
+chbdata:Q432.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A database interface designed to facilitate the irregular, iterative, and non-linear workflows that are commonly employed in lithic analysis."@en ;
     dcterms:identifier "Q432" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q432 ;
+    dcterms:subject chb:Q432 ;
     dcterms:title "QuARI"@en ;
-    schema:about wd:Q432 ;
-    dcat:distribution dist:Q432-html,
-        dist:Q432-json,
-        dist:Q432-ttl ;
+    schema:about chb:Q432 ;
+    dcat:distribution chbdist:Q432-html,
+        chbdist:Q432-json,
+        chbdist:Q432-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q432.html> .
 
-dist:Q432-html
+chbdist:Q432-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q432-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q432.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q432-json
+chbdist:Q432-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q432-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q432.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q432-ttl
+chbdist:Q432-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q432, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q432.ttl> ;
+    dcat:downloadURL chbdata:Q432.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q432
+chb:Q432
     a wikibase:Item ;
     schema:description "A database interface designed to facilitate the irregular, iterative, and non-linear workflows that are commonly employed in lithic analysis."@en ;
     schema:name "QuARI"@en ;
@@ -80,173 +81,173 @@ wd:Q432
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "QuARI"@en ;
     skos:prefLabel "QuARI"@en ;
-    p:P2 wds:Q432-AC01CB27-FB3F-53A0-81F4-C573B3E68EEF,
-        wds:Q432-F3E3B0A3-6B9F-5922-A660-FA76BC807EF1 ;
-    p:P106 wds:Q432-5C2CED27-D1B6-5894-85CA-F678C30F773E ;
-    p:P113 wds:Q432-4BA7EB15-5027-5437-BF4B-1873847606B7,
-        wds:Q432-589ECA74-3397-562F-AAD9-62D1635DA28C,
-        wds:Q432-686AE598-B228-52C6-82C5-D84EF5F0467C ;
-    p:P114 wds:Q432-A04CB248-2A6B-51BE-BEB3-9F96946B548D ;
-    p:P115 wds:Q432-9EEB48E6-0ED8-5E46-A2C7-863FD0A20B8C ;
-    p:P116 wds:Q432-C4BBD615-B7CB-5AD3-A05F-87743789EBE9 ;
-    p:P117 wds:Q432-3D81922F-8436-56F0-909C-6E28C19D3F94,
-        wds:Q432-E0505D11-C576-5CC3-AD5F-06060E763327 ;
-    p:P118 wds:Q432-10C632EF-2931-5187-ACDB-D21AE1879C76 ;
-    p:P119 wds:Q432-7610792F-B415-5679-94A3-657F54D1343C ;
-    p:P122 wds:Q432-469211C7-02F8-509B-A9BF-7F9D826429A3,
-        wds:Q432-BD706028-6AF5-5F43-998F-6379A097965C ;
-    p:P123 wds:Q432-73DF3D11-112E-5D16-96C6-7EC23668BF18 ;
-    p:P125 wds:Q432-699790D1-592D-5926-B3C6-766F246E70E8 ;
-    wdt:P2 wd:Q104,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q434,
-        wd:Q435,
-        wd:Q436 ;
-    wdt:P114 "10.1017/aap.2021.11" ;
-    wdt:P115 <https://open-archaeo.info/post/quari/> ;
-    wdt:P116 "quari" ;
-    wdt:P117 wd:Q329,
-        wd:Q433 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "QuARI"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/zackbatist/QuARI> .
+    chbp:P2 chbs:Q432-AC01CB27-FB3F-53A0-81F4-C573B3E68EEF,
+        chbs:Q432-F3E3B0A3-6B9F-5922-A660-FA76BC807EF1 ;
+    chbp:P106 chbs:Q432-5C2CED27-D1B6-5894-85CA-F678C30F773E ;
+    chbp:P113 chbs:Q432-4BA7EB15-5027-5437-BF4B-1873847606B7,
+        chbs:Q432-589ECA74-3397-562F-AAD9-62D1635DA28C,
+        chbs:Q432-686AE598-B228-52C6-82C5-D84EF5F0467C ;
+    chbp:P114 chbs:Q432-A04CB248-2A6B-51BE-BEB3-9F96946B548D ;
+    chbp:P115 chbs:Q432-9EEB48E6-0ED8-5E46-A2C7-863FD0A20B8C ;
+    chbp:P116 chbs:Q432-C4BBD615-B7CB-5AD3-A05F-87743789EBE9 ;
+    chbp:P117 chbs:Q432-3D81922F-8436-56F0-909C-6E28C19D3F94,
+        chbs:Q432-E0505D11-C576-5CC3-AD5F-06060E763327 ;
+    chbp:P118 chbs:Q432-10C632EF-2931-5187-ACDB-D21AE1879C76 ;
+    chbp:P119 chbs:Q432-7610792F-B415-5679-94A3-657F54D1343C ;
+    chbp:P122 chbs:Q432-469211C7-02F8-509B-A9BF-7F9D826429A3,
+        chbs:Q432-BD706028-6AF5-5F43-998F-6379A097965C ;
+    chbp:P123 chbs:Q432-73DF3D11-112E-5D16-96C6-7EC23668BF18 ;
+    chbp:P125 chbs:Q432-699790D1-592D-5926-B3C6-766F246E70E8 ;
+    chbt:P2 chb:Q104,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q434,
+        chb:Q435,
+        chb:Q436 ;
+    chbt:P114 "10.1017/aap.2021.11" ;
+    chbt:P115 <https://open-archaeo.info/post/quari/> ;
+    chbt:P116 "quari" ;
+    chbt:P117 chb:Q329,
+        chb:Q433 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "QuARI"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/zackbatist/QuARI> .
 
-wds:Q432-3D81922F-8436-56F0-909C-6E28C19D3F94
+chbs:Q432-3D81922F-8436-56F0-909C-6E28C19D3F94
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P117 wd:Q433 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P117 chb:Q433 .
 
-wds:Q432-4BA7EB15-5027-5437-BF4B-1873847606B7
+chbs:Q432-4BA7EB15-5027-5437-BF4B-1873847606B7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q435 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q435 .
 
-wds:Q432-5C2CED27-D1B6-5894-85CA-F678C30F773E
+chbs:Q432-5C2CED27-D1B6-5894-85CA-F678C30F773E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P106 chb:Q110 .
 
-wds:Q432-9EEB48E6-0ED8-5E46-A2C7-863FD0A20B8C
+chbs:Q432-9EEB48E6-0ED8-5E46-A2C7-863FD0A20B8C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P115 <https://open-archaeo.info/post/quari/> .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P115 <https://open-archaeo.info/post/quari/> .
 
-wds:Q432-10C632EF-2931-5187-ACDB-D21AE1879C76
+chbs:Q432-10C632EF-2931-5187-ACDB-D21AE1879C76
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P118 chb:Q108 .
 
-wds:Q432-73DF3D11-112E-5D16-96C6-7EC23668BF18
+chbs:Q432-73DF3D11-112E-5D16-96C6-7EC23668BF18
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P123 chb:Q111 .
 
-wds:Q432-589ECA74-3397-562F-AAD9-62D1635DA28C
+chbs:Q432-589ECA74-3397-562F-AAD9-62D1635DA28C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    pq:P146 "3" ;
-    ps:P113 wd:Q436 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbpq:P146 "3" ;
+    chbps:P113 chb:Q436 .
 
-wds:Q432-686AE598-B228-52C6-82C5-D84EF5F0467C
+chbs:Q432-686AE598-B228-52C6-82C5-D84EF5F0467C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q434 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q434 .
 
-wds:Q432-469211C7-02F8-509B-A9BF-7F9D826429A3
+chbs:Q432-469211C7-02F8-509B-A9BF-7F9D826429A3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P122 chb:Q110 .
 
-wds:Q432-699790D1-592D-5926-B3C6-766F246E70E8
+chbs:Q432-699790D1-592D-5926-B3C6-766F246E70E8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    pq:P104 "2021-01-29T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-zackbatist-QuARI_-_2021-01-29_14-34-38> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:c6bab285dd51867c62744909ab56dad3 ;
-    ps:P125 <https://github.com/zackbatist/QuARI> .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbpq:P104 "2021-01-29T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-zackbatist-QuARI_-_2021-01-29_14-34-38> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:c6bab285dd51867c62744909ab56dad3 ;
+    chbps:P125 <https://github.com/zackbatist/QuARI> .
 
-wds:Q432-7610792F-B415-5679-94A3-657F54D1343C
+chbs:Q432-7610792F-B415-5679-94A3-657F54D1343C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P119 "QuARI"@en .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P119 "QuARI"@en .
 
-wds:Q432-A04CB248-2A6B-51BE-BEB3-9F96946B548D
+chbs:Q432-A04CB248-2A6B-51BE-BEB3-9F96946B548D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P114 "10.1017/aap.2021.11" .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P114 "10.1017/aap.2021.11" .
 
-wds:Q432-AC01CB27-FB3F-53A0-81F4-C573B3E68EEF
+chbs:Q432-AC01CB27-FB3F-53A0-81F4-C573B3E68EEF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P2 chb:Q106 .
 
-wds:Q432-BD706028-6AF5-5F43-998F-6379A097965C
+chbs:Q432-BD706028-6AF5-5F43-998F-6379A097965C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P122 chb:Q109 .
 
-wds:Q432-C4BBD615-B7CB-5AD3-A05F-87743789EBE9
+chbs:Q432-C4BBD615-B7CB-5AD3-A05F-87743789EBE9
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "quari" .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "quari" .
 
-wds:Q432-E0505D11-C576-5CC3-AD5F-06060E763327
+chbs:Q432-E0505D11-C576-5CC3-AD5F-06060E763327
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P117 wd:Q329 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P117 chb:Q329 .
 
-wds:Q432-F3E3B0A3-6B9F-5922-A660-FA76BC807EF1
+chbs:Q432-F3E3B0A3-6B9F-5922-A660-FA76BC807EF1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
-    ps:P2 wd:Q104 .
+    prov:wasDerivedFrom chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d ;
+    chbps:P2 chb:Q104 .
 
-wdref:bb8af04185efce87e2294dd197c8ab8f640f3d8d
+chbref:bb8af04185efce87e2294dd197c8ab8f640f3d8d
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/quari/> .
+    chbpr:P6 <https://open-archaeo.info/post/quari/> .
 
-wdv:c6bab285dd51867c62744909ab56dad3
+chbv:c6bab285dd51867c62744909ab56dad3
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

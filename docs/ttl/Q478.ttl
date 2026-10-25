@@ -1,53 +1,54 @@
 # Q478: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q478
+chbdata:Q478.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A simple gui app to simplify scanning single context plans."@en ;
     dcterms:identifier "Q478" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q478 ;
+    dcterms:subject chb:Q478 ;
     dcterms:title "ArkScan"@en ;
-    schema:about wd:Q478 ;
-    dcat:distribution dist:Q478-html,
-        dist:Q478-json,
-        dist:Q478-ttl ;
+    schema:about chb:Q478 ;
+    dcat:distribution chbdist:Q478-html,
+        chbdist:Q478-json,
+        chbdist:Q478-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q478.html> .
 
-dist:Q478-html
+chbdist:Q478-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q478-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q478.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q478-json
+chbdist:Q478-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q478-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q478.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q478-ttl
+chbdist:Q478-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q478, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q478.ttl> ;
+    dcat:downloadURL chbdata:Q478.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q478
+chb:Q478
     a wikibase:Item ;
     schema:description "A simple gui app to simplify scanning single context plans."@en ;
     schema:name "ArkScan"@en ;
@@ -80,126 +81,126 @@ wd:Q478
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "ArkScan"@en ;
     skos:prefLabel "ArkScan"@en ;
-    p:P2 wds:Q478-3BED7A08-A470-5321-8AC5-4C28032729B6,
-        wds:Q478-A9CC0734-026B-568C-A26E-BC0022A0050A ;
-    p:P106 wds:Q478-EBF41E26-EA81-578E-9D70-8E23138BE318 ;
-    p:P113 wds:Q478-F8683AB9-F284-5CF8-BBD7-95E060DBF027 ;
-    p:P115 wds:Q478-0929B19B-F423-511B-924C-400369B5DB3C ;
-    p:P116 wds:Q478-8A3F2B0B-EECB-57C2-89FC-BAB534522662 ;
-    p:P117 wds:Q478-6BA0F6BD-D5E6-5176-8ED3-F11055186631 ;
-    p:P118 wds:Q478-C88C6E45-07D6-5CCB-AFF8-9E1B8D68816B ;
-    p:P119 wds:Q478-884CB1BC-EBA7-51BE-8615-AABC7979440A ;
-    p:P122 wds:Q478-4A1FF623-CEA6-507C-983A-CFDE44A2F114,
-        wds:Q478-15828302-1C0F-5678-8EC6-130B46C9650F ;
-    p:P125 wds:Q478-625EE3D4-E638-5AE7-9FB4-E9E8A064ED30 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q137 ;
-    wdt:P115 <https://open-archaeo.info/post/arkscan/> ;
-    wdt:P116 "arkscan" ;
-    wdt:P117 wd:Q136 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "ArkScan"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/lparchaeology/ArkScan> .
+    chbp:P2 chbs:Q478-3BED7A08-A470-5321-8AC5-4C28032729B6,
+        chbs:Q478-A9CC0734-026B-568C-A26E-BC0022A0050A ;
+    chbp:P106 chbs:Q478-EBF41E26-EA81-578E-9D70-8E23138BE318 ;
+    chbp:P113 chbs:Q478-F8683AB9-F284-5CF8-BBD7-95E060DBF027 ;
+    chbp:P115 chbs:Q478-0929B19B-F423-511B-924C-400369B5DB3C ;
+    chbp:P116 chbs:Q478-8A3F2B0B-EECB-57C2-89FC-BAB534522662 ;
+    chbp:P117 chbs:Q478-6BA0F6BD-D5E6-5176-8ED3-F11055186631 ;
+    chbp:P118 chbs:Q478-C88C6E45-07D6-5CCB-AFF8-9E1B8D68816B ;
+    chbp:P119 chbs:Q478-884CB1BC-EBA7-51BE-8615-AABC7979440A ;
+    chbp:P122 chbs:Q478-4A1FF623-CEA6-507C-983A-CFDE44A2F114,
+        chbs:Q478-15828302-1C0F-5678-8EC6-130B46C9650F ;
+    chbp:P125 chbs:Q478-625EE3D4-E638-5AE7-9FB4-E9E8A064ED30 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q137 ;
+    chbt:P115 <https://open-archaeo.info/post/arkscan/> ;
+    chbt:P116 "arkscan" ;
+    chbt:P117 chb:Q136 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "ArkScan"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/lparchaeology/ArkScan> .
 
-wds:Q478-3BED7A08-A470-5321-8AC5-4C28032729B6
+chbs:Q478-3BED7A08-A470-5321-8AC5-4C28032729B6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q478-4A1FF623-CEA6-507C-983A-CFDE44A2F114
+chbs:Q478-4A1FF623-CEA6-507C-983A-CFDE44A2F114
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q478-6BA0F6BD-D5E6-5176-8ED3-F11055186631
+chbs:Q478-6BA0F6BD-D5E6-5176-8ED3-F11055186631
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q478-8A3F2B0B-EECB-57C2-89FC-BAB534522662
+chbs:Q478-8A3F2B0B-EECB-57C2-89FC-BAB534522662
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "arkscan" .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "arkscan" .
 
-wds:Q478-625EE3D4-E638-5AE7-9FB4-E9E8A064ED30
+chbs:Q478-625EE3D4-E638-5AE7-9FB4-E9E8A064ED30
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    pq:P104 "2015-07-28T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-lparchaeology-ArkScan_-_2015-07-28_08-06-46> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:686fb2f4f1c6e85f330786b03bc8dce8 ;
-    ps:P125 <https://github.com/lparchaeology/ArkScan> .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbpq:P104 "2015-07-28T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-lparchaeology-ArkScan_-_2015-07-28_08-06-46> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:686fb2f4f1c6e85f330786b03bc8dce8 ;
+    chbps:P125 <https://github.com/lparchaeology/ArkScan> .
 
-wds:Q478-884CB1BC-EBA7-51BE-8615-AABC7979440A
+chbs:Q478-884CB1BC-EBA7-51BE-8615-AABC7979440A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P119 "ArkScan"@en .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P119 "ArkScan"@en .
 
-wds:Q478-0929B19B-F423-511B-924C-400369B5DB3C
+chbs:Q478-0929B19B-F423-511B-924C-400369B5DB3C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P115 <https://open-archaeo.info/post/arkscan/> .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P115 <https://open-archaeo.info/post/arkscan/> .
 
-wds:Q478-15828302-1C0F-5678-8EC6-130B46C9650F
+chbs:Q478-15828302-1C0F-5678-8EC6-130B46C9650F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q478-A9CC0734-026B-568C-A26E-BC0022A0050A
+chbs:Q478-A9CC0734-026B-568C-A26E-BC0022A0050A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q478-C88C6E45-07D6-5CCB-AFF8-9E1B8D68816B
+chbs:Q478-C88C6E45-07D6-5CCB-AFF8-9E1B8D68816B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q478-EBF41E26-EA81-578E-9D70-8E23138BE318
+chbs:Q478-EBF41E26-EA81-578E-9D70-8E23138BE318
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q478-F8683AB9-F284-5CF8-BBD7-95E060DBF027
+chbs:Q478-F8683AB9-F284-5CF8-BBD7-95E060DBF027
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q137 .
+    prov:wasDerivedFrom chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q137 .
 
-wdref:90b5c8e7b54ab0e0dcfc659793802e583e16f402
+chbref:90b5c8e7b54ab0e0dcfc659793802e583e16f402
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/arkscan/> .
+    chbpr:P6 <https://open-archaeo.info/post/arkscan/> .
 
-wdv:686fb2f4f1c6e85f330786b03bc8dce8
+chbv:686fb2f4f1c6e85f330786b03bc8dce8
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

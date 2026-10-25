@@ -1,53 +1,54 @@
 # Q700: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q700
+chbdata:Q700.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Analysis of spatial gradients in radiocarbon dates."@en ;
     dcterms:identifier "Q700" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q700 ;
+    dcterms:subject chb:Q700 ;
     dcterms:title "spDates"@en ;
-    schema:about wd:Q700 ;
-    dcat:distribution dist:Q700-html,
-        dist:Q700-json,
-        dist:Q700-ttl ;
+    schema:about chb:Q700 ;
+    dcat:distribution chbdist:Q700-html,
+        chbdist:Q700-json,
+        chbdist:Q700-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q700.html> .
 
-dist:Q700-html
+chbdist:Q700-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q700-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q700.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q700-json
+chbdist:Q700-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q700-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q700.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q700-ttl
+chbdist:Q700-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q700, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q700.ttl> ;
+    dcat:downloadURL chbdata:Q700.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q700
+chb:Q700
     a wikibase:Item ;
     schema:description "Analysis of spatial gradients in radiocarbon dates."@en ;
     schema:name "spDates"@en ;
@@ -80,153 +81,153 @@ wd:Q700
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "spDates"@en ;
     skos:prefLabel "spDates"@en ;
-    p:P2 wds:Q700-C56C5713-0A2E-5EE5-9BAC-24962B13D583,
-        wds:Q700-FAE1314D-35F3-5E36-8078-281B2CC6E1FA ;
-    p:P106 wds:Q700-0C87C0EF-FC67-5C3D-A302-4CC9B1ABF082 ;
-    p:P113 wds:Q700-0FBE87BC-FDED-5269-8E7A-34A6C663A3F2 ;
-    p:P115 wds:Q700-835E6D02-E927-503E-83C4-7F787D121DE4 ;
-    p:P116 wds:Q700-6002A4A8-CE87-51DC-B692-CD0A634EF5C2 ;
-    p:P117 wds:Q700-A4AF4AD2-0E6D-5B07-9769-F8EC39F44CAA,
-        wds:Q700-DFEA5A20-A4A2-57A5-9306-374D29EFBAD3,
-        wds:Q700-EF20B302-B61C-5DBF-BC0A-F84217C014EF ;
-    p:P118 wds:Q700-0844CD30-2FD2-5DB0-8BA4-C19313878B75 ;
-    p:P119 wds:Q700-A340601E-C68F-515A-8BA7-F826623BF0B4 ;
-    p:P122 wds:Q700-57EBA0F5-2A7F-55D6-8EDA-EF3E5DC5A7B3,
-        wds:Q700-DF13497E-B0B9-5788-AB46-0B896BD32BA0 ;
-    p:P123 wds:Q700-90F51035-53E1-5C97-B013-5FDD5CC66AA7 ;
-    p:P125 wds:Q700-0E6C43E8-6EC2-5EAA-9A65-4C5EA0BB75B2 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q127 ;
-    wdt:P115 <https://open-archaeo.info/post/spdates/> ;
-    wdt:P116 "spdates" ;
-    wdt:P117 wd:Q116,
-        wd:Q119,
-        wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "spDates"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/jgregoriods/spDates> .
+    chbp:P2 chbs:Q700-C56C5713-0A2E-5EE5-9BAC-24962B13D583,
+        chbs:Q700-FAE1314D-35F3-5E36-8078-281B2CC6E1FA ;
+    chbp:P106 chbs:Q700-0C87C0EF-FC67-5C3D-A302-4CC9B1ABF082 ;
+    chbp:P113 chbs:Q700-0FBE87BC-FDED-5269-8E7A-34A6C663A3F2 ;
+    chbp:P115 chbs:Q700-835E6D02-E927-503E-83C4-7F787D121DE4 ;
+    chbp:P116 chbs:Q700-6002A4A8-CE87-51DC-B692-CD0A634EF5C2 ;
+    chbp:P117 chbs:Q700-A4AF4AD2-0E6D-5B07-9769-F8EC39F44CAA,
+        chbs:Q700-DFEA5A20-A4A2-57A5-9306-374D29EFBAD3,
+        chbs:Q700-EF20B302-B61C-5DBF-BC0A-F84217C014EF ;
+    chbp:P118 chbs:Q700-0844CD30-2FD2-5DB0-8BA4-C19313878B75 ;
+    chbp:P119 chbs:Q700-A340601E-C68F-515A-8BA7-F826623BF0B4 ;
+    chbp:P122 chbs:Q700-57EBA0F5-2A7F-55D6-8EDA-EF3E5DC5A7B3,
+        chbs:Q700-DF13497E-B0B9-5788-AB46-0B896BD32BA0 ;
+    chbp:P123 chbs:Q700-90F51035-53E1-5C97-B013-5FDD5CC66AA7 ;
+    chbp:P125 chbs:Q700-0E6C43E8-6EC2-5EAA-9A65-4C5EA0BB75B2 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q127 ;
+    chbt:P115 <https://open-archaeo.info/post/spdates/> ;
+    chbt:P116 "spdates" ;
+    chbt:P117 chb:Q116,
+        chb:Q119,
+        chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "spDates"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/jgregoriods/spDates> .
 
-wds:Q700-0C87C0EF-FC67-5C3D-A302-4CC9B1ABF082
+chbs:Q700-0C87C0EF-FC67-5C3D-A302-4CC9B1ABF082
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q700-0E6C43E8-6EC2-5EAA-9A65-4C5EA0BB75B2
+chbs:Q700-0E6C43E8-6EC2-5EAA-9A65-4C5EA0BB75B2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    pq:P104 "2021-06-16T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-jgregoriods-spDates_-_2021-06-16_08-03-29> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:12975ea61eb3259f564c34a236c2c266 ;
-    ps:P125 <https://github.com/jgregoriods/spDates> .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbpq:P104 "2021-06-16T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-jgregoriods-spDates_-_2021-06-16_08-03-29> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:12975ea61eb3259f564c34a236c2c266 ;
+    chbps:P125 <https://github.com/jgregoriods/spDates> .
 
-wds:Q700-0FBE87BC-FDED-5269-8E7A-34A6C663A3F2
+chbs:Q700-0FBE87BC-FDED-5269-8E7A-34A6C663A3F2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q127 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q127 .
 
-wds:Q700-57EBA0F5-2A7F-55D6-8EDA-EF3E5DC5A7B3
+chbs:Q700-57EBA0F5-2A7F-55D6-8EDA-EF3E5DC5A7B3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q700-90F51035-53E1-5C97-B013-5FDD5CC66AA7
+chbs:Q700-90F51035-53E1-5C97-B013-5FDD5CC66AA7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q700-835E6D02-E927-503E-83C4-7F787D121DE4
+chbs:Q700-835E6D02-E927-503E-83C4-7F787D121DE4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P115 <https://open-archaeo.info/post/spdates/> .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P115 <https://open-archaeo.info/post/spdates/> .
 
-wds:Q700-0844CD30-2FD2-5DB0-8BA4-C19313878B75
+chbs:Q700-0844CD30-2FD2-5DB0-8BA4-C19313878B75
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q700-6002A4A8-CE87-51DC-B692-CD0A634EF5C2
+chbs:Q700-6002A4A8-CE87-51DC-B692-CD0A634EF5C2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "spdates" .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "spdates" .
 
-wds:Q700-A4AF4AD2-0E6D-5B07-9769-F8EC39F44CAA
+chbs:Q700-A4AF4AD2-0E6D-5B07-9769-F8EC39F44CAA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P117 chb:Q119 .
 
-wds:Q700-A340601E-C68F-515A-8BA7-F826623BF0B4
+chbs:Q700-A340601E-C68F-515A-8BA7-F826623BF0B4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P119 "spDates"@en .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P119 "spDates"@en .
 
-wds:Q700-C56C5713-0A2E-5EE5-9BAC-24962B13D583
+chbs:Q700-C56C5713-0A2E-5EE5-9BAC-24962B13D583
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q700-DF13497E-B0B9-5788-AB46-0B896BD32BA0
+chbs:Q700-DF13497E-B0B9-5788-AB46-0B896BD32BA0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q700-DFEA5A20-A4A2-57A5-9306-374D29EFBAD3
+chbs:Q700-DFEA5A20-A4A2-57A5-9306-374D29EFBAD3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P117 chb:Q116 .
 
-wds:Q700-EF20B302-B61C-5DBF-BC0A-F84217C014EF
+chbs:Q700-EF20B302-B61C-5DBF-BC0A-F84217C014EF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P117 chb:Q140 .
 
-wds:Q700-FAE1314D-35F3-5E36-8078-281B2CC6E1FA
+chbs:Q700-FAE1314D-35F3-5E36-8078-281B2CC6E1FA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:89e5366288f739663583cb46b0dcde32f13f83c6 ;
+    chbps:P2 chb:Q106 .
 
-wdref:89e5366288f739663583cb46b0dcde32f13f83c6
+chbref:89e5366288f739663583cb46b0dcde32f13f83c6
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/spdates/> .
+    chbpr:P6 <https://open-archaeo.info/post/spdates/> .
 
-wdv:12975ea61eb3259f564c34a236c2c266
+chbv:12975ea61eb3259f564c34a236c2c266
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

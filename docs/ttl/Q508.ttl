@@ -1,53 +1,54 @@
 # Q508: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q508
+chbdata:Q508.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Tools for cleaning rectangular data."@en ;
     dcterms:identifier "Q508" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q508 ;
+    dcterms:subject chb:Q508 ;
     dcterms:title "arkhe"@en ;
-    schema:about wd:Q508 ;
-    dcat:distribution dist:Q508-html,
-        dist:Q508-json,
-        dist:Q508-ttl ;
+    schema:about chb:Q508 ;
+    dcat:distribution chbdist:Q508-html,
+        chbdist:Q508-json,
+        chbdist:Q508-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q508.html> .
 
-dist:Q508-html
+chbdist:Q508-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q508-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q508.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q508-json
+chbdist:Q508-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q508-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q508.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q508-ttl
+chbdist:Q508-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q508, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q508.ttl> ;
+    dcat:downloadURL chbdata:Q508.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q508
+chb:Q508
     a wikibase:Item ;
     schema:description "Tools for cleaning rectangular data."@en ;
     schema:name "arkhe"@en ;
@@ -80,162 +81,162 @@ wd:Q508
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "arkhe"@en ;
     skos:prefLabel "arkhe"@en ;
-    p:P2 wds:Q508-3AA0548B-DBD4-5894-8D13-B15ABA4A47D2,
-        wds:Q508-6A29CE55-32DE-5B09-B98F-63CF9C668037 ;
-    p:P106 wds:Q508-D5537046-3DD0-5B0E-B6C4-CB33FDC6259D ;
-    p:P108 wds:Q508-0D6A55A1-A786-56FA-AF67-DBD88B7893FE ;
-    p:P113 wds:Q508-C975C94B-CE94-5D7F-B69F-E02018E48F50 ;
-    p:P114 wds:Q508-2CFCDD1C-9FBB-58FD-83A7-FA7EF1D4307E ;
-    p:P115 wds:Q508-6BFBA8BD-A9DB-5FFF-A4AA-F07A14B1DE10 ;
-    p:P116 wds:Q508-13281EC2-87B1-5166-AF00-4623A3720E9D ;
-    p:P117 wds:Q508-06BEC63A-387A-5057-8EB2-614C47D0D546 ;
-    p:P118 wds:Q508-7B33CE65-986B-5DE4-AA6D-FC124FB33765 ;
-    p:P119 wds:Q508-9868560D-4223-53CE-BD47-86E3BDD11CAA ;
-    p:P120 wds:Q508-AD039775-8290-5016-BCC8-CDF7F8E0EE87 ;
-    p:P122 wds:Q508-493A7E9D-56EE-530D-9731-5DC2F6D1895B,
-        wds:Q508-B75BA2D8-E678-5210-A89E-73F2DB878833 ;
-    p:P123 wds:Q508-7E56E7AE-1743-501E-959F-F4E03A01408C ;
-    p:P125 wds:Q508-F1CBB8EE-4120-58EF-AC5A-A5B1B525B516 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P108 "arkhe" ;
-    wdt:P113 wd:Q231 ;
-    wdt:P114 "10.5281/zenodo.3526659" ;
-    wdt:P115 <https://open-archaeo.info/post/arkhe/> ;
-    wdt:P116 "arkhe" ;
-    wdt:P117 wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "arkhe"@en ;
-    wdt:P120 <https://packages.tesselle.org/arkhe/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://codeberg.org/tesselle/arkhe> .
+    chbp:P2 chbs:Q508-3AA0548B-DBD4-5894-8D13-B15ABA4A47D2,
+        chbs:Q508-6A29CE55-32DE-5B09-B98F-63CF9C668037 ;
+    chbp:P106 chbs:Q508-D5537046-3DD0-5B0E-B6C4-CB33FDC6259D ;
+    chbp:P108 chbs:Q508-0D6A55A1-A786-56FA-AF67-DBD88B7893FE ;
+    chbp:P113 chbs:Q508-C975C94B-CE94-5D7F-B69F-E02018E48F50 ;
+    chbp:P114 chbs:Q508-2CFCDD1C-9FBB-58FD-83A7-FA7EF1D4307E ;
+    chbp:P115 chbs:Q508-6BFBA8BD-A9DB-5FFF-A4AA-F07A14B1DE10 ;
+    chbp:P116 chbs:Q508-13281EC2-87B1-5166-AF00-4623A3720E9D ;
+    chbp:P117 chbs:Q508-06BEC63A-387A-5057-8EB2-614C47D0D546 ;
+    chbp:P118 chbs:Q508-7B33CE65-986B-5DE4-AA6D-FC124FB33765 ;
+    chbp:P119 chbs:Q508-9868560D-4223-53CE-BD47-86E3BDD11CAA ;
+    chbp:P120 chbs:Q508-AD039775-8290-5016-BCC8-CDF7F8E0EE87 ;
+    chbp:P122 chbs:Q508-493A7E9D-56EE-530D-9731-5DC2F6D1895B,
+        chbs:Q508-B75BA2D8-E678-5210-A89E-73F2DB878833 ;
+    chbp:P123 chbs:Q508-7E56E7AE-1743-501E-959F-F4E03A01408C ;
+    chbp:P125 chbs:Q508-F1CBB8EE-4120-58EF-AC5A-A5B1B525B516 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P108 "arkhe" ;
+    chbt:P113 chb:Q231 ;
+    chbt:P114 "10.5281/zenodo.3526659" ;
+    chbt:P115 <https://open-archaeo.info/post/arkhe/> ;
+    chbt:P116 "arkhe" ;
+    chbt:P117 chb:Q193 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "arkhe"@en ;
+    chbt:P120 <https://packages.tesselle.org/arkhe/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://codeberg.org/tesselle/arkhe> .
 
-wds:Q508-0D6A55A1-A786-56FA-AF67-DBD88B7893FE
+chbs:Q508-0D6A55A1-A786-56FA-AF67-DBD88B7893FE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P108 "arkhe" .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P108 "arkhe" .
 
-wds:Q508-2CFCDD1C-9FBB-58FD-83A7-FA7EF1D4307E
+chbs:Q508-2CFCDD1C-9FBB-58FD-83A7-FA7EF1D4307E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P114 "10.5281/zenodo.3526659" .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P114 "10.5281/zenodo.3526659" .
 
-wds:Q508-3AA0548B-DBD4-5894-8D13-B15ABA4A47D2
+chbs:Q508-3AA0548B-DBD4-5894-8D13-B15ABA4A47D2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P2 chb:Q106 .
 
-wds:Q508-6A29CE55-32DE-5B09-B98F-63CF9C668037
+chbs:Q508-6A29CE55-32DE-5B09-B98F-63CF9C668037
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P2 chb:Q103 .
 
-wds:Q508-06BEC63A-387A-5057-8EB2-614C47D0D546
+chbs:Q508-06BEC63A-387A-5057-8EB2-614C47D0D546
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P117 chb:Q193 .
 
-wds:Q508-6BFBA8BD-A9DB-5FFF-A4AA-F07A14B1DE10
+chbs:Q508-6BFBA8BD-A9DB-5FFF-A4AA-F07A14B1DE10
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P115 <https://open-archaeo.info/post/arkhe/> .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P115 <https://open-archaeo.info/post/arkhe/> .
 
-wds:Q508-7B33CE65-986B-5DE4-AA6D-FC124FB33765
+chbs:Q508-7B33CE65-986B-5DE4-AA6D-FC124FB33765
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P118 chb:Q108 .
 
-wds:Q508-7E56E7AE-1743-501E-959F-F4E03A01408C
+chbs:Q508-7E56E7AE-1743-501E-959F-F4E03A01408C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P123 chb:Q111 .
 
-wds:Q508-493A7E9D-56EE-530D-9731-5DC2F6D1895B
+chbs:Q508-493A7E9D-56EE-530D-9731-5DC2F6D1895B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P122 chb:Q110 .
 
-wds:Q508-13281EC2-87B1-5166-AF00-4623A3720E9D
+chbs:Q508-13281EC2-87B1-5166-AF00-4623A3720E9D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "arkhe" .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "arkhe" .
 
-wds:Q508-9868560D-4223-53CE-BD47-86E3BDD11CAA
+chbs:Q508-9868560D-4223-53CE-BD47-86E3BDD11CAA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P119 "arkhe"@en .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P119 "arkhe"@en .
 
-wds:Q508-AD039775-8290-5016-BCC8-CDF7F8E0EE87
+chbs:Q508-AD039775-8290-5016-BCC8-CDF7F8E0EE87
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P120 <https://packages.tesselle.org/arkhe/> .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P120 <https://packages.tesselle.org/arkhe/> .
 
-wds:Q508-B75BA2D8-E678-5210-A89E-73F2DB878833
+chbs:Q508-B75BA2D8-E678-5210-A89E-73F2DB878833
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P122 chb:Q109 .
 
-wds:Q508-C975C94B-CE94-5D7F-B69F-E02018E48F50
+chbs:Q508-C975C94B-CE94-5D7F-B69F-E02018E48F50
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q231 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q231 .
 
-wds:Q508-D5537046-3DD0-5B0E-B6C4-CB33FDC6259D
+chbs:Q508-D5537046-3DD0-5B0E-B6C4-CB33FDC6259D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbps:P106 chb:Q110 .
 
-wds:Q508-F1CBB8EE-4120-58EF-AC5A-A5B1B525B516
+chbs:Q508-F1CBB8EE-4120-58EF-AC5A-A5B1B525B516
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
-    pq:P104 "2021-01-26T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-tesselle-arkhe_-_2021-01-26_18-26-42> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ab637bfcdfab00d9d91b8497d73c52e6 ;
-    ps:P125 <https://codeberg.org/tesselle/arkhe> .
+    prov:wasDerivedFrom chbref:36733244ce549b42c2342a137f4aaa6e23b2779d ;
+    chbpq:P104 "2021-01-26T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-tesselle-arkhe_-_2021-01-26_18-26-42> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:ab637bfcdfab00d9d91b8497d73c52e6 ;
+    chbps:P125 <https://codeberg.org/tesselle/arkhe> .
 
-wdref:36733244ce549b42c2342a137f4aaa6e23b2779d
+chbref:36733244ce549b42c2342a137f4aaa6e23b2779d
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/arkhe/> .
+    chbpr:P6 <https://open-archaeo.info/post/arkhe/> .
 
-wdv:ab637bfcdfab00d9d91b8497d73c52e6
+chbv:ab637bfcdfab00d9d91b8497d73c52e6
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

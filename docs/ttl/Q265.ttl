@@ -1,53 +1,54 @@
 # Q265: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q265
+chbdata:Q265.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Bayesian tools for reconstructing past demography."@en ;
     dcterms:identifier "Q265" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q265 ;
+    dcterms:subject chb:Q265 ;
     dcterms:title "baydem"@en ;
-    schema:about wd:Q265 ;
-    dcat:distribution dist:Q265-html,
-        dist:Q265-json,
-        dist:Q265-ttl ;
+    schema:about chb:Q265 ;
+    dcat:distribution chbdist:Q265-html,
+        chbdist:Q265-json,
+        chbdist:Q265-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q265.html> .
 
-dist:Q265-html
+chbdist:Q265-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q265-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q265.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q265-json
+chbdist:Q265-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q265-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q265.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q265-ttl
+chbdist:Q265-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q265, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q265.ttl> ;
+    dcat:downloadURL chbdata:Q265.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q265
+chb:Q265
     a wikibase:Item ;
     schema:description "Bayesian tools for reconstructing past demography."@en ;
     schema:name "baydem"@en ;
@@ -80,163 +81,163 @@ wd:Q265
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "baydem"@en ;
     skos:prefLabel "baydem"@en ;
-    p:P2 wds:Q265-04CFE977-5A89-5E46-AA85-3B13BBF04356,
-        wds:Q265-8C433FD3-0973-5418-AB85-9C6601929899 ;
-    p:P106 wds:Q265-C371BDB7-D680-51BA-AF52-FFB96CC59DD1 ;
-    p:P113 wds:Q265-D7435633-1EE2-56B1-B514-E60C11FFBEBB,
-        wds:Q265-EEFADEF2-2E79-54AE-B10B-8F74F182D9C0 ;
-    p:P115 wds:Q265-CC2644C6-FBD2-5987-B9DD-06AD2D7D4430 ;
-    p:P116 wds:Q265-74203C83-4E3C-5BEC-A53F-C11891B74664 ;
-    p:P117 wds:Q265-B391B01A-0BE7-5E30-A5FB-7109D993CD72,
-        wds:Q265-C27FEE4E-7F46-5DB4-A6E1-9B65971BEDA0 ;
-    p:P118 wds:Q265-3213C508-60D9-5E19-A428-4517451EB6D3 ;
-    p:P119 wds:Q265-9A063FEB-EDE5-5924-8FF4-89162BAD07BE ;
-    p:P120 wds:Q265-9AD8EB4D-3746-5EB7-96EC-15FC057AFFCC ;
-    p:P122 wds:Q265-B17BA189-EFDD-5213-A41D-2572E83C8CE7,
-        wds:Q265-F640A375-ADFA-53F7-9A5C-4ED49795CCDB ;
-    p:P123 wds:Q265-D0E0A034-AB14-5B17-8AFB-55893A5FBAFA ;
-    p:P125 wds:Q265-8BD2D14F-B6A1-50ED-A6A7-A437E414C9A1 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q248,
-        wd:Q266 ;
-    wdt:P115 <https://open-archaeo.info/post/baydem/> ;
-    wdt:P116 "baydem" ;
-    wdt:P117 wd:Q112,
-        wd:Q140 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "baydem"@en ;
-    wdt:P120 <https://eehh-stanford.github.io/baydem/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/eehh-stanford/baydem> .
+    chbp:P2 chbs:Q265-04CFE977-5A89-5E46-AA85-3B13BBF04356,
+        chbs:Q265-8C433FD3-0973-5418-AB85-9C6601929899 ;
+    chbp:P106 chbs:Q265-C371BDB7-D680-51BA-AF52-FFB96CC59DD1 ;
+    chbp:P113 chbs:Q265-D7435633-1EE2-56B1-B514-E60C11FFBEBB,
+        chbs:Q265-EEFADEF2-2E79-54AE-B10B-8F74F182D9C0 ;
+    chbp:P115 chbs:Q265-CC2644C6-FBD2-5987-B9DD-06AD2D7D4430 ;
+    chbp:P116 chbs:Q265-74203C83-4E3C-5BEC-A53F-C11891B74664 ;
+    chbp:P117 chbs:Q265-B391B01A-0BE7-5E30-A5FB-7109D993CD72,
+        chbs:Q265-C27FEE4E-7F46-5DB4-A6E1-9B65971BEDA0 ;
+    chbp:P118 chbs:Q265-3213C508-60D9-5E19-A428-4517451EB6D3 ;
+    chbp:P119 chbs:Q265-9A063FEB-EDE5-5924-8FF4-89162BAD07BE ;
+    chbp:P120 chbs:Q265-9AD8EB4D-3746-5EB7-96EC-15FC057AFFCC ;
+    chbp:P122 chbs:Q265-B17BA189-EFDD-5213-A41D-2572E83C8CE7,
+        chbs:Q265-F640A375-ADFA-53F7-9A5C-4ED49795CCDB ;
+    chbp:P123 chbs:Q265-D0E0A034-AB14-5B17-8AFB-55893A5FBAFA ;
+    chbp:P125 chbs:Q265-8BD2D14F-B6A1-50ED-A6A7-A437E414C9A1 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q248,
+        chb:Q266 ;
+    chbt:P115 <https://open-archaeo.info/post/baydem/> ;
+    chbt:P116 "baydem" ;
+    chbt:P117 chb:Q112,
+        chb:Q140 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "baydem"@en ;
+    chbt:P120 <https://eehh-stanford.github.io/baydem/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/eehh-stanford/baydem> .
 
-wds:Q265-04CFE977-5A89-5E46-AA85-3B13BBF04356
+chbs:Q265-04CFE977-5A89-5E46-AA85-3B13BBF04356
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P2 chb:Q106 .
 
-wds:Q265-8BD2D14F-B6A1-50ED-A6A7-A437E414C9A1
+chbs:Q265-8BD2D14F-B6A1-50ED-A6A7-A437E414C9A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    pq:P104 "2021-04-09T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-eehh-stanford-baydem_-_2021-04-09_19-24-36> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:f96cf26a85704b24c00f4dbb31484d87 ;
-    ps:P125 <https://github.com/eehh-stanford/baydem> .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbpq:P104 "2021-04-09T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-eehh-stanford-baydem_-_2021-04-09_19-24-36> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:f96cf26a85704b24c00f4dbb31484d87 ;
+    chbps:P125 <https://github.com/eehh-stanford/baydem> .
 
-wds:Q265-8C433FD3-0973-5418-AB85-9C6601929899
+chbs:Q265-8C433FD3-0973-5418-AB85-9C6601929899
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P2 chb:Q103 .
 
-wds:Q265-9A063FEB-EDE5-5924-8FF4-89162BAD07BE
+chbs:Q265-9A063FEB-EDE5-5924-8FF4-89162BAD07BE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P119 "baydem"@en .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P119 "baydem"@en .
 
-wds:Q265-9AD8EB4D-3746-5EB7-96EC-15FC057AFFCC
+chbs:Q265-9AD8EB4D-3746-5EB7-96EC-15FC057AFFCC
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P120 <https://eehh-stanford.github.io/baydem/> .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P120 <https://eehh-stanford.github.io/baydem/> .
 
-wds:Q265-3213C508-60D9-5E19-A428-4517451EB6D3
+chbs:Q265-3213C508-60D9-5E19-A428-4517451EB6D3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P118 chb:Q108 .
 
-wds:Q265-74203C83-4E3C-5BEC-A53F-C11891B74664
+chbs:Q265-74203C83-4E3C-5BEC-A53F-C11891B74664
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "baydem" .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "baydem" .
 
-wds:Q265-B17BA189-EFDD-5213-A41D-2572E83C8CE7
+chbs:Q265-B17BA189-EFDD-5213-A41D-2572E83C8CE7
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P122 chb:Q109 .
 
-wds:Q265-B391B01A-0BE7-5E30-A5FB-7109D993CD72
+chbs:Q265-B391B01A-0BE7-5E30-A5FB-7109D993CD72
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P117 wd:Q140 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P117 chb:Q140 .
 
-wds:Q265-C27FEE4E-7F46-5DB4-A6E1-9B65971BEDA0
+chbs:Q265-C27FEE4E-7F46-5DB4-A6E1-9B65971BEDA0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P117 wd:Q112 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P117 chb:Q112 .
 
-wds:Q265-C371BDB7-D680-51BA-AF52-FFB96CC59DD1
+chbs:Q265-C371BDB7-D680-51BA-AF52-FFB96CC59DD1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P106 chb:Q110 .
 
-wds:Q265-CC2644C6-FBD2-5987-B9DD-06AD2D7D4430
+chbs:Q265-CC2644C6-FBD2-5987-B9DD-06AD2D7D4430
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P115 <https://open-archaeo.info/post/baydem/> .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P115 <https://open-archaeo.info/post/baydem/> .
 
-wds:Q265-D0E0A034-AB14-5B17-8AFB-55893A5FBAFA
+chbs:Q265-D0E0A034-AB14-5B17-8AFB-55893A5FBAFA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P123 chb:Q111 .
 
-wds:Q265-D7435633-1EE2-56B1-B514-E60C11FFBEBB
+chbs:Q265-D7435633-1EE2-56B1-B514-E60C11FFBEBB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q248 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q248 .
 
-wds:Q265-EEFADEF2-2E79-54AE-B10B-8F74F182D9C0
+chbs:Q265-EEFADEF2-2E79-54AE-B10B-8F74F182D9C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    pq:P146 "2" ;
-    ps:P113 wd:Q266 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbpq:P146 "2" ;
+    chbps:P113 chb:Q266 .
 
-wds:Q265-F640A375-ADFA-53F7-9A5C-4ED49795CCDB
+chbs:Q265-F640A375-ADFA-53F7-9A5C-4ED49795CCDB
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc ;
+    chbps:P122 chb:Q110 .
 
-wdref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc
+chbref:ecb97c3d1b3c4de15888e61cd1759c5bdbbfd2bc
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/baydem/> .
+    chbpr:P6 <https://open-archaeo.info/post/baydem/> .
 
-wdv:f96cf26a85704b24c00f4dbb31484d87
+chbv:f96cf26a85704b24c00f4dbb31484d87
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

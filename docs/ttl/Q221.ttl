@@ -1,53 +1,54 @@
 # Q221: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q221
+chbdata:Q221.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Visual shape-matching of ceramics profiles."@en ;
     dcterms:identifier "Q221" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q221 ;
+    dcterms:subject chb:Q221 ;
     dcterms:title "CeraMatch"@en ;
-    schema:about wd:Q221 ;
-    dcat:distribution dist:Q221-html,
-        dist:Q221-json,
-        dist:Q221-ttl ;
+    schema:about chb:Q221 ;
+    dcat:distribution chbdist:Q221-html,
+        chbdist:Q221-json,
+        chbdist:Q221-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q221.html> .
 
-dist:Q221-html
+chbdist:Q221-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q221-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q221.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q221-json
+chbdist:Q221-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q221-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q221.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q221-ttl
+chbdist:Q221-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q221, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q221.ttl> ;
+    dcat:downloadURL chbdata:Q221.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q221
+chb:Q221
     a wikibase:Item ;
     schema:description "Visual shape-matching of ceramics profiles."@en ;
     schema:name "CeraMatch"@en ;
@@ -80,144 +81,144 @@ wd:Q221
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "CeraMatch"@en ;
     skos:prefLabel "CeraMatch"@en ;
-    p:P2 wds:Q221-9697AC4C-9433-5333-8869-CC03DFEC250C,
-        wds:Q221-F3208A63-D3F6-59F7-AFBB-1A526E624E62 ;
-    p:P106 wds:Q221-8CD7CDE3-0D7D-5C93-A927-B15D5CF1D8DD ;
-    p:P113 wds:Q221-3C6E41E4-2780-506C-AA91-BF1C86315705 ;
-    p:P115 wds:Q221-89D7A867-CC45-5C02-926A-BB5FA457E4F8 ;
-    p:P116 wds:Q221-4CCDB7EE-AFF6-5FBD-BAFA-2B392A16683E ;
-    p:P117 wds:Q221-2F2E176E-2AE9-5F19-9331-C22B1F701EBD,
-        wds:Q221-040E78A2-3E5D-574C-A463-8073EEFC1797 ;
-    p:P118 wds:Q221-8A91139C-8724-5C69-8DEE-0C7CDB79AD25 ;
-    p:P119 wds:Q221-8DAC6066-0A7E-5058-BE30-390DD52703D8 ;
-    p:P122 wds:Q221-20A4306A-151F-528E-8B77-BBB2D18D83C8,
-        wds:Q221-E8705C59-E60C-5C8F-882B-0DA808CCAE2D ;
-    p:P123 wds:Q221-C1681DB1-C559-5560-80A6-60A26E610AB4 ;
-    p:P125 wds:Q221-3044F9C7-9A3A-5415-AD3D-B04F11C11215 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q141 ;
-    wdt:P115 <https://open-archaeo.info/post/ceramatch/> ;
-    wdt:P116 "ceramatch" ;
-    wdt:P117 wd:Q181,
-        wd:Q222 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "CeraMatch"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/demjanp/CeraMatch> .
+    chbp:P2 chbs:Q221-9697AC4C-9433-5333-8869-CC03DFEC250C,
+        chbs:Q221-F3208A63-D3F6-59F7-AFBB-1A526E624E62 ;
+    chbp:P106 chbs:Q221-8CD7CDE3-0D7D-5C93-A927-B15D5CF1D8DD ;
+    chbp:P113 chbs:Q221-3C6E41E4-2780-506C-AA91-BF1C86315705 ;
+    chbp:P115 chbs:Q221-89D7A867-CC45-5C02-926A-BB5FA457E4F8 ;
+    chbp:P116 chbs:Q221-4CCDB7EE-AFF6-5FBD-BAFA-2B392A16683E ;
+    chbp:P117 chbs:Q221-2F2E176E-2AE9-5F19-9331-C22B1F701EBD,
+        chbs:Q221-040E78A2-3E5D-574C-A463-8073EEFC1797 ;
+    chbp:P118 chbs:Q221-8A91139C-8724-5C69-8DEE-0C7CDB79AD25 ;
+    chbp:P119 chbs:Q221-8DAC6066-0A7E-5058-BE30-390DD52703D8 ;
+    chbp:P122 chbs:Q221-20A4306A-151F-528E-8B77-BBB2D18D83C8,
+        chbs:Q221-E8705C59-E60C-5C8F-882B-0DA808CCAE2D ;
+    chbp:P123 chbs:Q221-C1681DB1-C559-5560-80A6-60A26E610AB4 ;
+    chbp:P125 chbs:Q221-3044F9C7-9A3A-5415-AD3D-B04F11C11215 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q141 ;
+    chbt:P115 <https://open-archaeo.info/post/ceramatch/> ;
+    chbt:P116 "ceramatch" ;
+    chbt:P117 chb:Q181,
+        chb:Q222 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "CeraMatch"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/demjanp/CeraMatch> .
 
-wds:Q221-2F2E176E-2AE9-5F19-9331-C22B1F701EBD
+chbs:Q221-2F2E176E-2AE9-5F19-9331-C22B1F701EBD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P117 wd:Q181 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P117 chb:Q181 .
 
-wds:Q221-3C6E41E4-2780-506C-AA91-BF1C86315705
+chbs:Q221-3C6E41E4-2780-506C-AA91-BF1C86315705
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q141 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q141 .
 
-wds:Q221-4CCDB7EE-AFF6-5FBD-BAFA-2B392A16683E
+chbs:Q221-4CCDB7EE-AFF6-5FBD-BAFA-2B392A16683E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "ceramatch" .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "ceramatch" .
 
-wds:Q221-8A91139C-8724-5C69-8DEE-0C7CDB79AD25
+chbs:Q221-8A91139C-8724-5C69-8DEE-0C7CDB79AD25
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q221-8CD7CDE3-0D7D-5C93-A927-B15D5CF1D8DD
+chbs:Q221-8CD7CDE3-0D7D-5C93-A927-B15D5CF1D8DD
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q221-8DAC6066-0A7E-5058-BE30-390DD52703D8
+chbs:Q221-8DAC6066-0A7E-5058-BE30-390DD52703D8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P119 "CeraMatch"@en .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P119 "CeraMatch"@en .
 
-wds:Q221-20A4306A-151F-528E-8B77-BBB2D18D83C8
+chbs:Q221-20A4306A-151F-528E-8B77-BBB2D18D83C8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q221-040E78A2-3E5D-574C-A463-8073EEFC1797
+chbs:Q221-040E78A2-3E5D-574C-A463-8073EEFC1797
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P117 wd:Q222 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P117 chb:Q222 .
 
-wds:Q221-89D7A867-CC45-5C02-926A-BB5FA457E4F8
+chbs:Q221-89D7A867-CC45-5C02-926A-BB5FA457E4F8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P115 <https://open-archaeo.info/post/ceramatch/> .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P115 <https://open-archaeo.info/post/ceramatch/> .
 
-wds:Q221-3044F9C7-9A3A-5415-AD3D-B04F11C11215
+chbs:Q221-3044F9C7-9A3A-5415-AD3D-B04F11C11215
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    pq:P104 "2021-01-26T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-demjanp-CeraMatch_-_2021-01-26_21-06-30> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:ab637bfcdfab00d9d91b8497d73c52e6 ;
-    ps:P125 <https://github.com/demjanp/CeraMatch> .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbpq:P104 "2021-01-26T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-demjanp-CeraMatch_-_2021-01-26_21-06-30> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:ab637bfcdfab00d9d91b8497d73c52e6 ;
+    chbps:P125 <https://github.com/demjanp/CeraMatch> .
 
-wds:Q221-9697AC4C-9433-5333-8869-CC03DFEC250C
+chbs:Q221-9697AC4C-9433-5333-8869-CC03DFEC250C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q221-C1681DB1-C559-5560-80A6-60A26E610AB4
+chbs:Q221-C1681DB1-C559-5560-80A6-60A26E610AB4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q221-E8705C59-E60C-5C8F-882B-0DA808CCAE2D
+chbs:Q221-E8705C59-E60C-5C8F-882B-0DA808CCAE2D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q221-F3208A63-D3F6-59F7-AFBB-1A526E624E62
+chbs:Q221-F3208A63-D3F6-59F7-AFBB-1A526E624E62
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7 ;
+    chbps:P2 chb:Q106 .
 
-wdref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7
+chbref:7efb2016c22b5bdca1b6a5e4c3eb326032189cf7
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/ceramatch/> .
+    chbpr:P6 <https://open-archaeo.info/post/ceramatch/> .
 
-wdv:ab637bfcdfab00d9d91b8497d73c52e6
+chbv:ab637bfcdfab00d9d91b8497d73c52e6
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

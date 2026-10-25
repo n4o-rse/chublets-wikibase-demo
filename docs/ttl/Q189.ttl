@@ -1,53 +1,54 @@
 # Q189: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q189
+chbdata:Q189.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Algorithms, implementations, manuscripts, and test cases for iterative deterministic frequency seriation done by agglomeration."@en ;
     dcterms:identifier "Q189" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q189 ;
+    dcterms:subject chb:Q189 ;
     dcterms:title "Seriation"@en ;
-    schema:about wd:Q189 ;
-    dcat:distribution dist:Q189-html,
-        dist:Q189-json,
-        dist:Q189-ttl ;
+    schema:about chb:Q189 ;
+    dcat:distribution chbdist:Q189-html,
+        chbdist:Q189-json,
+        chbdist:Q189-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q189.html> .
 
-dist:Q189-html
+chbdist:Q189-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q189-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q189.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q189-json
+chbdist:Q189-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q189-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q189.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q189-ttl
+chbdist:Q189-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q189, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q189.ttl> ;
+    dcat:downloadURL chbdata:Q189.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q189
+chb:Q189
     a wikibase:Item ;
     schema:description "Algorithms, implementations, manuscripts, and test cases for iterative deterministic frequency seriation done by agglomeration."@en ;
     schema:name "Seriation"@en ;
@@ -80,144 +81,144 @@ wd:Q189
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "Seriation"@en ;
     skos:prefLabel "Seriation"@en ;
-    p:P2 wds:Q189-45CA708F-DA20-56A4-9961-912D295A3D22,
-        wds:Q189-DA56ED39-70C1-5FB8-85A0-097B848AAFF3 ;
-    p:P106 wds:Q189-100A8ACA-74A7-5C58-987B-49F049B745E1 ;
-    p:P113 wds:Q189-70CA3299-7D9F-545B-8457-0BE3D63F8D43 ;
-    p:P115 wds:Q189-FC25CBAC-D0D4-570F-919E-B7CB0EC46625 ;
-    p:P116 wds:Q189-2DC468E1-D8BC-5A5A-8E79-A826E28FF10F ;
-    p:P117 wds:Q189-E7D2E907-8E26-58A7-8845-F9DFB9586E37,
-        wds:Q189-FAF3D3CD-3070-5941-ADDC-63A1217F515A ;
-    p:P118 wds:Q189-86376B1B-E51C-57D7-89EC-5384905CAB97 ;
-    p:P119 wds:Q189-8EAF9E59-9011-5E00-843E-CB717ACE082B ;
-    p:P122 wds:Q189-8FCB9FEC-5755-5919-A0F2-15DB24E6741E,
-        wds:Q189-5112D424-D739-5974-B3AD-2455DF88CB60 ;
-    p:P123 wds:Q189-91714445-E657-55CC-83E6-3DD5D94E48B4 ;
-    p:P125 wds:Q189-1ED32D56-8179-58FF-8298-6732D54B347B ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q191 ;
-    wdt:P115 <https://open-archaeo.info/post/seriation-clipo/> ;
-    wdt:P116 "seriation-clipo" ;
-    wdt:P117 wd:Q116,
-        wd:Q190 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Seriation"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/clipo/Seriation> .
+    chbp:P2 chbs:Q189-45CA708F-DA20-56A4-9961-912D295A3D22,
+        chbs:Q189-DA56ED39-70C1-5FB8-85A0-097B848AAFF3 ;
+    chbp:P106 chbs:Q189-100A8ACA-74A7-5C58-987B-49F049B745E1 ;
+    chbp:P113 chbs:Q189-70CA3299-7D9F-545B-8457-0BE3D63F8D43 ;
+    chbp:P115 chbs:Q189-FC25CBAC-D0D4-570F-919E-B7CB0EC46625 ;
+    chbp:P116 chbs:Q189-2DC468E1-D8BC-5A5A-8E79-A826E28FF10F ;
+    chbp:P117 chbs:Q189-E7D2E907-8E26-58A7-8845-F9DFB9586E37,
+        chbs:Q189-FAF3D3CD-3070-5941-ADDC-63A1217F515A ;
+    chbp:P118 chbs:Q189-86376B1B-E51C-57D7-89EC-5384905CAB97 ;
+    chbp:P119 chbs:Q189-8EAF9E59-9011-5E00-843E-CB717ACE082B ;
+    chbp:P122 chbs:Q189-8FCB9FEC-5755-5919-A0F2-15DB24E6741E,
+        chbs:Q189-5112D424-D739-5974-B3AD-2455DF88CB60 ;
+    chbp:P123 chbs:Q189-91714445-E657-55CC-83E6-3DD5D94E48B4 ;
+    chbp:P125 chbs:Q189-1ED32D56-8179-58FF-8298-6732D54B347B ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q191 ;
+    chbt:P115 <https://open-archaeo.info/post/seriation-clipo/> ;
+    chbt:P116 "seriation-clipo" ;
+    chbt:P117 chb:Q116,
+        chb:Q190 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Seriation"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/clipo/Seriation> .
 
-wds:Q189-1ED32D56-8179-58FF-8298-6732D54B347B
+chbs:Q189-1ED32D56-8179-58FF-8298-6732D54B347B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    pq:P104 "2015-04-07T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-clipo-Seriation_-_2015-04-07_22-44-25> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:a87b973489a1bc4e6cc46e0da4e30153 ;
-    ps:P125 <https://github.com/clipo/Seriation> .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbpq:P104 "2015-04-07T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-clipo-Seriation_-_2015-04-07_22-44-25> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:a87b973489a1bc4e6cc46e0da4e30153 ;
+    chbps:P125 <https://github.com/clipo/Seriation> .
 
-wds:Q189-2DC468E1-D8BC-5A5A-8E79-A826E28FF10F
+chbs:Q189-2DC468E1-D8BC-5A5A-8E79-A826E28FF10F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "seriation-clipo" .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "seriation-clipo" .
 
-wds:Q189-8EAF9E59-9011-5E00-843E-CB717ACE082B
+chbs:Q189-8EAF9E59-9011-5E00-843E-CB717ACE082B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P119 "Seriation"@en .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P119 "Seriation"@en .
 
-wds:Q189-8FCB9FEC-5755-5919-A0F2-15DB24E6741E
+chbs:Q189-8FCB9FEC-5755-5919-A0F2-15DB24E6741E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P122 chb:Q110 .
 
-wds:Q189-45CA708F-DA20-56A4-9961-912D295A3D22
+chbs:Q189-45CA708F-DA20-56A4-9961-912D295A3D22
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P2 chb:Q106 .
 
-wds:Q189-70CA3299-7D9F-545B-8457-0BE3D63F8D43
+chbs:Q189-70CA3299-7D9F-545B-8457-0BE3D63F8D43
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q191 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q191 .
 
-wds:Q189-100A8ACA-74A7-5C58-987B-49F049B745E1
+chbs:Q189-100A8ACA-74A7-5C58-987B-49F049B745E1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P106 chb:Q110 .
 
-wds:Q189-5112D424-D739-5974-B3AD-2455DF88CB60
+chbs:Q189-5112D424-D739-5974-B3AD-2455DF88CB60
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P122 chb:Q109 .
 
-wds:Q189-86376B1B-E51C-57D7-89EC-5384905CAB97
+chbs:Q189-86376B1B-E51C-57D7-89EC-5384905CAB97
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P118 chb:Q108 .
 
-wds:Q189-91714445-E657-55CC-83E6-3DD5D94E48B4
+chbs:Q189-91714445-E657-55CC-83E6-3DD5D94E48B4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P123 chb:Q111 .
 
-wds:Q189-DA56ED39-70C1-5FB8-85A0-097B848AAFF3
+chbs:Q189-DA56ED39-70C1-5FB8-85A0-097B848AAFF3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P2 chb:Q103 .
 
-wds:Q189-E7D2E907-8E26-58A7-8845-F9DFB9586E37
+chbs:Q189-E7D2E907-8E26-58A7-8845-F9DFB9586E37
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P117 wd:Q116 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P117 chb:Q116 .
 
-wds:Q189-FAF3D3CD-3070-5941-ADDC-63A1217F515A
+chbs:Q189-FAF3D3CD-3070-5941-ADDC-63A1217F515A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P117 wd:Q190 .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P117 chb:Q190 .
 
-wds:Q189-FC25CBAC-D0D4-570F-919E-B7CB0EC46625
+chbs:Q189-FC25CBAC-D0D4-570F-919E-B7CB0EC46625
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:808bff514c209db50be1f8f95801b5499214ff4e ;
-    ps:P115 <https://open-archaeo.info/post/seriation-clipo/> .
+    prov:wasDerivedFrom chbref:808bff514c209db50be1f8f95801b5499214ff4e ;
+    chbps:P115 <https://open-archaeo.info/post/seriation-clipo/> .
 
-wdref:808bff514c209db50be1f8f95801b5499214ff4e
+chbref:808bff514c209db50be1f8f95801b5499214ff4e
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/seriation-clipo/> .
+    chbpr:P6 <https://open-archaeo.info/post/seriation-clipo/> .
 
-wdv:a87b973489a1bc4e6cc46e0da4e30153
+chbv:a87b973489a1bc4e6cc46e0da4e30153
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

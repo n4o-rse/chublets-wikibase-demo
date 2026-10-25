@@ -1,53 +1,54 @@
 # Q865: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q865
+chbdata:Q865.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "The goal of xrf is to provide tools to read, plot, and interpret x-ray fluorescence spectra"@en ;
     dcterms:identifier "Q865" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q865 ;
+    dcterms:subject chb:Q865 ;
     dcterms:title "xrf"@en ;
-    schema:about wd:Q865 ;
-    dcat:distribution dist:Q865-html,
-        dist:Q865-json,
-        dist:Q865-ttl ;
+    schema:about chb:Q865 ;
+    dcat:distribution chbdist:Q865-html,
+        chbdist:Q865-json,
+        chbdist:Q865-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q865.html> .
 
-dist:Q865-html
+chbdist:Q865-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q865-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q865.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q865-json
+chbdist:Q865-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q865-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q865.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q865-ttl
+chbdist:Q865-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q865, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q865.ttl> ;
+    dcat:downloadURL chbdata:Q865.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q865
+chb:Q865
     a wikibase:Item ;
     schema:description "The goal of xrf is to provide tools to read, plot, and interpret x-ray fluorescence spectra"@en ;
     schema:name "xrf"@en ;
@@ -80,135 +81,135 @@ wd:Q865
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "xrf"@en ;
     skos:prefLabel "xrf"@en ;
-    p:P2 wds:Q865-713E0E89-4634-5830-9A44-312544BAC56C,
-        wds:Q865-A032641C-F744-5439-81C2-CA08984567C8 ;
-    p:P106 wds:Q865-A10AA4E4-B54B-5EFC-90D5-7841FAE664ED ;
-    p:P113 wds:Q865-B8EF07AF-B2D3-545F-ADAA-2F138F0D59C3 ;
-    p:P115 wds:Q865-6B28BA0B-183C-588A-8659-9AA914C6DD77 ;
-    p:P116 wds:Q865-797D317F-E4F9-5008-A47E-0DB31B42657D ;
-    p:P117 wds:Q865-88830FAF-6D90-550D-B942-59569A5A7B17 ;
-    p:P118 wds:Q865-386FE85F-904A-5C05-AD84-CD0415D6E184 ;
-    p:P119 wds:Q865-E8ABAC40-1200-5648-92BF-EE91E310668E ;
-    p:P122 wds:Q865-6A8AD9B2-F8F5-5F70-9842-37E0FD0163C2,
-        wds:Q865-6DA7FAB4-CAEF-5CD0-BA21-775AB4F92517 ;
-    p:P123 wds:Q865-BA79D4F1-E890-594E-9F7E-5AB07BCB7909 ;
-    p:P125 wds:Q865-17054786-0338-5DC9-B931-787373B9D122 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q202 ;
-    wdt:P115 <https://open-archaeo.info/post/xrf/> ;
-    wdt:P116 "xrf" ;
-    wdt:P117 wd:Q201 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "xrf"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/paleolimbot/xrftools> .
+    chbp:P2 chbs:Q865-713E0E89-4634-5830-9A44-312544BAC56C,
+        chbs:Q865-A032641C-F744-5439-81C2-CA08984567C8 ;
+    chbp:P106 chbs:Q865-A10AA4E4-B54B-5EFC-90D5-7841FAE664ED ;
+    chbp:P113 chbs:Q865-B8EF07AF-B2D3-545F-ADAA-2F138F0D59C3 ;
+    chbp:P115 chbs:Q865-6B28BA0B-183C-588A-8659-9AA914C6DD77 ;
+    chbp:P116 chbs:Q865-797D317F-E4F9-5008-A47E-0DB31B42657D ;
+    chbp:P117 chbs:Q865-88830FAF-6D90-550D-B942-59569A5A7B17 ;
+    chbp:P118 chbs:Q865-386FE85F-904A-5C05-AD84-CD0415D6E184 ;
+    chbp:P119 chbs:Q865-E8ABAC40-1200-5648-92BF-EE91E310668E ;
+    chbp:P122 chbs:Q865-6A8AD9B2-F8F5-5F70-9842-37E0FD0163C2,
+        chbs:Q865-6DA7FAB4-CAEF-5CD0-BA21-775AB4F92517 ;
+    chbp:P123 chbs:Q865-BA79D4F1-E890-594E-9F7E-5AB07BCB7909 ;
+    chbp:P125 chbs:Q865-17054786-0338-5DC9-B931-787373B9D122 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q202 ;
+    chbt:P115 <https://open-archaeo.info/post/xrf/> ;
+    chbt:P116 "xrf" ;
+    chbt:P117 chb:Q201 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "xrf"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/paleolimbot/xrftools> .
 
-wds:Q865-6A8AD9B2-F8F5-5F70-9842-37E0FD0163C2
+chbs:Q865-6A8AD9B2-F8F5-5F70-9842-37E0FD0163C2
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q865-6B28BA0B-183C-588A-8659-9AA914C6DD77
+chbs:Q865-6B28BA0B-183C-588A-8659-9AA914C6DD77
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P115 <https://open-archaeo.info/post/xrf/> .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P115 <https://open-archaeo.info/post/xrf/> .
 
-wds:Q865-6DA7FAB4-CAEF-5CD0-BA21-775AB4F92517
+chbs:Q865-6DA7FAB4-CAEF-5CD0-BA21-775AB4F92517
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q865-386FE85F-904A-5C05-AD84-CD0415D6E184
+chbs:Q865-386FE85F-904A-5C05-AD84-CD0415D6E184
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q865-713E0E89-4634-5830-9A44-312544BAC56C
+chbs:Q865-713E0E89-4634-5830-9A44-312544BAC56C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q865-797D317F-E4F9-5008-A47E-0DB31B42657D
+chbs:Q865-797D317F-E4F9-5008-A47E-0DB31B42657D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "xrf" .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "xrf" .
 
-wds:Q865-88830FAF-6D90-550D-B942-59569A5A7B17
+chbs:Q865-88830FAF-6D90-550D-B942-59569A5A7B17
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P117 wd:Q201 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P117 chb:Q201 .
 
-wds:Q865-17054786-0338-5DC9-B931-787373B9D122
+chbs:Q865-17054786-0338-5DC9-B931-787373B9D122
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    pq:P104 "2020-07-14T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-paleolimbot-xrftools_-_2020-07-14_14-17-56> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:a31c694f3bc1c3318c7da0cb06427d12 ;
-    ps:P125 <https://github.com/paleolimbot/xrftools> .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbpq:P104 "2020-07-14T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-paleolimbot-xrftools_-_2020-07-14_14-17-56> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:a31c694f3bc1c3318c7da0cb06427d12 ;
+    chbps:P125 <https://github.com/paleolimbot/xrftools> .
 
-wds:Q865-A10AA4E4-B54B-5EFC-90D5-7841FAE664ED
+chbs:Q865-A10AA4E4-B54B-5EFC-90D5-7841FAE664ED
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q865-A032641C-F744-5439-81C2-CA08984567C8
+chbs:Q865-A032641C-F744-5439-81C2-CA08984567C8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q865-B8EF07AF-B2D3-545F-ADAA-2F138F0D59C3
+chbs:Q865-B8EF07AF-B2D3-545F-ADAA-2F138F0D59C3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q202 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q202 .
 
-wds:Q865-BA79D4F1-E890-594E-9F7E-5AB07BCB7909
+chbs:Q865-BA79D4F1-E890-594E-9F7E-5AB07BCB7909
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P123 chb:Q111 .
 
-wds:Q865-E8ABAC40-1200-5648-92BF-EE91E310668E
+chbs:Q865-E8ABAC40-1200-5648-92BF-EE91E310668E
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
-    ps:P119 "xrf"@en .
+    prov:wasDerivedFrom chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32 ;
+    chbps:P119 "xrf"@en .
 
-wdref:ea4f916787f763475f33baf87c4e030ccd9e7f32
+chbref:ea4f916787f763475f33baf87c4e030ccd9e7f32
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/xrf/> .
+    chbpr:P6 <https://open-archaeo.info/post/xrf/> .
 
-wdv:a31c694f3bc1c3318c7da0cb06427d12
+chbv:a31c694f3bc1c3318c7da0cb06427d12
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

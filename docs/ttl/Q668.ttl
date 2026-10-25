@@ -1,53 +1,54 @@
 # Q668: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q668
+chbdata:Q668.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "Python library to make creation of CIDOC CRM easier by mapping classes/predicates to python objects."@en ;
     dcterms:identifier "Q668" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q668 ;
+    dcterms:subject chb:Q668 ;
     dcterms:title "crom"@en ;
-    schema:about wd:Q668 ;
-    dcat:distribution dist:Q668-html,
-        dist:Q668-json,
-        dist:Q668-ttl ;
+    schema:about chb:Q668 ;
+    dcat:distribution chbdist:Q668-html,
+        chbdist:Q668-json,
+        chbdist:Q668-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q668.html> .
 
-dist:Q668-html
+chbdist:Q668-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q668-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q668.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q668-json
+chbdist:Q668-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q668-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q668.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q668-ttl
+chbdist:Q668-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q668, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q668.ttl> ;
+    dcat:downloadURL chbdata:Q668.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q668
+chb:Q668
     a wikibase:Item ;
     schema:description "Python library to make creation of CIDOC CRM easier by mapping classes/predicates to python objects."@en ;
     schema:name "crom"@en ;
@@ -80,127 +81,127 @@ wd:Q668
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "crom"@en ;
     skos:prefLabel "crom"@en ;
-    p:P2 wds:Q668-1DD0C172-6B9E-56F5-AF22-B1B518BF856D,
-        wds:Q668-3A8922B0-DCAA-5088-A1E8-5433D35D8D18 ;
-    p:P106 wds:Q668-E0795A6C-4451-5C1A-B3AC-B22D78402E86 ;
-    p:P113 wds:Q668-CE8D7DC0-9E34-5D90-9117-C12C8042A6E4 ;
-    p:P115 wds:Q668-FBFAAC18-F216-5D00-AA77-695B1D0FD987 ;
-    p:P116 wds:Q668-4BD4FAD4-867D-5025-824E-8270903752FA ;
-    p:P117 wds:Q668-35B1A584-E5F8-5E3E-B906-217A73544291 ;
-    p:P118 wds:Q668-C293B33D-BF62-5F5E-8039-5D6335C24646 ;
-    p:P119 wds:Q668-855AB52B-BF2D-502F-BB9A-4F82AC138E81 ;
-    p:P122 wds:Q668-A5BF49C9-5B19-5098-8229-0E85F972A3A1,
-        wds:Q668-BEA4D31D-2CEE-5081-9171-CF44A37A3AAA ;
-    p:P123 wds:Q668-98E0CE88-4C34-5EC3-A00E-39912450DCB5 ;
-    p:P125 wds:Q668-02592723-52F8-5B6D-BF71-1CEC89D50E85 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q669 ;
-    wdt:P115 <https://open-archaeo.info/post/crom/> ;
-    wdt:P116 "crom" ;
-    wdt:P117 wd:Q193 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "crom"@en ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q370 ;
-    wdt:P125 <https://github.com/thegetty/crom> .
+    chbp:P2 chbs:Q668-1DD0C172-6B9E-56F5-AF22-B1B518BF856D,
+        chbs:Q668-3A8922B0-DCAA-5088-A1E8-5433D35D8D18 ;
+    chbp:P106 chbs:Q668-E0795A6C-4451-5C1A-B3AC-B22D78402E86 ;
+    chbp:P113 chbs:Q668-CE8D7DC0-9E34-5D90-9117-C12C8042A6E4 ;
+    chbp:P115 chbs:Q668-FBFAAC18-F216-5D00-AA77-695B1D0FD987 ;
+    chbp:P116 chbs:Q668-4BD4FAD4-867D-5025-824E-8270903752FA ;
+    chbp:P117 chbs:Q668-35B1A584-E5F8-5E3E-B906-217A73544291 ;
+    chbp:P118 chbs:Q668-C293B33D-BF62-5F5E-8039-5D6335C24646 ;
+    chbp:P119 chbs:Q668-855AB52B-BF2D-502F-BB9A-4F82AC138E81 ;
+    chbp:P122 chbs:Q668-A5BF49C9-5B19-5098-8229-0E85F972A3A1,
+        chbs:Q668-BEA4D31D-2CEE-5081-9171-CF44A37A3AAA ;
+    chbp:P123 chbs:Q668-98E0CE88-4C34-5EC3-A00E-39912450DCB5 ;
+    chbp:P125 chbs:Q668-02592723-52F8-5B6D-BF71-1CEC89D50E85 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q669 ;
+    chbt:P115 <https://open-archaeo.info/post/crom/> ;
+    chbt:P116 "crom" ;
+    chbt:P117 chb:Q193 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "crom"@en ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q370 ;
+    chbt:P125 <https://github.com/thegetty/crom> .
 
-wds:Q668-1DD0C172-6B9E-56F5-AF22-B1B518BF856D
+chbs:Q668-1DD0C172-6B9E-56F5-AF22-B1B518BF856D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q668-3A8922B0-DCAA-5088-A1E8-5433D35D8D18
+chbs:Q668-3A8922B0-DCAA-5088-A1E8-5433D35D8D18
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P2 chb:Q103 .
 
-wds:Q668-4BD4FAD4-867D-5025-824E-8270903752FA
+chbs:Q668-4BD4FAD4-867D-5025-824E-8270903752FA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "crom" .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "crom" .
 
-wds:Q668-35B1A584-E5F8-5E3E-B906-217A73544291
+chbs:Q668-35B1A584-E5F8-5E3E-B906-217A73544291
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P117 wd:Q193 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P117 chb:Q193 .
 
-wds:Q668-98E0CE88-4C34-5EC3-A00E-39912450DCB5
+chbs:Q668-98E0CE88-4C34-5EC3-A00E-39912450DCB5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P123 wd:Q370 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P123 chb:Q370 .
 
-wds:Q668-855AB52B-BF2D-502F-BB9A-4F82AC138E81
+chbs:Q668-855AB52B-BF2D-502F-BB9A-4F82AC138E81
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P119 "crom"@en .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P119 "crom"@en .
 
-wds:Q668-02592723-52F8-5B6D-BF71-1CEC89D50E85
+chbs:Q668-02592723-52F8-5B6D-BF71-1CEC89D50E85
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/thegetty/crom> .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/thegetty/crom> .
 
-wds:Q668-A5BF49C9-5B19-5098-8229-0E85F972A3A1
+chbs:Q668-A5BF49C9-5B19-5098-8229-0E85F972A3A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q668-BEA4D31D-2CEE-5081-9171-CF44A37A3AAA
+chbs:Q668-BEA4D31D-2CEE-5081-9171-CF44A37A3AAA
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q668-C293B33D-BF62-5F5E-8039-5D6335C24646
+chbs:Q668-C293B33D-BF62-5F5E-8039-5D6335C24646
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q668-CE8D7DC0-9E34-5D90-9117-C12C8042A6E4
+chbs:Q668-CE8D7DC0-9E34-5D90-9117-C12C8042A6E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q669 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q669 .
 
-wds:Q668-E0795A6C-4451-5C1A-B3AC-B22D78402E86
+chbs:Q668-E0795A6C-4451-5C1A-B3AC-B22D78402E86
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q668-FBFAAC18-F216-5D00-AA77-695B1D0FD987
+chbs:Q668-FBFAAC18-F216-5D00-AA77-695B1D0FD987
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
-    ps:P115 <https://open-archaeo.info/post/crom/> .
+    prov:wasDerivedFrom chbref:93a074a265398ecb74f216b7dde8ac6333173f43 ;
+    chbps:P115 <https://open-archaeo.info/post/crom/> .
 
-wdref:93a074a265398ecb74f216b7dde8ac6333173f43
+chbref:93a074a265398ecb74f216b7dde8ac6333173f43
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/crom/> .
+    chbpr:P6 <https://open-archaeo.info/post/crom/> .

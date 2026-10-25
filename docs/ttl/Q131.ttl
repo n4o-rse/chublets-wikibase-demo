@@ -1,53 +1,54 @@
 # Q131: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q131
+chbdata:Q131.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A tool for automatically measuring tree-ring width using image processing techniques."@en ;
     dcterms:identifier "Q131" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q131 ;
+    dcterms:subject chb:Q131 ;
     dcterms:title "MtreeRing"@en ;
-    schema:about wd:Q131 ;
-    dcat:distribution dist:Q131-html,
-        dist:Q131-json,
-        dist:Q131-ttl ;
+    schema:about chb:Q131 ;
+    dcat:distribution chbdist:Q131-html,
+        chbdist:Q131-json,
+        chbdist:Q131-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q131.html> .
 
-dist:Q131-html
+chbdist:Q131-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q131-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q131.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q131-json
+chbdist:Q131-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q131-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q131.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q131-ttl
+chbdist:Q131-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q131, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q131.ttl> ;
+    dcat:downloadURL chbdata:Q131.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q131
+chb:Q131
     a wikibase:Item ;
     schema:description "A tool for automatically measuring tree-ring width using image processing techniques."@en ;
     schema:name "MtreeRing"@en ;
@@ -80,144 +81,144 @@ wd:Q131
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "MtreeRing"@en ;
     skos:prefLabel "MtreeRing"@en ;
-    p:P2 wds:Q131-6C1B8F90-226F-516E-B545-5087D18A1DE3,
-        wds:Q131-8F0D35E4-5732-5C7E-96AA-6D6D9459A81D ;
-    p:P106 wds:Q131-7A1036FD-7818-5597-A4F4-3FF256C27529 ;
-    p:P113 wds:Q131-89C620E1-F49D-50D7-8A4C-70F4EDFCE63A ;
-    p:P115 wds:Q131-34E6EDB0-46CF-5AD9-82BB-8580E13D1C59 ;
-    p:P116 wds:Q131-17666CCD-3492-5F12-8C55-A6D4A945C7D3 ;
-    p:P117 wds:Q131-D9DFE6DD-8395-5FA3-9477-DA56F29B9F70 ;
-    p:P118 wds:Q131-DAAA2515-759C-5529-A672-F83D9F89FF83 ;
-    p:P119 wds:Q131-65F159B2-F496-56DB-B322-53079E5FC169 ;
-    p:P120 wds:Q131-CD2384F4-2CF8-5CC6-B2E0-817DC05A47D6 ;
-    p:P122 wds:Q131-225F02C0-7844-55D0-89EF-1AC61BDC4071,
-        wds:Q131-860EB943-0247-5426-9CEA-532F342A3316 ;
-    p:P123 wds:Q131-00425B08-7B9D-569A-8F44-03A0FA525730 ;
-    p:P125 wds:Q131-B8DEECDA-A072-5823-ABEB-46FDDC136EF5 ;
-    wdt:P2 wd:Q103,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q133 ;
-    wdt:P115 <https://open-archaeo.info/post/mtreering/> ;
-    wdt:P116 "mtreering" ;
-    wdt:P117 wd:Q132 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "MtreeRing"@en ;
-    wdt:P120 <https://ropensci.github.io/MtreeRing/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P123 wd:Q111 ;
-    wdt:P125 <https://github.com/ropensci/MtreeRing> .
+    chbp:P2 chbs:Q131-6C1B8F90-226F-516E-B545-5087D18A1DE3,
+        chbs:Q131-8F0D35E4-5732-5C7E-96AA-6D6D9459A81D ;
+    chbp:P106 chbs:Q131-7A1036FD-7818-5597-A4F4-3FF256C27529 ;
+    chbp:P113 chbs:Q131-89C620E1-F49D-50D7-8A4C-70F4EDFCE63A ;
+    chbp:P115 chbs:Q131-34E6EDB0-46CF-5AD9-82BB-8580E13D1C59 ;
+    chbp:P116 chbs:Q131-17666CCD-3492-5F12-8C55-A6D4A945C7D3 ;
+    chbp:P117 chbs:Q131-D9DFE6DD-8395-5FA3-9477-DA56F29B9F70 ;
+    chbp:P118 chbs:Q131-DAAA2515-759C-5529-A672-F83D9F89FF83 ;
+    chbp:P119 chbs:Q131-65F159B2-F496-56DB-B322-53079E5FC169 ;
+    chbp:P120 chbs:Q131-CD2384F4-2CF8-5CC6-B2E0-817DC05A47D6 ;
+    chbp:P122 chbs:Q131-225F02C0-7844-55D0-89EF-1AC61BDC4071,
+        chbs:Q131-860EB943-0247-5426-9CEA-532F342A3316 ;
+    chbp:P123 chbs:Q131-00425B08-7B9D-569A-8F44-03A0FA525730 ;
+    chbp:P125 chbs:Q131-B8DEECDA-A072-5823-ABEB-46FDDC136EF5 ;
+    chbt:P2 chb:Q103,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q133 ;
+    chbt:P115 <https://open-archaeo.info/post/mtreering/> ;
+    chbt:P116 "mtreering" ;
+    chbt:P117 chb:Q132 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "MtreeRing"@en ;
+    chbt:P120 <https://ropensci.github.io/MtreeRing/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P123 chb:Q111 ;
+    chbt:P125 <https://github.com/ropensci/MtreeRing> .
 
-wds:Q131-6C1B8F90-226F-516E-B545-5087D18A1DE3
+chbs:Q131-6C1B8F90-226F-516E-B545-5087D18A1DE3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P2 wd:Q103 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P2 chb:Q103 .
 
-wds:Q131-7A1036FD-7818-5597-A4F4-3FF256C27529
+chbs:Q131-7A1036FD-7818-5597-A4F4-3FF256C27529
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P106 chb:Q110 .
 
-wds:Q131-8F0D35E4-5732-5C7E-96AA-6D6D9459A81D
+chbs:Q131-8F0D35E4-5732-5C7E-96AA-6D6D9459A81D
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P2 chb:Q106 .
 
-wds:Q131-34E6EDB0-46CF-5AD9-82BB-8580E13D1C59
+chbs:Q131-34E6EDB0-46CF-5AD9-82BB-8580E13D1C59
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P115 <https://open-archaeo.info/post/mtreering/> .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P115 <https://open-archaeo.info/post/mtreering/> .
 
-wds:Q131-65F159B2-F496-56DB-B322-53079E5FC169
+chbs:Q131-65F159B2-F496-56DB-B322-53079E5FC169
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P119 "MtreeRing"@en .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P119 "MtreeRing"@en .
 
-wds:Q131-89C620E1-F49D-50D7-8A4C-70F4EDFCE63A
+chbs:Q131-89C620E1-F49D-50D7-8A4C-70F4EDFCE63A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q133 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q133 .
 
-wds:Q131-225F02C0-7844-55D0-89EF-1AC61BDC4071
+chbs:Q131-225F02C0-7844-55D0-89EF-1AC61BDC4071
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P122 chb:Q109 .
 
-wds:Q131-00425B08-7B9D-569A-8F44-03A0FA525730
+chbs:Q131-00425B08-7B9D-569A-8F44-03A0FA525730
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P123 wd:Q111 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P123 chb:Q111 .
 
-wds:Q131-860EB943-0247-5426-9CEA-532F342A3316
+chbs:Q131-860EB943-0247-5426-9CEA-532F342A3316
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P122 chb:Q110 .
 
-wds:Q131-17666CCD-3492-5F12-8C55-A6D4A945C7D3
+chbs:Q131-17666CCD-3492-5F12-8C55-A6D4A945C7D3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "mtreering" .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "mtreering" .
 
-wds:Q131-B8DEECDA-A072-5823-ABEB-46FDDC136EF5
+chbs:Q131-B8DEECDA-A072-5823-ABEB-46FDDC136EF5
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    pq:P104 "2020-06-09T00:00:00Z"^^xsd:dateTime ;
-    pq:P105 <https://archive.org/details/github.com-ropensci-MtreeRing_-_2020-06-09_18-41-07> ;
-    pq:P126 wd:Q114 ;
-    pqv:P104 wdv:b3411ab341fdfc10c5f614f228278c7c ;
-    ps:P125 <https://github.com/ropensci/MtreeRing> .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbpq:P104 "2020-06-09T00:00:00Z"^^xsd:dateTime ;
+    chbpq:P105 <https://archive.org/details/github.com-ropensci-MtreeRing_-_2020-06-09_18-41-07> ;
+    chbpq:P126 chb:Q114 ;
+    chbpqv:P104 chbv:b3411ab341fdfc10c5f614f228278c7c ;
+    chbps:P125 <https://github.com/ropensci/MtreeRing> .
 
-wds:Q131-CD2384F4-2CF8-5CC6-B2E0-817DC05A47D6
+chbs:Q131-CD2384F4-2CF8-5CC6-B2E0-817DC05A47D6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P120 <https://ropensci.github.io/MtreeRing/> .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P120 <https://ropensci.github.io/MtreeRing/> .
 
-wds:Q131-D9DFE6DD-8395-5FA3-9477-DA56F29B9F70
+chbs:Q131-D9DFE6DD-8395-5FA3-9477-DA56F29B9F70
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P117 wd:Q132 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P117 chb:Q132 .
 
-wds:Q131-DAAA2515-759C-5529-A672-F83D9F89FF83
+chbs:Q131-DAAA2515-759C-5529-A672-F83D9F89FF83
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c ;
+    chbps:P118 chb:Q108 .
 
-wdref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c
+chbref:fd3d7fa0d6f7ed933ccd59e42debe341ad9cfb3c
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/mtreering/> .
+    chbpr:P6 <https://open-archaeo.info/post/mtreering/> .
 
-wdv:b3411ab341fdfc10c5f614f228278c7c
+chbv:b3411ab341fdfc10c5f614f228278c7c
     a wikibase:TimeValue ;
     wikibase:timeCalendarModel <http://www.wikidata.org/entity/Q1985727> ;
     wikibase:timePrecision "11"^^xsd:integer ;

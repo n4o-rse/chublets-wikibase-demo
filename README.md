@@ -31,7 +31,7 @@ its authors, tags, languages, repository with archive link, registry package and
 **Five Wikidata items** (S7d: AMT, Alligator, SPARQLing Unicorn, profileAAR, Text mining minion) as a first test of the Wikidata import, with 18 stubs for the
 items they point to (15 items, 3 classes).
 The pages show the model the way a Wikibase does; the RDF export additionally carries the **RDFS bridge**
-(`wdt:P1 rdfs:subPropertyOf rdfs:subClassOf` and five more triples, in a section of their own in the Turtle files), so that
+(`chbt:P1 rdfs:subPropertyOf rdfs:subClassOf` and five more triples, in a section of their own in the Turtle files), so that
 a reasoner or a property path reads the class tree.
 
 **What was checked, and what was not:** on 2026-10-21 the pack's `tools/verify_wikidata.py` compared the labels and
@@ -169,6 +169,16 @@ line: they need a line in a new `.qs` file (`python main.py apply-qs`).
 
 The overview shows, under every class, the whole hierarchy around it (all paths from the root down to the class, the class in bold, all
 subclasses below), and the class pages show it as well. Needs `wikibase-static` 0.17.0.
+
+## Prefixes and data-model graphics
+
+The IRIs of the RDF export lie under `https://n4o-rse.github.io/chublets-wikibase-demo/`, and the Turtle files name them `chb:`
+(entities), `chbt:` (direct claims), `chbs:` (statement nodes), `chbp:`, `chbps:`, `chbpq:`, `chbpr:`, `chbref:`, `chbv:` and so on (`rdf_prefix: chb`
+in `site.yaml`), not `wd:`, `wdt:` and `p:`, which are Wikidata's. Only `chb:Q933` opens a page (`entity/Q933`, which forwards to `Q933.html`);
+statement, reference and value IRIs are identifiers and do not resolve. The dataset of an entity is its Turtle file, `ttl/Q933.ttl`.
+
+Every entity page has a "Statement graph" and the start page shows the "Data model" as one card per class (also as `docs/graphs/model.svg`). Both are
+drawn from the data by the package. Needs `wikibase-static` 0.18.0.
 
 ## Source rows
 

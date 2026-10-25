@@ -1,53 +1,54 @@
 # Q255: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q255
+chbdata:Q255.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A web-GIS platform containing spatial historical and archaeological data."@en ;
     dcterms:identifier "Q255" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q255 ;
+    dcterms:subject chb:Q255 ;
     dcterms:title "Open History Map"@en ;
-    schema:about wd:Q255 ;
-    dcat:distribution dist:Q255-html,
-        dist:Q255-json,
-        dist:Q255-ttl ;
+    schema:about chb:Q255 ;
+    dcat:distribution chbdist:Q255-html,
+        chbdist:Q255-json,
+        chbdist:Q255-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q255.html> .
 
-dist:Q255-html
+chbdist:Q255-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q255-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q255.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q255-json
+chbdist:Q255-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q255-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q255.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q255-ttl
+chbdist:Q255-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q255, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q255.ttl> ;
+    dcat:downloadURL chbdata:Q255.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q255
+chb:Q255
     a wikibase:Item ;
     schema:description "A web-GIS platform containing spatial historical and archaeological data."@en ;
     schema:name "Open History Map"@en ;
@@ -80,136 +81,136 @@ wd:Q255
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "Open History Map"@en ;
     skos:prefLabel "Open History Map"@en ;
-    p:P2 wds:Q255-2CD893ED-922E-5889-9F34-2C9962499877,
-        wds:Q255-C0DCF49B-0771-5B73-A819-5C28BDBF5A95 ;
-    p:P106 wds:Q255-DF20ECED-FFE5-510A-BA16-33EC5CD110C6 ;
-    p:P113 wds:Q255-B8DD346B-323A-5F25-AC57-75E54A50F46C ;
-    p:P115 wds:Q255-86F230A3-D2DE-5A60-8E04-C3F9E3E79AB4 ;
-    p:P116 wds:Q255-2F2F0AD1-9678-5F6E-9AB1-BA56D4A34B54 ;
-    p:P117 wds:Q255-555433B3-8EDA-5D68-A2C4-64C15C244AEE,
-        wds:Q255-B70F7AB5-1EE2-55B5-A6CB-9AD81E01B8A1 ;
-    p:P118 wds:Q255-9274DE3F-EBF6-5958-B16C-BEA52D7941E8 ;
-    p:P119 wds:Q255-C0E44313-40ED-56FB-97E3-0BD0F2625821 ;
-    p:P120 wds:Q255-29D6D059-34C9-579F-BB66-8FE69567CC98 ;
-    p:P122 wds:Q255-9FAD51F7-7435-51B8-B88B-9C7C8AB1097B,
-        wds:Q255-BE64D96B-434A-5499-ABF2-5C935EF25BBF ;
-    p:P125 wds:Q255-63DB0B5D-342C-5307-87DF-B18B4F8F9B3F ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q257 ;
-    wdt:P115 <https://open-archaeo.info/post/open-history-map/> ;
-    wdt:P116 "open-history-map" ;
-    wdt:P117 wd:Q136,
-        wd:Q256 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "Open History Map"@en ;
-    wdt:P120 <http://www.openhistorymap.org/> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/openhistorymap> .
+    chbp:P2 chbs:Q255-2CD893ED-922E-5889-9F34-2C9962499877,
+        chbs:Q255-C0DCF49B-0771-5B73-A819-5C28BDBF5A95 ;
+    chbp:P106 chbs:Q255-DF20ECED-FFE5-510A-BA16-33EC5CD110C6 ;
+    chbp:P113 chbs:Q255-B8DD346B-323A-5F25-AC57-75E54A50F46C ;
+    chbp:P115 chbs:Q255-86F230A3-D2DE-5A60-8E04-C3F9E3E79AB4 ;
+    chbp:P116 chbs:Q255-2F2F0AD1-9678-5F6E-9AB1-BA56D4A34B54 ;
+    chbp:P117 chbs:Q255-555433B3-8EDA-5D68-A2C4-64C15C244AEE,
+        chbs:Q255-B70F7AB5-1EE2-55B5-A6CB-9AD81E01B8A1 ;
+    chbp:P118 chbs:Q255-9274DE3F-EBF6-5958-B16C-BEA52D7941E8 ;
+    chbp:P119 chbs:Q255-C0E44313-40ED-56FB-97E3-0BD0F2625821 ;
+    chbp:P120 chbs:Q255-29D6D059-34C9-579F-BB66-8FE69567CC98 ;
+    chbp:P122 chbs:Q255-9FAD51F7-7435-51B8-B88B-9C7C8AB1097B,
+        chbs:Q255-BE64D96B-434A-5499-ABF2-5C935EF25BBF ;
+    chbp:P125 chbs:Q255-63DB0B5D-342C-5307-87DF-B18B4F8F9B3F ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q257 ;
+    chbt:P115 <https://open-archaeo.info/post/open-history-map/> ;
+    chbt:P116 "open-history-map" ;
+    chbt:P117 chb:Q136,
+        chb:Q256 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "Open History Map"@en ;
+    chbt:P120 <http://www.openhistorymap.org/> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/openhistorymap> .
 
-wds:Q255-2CD893ED-922E-5889-9F34-2C9962499877
+chbs:Q255-2CD893ED-922E-5889-9F34-2C9962499877
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q255-2F2F0AD1-9678-5F6E-9AB1-BA56D4A34B54
+chbs:Q255-2F2F0AD1-9678-5F6E-9AB1-BA56D4A34B54
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "open-history-map" .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "open-history-map" .
 
-wds:Q255-9FAD51F7-7435-51B8-B88B-9C7C8AB1097B
+chbs:Q255-9FAD51F7-7435-51B8-B88B-9C7C8AB1097B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q255-29D6D059-34C9-579F-BB66-8FE69567CC98
+chbs:Q255-29D6D059-34C9-579F-BB66-8FE69567CC98
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P120 <http://www.openhistorymap.org/> .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P120 <http://www.openhistorymap.org/> .
 
-wds:Q255-63DB0B5D-342C-5307-87DF-B18B4F8F9B3F
+chbs:Q255-63DB0B5D-342C-5307-87DF-B18B4F8F9B3F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/openhistorymap> .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/openhistorymap> .
 
-wds:Q255-86F230A3-D2DE-5A60-8E04-C3F9E3E79AB4
+chbs:Q255-86F230A3-D2DE-5A60-8E04-C3F9E3E79AB4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P115 <https://open-archaeo.info/post/open-history-map/> .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P115 <https://open-archaeo.info/post/open-history-map/> .
 
-wds:Q255-9274DE3F-EBF6-5958-B16C-BEA52D7941E8
+chbs:Q255-9274DE3F-EBF6-5958-B16C-BEA52D7941E8
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q255-555433B3-8EDA-5D68-A2C4-64C15C244AEE
+chbs:Q255-555433B3-8EDA-5D68-A2C4-64C15C244AEE
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P117 wd:Q136 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P117 chb:Q136 .
 
-wds:Q255-B8DD346B-323A-5F25-AC57-75E54A50F46C
+chbs:Q255-B8DD346B-323A-5F25-AC57-75E54A50F46C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q257 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q257 .
 
-wds:Q255-B70F7AB5-1EE2-55B5-A6CB-9AD81E01B8A1
+chbs:Q255-B70F7AB5-1EE2-55B5-A6CB-9AD81E01B8A1
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P117 wd:Q256 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P117 chb:Q256 .
 
-wds:Q255-BE64D96B-434A-5499-ABF2-5C935EF25BBF
+chbs:Q255-BE64D96B-434A-5499-ABF2-5C935EF25BBF
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q255-C0DCF49B-0771-5B73-A819-5C28BDBF5A95
+chbs:Q255-C0DCF49B-0771-5B73-A819-5C28BDBF5A95
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q255-C0E44313-40ED-56FB-97E3-0BD0F2625821
+chbs:Q255-C0E44313-40ED-56FB-97E3-0BD0F2625821
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P119 "Open History Map"@en .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P119 "Open History Map"@en .
 
-wds:Q255-DF20ECED-FFE5-510A-BA16-33EC5CD110C6
+chbs:Q255-DF20ECED-FFE5-510A-BA16-33EC5CD110C6
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:9305d07ed936622d2a443cd990bae789008fefe1 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:9305d07ed936622d2a443cd990bae789008fefe1 ;
+    chbps:P106 chb:Q110 .
 
-wdref:9305d07ed936622d2a443cd990bae789008fefe1
+chbref:9305d07ed936622d2a443cd990bae789008fefe1
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/open-history-map/> .
+    chbpr:P6 <https://open-archaeo.info/post/open-history-map/> .

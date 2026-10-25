@@ -1,53 +1,54 @@
 # Q544: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.17.0; data as of unknown
+# Generated with wikibase-static 0.18.0; data as of unknown
 # Licence: CC0 1.0 (Public Domain)
+# The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
-@prefix cat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix data: <https://n4o-rse.github.io/chublets-wikibase-demo/wiki/Special:EntityData/> .
+@prefix chb: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
+@prefix chbcat: <https://n4o-rse.github.io/chublets-wikibase-demo/catalog/> .
+@prefix chbdata: <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/> .
+@prefix chbdist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
+@prefix chbno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
+@prefix chbp: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
+@prefix chbpq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
+@prefix chbpqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
+@prefix chbpr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
+@prefix chbprv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
+@prefix chbps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
+@prefix chbpsv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
+@prefix chbref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
+@prefix chbs: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
+@prefix chbt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
+@prefix chbv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dist: <https://n4o-rse.github.io/chublets-wikibase-demo/distribution/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/> .
-@prefix pq: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/> .
-@prefix pqv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/qualifier/value/> .
-@prefix pr: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix prv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/reference/value/> .
-@prefix ps: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/> .
-@prefix psv: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/statement/value/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wd: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/> .
-@prefix wdno: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/novalue/> .
-@prefix wdref: <https://n4o-rse.github.io/chublets-wikibase-demo/reference/> .
-@prefix wds: <https://n4o-rse.github.io/chublets-wikibase-demo/entity/statement/> .
-@prefix wdt: <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/> .
-@prefix wdv: <https://n4o-rse.github.io/chublets-wikibase-demo/value/> .
 @prefix wikibase: <http://wikiba.se/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Q544
+chbdata:Q544.ttl
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:description "A community driven archaeological map of classical antiquity, inspired by and modelled after Wikipedia."@en ;
     dcterms:identifier "Q544" ;
-    dcterms:isPartOf cat:items ;
+    dcterms:isPartOf chbcat:items ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:subject wd:Q544 ;
+    dcterms:subject chb:Q544 ;
     dcterms:title "vici.org"@en ;
-    schema:about wd:Q544 ;
-    dcat:distribution dist:Q544-html,
-        dist:Q544-json,
-        dist:Q544-ttl ;
+    schema:about chb:Q544 ;
+    dcat:distribution chbdist:Q544-html,
+        chbdist:Q544-json,
+        chbdist:Q544-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/chublets-wikibase-demo/Q544.html> .
 
-dist:Q544-html
+chbdist:Q544-html
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -55,7 +56,7 @@ dist:Q544-html
     dcat:accessURL <https://n4o-rse.github.io/chublets-wikibase-demo/Q544.html> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
 
-dist:Q544-json
+chbdist:Q544-json
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -64,15 +65,15 @@ dist:Q544-json
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q544.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-dist:Q544-ttl
+chbdist:Q544-ttl
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q544, RDF in the Wikibase data model"@en ;
-    dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/ttl/Q544.ttl> ;
+    dcat:downloadURL chbdata:Q544.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
-wd:Q544
+chb:Q544
     a wikibase:Item ;
     schema:description "A community driven archaeological map of classical antiquity, inspired by and modelled after Wikipedia."@en ;
     schema:name "vici.org"@en ;
@@ -80,145 +81,145 @@ wd:Q544
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "vici.org"@en ;
     skos:prefLabel "vici.org"@en ;
-    p:P2 wds:Q544-28F2B238-77FA-5B07-B0F9-7EE767DBA199,
-        wds:Q544-67F729B3-A00D-5444-9658-A0C79AD85D65 ;
-    p:P106 wds:Q544-CC8E75A9-3646-563E-845F-95C2B6F0FE9A ;
-    p:P113 wds:Q544-36B39AD4-85DD-5792-AAA6-EC1434D9CE02 ;
-    p:P115 wds:Q544-476E690F-BEFD-53E9-AC7F-BA925F32BF53 ;
-    p:P116 wds:Q544-78DE98B0-2F38-57AF-82EC-1E4A0D3619E4 ;
-    p:P117 wds:Q544-76240694-26D2-568C-A89A-8FEFE9619229,
-        wds:Q544-ED61E066-AF14-585C-A1E5-BAE36A0FCE62,
-        wds:Q544-EFC41B9C-B791-57B9-9DDE-306A1600D879 ;
-    p:P118 wds:Q544-3FEA3D15-3BD3-5901-A0B5-CAB6D376AB6C ;
-    p:P119 wds:Q544-A1901461-7C8D-5604-BE91-F587B9C68716 ;
-    p:P120 wds:Q544-A7C7180E-7FDE-554F-A54E-4EAB3FB3308F ;
-    p:P122 wds:Q544-5D1F854F-E0CF-5764-B318-05D03E26732B,
-        wds:Q544-E09CA1BB-4EF5-5049-BA92-2F65ED5582D3 ;
-    p:P125 wds:Q544-07C3A4A7-692A-573A-9447-3EEF8252C3C0 ;
-    wdt:P2 wd:Q102,
-        wd:Q106 ;
-    wdt:P106 wd:Q110 ;
-    wdt:P113 wd:Q545 ;
-    wdt:P115 <https://open-archaeo.info/post/vici-org/> ;
-    wdt:P116 "vici-org" ;
-    wdt:P117 wd:Q119,
-        wd:Q207,
-        wd:Q256 ;
-    wdt:P118 wd:Q108 ;
-    wdt:P119 "vici.org"@en ;
-    wdt:P120 <https://vici.org> ;
-    wdt:P122 wd:Q109,
-        wd:Q110 ;
-    wdt:P125 <https://github.com/renevoorburg/vici.org> .
+    chbp:P2 chbs:Q544-28F2B238-77FA-5B07-B0F9-7EE767DBA199,
+        chbs:Q544-67F729B3-A00D-5444-9658-A0C79AD85D65 ;
+    chbp:P106 chbs:Q544-CC8E75A9-3646-563E-845F-95C2B6F0FE9A ;
+    chbp:P113 chbs:Q544-36B39AD4-85DD-5792-AAA6-EC1434D9CE02 ;
+    chbp:P115 chbs:Q544-476E690F-BEFD-53E9-AC7F-BA925F32BF53 ;
+    chbp:P116 chbs:Q544-78DE98B0-2F38-57AF-82EC-1E4A0D3619E4 ;
+    chbp:P117 chbs:Q544-76240694-26D2-568C-A89A-8FEFE9619229,
+        chbs:Q544-ED61E066-AF14-585C-A1E5-BAE36A0FCE62,
+        chbs:Q544-EFC41B9C-B791-57B9-9DDE-306A1600D879 ;
+    chbp:P118 chbs:Q544-3FEA3D15-3BD3-5901-A0B5-CAB6D376AB6C ;
+    chbp:P119 chbs:Q544-A1901461-7C8D-5604-BE91-F587B9C68716 ;
+    chbp:P120 chbs:Q544-A7C7180E-7FDE-554F-A54E-4EAB3FB3308F ;
+    chbp:P122 chbs:Q544-5D1F854F-E0CF-5764-B318-05D03E26732B,
+        chbs:Q544-E09CA1BB-4EF5-5049-BA92-2F65ED5582D3 ;
+    chbp:P125 chbs:Q544-07C3A4A7-692A-573A-9447-3EEF8252C3C0 ;
+    chbt:P2 chb:Q102,
+        chb:Q106 ;
+    chbt:P106 chb:Q110 ;
+    chbt:P113 chb:Q545 ;
+    chbt:P115 <https://open-archaeo.info/post/vici-org/> ;
+    chbt:P116 "vici-org" ;
+    chbt:P117 chb:Q119,
+        chb:Q207,
+        chb:Q256 ;
+    chbt:P118 chb:Q108 ;
+    chbt:P119 "vici.org"@en ;
+    chbt:P120 <https://vici.org> ;
+    chbt:P122 chb:Q109,
+        chb:Q110 ;
+    chbt:P125 <https://github.com/renevoorburg/vici.org> .
 
-wds:Q544-3FEA3D15-3BD3-5901-A0B5-CAB6D376AB6C
+chbs:Q544-3FEA3D15-3BD3-5901-A0B5-CAB6D376AB6C
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P118 wd:Q108 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P118 chb:Q108 .
 
-wds:Q544-5D1F854F-E0CF-5764-B318-05D03E26732B
+chbs:Q544-5D1F854F-E0CF-5764-B318-05D03E26732B
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P122 wd:Q110 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P122 chb:Q110 .
 
-wds:Q544-07C3A4A7-692A-573A-9447-3EEF8252C3C0
+chbs:Q544-07C3A4A7-692A-573A-9447-3EEF8252C3C0
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    pq:P126 wd:Q114 ;
-    ps:P125 <https://github.com/renevoorburg/vici.org> .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbpq:P126 chb:Q114 ;
+    chbps:P125 <https://github.com/renevoorburg/vici.org> .
 
-wds:Q544-28F2B238-77FA-5B07-B0F9-7EE767DBA199
+chbs:Q544-28F2B238-77FA-5B07-B0F9-7EE767DBA199
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P2 wd:Q106 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P2 chb:Q106 .
 
-wds:Q544-36B39AD4-85DD-5792-AAA6-EC1434D9CE02
+chbs:Q544-36B39AD4-85DD-5792-AAA6-EC1434D9CE02
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    pq:P146 "1" ;
-    ps:P113 wd:Q545 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbpq:P146 "1" ;
+    chbps:P113 chb:Q545 .
 
-wds:Q544-67F729B3-A00D-5444-9658-A0C79AD85D65
+chbs:Q544-67F729B3-A00D-5444-9658-A0C79AD85D65
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P2 wd:Q102 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P2 chb:Q102 .
 
-wds:Q544-78DE98B0-2F38-57AF-82EC-1E4A0D3619E4
+chbs:Q544-78DE98B0-2F38-57AF-82EC-1E4A0D3619E4
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    pq:P106 wd:Q110 ;
-    ps:P116 "vici-org" .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbpq:P106 chb:Q110 ;
+    chbps:P116 "vici-org" .
 
-wds:Q544-476E690F-BEFD-53E9-AC7F-BA925F32BF53
+chbs:Q544-476E690F-BEFD-53E9-AC7F-BA925F32BF53
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P115 <https://open-archaeo.info/post/vici-org/> .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P115 <https://open-archaeo.info/post/vici-org/> .
 
-wds:Q544-76240694-26D2-568C-A89A-8FEFE9619229
+chbs:Q544-76240694-26D2-568C-A89A-8FEFE9619229
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P117 wd:Q256 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P117 chb:Q256 .
 
-wds:Q544-A7C7180E-7FDE-554F-A54E-4EAB3FB3308F
+chbs:Q544-A7C7180E-7FDE-554F-A54E-4EAB3FB3308F
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P120 <https://vici.org> .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P120 <https://vici.org> .
 
-wds:Q544-A1901461-7C8D-5604-BE91-F587B9C68716
+chbs:Q544-A1901461-7C8D-5604-BE91-F587B9C68716
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P119 "vici.org"@en .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P119 "vici.org"@en .
 
-wds:Q544-CC8E75A9-3646-563E-845F-95C2B6F0FE9A
+chbs:Q544-CC8E75A9-3646-563E-845F-95C2B6F0FE9A
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P106 wd:Q110 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P106 chb:Q110 .
 
-wds:Q544-E09CA1BB-4EF5-5049-BA92-2F65ED5582D3
+chbs:Q544-E09CA1BB-4EF5-5049-BA92-2F65ED5582D3
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P122 wd:Q109 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P122 chb:Q109 .
 
-wds:Q544-ED61E066-AF14-585C-A1E5-BAE36A0FCE62
+chbs:Q544-ED61E066-AF14-585C-A1E5-BAE36A0FCE62
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P117 wd:Q207 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P117 chb:Q207 .
 
-wds:Q544-EFC41B9C-B791-57B9-9DDE-306A1600D879
+chbs:Q544-EFC41B9C-B791-57B9-9DDE-306A1600D879
     a wikibase:BestRank,
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
-    ps:P117 wd:Q119 .
+    prov:wasDerivedFrom chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1 ;
+    chbps:P117 chb:Q119 .
 
-wdref:ae902de7e40c3c860dbdb63f86769d106196a2f1
+chbref:ae902de7e40c3c860dbdb63f86769d106196a2f1
     a wikibase:Reference ;
-    pr:P6 <https://open-archaeo.info/post/vici-org/> .
+    chbpr:P6 <https://open-archaeo.info/post/vici-org/> .
