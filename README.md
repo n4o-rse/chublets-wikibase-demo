@@ -175,10 +175,10 @@ subclasses below), and the class pages show it as well. Needs `wikibase-static` 
 The IRIs of the RDF export lie under `https://n4o-rse.github.io/chublets-wikibase-demo/`, and the Turtle files name them `chb:`
 (entities), `chbt:` (direct claims), `chbs:` (statement nodes), `chbp:`, `chbps:`, `chbpq:`, `chbpr:`, `chbref:`, `chbv:` and so on (`rdf_prefix: chb`
 in `site.yaml`), not `wd:`, `wdt:` and `p:`, which are Wikidata's. Only `chb:Q933` opens a page (`entity/Q933`, which forwards to `Q933.html`);
-statement, reference and value IRIs are identifiers and do not resolve. The dataset of an entity is its Turtle file, `ttl/Q933.ttl`.
+statement, reference and value IRIs are identifiers and do not resolve. The Turtle file of an entity is `ttl/Q933.ttl`; the dataset it belongs to is `ttl/Q933.ttl#dataset`, so the dataset and the file (its download URL) are two things.
 
 Every entity page has a "Statement graph" and the start page shows the "Data model" as one card per class (also as `docs/graphs/model.svg`). Both are
-drawn from the data by the package. Needs `wikibase-static` 0.18.0.
+drawn from the data by the package. Needs `wikibase-static` 0.18.3 (0.18.0: `rdf_prefix` and the graphics; 0.18.3: `data_as_of`, long names in the graphics, dataset and download URL apart).
 
 ## Source rows
 

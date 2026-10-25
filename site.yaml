@@ -10,6 +10,9 @@ rdf_base: https://n4o-rse.github.io/chublets-wikibase-demo
 # The prefix names of the export: chb:, chbt:, chbp:, ... and not wd:, wdt:, p:, ..., which are those of Wikidata and would make
 # chb:Q933 look like an item there (wikibase-static 0.18.0, PRIMER.md A4 "RDF, Präfixe").
 rdf_prefix: chb
+# The date of the data. The CSV tables carry no modification time of their own, so the header of the Turtle files and the
+# catalogue would say "unknown"; this date takes its place (wikibase-static 0.18.3). Set it again when the data change.
+data_as_of: 2026-10-25
 edit_url: https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv
 languages:
   default: en
