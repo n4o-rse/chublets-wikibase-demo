@@ -17,6 +17,8 @@ pages, a search index, RDF and a SPARQL page, with the same code as for a harves
   (P249 to P257, review of 2026-10-22),
 * **7 classes** (Q100 to Q106): software, research software, application software, software library, script file,
   Little Minion and chublet, in the class tree the pack drew, each with its Wikidata twin.
+  Three more classes (Q372 utility software, Q378 QGIS plugin, Q379 plug-in) are stubs taken over from Wikidata because items of the seeds
+  are instances of them.
 
 The logo (`assets/logo.png`, set in `site.yaml`) is the chublets raven.
 Every entity page offers its RDF as Turtle and as JSON for download (`docs/ttl/`, `docs/json/`) and a button that copies the concept URI to the clipboard.
@@ -44,7 +46,7 @@ maintained (`background/demo-sources.csv`, `S10`).
 
 **Domain and range (review of 2026-10-22):** the domain (`P9`) is software (`Q100`) for the software properties and
 property (`Q2`) for the three metadata properties P100 to P102; 29 properties have none (qualifier-like, or for persons only, or not tied to software).
-The range (`P10`) is `Q3` (any item) for each of the 63 properties with item values and absent otherwise, because the datatype
+The range (`P10`) is `Q3` (any item) for each of the 66 properties with item values and absent otherwise, because the datatype
 already is the range. The classes for person, organisation, work and the like are not in the model yet; they come with the data
 that needs them. P101 (CodeMeta term) and P102 (schema.org term) are `external-id` with a formatter URL, so their values are bare
 names (`applicationCategory`). P102 has 71 values; eight CodeMeta terms have no schema.org term of the same meaning
