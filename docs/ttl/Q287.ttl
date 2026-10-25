@@ -1,5 +1,5 @@
 # Q287: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q287
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "ArcheOS"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q189> ;
     skos:prefLabel "ArcheOS"@en ;
     chbp:P2 chbs:Q287-1F038F18-16D5-5778-8790-F71642E54304,
         chbs:Q287-78B89229-C968-5705-8507-48E931C93009 ;

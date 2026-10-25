@@ -1,5 +1,5 @@
 # P198: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P198
     wikibase:statementValue chbpsv:P198 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Free Software Directory entry"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P109> ;
     skos:prefLabel "Free Software Directory entry"@en ;
     chbp:P2 chbs:P198-45E78B96-84C0-5FAD-8A8F-3F7AA07993F8 ;
     chbp:P4 chbs:P198-AE9AD0FE-4DC5-524C-9FFB-9C55B3E1CFD9 ;

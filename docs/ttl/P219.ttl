@@ -1,5 +1,5 @@
 # P219: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P219
     wikibase:statementValue chbpsv:P219 ;
     wikibase:statements "4"^^xsd:integer ;
     rdfs:label "package management system"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P130> ;
     skos:prefLabel "package management system"@en ;
     chbp:P2 chbs:P219-15CA9126-E7F3-5170-8022-3E70EC3FB2D7 ;
     chbp:P4 chbs:P219-B8DD8A89-264D-54A0-822C-F8EA10A91C11 ;

@@ -1,5 +1,5 @@
 # Q324: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -78,6 +78,7 @@ chb:Q324
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Microsoft Excel"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q229> ;
     skos:prefLabel "Microsoft Excel"@en ;
     chbp:P2 chbs:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD,
         chbs:Q324-AFE5D95D-78D6-5698-B7D8-A127567F71F6 ;

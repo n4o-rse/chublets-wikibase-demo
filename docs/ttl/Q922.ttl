@@ -1,5 +1,5 @@
 # Q922: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q922
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "Ceramatic2.0"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q799> ;
     skos:prefLabel "Ceramatic2.0"@en ;
     chbp:P2 chbs:Q922-0E5E1380-3757-5F5F-8670-492B9C966F9C,
         chbs:Q922-71F0146F-B509-5DF4-8331-5775197C94F9 ;

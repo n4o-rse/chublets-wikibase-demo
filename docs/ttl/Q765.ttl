@@ -1,5 +1,5 @@
 # Q765: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q765
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "archio"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q643> ;
     skos:prefLabel "archio"@en ;
     chbp:P2 chbs:Q765-5D75E21A-92D7-5B04-B8E6-FADF2558194D,
         chbs:Q765-441E04F0-FDF2-53F0-8591-2EAEB9E05D1F ;

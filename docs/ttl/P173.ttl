@@ -1,5 +1,5 @@
 # P173: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P173
     wikibase:statementValue chbpsv:P173 ;
     wikibase:statements "4"^^xsd:integer ;
     rdfs:label "distribution format"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P84> ;
     skos:prefLabel "distribution format"@en ;
     chbp:P2 chbs:P173-EF0AE53F-26A9-56FA-971E-AF63F9641A5E ;
     chbp:P4 chbs:P173-DBB50C0B-37BB-5B7D-B93F-BF3CB45AEB5C ;

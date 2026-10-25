@@ -1,5 +1,5 @@
 # Q661: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q661
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "Chronophage"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q539> ;
     skos:prefLabel "Chronophage"@en ;
     chbp:P2 chbs:Q661-0E4B64A7-145E-51B3-B250-EF88AAF53908,
         chbs:Q661-77718897-5B2A-529D-B09F-BD1DCCEDE145 ;

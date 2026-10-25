@@ -1,5 +1,5 @@
 # Q760: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q760
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "Tachy2GIS_arch"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q638> ;
     skos:prefLabel "Tachy2GIS_arch"@en ;
     chbp:P2 chbs:Q760-970EED94-D8A7-5CE5-A7D6-5699C2531899,
         chbs:Q760-BC6EA4AD-BFAB-5D26-8937-F0DDC0B8E419 ;

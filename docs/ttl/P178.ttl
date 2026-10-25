@@ -1,5 +1,5 @@
 # P178: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P178
     wikibase:statementValue chbpsv:P178 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Fedora package"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P89> ;
     skos:prefLabel "Fedora package"@en ;
     chbp:P2 chbs:P178-49AAFB4C-AF7B-548E-A423-D083AE086DE2 ;
     chbp:P4 chbs:P178-F52B3389-120E-5462-9074-F71912FF42CA ;

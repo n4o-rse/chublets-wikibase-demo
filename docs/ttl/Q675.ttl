@@ -1,5 +1,5 @@
 # Q675: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q675
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "postAAR"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q553> ;
     skos:prefLabel "postAAR"@en ;
     chbp:P2 chbs:Q675-4269A98E-99D9-5ED1-9AD1-38FDE7C78BF7,
         chbs:Q675-EB133208-879E-50AC-94BE-3CF02C08630C ;

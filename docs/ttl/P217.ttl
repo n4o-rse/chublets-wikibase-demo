@@ -1,5 +1,5 @@
 # P217: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P217
     wikibase:statementValue chbpsv:P217 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Open Hub ID"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P128> ;
     skos:prefLabel "Open Hub ID"@en ;
     chbp:P2 chbs:P217-48611A95-E88A-5137-AE84-CA38D4844C6D ;
     chbp:P4 chbs:P217-B627D2DD-2A8C-5D70-BC56-A10D5AB774E2 ;

@@ -1,5 +1,5 @@
 # Q484: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q484
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "osteometric-sorting"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q362> ;
     skos:prefLabel "osteometric-sorting"@en ;
     chbp:P2 chbs:Q484-3EA4D473-ADF2-528C-918D-D18665C93A27,
         chbs:Q484-795C7BA1-01AD-5D21-B844-8F147182BA8A ;

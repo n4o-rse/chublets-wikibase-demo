@@ -1,5 +1,5 @@
 # Q925: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q925
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "quantum-archeo"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q802> ;
     skos:prefLabel "quantum-archeo"@en ;
     chbp:P2 chbs:Q925-6D7A3F6F-5DDD-57BC-A6F2-E2E9401BDD58,
         chbs:Q925-D5EC0874-DE2B-5548-AE2D-225C4704CD09 ;

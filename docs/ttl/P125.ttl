@@ -1,5 +1,5 @@
 # P125: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P125
     wikibase:statementValue chbpsv:P125 ;
     wikibase:statements "5"^^xsd:integer ;
     rdfs:label "source code repository URL"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P36> ;
     skos:prefLabel "source code repository URL"@en ;
     chbp:P2 chbs:P125-3C108272-61EB-5BC3-8437-8317ACFF6B75 ;
     chbp:P4 chbs:P125-AE076526-7AB9-5686-BB72-BB46FFA3BC22 ;

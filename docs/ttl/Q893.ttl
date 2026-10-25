@@ -1,5 +1,5 @@
 # Q893: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q893
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "c14Intervals"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q770> ;
     skos:prefLabel "c14Intervals"@en ;
     chbp:P2 chbs:Q893-3BCCC176-8EBA-5473-AD85-2F61532186FD,
         chbs:Q893-C3518D02-C0D9-58F8-84C8-7F3776AE08B8 ;

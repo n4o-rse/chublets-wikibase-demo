@@ -1,5 +1,5 @@
 # Q143: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q143
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "totalstation-tools"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q46> ;
     skos:prefLabel "totalstation-tools"@en ;
     chbp:P2 chbs:Q143-A9082039-7833-5F4B-9836-E8F6E800D045,
         chbs:Q143-D597C558-B219-5F46-A234-EB0FE2B45D81 ;

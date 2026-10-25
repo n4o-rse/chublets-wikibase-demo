@@ -1,5 +1,5 @@
 # Q841: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q841
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "SEAHORS"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q719> ;
     skos:prefLabel "SEAHORS"@en ;
     chbp:P2 chbs:Q841-2D22120F-0D92-5635-9F2F-33FB5A98B0FD,
         chbs:Q841-80574B50-5AC9-53BA-9CB8-55AFCA66A46A ;

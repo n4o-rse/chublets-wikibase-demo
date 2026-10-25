@@ -1,5 +1,5 @@
 # Q777: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q777
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "chronup"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q655> ;
     skos:prefLabel "chronup"@en ;
     chbp:P2 chbs:Q777-00ED0EB5-C29F-5570-8866-FC2FE5B1C84D,
         chbs:Q777-87E1067D-1BA6-5E56-9792-728CC4B88A3B ;

@@ -1,5 +1,5 @@
 # Q422: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q422
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "ArchaeoData"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q300> ;
     skos:prefLabel "ArchaeoData"@en ;
     chbp:P2 chbs:Q422-5758231D-7DB1-5422-A535-18639CA42C0E,
         chbs:Q422-CD3775CD-AA3D-52BD-9FB4-06A24F7B0034 ;

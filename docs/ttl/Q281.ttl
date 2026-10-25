@@ -1,5 +1,5 @@
 # Q281: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q281
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "ishtar"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q212> ;
     skos:prefLabel "ishtar"@en ;
     chbp:P2 chbs:Q281-1B7D7C73-6467-50E3-BDE5-1495AA839EBC,
         chbs:Q281-2B8011A3-8028-5EDB-BD08-1250273D164F ;

@@ -1,5 +1,5 @@
 # P113: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P113
     wikibase:statementValue chbpsv:P113 ;
     wikibase:statements "6"^^xsd:integer ;
     rdfs:label "developer"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P24> ;
     skos:prefLabel "developer"@en ;
     chbp:P2 chbs:P113-1DD054C7-B057-5A14-B928-5AC51E80B3FD ;
     chbp:P4 chbs:P113-E0FACD8B-FF8E-5F95-B4DD-E959E2086FFD ;

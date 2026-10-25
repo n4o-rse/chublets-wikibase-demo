@@ -14,6 +14,14 @@ rdf_prefix: chb
 # catalogue would say "unknown"; this date takes its place (wikibase-static 0.18.3). Set it again when the data change.
 data_as_of: 2026-10-25
 edit_url: https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv
+# The same entities in the real Wikibase (pushed with wikibase-federation, usecases/chublets; wikibase-static 0.19.0, PRIMER.md A4):
+# every page links to its counterpart there, the RDF says owl:sameAs. The table is the idmap that the push wrote
+# (data/counterpart/idmap-chublets-wikibase.de.csv); copy it here again after every push.
+counterpart:
+  name: chublets-wikibase.de
+  uri: https://chublets-wikibase.de/entity/{id}
+  url: https://chublets-wikibase.de/wiki/Special:EntityPage/{id}
+  map: data/counterpart/idmap-chublets-wikibase.de.csv
 languages:
   default: en
   second: de

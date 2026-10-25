@@ -1,5 +1,5 @@
 # Q200: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q200
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "paleoxrf"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q103> ;
     skos:prefLabel "paleoxrf"@en ;
     chbp:P2 chbs:Q200-4CA8E0FB-880C-5C6A-B8A3-DF282F988C3B,
         chbs:Q200-F92BB43B-2C33-524C-960E-AA56E3B22B75 ;

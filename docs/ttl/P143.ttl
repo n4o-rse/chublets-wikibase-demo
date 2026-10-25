@@ -1,5 +1,5 @@
 # P143: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P143
     wikibase:statementValue chbpsv:P143 ;
     wikibase:statements "6"^^xsd:integer ;
     rdfs:label "platform"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P54> ;
     skos:prefLabel "platform"@en ;
     chbp:P2 chbs:P143-84904C2C-8841-50F7-A5D8-18AA4FD66019 ;
     chbp:P4 chbs:P143-E776BEC9-7C67-580E-81E8-FACABAC7CCFE ;

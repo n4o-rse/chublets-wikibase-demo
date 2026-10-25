@@ -1,5 +1,5 @@
 # Q583: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q583
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "statuAAR"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q461> ;
     skos:prefLabel "statuAAR"@en ;
     chbp:P2 chbs:Q583-24814AFB-23B0-564B-81F9-4731404C8F57,
         chbs:Q583-BAEF019B-DFA4-5901-9167-D3E6D0656481 ;

@@ -1,5 +1,5 @@
 # Q1: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -85,6 +85,7 @@ chb:Q1
     wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Class"@en,
         "Klasse"@de ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q2> ;
     skos:prefLabel "Class"@en,
         "Klasse"@de ;
     chbp:P1 chbs:Q1-CF9741BD-D637-5B3B-9FA9-19338518A331 ;

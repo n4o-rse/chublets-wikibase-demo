@@ -1,5 +1,5 @@
 # Q531: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q531
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "3D_EdgeAngle"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q409> ;
     skos:prefLabel "3D_EdgeAngle"@en ;
     chbp:P2 chbs:Q531-508BA359-1FFD-5D51-98C4-53F54BD79065,
         chbs:Q531-9829549D-61F6-5BA2-919C-1A645D733B5B ;

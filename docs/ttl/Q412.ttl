@@ -1,5 +1,5 @@
 # Q412: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q412
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "allen-relations"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q290> ;
     skos:prefLabel "allen-relations"@en ;
     chbp:P2 chbs:Q412-5DD61864-980F-59F1-83CD-6A400F85CD01,
         chbs:Q412-2225AEFF-FC22-564B-8CCD-E14F70B59907 ;

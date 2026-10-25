@@ -1,5 +1,5 @@
 # P208: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P208
     wikibase:statementValue chbpsv:P208 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "IRC channel URL"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P119> ;
     skos:prefLabel "IRC channel URL"@en ;
     chbp:P2 chbs:P208-BEB17F64-69D7-5999-A9F1-4923412F25FF ;
     chbp:P4 chbs:P208-ABAB359D-4097-5F07-B8CF-67E01813E148 ;

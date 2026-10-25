@@ -1,5 +1,5 @@
 # Q432: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q432
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
     rdfs:label "QuARI"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q310> ;
     skos:prefLabel "QuARI"@en ;
     chbp:P2 chbs:Q432-AC01CB27-FB3F-53A0-81F4-C573B3E68EEF,
         chbs:Q432-F3E3B0A3-6B9F-5922-A660-FA76BC807EF1 ;

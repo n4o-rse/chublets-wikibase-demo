@@ -1,5 +1,5 @@
 # Q572: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q572
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "soiltexture"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q450> ;
     skos:prefLabel "soiltexture"@en ;
     chbp:P2 chbs:Q572-257B597B-4A7E-51E9-90A2-AA6D030FC748,
         chbs:Q572-E9BA64EA-4AAC-5EC8-87AB-44657D32B53F ;

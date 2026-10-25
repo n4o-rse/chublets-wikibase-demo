@@ -1,5 +1,5 @@
 # Q715: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q715
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "pollen_data_processing"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q593> ;
     skos:prefLabel "pollen_data_processing"@en ;
     chbp:P2 chbs:Q715-3F557386-2E25-55CF-941A-EF93E5215E39,
         chbs:Q715-ACBBB580-1B0E-597C-9CB0-CBDA27A78194 ;

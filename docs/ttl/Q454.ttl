@@ -1,5 +1,5 @@
 # Q454: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q454
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "paleocoreR"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q332> ;
     skos:prefLabel "paleocoreR"@en ;
     chbp:P2 chbs:Q454-1C71C1AC-5FAE-5B33-AFCA-EACEE897A24B,
         chbs:Q454-7CADFEA9-D8F4-555A-9348-60FF7D8FCBA5 ;

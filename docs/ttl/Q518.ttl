@@ -1,5 +1,5 @@
 # Q518: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q518
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "15"^^xsd:integer ;
     rdfs:label "pygeoroc"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q396> ;
     skos:prefLabel "pygeoroc"@en ;
     chbp:P2 chbs:Q518-79EA218D-B679-5054-A0CA-BEB0B1695CC6,
         chbs:Q518-7736D1C6-7285-565C-8FAC-C938810EDE41 ;

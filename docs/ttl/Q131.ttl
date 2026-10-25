@@ -1,5 +1,5 @@
 # Q131: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q131
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "MtreeRing"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q35> ;
     skos:prefLabel "MtreeRing"@en ;
     chbp:P2 chbs:Q131-6C1B8F90-226F-516E-B545-5087D18A1DE3,
         chbs:Q131-8F0D35E4-5732-5C7E-96AA-6D6D9459A81D ;

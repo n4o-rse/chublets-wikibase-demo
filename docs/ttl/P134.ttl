@@ -1,5 +1,5 @@
 # P134: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P134
     wikibase:statementValue chbpsv:P134 ;
     wikibase:statements "6"^^xsd:integer ;
     rdfs:label "funder"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P45> ;
     skos:prefLabel "funder"@en ;
     chbp:P2 chbs:P134-8726E4EE-F8CB-5CFC-B24A-501B9F676C5B ;
     chbp:P4 chbs:P134-A29D0917-780E-5C67-8CAA-D513C413D35E ;

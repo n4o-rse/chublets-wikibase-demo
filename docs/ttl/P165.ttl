@@ -1,5 +1,5 @@
 # P165: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P165
     wikibase:statementValue chbpsv:P165 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "cont integration"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P76> ;
     skos:prefLabel "cont integration"@en ;
     chbp:P2 chbs:P165-C37433B9-4797-5841-8B37-A8AF460FE398 ;
     chbp:P9 chbs:P165-8F6AC796-2E03-5C61-9CCC-236FECADFFF0 ;

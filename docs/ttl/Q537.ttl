@@ -1,5 +1,5 @@
 # Q537: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q537
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "awesome-historical-maps"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q415> ;
     skos:prefLabel "awesome-historical-maps"@en ;
     chbp:P2 chbs:Q537-44975AE3-85E6-5432-9B27-2BFB9E63B638,
         chbs:Q537-B984D2AA-109D-5E61-86BD-3A91570D47CC ;

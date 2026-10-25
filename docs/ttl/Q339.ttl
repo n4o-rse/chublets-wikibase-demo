@@ -1,5 +1,5 @@
 # Q339: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q339
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "joint-disease-tool"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q244> ;
     skos:prefLabel "joint-disease-tool"@en ;
     chbp:P2 chbs:Q339-19D397F6-ABF6-5341-B484-F3B4FCFE3319,
         chbs:Q339-3430D712-5854-574B-803F-572465ECE913 ;

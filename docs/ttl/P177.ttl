@@ -1,5 +1,5 @@
 # P177: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P177
     wikibase:statementValue chbpsv:P177 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "Arch Linux package"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P88> ;
     skos:prefLabel "Arch Linux package"@en ;
     chbp:P2 chbs:P177-E7A0BC77-608B-5402-9EA2-4E07D20A46A4 ;
     chbp:P4 chbs:P177-0198BF9C-F653-5144-A2E2-FCBAAFBABCC6 ;

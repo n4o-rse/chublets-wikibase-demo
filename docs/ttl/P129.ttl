@@ -1,5 +1,5 @@
 # P129: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P129
     wikibase:statementValue chbpsv:P129 ;
     wikibase:statements "5"^^xsd:integer ;
     rdfs:label "application suite"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P40> ;
     skos:prefLabel "application suite"@en ;
     chbp:P2 chbs:P129-30857360-2400-55FA-A1CB-383CC0BB3C58 ;
     chbp:P9 chbs:P129-5055AF3B-F10C-5034-B5D3-B346DBDD0FDA ;

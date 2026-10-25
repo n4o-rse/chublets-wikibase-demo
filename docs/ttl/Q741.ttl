@@ -1,5 +1,5 @@
 # Q741: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q741
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "BioProfile"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q619> ;
     skos:prefLabel "BioProfile"@en ;
     chbp:P2 chbs:Q741-9E5892E0-085A-5B0E-B022-6C32221F905F,
         chbs:Q741-E0E3FB45-4C5D-5D75-AD7F-EA2C6F598B3D ;

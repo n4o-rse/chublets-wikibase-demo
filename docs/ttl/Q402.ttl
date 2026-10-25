@@ -1,5 +1,5 @@
 # Q402: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q402
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "recexcavAAR"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q281> ;
     skos:prefLabel "recexcavAAR"@en ;
     chbp:P2 chbs:Q402-6FA6E760-4D0C-5121-B195-61BD7FCD2234,
         chbs:Q402-C5537400-9679-589D-815F-162F3DFA3319 ;

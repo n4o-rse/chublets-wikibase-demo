@@ -1,5 +1,5 @@
 # Q811: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q811
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "expotime"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q689> ;
     skos:prefLabel "expotime"@en ;
     chbp:P2 chbs:Q811-211D190C-29AC-591B-9E9E-C4F083A743F0,
         chbs:Q811-E48CECF6-B763-56A1-987D-8328DFCAB14E ;

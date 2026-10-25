@@ -1,5 +1,5 @@
 # P203: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P203
     wikibase:statementValue chbpsv:P203 ;
     wikibase:statements "5"^^xsd:integer ;
     rdfs:label "has source code"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P114> ;
     skos:prefLabel "has source code"@en ;
     chbp:P2 chbs:P203-58ED7C8E-2902-55AF-836E-6E2E067A3700 ;
     chbp:P9 chbs:P203-F87C0795-8077-5B85-AB1A-7E9F5D225D1D ;

@@ -1,5 +1,5 @@
 # P107: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P107
     wikibase:statementValue chbpsv:P107 ;
     wikibase:statements "6"^^xsd:integer ;
     rdfs:label "copyright license"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P18> ;
     skos:prefLabel "copyright license"@en ;
     chbp:P2 chbs:P107-E9267077-350E-5303-A947-15B607322E48 ;
     chbp:P4 chbs:P107-F592B6B8-B6C9-5EE3-8DE8-E9D2A13D18BA ;

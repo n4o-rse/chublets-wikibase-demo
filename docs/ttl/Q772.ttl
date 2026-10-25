@@ -1,5 +1,5 @@
 # Q772: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q772
     wikibase:identifiers "1"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "munsell"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q650> ;
     skos:prefLabel "munsell"@en ;
     chbp:P2 chbs:Q772-63AC821A-F4C6-5931-AD5A-41ADDE7300C3,
         chbs:Q772-8842FA2A-1AE7-515B-B593-BD0679C949DC ;

@@ -1,5 +1,5 @@
 # Q387: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q387
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     rdfs:label "ARK1"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q266> ;
     skos:prefLabel "ARK1"@en ;
     chbp:P2 chbs:Q387-76A5CA85-FE0E-5915-9AB9-0D3118E37C61,
         chbs:Q387-E63D12B5-C0D0-5B6C-A7F6-5654FB7A6C31 ;

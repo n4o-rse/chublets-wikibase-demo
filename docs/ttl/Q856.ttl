@@ -1,5 +1,5 @@
 # Q856: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q856
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     rdfs:label "Arc-Team-Tools"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q733> ;
     skos:prefLabel "Arc-Team-Tools"@en ;
     chbp:P2 chbs:Q856-7D605CFB-1213-5D38-9210-99E454B776DA,
         chbs:Q856-DB5706D3-3D6E-5360-95C4-739E5B903A1E ;

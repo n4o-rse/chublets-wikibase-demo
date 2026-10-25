@@ -1,5 +1,5 @@
 # P216: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P216
     wikibase:statementValue chbpsv:P216 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "official blog URL"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P127> ;
     skos:prefLabel "official blog URL"@en ;
     chbp:P2 chbs:P216-7E5D1EB9-4EE3-50B3-BC8C-936B5600CFDA ;
     chbp:P4 chbs:P216-A3CD837B-B3D5-5AEC-A9D1-95B246600E5B ;

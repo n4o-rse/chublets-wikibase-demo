@@ -1,5 +1,5 @@
 # P161: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -88,6 +88,7 @@ chb:P161
     wikibase:statementValue chbpsv:P161 ;
     wikibase:statements "3"^^xsd:integer ;
     rdfs:label "build instructions"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/P72> ;
     skos:prefLabel "build instructions"@en ;
     chbp:P2 chbs:P161-D9C18519-D302-59F5-870D-2F297FB60791 ;
     chbp:P9 chbs:P161-66AF81F3-FBC7-5B1B-BFC7-C8543F00C794 ;

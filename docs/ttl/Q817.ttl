@@ -1,5 +1,5 @@
 # Q817: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q817
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     rdfs:label "HME-HarrisMatrixEditor"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q695> ;
     skos:prefLabel "HME-HarrisMatrixEditor"@en ;
     chbp:P2 chbs:Q817-4EEFECD2-1E5A-5BEE-8F70-D83E093FA01E,
         chbs:Q817-A14FB09B-0906-53AA-B99D-99698F52E844 ;

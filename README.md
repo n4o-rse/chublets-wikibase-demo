@@ -214,6 +214,14 @@ Numbers from 100 on are given once and never reused (`data/csv/idmap.csv`). The 
 numbers for them; only the kernel has the same ones in both places. For that reason the RDF export uses the address of
 this demo as base (`rdf_base` in `site.yaml`), not the address of the real Wikibase.
 
+## Counterpart in chublets-wikibase.de
+
+The same entities were pushed into the real Wikibase https://chublets-wikibase.de (with `wikibase-federation`, `usecases/chublets`),
+where they got other numbers (CSV Q107 is Q11 there). `site.yaml` (`counterpart`) names the table of ids,
+`data/counterpart/idmap-chublets-wikibase.de.csv` (the `idmap` that the push wrote; 980 rows, the 20 Wikidata stubs have none).
+Each entity page links to its counterpart, each Turtle file says `owl:sameAs`, and the table is published under `downloads/`.
+After another push, copy the new `idmap` here again. Needs wikibase-static 0.19.0 or later.
+
 ## Publishing
 
 `.github/workflows/site.yml` runs on every push and pull request: `python main.py --strict` twice, with `git status`

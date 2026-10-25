@@ -1,5 +1,5 @@
 # Q853: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static 0.18.3; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -80,6 +80,7 @@ chb:Q853
     wikibase:identifiers "2"^^xsd:integer ;
     wikibase:statements "16"^^xsd:integer ;
     rdfs:label "isopleuros"@en ;
+    owl:sameAs <https://chublets-wikibase.de/entity/Q730> ;
     skos:prefLabel "isopleuros"@en ;
     chbp:P2 chbs:Q853-3ACAB258-85D2-58FE-8C3E-A0F4B81D4A15,
         chbs:Q853-829D5FC8-B82E-549A-B0F1-4F49169F6B0C ;
