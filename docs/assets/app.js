@@ -25,6 +25,35 @@
   });
 })();
 
+// Colour theme: light (the default) or dark. html[data-theme="dark"] is set before the first paint by the head script; the choice is kept
+// in localStorage ("wbs-theme", shared by the sites of one host). The system setting is not consulted. Without JavaScript the button stays hidden.
+(function () {
+  var button = document.getElementById("wbs-theme");
+  if (!button) { return; }
+  var root = document.documentElement;
+  var icons = { light: "\u2600", dark: "\u263E" };    // shown before the short word
+  var labels = {};
+  try { labels = JSON.parse(button.getAttribute("data-labels") || "{}"); } catch (e) { labels = {}; }
+  function state() { return root.getAttribute("data-theme") === "dark" ? "dark" : "light"; }
+  function show() {
+    var s = state(), lang = root.getAttribute("data-lang") || "en";
+    var table = labels[lang] || labels.en || {};
+    var pair = table[s] || [s, s];
+    button.textContent = icons[s] + " " + pair[0];
+    button.setAttribute("title", pair[1]);
+    button.setAttribute("aria-label", pair[1]);
+  }
+  button.hidden = false;
+  button.addEventListener("click", function () {
+    var next = state() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { window.localStorage.setItem("wbs-theme", next); } catch (e) { /* ignore */ }
+    show();
+  });
+  new MutationObserver(show).observe(root, { attributes: true, attributeFilter: ["data-lang"] });
+  show();
+})();
+
 // Copy the concept URI of the entity (a button with data-copy). The clipboard API needs a secure context (https or
 // localhost); on a page opened from a file or an old browser a hidden textarea and execCommand do the same.
 (function () {
