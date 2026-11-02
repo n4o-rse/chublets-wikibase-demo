@@ -60,7 +60,7 @@ chbdist:Q349-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q349, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1670"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1197"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q349.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,20 +76,12 @@ chb:Q349
     a wikibase:Item ;
     schema:name "Piwigo"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Piwigo"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q254> ;
     skos:prefLabel "Piwigo"@en ;
-    chbp:P2 chbs:Q349-954EC2FD-C137-5932-B2C4-1C2830DF37C6,
-        chbs:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
-
-chbs:Q349-954EC2FD-C137-5932-B2C4-1C2830DF37C6
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
+    chbp:P2 chbs:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F
     a wikibase:BestRank,

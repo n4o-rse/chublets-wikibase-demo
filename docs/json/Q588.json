@@ -519,7 +519,7 @@
         "type": "statement"
       },
       {
-        "id": "Q588$D6F2DA5C-5580-5BC8-B828-C41806A2CAC3",
+        "id": "Q588$3CB60DCB-07C3-51C7-B53D-1EB2D24C0DD2",
         "mainsnak": {
           "datatype": "wikibase-item",
           "datavalue": {
@@ -534,6 +534,26 @@
           "snaktype": "value"
         },
         "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/seriation-mhahsler/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
         "type": "statement"
       }
     ],

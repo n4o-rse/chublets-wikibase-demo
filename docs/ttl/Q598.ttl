@@ -61,7 +61,7 @@ chbdist:Q598-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q598, as archived from the Wikibase API"@en ;
-    dcat:byteSize "18371"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "18909"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q598.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -88,7 +88,7 @@ chb:Q598
     chbp:P113 chbs:Q598-6EAE30DB-105A-54E2-9019-82ED30074FCA ;
     chbp:P115 chbs:Q598-4C323BBF-7EB6-58CC-8C49-F8DC07F802CF ;
     chbp:P116 chbs:Q598-66532D16-27D8-5EF7-B1F4-95200D50C083 ;
-    chbp:P117 chbs:Q598-816670DC-5EAB-5367-A63A-2CF718D18699,
+    chbp:P117 chbs:Q598-0CA6F27A-1D76-5644-BB8D-E07739237CF9,
         chbs:Q598-ADC508B2-C363-5B34-BB66-3B6A055EFFAF,
         chbs:Q598-F2DF8219-FB81-50CD-A3B1-E49234348AEF ;
     chbp:P118 chbs:Q598-D4E8C2CD-AACD-512F-82C7-D3E4CBF257AE ;
@@ -121,6 +121,13 @@ chbs:Q598-0A0AC06B-1ADB-594A-A175-2588CB1D275D
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:5ca547eb109e2a27621c38cd5d2f54b12d304036 ;
     chbps:P122 chb:Q109 .
+
+chbs:Q598-0CA6F27A-1D76-5644-BB8D-E07739237CF9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:5ca547eb109e2a27621c38cd5d2f54b12d304036 ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q598-4C323BBF-7EB6-58CC-8C49-F8DC07F802CF
     a wikibase:BestRank,
@@ -158,12 +165,6 @@ chbs:Q598-66532D16-27D8-5EF7-B1F4-95200D50C083
     prov:wasDerivedFrom chbref:5ca547eb109e2a27621c38cd5d2f54b12d304036 ;
     chbpq:P106 chb:Q110 ;
     chbps:P116 "mean-ceramic-date-and-error-estimation" .
-
-chbs:Q598-816670DC-5EAB-5367-A63A-2CF718D18699
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P117 chb:Q126 .
 
 chbs:Q598-A9864B16-AF6A-5279-BEB7-1A73C1D0BABB
     a wikibase:BestRank,

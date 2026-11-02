@@ -215,79 +215,6 @@
     ],
     "P113": [
       {
-        "id": "Q359$A41D3BCD-0338-52A0-A04C-8DEE7C3790DD",
-        "mainsnak": {
-          "datatype": "wikibase-item",
-          "datavalue": {
-            "type": "wikibase-entityid",
-            "value": {
-              "entity-type": "item",
-              "id": "Q365",
-              "numeric-id": 365
-            }
-          },
-          "property": "P113",
-          "snaktype": "value"
-        },
-        "rank": "normal",
-        "references": [
-          {
-            "snaks": {
-              "P6": [
-                {
-                  "datatype": "url",
-                  "datavalue": {
-                    "type": "string",
-                    "value": "https://www.wikidata.org/wiki/Q74004218"
-                  },
-                  "property": "P6",
-                  "snaktype": "value"
-                }
-              ],
-              "P7": [
-                {
-                  "datatype": "time",
-                  "datavalue": {
-                    "type": "time",
-                    "value": {
-                      "after": 0,
-                      "before": 0,
-                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
-                      "precision": 11,
-                      "time": "+2026-08-27T00:00:00Z",
-                      "timezone": 0
-                    }
-                  },
-                  "property": "P7",
-                  "snaktype": "value"
-                }
-              ],
-              "P8": [
-                {
-                  "datatype": "wikibase-item",
-                  "datavalue": {
-                    "type": "wikibase-entityid",
-                    "value": {
-                      "entity-type": "item",
-                      "id": "Q364",
-                      "numeric-id": 364
-                    }
-                  },
-                  "property": "P8",
-                  "snaktype": "value"
-                }
-              ]
-            },
-            "snaks-order": [
-              "P6",
-              "P7",
-              "P8"
-            ]
-          }
-        ],
-        "type": "statement"
-      },
-      {
         "id": "Q359$7BC78678-A539-5BA1-B0E1-0CACF4CBC93F",
         "mainsnak": {
           "datatype": "wikibase-item",
@@ -297,79 +224,6 @@
               "entity-type": "item",
               "id": "Q368",
               "numeric-id": 368
-            }
-          },
-          "property": "P113",
-          "snaktype": "value"
-        },
-        "rank": "normal",
-        "references": [
-          {
-            "snaks": {
-              "P6": [
-                {
-                  "datatype": "url",
-                  "datavalue": {
-                    "type": "string",
-                    "value": "https://www.wikidata.org/wiki/Q74004218"
-                  },
-                  "property": "P6",
-                  "snaktype": "value"
-                }
-              ],
-              "P7": [
-                {
-                  "datatype": "time",
-                  "datavalue": {
-                    "type": "time",
-                    "value": {
-                      "after": 0,
-                      "before": 0,
-                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
-                      "precision": 11,
-                      "time": "+2026-08-27T00:00:00Z",
-                      "timezone": 0
-                    }
-                  },
-                  "property": "P7",
-                  "snaktype": "value"
-                }
-              ],
-              "P8": [
-                {
-                  "datatype": "wikibase-item",
-                  "datavalue": {
-                    "type": "wikibase-entityid",
-                    "value": {
-                      "entity-type": "item",
-                      "id": "Q364",
-                      "numeric-id": 364
-                    }
-                  },
-                  "property": "P8",
-                  "snaktype": "value"
-                }
-              ]
-            },
-            "snaks-order": [
-              "P6",
-              "P7",
-              "P8"
-            ]
-          }
-        ],
-        "type": "statement"
-      },
-      {
-        "id": "Q359$EEC02582-2679-519C-9581-BB5C63818E17",
-        "mainsnak": {
-          "datatype": "wikibase-item",
-          "datavalue": {
-            "type": "wikibase-entityid",
-            "value": {
-              "entity-type": "item",
-              "id": "Q374",
-              "numeric-id": 374
             }
           },
           "property": "P113",
@@ -742,7 +596,7 @@
     ],
     "P117": [
       {
-        "id": "Q359$0FB0A04A-A294-5474-B6BE-8105FCAC38B0",
+        "id": "Q359$696552C6-AD99-5DBA-A7D2-A3DF8052C831",
         "mainsnak": {
           "datatype": "wikibase-item",
           "datavalue": {
@@ -757,6 +611,26 @@
           "snaktype": "value"
         },
         "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/alligator/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
         "type": "statement"
       },
       {

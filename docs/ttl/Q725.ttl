@@ -60,7 +60,7 @@ chbdist:Q725-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q725, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1675"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1202"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q725.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +76,12 @@ chb:Q725
     a wikibase:Item ;
     schema:name "Blender"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Blender"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q603> ;
     skos:prefLabel "Blender"@en ;
-    chbp:P2 chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925,
-        chbs:Q725-F598A0F4-6BB3-5FDD-9287-8A3255822832 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925
     a wikibase:BestRank,
@@ -91,12 +89,6 @@ chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:bbe43d0e593e4ab875368026f1644f3606acf647 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q725-F598A0F4-6BB3-5FDD-9287-8A3255822832
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbref:bbe43d0e593e4ab875368026f1644f3606acf647
     a wikibase:Reference ;

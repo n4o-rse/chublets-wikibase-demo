@@ -60,7 +60,7 @@ chbdist:Q878-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q878, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1664"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1191"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q878.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +76,12 @@ chb:Q878
     a wikibase:Item ;
     schema:name "C"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "C"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q755> ;
     skos:prefLabel "C"@en ;
-    chbp:P2 chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D,
-        chbs:Q878-078E2497-E998-5521-A209-0425CD6F9C9C ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D
     a wikibase:BestRank,
@@ -91,12 +89,6 @@ chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:5c271c9a57239650cd1beabbf50d12c51533b667 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q878-078E2497-E998-5521-A209-0425CD6F9C9C
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbref:5c271c9a57239650cd1beabbf50d12c51533b667
     a wikibase:Reference ;

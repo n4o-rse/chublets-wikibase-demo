@@ -60,7 +60,7 @@ chbdist:Q122-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q122, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1671"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1198"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q122.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,20 +76,12 @@ chb:Q122
     a wikibase:Item ;
     schema:name "ArcGIS"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "ArcGIS"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q26> ;
     skos:prefLabel "ArcGIS"@en ;
-    chbp:P2 chbs:Q122-228A7CBB-BCF3-53D9-A35B-399EF597439F,
-        chbs:Q122-DF1BE2E5-441A-51F6-8759-97D595E9F0B2 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
-
-chbs:Q122-228A7CBB-BCF3-53D9-A35B-399EF597439F
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
+    chbp:P2 chbs:Q122-DF1BE2E5-441A-51F6-8759-97D595E9F0B2 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q122-DF1BE2E5-441A-51F6-8759-97D595E9F0B2
     a wikibase:BestRank,

@@ -408,7 +408,7 @@ class OpenArchaeo(unittest.TestCase):
 
 
 class EveryItemIsAChublet(unittest.TestCase):
-    """Florian, 2026-10-23: every software item of chublets is an instance of chublet (Q106)."""
+    """Florian, 2026-10-23, narrowed 2026-11-02: every research software item is an instance of chublet (Q106); host programs, languages and platforms are not."""
 
     def test_all_software_items_are_chublets(self) -> None:
         statements = table("statements.csv")
@@ -428,9 +428,11 @@ class EveryItemIsAChublet(unittest.TestCase):
 
 
 class Chublets(unittest.TestCase):
-    """Florian, 2026-10-23: everything that is software is a chublet; persons, accounts, topics and DOIs are not."""
+    """Florian, 2026-11-02: only research software is a chublet. The 22 host programs, programming languages and platforms that
+    2026-10-23-chublets-everywhere.qs had made chublets are items, no chublets; persons, accounts, topics and DOIs never were."""
 
     FILE = ROOT / "data" / "edits" / "2026-10-23-chublets-everywhere.qs"
+    NOT = ROOT / "data" / "edits" / "2026-11-02-not-chublets.qs"
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -440,17 +442,30 @@ class Chublets(unittest.TestCase):
             if s["property"] == "P2":
                 cls.classes[s["subject"]].add(s["value"])
         cls.named = [line.split("\t")[0] for line in cls.FILE.read_text(encoding="utf-8").splitlines() if line and not line.startswith("#")]
+        cls.removed = [line.split("\t")[0][1:] for line in cls.NOT.read_text(encoding="utf-8").splitlines() if line and not line.startswith("#")]
 
-    def test_the_file_names_22_items_and_each_is_a_chublet_by_hand(self) -> None:
+    def test_the_new_file_takes_the_same_22_items_out_again(self) -> None:
         self.assertEqual(len(self.named), 22)
-        hand = {r["subject"] for r in table("statements.csv") if r["property"] == "P2" and r["value"] == "Q106" and r["origin"] == ""}
-        self.assertTrue(set(self.named) <= hand)
+        self.assertEqual(sorted(self.removed), sorted(self.named))
 
-    def test_the_host_programs_languages_and_platforms_are_chublets(self) -> None:
+    def test_the_host_programs_languages_and_platforms_are_items_but_no_chublets(self) -> None:
         labels = {self.entities[i]["label_en"] for i in self.named}
         self.assertTrue({"QGIS", "ArcGIS", "Blender", "R", "Python", "JavaScript", "Git", "GitHub"} <= labels, labels)
         for i in self.named:
-            self.assertIn("Q106", self.classes[i], i)
+            self.assertEqual(self.entities[i]["kind"], "item", i)
+            self.assertNotIn("Q106", self.classes[i], i)
+
+    def test_what_points_at_them_still_points_at_them(self) -> None:
+        named = set(self.named)
+        pointing = [s for s in table("statements.csv") if s["value"] in named and s["subject"] not in named]
+        self.assertGreaterEqual(len(pointing), 268)                           # programmed in (P123) and depends on software (P109)
+
+    def test_there_are_420_chublets_once_the_merges_are_counted(self) -> None:
+        merged = {r["from"] for r in table("merges.csv")}
+        chublets = {s["subject"] for s in table("statements.csv") if s["property"] == "P2" and s["value"] == "Q106"} - merged
+        self.assertEqual(len(chublets), 420)
+        self.assertEqual(sum(1 for i in chublets if self.entities[i]["origin"] == "open-archaeo"), 414)    # 416 entries, Alligator and profileAAR are seeds
+        self.assertEqual(sum(1 for i in chublets if self.entities[i]["origin"] == "wikidata"), 6)
 
     def test_persons_organisations_topics_dois_licences_and_projects_are_not(self) -> None:
         by_label = {r["label_en"]: i for i, r in self.entities.items() if r["kind"] == "item"}
@@ -473,10 +488,12 @@ class Chublets(unittest.TestCase):
         missing = [i for i, c in self.classes.items() if c & below and i not in merged and self.entities[i]["kind"] == "item" and "Q106" not in c]
         self.assertEqual(missing, [])
 
-    def test_the_file_is_listed_in_applied_csv(self) -> None:
+    def test_the_files_are_listed_in_applied_csv(self) -> None:
         import hashlib
-        digest = hashlib.sha256(self.FILE.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
-        self.assertIn((digest, "data/edits/2026-10-23-chublets-everywhere.qs"), [(r["sha256"], r["file"]) for r in table_at(ROOT / "data" / "edits" / "applied.csv")])
+        listed = [(r["sha256"], r["file"]) for r in table_at(ROOT / "data" / "edits" / "applied.csv")]
+        for path in (self.FILE, self.NOT):
+            digest = hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+            self.assertIn((digest, "data/edits/" + path.name), listed, path.name)
 
 
 class Hierarchy(unittest.TestCase):
@@ -548,6 +565,24 @@ class Merges(unittest.TestCase):
         plain = [s.mainsnak.entity_id for s in alligator.statements if s.mainsnak.property == "P113" and not s.qualifiers]
         self.assertEqual(len(plain), len(set(plain)))                         # nobody twice (the two with a role qualifier are a statement of their own)
         self.assertLessEqual({"Q365", "Q374"}, set(plain) | {s.mainsnak.entity_id for s in alligator.statements if s.mainsnak.property == "P113"})
+
+    def test_alligator_has_no_developer_twice(self) -> None:
+        """2026-11-02: Wikidata's row (no qualifier) and open-archaeo's (series ordinal) had made Thiery and Mees appear twice."""
+        alligator = self.site.entities[self.idmap["Q74004218"]]
+        developers = [s.mainsnak.entity_id for s in alligator.statements if s.mainsnak.property == "P113"]
+        self.assertEqual(len(developers), len(set(developers)), developers)
+        self.assertLessEqual({"Q365", "Q374"}, set(developers))
+
+    def test_no_item_has_a_statement_twice_when_one_of_the_two_has_no_qualifiers(self) -> None:
+        import json
+        twins = []
+        for entity in self.site.entities.values():
+            seen: dict[tuple, list[int]] = {}
+            for s in entity.statements:
+                key = (s.mainsnak.property, s.mainsnak.snaktype, json.dumps(s.mainsnak.value, sort_keys=True))
+                seen.setdefault(key, []).append(len(s.qualifiers))
+            twins += [(entity.id, key[0]) for key, counts in seen.items() if len(counts) > 1 and 0 in counts]
+        self.assertEqual(twins, [])          # a full import of Wikidata would write the removed rows again and this test would say so
 
     def test_the_suggestions_have_nothing_left_to_name(self) -> None:
         with (ROOT / "dist" / "merge-suggestions.csv").open(encoding="utf-8", newline="") as handle:
@@ -696,6 +731,22 @@ class Edits(unittest.TestCase):
         self.assertIn("applied already", out.getvalue())
         self.assertEqual({p.name: p.read_bytes() for p in CSV.glob("*.csv")}, before)
 
+    def test_every_file_in_data_edits_is_listed_with_its_hash(self) -> None:
+        import hashlib
+        listed = {(r["sha256"], r["file"]) for r in table_at(ROOT / "data" / "edits" / "applied.csv")}
+        files = sorted((ROOT / "data" / "edits").glob("*.qs"))
+        self.assertGreaterEqual(len(files), 6)
+        for path in files:
+            digest = hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+            self.assertIn((digest, "data/edits/" + path.name), listed, path.name)
+
+    def test_every_chronological_modelling_statement_has_a_reference(self) -> None:
+        """2026-11-02: the six by hand got the open-archaeo page of the tool, as the 47 from open-archaeo have."""
+        referenced = {r["sid"] for r in table("references.csv") if r["property"] == "P6"}
+        rows = [s for s in table("statements.csv") if s["property"] == "P117" and s["value"] == "Q126"]
+        self.assertEqual(len(rows), 53)
+        self.assertEqual([s["subject"] for s in rows if not s["sid"] or s["sid"] not in referenced], [])
+
     def test_the_published_page_of_amt_shows_the_year(self) -> None:
         page = (ROOT / "docs" / "Q358.html").read_text(encoding="utf-8")
         self.assertIn("2017", page)
@@ -776,6 +827,12 @@ class Wikidata(unittest.TestCase):
                 (target / path.name).write_bytes(path.read_bytes())
             args = ["--csv", str(target), "--seeds", str(self.SEEDS), "--raw", str(self.RAW), "--offline"]
             self.assertEqual(quietly(wikidata, args), 0)
+            # The import writes the two rows of Wikidata that 2026-11-02-alligator-developers.qs removed (a removed row of an importer
+            # comes back with its next run); the file takes them out again, and then the tables are the ones in the repository.
+            from wikibase_static import step_apply_qs
+            fresh = Path(tmp) / "applied.csv"
+            self.assertEqual(quietly(step_apply_qs, [str(ROOT / "data" / "edits" / "2026-11-02-alligator-developers.qs"),
+                                                      "--csv", str(target), "--applied", str(fresh)]), 0)
             for path in CSV.glob("*.csv"):
                 self.assertEqual((target / path.name).read_bytes(), path.read_bytes(), path.name)
             for name in ("wikidata-gaps.csv", "wikidata-import.txt"):

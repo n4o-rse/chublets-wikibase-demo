@@ -60,7 +60,7 @@ chbdist:Q717-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q717, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1677"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1204"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q717.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +76,12 @@ chb:Q717
     a wikibase:Item ;
     schema:name "Open Data Kit"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Open Data Kit"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q595> ;
     skos:prefLabel "Open Data Kit"@en ;
-    chbp:P2 chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44,
-        chbs:Q717-0288CD06-C1B0-59AF-87F2-21792F7E9D91 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44
     a wikibase:BestRank,
@@ -91,12 +89,6 @@ chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:8e0e14dd382ab1eb2e8af04cbce740ecd5da8ff7 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q717-0288CD06-C1B0-59AF-87F2-21792F7E9D91
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbref:8e0e14dd382ab1eb2e8af04cbce740ecd5da8ff7
     a wikibase:Reference ;

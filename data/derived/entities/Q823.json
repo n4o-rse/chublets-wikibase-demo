@@ -265,7 +265,7 @@
         "type": "statement"
       },
       {
-        "id": "Q823$78066F59-F6E0-534D-8C7F-121B06696CCD",
+        "id": "Q823$496AB22C-4C36-5CDB-AADF-25B0F4602C79",
         "mainsnak": {
           "datatype": "wikibase-item",
           "datavalue": {
@@ -280,6 +280,26 @@
           "snaktype": "value"
         },
         "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/aoristic-analysis/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
         "type": "statement"
       }
     ],

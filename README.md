@@ -161,16 +161,30 @@ adds the topic Chronological modelling (Q126) to six tools that open-archaeo fil
 Alligator (Q359, not its merged entry Q381); the choice is per tool, and the old topics stay. Rows made this way have no
 origin: they count as hand work and the importers never overwrite them. Needs `wikibase-static` 0.15.0.
 
+Three more files of 2026-11-02 come from the revision of the paper. `2026-11-02-not-chublets.qs` takes the class chublet from the 22 host
+programs, languages and platforms again (see "Chublets and the class hierarchy"). `2026-11-02-alligator-developers.qs` removes the rows of
+Wikidata that put two developers of Alligator (Q359) there twice, next to the open-archaeo rows with a series ordinal; the next full import of Wikidata would
+write them again, which `tests/test_demo.py` notices. `2026-11-02-chronological-modelling-references.qs` gives the six statements of the file above the
+page of the tool on open-archaeo as reference, as the 47 from open-archaeo have it. open-archaeo files these six under other topics only; the page describes the tool.
+
 ## Chublets and the class hierarchy
 
-Everything that is software is an instance of chublet (Q106): the 416 open-archaeo entries and the Wikidata seeds from their importers, and
-by hand (`data/edits/2026-10-23-chublets-everywhere.qs`, applied with `apply-qs`) the host programs (QGIS, ArcGIS, Blender, ...), the
-programming languages (R, Python, ...) and the platforms Git and GitHub. Persons, accounts, organisations, topics, DOIs, licences, the
-language English, Wikidata and the three project items are not chublets. A new import brings new host programs and languages without that
-line: they need a line in a new `.qs` file (`python main.py apply-qs`).
+Only research software is an instance of chublet (Q106): the open-archaeo entries and the Wikidata seeds from their importers, 420 in all
+(416 entries and 6 seeds, with Alligator and profileAAR counted once). The host programs (QGIS, ArcGIS, Blender, ...), the programming
+languages (R, Python, ...) and the platforms Git and GitHub are items of the model, because other items point at them, but no chublets
+(decision of 2026-11-02). Until then they were: `data/edits/2026-10-23-chublets-everywhere.qs` had made them chublets by hand, and
+`data/edits/2026-11-02-not-chublets.qs` takes those 22 lines back. The importers never wrote that class for them, so a reimport does not
+bring it back. Persons, accounts, organisations, topics, DOIs, licences, the language English, Wikidata and the three project items are
+not chublets either.
 
 The overview shows, under every class, the whole hierarchy around it (all paths from the root down to the class, the class in bold, all
 subclasses below), and the class pages show it as well. Needs `wikibase-static` 0.17.0.
+
+## Numbers for the paper
+
+`python tools/paper_numbers.py` counts from the tables and from the built files what the paper states about this repository (chublets,
+tools per topic with and without repository, rows of `statements.csv`, entities of the static copy, the statements of Alligator) and prints
+them as a Markdown table; `--json` prints the same as JSON. It reads, it writes nothing. Run it after `python main.py`.
 
 ## Prefixes and data-model graphics
 

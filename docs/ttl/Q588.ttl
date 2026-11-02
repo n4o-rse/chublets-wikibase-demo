@@ -61,7 +61,7 @@ chbdist:Q588-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q588, as archived from the Wikibase API"@en ;
-    dcat:byteSize "23595"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "24113"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q588.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -93,8 +93,8 @@ chb:Q588
         chbs:Q588-CA030B15-1404-5309-B920-A1545406EDCE ;
     chbp:P115 chbs:Q588-7F74ABB4-9C90-5656-ABB6-A8008EF76FAB ;
     chbp:P116 chbs:Q588-BADCBA43-94FD-58E7-AE49-00EE17AA3850 ;
-    chbp:P117 chbs:Q588-9CEA09F5-1752-57ED-87C9-0E8DC0FAD851,
-        chbs:Q588-D6F2DA5C-5580-5BC8-B828-C41806A2CAC3,
+    chbp:P117 chbs:Q588-3CB60DCB-07C3-51C7-B53D-1EB2D24C0DD2,
+        chbs:Q588-9CEA09F5-1752-57ED-87C9-0E8DC0FAD851,
         chbs:Q588-FEDBC612-961F-5A9A-A833-A54F4D02EE01 ;
     chbp:P118 chbs:Q588-9A04CE88-1FE6-5E33-944C-DECBD67A1587 ;
     chbp:P119 chbs:Q588-B734848D-3D31-5DCE-972A-AB69300CC11A ;
@@ -122,6 +122,13 @@ chb:Q588
         chb:Q110 ;
     chbt:P123 chb:Q111 ;
     chbt:P125 <https://github.com/mhahsler/seriation> .
+
+chbs:Q588-3CB60DCB-07C3-51C7-B53D-1EB2D24C0DD2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:6446dc0198a491e8bc5124f13899cdf99b95d4ff ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q588-6C774FD4-0CB0-5779-9202-DEC2B555CF15
     a wikibase:BestRank,
@@ -251,12 +258,6 @@ chbs:Q588-CC5DA151-C46C-5B79-B7EE-9972E424BAF1
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:6446dc0198a491e8bc5124f13899cdf99b95d4ff ;
     chbps:P108 "seriation" .
-
-chbs:Q588-D6F2DA5C-5580-5BC8-B828-C41806A2CAC3
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P117 chb:Q126 .
 
 chbs:Q588-D482BA0F-92AC-5A4F-A8D3-8C8BC3C13B09
     a wikibase:BestRank,

@@ -267,7 +267,7 @@
         "type": "statement"
       },
       {
-        "id": "Q598$816670DC-5EAB-5367-A63A-2CF718D18699",
+        "id": "Q598$0CA6F27A-1D76-5644-BB8D-E07739237CF9",
         "mainsnak": {
           "datatype": "wikibase-item",
           "datavalue": {
@@ -282,6 +282,26 @@
           "snaktype": "value"
         },
         "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/mean-ceramic-date-and-error-estimation/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
         "type": "statement"
       }
     ],

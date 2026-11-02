@@ -60,7 +60,7 @@ chbdist:Q111-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q111, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1660"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1187"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q111.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,20 +76,12 @@ chb:Q111
     a wikibase:Item ;
     schema:name "R"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "R"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q15> ;
     skos:prefLabel "R"@en ;
-    chbp:P2 chbs:Q111-ACC81343-7286-5070-81C7-29F1C3A97A90,
-        chbs:Q111-EB98BB96-C05E-5082-84A6-F348AFC59520 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
-
-chbs:Q111-ACC81343-7286-5070-81C7-29F1C3A97A90
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
+    chbp:P2 chbs:Q111-EB98BB96-C05E-5082-84A6-F348AFC59520 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q111-EB98BB96-C05E-5082-84A6-F348AFC59520
     a wikibase:BestRank,

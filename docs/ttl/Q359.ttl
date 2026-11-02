@@ -63,7 +63,7 @@ chbdist:Q359-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q359, as archived from the Wikibase API"@en ;
-    dcat:byteSize "66953"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "63250"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q359.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -82,7 +82,7 @@ chb:Q359
     schema:name "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "29"^^xsd:integer ;
+    wikibase:statements "27"^^xsd:integer ;
     rdfs:label "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q811> ;
@@ -99,14 +99,12 @@ chb:Q359
     chbp:P107 chbs:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9 ;
     chbp:P113 chbs:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F,
         chbs:Q359-410B885B-C909-5384-BB43-59D5B42418C4,
-        chbs:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD,
-        chbs:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F,
-        chbs:Q359-EEC02582-2679-519C-9581-BB5C63818E17 ;
+        chbs:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F ;
     chbp:P115 chbs:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B ;
     chbp:P116 chbs:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419 ;
     chbp:P117 chbs:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8,
-        chbs:Q359-0FB0A04A-A294-5474-B6BE-8105FCAC38B0,
-        chbs:Q359-17C65C2D-E135-5188-8789-195EA8928C08 ;
+        chbs:Q359-17C65C2D-E135-5188-8789-195EA8928C08,
+        chbs:Q359-696552C6-AD99-5DBA-A7D2-A3DF8052C831 ;
     chbp:P118 chbs:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87 ;
     chbp:P119 chbs:Q359-7827DDD2-57F3-5423-A8CD-CB51EEC1E98E ;
     chbp:P120 chbs:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0,
@@ -153,12 +151,6 @@ chbs:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     chbps:P117 chb:Q116 .
-
-chbs:Q359-0FB0A04A-A294-5474-B6BE-8105FCAC38B0
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P117 chb:Q126 .
 
 chbs:Q359-4BEC5151-FB8B-5010-9EA9-16ECD1802F28
     a wikibase:BestRank,
@@ -272,6 +264,13 @@ chbs:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F
     prov:wasDerivedFrom chbref:707c0156c388067fc8a523813f02784c2664d39b ;
     chbps:P4 "Q74004218" .
 
+chbs:Q359-696552C6-AD99-5DBA-A7D2-A3DF8052C831
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    chbps:P117 chb:Q126 .
+
 chbs:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -279,13 +278,6 @@ chbs:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
     prov:wasDerivedFrom chbref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
         chbref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     chbps:P122 chb:Q110 .
-
-chbs:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom chbref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
-    chbps:P113 chb:Q365 .
 
 chbs:Q359-AC0E33A2-2D88-533F-98B4-1094B40E6664
     a wikibase:Statement ;
@@ -334,13 +326,6 @@ chbs:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C
     chbpq:P126 chb:Q114 ;
     chbpq:P248 chb:Q363 ;
     chbps:P125 <https://github.com/RGZM/alligator> .
-
-chbs:Q359-EEC02582-2679-519C-9581-BB5C63818E17
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom chbref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
-    chbps:P113 chb:Q374 .
 
 chbs:Q359-EFF15EB9-DC41-5F35-8C6B-FE9F582EE1D2
     a wikibase:Statement ;

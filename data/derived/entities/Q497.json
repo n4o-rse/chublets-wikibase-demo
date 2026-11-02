@@ -267,7 +267,7 @@
         "type": "statement"
       },
       {
-        "id": "Q497$A039FFF4-53E8-555A-9E7E-387B291F8CCF",
+        "id": "Q497$F59BD852-B1EA-51EB-948B-DC23BFBA94A3",
         "mainsnak": {
           "datatype": "wikibase-item",
           "datavalue": {
@@ -282,6 +282,26 @@
           "snaktype": "value"
         },
         "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://open-archaeo.info/post/ca/"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
         "type": "statement"
       }
     ],

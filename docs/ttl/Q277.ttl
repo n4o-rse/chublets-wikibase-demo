@@ -60,7 +60,7 @@ chbdist:Q277-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q277, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1673"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1200"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q277.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +76,12 @@ chb:Q277
     a wikibase:Item ;
     schema:name "NetLogo"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "NetLogo"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q180> ;
     skos:prefLabel "NetLogo"@en ;
-    chbp:P2 chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4,
-        chbs:Q277-580909B8-BEAB-52ED-BEDE-92936860E667 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4
     a wikibase:BestRank,
@@ -91,12 +89,6 @@ chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:deb5e505950349a13318ff06229812859f1ee761 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q277-580909B8-BEAB-52ED-BEDE-92936860E667
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbref:deb5e505950349a13318ff06229812859f1ee761
     a wikibase:Reference ;

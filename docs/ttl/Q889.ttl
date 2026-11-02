@@ -60,7 +60,7 @@ chbdist:Q889-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q889, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1702"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1229"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q889.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,20 +76,12 @@ chb:Q889
     a wikibase:Item ;
     schema:name "LaTeX"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "LaTeX"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q766> ;
     skos:prefLabel "LaTeX"@en ;
-    chbp:P2 chbs:Q889-93A9126F-11E8-51DF-A975-FD08260348E7,
-        chbs:Q889-AC79CB2F-C801-5239-A697-EB6B0744A3B5 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
-
-chbs:Q889-93A9126F-11E8-51DF-A975-FD08260348E7
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
+    chbp:P2 chbs:Q889-AC79CB2F-C801-5239-A697-EB6B0744A3B5 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q889-AC79CB2F-C801-5239-A697-EB6B0744A3B5
     a wikibase:BestRank,

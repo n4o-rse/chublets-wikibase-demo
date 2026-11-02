@@ -60,7 +60,7 @@ chbdist:Q679-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q679, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1672"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1199"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q679.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +76,12 @@ chb:Q679
     a wikibase:Item ;
     schema:name "Ruby"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Ruby"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q557> ;
     skos:prefLabel "Ruby"@en ;
-    chbp:P2 chbs:Q679-010D1901-9309-5892-BE43-330D3E064003,
-        chbs:Q679-D49B59DC-3A04-5907-A9D4-5DF3E0568273 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q679-010D1901-9309-5892-BE43-330D3E064003 ;
+    chbt:P2 chb:Q3 .
 
 chbs:Q679-010D1901-9309-5892-BE43-330D3E064003
     a wikibase:BestRank,
@@ -91,12 +89,6 @@ chbs:Q679-010D1901-9309-5892-BE43-330D3E064003
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:78ac2dfb34ff39c594da3146794ec834493e4ba3 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q679-D49B59DC-3A04-5907-A9D4-5DF3E0568273
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbref:78ac2dfb34ff39c594da3146794ec834493e4ba3
     a wikibase:Reference ;
