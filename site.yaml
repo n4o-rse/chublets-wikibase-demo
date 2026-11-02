@@ -1,6 +1,6 @@
 # Site metadata for the static demo of the chublets.software Wikibase model (schema: PRIMER.md of wikibase-static, A4).
 title: chublets.software Wikibase (model demo)
-description: The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and about 100 software entries imported from open-archaeo.
+description: The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and the 416 software entries imported from open-archaeo.
 # Where docs/ is published; the RDF export needs it for the download URLs of its DCAT distributions.
 pages_url: https://n4o-rse.github.io/chublets-wikibase-demo/
 # Base of the entity URIs in the RDF export. This demo has its own numbers from 100 on, which the real
@@ -12,7 +12,7 @@ rdf_base: https://n4o-rse.github.io/chublets-wikibase-demo
 rdf_prefix: chb
 # The date of the data. The CSV tables carry no modification time of their own, so the header of the Turtle files and the
 # catalogue would say "unknown"; this date takes its place (wikibase-static 0.18.3). Set it again when the data change.
-data_as_of: 2026-10-25
+data_as_of: 2026-11-02
 edit_url: https://github.com/n4o-rse/chublets-wikibase-demo/edit/main/data/csv
 # The same entities in the real Wikibase (pushed with wikibase-federation, usecases/chublets; wikibase-static 0.19.0, PRIMER.md A4):
 # every page links to its counterpart there, the RDF says owl:sameAs. The table is the idmap that the push wrote

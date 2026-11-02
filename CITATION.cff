@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this data model or dataset, please cite it using the metadata below."
+title: "chublets-wikibase-demo: static demonstration of the chublets.software Wikibase model"
+abstract: >-
+  The data model of the chublets.software Wikibase and its software entries,
+  kept as CSV tables and rendered with wikibase-static as a static, read-only
+  site with RDF export and an in-browser SPARQL page.
+type: dataset
+authors:
+  - family-names: Thiery
+    given-names: Florian
+    orcid: "https://orcid.org/0000-0002-3246-3531"
+    affiliation: "Leibniz-Zentrum für Archäologie (LEIZA)"
+license: CC0-1.0
+version: "2026.11.02"
+date-released: "2026-11-02"
+repository-code: "https://github.com/n4o-rse/chublets-wikibase-demo"
+url: "https://n4o-rse.github.io/chublets-wikibase-demo/"
+keywords:
+  - chublets.software
+  - Wikibase
+  - research software
+  - Linked Data
+  - Cultural Heritage

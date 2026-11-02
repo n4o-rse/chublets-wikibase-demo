@@ -1,5 +1,5 @@
 # Q497: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static; data as of 2026-11-02T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -61,7 +61,7 @@ chbdist:Q497-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q497, as archived from the Wikibase API"@en ;
-    dcat:byteSize "14719"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "15194"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q497.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,7 +78,7 @@ chb:Q497
     schema:description "R script for seriation using correspondence analysis."@en ;
     schema:name "ca"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "14"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
     rdfs:label "ca"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q375> ;
     skos:prefLabel "ca"@en ;
@@ -89,7 +89,8 @@ chb:Q497
     chbp:P115 chbs:Q497-5C115EA3-BEBF-5D3D-A97E-354B7C5E4218 ;
     chbp:P116 chbs:Q497-6B4D93BC-D4CB-53D7-9762-03B26E80F0CE ;
     chbp:P117 chbs:Q497-67E14E91-2FA9-5867-8CA4-B264D2BAC8D9,
-        chbs:Q497-17327E0F-D331-5F4E-BF22-4CDDB33FC349 ;
+        chbs:Q497-17327E0F-D331-5F4E-BF22-4CDDB33FC349,
+        chbs:Q497-A039FFF4-53E8-555A-9E7E-387B291F8CCF ;
     chbp:P118 chbs:Q497-1F7DFD1F-CE37-5DF1-A752-08CB6307A37A ;
     chbp:P119 chbs:Q497-7FFE67A3-E0CD-5ED3-A4A4-36483D9DFEB5 ;
     chbp:P120 chbs:Q497-CCA1310B-7C5F-5D21-91FF-204789A428F0 ;
@@ -103,6 +104,7 @@ chb:Q497
     chbt:P115 <https://open-archaeo.info/post/ca/> ;
     chbt:P116 "ca" ;
     chbt:P117 chb:Q116,
+        chb:Q126,
         chb:Q190 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "ca"@en ;
@@ -182,6 +184,12 @@ chbs:Q497-A24D83EC-76E2-5128-800F-EC2A1FD2CDD3
     prov:wasDerivedFrom chbref:21f0a53003d54fdf91a6b7fbeea10665dc37c01d ;
     chbpq:P146 "1" ;
     chbps:P113 chb:Q167 .
+
+chbs:Q497-A039FFF4-53E8-555A-9E7E-387B291F8CCF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q497-A527AA5B-87BE-592A-9B38-1B27A92460C0
     a wikibase:BestRank,

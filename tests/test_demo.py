@@ -390,7 +390,8 @@ class OpenArchaeo(unittest.TestCase):
     def test_authors_and_tags_are_items_and_the_deployment_role_is_not_imported(self) -> None:
         for item, entry in self.items.items():
             self.assertEqual(len(self.values(item, "P113")), len([a for a in entry["authors"].split("|") if a]), item)
-            self.assertEqual(len(self.values(item, "P117")), len([t for t in entry["tags"].split("|") if t]), item)
+            imported = [s for s in self.statements if s["subject"] == item and s["property"] == "P117" and s["origin"] == "open-archaeo"]
+            self.assertEqual(len(imported), len([t for t in entry["tags"].split("|") if t]), item)  # hand rows (data/edits/) come on top
             if entry["platform_role"] == "deployment":
                 self.assertEqual(self.values(item, "P123") + self.values(item, "P109"), [], item)
 
@@ -581,8 +582,8 @@ class Merges(unittest.TestCase):
         for row in self.rows:
             page = (ROOT / "docs" / f"{row['from']}.html").read_text(encoding="utf-8")
             self.assertIn(f'url={row["to"]}.html', page)
-            self.assertIn(f"wd:{row['to']}", ttl)
-            self.assertRegex(ttl, rf"wd:{row['from']}\s+owl:sameAs wd:{row['to']}")
+            self.assertIn(f"chb:{row['to']}", ttl)
+            self.assertRegex(ttl, rf"chb:{row['from']}\s+owl:sameAs chb:{row['to']}")
 
     def test_the_wikidata_report_knows_that_they_are_merged(self) -> None:
         report = (ROOT / "dist" / "wikidata-import.txt").read_text(encoding="utf-8")

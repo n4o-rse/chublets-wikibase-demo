@@ -28,8 +28,8 @@ Every entity page offers its RDF as Turtle and as JSON for download (`docs/ttl/`
 maintained by the WikiProject, part of chublets.software and of the open-archaeo collection, collection, inventory number = slug),
 its authors, tags, languages, repository with archive link, registry package and links.
 
-**Five Wikidata items** (S7d: AMT, Alligator, SPARQLing Unicorn, profileAAR, Text mining minion) as a first test of the Wikidata import, with 18 stubs for the
-items they point to (15 items, 3 classes).
+**Six Wikidata items** (S7d: AMT, Alligator, SPARQLing Unicorn, profileAAR, Text mining minion, and QSKOS, added later) as a first test of the Wikidata import, with 20 stubs for the
+items they point to (17 items, 3 classes).
 The pages show the model the way a Wikibase does; the RDF export additionally carries the **RDFS bridge**
 (`chbt:P1 rdfs:subPropertyOf rdfs:subClassOf` and five more triples, in a section of their own in the Turtle files), so that
 a reasoner or a property path reads the class tree.
@@ -135,7 +135,7 @@ browser first). A Wikidata property becomes a local one through its Wikidata twi
 decision of 2026-10-23. The column `instance_of` of the seed list (here `Q106`, chublet) makes every seed a chublet, also those that Wikidata calls only software or Little Minion. Items the seeds point to become stubs with label, description and their Wikidata twin; three types without a local twin
 (utility software, plug-in, QGIS plugin) become classes below software, which is an assumption of the importer. Rows written by the importer have
 `origin=wikidata` or `wikidata-stub`; empty that cell in a row you change by hand and the next import leaves it alone. The report also says which
-repository and exact-match URLs occur in the open-archaeo items; it merges nothing. With all 416 entries it finds two of the five: profileAAR
+repository and exact-match URLs occur in the open-archaeo items; it merges nothing. With all 416 entries it finds two of the six: profileAAR
 by its repository URL and Alligator by the open-archaeo page that Wikidata names as exact match; the two pairs are merged (see below).
 Needs `wikibase-static` 0.14.0.
 
@@ -156,7 +156,9 @@ are all kept; the run names the properties. Needs `wikibase-static` 0.14.0.
 `python main.py apply-qs data/edits/FILE.qs` changes the tables with a QuickStatements file (a subset of v1, local ids, `wd:Q42` for
 Wikidata; all or nothing per file; `--dry-run` says what would happen). `data/edits/applied.csv` remembers the hash of every applied
 file, so the same file does not act twice. The first file, `data/edits/2026-10-23-amt-inception.qs`, adds the year 2017 as inception of
-the Academic Meta Tool (Q358) with a reference; it comes from `examples/amt-sketch.qs` of the Starter Pack. Rows made this way have no
+the Academic Meta Tool (Q358) with a reference; it comes from `examples/amt-sketch.qs` of the Starter Pack. `data/edits/2026-11-02-chronological-modelling.qs`
+adds the topic Chronological modelling (Q126) to six tools that open-archaeo files under Statistical analysis or Ceramic analysis only, among them
+Alligator (Q359, not its merged entry Q381); the choice is per tool, and the old topics stay. Rows made this way have no
 origin: they count as hand work and the importers never overwrite them. Needs `wikibase-static` 0.15.0.
 
 ## Chublets and the class hierarchy

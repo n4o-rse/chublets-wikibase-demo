@@ -1,5 +1,5 @@
 # Q588: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static; data as of 2026-11-02T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -61,7 +61,7 @@ chbdist:Q588-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q588, as archived from the Wikibase API"@en ;
-    dcat:byteSize "23120"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "23595"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q588.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,7 +78,7 @@ chb:Q588
     schema:description "R package that provides the infrastructure for ordering objects with an implementation of several seriation/sequencing/ordination techniques to reorder matrices, dissimilarity matrices, and dendrograms (see below for a full list). Also provides (optimally) reordered heatmaps, color images and clustering visualizations like dissimilarity plots, and visual assessment of cluster tendency plots (VAT and iVAT)."@en ;
     schema:name "seriation"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "19"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
     rdfs:label "seriation"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q466> ;
     skos:prefLabel "seriation"@en ;
@@ -94,6 +94,7 @@ chb:Q588
     chbp:P115 chbs:Q588-7F74ABB4-9C90-5656-ABB6-A8008EF76FAB ;
     chbp:P116 chbs:Q588-BADCBA43-94FD-58E7-AE49-00EE17AA3850 ;
     chbp:P117 chbs:Q588-9CEA09F5-1752-57ED-87C9-0E8DC0FAD851,
+        chbs:Q588-D6F2DA5C-5580-5BC8-B828-C41806A2CAC3,
         chbs:Q588-FEDBC612-961F-5A9A-A833-A54F4D02EE01 ;
     chbp:P118 chbs:Q588-9A04CE88-1FE6-5E33-944C-DECBD67A1587 ;
     chbp:P119 chbs:Q588-B734848D-3D31-5DCE-972A-AB69300CC11A ;
@@ -113,6 +114,7 @@ chb:Q588
     chbt:P115 <https://open-archaeo.info/post/seriation-mhahsler/> ;
     chbt:P116 "seriation-mhahsler" ;
     chbt:P117 chb:Q116,
+        chb:Q126,
         chb:Q190 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "seriation"@en ;
@@ -249,6 +251,12 @@ chbs:Q588-CC5DA151-C46C-5B79-B7EE-9972E424BAF1
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:6446dc0198a491e8bc5124f13899cdf99b95d4ff ;
     chbps:P108 "seriation" .
+
+chbs:Q588-D6F2DA5C-5580-5BC8-B828-C41806A2CAC3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q588-D482BA0F-92AC-5A4F-A8D3-8C8BC3C13B09
     a wikibase:BestRank,

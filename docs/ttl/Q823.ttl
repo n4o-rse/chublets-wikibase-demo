@@ -1,5 +1,5 @@
 # Q823: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static; data as of 2026-11-02T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -61,7 +61,7 @@ chbdist:Q823-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q823, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15434"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "15909"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q823.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,7 +78,7 @@ chb:Q823
     schema:description "Estimate probabilities of find numbers per period."@en ;
     schema:name "aoristic-analysis"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "14"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
     rdfs:label "aoristic-analysis"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q701> ;
     skos:prefLabel "aoristic-analysis"@en ;
@@ -89,7 +89,8 @@ chb:Q823
     chbp:P114 chbs:Q823-41367E44-2529-5C9C-A5AF-C6E73BC3C7FA ;
     chbp:P115 chbs:Q823-1543BCA3-A2E1-59EF-9AE7-A4E8E09A02CE ;
     chbp:P116 chbs:Q823-95748533-A5A6-59DF-AFB9-6FF651545B0F ;
-    chbp:P117 chbs:Q823-AAD80DD8-757C-5471-AD41-FCB98F29178D ;
+    chbp:P117 chbs:Q823-78066F59-F6E0-534D-8C7F-121B06696CCD,
+        chbs:Q823-AAD80DD8-757C-5471-AD41-FCB98F29178D ;
     chbp:P118 chbs:Q823-A9108E9F-8C90-5B56-AFC2-11C9367B28FE ;
     chbp:P119 chbs:Q823-AC1535C6-5AF1-5B49-AFD7-D522AC8EFB85 ;
     chbp:P122 chbs:Q823-BE1A62A7-5455-50CA-BFFA-4D8AABDA291B,
@@ -103,7 +104,8 @@ chb:Q823
     chbt:P114 "10.1016/j.jasrep.2016.10.006" ;
     chbt:P115 <https://open-archaeo.info/post/aoristic-analysis/> ;
     chbt:P116 "aoristic-analysis" ;
-    chbt:P117 chb:Q116 ;
+    chbt:P117 chb:Q116,
+        chb:Q126 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "aoristic-analysis"@en ;
     chbt:P122 chb:Q109,
@@ -146,6 +148,12 @@ chbs:Q823-41367E44-2529-5C9C-A5AF-C6E73BC3C7FA
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
     chbps:P114 "10.1016/j.jasrep.2016.10.006" .
+
+chbs:Q823-78066F59-F6E0-534D-8C7F-121B06696CCD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q823-95748533-A5A6-59DF-AFB9-6FF651545B0F
     a wikibase:BestRank,

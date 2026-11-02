@@ -1,5 +1,5 @@
 # Q415: the part of the RDF export of chublets.software Wikibase (model demo) that describes this entity
-# Generated with wikibase-static; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static; data as of 2026-11-02T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -61,7 +61,7 @@ chbdist:Q415-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q415, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15438"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "15913"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q415.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -78,7 +78,7 @@ chb:Q415
     schema:description "Allen's interval algebra for archaeologists."@en ;
     schema:name "allen.archaeology"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "13"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
     rdfs:label "allen.archaeology"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q293> ;
     skos:prefLabel "allen.archaeology"@en ;
@@ -88,7 +88,8 @@ chb:Q415
     chbp:P113 chbs:Q415-5FF9EB00-7877-5A61-A421-D1D6CBF41F8B ;
     chbp:P115 chbs:Q415-4050E355-56B0-5790-AD74-3CF87099206C ;
     chbp:P116 chbs:Q415-D7A46101-8E25-5ED6-B9E6-634291FE4A73 ;
-    chbp:P117 chbs:Q415-1D57D0D2-C990-56A4-9B0D-FB3EFA876C31 ;
+    chbp:P117 chbs:Q415-1D57D0D2-C990-56A4-9B0D-FB3EFA876C31,
+        chbs:Q415-133CC125-849B-5DD8-9064-495FBAD51FCC ;
     chbp:P118 chbs:Q415-D9CB5B83-F59D-5EF9-B936-8B4ED56CEB00 ;
     chbp:P119 chbs:Q415-0578401F-8030-5F75-AE46-16F860FB7BEB ;
     chbp:P122 chbs:Q415-8A11B538-258D-5CB6-9F18-C102AAABB613,
@@ -101,7 +102,8 @@ chb:Q415
     chbt:P113 chb:Q308 ;
     chbt:P115 <https://open-archaeo.info/post/allen-archaeology/> ;
     chbt:P116 "allen-archaeology" ;
-    chbt:P117 chb:Q116 ;
+    chbt:P117 chb:Q116,
+        chb:Q126 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "allen.archaeology"@en ;
     chbt:P122 chb:Q109,
@@ -151,6 +153,12 @@ chbs:Q415-075BD34F-EA70-5F94-B075-C75358B5D448
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:ad86c1a8593739ccbfcd34c328a47d5a98a908e4 ;
     chbps:P2 chb:Q106 .
+
+chbs:Q415-133CC125-849B-5DD8-9064-495FBAD51FCC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q415-4050E355-56B0-5790-AD74-3CF87099206C
     a wikibase:BestRank,
